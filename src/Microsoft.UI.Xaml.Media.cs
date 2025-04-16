@@ -3628,6 +3628,66 @@ namespace Microsoft.UI.Xaml.Media
     {
         global::System.TimeSpan RenderingTime { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("3741D912-FC83-5C92-A22F-EFC29588B373")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrush))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBackgroundBrush
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("7E6F2B0A-E70D-529F-8097-43E023F2943B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBackgroundBrushFactory
+    {
+        RevealBackgroundBrush CreateInstance(object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrush))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBorderBrush
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("C677BDC2-F045-532C-BB13-3CEEE19143B2")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBorderBrushFactory
+    {
+        RevealBorderBrush CreateInstance(object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("30347330-A703-5086-BD82-4E28CE833233")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBrush))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBrush
+    {
+        bool AlwaysUseFallback { get; set; }
+        global::Windows.UI.Color Color { get; set; }
+        global::Microsoft.UI.Xaml.ApplicationTheme TargetTheme { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("46A94F5B-8ABD-5571-B049-7F76E3F967C9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBrushProtectedFactory
+    {
+        RevealBrush CreateInstance(object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStatics))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IRevealBrushStatics
+    {
+        void SetState(global::Microsoft.UI.Xaml.UIElement element, RevealBrushState value);
+        RevealBrushState GetState(global::Microsoft.UI.Xaml.UIElement element);
+        global::Microsoft.UI.Xaml.DependencyProperty AlwaysUseFallbackProperty { get; }
+        global::Microsoft.UI.Xaml.DependencyProperty ColorProperty { get; }
+        global::Microsoft.UI.Xaml.DependencyProperty StateProperty { get; }
+        global::Microsoft.UI.Xaml.DependencyProperty TargetThemeProperty { get; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("D4686E7C-A374-5CAC-8927-0EF07C5B254D")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.IRotateTransform))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.WinUIContract), 65536u)]
     internal interface IRotateTransform
@@ -7269,6 +7329,461 @@ namespace Microsoft.UI.Xaml.Media
 
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.RevealBackgroundBrush))]
+    [global::ABI.Microsoft.UI.Xaml.Media.RevealBackgroundBrushRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IRevealBackgroundBrush))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class RevealBackgroundBrush : RevealBrush, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<RevealBackgroundBrush>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush => ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush ?? Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrush();
+
+
+
+        private static class _IRevealBackgroundBrushFactoryMethods
+        {
+            public static unsafe IntPtr CreateInstance(IObjectReference _obj, object baseInterface, out IntPtr innerInterface)
+            {
+                var ThisPtr = _obj.ThisPtr;
+
+                ObjectReferenceValue __baseInterface = default;
+                IntPtr __innerInterface = default;
+                IntPtr __retval = default;
+                try
+                {
+                    __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    innerInterface = __innerInterface;
+                    return __retval;
+                }
+                finally
+                {
+                    MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                }
+            }
+        }
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Media.RevealBackgroundBrush", global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactoryMethods.IID);
+                }
+            }
+        }
+
+        public RevealBackgroundBrush():base(global::WinRT.DerivedComposed.Instance)
+        {
+            bool isAggregation = this.GetType() != typeof(RevealBackgroundBrush);
+            object baseInspectable = isAggregation ? this : null;
+            IntPtr composed = _IRevealBackgroundBrushFactoryMethods.CreateInstance(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBackgroundBrushFactory,  baseInspectable, out IntPtr inner);
+            try
+            {
+                ComWrappersHelper.Init(isAggregation, this, composed, inner, global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushMethods.IID, out _inner);
+
+            }
+            finally
+            {
+                Marshal.Release(inner);   
+            }
+        }
+
+        public static new RevealBackgroundBrush FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<RevealBackgroundBrush>.FromAbi(thisPtr);
+        }
+
+        protected internal RevealBackgroundBrush(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushMethods.IID);
+
+        }
+
+
+        public static bool operator ==(RevealBackgroundBrush x, RevealBackgroundBrush y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(RevealBackgroundBrush x, RevealBackgroundBrush y) => !(x == y);
+        public bool Equals(RevealBackgroundBrush other) => this == other;
+        public override bool Equals(object obj) => obj is RevealBackgroundBrush that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected RevealBackgroundBrush(global::WinRT.DerivedComposed _):base(_)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(RevealBackgroundBrush);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.RevealBorderBrush))]
+    [global::ABI.Microsoft.UI.Xaml.Media.RevealBorderBrushRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IRevealBorderBrush))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class RevealBorderBrush : RevealBrush, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<RevealBorderBrush>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush => ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush ?? Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrush();
+
+
+
+        private static class _IRevealBorderBrushFactoryMethods
+        {
+            public static unsafe IntPtr CreateInstance(IObjectReference _obj, object baseInterface, out IntPtr innerInterface)
+            {
+                var ThisPtr = _obj.ThisPtr;
+
+                ObjectReferenceValue __baseInterface = default;
+                IntPtr __innerInterface = default;
+                IntPtr __retval = default;
+                try
+                {
+                    __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    innerInterface = __innerInterface;
+                    return __retval;
+                }
+                finally
+                {
+                    MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                }
+            }
+        }
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Media.RevealBorderBrush", global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushFactoryMethods.IID);
+                }
+            }
+        }
+
+        public RevealBorderBrush():base(global::WinRT.DerivedComposed.Instance)
+        {
+            bool isAggregation = this.GetType() != typeof(RevealBorderBrush);
+            object baseInspectable = isAggregation ? this : null;
+            IntPtr composed = _IRevealBorderBrushFactoryMethods.CreateInstance(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBorderBrushFactory,  baseInspectable, out IntPtr inner);
+            try
+            {
+                ComWrappersHelper.Init(isAggregation, this, composed, inner, global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushMethods.IID, out _inner);
+
+            }
+            finally
+            {
+                Marshal.Release(inner);   
+            }
+        }
+
+        public static new RevealBorderBrush FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<RevealBorderBrush>.FromAbi(thisPtr);
+        }
+
+        protected internal RevealBorderBrush(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushMethods.IID);
+
+        }
+
+
+        public static bool operator ==(RevealBorderBrush x, RevealBorderBrush y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(RevealBorderBrush x, RevealBorderBrush y) => !(x == y);
+        public bool Equals(RevealBorderBrush other) => this == other;
+        public override bool Equals(object obj) => obj is RevealBorderBrush that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected RevealBorderBrush(global::WinRT.DerivedComposed _):base(_)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(RevealBorderBrush);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.RevealBrush))]
+    [global::ABI.Microsoft.UI.Xaml.Media.RevealBrushRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IRevealBrush))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class RevealBrush : XamlCompositionBrushBase, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<RevealBrush>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush => ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush ?? Make___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush();
+
+
+
+        private static class _IRevealBrushProtectedFactoryMethods
+        {
+            public static unsafe IntPtr CreateInstance(IObjectReference _obj, object baseInterface, out IntPtr innerInterface)
+            {
+                var ThisPtr = _obj.ThisPtr;
+
+                ObjectReferenceValue __baseInterface = default;
+                IntPtr __innerInterface = default;
+                IntPtr __retval = default;
+                try
+                {
+                    __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    innerInterface = __innerInterface;
+                    return __retval;
+                }
+                finally
+                {
+                    MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                }
+            }
+        }
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Media.RevealBrush", global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactoryMethods.IID);
+                }
+            }
+        }
+
+        protected RevealBrush():base(global::WinRT.DerivedComposed.Instance)
+        {
+            bool isAggregation = this.GetType() != typeof(RevealBrush);
+            object baseInspectable = isAggregation ? this : null;
+            IntPtr composed = _IRevealBrushProtectedFactoryMethods.CreateInstance(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushProtectedFactory,  baseInspectable, out IntPtr inner);
+            try
+            {
+                ComWrappersHelper.Init(isAggregation, this, composed, inner, global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.IID, out _inner);
+
+            }
+            finally
+            {
+                Marshal.Release(inner);   
+            }
+        }
+
+        public static new I As<I>() => ActivationFactory.Get("Microsoft.UI.Xaml.Media.RevealBrush").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics = ActivationFactory.Get("Microsoft.UI.Xaml.Media.RevealBrush", global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static void SetState(global::Microsoft.UI.Xaml.UIElement element, RevealBrushState value) => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.SetState(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics, element, value);
+
+        public static RevealBrushState GetState(global::Microsoft.UI.Xaml.UIElement element) => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.GetState(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics, element);
+
+        public static global::Microsoft.UI.Xaml.DependencyProperty AlwaysUseFallbackProperty => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.get_AlwaysUseFallbackProperty(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics);
+
+        public static global::Microsoft.UI.Xaml.DependencyProperty ColorProperty => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.get_ColorProperty(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics);
+
+        public static global::Microsoft.UI.Xaml.DependencyProperty StateProperty => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.get_StateProperty(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics);
+
+        public static global::Microsoft.UI.Xaml.DependencyProperty TargetThemeProperty => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushStaticsMethods.get_TargetThemeProperty(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrushStatics);
+
+        public static new RevealBrush FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<RevealBrush>.FromAbi(thisPtr);
+        }
+
+        protected internal RevealBrush(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.IID);
+
+        }
+
+
+        public static bool operator ==(RevealBrush x, RevealBrush y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(RevealBrush x, RevealBrush y) => !(x == y);
+        public bool Equals(RevealBrush other) => this == other;
+        public override bool Equals(object obj) => obj is RevealBrush that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected RevealBrush(global::WinRT.DerivedComposed _):base(_)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(RevealBrush);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        public bool AlwaysUseFallback
+        {
+            get => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.get_AlwaysUseFallback(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush);
+            set => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.set_AlwaysUseFallback(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush, value);
+        }
+
+        public global::Windows.UI.Color Color
+        {
+            get => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.get_Color(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush);
+            set => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.set_Color(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush, value);
+        }
+
+        public global::Microsoft.UI.Xaml.ApplicationTheme TargetTheme
+        {
+            get => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.get_TargetTheme(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush);
+            set => global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.set_TargetTheme(_objRef_global__Microsoft_UI_Xaml_Media_IRevealBrush, value);
+        }
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<RevealBrushState>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum RevealBrushState : int
+    {
+        Normal = unchecked((int)0),
+        PointerOver = unchecked((int)0x1),
+        Pressed = unchecked((int)0x2),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Media.RotateTransform))]
@@ -15390,6 +15905,370 @@ namespace ABI.Microsoft.UI.Xaml.Media
     internal interface IRenderingEventArgs : global::Microsoft.UI.Xaml.Media.IRenderingEventArgs
     {
     }
+    internal static class IRevealBackgroundBrushMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x12, 0xD9, 0x41, 0x37, 0x83, 0xFC, 0x92, 0x5C, 0xA2, 0x2F, 0xEF, 0xC2, 0x95, 0x88, 0xB3, 0x73 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("3741D912-FC83-5C92-A22F-EFC29588B373")]
+    internal interface IRevealBackgroundBrush : global::Microsoft.UI.Xaml.Media.IRevealBackgroundBrush
+    {
+    }
+    internal static class IRevealBackgroundBrushFactoryMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush CreateInstance(IObjectReference _obj, object baseInterface, out object innerInterface)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __baseInterface = default;
+            IntPtr __innerInterface = default;
+            IntPtr __retval = default;
+            try
+            {
+                __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                innerInterface = MarshalInspectable<object>.FromAbi(__innerInterface);
+                return global::ABI.Microsoft.UI.Xaml.Media.RevealBackgroundBrush.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                MarshalInspectable<object>.DisposeAbi(__innerInterface);
+                global::ABI.Microsoft.UI.Xaml.Media.RevealBackgroundBrush.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xA, 0x2B, 0x6F, 0x7E, 0xD, 0xE7, 0x9F, 0x52, 0x80, 0x97, 0x43, 0xE0, 0x23, 0xF2, 0x94, 0x3B };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("7E6F2B0A-E70D-529F-8097-43E023F2943B")]
+    internal interface IRevealBackgroundBrushFactory : global::Microsoft.UI.Xaml.Media.IRevealBackgroundBrushFactory
+    {
+    }
+    internal static class IRevealBorderBrushMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xCB, 0xBF, 0x5D, 0xF8, 0xC6, 0x2E, 0x73, 0x5C, 0xA8, 0xBE, 0x38, 0x64, 0xC9, 0x80, 0xB9, 0x17 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("F85DBFCB-2EC6-5C73-A8BE-3864C980B917")]
+    internal interface IRevealBorderBrush : global::Microsoft.UI.Xaml.Media.IRevealBorderBrush
+    {
+    }
+    internal static class IRevealBorderBrushFactoryMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Xaml.Media.RevealBorderBrush CreateInstance(IObjectReference _obj, object baseInterface, out object innerInterface)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __baseInterface = default;
+            IntPtr __innerInterface = default;
+            IntPtr __retval = default;
+            try
+            {
+                __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                innerInterface = MarshalInspectable<object>.FromAbi(__innerInterface);
+                return global::ABI.Microsoft.UI.Xaml.Media.RevealBorderBrush.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                MarshalInspectable<object>.DisposeAbi(__innerInterface);
+                global::ABI.Microsoft.UI.Xaml.Media.RevealBorderBrush.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC2, 0xBD, 0x77, 0xC6, 0x45, 0xF0, 0x2C, 0x53, 0xBB, 0x13, 0x3C, 0xEE, 0xE1, 0x91, 0x43, 0xB2 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("C677BDC2-F045-532C-BB13-3CEEE19143B2")]
+    internal interface IRevealBorderBrushFactory : global::Microsoft.UI.Xaml.Media.IRevealBorderBrushFactory
+    {
+    }
+    internal static class IRevealBrushMethods
+    {
+
+        internal static unsafe bool get_AlwaysUseFallback(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_AlwaysUseFallback(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[11](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Windows.UI.Color get_Color(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Windows.UI.Color __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_Color(IObjectReference _obj, global::Windows.UI.Color value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Xaml.ApplicationTheme get_TargetTheme(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Xaml.ApplicationTheme __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Xaml.ApplicationTheme*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_TargetTheme(IObjectReference _obj, global::Microsoft.UI.Xaml.ApplicationTheme value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Xaml.ApplicationTheme, int>**)ThisPtr)[9](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x30, 0x73, 0x34, 0x30, 0x3, 0xA7, 0x86, 0x50, 0xBD, 0x82, 0x4E, 0x28, 0xCE, 0x83, 0x32, 0x33 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("30347330-A703-5086-BD82-4E28CE833233")]
+    internal interface IRevealBrush : global::Microsoft.UI.Xaml.Media.IRevealBrush
+    {
+    }
+    internal static class IRevealBrushProtectedFactoryMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Xaml.Media.RevealBrush CreateInstance(IObjectReference _obj, object baseInterface, out object innerInterface)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __baseInterface = default;
+            IntPtr __innerInterface = default;
+            IntPtr __retval = default;
+            try
+            {
+                __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                innerInterface = MarshalInspectable<object>.FromAbi(__innerInterface);
+                return global::ABI.Microsoft.UI.Xaml.Media.RevealBrush.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                MarshalInspectable<object>.DisposeAbi(__innerInterface);
+                global::ABI.Microsoft.UI.Xaml.Media.RevealBrush.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x5B, 0x4F, 0xA9, 0x46, 0xBD, 0x8A, 0x71, 0x55, 0xB0, 0x49, 0x7F, 0x76, 0xE3, 0xF9, 0x67, 0xC9 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("46A94F5B-8ABD-5571-B049-7F76E3F967C9")]
+    internal interface IRevealBrushProtectedFactory : global::Microsoft.UI.Xaml.Media.IRevealBrushProtectedFactory
+    {
+    }
+    internal static class IRevealBrushStaticsMethods
+    {
+
+
+        internal static unsafe void SetState(IObjectReference _obj, global::Microsoft.UI.Xaml.UIElement element, global::Microsoft.UI.Xaml.Media.RevealBrushState value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __element = default;
+            try
+            {
+                __element = global::ABI.Microsoft.UI.Xaml.UIElement.CreateMarshaler2(element);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.UI.Xaml.Media.RevealBrushState, int>**)ThisPtr)[10](ThisPtr, MarshalInspectable<object>.GetAbi(__element), value));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__element);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Xaml.Media.RevealBrushState GetState(IObjectReference _obj, global::Microsoft.UI.Xaml.UIElement element)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __element = default;
+            global::Microsoft.UI.Xaml.Media.RevealBrushState __retval = default;
+            try
+            {
+                __element = global::ABI.Microsoft.UI.Xaml.UIElement.CreateMarshaler2(element);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.UI.Xaml.Media.RevealBrushState*, int>**)ThisPtr)[11](ThisPtr, MarshalInspectable<object>.GetAbi(__element), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__element);
+            }
+        }
+        internal static unsafe global::Microsoft.UI.Xaml.DependencyProperty get_AlwaysUseFallbackProperty(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.DependencyProperty.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DependencyProperty.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Xaml.DependencyProperty get_ColorProperty(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.DependencyProperty.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DependencyProperty.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Xaml.DependencyProperty get_StateProperty(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.DependencyProperty.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DependencyProperty.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Xaml.DependencyProperty get_TargetThemeProperty(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.DependencyProperty.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DependencyProperty.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xCB, 0x7C, 0x4D, 0xF4, 0x1E, 0x7A, 0x64, 0x5D, 0xAB, 0x82, 0xA6, 0xE5, 0x29, 0xB, 0xE8, 0xD1 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("F44D7CCB-7A1E-5D64-AB82-A6E5290BE8D1")]
+    internal interface IRevealBrushStatics : global::Microsoft.UI.Xaml.Media.IRevealBrushStatics
+    {
+    }
     internal static class IRotateTransformMethods
     {
 
@@ -18315,6 +19194,81 @@ namespace ABI.Microsoft.UI.Xaml.Media
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Xaml.Media.RenderingEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct RevealBackgroundBrush
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBackgroundBrushMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class RevealBackgroundBrushRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Media.RevealBackgroundBrush(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct RevealBorderBrush
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Media.RevealBorderBrush obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Media.RevealBorderBrush obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBorderBrushMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Media.RevealBorderBrush FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Media.RevealBorderBrush.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Media.RevealBorderBrush obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Media.RevealBorderBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Media.RevealBorderBrush[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Media.RevealBorderBrush[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Media.RevealBorderBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBorderBrush>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class RevealBorderBrushRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Media.RevealBorderBrush(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct RevealBrush
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Media.RevealBrush obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Media.RevealBrush>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Media.RevealBrush obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Media.IRevealBrushMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Media.RevealBrush FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Media.RevealBrush.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Media.RevealBrush obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Media.RevealBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Media.RevealBrush[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Media.RevealBrush[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Media.RevealBrush[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Media.RevealBrush>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class RevealBrushRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Media.RevealBrush(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct RotateTransform

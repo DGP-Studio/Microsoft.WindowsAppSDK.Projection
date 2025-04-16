@@ -554,7 +554,7 @@ namespace Microsoft.Windows.Widgets.Feeds.Providers
     [global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.FeedManagerRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IFeedManager))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 262144u)]
-    public sealed class FeedManager : IFeedManager, IFeedManager2, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FeedManager>
+    public sealed class FeedManager : IFeedManager, IFeedManager2, IFeedManager3, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FeedManager>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
 
@@ -570,6 +570,14 @@ namespace Microsoft.Windows.Widgets.Feeds.Providers
             return ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2;
         }
         private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2 => ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2 ?? Make___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3 => ___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3 ?? Make___objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3();
 
 
 
@@ -641,6 +649,8 @@ namespace Microsoft.Windows.Widgets.Feeds.Providers
         public void SendMessageToContent(string feedProviderDefinitionId, string feedDefinitionId, string message) => global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager2Methods.SendMessageToContent(_objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2, feedProviderDefinitionId, feedDefinitionId, message);
 
         public void TryShowAnnouncement(string feedProviderDefinitionId, string feedDefinitionId, global::Microsoft.Windows.Widgets.Notifications.FeedAnnouncement announcement) => global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager2Methods.TryShowAnnouncement(_objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager2, feedProviderDefinitionId, feedDefinitionId, announcement);
+
+        public void TryRemoveAnnouncementById(string feedProviderDefinitionId, string feedDefinitionId, string announcementId) => global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3Methods.TryRemoveAnnouncementById(_objRef_global__Microsoft_Windows_Widgets_Feeds_Providers_IFeedManager3, feedProviderDefinitionId, feedDefinitionId, announcementId);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -1366,6 +1376,12 @@ namespace Microsoft.Windows.Widgets.Feeds.Providers
     {
         void SendMessageToContent(string feedProviderDefinitionId, string feedDefinitionId, string message);
         void TryShowAnnouncement(string feedProviderDefinitionId, string feedDefinitionId, global::Microsoft.Windows.Widgets.Notifications.FeedAnnouncement announcement);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("A6AF915B-0CDC-46F1-A4D6-10D8C644984A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 458752u)]
+    public interface IFeedManager3
+    {
+        void TryRemoveAnnouncementById(string feedProviderDefinitionId, string feedDefinitionId, string announcementId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("4BAF5174-77D6-5E2A-94EA-4F14CCDB1F2C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManagerStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 262144u)]
@@ -2516,6 +2532,77 @@ namespace ABI.Microsoft.Windows.Widgets.Feeds.Providers
         {
             var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager2).TypeHandle));
             global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager2Methods.TryShowAnnouncement(_obj, feedProviderDefinitionId, feedDefinitionId, announcement);
+        }
+    }
+
+    public static class IFeedManager3Methods
+    {
+
+
+        public static unsafe void TryRemoveAnnouncementById(IObjectReference _obj, string feedProviderDefinitionId, string feedDefinitionId, string announcementId)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __feedProviderDefinitionId = new(feedProviderDefinitionId);
+            MarshalString.Pinnable __feedDefinitionId = new(feedDefinitionId);
+            MarshalString.Pinnable __announcementId = new(announcementId);
+            fixed(void* ___feedProviderDefinitionId = __feedProviderDefinitionId, ___feedDefinitionId = __feedDefinitionId, ___announcementId = __announcementId)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __feedProviderDefinitionId), MarshalString.GetAbi(ref __feedDefinitionId), MarshalString.GetAbi(ref __announcementId)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x5B, 0x91, 0xAF, 0xA6, 0xDC, 0xC, 0xF1, 0x46, 0xA4, 0xD6, 0x10, 0xD8, 0xC6, 0x44, 0x98, 0x4A };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IFeedManager3.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("A6AF915B-0CDC-46F1-A4D6-10D8C644984A")]
+    internal unsafe interface IFeedManager3 : global::Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IFeedManager3()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IFeedManager3), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_TryRemoveAnnouncementById_0;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_TryRemoveAnnouncementById_0(IntPtr thisPtr, IntPtr feedProviderDefinitionId, IntPtr feedDefinitionId, IntPtr announcementId)
+        {
+
+
+
+            try
+            {
+                global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3>(thisPtr).TryRemoveAnnouncementById(MarshalString.FromAbi(feedProviderDefinitionId), MarshalString.FromAbi(feedDefinitionId), MarshalString.FromAbi(announcementId));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe void global::Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3.TryRemoveAnnouncementById(string feedProviderDefinitionId, string feedDefinitionId, string announcementId)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3).TypeHandle));
+            global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3Methods.TryRemoveAnnouncementById(_obj, feedProviderDefinitionId, feedDefinitionId, announcementId);
         }
     }
 

@@ -843,6 +843,7 @@ namespace Microsoft.UI.Xaml.Automation.Peers
         ConversionTargetChanged = unchecked((int)0x1b),
         TextEditTextChanged = unchecked((int)0x1c),
         LayoutInvalidated = unchecked((int)0x1d),
+        Notification = unchecked((int)0x1e),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<AutomationHeadingLevel>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.WinUIContract), 65536u)]
     public enum AutomationHeadingLevel : int
@@ -5832,6 +5833,19 @@ namespace Microsoft.UI.Xaml.Automation.Peers
     {
         InfoBarAutomationPeer CreateInstance(global::Microsoft.UI.Xaml.Controls.InfoBar owner, object baseInterface, out object innerInterface);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("9E7D5369-4F6E-5852-B510-BD14D1C41042")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeer))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInkCanvasAutomationPeer
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("1E1F2231-06DD-57EB-AE67-7064AEE3E9C9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInkCanvasAutomationPeerFactory
+    {
+        InkCanvasAutomationPeer CreateInstance(global::Microsoft.UI.Xaml.Controls.InkCanvas owner, object baseInterface, out object innerInterface);
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("BE8A71BB-3E36-54D2-920E-60722F1C62FF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IItemAutomationPeer))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.WinUIContract), 65536u)]
     internal interface IItemAutomationPeer
@@ -6102,6 +6116,19 @@ namespace Microsoft.UI.Xaml.Automation.Peers
     internal interface INumberBoxAutomationPeerFactory
     {
         NumberBoxAutomationPeer CreateInstance(global::Microsoft.UI.Xaml.Controls.NumberBox owner, object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("426B3254-1C6E-5F23-B58D-0378C34BDAF6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IPagerControlAutomationPeer
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("E35F3D24-484D-5AF2-8A0C-6F1EDA4691FA")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IPagerControlAutomationPeerFactory
+    {
+        PagerControlAutomationPeer CreateInstance(global::Microsoft.UI.Xaml.Controls.PagerControl owner, object baseInterface, out object innerInterface);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("49B18DBA-FA3B-5106-A1E8-1AAA3D24D5E1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPasswordBoxAutomationPeer))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.WinUIContract), 65536u)]
@@ -6809,6 +6836,141 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 
         }
         bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(InfoBarAutomationPeer);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer))]
+    [global::ABI.Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeerRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IInkCanvasAutomationPeer))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class InkCanvasAutomationPeer : FrameworkElementAutomationPeer, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<InkCanvasAutomationPeer>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer => ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer ?? Make___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeer();
+
+
+
+        private static class _IInkCanvasAutomationPeerFactoryMethods
+        {
+            public static unsafe IntPtr CreateInstance(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.InkCanvas owner, object baseInterface, out IntPtr innerInterface)
+            {
+                var ThisPtr = _obj.ThisPtr;
+
+                ObjectReferenceValue __owner = default;
+                ObjectReferenceValue __baseInterface = default;
+                IntPtr __innerInterface = default;
+                IntPtr __retval = default;
+                try
+                {
+                    __owner = global::ABI.Microsoft.UI.Xaml.Controls.InkCanvas.CreateMarshaler2(owner);
+                    __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__owner), MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    innerInterface = __innerInterface;
+                    return __retval;
+                }
+                finally
+                {
+                    MarshalInspectable<object>.DisposeMarshaler(__owner);
+                    MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                }
+            }
+        }
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeerFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeerFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeerFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeerFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer", global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerFactoryMethods.IID);
+                }
+            }
+        }
+
+        public InkCanvasAutomationPeer(global::Microsoft.UI.Xaml.Controls.InkCanvas owner):base(global::WinRT.DerivedComposed.Instance)
+        {
+            bool isAggregation = this.GetType() != typeof(InkCanvasAutomationPeer);
+            object baseInspectable = isAggregation ? this : null;
+            IntPtr composed = _IInkCanvasAutomationPeerFactoryMethods.CreateInstance(_objRef_global__Microsoft_UI_Xaml_Automation_Peers_IInkCanvasAutomationPeerFactory, owner, baseInspectable, out IntPtr inner);
+            try
+            {
+                ComWrappersHelper.Init(isAggregation, this, composed, inner, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerMethods.IID, out _inner);
+
+            }
+            finally
+            {
+                Marshal.Release(inner);   
+            }
+        }
+
+        public static new InkCanvasAutomationPeer FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<InkCanvasAutomationPeer>.FromAbi(thisPtr);
+        }
+
+        protected internal InkCanvasAutomationPeer(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerMethods.IID);
+
+        }
+
+
+        public static bool operator ==(InkCanvasAutomationPeer x, InkCanvasAutomationPeer y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(InkCanvasAutomationPeer x, InkCanvasAutomationPeer y) => !(x == y);
+        public bool Equals(InkCanvasAutomationPeer other) => this == other;
+        public override bool Equals(object obj) => obj is InkCanvasAutomationPeer that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected InkCanvasAutomationPeer(global::WinRT.DerivedComposed _):base(_)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(InkCanvasAutomationPeer);
         IObjectReference IWinRTObject.NativeObject => _inner;
 
         private struct InterfaceTag<I>{};
@@ -10259,6 +10421,141 @@ namespace Microsoft.UI.Xaml.Automation.Peers
 
         }
         bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(NumberBoxAutomationPeer);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer))]
+    [global::ABI.Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeerRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IPagerControlAutomationPeer))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class PagerControlAutomationPeer : FrameworkElementAutomationPeer, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<PagerControlAutomationPeer>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer => ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer ?? Make___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeer();
+
+
+
+        private static class _IPagerControlAutomationPeerFactoryMethods
+        {
+            public static unsafe IntPtr CreateInstance(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.PagerControl owner, object baseInterface, out IntPtr innerInterface)
+            {
+                var ThisPtr = _obj.ThisPtr;
+
+                ObjectReferenceValue __owner = default;
+                ObjectReferenceValue __baseInterface = default;
+                IntPtr __innerInterface = default;
+                IntPtr __retval = default;
+                try
+                {
+                    __owner = global::ABI.Microsoft.UI.Xaml.Controls.PagerControl.CreateMarshaler2(owner);
+                    __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__owner), MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    innerInterface = __innerInterface;
+                    return __retval;
+                }
+                finally
+                {
+                    MarshalInspectable<object>.DisposeMarshaler(__owner);
+                    MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                }
+            }
+        }
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer", global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactoryMethods.IID);
+                }
+            }
+        }
+
+        public PagerControlAutomationPeer(global::Microsoft.UI.Xaml.Controls.PagerControl owner):base(global::WinRT.DerivedComposed.Instance)
+        {
+            bool isAggregation = this.GetType() != typeof(PagerControlAutomationPeer);
+            object baseInspectable = isAggregation ? this : null;
+            IntPtr composed = _IPagerControlAutomationPeerFactoryMethods.CreateInstance(_objRef_global__Microsoft_UI_Xaml_Automation_Peers_IPagerControlAutomationPeerFactory, owner, baseInspectable, out IntPtr inner);
+            try
+            {
+                ComWrappersHelper.Init(isAggregation, this, composed, inner, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerMethods.IID, out _inner);
+
+            }
+            finally
+            {
+                Marshal.Release(inner);   
+            }
+        }
+
+        public static new PagerControlAutomationPeer FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<PagerControlAutomationPeer>.FromAbi(thisPtr);
+        }
+
+        protected internal PagerControlAutomationPeer(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerMethods.IID);
+
+        }
+
+
+        public static bool operator ==(PagerControlAutomationPeer x, PagerControlAutomationPeer y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(PagerControlAutomationPeer x, PagerControlAutomationPeer y) => !(x == y);
+        public bool Equals(PagerControlAutomationPeer other) => this == other;
+        public override bool Equals(object obj) => obj is PagerControlAutomationPeer that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected PagerControlAutomationPeer(global::WinRT.DerivedComposed _):base(_)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(PagerControlAutomationPeer);
         IObjectReference IWinRTObject.NativeObject => _inner;
 
         private struct InterfaceTag<I>{};
@@ -22154,6 +22451,72 @@ namespace ABI.Microsoft.UI.Xaml.Automation.Peers
     internal interface IInfoBarAutomationPeerFactory : global::Microsoft.UI.Xaml.Automation.Peers.IInfoBarAutomationPeerFactory
     {
     }
+    internal static class IInkCanvasAutomationPeerMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x69, 0x53, 0x7D, 0x9E, 0x6E, 0x4F, 0x52, 0x58, 0xB5, 0x10, 0xBD, 0x14, 0xD1, 0xC4, 0x10, 0x42 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("9E7D5369-4F6E-5852-B510-BD14D1C41042")]
+    internal interface IInkCanvasAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeer
+    {
+    }
+    internal static class IInkCanvasAutomationPeerFactoryMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer CreateInstance(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.InkCanvas owner, object baseInterface, out object innerInterface)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __owner = default;
+            ObjectReferenceValue __baseInterface = default;
+            IntPtr __innerInterface = default;
+            IntPtr __retval = default;
+            try
+            {
+                __owner = global::ABI.Microsoft.UI.Xaml.Controls.InkCanvas.CreateMarshaler2(owner);
+                __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__owner), MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                innerInterface = MarshalInspectable<object>.FromAbi(__innerInterface);
+                return global::ABI.Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__owner);
+                MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                MarshalInspectable<object>.DisposeAbi(__innerInterface);
+                global::ABI.Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x31, 0x22, 0x1F, 0x1E, 0xDD, 0x6, 0xEB, 0x57, 0xAE, 0x67, 0x70, 0x64, 0xAE, 0xE3, 0xE9, 0xC9 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("1E1F2231-06DD-57EB-AE67-7064AEE3E9C9")]
+    internal interface IInkCanvasAutomationPeerFactory : global::Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerFactory
+    {
+    }
     internal static class IItemAutomationPeerMethods
     {
 
@@ -23821,6 +24184,72 @@ namespace ABI.Microsoft.UI.Xaml.Automation.Peers
     }
     [Guid("659719AC-4405-58F4-BDE2-EF61DFE64C21")]
     internal interface INumberBoxAutomationPeerFactory : global::Microsoft.UI.Xaml.Automation.Peers.INumberBoxAutomationPeerFactory
+    {
+    }
+    internal static class IPagerControlAutomationPeerMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x54, 0x32, 0x6B, 0x42, 0x6E, 0x1C, 0x23, 0x5F, 0xB5, 0x8D, 0x3, 0x78, 0xC3, 0x4B, 0xDA, 0xF6 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("426B3254-1C6E-5F23-B58D-0378C34BDAF6")]
+    internal interface IPagerControlAutomationPeer : global::Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeer
+    {
+    }
+    internal static class IPagerControlAutomationPeerFactoryMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer CreateInstance(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.PagerControl owner, object baseInterface, out object innerInterface)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __owner = default;
+            ObjectReferenceValue __baseInterface = default;
+            IntPtr __innerInterface = default;
+            IntPtr __retval = default;
+            try
+            {
+                __owner = global::ABI.Microsoft.UI.Xaml.Controls.PagerControl.CreateMarshaler2(owner);
+                __baseInterface = MarshalInspectable<object>.CreateMarshaler2(baseInterface);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__owner), MarshalInspectable<object>.GetAbi(__baseInterface), &__innerInterface, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                innerInterface = MarshalInspectable<object>.FromAbi(__innerInterface);
+                return global::ABI.Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__owner);
+                MarshalInspectable<object>.DisposeMarshaler(__baseInterface);
+                MarshalInspectable<object>.DisposeAbi(__innerInterface);
+                global::ABI.Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x24, 0x3D, 0x5F, 0xE3, 0x4D, 0x48, 0xF2, 0x5A, 0x8A, 0xC, 0x6F, 0x1E, 0xDA, 0x46, 0x91, 0xFA };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("E35F3D24-484D-5AF2-8A0C-6F1EDA4691FA")]
+    internal interface IPagerControlAutomationPeerFactory : global::Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerFactory
     {
     }
     internal static class IPasswordBoxAutomationPeerMethods
@@ -26611,6 +27040,31 @@ namespace ABI.Microsoft.UI.Xaml.Automation.Peers
             => new global::Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct InkCanvasAutomationPeer
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IInkCanvasAutomationPeerMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class InkCanvasAutomationPeerRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Automation.Peers.InkCanvasAutomationPeer(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct ItemAutomationPeer
     {
 
@@ -27259,6 +27713,31 @@ namespace ABI.Microsoft.UI.Xaml.Automation.Peers
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Xaml.Automation.Peers.NumberBoxAutomationPeer(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct PagerControlAutomationPeer
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Automation.Peers.IPagerControlAutomationPeerMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class PagerControlAutomationPeerRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct PasswordBoxAutomationPeer

@@ -76,6 +76,25 @@ namespace Microsoft.Windows.Storage
 
         public static ApplicationData GetForPackageFamily(string packageFamilyName) => global::ABI.Microsoft.Windows.Storage.IApplicationDataStaticsMethods.GetForPackageFamily(_objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics, packageFamilyName);
 
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics2;
+        private static IObjectReference _objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics2
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics2;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics2 = ActivationFactory.Get("Microsoft.Windows.Storage.ApplicationData", global::ABI.Microsoft.Windows.Storage.IApplicationDataStatics2Methods.IID);
+                }
+            }
+        }
+
+        public static ApplicationData GetForUnpackaged(string publisher, string product) => global::ABI.Microsoft.Windows.Storage.IApplicationDataStatics2Methods.GetForUnpackaged(_objRef_global__Microsoft_Windows_Storage_IApplicationDataStatics2, publisher, product);
+
         public static ApplicationData FromAbi(IntPtr thisPtr)
         {
             if (thisPtr == IntPtr.Zero) return null;
@@ -322,6 +341,13 @@ namespace Microsoft.Windows.Storage
         ApplicationData GetDefault();
         ApplicationData GetForUser(global::Windows.System.User user);
         ApplicationData GetForPackageFamily(string packageFamilyName);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage")][Guid("33C2CCE4-6697-54B9-B845-4E12D26306FF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.IApplicationDataStatics2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ApplicationDataContract), 131072u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IApplicationDataStatics2
+    {
+        ApplicationData GetForUnpackaged(string publisher, string product);
     }
 }
 
@@ -867,6 +893,48 @@ namespace ABI.Microsoft.Windows.Storage
     }
     [Guid("6A8B41F8-5560-56FB-86B0-D59E897D4D95")]
     internal interface IApplicationDataStatics : global::Microsoft.Windows.Storage.IApplicationDataStatics
+    {
+    }
+    internal static class IApplicationDataStatics2Methods
+    {
+
+
+        internal static unsafe global::Microsoft.Windows.Storage.ApplicationData GetForUnpackaged(IObjectReference _obj, string publisher, string product)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __publisher = new(publisher);
+                MarshalString.Pinnable __product = new(product);
+                fixed(void* ___publisher = __publisher, ___product = __product)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __publisher), MarshalString.GetAbi(ref __product), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.Windows.Storage.ApplicationData.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.Storage.ApplicationData.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xE4, 0xCC, 0xC2, 0x33, 0x97, 0x66, 0xB9, 0x54, 0xB8, 0x45, 0x4E, 0x12, 0xD2, 0x63, 0x6, 0xFF };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("33C2CCE4-6697-54B9-B845-4E12D26306FF")]
+    internal interface IApplicationDataStatics2 : global::Microsoft.Windows.Storage.IApplicationDataStatics2
     {
     }
 }

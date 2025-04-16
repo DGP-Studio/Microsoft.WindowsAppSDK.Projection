@@ -47,6 +47,14 @@ namespace Microsoft.Windows.AppNotifications.Builder
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilder2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2 => ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2 ?? Make___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2();
+
 
 
         private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_Builder_AppNotificationBuilder;
@@ -193,6 +201,8 @@ namespace Microsoft.Windows.AppNotifications.Builder
 
         public AppNotificationBuilder SetGroup(string group) => global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilderMethods.SetGroup(_objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder, group);
 
+        public AppNotificationBuilder AddCameraPreview() => global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilder2Methods.AddCameraPreview(_objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationBuilder2);
+
         private bool IsOverridableInterface(Guid iid) => false;
 
         global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
@@ -229,6 +239,14 @@ namespace Microsoft.Windows.AppNotifications.Builder
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButton2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2 => ___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2 ?? Make___objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2();
+
 
 
         private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_Builder_AppNotificationButton;
@@ -386,6 +404,8 @@ namespace Microsoft.Windows.AppNotifications.Builder
 
         public AppNotificationButton SetInvokeUri(global::System.Uri protocolUri, string targetAppId) => global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButtonMethods.SetInvokeUri(_objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton, protocolUri, targetAppId);
 
+        public AppNotificationButton SetSettingStyle(AppNotificationButtonSettingStyle value) => global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButton2Methods.SetSettingStyle(_objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton2, value);
+
         public global::System.Collections.Generic.IDictionary<string, string> Arguments
         {
             get => global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButtonMethods.get_Arguments(_objRef_global__Microsoft_Windows_AppNotifications_Builder_IAppNotificationButton);
@@ -457,6 +477,14 @@ namespace Microsoft.Windows.AppNotifications.Builder
 
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<AppNotificationButtonSettingStyle>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 131072u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum AppNotificationButtonSettingStyle : int
+    {
+        None = unchecked((int)0),
+        VideoCallConfig = unchecked((int)0x1),
+        AudioCallConfig = unchecked((int)0x2),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<AppNotificationButtonStyle>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 65536u)]
     public enum AppNotificationButtonStyle : int
@@ -978,6 +1006,13 @@ namespace Microsoft.Windows.AppNotifications.Builder
         AppNotificationBuilder SetTag(string value);
         AppNotificationBuilder SetGroup(string group);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][Guid("FD3F5F12-4985-5405-A519-73A6F9F4D7BC")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilder2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 131072u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IAppNotificationBuilder2
+    {
+        AppNotificationBuilder AddCameraPreview();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][Guid("C7042D2A-D319-520E-A314-50081C8888CC")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilderStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 65536u)]
     internal interface IAppNotificationBuilderStatics
@@ -1007,6 +1042,13 @@ namespace Microsoft.Windows.AppNotifications.Builder
         global::System.Uri InvokeUri { get; set; }
         string TargetAppId { get; set; }
         string ToolTip { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][Guid("2337DFA5-0233-53CB-9C5D-05F56B4C0099")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButton2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 131072u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IAppNotificationButton2
+    {
+        AppNotificationButton SetSettingStyle(AppNotificationButtonSettingStyle value);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications.Builder")][Guid("4F109286-0A6D-5A5E-9E8F-9FE31669FBB8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.Builder.IAppNotificationButtonFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationBuilderContract), 65536u)]
@@ -1806,6 +1848,43 @@ namespace ABI.Microsoft.Windows.AppNotifications.Builder
     internal interface IAppNotificationBuilder : global::Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilder
     {
     }
+    internal static class IAppNotificationBuilder2Methods
+    {
+
+
+        internal static unsafe global::Microsoft.Windows.AppNotifications.Builder.AppNotificationBuilder AddCameraPreview(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AppNotifications.Builder.AppNotificationBuilder.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AppNotifications.Builder.AppNotificationBuilder.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x12, 0x5F, 0x3F, 0xFD, 0x85, 0x49, 0x5, 0x54, 0xA5, 0x19, 0x73, 0xA6, 0xF9, 0xF4, 0xD7, 0xBC };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("FD3F5F12-4985-5405-A519-73A6F9F4D7BC")]
+    internal interface IAppNotificationBuilder2 : global::Microsoft.Windows.AppNotifications.Builder.IAppNotificationBuilder2
+    {
+    }
     internal static class IAppNotificationBuilderStaticsMethods
     {
 
@@ -2262,6 +2341,43 @@ namespace ABI.Microsoft.Windows.AppNotifications.Builder
     }
     [Guid("A7C03031-5634-5098-AEC9-47ECB60C3499")]
     internal interface IAppNotificationButton : global::Microsoft.Windows.AppNotifications.Builder.IAppNotificationButton
+    {
+    }
+    internal static class IAppNotificationButton2Methods
+    {
+
+
+        internal static unsafe global::Microsoft.Windows.AppNotifications.Builder.AppNotificationButton SetSettingStyle(IObjectReference _obj, global::Microsoft.Windows.AppNotifications.Builder.AppNotificationButtonSettingStyle value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AppNotifications.Builder.AppNotificationButtonSettingStyle, IntPtr*, int>**)ThisPtr)[6](ThisPtr, value, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AppNotifications.Builder.AppNotificationButton.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AppNotifications.Builder.AppNotificationButton.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xA5, 0xDF, 0x37, 0x23, 0x33, 0x2, 0xCB, 0x53, 0x9C, 0x5D, 0x5, 0xF5, 0x6B, 0x4C, 0x0, 0x99 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("2337DFA5-0233-53CB-9C5D-05F56B4C0099")]
+    internal interface IAppNotificationButton2 : global::Microsoft.Windows.AppNotifications.Builder.IAppNotificationButton2
     {
     }
     internal static class IAppNotificationButtonFactoryMethods

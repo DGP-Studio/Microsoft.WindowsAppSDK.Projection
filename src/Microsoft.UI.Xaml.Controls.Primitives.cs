@@ -5062,6 +5062,16 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
         event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomAnimationStartingEventArgs> ZoomAnimationStarting;
         event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomCompletedEventArgs> ZoomCompleted;
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("F178EEBB-4285-5969-A222-4D7EFA8D6B19")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IScrollPresenter2
+    {
+        event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> ScrollStarting;
+        event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> ZoomStarting;
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("9F5CDC57-D229-52B2-AEE4-37C496764EA3")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterFactory))]
     [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
     [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
@@ -10072,6 +10082,14 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
         }
         private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter => ___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2 => ___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2 ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2();
+
         private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_IScrollAnchorProvider;
         private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Controls_IScrollAnchorProvider()
         {
@@ -10298,6 +10316,18 @@ namespace Microsoft.UI.Xaml.Controls.Primitives
         {
             add => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterMethods.Get_ZoomCompleted2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenterMethods.Get_ZoomCompleted2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> ScrollStarting
+        {
+            add => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2Methods.Get_ScrollStarting2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2Methods.Get_ScrollStarting2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> ZoomStarting
+        {
+            add => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2Methods.Get_ZoomStarting2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2Methods.Get_ZoomStarting2(_objRef_global__Microsoft_UI_Xaml_Controls_Primitives_IScrollPresenter2, (IWinRTObject)this).Unsubscribe(value);
         }
 
         public void RegisterAnchorCandidate(global::Microsoft.UI.Xaml.UIElement element) => global::ABI.Microsoft.UI.Xaml.Controls.IScrollAnchorProviderMethods.RegisterAnchorCandidate(_objRef_global__Microsoft_UI_Xaml_Controls_IScrollAnchorProvider, element);
@@ -27916,6 +27946,78 @@ namespace ABI.Microsoft.UI.Xaml.Controls.Primitives
     }
     [Guid("424B8AFD-F7AA-5E5B-9D0B-5F0EA4E1A56E")]
     internal interface IScrollPresenter : global::Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter
+    {
+    }
+    internal static class IScrollPresenter2Methods
+    {
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>> _ScrollStarting_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>> MakeScrollStartingTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _ScrollStarting_, new(), null);
+            return _ScrollStarting_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>> _ScrollStarting => _ScrollStarting_ ?? MakeScrollStartingTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>> Get_ScrollStarting2(IObjectReference _obj, object _thisObj)
+        {
+            return _ScrollStarting.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[6],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[7],
+                0);
+            });
+        }
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>> _ZoomStarting_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>> MakeZoomStartingTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _ZoomStarting_, new(), null);
+            return _ZoomStarting_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>> _ZoomStarting => _ZoomStarting_ ?? MakeZoomStartingTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>> Get_ZoomStarting2(IObjectReference _obj, object _thisObj)
+        {
+            return _ZoomStarting.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
+                1);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xBB, 0xEE, 0x78, 0xF1, 0x85, 0x42, 0x69, 0x59, 0xA2, 0x22, 0x4D, 0x7E, 0xFA, 0x8D, 0x6B, 0x19 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("F178EEBB-4285-5969-A222-4D7EFA8D6B19")]
+    internal interface IScrollPresenter2 : global::Microsoft.UI.Xaml.Controls.Primitives.IScrollPresenter2
     {
     }
     internal static class IScrollPresenterFactoryMethods

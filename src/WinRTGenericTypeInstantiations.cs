@@ -70,6 +70,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ScrollView__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.ScrollView sender, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.ScrollView.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.ScrollView.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVectorView_1_Windows_Foundation_DateTime
     {
         private static bool Initialized { get; } = Init();
@@ -2348,6 +2404,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2, IntPtr, global::Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2, IntPtr, global::Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_SelectionModel__Microsoft_UI_Xaml_Controls_SelectionModelSelectionChangedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.SelectionModel sender, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.SelectionModel.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.SelectionModel.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -6402,6 +6514,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter sender, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2__Microsoft_Web_WebView2_Core_CoreWebView2WebResourceResponseReceivedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -6739,6 +6907,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ComboBox, IntPtr, global::Microsoft.UI.Xaml.Controls.ComboBoxTextSubmittedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ComboBox, IntPtr, global::Microsoft.UI.Xaml.Controls.ComboBoxTextSubmittedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_RecyclingElementFactory__Microsoft_UI_Xaml_Controls_SelectTemplateEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory sender, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.RecyclingElementFactory.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.RecyclingElementFactory.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -9193,6 +9417,115 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Input_Pointer.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IMap_2_String__Microsoft_UI_Xaml_DataTemplate
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.UI.Xaml.DataTemplate Lookup(IObjectReference _obj, string key)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __key = new(key);
+                fixed(void* ___key = __key)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __key), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.UI.Xaml.DataTemplate.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DataTemplate.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool HasKey(IObjectReference _obj, string key)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            MarshalString.Pinnable __key = new(key);
+            fixed(void* ___key = __key)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, byte*, int>**)ThisPtr)[8](ThisPtr, MarshalString.GetAbi(ref __key), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval != 0;
+            }
+        }
+
+        private static unsafe global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate> GetView(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IMapView_2_String__Microsoft_UI_Xaml_DataTemplate.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool Insert(IObjectReference _obj, string key, global::Microsoft.UI.Xaml.DataTemplate value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            byte __retval = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Xaml.DataTemplate.CreateMarshaler2(value);
+                MarshalString.Pinnable __key = new(key);
+                fixed(void* ___key = __key)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, byte*, int>**)ThisPtr)[10](ThisPtr, MarshalString.GetAbi(ref __key), MarshalInspectable<object>.GetAbi(__value), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return __retval != 0;
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe void Remove(IObjectReference _obj, string key)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __key = new(key);
+            fixed(void* ___key = __key)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __key)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IDictionaryMethods<string, IntPtr, global::Microsoft.UI.Xaml.DataTemplate, IntPtr>.InitRcwHelper(&Lookup,
+            &HasKey,
+            &GetView,
+            &Insert,
+            &Remove);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_.EnsureInitialized();
             return true;
         }
     }
@@ -11988,6 +12321,198 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ItemContainer__Microsoft_UI_Xaml_Controls_ItemContainerInvokedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.ItemContainer sender, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.ItemContainer.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ItemContainer, IntPtr, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.ItemContainer.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ItemContainer, IntPtr, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ItemContainer, IntPtr, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter sender, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_UI_Xaml_Controls_IndexPath
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.UI.Xaml.Controls.IndexPath GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, IntPtr*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.IndexPath value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            uint __index = default;
+            byte __retval = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value), &__index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                index = __index;
+                return __retval != 0;
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.UI.Xaml.Controls.IndexPath[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.IndexPath>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.UI.Xaml.Controls.IndexPath, IntPtr>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_IndexPath.EnsureInitialized();
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Media_Animation_ConnectedAnimation__object
     {
         private static bool Initialized { get; } = Init();
@@ -12343,6 +12868,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.PasswordBox, IntPtr, global::Microsoft.UI.Xaml.Controls.PasswordBoxPasswordChangingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.PasswordBox, IntPtr, global::Microsoft.UI.Xaml.Controls.PasswordBoxPasswordChangingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ScrollView__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.ScrollView sender, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.ScrollView.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.ScrollView.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.ScrollView, IntPtr, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -25728,6 +26309,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_PagerControl__Microsoft_UI_Xaml_Controls_PagerControlSelectedIndexChangedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.PagerControl sender, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.PagerControl.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.PagerControl, IntPtr, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.PagerControl.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.PagerControl, IntPtr, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.PagerControl, IntPtr, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_IAsyncOperation_1_Windows_Storage_StorageFile
     {
         private static bool Initialized { get; } = Init();
@@ -27686,6 +28323,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Expander, IntPtr, global::Microsoft.UI.Xaml.Controls.ExpanderCollapsedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Expander, IntPtr, global::Microsoft.UI.Xaml.Controls.ExpanderCollapsedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_SelectionModel__Microsoft_UI_Xaml_Controls_SelectionModelChildrenRequestedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.SelectionModel sender, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.SelectionModel.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.SelectionModel.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.SelectionModel, IntPtr, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -36821,6 +37514,40 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_IndexPath
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.UI.Xaml.Controls.IndexPath> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Controls_IndexPath.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.UI.Xaml.Controls.IndexPath>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.UI.Xaml.Controls.IndexPath>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.UI.Xaml.Controls.IndexPath, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Web_WebView2_Core_CoreWebView2PermissionSetting_
     {
         private static bool Initialized { get; } = Init();
@@ -40525,6 +41252,82 @@ namespace WinRT.GenericTypeInstantiations
 
             global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AppNotifications.AppNotificationProgressResult, global::Microsoft.Windows.AppNotifications.AppNotificationProgressResult>.InitCcw(&Do_Abi_Invoke);
 
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IMapView_2_String__Microsoft_UI_Xaml_DataTemplate
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.UI.Xaml.DataTemplate Lookup(IObjectReference _obj, string key)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __key = new(key);
+                fixed(void* ___key = __key)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __key), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.UI.Xaml.DataTemplate.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DataTemplate.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool HasKey(IObjectReference _obj, string key)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            MarshalString.Pinnable __key = new(key);
+            fixed(void* ___key = __key)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, byte*, int>**)ThisPtr)[8](ThisPtr, MarshalString.GetAbi(ref __key), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval != 0;
+            }
+        }
+
+        private static unsafe void Split(IObjectReference _obj, out global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate> first, out global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate> second)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __first = default;
+            IntPtr __second = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__first, &__second));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IMapView_2_String__Microsoft_UI_Xaml_DataTemplate.EnsureInitialized();
+                first = MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.FromAbi(__first);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IMapView_2_String__Microsoft_UI_Xaml_DataTemplate.EnsureInitialized();
+                second = MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.FromAbi(__second);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.DisposeAbi(__first);
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyDictionary<string, global::Microsoft.UI.Xaml.DataTemplate>>.DisposeAbi(__second);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyDictionaryMethods<string, IntPtr, global::Microsoft.UI.Xaml.DataTemplate, IntPtr>.InitRcwHelper(&Lookup,
+            &HasKey,
+            &Split);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_.EnsureInitialized();
             return true;
         }
     }
@@ -44295,6 +45098,40 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Media_Brush
     {
         private static bool Initialized { get; } = Init();
@@ -46794,6 +47631,64 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Controls_IndexPath
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.IndexPath[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.IndexPath>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.UI.Xaml.Controls.IndexPath get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.Controls.IndexPath.DisposeAbi(__retval);
+            }
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.UI.Xaml.Controls.IndexPath, IntPtr>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AppNotifications_AppNotification
     {
         private static bool Initialized { get; } = Init();
@@ -48075,6 +48970,65 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterator_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate> get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>>.DisposeAbi(__retval);
+            }
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::System.Collections.Generic.KeyValuePair<string, global::Microsoft.UI.Xaml.DataTemplate>, IntPtr>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Controls_ItemCollectionTransition
     {
         private static bool Initialized { get; } = Init();
@@ -48926,6 +49880,57 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.KeyValuePairMethods<string, IntPtr, double, double>.InitRcwHelper(&get_Key,
+            &get_Value);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+        private static unsafe string get_Key(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe global::Microsoft.UI.Xaml.DataTemplate get_Value(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Xaml.DataTemplate.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Xaml.DataTemplate.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.KeyValuePairMethods<string, IntPtr, global::Microsoft.UI.Xaml.DataTemplate, IntPtr>.InitRcwHelper(&get_Key,
             &get_Value);
 
             return true;

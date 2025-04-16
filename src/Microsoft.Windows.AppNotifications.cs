@@ -41,6 +41,14 @@ namespace Microsoft.Windows.AppNotifications
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_IAppNotification => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AppNotifications.IAppNotification2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2 => ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2 ?? Make___objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2();
+
 
 
         private static class _IAppNotificationFactoryMethods
@@ -133,6 +141,12 @@ namespace Microsoft.Windows.AppNotifications
 
         private struct InterfaceTag<I>{};
 
+
+        public AppNotificationConferencingConfig ConferencingConfig
+        {
+            get => global::ABI.Microsoft.Windows.AppNotifications.IAppNotification2Methods.get_ConferencingConfig(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2);
+            set => global::ABI.Microsoft.Windows.AppNotifications.IAppNotification2Methods.set_ConferencingConfig(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotification2, value);
+        }
 
         public global::System.DateTimeOffset Expiration
         {
@@ -267,6 +281,145 @@ namespace Microsoft.Windows.AppNotifications
         public global::System.Collections.Generic.IDictionary<string, string> Arguments => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationActivatedEventArgs2Methods.get_Arguments(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationActivatedEventArgs2);
 
         public global::System.Collections.Generic.IDictionary<string, string> UserInput => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationActivatedEventArgsMethods.get_UserInput(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationActivatedEventArgs);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig))]
+    [global::ABI.Microsoft.Windows.AppNotifications.AppNotificationConferencingConfigRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IAppNotificationConferencingConfig))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 262144u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class AppNotificationConferencingConfig : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<AppNotificationConferencingConfig>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig => _inner;
+
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_AppNotificationConferencingConfig;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_AppNotificationConferencingConfig
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_AppNotifications_AppNotificationConferencingConfig;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_AppNotifications_AppNotificationConferencingConfig = ActivationFactory.Get("Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig");
+                }
+            }
+        }
+
+        public AppNotificationConferencingConfig() 
+        {
+            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Windows_AppNotifications_AppNotificationConferencingConfig, global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.IID);
+            ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
+            ComWrappersHelper.Init(_inner, false);
+
+        }
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfigStatics;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfigStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfigStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfigStatics = ActivationFactory.Get("Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig", global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static bool IsCallingPreviewSupported() => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigStaticsMethods.IsCallingPreviewSupported(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfigStatics);
+
+        public static AppNotificationConferencingConfig FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<AppNotificationConferencingConfig>.FromAbi(thisPtr);
+        }
+
+        internal AppNotificationConferencingConfig(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.IID);
+
+        }
+
+
+        public static bool operator ==(AppNotificationConferencingConfig x, AppNotificationConferencingConfig y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(AppNotificationConferencingConfig x, AppNotificationConferencingConfig y) => !(x == y);
+        public bool Equals(AppNotificationConferencingConfig other) => this == other;
+        public override bool Equals(object obj) => obj is AppNotificationConferencingConfig that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public string AudioInputDeviceId
+        {
+            get => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.get_AudioInputDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig);
+            set => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.set_AudioInputDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig, value);
+        }
+
+        public string AudioOutputDeviceId
+        {
+            get => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.get_AudioOutputDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig);
+            set => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.set_AudioOutputDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig, value);
+        }
+
+        public string VideoDeviceId
+        {
+            get => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.get_VideoDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig);
+            set => global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.set_VideoDeviceId(_objRef_global__Microsoft_Windows_AppNotifications_IAppNotificationConferencingConfig, value);
+        }
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -634,6 +787,13 @@ namespace Microsoft.Windows.AppNotifications
         bool SuppressDisplay { get; set; }
         string Tag { get; set; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")][Guid("53FCBAF2-26F4-5E76-BB80-0EB63F632652")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.IAppNotification2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 262144u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IAppNotification2
+    {
+        AppNotificationConferencingConfig ConferencingConfig { get; set; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")][Guid("7A8AFAF9-31CB-51D5-82BE-DB6BD5878B77")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationActivatedEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 65536u)]
     internal interface IAppNotificationActivatedEventArgs
@@ -646,6 +806,22 @@ namespace Microsoft.Windows.AppNotifications
     internal interface IAppNotificationActivatedEventArgs2
     {
         global::System.Collections.Generic.IDictionary<string, string> Arguments { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")][Guid("476C74FE-4672-514D-A5A7-5ADDF21A6F24")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfig))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 262144u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IAppNotificationConferencingConfig
+    {
+        string AudioInputDeviceId { get; set; }
+        string AudioOutputDeviceId { get; set; }
+        string VideoDeviceId { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")][Guid("E6489BEA-1BA7-5258-9884-1A59E3A18059")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 262144u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IAppNotificationConferencingConfigStatics
+    {
+        bool IsCallingPreviewSupported();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AppNotifications")][Guid("9FFEE485-184A-5C65-87A9-C1D94469DBE7")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AppNotificationsContract), 65536u)]
@@ -762,6 +938,31 @@ namespace ABI.Microsoft.Windows.AppNotifications
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct AppNotificationConferencingConfig
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class AppNotificationConferencingConfigRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct AppNotificationManager
@@ -1033,6 +1234,59 @@ namespace ABI.Microsoft.Windows.AppNotifications
     internal interface IAppNotification : global::Microsoft.Windows.AppNotifications.IAppNotification
     {
     }
+    internal static class IAppNotification2Methods
+    {
+
+        internal static unsafe global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig get_ConferencingConfig(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_ConferencingConfig(IObjectReference _obj, global::Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = global::ABI.Microsoft.Windows.AppNotifications.AppNotificationConferencingConfig.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xF2, 0xBA, 0xFC, 0x53, 0xF4, 0x26, 0x76, 0x5E, 0xBB, 0x80, 0xE, 0xB6, 0x3F, 0x63, 0x26, 0x52 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("53FCBAF2-26F4-5E76-BB80-0EB63F632652")]
+    internal interface IAppNotification2 : global::Microsoft.Windows.AppNotifications.IAppNotification2
+    {
+    }
     internal static class IAppNotificationActivatedEventArgsMethods
     {
 
@@ -1124,6 +1378,140 @@ namespace ABI.Microsoft.Windows.AppNotifications
     }
     [Guid("52C06B9B-2C50-5037-9416-A3BE47B9D5BD")]
     internal interface IAppNotificationActivatedEventArgs2 : global::Microsoft.Windows.AppNotifications.IAppNotificationActivatedEventArgs2
+    {
+    }
+    internal static class IAppNotificationConferencingConfigMethods
+    {
+
+        internal static unsafe string get_AudioInputDeviceId(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_AudioInputDeviceId(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+        internal static unsafe string get_AudioOutputDeviceId(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_AudioOutputDeviceId(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+        internal static unsafe string get_VideoDeviceId(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_VideoDeviceId(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xFE, 0x74, 0x6C, 0x47, 0x72, 0x46, 0x4D, 0x51, 0xA5, 0xA7, 0x5A, 0xDD, 0xF2, 0x1A, 0x6F, 0x24 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("476C74FE-4672-514D-A5A7-5ADDF21A6F24")]
+    internal interface IAppNotificationConferencingConfig : global::Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfig
+    {
+    }
+    internal static class IAppNotificationConferencingConfigStaticsMethods
+    {
+
+
+        internal static unsafe bool IsCallingPreviewSupported(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xEA, 0x9B, 0x48, 0xE6, 0xA7, 0x1B, 0x58, 0x52, 0x98, 0x84, 0x1A, 0x59, 0xE3, 0xA1, 0x80, 0x59 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("E6489BEA-1BA7-5258-9884-1A59E3A18059")]
+    internal interface IAppNotificationConferencingConfigStatics : global::Microsoft.Windows.AppNotifications.IAppNotificationConferencingConfigStatics
     {
     }
     internal static class IAppNotificationFactoryMethods

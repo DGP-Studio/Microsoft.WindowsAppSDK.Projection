@@ -6023,6 +6023,13 @@ namespace Microsoft.UI.Xaml
     {
         XamlIsland CreateInstance(object baseInterface, out object innerInterface);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("09C746DE-88AC-502A-A416-EAC12FF580A2")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.IXamlIslandFeature_ExperimentalApi))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(WinUIContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IXamlIslandFeature_ExperimentalApi
+    {
+        bool ShouldConstrainPopupsToWorkArea { get; set; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("1B175EE6-D08B-50FF-8F89-A1FF27EDEF66")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.IXamlResourceReferenceFailedEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(WinUIContract), 262144u)]
     internal interface IXamlResourceReferenceFailedEventArgs
@@ -11180,7 +11187,7 @@ namespace Microsoft.UI.Xaml
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(589824u)]
     public enum WinUIContract
     {
     }
@@ -11758,7 +11765,7 @@ namespace Microsoft.UI.Xaml
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(589824u)]
     public enum XamlContract
     {
     }
@@ -11783,6 +11790,14 @@ namespace Microsoft.UI.Xaml
             return ___objRef_global__Microsoft_UI_Xaml_IXamlIsland;
         }
         private IObjectReference _objRef_global__Microsoft_UI_Xaml_IXamlIsland => ___objRef_global__Microsoft_UI_Xaml_IXamlIsland ?? Make___objRef_global__Microsoft_UI_Xaml_IXamlIsland();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.IXamlIslandFeature_ExperimentalApiMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi => ___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi ?? Make___objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi();
 
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
@@ -11904,6 +11919,12 @@ namespace Microsoft.UI.Xaml
         }
 
         public global::Microsoft.UI.Content.ContentIsland ContentIsland => global::ABI.Microsoft.UI.Xaml.IXamlIslandMethods.get_ContentIsland(_objRef_global__Microsoft_UI_Xaml_IXamlIsland);
+
+        public bool ShouldConstrainPopupsToWorkArea
+        {
+            get => global::ABI.Microsoft.UI.Xaml.IXamlIslandFeature_ExperimentalApiMethods.get_ShouldConstrainPopupsToWorkArea(_objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi);
+            set => global::ABI.Microsoft.UI.Xaml.IXamlIslandFeature_ExperimentalApiMethods.set_ShouldConstrainPopupsToWorkArea(_objRef_global__Microsoft_UI_Xaml_IXamlIslandFeature_ExperimentalApi, value);
+        }
 
         public global::Microsoft.UI.Xaml.Media.SystemBackdrop SystemBackdrop
         {
@@ -28960,6 +28981,43 @@ namespace ABI.Microsoft.UI.Xaml
     }
     [Guid("267F707C-5E18-57B4-9FF7-D11DA66E4A11")]
     internal interface IXamlIslandFactory : global::Microsoft.UI.Xaml.IXamlIslandFactory
+    {
+    }
+    internal static class IXamlIslandFeature_ExperimentalApiMethods
+    {
+
+        internal static unsafe bool get_ShouldConstrainPopupsToWorkArea(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_ShouldConstrainPopupsToWorkArea(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[7](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xDE, 0x46, 0xC7, 0x9, 0xAC, 0x88, 0x2A, 0x50, 0xA4, 0x16, 0xEA, 0xC1, 0x2F, 0xF5, 0x80, 0xA2 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("09C746DE-88AC-502A-A416-EAC12FF580A2")]
+    internal interface IXamlIslandFeature_ExperimentalApi : global::Microsoft.UI.Xaml.IXamlIslandFeature_ExperimentalApi
     {
     }
     internal static class IXamlResourceReferenceFailedEventArgsMethods

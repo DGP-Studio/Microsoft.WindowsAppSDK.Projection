@@ -195,6 +195,25 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
         }
 
         public static DeploymentResult Initialize(DeploymentInitializeOptions deploymentInitializeOptions) => global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics2Methods.Initialize(_objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics2, deploymentInitializeOptions);
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics3;
+        private static IObjectReference _objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics3
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics3;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics3 = ActivationFactory.Get("Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentManager", global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics3Methods.IID);
+                }
+            }
+        }
+
+        public static DeploymentResult Repair() => global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics3Methods.Repair(_objRef_global__Microsoft_Windows_ApplicationModel_WindowsAppRuntime_IDeploymentManagerStatics3);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.WindowsAppRuntime")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentResult))]
@@ -337,6 +356,7 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
         Ok = unchecked((int)0x1),
         PackageInstallRequired = unchecked((int)0x2),
         PackageInstallFailed = unchecked((int)0x3),
+        PackageRepairFailed = unchecked((int)0x4),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.WindowsAppRuntime")][Guid("578A5FD4-9D7F-5E01-97B8-D8EA61DB4027")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentInitializeOptions))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(DeploymentContract), 131072u)]
@@ -364,6 +384,13 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
     {
         [global::Windows.Foundation.Metadata.Overload(@"Initialize")]
         DeploymentResult Initialize(DeploymentInitializeOptions deploymentInitializeOptions);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.WindowsAppRuntime")][Guid("DD0D872E-9475-593E-A9FD-C6B5F5DCA7CF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics3))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(DeploymentContract), 262144u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IDeploymentManagerStatics3
+    {
+        DeploymentResult Repair();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.WindowsAppRuntime")][Guid("27203F62-463D-587A-8EB7-870098901078")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentResult))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(DeploymentContract), 65536u)]
@@ -441,14 +468,6 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
     public enum RuntimeCompatibilityChange : int
     {
         None = unchecked((int)0),
-        EnsurePackageReadyVersionSupercedence = unchecked((int)0x35d343e),
-        FixPopupClosingReentrancyCrash = unchecked((int)0x363c856),
-        FixPopupUnloadingCrash = unchecked((int)0x360f820),
-        FixRandomUIFreezeInDispatcher = unchecked((int)0x35ed0a4),
-        FixSetProgressBarIndicatorWidthCrash = unchecked((int)0x3626302),
-        FixStuckPointerInputQueue = unchecked((int)0x35ff6ad),
-        FixWebViewVisibilityReentrancyCrash = unchecked((int)0x36381f9),
-        FixWindowCloseFocusCrash = unchecked((int)0x363d112),
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum RuntimeCompatibilityContract
@@ -839,6 +858,43 @@ namespace ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime
     }
     [Guid("F49C16EE-6EBC-5F15-BEBB-2BA49F8C0B30")]
     internal interface IDeploymentManagerStatics2 : global::Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics2
+    {
+    }
+    internal static class IDeploymentManagerStatics3Methods
+    {
+
+
+        internal static unsafe global::Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentResult Repair(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentResult.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.ApplicationModel.WindowsAppRuntime.DeploymentResult.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x2E, 0x87, 0xD, 0xDD, 0x75, 0x94, 0x3E, 0x59, 0xA9, 0xFD, 0xC6, 0xB5, 0xF5, 0xDC, 0xA7, 0xCF };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("DD0D872E-9475-593E-A9FD-C6B5F5DCA7CF")]
+    internal interface IDeploymentManagerStatics3 : global::Microsoft.Windows.ApplicationModel.WindowsAppRuntime.IDeploymentManagerStatics3
     {
     }
     internal static class IDeploymentResultMethods
