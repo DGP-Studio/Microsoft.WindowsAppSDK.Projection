@@ -88,6 +88,12 @@ namespace Microsoft.Windows.Widgets.Providers
     {
         bool IsPlaceholderContent { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("965538CD-289D-54AB-916E-9315EBF97EA4")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfo3))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 720896u)]
+    internal interface IWidgetInfo3
+    {
+        int Rank { get; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("71CB10C0-671E-48E3-B995-207940397123")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetManager))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 65536u)]
     public interface IWidgetManager
@@ -205,6 +211,12 @@ namespace Microsoft.Windows.Widgets.Providers
     internal interface IWidgetUpdateRequestOptions2
     {
         global::System.Nullable<bool> IsPlaceholderContent { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("A78E2A8B-A26C-596A-ADE3-DB8F4C72FE02")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions3))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 720896u)]
+    internal interface IWidgetUpdateRequestOptions3
+    {
+        global::System.Nullable<int> Rank { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("E0E00AF8-1D10-57A8-9419-3F568E854DAA")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptionsFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 65536u)]
@@ -714,6 +726,14 @@ namespace Microsoft.Windows.Widgets.Providers
         }
         private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo2 => ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo2 ?? Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo2();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfo3Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3 => ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3 ?? Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3();
+
 
 
         public static WidgetInfo FromAbi(IntPtr thisPtr)
@@ -763,6 +783,8 @@ namespace Microsoft.Windows.Widgets.Providers
         public bool IsPlaceholderContent => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfo2Methods.get_IsPlaceholderContent(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo2);
 
         public global::System.DateTimeOffset LastUpdateTime => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfoMethods.get_LastUpdateTime(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo);
+
+        public int Rank => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfo3Methods.get_Rank(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo3);
 
         public string Template => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetInfoMethods.get_Template(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetInfo);
 
@@ -1319,6 +1341,14 @@ namespace Microsoft.Windows.Widgets.Providers
         }
         private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions2 => ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions2 ?? Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions2();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions3Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3 => ___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3 ?? Make___objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3();
+
 
 
         private static class _IWidgetUpdateRequestOptionsFactoryMethods
@@ -1449,6 +1479,12 @@ namespace Microsoft.Windows.Widgets.Providers
         {
             get => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions2Methods.get_IsPlaceholderContent(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions2);
             set => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions2Methods.set_IsPlaceholderContent(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions2, value);
+        }
+
+        public global::System.Nullable<int> Rank
+        {
+            get => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions3Methods.get_Rank(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3);
+            set => global::ABI.Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions3Methods.set_Rank(_objRef_global__Microsoft_Windows_Widgets_Providers_IWidgetUpdateRequestOptions3, value);
         }
 
         public string Template
@@ -1976,6 +2012,36 @@ namespace ABI.Microsoft.Windows.Widgets.Providers
     }
     [Guid("081B0A6F-D784-5408-BB29-252FEF2926D4")]
     internal interface IWidgetInfo2 : global::Microsoft.Windows.Widgets.Providers.IWidgetInfo2
+    {
+    }
+    internal static class IWidgetInfo3Methods
+    {
+
+        internal static unsafe int get_Rank(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            int __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xCD, 0x38, 0x55, 0x96, 0x9D, 0x28, 0xAB, 0x54, 0x91, 0x6E, 0x93, 0x15, 0xEB, 0xF9, 0x7E, 0xA4 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("965538CD-289D-54AB-916E-9315EBF97EA4")]
+    internal interface IWidgetInfo3 : global::Microsoft.Windows.Widgets.Providers.IWidgetInfo3
     {
     }
     public static class IWidgetManagerMethods
@@ -3556,6 +3622,59 @@ namespace ABI.Microsoft.Windows.Widgets.Providers
     }
     [Guid("77C4EFC4-38F3-57A5-ABA1-F83F257B899E")]
     internal interface IWidgetUpdateRequestOptions2 : global::Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions2
+    {
+    }
+    internal static class IWidgetUpdateRequestOptions3Methods
+    {
+
+        internal static unsafe global::System.Nullable<int> get_Rank(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalInterface<global::System.Nullable<int>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Nullable<int>>.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Rank(IObjectReference _obj, global::System.Nullable<int> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = MarshalInterface<global::System.Nullable<int>>.CreateMarshaler2(value, global::ABI.System.Nullable<int>.PIID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x8B, 0x2A, 0x8E, 0xA7, 0x6C, 0xA2, 0x6A, 0x59, 0xAD, 0xE3, 0xDB, 0x8F, 0x4C, 0x72, 0xFE, 0x2 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("A78E2A8B-A26C-596A-ADE3-DB8F4C72FE02")]
+    internal interface IWidgetUpdateRequestOptions3 : global::Microsoft.Windows.Widgets.Providers.IWidgetUpdateRequestOptions3
     {
     }
     internal static class IWidgetUpdateRequestOptionsFactoryMethods

@@ -4147,6 +4147,14 @@ namespace Microsoft.Web.WebView2.Core
             return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6;
         }
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7;
+        private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame7Methods.IID), null);
+            return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7;
+        }
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7();
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame => _inner;
 
 
@@ -4238,6 +4246,12 @@ namespace Microsoft.Web.WebView2.Core
         {
             add => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame6Methods.Get_ScreenCaptureStarting2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame6Methods.Get_ScreenCaptureStarting2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame6, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<CoreWebView2Frame, CoreWebView2FrameCreatedEventArgs> FrameCreated
+        {
+            add => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame7Methods.Get_FrameCreated2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame7Methods.Get_FrameCreated2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame7, (IWinRTObject)this).Unsubscribe(value);
         }
 
         public void RemoveHostObjectFromScript(string name) => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FrameMethods.RemoveHostObjectFromScript(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Frame, name);
@@ -9144,6 +9158,11 @@ namespace Microsoft.Web.WebView2.Core
     internal interface ICoreWebView2Frame6
     {
         event global::Windows.Foundation.TypedEventHandler<CoreWebView2Frame, CoreWebView2ScreenCaptureStartingEventArgs> ScreenCaptureStarting;
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("37B88DD4-5973-51AD-98C5-6832C5499DC0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame7))]
+    internal interface ICoreWebView2Frame7
+    {
+        event global::Windows.Foundation.TypedEventHandler<CoreWebView2Frame, CoreWebView2FrameCreatedEventArgs> FrameCreated;
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("527B01B8-FC6D-5543-8DCE-96CDFDB32C81")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FrameCreatedEventArgs))]
     internal interface ICoreWebView2FrameCreatedEventArgs
@@ -18272,6 +18291,52 @@ namespace ABI.Microsoft.Web.WebView2.Core
     }
     [Guid("BA197DAD-D2F4-5127-80B8-FAAB02EC211E")]
     internal interface ICoreWebView2Frame6 : global::Microsoft.Web.WebView2.Core.ICoreWebView2Frame6
+    {
+    }
+    internal static class ICoreWebView2Frame7Methods
+    {
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>>> _FrameCreated_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>>> MakeFrameCreatedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _FrameCreated_, new(), null);
+            return _FrameCreated_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>>> _FrameCreated => _FrameCreated_ ?? MakeFrameCreatedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>> Get_FrameCreated2(IObjectReference _obj, object _thisObj)
+        {
+            return _FrameCreated.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Frame__global__Microsoft_Web_WebView2_Core_CoreWebView2FrameCreatedEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[6],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[7],
+                0);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xD4, 0x8D, 0xB8, 0x37, 0x73, 0x59, 0xAD, 0x51, 0x98, 0xC5, 0x68, 0x32, 0xC5, 0x49, 0x9D, 0xC0 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("37B88DD4-5973-51AD-98C5-6832C5499DC0")]
+    internal interface ICoreWebView2Frame7 : global::Microsoft.Web.WebView2.Core.ICoreWebView2Frame7
     {
     }
     internal static class ICoreWebView2FrameCreatedEventArgsMethods

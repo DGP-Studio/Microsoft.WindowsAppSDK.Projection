@@ -27,28 +27,40 @@ using WinRT.Interop;
 
 namespace Microsoft.Windows.AI.GenerativeInternal
 {
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal", "struct(Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal;struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4));struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4)))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<ContentFilterOptionsInternal, ContentFilterOptionsInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal", "struct(Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal;struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4));struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4)))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<ContentFilterOptionsInternal, ContentFilterOptionsInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
     public struct ContentFilterOptionsInternal: IEquatable<ContentFilterOptionsInternal>
     {
-        public TextContentFilterSeverityInternal PromptMinSeverityLevelToBlock;
-        public TextContentFilterSeverityInternal ResponseMinSeverityLevelToBlock;
+        public TextContentFilterSeverityInternal PromptMaxAllowedSeverityLevel;
+        public TextContentFilterSeverityInternal ResponseMaxAllowedSeverityLevel;
 
-        public ContentFilterOptionsInternal(TextContentFilterSeverityInternal _PromptMinSeverityLevelToBlock, TextContentFilterSeverityInternal _ResponseMinSeverityLevelToBlock)
+        public ContentFilterOptionsInternal(TextContentFilterSeverityInternal _PromptMaxAllowedSeverityLevel, TextContentFilterSeverityInternal _ResponseMaxAllowedSeverityLevel)
         {
-            PromptMinSeverityLevelToBlock = _PromptMinSeverityLevelToBlock; ResponseMinSeverityLevelToBlock = _ResponseMinSeverityLevelToBlock; 
+            PromptMaxAllowedSeverityLevel = _PromptMaxAllowedSeverityLevel; ResponseMaxAllowedSeverityLevel = _ResponseMaxAllowedSeverityLevel; 
         }
 
-        public static bool operator ==(ContentFilterOptionsInternal x, ContentFilterOptionsInternal y) => x.PromptMinSeverityLevelToBlock == y.PromptMinSeverityLevelToBlock && x.ResponseMinSeverityLevelToBlock == y.ResponseMinSeverityLevelToBlock;
+        public static bool operator ==(ContentFilterOptionsInternal x, ContentFilterOptionsInternal y) => x.PromptMaxAllowedSeverityLevel == y.PromptMaxAllowedSeverityLevel && x.ResponseMaxAllowedSeverityLevel == y.ResponseMaxAllowedSeverityLevel;
         public static bool operator !=(ContentFilterOptionsInternal x, ContentFilterOptionsInternal y) => !(x == y);
         public bool Equals(ContentFilterOptionsInternal other) => this == other;
         public override bool Equals(object obj) => obj is ContentFilterOptionsInternal that && this == that;
-        public override int GetHashCode() => PromptMinSeverityLevelToBlock.GetHashCode() ^ ResponseMinSeverityLevelToBlock.GetHashCode();
+        public override int GetHashCode() => PromptMaxAllowedSeverityLevel.GetHashCode() ^ ResponseMaxAllowedSeverityLevel.GetHashCode();
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ContentSafetySeverityLevelInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
+    public enum ContentSafetySeverityLevelInternal : int
+    {
+        Minimum_MinToBlock_BackCompat = unchecked((int)0),
+        Low_MinToBlock_BackCompat = unchecked((int)0x1),
+        Medium_MinToBlock_BackCompat = unchecked((int)0x2),
+        High_MinToBlock_BackCompat = unchecked((int)0x3),
+        Minimum = unchecked((int)0xa),
+        Low = unchecked((int)0xb),
+        Medium = unchecked((int)0xc),
+        High = unchecked((int)0xd),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("79B4F53C-D232-4FED-86A4-CFED3401EE2C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageDescriptionSessionContract), 65536u)]
     public interface IImageDescriptionSession : global::System.IDisposable
     {
-        IImageDescriptionSessionResult DescribeAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind kind, ContentFilterOptionsInternal contentFilterOptions);
+        IImageDescriptionSessionResult DescribeAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, ImageDescriptionKindInternal kind, ContentFilterOptionsInternal contentFilterOptions);
         IImageDescriptionSessionResult GetPartialResult();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("01240C06-4E72-48B1-AAA4-ECF30521401A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult))]
@@ -56,7 +68,7 @@ namespace Microsoft.Windows.AI.GenerativeInternal
     public interface IImageDescriptionSessionResult
     {
         string Description { get; }
-        global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus Status { get; }
+        ImageDescriptionResultStatusInternal Status { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("48F51A4A-C075-443A-9F14-AA1A24390F25")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageLLMAdapterSessionContract), 65536u)]
@@ -141,10 +153,70 @@ namespace Microsoft.Windows.AI.GenerativeInternal
     {
         string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.SemanticSearch.EmbeddingVector> promptEmbedding, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("1B24B76D-33E7-4F78-846A-3094CE9C8057")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 524288u)]
+    public interface ILanguageModelSessionAdapter
+    {
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("014382CF-858F-4338-9141-3F86BB005956")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
     public interface ILanguageModelSessionContext
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("926B0A0F-8F5E-41CD-AC12-B05ADDB26E05")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 458752u)]
+    public interface ILanguageModelSessionCore : global::System.IDisposable
+    {
+        uint GetContextLength();
+        uint GetEmbeddingSize();
+        string GetPartialResult();
+        global::System.Collections.Generic.IReadOnlyList<long> GetTokens(string prompt, ContentFilterOptionsInternal contentFilterOptions);
+        global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> GetEmbeddingsCore(string prompt, ContentFilterOptionsInternal contentFilterOptions);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, LanguageModelInitialContextParam contextParam, float[] embedding, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent2")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, global::System.Collections.Generic.IReadOnlyList<long> promptTokens, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context);
+        ILanguageModelSessionContext CreateContext(LanguageModelInitialContextParam contextParam, ContentFilterOptionsInternal contentFilterOptions);
+        bool IsPromptLargerThanContext(ILanguageModelSessionContext context, string prompt);
+        ulong GetContextPromptCutoffIndex(ILanguageModelSessionContext context, string prompt);
+        [global::Windows.Foundation.Metadata.DefaultOverload]
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent3")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent4")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, string skillOptions);
+        global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector GetSessionBoundEmbedding(float[] data, Guid vectorSpaceID);
+        string ModelVersion { get; }
+        Guid VectorSpaceId { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("7D5DC34F-1F2D-41C0-BC08-470D8A401950")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 524288u)]
+    public interface ILanguageModelSessionCore2 : ILanguageModelSessionCore, global::System.IDisposable
+    {
+        [global::Windows.Foundation.Metadata.DefaultOverload]
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, ILanguageModelSessionAdapter adapter);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent2")]
+        string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, string skillOptions, ILanguageModelSessionAdapter adapter);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ImageDescriptionKindInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageDescriptionSessionContract), 65536u)]
+    public enum ImageDescriptionKindInternal : int
+    {
+        BriefDescription = unchecked((int)0),
+        DetailedDescrition = unchecked((int)0x1),
+        DiagramDescription = unchecked((int)0x2),
+        AccessibleDescription = unchecked((int)0x3),
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ImageDescriptionResultStatusInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageDescriptionSessionContract), 65536u)]
+    public enum ImageDescriptionResultStatusInternal : int
+    {
+        Complete = unchecked((int)0),
+        InProgress = unchecked((int)0x1),
+        BlockedByPolicy = unchecked((int)0x2),
+        ImageBlockedByContentModeration = unchecked((int)0x3),
+        TextInImageBlockedByContentModeration = unchecked((int)0x4),
+        DescriptionTextBlockedByContentModeration = unchecked((int)0x5),
+        ImageHasTooMuchText = unchecked((int)0x6),
+        InternalError = unchecked((int)0x7),
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum ImageDescriptionSessionContract
@@ -190,27 +262,29 @@ namespace Microsoft.Windows.AI.GenerativeInternal
         public override bool Equals(object obj) => obj is LanguageModelOptionsInternal that && this == that;
         public override int GetHashCode() => Skill.GetHashCode() ^ Temp.GetHashCode() ^ Top_p.GetHashCode() ^ Top_k.GetHashCode();
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(393216u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
     public enum LanguageModelSessionContract
     {
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<LanguageModelSkill>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 196608u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<LanguageModelSkill>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 458752u)]
     public enum LanguageModelSkill : int
     {
         None = unchecked((int)0),
         TextToTable = unchecked((int)0x1),
         Summarize = unchecked((int)0x2),
         Rewrite = unchecked((int)0x3),
+        SummarizeParagraph = unchecked((int)0x4),
+        SummarizeConversation = unchecked((int)0x5),
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal", "struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4);enum(Microsoft.Windows.AI.ContentModeration.SeverityLevel;i4))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<TextContentFilterSeverityInternal, TextContentFilterSeverityInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal", "struct(Microsoft.Windows.AI.GenerativeInternal.TextContentFilterSeverityInternal;enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4);enum(Microsoft.Windows.AI.GenerativeInternal.ContentSafetySeverityLevelInternal;i4))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<TextContentFilterSeverityInternal, TextContentFilterSeverityInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 262144u)]
     public struct TextContentFilterSeverityInternal: IEquatable<TextContentFilterSeverityInternal>
     {
-        public global::Microsoft.Windows.AI.ContentModeration.SeverityLevel HateContentSeverity;
-        public global::Microsoft.Windows.AI.ContentModeration.SeverityLevel SexualContentSeverity;
-        public global::Microsoft.Windows.AI.ContentModeration.SeverityLevel ViolentContentSeverity;
-        public global::Microsoft.Windows.AI.ContentModeration.SeverityLevel SelfHarmContentSeverity;
+        public ContentSafetySeverityLevelInternal HateContentSeverity;
+        public ContentSafetySeverityLevelInternal SexualContentSeverity;
+        public ContentSafetySeverityLevelInternal ViolentContentSeverity;
+        public ContentSafetySeverityLevelInternal SelfHarmContentSeverity;
 
-        public TextContentFilterSeverityInternal(global::Microsoft.Windows.AI.ContentModeration.SeverityLevel _HateContentSeverity, global::Microsoft.Windows.AI.ContentModeration.SeverityLevel _SexualContentSeverity, global::Microsoft.Windows.AI.ContentModeration.SeverityLevel _ViolentContentSeverity, global::Microsoft.Windows.AI.ContentModeration.SeverityLevel _SelfHarmContentSeverity)
+        public TextContentFilterSeverityInternal(ContentSafetySeverityLevelInternal _HateContentSeverity, ContentSafetySeverityLevelInternal _SexualContentSeverity, ContentSafetySeverityLevelInternal _ViolentContentSeverity, ContentSafetySeverityLevelInternal _SelfHarmContentSeverity)
         {
             HateContentSeverity = _HateContentSeverity; SexualContentSeverity = _SexualContentSeverity; ViolentContentSeverity = _ViolentContentSeverity; SelfHarmContentSeverity = _SelfHarmContentSeverity; 
         }
@@ -230,7 +304,7 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
     {
 
 
-        public static unsafe global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult DescribeAsync(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        public static unsafe global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult DescribeAsync(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionKindInternal kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -239,7 +313,7 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             try
             {
                 __imageBufferResource = global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.CreateMarshaler2(imageBufferResource);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__imageBufferResource), kind, contentFilterOptions, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionKindInternal, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__imageBufferResource), kind, contentFilterOptions, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult>.FromAbi(__retval);
             }
@@ -291,12 +365,12 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
         {
             AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageDescriptionSession), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 2);
             *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
-            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_DescribeAsync_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionKindInternal, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_DescribeAsync_0;
             ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_GetPartialResult_1;
         }
 
         [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_DescribeAsync_0(IntPtr thisPtr, IntPtr imageBufferResource, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
+        private static unsafe int Do_Abi_DescribeAsync_0(IntPtr thisPtr, IntPtr imageBufferResource, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionKindInternal kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
         {
 
             global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult __result = default;
@@ -338,7 +412,7 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             return 0;
         }
 
-        unsafe global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSession.DescribeAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Microsoft.Windows.AI.Generative.ImageDescriptionKind kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        unsafe global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSession.DescribeAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionKindInternal kind, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
         {
             var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSession).TypeHandle));
             return global::ABI.Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionMethods.DescribeAsync(_obj, imageBufferResource, kind, contentFilterOptions);
@@ -373,12 +447,12 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             }
         }
 
-        public static unsafe global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus get_Status(IObjectReference _obj)
+        public static unsafe global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal get_Status(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
-            global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal*, int>**)ThisPtr)[7](ThisPtr, &__retval));
             global::System.GC.KeepAlive(_obj);
             return __retval;
         }
@@ -409,7 +483,7 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageDescriptionSessionResult), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 2);
             *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
             ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_get_Description_0;
-            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_get_Status_1;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_get_Status_1;
         }
 
         [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
@@ -434,10 +508,10 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             return 0;
         }
         [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_get_Status_1(IntPtr thisPtr, global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus* value)
+        private static unsafe int Do_Abi_get_Status_1(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal* value)
         {
 
-            global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus __value = default;
+            global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal __value = default;
 
             *value = default;
 
@@ -464,7 +538,7 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
             }
         }
 
-        unsafe global::Microsoft.Windows.AI.Generative.ImageDescriptionResultStatus global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult.Status
+        unsafe global::Microsoft.Windows.AI.GenerativeInternal.ImageDescriptionResultStatusInternal global::Microsoft.Windows.AI.GenerativeInternal.IImageDescriptionSessionResult.Status
         {
             get
             {
@@ -2479,6 +2553,39 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
         void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
     }
 
+    public static class ILanguageModelSessionAdapterMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x6D, 0xB7, 0x24, 0x1B, 0xE7, 0x33, 0x78, 0x4F, 0x84, 0x6A, 0x30, 0x94, 0xCE, 0x9C, 0x80, 0x57 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => ILanguageModelSessionAdapter.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("1B24B76D-33E7-4F78-846A-3094CE9C8057")]
+    internal unsafe interface ILanguageModelSessionAdapter : global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe ILanguageModelSessionAdapter()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(ILanguageModelSessionAdapter), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 0);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+
+        }
+
+    }
+
     public static class ILanguageModelSessionContextMethods
     {
 
@@ -2510,6 +2617,943 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
 
         }
 
+    }
+
+    public static class ILanguageModelSessionCoreMethods
+    {
+
+
+        public static unsafe uint GetContextLength(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        public static unsafe uint GetEmbeddingSize(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        public static unsafe string GetPartialResult(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe global::System.Collections.Generic.IReadOnlyList<long> GetTokens(IObjectReference _obj, string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __prompt), contentFilterOptions, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Int64.EnsureInitialized();
+                    return MarshalInterface<global::System.Collections.Generic.IReadOnlyList<long>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyList<long>>.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> GetEmbeddingsCore(IObjectReference _obj, string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[12](ThisPtr, MarshalString.GetAbi(ref __prompt), contentFilterOptions, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector.EnsureInitialized();
+                    return MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>>.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, float[] embedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            LanguageModelInitialContextParam.Marshaler __contextParam = default;
+            MarshalBlittable<float>.MarshalerArray __embedding = default;
+            int __embedding_length = default;
+            IntPtr __embedding_data = default;
+            IntPtr __retval = default;
+            try
+            {
+                __contextParam = LanguageModelInitialContextParam.CreateMarshaler(contextParam);
+                __embedding = MarshalBlittable<float>.CreateMarshalerArray(embedding);
+                (__embedding_length, __embedding_data) = MarshalBlittable<float>.GetAbiArray(__embedding);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, LanguageModelInitialContextParam, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[13](ThisPtr, options, LanguageModelInitialContextParam.GetAbi(__contextParam), __embedding_length, __embedding_data, eventToken, priority, frequency, contentFilterOptions, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                LanguageModelInitialContextParam.DisposeMarshaler(__contextParam);
+                MarshalBlittable<float>.DisposeMarshalerArray(__embedding);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::System.Collections.Generic.IReadOnlyList<long> promptTokens, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __promptTokens = default;
+            ObjectReferenceValue __context = default;
+            IntPtr __retval = default;
+            try
+            {
+                __promptTokens = MarshalInterface<global::System.Collections.Generic.IReadOnlyList<long>>.CreateMarshaler2(promptTokens, global::ABI.System.Collections.Generic.IReadOnlyListMethods<long>.IID);
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr*, int>**)ThisPtr)[14](ThisPtr, options, MarshalInspectable<object>.GetAbi(__promptTokens), eventToken, priority, frequency, contentFilterOptions, MarshalInspectable<object>.GetAbi(__context), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__promptTokens);
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext CreateContext(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            LanguageModelInitialContextParam.Marshaler __contextParam = default;
+            IntPtr __retval = default;
+            try
+            {
+                __contextParam = LanguageModelInitialContextParam.CreateMarshaler(contextParam);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, LanguageModelInitialContextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>**)ThisPtr)[15](ThisPtr, LanguageModelInitialContextParam.GetAbi(__contextParam), contentFilterOptions, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(__retval);
+            }
+            finally
+            {
+                LanguageModelInitialContextParam.DisposeMarshaler(__contextParam);
+                MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe bool IsPromptLargerThanContext(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            byte __retval = default;
+            try
+            {
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, byte*, int>**)ThisPtr)[16](ThisPtr, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __prompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return __retval != 0;
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+            }
+        }
+
+        public static unsafe ulong GetContextPromptCutoffIndex(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ulong __retval = default;
+            try
+            {
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, ulong*, int>**)ThisPtr)[17](ThisPtr, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __prompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return __retval;
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+            }
+        }
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>.MarshalerArray __promptEmbedding = default;
+            int __promptEmbedding_length = default;
+            IntPtr __promptEmbedding_data = default;
+            ObjectReferenceValue __context = default;
+            IntPtr __retval = default;
+            try
+            {
+                __promptEmbedding = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CreateMarshalerArray(promptEmbedding);
+                (__promptEmbedding_length, __promptEmbedding_data) = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.GetAbiArray(__promptEmbedding);
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr*, int>**)ThisPtr)[18](ThisPtr, options, __promptEmbedding_length, __promptEmbedding_data, eventToken, priority, frequency, contentFilterOptions, MarshalInspectable<object>.GetAbi(__context), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeMarshalerArray(__promptEmbedding);
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string skillOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            IntPtr __retval = default;
+            try
+            {
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                MarshalString.Pinnable __prompt = new(prompt);
+                MarshalString.Pinnable __skillOptions = new(skillOptions);
+                fixed(void* ___prompt = __prompt, ___skillOptions = __skillOptions)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[19](ThisPtr, options, MarshalString.GetAbi(ref __prompt), eventToken, priority, frequency, contentFilterOptions, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __skillOptions), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return MarshalString.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector GetSessionBoundEmbedding(IObjectReference _obj, float[] data, Guid vectorSpaceID)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<float>.MarshalerArray __data = default;
+            int __data_length = default;
+            IntPtr __data_data = default;
+            IntPtr __retval = default;
+            try
+            {
+                __data = MarshalBlittable<float>.CreateMarshalerArray(data);
+                (__data_length, __data_data) = MarshalBlittable<float>.GetAbiArray(__data);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, Guid, IntPtr*, int>**)ThisPtr)[20](ThisPtr, __data_length, __data_data, vectorSpaceID, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalBlittable<float>.DisposeMarshalerArray(__data);
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeAbi(__retval);
+            }
+        }
+        public static unsafe string get_ModelVersion(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe Guid get_VectorSpaceId(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            Guid __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, Guid*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xF, 0xA, 0x6B, 0x92, 0x5E, 0x8F, 0xCD, 0x41, 0xAC, 0x12, 0xB0, 0x5A, 0xDD, 0xB2, 0x6E, 0x5 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => ILanguageModelSessionCore.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("926B0A0F-8F5E-41CD-AC12-B05ADDB26E05")]
+    internal unsafe interface ILanguageModelSessionCore : global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe ILanguageModelSessionCore()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(ILanguageModelSessionCore), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 15);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, uint*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_GetContextLength_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, uint*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_GetEmbeddingSize_1;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[8] = &Do_Abi_get_ModelVersion_2;
+            ((delegate* unmanaged[Stdcall]<IntPtr, Guid*, int>*)AbiToProjectionVftablePtr)[9] = &Do_Abi_get_VectorSpaceId_3;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[10] = &Do_Abi_GetPartialResult_4;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[11] = &Do_Abi_GetTokens_5;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[12] = &Do_Abi_GetEmbeddingsCore_6;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, LanguageModelInitialContextParam, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[13] = &Do_Abi_GenerateResponseWithProgressEvent_7;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[14] = &Do_Abi_GenerateResponseWithProgressEvent_8;
+            ((delegate* unmanaged[Stdcall]<IntPtr, LanguageModelInitialContextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr*, int>*)AbiToProjectionVftablePtr)[15] = &Do_Abi_CreateContext_9;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, byte*, int>*)AbiToProjectionVftablePtr)[16] = &Do_Abi_IsPromptLargerThanContext_10;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, ulong*, int>*)AbiToProjectionVftablePtr)[17] = &Do_Abi_GetContextPromptCutoffIndex_11;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[18] = &Do_Abi_GenerateResponseWithProgressEvent_12;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[19] = &Do_Abi_GenerateResponseWithProgressEvent_13;
+            ((delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, Guid, IntPtr*, int>*)AbiToProjectionVftablePtr)[20] = &Do_Abi_GetSessionBoundEmbedding_14;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetContextLength_0(IntPtr thisPtr, uint* result)
+        {
+
+            uint __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetContextLength();
+                *result = __result;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetEmbeddingSize_1(IntPtr thisPtr, uint* result)
+        {
+
+            uint __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetEmbeddingSize();
+                *result = __result;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetPartialResult_4(IntPtr thisPtr, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetPartialResult();
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetTokens_5(IntPtr thisPtr, IntPtr prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Int64.EnsureInitialized();
+
+            global::System.Collections.Generic.IReadOnlyList<long> __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetTokens(MarshalString.FromAbi(prompt), contentFilterOptions);
+                *result = MarshalInterface<global::System.Collections.Generic.IReadOnlyList<long>>.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetEmbeddingsCore_6(IntPtr thisPtr, IntPtr prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector.EnsureInitialized();
+
+            global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetEmbeddingsCore(MarshalString.FromAbi(prompt), contentFilterOptions);
+                *result = MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>>.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_7(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, LanguageModelInitialContextParam contextParam, int __embeddingSize, IntPtr embedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GenerateResponseWithProgressEvent(options, global::ABI.Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.FromAbi(contextParam), MarshalBlittable<float>.FromAbiArray((__embeddingSize, embedding)), eventToken, priority, frequency, contentFilterOptions);
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_8(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, IntPtr promptTokens, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr context, IntPtr* result)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Int64.EnsureInitialized();
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GenerateResponseWithProgressEvent(options, MarshalInterface<global::System.Collections.Generic.IReadOnlyList<long>>.FromAbi(promptTokens), eventToken, priority, frequency, contentFilterOptions, MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context));
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_CreateContext_9(IntPtr thisPtr, LanguageModelInitialContextParam contextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr* result)
+        {
+
+            global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).CreateContext(global::ABI.Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.FromAbi(contextParam), contentFilterOptions);
+                *result = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_IsPromptLargerThanContext_10(IntPtr thisPtr, IntPtr context, IntPtr prompt, byte* result)
+        {
+
+            bool __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).IsPromptLargerThanContext(MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), MarshalString.FromAbi(prompt));
+                *result = (byte)(__result ? 1 : 0);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetContextPromptCutoffIndex_11(IntPtr thisPtr, IntPtr context, IntPtr prompt, ulong* result)
+        {
+
+            ulong __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetContextPromptCutoffIndex(MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), MarshalString.FromAbi(prompt));
+                *result = __result;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_12(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, int __promptEmbeddingSize, IntPtr promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr context, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GenerateResponseWithProgressEvent(options, global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromAbiArray((__promptEmbeddingSize, promptEmbedding)), eventToken, priority, frequency, contentFilterOptions, MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context));
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_13(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, IntPtr prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr context, IntPtr skillOptions, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GenerateResponseWithProgressEvent(options, MarshalString.FromAbi(prompt), eventToken, priority, frequency, contentFilterOptions, MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), MarshalString.FromAbi(skillOptions));
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetSessionBoundEmbedding_14(IntPtr thisPtr, int __dataSize, IntPtr data, Guid vectorSpaceID, IntPtr* result)
+        {
+
+            global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).GetSessionBoundEmbedding(MarshalBlittable<float>.FromAbiArray((__dataSize, data)), vectorSpaceID);
+                *result = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_ModelVersion_2(IntPtr thisPtr, IntPtr* value)
+        {
+
+            string __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).ModelVersion;
+                *value = MarshalString.FromManaged(__value);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_VectorSpaceId_3(IntPtr thisPtr, Guid* value)
+        {
+
+            Guid __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore>(thisPtr).VectorSpaceId;
+                *value = __value;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe uint global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength()
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetContextLength(_obj);
+        }
+
+        unsafe uint global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize()
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetEmbeddingSize(_obj);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult()
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetPartialResult(_obj);
+        }
+
+        unsafe global::System.Collections.Generic.IReadOnlyList<long> global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetTokens(_obj, prompt, contentFilterOptions);
+        }
+
+        unsafe global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetEmbeddingsCore(_obj, prompt, contentFilterOptions);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, float[] embedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GenerateResponseWithProgressEvent(_obj, options, contextParam, embedding, eventToken, priority, frequency, contentFilterOptions);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::System.Collections.Generic.IReadOnlyList<long> promptTokens, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GenerateResponseWithProgressEvent(_obj, options, promptTokens, eventToken, priority, frequency, contentFilterOptions, context);
+        }
+
+        unsafe global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.CreateContext(_obj, contextParam, contentFilterOptions);
+        }
+
+        unsafe bool global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.IsPromptLargerThanContext(_obj, context, prompt);
+        }
+
+        unsafe ulong global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetContextPromptCutoffIndex(_obj, context, prompt);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GenerateResponseWithProgressEvent(_obj, options, promptEmbedding, eventToken, priority, frequency, contentFilterOptions, context);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string skillOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GenerateResponseWithProgressEvent(_obj, options, prompt, eventToken, priority, frequency, contentFilterOptions, context, skillOptions);
+        }
+
+        unsafe global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(float[] data, Guid vectorSpaceID)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.GetSessionBoundEmbedding(_obj, data, vectorSpaceID);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+                return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.get_ModelVersion(_obj);
+            }
+        }
+
+        unsafe Guid global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore).TypeHandle));
+                return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCoreMethods.get_VectorSpaceId(_obj);
+            }
+        }
+
+        void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
+    }
+
+    public static class ILanguageModelSessionCore2Methods
+    {
+
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter adapter)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>.MarshalerArray __promptEmbedding = default;
+            int __promptEmbedding_length = default;
+            IntPtr __promptEmbedding_data = default;
+            ObjectReferenceValue __context = default;
+            ObjectReferenceValue __adapter = default;
+            IntPtr __retval = default;
+            try
+            {
+                __promptEmbedding = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CreateMarshalerArray(promptEmbedding);
+                (__promptEmbedding_length, __promptEmbedding_data) = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.GetAbiArray(__promptEmbedding);
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                __adapter = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter>.CreateMarshaler2(adapter, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapterMethods.IID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, options, __promptEmbedding_length, __promptEmbedding_data, eventToken, priority, frequency, contentFilterOptions, MarshalInspectable<object>.GetAbi(__context), MarshalInspectable<object>.GetAbi(__adapter), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeMarshalerArray(__promptEmbedding);
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalInspectable<object>.DisposeMarshaler(__adapter);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe string GenerateResponseWithProgressEvent(IObjectReference _obj, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string skillOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter adapter)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ObjectReferenceValue __adapter = default;
+            IntPtr __retval = default;
+            try
+            {
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                __adapter = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter>.CreateMarshaler2(adapter, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapterMethods.IID);
+                MarshalString.Pinnable __prompt = new(prompt);
+                MarshalString.Pinnable __skillOptions = new(skillOptions);
+                fixed(void* ___prompt = __prompt, ___skillOptions = __skillOptions)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, options, MarshalString.GetAbi(ref __prompt), eventToken, priority, frequency, contentFilterOptions, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __skillOptions), MarshalInspectable<object>.GetAbi(__adapter), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return MarshalString.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalInspectable<object>.DisposeMarshaler(__adapter);
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x4F, 0xC3, 0x5D, 0x7D, 0x2D, 0x1F, 0xC0, 0x41, 0xBC, 0x8, 0x47, 0xD, 0x8A, 0x40, 0x19, 0x50 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => ILanguageModelSessionCore2.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("7D5DC34F-1F2D-41C0-BC08-470D8A401950")]
+    internal unsafe interface ILanguageModelSessionCore2 : global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe ILanguageModelSessionCore2()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(ILanguageModelSessionCore2), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 2);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, int, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_GenerateResponseWithProgressEvent_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, IntPtr, Guid, uint, uint, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, IntPtr, IntPtr, IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_GenerateResponseWithProgressEvent_1;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_0(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, int __promptEmbeddingSize, IntPtr promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr context, IntPtr adapter, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2>(thisPtr).GenerateResponseWithProgressEvent(options, global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromAbiArray((__promptEmbeddingSize, promptEmbedding)), eventToken, priority, frequency, contentFilterOptions, MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter>.FromAbi(adapter));
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GenerateResponseWithProgressEvent_1(IntPtr thisPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, IntPtr prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, IntPtr context, IntPtr skillOptions, IntPtr adapter, IntPtr* result)
+        {
+
+            string __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2>(thisPtr).GenerateResponseWithProgressEvent(options, MarshalString.FromAbi(prompt), eventToken, priority, frequency, contentFilterOptions, MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), MarshalString.FromAbi(skillOptions), MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter>.FromAbi(adapter));
+                *result = MarshalString.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter adapter)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2Methods.GenerateResponseWithProgressEvent(_obj, options, promptEmbedding, eventToken, priority, frequency, contentFilterOptions, context, adapter);
+        }
+
+        unsafe string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string skillOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter adapter)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2Methods.GenerateResponseWithProgressEvent(_obj, options, prompt, eventToken, priority, frequency, contentFilterOptions, context, skillOptions, adapter);
+        }
+
+        uint global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength() => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetContextLength();
+
+        uint global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize() => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetEmbeddingSize();
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult() => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetPartialResult();
+
+        global::System.Collections.Generic.IReadOnlyList<long> global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetTokens(prompt, contentFilterOptions);
+
+        global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetEmbeddingsCore(prompt, contentFilterOptions);
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, float[] embedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GenerateResponseWithProgressEvent(options, contextParam, embedding, eventToken, priority, frequency, contentFilterOptions);
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::System.Collections.Generic.IReadOnlyList<long> promptTokens, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GenerateResponseWithProgressEvent(options, promptTokens, eventToken, priority, frequency, contentFilterOptions, context);
+
+        global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam contextParam, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).CreateContext(contextParam, contentFilterOptions);
+
+        bool global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).IsPromptLargerThanContext(context, prompt);
+
+        ulong global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string prompt) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetContextPromptCutoffIndex(context, prompt);
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GenerateResponseWithProgressEvent(options, promptEmbedding, eventToken, priority, frequency, contentFilterOptions, context);
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, global::Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal contentFilterOptions, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, string skillOptions) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GenerateResponseWithProgressEvent(options, prompt, eventToken, priority, frequency, contentFilterOptions, context, skillOptions);
+
+        global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(float[] data, Guid vectorSpaceID) => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).GetSessionBoundEmbedding(data, vectorSpaceID);
+
+        string global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).ModelVersion;
+
+        Guid global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).VectorSpaceId;
+
+        void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
     }
 
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]

@@ -2610,6 +2610,46 @@ namespace WinRT
         }
     }
 
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TeachingTip__global__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TeachingTip__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TeachingTip__global__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Xaml.Controls.TeachingTip sender, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TextBox__global__Microsoft_UI_Xaml_Controls_TextBoxSelectionChangingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextBoxSelectionChangingEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TextBox__Microsoft_UI_Xaml_Controls_TextBoxSelectionChangingEventArgs.EnsureInitialized();
@@ -7198,6 +7238,46 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemsRepeater, global::Microsoft.UI.Xaml.Controls.ItemsRepeaterElementIndexChangedEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.ItemsRepeater sender, global::Microsoft.UI.Xaml.Controls.ItemsRepeaterElementIndexChangedEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Frame__global__Microsoft_Web_WebView2_Core_CoreWebView2FrameCreatedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2Frame__Microsoft_Web_WebView2_Core_CoreWebView2FrameCreatedEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Frame__global__Microsoft_Web_WebView2_Core_CoreWebView2FrameCreatedEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.Web.WebView2.Core.CoreWebView2Frame sender, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)

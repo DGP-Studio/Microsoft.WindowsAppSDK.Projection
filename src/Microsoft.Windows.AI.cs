@@ -124,7 +124,7 @@ namespace Microsoft.Windows.AI
     public enum AIFeatureReadyState : int
     {
         Ready = unchecked((int)0),
-        EnsureNeeded = unchecked((int)0x1),
+        NotReady = unchecked((int)0x1),
         NotSupportedOnCurrentSystem = unchecked((int)0x2),
         DisabledByUser = unchecked((int)0x3),
     }

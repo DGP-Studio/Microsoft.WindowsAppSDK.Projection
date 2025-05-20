@@ -28,14 +28,13 @@ using WinRT.Interop;
 namespace Microsoft.Windows.Workloads
 {
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Workloads")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<WorkloadPriority>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(WorkloadsContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public enum WorkloadPriority : int
     {
         Undefined = unchecked((int)0),
         Background = unchecked((int)0x1),
         Foreground = unchecked((int)0x9),
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(458752u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
     public enum WorkloadsContract
     {
     }

@@ -25,13 +25,17 @@ using WinRT.Interop;
 #pragma warning disable 0649 // warning CS0169: Field '...' is never assigned to
 #pragma warning disable CA2207, CA1063, CA1033, CA1001, CA2213
 
-namespace Microsoft.Windows.SemanticSearch
+namespace Microsoft.Windows.AI.Foundation
 {
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.SemanticSearch")]
-    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVector))]
-    [global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVectorRcwFactory]
+    [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
+    public enum AIFoundationContract
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Foundation")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector))]
+    [global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVectorRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IEmbeddingVector))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(SemanticSearchContract), 65536u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class EmbeddingVector : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<EmbeddingVector>
     {
@@ -41,7 +45,7 @@ namespace Microsoft.Windows.SemanticSearch
 
 
 
-        private IObjectReference _objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVector => _inner;
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVector => _inner;
 
 
         private static class _IEmbeddingVectorFactoryMethods
@@ -69,29 +73,29 @@ namespace Microsoft.Windows.SemanticSearch
             }
         }
 
-        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVectorFactory;
-        private static IObjectReference _objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVectorFactory
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVectorFactory;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVectorFactory
         {
             get
             { 
-                var factory = ___objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVectorFactory;
+                var factory = ___objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVectorFactory;
                 if (factory != null && factory.IsInCurrentContext)
                 {
                     return factory;
                 }
                 else
                 {
-                    return ___objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVectorFactory = ActivationFactory.Get("Microsoft.Windows.SemanticSearch.EmbeddingVector", global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorFactoryMethods.IID);
+                    return ___objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVectorFactory = ActivationFactory.Get("Microsoft.Windows.AI.Foundation.EmbeddingVector", global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorFactoryMethods.IID);
                 }
             }
         }
 
         public EmbeddingVector(float[] data, Guid vectorSpaceID) 
         { 
-        IntPtr ptr = (_IEmbeddingVectorFactoryMethods.CreateInstance(_objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVectorFactory, data, vectorSpaceID)); 
+        IntPtr ptr = (_IEmbeddingVectorFactoryMethods.CreateInstance(_objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVectorFactory, data, vectorSpaceID)); 
         try 
         { 
-        _inner = ComWrappersSupport.GetObjectReferenceForInterface(ptr, global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.IID, false); 
+        _inner = ComWrappersSupport.GetObjectReferenceForInterface(ptr, global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.IID, false); 
 
         } 
         finally 
@@ -111,7 +115,7 @@ namespace Microsoft.Windows.SemanticSearch
 
         internal EmbeddingVector(IObjectReference objRef)
         {
-            _inner = objRef.As(global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.IID);
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.IID);
 
         }
 
@@ -143,11 +147,11 @@ namespace Microsoft.Windows.SemanticSearch
         private struct InterfaceTag<I>{};
 
 
-        public void GetValues(float[] values) => global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.GetValues(_objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVector, values);
+        public void GetValues(float[] values) => global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.GetValues(_objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVector, values);
 
-        public uint Count => global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.get_Count(_objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVector);
+        public uint Size => global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.get_Size(_objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVector);
 
-        public Guid VectorSpaceId => global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.get_VectorSpaceId(_objRef_global__Microsoft_Windows_SemanticSearch_IEmbeddingVector);
+        public Guid VectorSpaceId => global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.get_VectorSpaceId(_objRef_global__Microsoft_Windows_AI_Foundation_IEmbeddingVector);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -167,48 +171,43 @@ namespace Microsoft.Windows.SemanticSearch
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.SemanticSearch")][Guid("F80248AA-68E7-5DE0-9166-B26E58935D34")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVector))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(SemanticSearchContract), 65536u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Foundation")][Guid("07BDAA90-B3D2-5701-97D1-C390EC62799C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVector))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IEmbeddingVector
     {
         void GetValues(float[] values);
-        uint Count { get; }
+        uint Size { get; }
         Guid VectorSpaceId { get; }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.SemanticSearch")][Guid("3A31EAD7-1F01-5A4C-9C2E-9ACFA6495CDD")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorFactory))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(SemanticSearchContract), 65536u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Foundation")][Guid("16B72758-2B69-5E97-B865-6A6A71683DD0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IEmbeddingVectorFactory
     {
         EmbeddingVector CreateInstance(float[] data, Guid vectorSpaceID);
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum SemanticSearchContract
-    {
-    }
 }
 
 #pragma warning disable CA1416
-namespace ABI.Microsoft.Windows.SemanticSearch
+namespace ABI.Microsoft.Windows.AI.Foundation
 {
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct EmbeddingVector
     {
 
-        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.SemanticSearch.EmbeddingVector obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.IID);
-        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.SemanticSearch.EmbeddingVector obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.SemanticSearch.IEmbeddingVectorMethods.IID);
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AI.Foundation.EmbeddingVector obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AI.Foundation.EmbeddingVector obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorMethods.IID);
         public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
-        public static global::Microsoft.Windows.SemanticSearch.EmbeddingVector FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.SemanticSearch.EmbeddingVector.FromAbi(thisPtr);
-        public static IntPtr FromManaged(global::Microsoft.Windows.SemanticSearch.EmbeddingVector obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
-        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.SemanticSearch.EmbeddingVector[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
-        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.GetAbiArray(box);
-        public static unsafe global::Microsoft.Windows.SemanticSearch.EmbeddingVector[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.FromAbiArray(box, FromAbi);
-        public static void CopyAbiArray(global::Microsoft.Windows.SemanticSearch.EmbeddingVector[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.CopyAbiArray(array, box, FromAbi);
-        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.SemanticSearch.EmbeddingVector[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.FromManagedArray(array, (o) => FromManaged(o));
+        public static global::Microsoft.Windows.AI.Foundation.EmbeddingVector FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AI.Foundation.EmbeddingVector.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AI.Foundation.EmbeddingVector obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.FromManagedArray(array, (o) => FromManaged(o));
         public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
-        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.DisposeMarshalerArray(array);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.DisposeMarshalerArray(array);
         public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
         public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
     }
@@ -216,7 +215,7 @@ namespace ABI.Microsoft.Windows.SemanticSearch
     internal sealed class EmbeddingVectorRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
-            => new global::Microsoft.Windows.SemanticSearch.EmbeddingVector(inspectable.ObjRef);
+            => new global::Microsoft.Windows.AI.Foundation.EmbeddingVector(inspectable.ObjRef);
     }
     internal static class IEmbeddingVectorMethods
     {
@@ -241,7 +240,7 @@ namespace ABI.Microsoft.Windows.SemanticSearch
                 MarshalBlittable<float>.DisposeMarshalerArray(__values);
             }
         }
-        internal static unsafe uint get_Count(IObjectReference _obj)
+        internal static unsafe uint get_Size(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -268,21 +267,21 @@ namespace ABI.Microsoft.Windows.SemanticSearch
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xAA, 0x48, 0x2, 0xF8, 0xE7, 0x68, 0xE0, 0x5D, 0x91, 0x66, 0xB2, 0x6E, 0x58, 0x93, 0x5D, 0x34 };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x90, 0xAA, 0xBD, 0x7, 0xD2, 0xB3, 0x1, 0x57, 0x97, 0xD1, 0xC3, 0x90, 0xEC, 0x62, 0x79, 0x9C };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("F80248AA-68E7-5DE0-9166-B26E58935D34")]
-    internal interface IEmbeddingVector : global::Microsoft.Windows.SemanticSearch.IEmbeddingVector
+    [Guid("07BDAA90-B3D2-5701-97D1-C390EC62799C")]
+    internal interface IEmbeddingVector : global::Microsoft.Windows.AI.Foundation.IEmbeddingVector
     {
     }
     internal static class IEmbeddingVectorFactoryMethods
     {
 
 
-        internal static unsafe global::Microsoft.Windows.SemanticSearch.EmbeddingVector CreateInstance(IObjectReference _obj, float[] data, Guid vectorSpaceID)
+        internal static unsafe global::Microsoft.Windows.AI.Foundation.EmbeddingVector CreateInstance(IObjectReference _obj, float[] data, Guid vectorSpaceID)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -296,12 +295,12 @@ namespace ABI.Microsoft.Windows.SemanticSearch
                 (__data_length, __data_data) = MarshalBlittable<float>.GetAbiArray(__data);
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, Guid, IntPtr*, int>**)ThisPtr)[6](ThisPtr, __data_length, __data_data, vectorSpaceID, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVector.FromAbi(__retval);
+                return global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.FromAbi(__retval);
             }
             finally
             {
                 MarshalBlittable<float>.DisposeMarshalerArray(__data);
-                global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVector.DisposeAbi(__retval);
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.DisposeAbi(__retval);
             }
         }
 
@@ -311,14 +310,14 @@ namespace ABI.Microsoft.Windows.SemanticSearch
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xD7, 0xEA, 0x31, 0x3A, 0x1, 0x1F, 0x4C, 0x5A, 0x9C, 0x2E, 0x9A, 0xCF, 0xA6, 0x49, 0x5C, 0xDD };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x58, 0x27, 0xB7, 0x16, 0x69, 0x2B, 0x97, 0x5E, 0xB8, 0x65, 0x6A, 0x6A, 0x71, 0x68, 0x3D, 0xD0 };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("3A31EAD7-1F01-5A4C-9C2E-9ACFA6495CDD")]
-    internal interface IEmbeddingVectorFactory : global::Microsoft.Windows.SemanticSearch.IEmbeddingVectorFactory
+    [Guid("16B72758-2B69-5E97-B865-6A6A71683DD0")]
+    internal interface IEmbeddingVectorFactory : global::Microsoft.Windows.AI.Foundation.IEmbeddingVectorFactory
     {
     }
 }

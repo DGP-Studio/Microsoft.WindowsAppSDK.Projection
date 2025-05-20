@@ -22615,6 +22615,15 @@ namespace Microsoft.UI.Xaml.Controls
         event global::Windows.Foundation.TypedEventHandler<TeachingTip, TeachingTipClosedEventArgs> Closed;
         event global::Windows.Foundation.TypedEventHandler<TeachingTip, TeachingTipClosingEventArgs> Closing;
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("4835F919-21D0-5725-8E73-603186B8C115")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTip2))]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
+    [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallbackMethodName(value = @"OnPropertyChanged")]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ITeachingTip2
+    {
+        event global::Windows.Foundation.TypedEventHandler<TeachingTip, TeachingTipOpenedEventArgs> Opened;
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("2536F506-4038-59DB-9E35-A9252FB5ADB2")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipClosedEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 65536u)]
     internal interface ITeachingTipClosedEventArgs
@@ -22636,6 +22645,12 @@ namespace Microsoft.UI.Xaml.Controls
     internal interface ITeachingTipFactory
     {
         TeachingTip CreateInstance(object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("74C49AAA-9CC8-5B0D-A2B1-CE789E35CCDE")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipOpenedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ITeachingTipOpenedEventArgs
+    {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("7C3ECDDB-0B4D-51C2-A27F-89180AFD45A8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipStatics))]
     [global::Microsoft.UI.Xaml.CustomAttributes.MUXPropertyChangedCallback(enable = true)]
@@ -54494,6 +54509,14 @@ namespace Microsoft.UI.Xaml.Controls
         }
         private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip => ___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTip2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2 => ___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2 ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2();
+
 
 
         private static class _ITeachingTipFactoryMethods
@@ -54668,6 +54691,12 @@ namespace Microsoft.UI.Xaml.Controls
         {
             add => global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipMethods.Get_Closing2(_objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipMethods.Get_Closing2(_objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<TeachingTip, TeachingTipOpenedEventArgs> Opened
+        {
+            add => global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTip2Methods.Get_Opened2(_objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTip2Methods.Get_Opened2(_objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTip2, (IWinRTObject)this).Unsubscribe(value);
         }
 
         public global::System.Windows.Input.ICommand ActionButtonCommand
@@ -54983,6 +55012,81 @@ namespace Microsoft.UI.Xaml.Controls
         Auto = unchecked((int)0),
         Top = unchecked((int)0x1),
         Bottom = unchecked((int)0x2),
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs))]
+    [global::ABI.Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ITeachingTipOpenedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class TeachingTipOpenedEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<TeachingTipOpenedEventArgs>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_ITeachingTipOpenedEventArgs => _inner;
+
+
+        public static TeachingTipOpenedEventArgs FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<TeachingTipOpenedEventArgs>.FromAbi(thisPtr);
+        }
+
+        internal TeachingTipOpenedEventArgs(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipOpenedEventArgsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(TeachingTipOpenedEventArgs x, TeachingTipOpenedEventArgs y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(TeachingTipOpenedEventArgs x, TeachingTipOpenedEventArgs y) => !(x == y);
+        public bool Equals(TeachingTipOpenedEventArgs other) => this == other;
+        public override bool Equals(object obj) => obj is TeachingTipOpenedEventArgs that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<TeachingTipPlacementMode>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 65536u)]
     public enum TeachingTipPlacementMode : int
@@ -142753,6 +142857,52 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     internal interface ITeachingTip : global::Microsoft.UI.Xaml.Controls.ITeachingTip
     {
     }
+    internal static class ITeachingTip2Methods
+    {
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>> _Opened_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>> MakeOpenedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _Opened_, new(), null);
+            return _Opened_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>> _Opened => _Opened_ ?? MakeOpenedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>> Get_Opened2(IObjectReference _obj, object _thisObj)
+        {
+            return _Opened.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TeachingTip__global__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[6],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[7],
+                0);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x19, 0xF9, 0x35, 0x48, 0xD0, 0x21, 0x25, 0x57, 0x8E, 0x73, 0x60, 0x31, 0x86, 0xB8, 0xC1, 0x15 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("4835F919-21D0-5725-8E73-603186B8C115")]
+    internal interface ITeachingTip2 : global::Microsoft.UI.Xaml.Controls.ITeachingTip2
+    {
+    }
     internal static class ITeachingTipClosedEventArgsMethods
     {
 
@@ -142888,6 +143038,26 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     }
     [Guid("A3ECD47D-2972-5D19-A62E-DDFBC5E1AD57")]
     internal interface ITeachingTipFactory : global::Microsoft.UI.Xaml.Controls.ITeachingTipFactory
+    {
+    }
+    internal static class ITeachingTipOpenedEventArgsMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xAA, 0x9A, 0xC4, 0x74, 0xC8, 0x9C, 0xD, 0x5B, 0xA2, 0xB1, 0xCE, 0x78, 0x9E, 0x35, 0xCC, 0xDE };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("74C49AAA-9CC8-5B0D-A2B1-CE789E35CCDE")]
+    internal interface ITeachingTipOpenedEventArgs : global::Microsoft.UI.Xaml.Controls.ITeachingTipOpenedEventArgs
     {
     }
     internal static class ITeachingTipStaticsMethods
@@ -162005,6 +162175,31 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Xaml.Controls.TeachingTipClosingEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct TeachingTipOpenedEventArgs
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipOpenedEventArgsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Controls.ITeachingTipOpenedEventArgsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class TeachingTipOpenedEventArgsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct TeachingTipTemplateSettings

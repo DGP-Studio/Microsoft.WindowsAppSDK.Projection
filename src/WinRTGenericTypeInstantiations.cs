@@ -1418,14 +1418,14 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String
+    internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String
     {
         private static bool Initialized { get; } = Init();
 
         public static bool EnsureInitialized() => Initialized;
 
 
-        private static unsafe global::Microsoft.Windows.AI.Generative.ImageDescriptionResult GetResults(IObjectReference _obj)
+        private static unsafe global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult GetResults(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -1434,14 +1434,14 @@ namespace WinRT.GenericTypeInstantiations
             {
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.AI.Generative.ImageDescriptionResult.FromAbi(__retval);
+                return global::ABI.Microsoft.Windows.AI.Imaging.ImageDescriptionResult.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Microsoft.Windows.AI.Generative.ImageDescriptionResult.DisposeAbi(__retval);
+                global::ABI.Microsoft.Windows.AI.Imaging.ImageDescriptionResult.DisposeAbi(__retval);
             }
         }
-        private static unsafe global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string> get_Progress(IObjectReference _obj)
+        private static unsafe global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string> get_Progress(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -1450,23 +1450,23 @@ namespace WinRT.GenericTypeInstantiations
             {
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.FromAbi(__retval);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.DisposeAbi(__retval);
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.DisposeAbi(__retval);
             }
         }
-        private static unsafe void put_Progress(IObjectReference _obj, global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string> value)
+        private static unsafe void put_Progress(IObjectReference _obj, global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string> value)
         {
             var ThisPtr = _obj.ThisPtr;
 
             ObjectReferenceValue __value = default;
             try
             {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.CreateMarshaler2(value);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.CreateMarshaler2(value);
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
                 global::System.GC.KeepAlive(_obj);
             }
@@ -1476,7 +1476,7 @@ namespace WinRT.GenericTypeInstantiations
             }
         }
 
-        private static unsafe global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string> get_Completed(IObjectReference _obj)
+        private static unsafe global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string> get_Completed(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -1485,23 +1485,23 @@ namespace WinRT.GenericTypeInstantiations
             {
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.FromAbi(__retval);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.DisposeAbi(__retval);
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.DisposeAbi(__retval);
             }
         }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string> value)
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string> value)
         {
             var ThisPtr = _obj.ThisPtr;
 
             ObjectReferenceValue __value = default;
             try
             {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.CreateMarshaler2(value);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.CreateMarshaler2(value);
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
                 global::System.GC.KeepAlive(_obj);
             }
@@ -1515,7 +1515,7 @@ namespace WinRT.GenericTypeInstantiations
 
         private unsafe static bool Init()
         {
-            global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.InitRcwHelper(&put_Progress,
+            global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.InitRcwHelper(&put_Progress,
             &get_Progress,
             &put_Completed,
             &get_Completed,
@@ -1843,6 +1843,62 @@ namespace WinRT.GenericTypeInstantiations
             &HasKey,
             &Split);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Windows_Data_Json_IJsonValue_.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2Frame__Microsoft_Web_WebView2_Core_CoreWebView2FrameCreatedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.Web.WebView2.Core.CoreWebView2Frame sender, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Frame.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, IntPtr, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Frame.FromAbi(sender), global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, IntPtr, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2Frame, IntPtr, global::Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
             return true;
         }
     }
@@ -5243,30 +5299,30 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_SemanticSearchInternal_QueryParametersInternal
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_VisionInternal_IRecognizedTextInternal
     {
         private static bool Initialized { get; } = Init();
 
         public static bool EnsureInitialized() => Initialized;
 
 
-        private static unsafe global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal GetResults(IObjectReference _obj)
+        private static unsafe global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal GetResults(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
-            global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal __retval = default;
+            IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal.FromAbi(__retval);
+                return MarshalInterface<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal.DisposeAbi(__retval);
+                MarshalInterface<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>.DisposeAbi(__retval);
             }
         }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal> get_Completed(IObjectReference _obj)
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal> get_Completed(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -5275,23 +5331,23 @@ namespace WinRT.GenericTypeInstantiations
             {
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearchInternal_QueryParametersInternal.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.FromAbi(__retval);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_VisionInternal_IRecognizedTextInternal.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.DisposeAbi(__retval);
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>.DisposeAbi(__retval);
             }
         }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal> value)
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal> value)
         {
             var ThisPtr = _obj.ThisPtr;
 
             ObjectReferenceValue __value = default;
             try
             {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearchInternal_QueryParametersInternal.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.CreateMarshaler2(value);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_VisionInternal_IRecognizedTextInternal.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>.CreateMarshaler2(value);
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
                 global::System.GC.KeepAlive(_obj);
             }
@@ -5305,7 +5361,7 @@ namespace WinRT.GenericTypeInstantiations
 
         private unsafe static bool Init()
         {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.InitRcwHelper(&put_Completed,
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal, IntPtr>.InitRcwHelper(&put_Completed,
             &get_Completed,
             &GetResults);
 
@@ -5479,77 +5535,6 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_object.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_IAsyncOperation_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal_
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal> GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal.EnsureInitialized();
-                return MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal_.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal_.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
             return true;
         }
     }
@@ -6260,76 +6245,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageObjectExtractor
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Graphics.Imaging.ImageObjectExtractor GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Graphics.Imaging.ImageObjectExtractor.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Graphics.Imaging.ImageObjectExtractor.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectExtractor> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectExtractor.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectExtractor>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectExtractor>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectExtractor> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectExtractor.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectExtractor>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Graphics.Imaging.ImageObjectExtractor, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_EventHandler_1_Microsoft_UI_Xaml_Media_RenderedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -6513,76 +6428,6 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2SaveAsUIResult, global::Microsoft.Web.WebView2.Core.CoreWebView2SaveAsUIResult>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Generative_LanguageModel
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.AI.Generative.LanguageModel GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.AI.Generative.LanguageModel.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.AI.Generative.LanguageModel.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModel> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_LanguageModel.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModel>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModel>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModel> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_LanguageModel.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModel>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Generative.LanguageModel, IntPtr>.InitRcwHelper(&put_Completed,
             &get_Completed,
             &GetResults);
 
@@ -8497,86 +8342,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.SemanticSearchInternal.TopicInternal GetAt(IObjectReference _obj, uint index)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.DisposeAbi(__retval);
-            }
-        }
-
-        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.SemanticSearchInternal.TopicInternal value, out uint index)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.Marshaler __value = default;
-            uint __index = default;
-            byte __retval = default;
-            try
-            {
-                __value = global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.CreateMarshaler(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.GetAbi(__value), &__index, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                index = __index;
-                return __retval != 0;
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.DisposeMarshaler(__value);
-            }
-        }
-
-        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.SemanticSearchInternal.TopicInternal[] items)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.MarshalerArray __items = default;
-            int __items_length = default;
-            IntPtr __items_data = default;
-            uint __retval = default;
-            try
-            {
-                __items = MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.CreateMarshalerArray(items);
-                (__items_length, __items_data) = MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.GetAbiArray(__items);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.CopyAbiArray(items, (__items_length, __items_data));
-                return __retval;
-            }
-            finally
-            {
-                MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.DisposeMarshalerArray(__items);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal>.InitRcwHelper(&GetAt,
-            &IndexOf,
-            &GetMany);
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal.EnsureInitialized();
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TabViewItem__Microsoft_UI_Xaml_Controls_TabViewTabCloseRequestedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -9337,6 +9102,76 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_TextRecognizer
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.TextRecognizer GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.TextRecognizer.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.TextRecognizer.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.TextRecognizer> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_TextRecognizer.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.TextRecognizer>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.TextRecognizer>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.TextRecognizer> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_TextRecognizer.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.TextRecognizer>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.TextRecognizer, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterable_1_object
     {
         private static bool Initialized { get; } = Init();
@@ -9825,76 +9660,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageObjectRemover
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Graphics.Imaging.ImageObjectRemover GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Graphics.Imaging.ImageObjectRemover.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Graphics.Imaging.ImageObjectRemover.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectRemover> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectRemover.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectRemover>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectRemover>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectRemover> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectRemover.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageObjectRemover>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Graphics.Imaging.ImageObjectRemover, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputNonClientPointerSource__Microsoft_UI_Input_NonClientCaptionTappedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -10371,6 +10136,113 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputActivationListener, IntPtr, global::Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputActivationListener, IntPtr, global::Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Text.LanguageModelResponseResult GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Text.LanguageModelResponseResult.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelResponseResult.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> get_Progress(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Progress(IObjectReference _obj, global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&put_Progress,
+            &get_Progress,
+            &put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -11525,6 +11397,76 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageScaler
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.ImageScaler GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.ImageScaler.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.ImageScaler.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageScaler> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageScaler.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageScaler>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageScaler>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageScaler> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageScaler.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageScaler>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.ImageScaler, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_UIElement__Microsoft_UI_Xaml_DropCompletedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -11577,6 +11519,86 @@ namespace WinRT.GenericTypeInstantiations
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.UIElement, IntPtr, global::Microsoft.UI.Xaml.DropCompletedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.UIElement, IntPtr, global::Microsoft.UI.Xaml.DropCompletedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, IntPtr*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            uint __index = default;
+            byte __retval = default;
+            try
+            {
+                __value = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value), &__index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                index = __index;
+                return __retval != 0;
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector, IntPtr>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector.EnsureInitialized();
             return true;
         }
     }
@@ -13529,6 +13551,76 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Input.XamlUICommand, IntPtr, global::Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Input.XamlUICommand, IntPtr, global::Microsoft.UI.Xaml.Input.ExecuteRequestedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_RecognizedText
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.RecognizedText GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.RecognizedText.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.RecognizedText.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.RecognizedText> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_RecognizedText.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.RecognizedText>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.RecognizedText>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.RecognizedText> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_RecognizedText.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.RecognizedText>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.RecognizedText, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -16960,76 +17052,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_SemanticSearch_EmbeddingVector
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.SemanticSearch.EmbeddingVector GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVector.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.SemanticSearch.EmbeddingVector.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearch.EmbeddingVector> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearch_EmbeddingVector.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearch.EmbeddingVector> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearch_EmbeddingVector.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.SemanticSearch.EmbeddingVector, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IVector_1_Microsoft_UI_Xaml_Input_KeyboardAccelerator
     {
         private static bool Initialized { get; } = Init();
@@ -18369,6 +18391,76 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.AutoSuggestBox, IntPtr, global::Microsoft.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.AutoSuggestBox, IntPtr, global::Microsoft.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Text_LanguageModel
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Text.LanguageModel GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Text.LanguageModel.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModel.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModel> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Text_LanguageModel.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModel>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModel>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModel> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Text_LanguageModel.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Text.LanguageModel>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Text.LanguageModel, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -21638,76 +21730,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Vision_TextRecognizer
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.Vision.TextRecognizer GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.Vision.TextRecognizer.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.Vision.TextRecognizer.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.TextRecognizer> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_TextRecognizer.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.TextRecognizer>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.TextRecognizer>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.TextRecognizer> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_TextRecognizer.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.TextRecognizer>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.Vision.TextRecognizer, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IVector_1_Microsoft_UI_Xaml_Documents_Block
     {
         private static bool Initialized { get; } = Init();
@@ -23687,76 +23709,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Generative_ImageDescriptionGenerator
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.AI.Generative.ImageDescriptionGenerator.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.AI.Generative.ImageDescriptionGenerator.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_ImageDescriptionGenerator.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_ImageDescriptionGenerator.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_MapControl__Microsoft_UI_Xaml_Controls_MapElementClickEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -24454,6 +24406,76 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageDescriptionGenerator
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageDescriptionGenerator.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageDescriptionGenerator.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_AIFeatureReadyResult__Double
     {
         private static bool Initialized { get; } = Init();
@@ -24781,6 +24803,69 @@ namespace WinRT.GenericTypeInstantiations
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.RichEditBox, IntPtr, global::Microsoft.UI.Xaml.Controls.TextCompositionStartedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.RichEditBox, IntPtr, global::Microsoft.UI.Xaml.Controls.TextCompositionStartedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal4
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4 GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4 __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4 value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __index = default;
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, value, &__index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            index = __index;
+            return __retval != 0;
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal4.EnsureInitialized();
             return true;
         }
     }
@@ -26083,6 +26168,76 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.DragDrop.DragDropManager, IntPtr, global::Microsoft.UI.Input.DragDrop.DropOperationTargetRequestedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.DragDrop.DragDropManager, IntPtr, global::Microsoft.UI.Input.DragDrop.DropOperationTargetRequestedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.ImageObjectRemover GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectRemover.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectRemover.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -28026,6 +28181,69 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_PrivateCommon_ImageBufferViewData
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.PrivateCommon.ImageBufferViewData GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.PrivateCommon.ImageBufferViewData __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __index = default;
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, value, &__index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            index = __index;
+            return __retval != 0;
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_PrivateCommon_ImageBufferViewData.EnsureInitialized();
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_UIElement__Microsoft_UI_Xaml_Input_NoFocusCandidateFoundEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -28134,6 +28352,149 @@ namespace WinRT.GenericTypeInstantiations
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<object, IntPtr, object, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<object, IntPtr, object, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AI_Foundation_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Foundation.EmbeddingVector GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, IntPtr*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.DisposeAbi(__retval);
+            }
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.AI.Foundation.EmbeddingVector value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            uint __index = default;
+            byte __retval = default;
+            try
+            {
+                __value = global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value), &__index, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                index = __index;
+                return __retval != 0;
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector, IntPtr>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_AI_Foundation_EmbeddingVector.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.VisionInternal.ScreenRegionInternal GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.VisionInternal.ScreenRegionInternal __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __index = default;
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, value, &__index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            index = __index;
+            return __retval != 0;
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal.EnsureInitialized();
             return true;
         }
     }
@@ -29104,6 +29465,76 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.NavigationView, IntPtr, global::Microsoft.UI.Xaml.Controls.NavigationViewPaneClosingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.NavigationView, IntPtr, global::Microsoft.UI.Xaml.Controls.NavigationViewPaneClosingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageObjectExtractor
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectExtractor.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectExtractor.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectExtractor.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectExtractor.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -30088,6 +30519,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TeachingTip__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.TeachingTip sender, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.TeachingTip.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.TeachingTip, IntPtr, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.TeachingTip.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.TeachingTip, IntPtr, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.TeachingTip, IntPtr, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVector_1_object
     {
         private static bool Initialized { get; } = Init();
@@ -30834,76 +31321,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Vision_RecognizedText
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.Vision.RecognizedText GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.Vision.RecognizedText.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.Vision.RecognizedText.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.RecognizedText> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_RecognizedText.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.RecognizedText>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.RecognizedText>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.RecognizedText> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_RecognizedText.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Windows.Vision.RecognizedText>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Windows.Vision.RecognizedText, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2Frame__Microsoft_Web_WebView2_Core_CoreWebView2NavigationStartingEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -31256,6 +31673,113 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.InfoBar, IntPtr, global::Microsoft.UI.Xaml.Controls.InfoBarClosingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.InfoBar, IntPtr, global::Microsoft.UI.Xaml.Controls.InfoBarClosingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.AI.Text.TextToTableResponseResult GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Text.TextToTableResponseResult.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.TextToTableResponseResult.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string> get_Progress(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Progress(IObjectReference _obj, global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        private static unsafe global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&put_Progress,
+            &get_Progress,
+            &put_Completed,
+            &get_Completed,
+            &GetResults);
 
             return true;
         }
@@ -32055,6 +32579,69 @@ namespace WinRT.GenericTypeInstantiations
             &get_Completed,
             &GetResults);
 
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_PrivateCommon_ImageBufferView
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::Microsoft.Windows.PrivateCommon.ImageBufferView GetAt(IObjectReference _obj, uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.PrivateCommon.ImageBufferView __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, global::Microsoft.Windows.PrivateCommon.ImageBufferView*, int>**)ThisPtr)[6](ThisPtr, index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        private static unsafe bool IndexOf(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferView value, out uint index)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __index = default;
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView, uint*, byte*, int>**)ThisPtr)[8](ThisPtr, value, &__index, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            index = __index;
+            return __retval != 0;
+        }
+
+        private static unsafe uint GetMany(IObjectReference _obj, uint startIndex, global::Microsoft.Windows.PrivateCommon.ImageBufferView[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, startIndex, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.DisposeMarshalerArray(__items);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferView>.InitRcwHelper(&GetAt,
+            &IndexOf,
+            &GetMany);
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_PrivateCommon_ImageBufferView.EnsureInitialized();
             return true;
         }
     }
@@ -33054,6 +33641,77 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Windowing_DisplayArea.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_IAsyncOperation_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal_
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal> GetResults(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>> get_Completed(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal_.EnsureInitialized();
+                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.DisposeAbi(__retval);
+            }
+        }
+        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>> value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal_.EnsureInitialized();
+                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>, IntPtr>.InitRcwHelper(&put_Completed,
+            &get_Completed,
+            &GetResults);
+
             return true;
         }
     }
@@ -35152,113 +35810,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.AI.Generative.LanguageModelResponseResult.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.AI.Generative.LanguageModelResponseResult.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string> get_Progress(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Progress(IObjectReference _obj, global::Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationProgressHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-        private static unsafe global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&put_Progress,
-            &get_Progress,
-            &put_Completed,
-            &get_Completed,
-            &GetResults);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IMap_2_String__Microsoft_Windows_Storage_ApplicationDataContainer
     {
         private static bool Initialized { get; } = Init();
@@ -35538,76 +36089,6 @@ namespace WinRT.GenericTypeInstantiations
             &GetMany,
             &ReplaceAll);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_Management_Deployment_PackageVolume.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageScaler
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::Microsoft.Graphics.Imaging.ImageScaler GetResults(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Graphics.Imaging.ImageScaler.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Graphics.Imaging.ImageScaler.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageScaler> get_Completed(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageScaler.EnsureInitialized();
-                return global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageScaler>.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageScaler>.DisposeAbi(__retval);
-            }
-        }
-        private static unsafe void put_Completed(IObjectReference _obj, global::Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageScaler> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageScaler.EnsureInitialized();
-                __value = global::ABI.Windows.Foundation.AsyncOperationCompletedHandler<global::Microsoft.Graphics.Imaging.ImageScaler>.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.IAsyncOperationMethods<global::Microsoft.Graphics.Imaging.ImageScaler, IntPtr>.InitRcwHelper(&put_Completed,
-            &get_Completed,
-            &GetResults);
-
             return true;
         }
     }
@@ -36528,6 +37009,64 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string> asyncInfo, string progressInfo)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __asyncInfo = default;
+            try
+            {
+                __asyncInfo = MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>>.CreateMarshaler2(asyncInfo, global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>.IID);
+                MarshalString.Pinnable __progressInfo = new(progressInfo);
+                fixed(void* ___progressInfo = __progressInfo)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__asyncInfo), MarshalString.GetAbi(ref __progressInfo)));
+                    global::System.GC.KeepAlive(_obj);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__asyncInfo);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, IntPtr progressInfo)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>>.FromAbi(asyncInfo), MarshalString.FromAbi(progressInfo));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Documents_Block
     {
         private static bool Initialized { get; } = Init();
@@ -36746,6 +37285,43 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_RecognizedText
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_RecognizedText.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.RecognizedText, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.RecognizedText>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.RecognizedText, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_UI_Xaml_Controls_Primitives_ZoomSnapPointBase
     {
         private static bool Initialized { get; } = Init();
@@ -36902,64 +37478,6 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Web_WebView2_Core_CoreWebView2CustomSchemeRegistration.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe void Invoke(IObjectReference _obj, global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string> asyncInfo, string progressInfo)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __asyncInfo = default;
-            try
-            {
-                __asyncInfo = MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>>.CreateMarshaler2(asyncInfo, global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>.IID);
-                MarshalString.Pinnable __progressInfo = new(progressInfo);
-                fixed(void* ___progressInfo = __progressInfo)
-                {
-                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__asyncInfo), MarshalString.GetAbi(ref __progressInfo)));
-                    global::System.GC.KeepAlive(_obj);
-                }
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__asyncInfo);
-            }
-        }
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, IntPtr progressInfo)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>>.FromAbi(asyncInfo), MarshalString.FromAbi(progressInfo));
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&Invoke);
-            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
             return true;
         }
     }
@@ -37178,6 +37696,43 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_Storage_Pickers_PickFileResult.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
             return true;
         }
     }
@@ -37572,43 +38127,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectRemover
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageObjectRemover.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageObjectRemover, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Imaging.ImageObjectRemover>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageObjectRemover, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Controls_ColumnDefinition
     {
         private static bool Initialized { get; } = Init();
@@ -37730,43 +38248,6 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::System.Collections.Generic.KeyValuePair<string, global::Windows.Data.Json.IJsonValue>, IntPtr>.InitRcwHelper(&First);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearch_EmbeddingVector
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_SemanticSearch_EmbeddingVector.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.SemanticSearch.EmbeddingVector, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.SemanticSearch.EmbeddingVector>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.SemanticSearch.EmbeddingVector, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -38065,6 +38546,43 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.UI.Xaml.Controls.RowDefinition, IntPtr>.InitRcwHelper(&get_Current,
             &GetMany);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageScaler
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageScaler.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageScaler, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageScaler>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageScaler, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -38544,40 +39062,6 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_RowDefinition.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal> First(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal.EnsureInitialized();
-                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>.DisposeAbi(__retval);
-            }
-        }
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal>.InitRcwHelper(&First);
-
             return true;
         }
     }
@@ -41307,6 +41791,40 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_UI_Xaml_DependencyObject
     {
         private static bool Initialized { get; } = Init();
@@ -41543,43 +42061,6 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_SetterBase.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_SemanticSearchInternal_QueryParametersInternal
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_SemanticSearchInternal_QueryParametersInternal.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.QueryParametersInternal>.InitCcw(&Do_Abi_Invoke);
-
             return true;
         }
     }
@@ -41904,117 +42385,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageObjectExtractor
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageObjectExtractor.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageObjectExtractor, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Imaging.ImageObjectExtractor>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageObjectExtractor, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_LanguageModel
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Generative_LanguageModel.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModel, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Generative.LanguageModel>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModel, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_UI_Xaml_Documents_Inline
     {
         private static bool Initialized { get; } = Init();
@@ -42091,6 +42461,43 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Documents_Inline.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
             return true;
         }
     }
@@ -42491,6 +42898,80 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_VisionInternal_IRecognizedTextInternal
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_VisionInternal_IRecognizedTextInternal.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.VisionInternal.IRecognizedTextInternal, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_TextRecognizer
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_TextRecognizer.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.TextRecognizer, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.TextRecognizer>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.TextRecognizer, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_object_
     {
         private static bool Initialized { get; } = Init();
@@ -42604,101 +43085,6 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_TreeViewNode.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal_
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal_.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe void Invoke(IObjectReference _obj, global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string> asyncInfo, string progressInfo)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __asyncInfo = default;
-            try
-            {
-                __asyncInfo = MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>>.CreateMarshaler2(asyncInfo, global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>.IID);
-                MarshalString.Pinnable __progressInfo = new(progressInfo);
-                fixed(void* ___progressInfo = __progressInfo)
-                {
-                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__asyncInfo), MarshalString.GetAbi(ref __progressInfo)));
-                    global::System.GC.KeepAlive(_obj);
-                }
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__asyncInfo);
-            }
-        }
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, IntPtr progressInfo)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_ImageDescriptionResult__String.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, string>>.FromAbi(asyncInfo), MarshalString.FromAbi(progressInfo));
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.InitRcwHelper(&Invoke);
-            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
             return true;
         }
     }
@@ -43075,43 +43461,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_RecognizedText
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Vision_RecognizedText.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.Vision.RecognizedText, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.Vision.RecognizedText>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.Vision.RecognizedText, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IIterator_1_Windows_Foundation_Point
     {
         private static bool Initialized { get; } = Init();
@@ -43472,6 +43821,43 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_AnnotatedScrollBarLabel.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_TextToTableResponseResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, string>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.TextToTableResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
             return true;
         }
     }
@@ -43954,43 +44340,6 @@ namespace WinRT.GenericTypeInstantiations
             &HasKey,
             &Split);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Microsoft_UI_Xaml_DataTemplate_.EnsureInitialized();
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Graphics_Imaging_ImageScaler
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Graphics_Imaging_ImageScaler.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageScaler, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Imaging.ImageScaler>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Graphics.Imaging.ImageScaler, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
             return true;
         }
     }
@@ -44551,43 +44900,6 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::System.Uri, IntPtr>.InitRcwHelper(&First);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationWithProgressCompletedHandler_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Generative_LanguageModelResponseResult__String.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, string>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationWithProgressCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -45642,6 +45954,43 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal_
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal_.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Media_Animation_ColorKeyFrame
     {
         private static bool Initialized { get; } = Init();
@@ -45776,6 +46125,43 @@ namespace WinRT.GenericTypeInstantiations
             &IndexOf,
             &GetMany);
             _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Controls_HubSection.EnsureInitialized();
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectExtractor
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageObjectExtractor.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectExtractor, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
             return true;
         }
     }
@@ -46514,6 +46900,98 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal4
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal4.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> asyncInfo, string progressInfo)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __asyncInfo = default;
+            try
+            {
+                __asyncInfo = MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.CreateMarshaler2(asyncInfo, global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>.IID);
+                MarshalString.Pinnable __progressInfo = new(progressInfo);
+                fixed(void* ___progressInfo = __progressInfo)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__asyncInfo), MarshalString.GetAbi(ref __progressInfo)));
+                    global::System.GC.KeepAlive(_obj);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__asyncInfo);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, IntPtr progressInfo)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(asyncInfo), MarshalString.FromAbi(progressInfo));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Media_XamlLight
     {
         private static bool Initialized { get; } = Init();
@@ -46948,6 +47426,40 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_PrivateCommon_ImageBufferView
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferView> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_PrivateCommon_ImageBufferView.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferView>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferView>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferView>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_VectorChangedEventHandler_1_Microsoft_UI_Xaml_Controls_GroupStyle
     {
         private static bool Initialized { get; } = Init();
@@ -47370,6 +47882,43 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageDescriptionGenerator
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageDescriptionGenerator.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionGenerator, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IMapView_2_String__Microsoft_UI_Composition_Scenes_SceneAttributeSemantic
     {
         private static bool Initialized { get; } = Init();
@@ -47439,43 +47988,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Generative_ImageDescriptionGenerator
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Generative_ImageDescriptionGenerator.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Generative.ImageDescriptionGenerator, IntPtr>.InitCcw(&Do_Abi_Invoke);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_UI_Xaml_Data_ItemIndexRange
     {
         private static bool Initialized { get; } = Init();
@@ -47505,6 +48017,43 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.UI.Xaml.Data.ItemIndexRange, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Text_LanguageModel
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Text_LanguageModel.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModel, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Text.LanguageModel>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Text.LanguageModel, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -47866,6 +48415,74 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_AI_Foundation_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_AI_Foundation_EmbeddingVector.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_PrivateCommon_ImageBufferViewData
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_PrivateCommon_ImageBufferViewData.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Media_Animation_DoubleKeyFrame
     {
         private static bool Initialized { get; } = Init();
@@ -48033,43 +48650,6 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.UI.Xaml.VisualTransition, IntPtr>.InitRcwHelper(&First);
-
-            return true;
-        }
-    }
-
-    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_Vision_TextRecognizer
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
-        {
-            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Vision_TextRecognizer.EnsureInitialized();
-
-
-
-            try
-            {
-                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.Vision.TextRecognizer, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.Vision.TextRecognizer>>.FromAbi(asyncInfo), asyncStatus);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-
-        private unsafe static bool Init()
-        {
-
-            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.Vision.TextRecognizer, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -48432,6 +49012,40 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal> First(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IEnumerator<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IVectorView_1_Microsoft_UI_Xaml_Media_PathSegment
     {
         private static bool Initialized { get; } = Init();
@@ -48776,6 +49390,64 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_AsyncOperationProgressHandler_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string> asyncInfo, string progressInfo)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __asyncInfo = default;
+            try
+            {
+                __asyncInfo = MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>>.CreateMarshaler2(asyncInfo, global::ABI.Windows.Foundation.IAsyncOperationWithProgressMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>.IID);
+                MarshalString.Pinnable __progressInfo = new(progressInfo);
+                fixed(void* ___progressInfo = __progressInfo)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__asyncInfo), MarshalString.GetAbi(ref __progressInfo)));
+                    global::System.GC.KeepAlive(_obj);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__asyncInfo);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, IntPtr progressInfo)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Imaging_ImageDescriptionResult__String.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, string>>.FromAbi(asyncInfo), MarshalString.FromAbi(progressInfo));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.AsyncOperationProgressHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageDescriptionResult, IntPtr, string, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterable_1_Windows_Foundation_Collections_IKeyValuePair_2_String__Double_
     {
         private static bool Initialized { get; } = Init();
@@ -48805,6 +49477,43 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::System.Collections.Generic.KeyValuePair<string, double>, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_AsyncOperationCompletedHandler_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr asyncInfo, global::Windows.Foundation.AsyncStatus asyncStatus)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover.EnsureInitialized();
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>>.FromAbi(asyncInfo), asyncStatus);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+
+            global::ABI.Windows.Foundation.AsyncOperationCompletedHandlerMethods<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -50421,64 +51130,6 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
-    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_SemanticSearchInternal_TopicInternal
-    {
-        private static bool Initialized { get; } = Init();
-
-        public static bool EnsureInitialized() => Initialized;
-
-
-        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.SemanticSearchInternal.TopicInternal[] items)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.MarshalerArray __items = default;
-            int __items_length = default;
-            IntPtr __items_data = default;
-            uint __retval = default;
-            try
-            {
-                __items = MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.CreateMarshalerArray(items);
-                (__items_length, __items_data) = MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.GetAbiArray(__items);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.CopyAbiArray(items, (__items_length, __items_data));
-                return __retval;
-            }
-            finally
-            {
-                MarshalNonBlittable<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal>.DisposeMarshalerArray(__items);
-            }
-        }
-        private static unsafe global::Microsoft.Windows.SemanticSearchInternal.TopicInternal get_Current(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal.DisposeAbi(__retval);
-            }
-        }
-
-
-
-
-        private unsafe static bool Init()
-        {
-            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.SemanticSearchInternal.TopicInternal, global::ABI.Microsoft.Windows.SemanticSearchInternal.TopicInternal>.InitRcwHelper(&get_Current,
-            &GetMany);
-
-            return true;
-        }
-    }
-
     internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_UI_Xaml_Controls_Primitives_Popup
     {
         private static bool Initialized { get; } = Init();
@@ -50589,6 +51240,64 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.UI.Xaml.Input.InputScopeName, IntPtr>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.DisposeAbi(__retval);
+            }
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.AI.FoundationInternal.EmbeddingVector, IntPtr>.InitRcwHelper(&get_Current,
             &GetMany);
 
             return true;
@@ -51918,6 +52627,56 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal4
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4 get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4 __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal4>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterator_1_UInt64
     {
         private static bool Initialized { get; } = Init();
@@ -52592,6 +53351,64 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_AI_Foundation_EmbeddingVector
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.AI.Foundation.EmbeddingVector[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.CreateMarshalerArray(items);
+                (__items_length, __items_data) = global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.CopyAbiArray(items, (__items_length, __items_data));
+                return __retval;
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.AI.Foundation.EmbeddingVector get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVector.DisposeAbi(__retval);
+            }
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector, IntPtr>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_IIterable_1_Microsoft_Web_WebView2_Core_CoreWebView2ProcessExtendedInfo
     {
         private static bool Initialized { get; } = Init();
@@ -52621,6 +53438,56 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Web.WebView2.Core.CoreWebView2ProcessExtendedInfo, IntPtr>.InitRcwHelper(&First);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_PrivateCommon_ImageBufferViewData
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.PrivateCommon.ImageBufferViewData get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.PrivateCommon.ImageBufferViewData __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData>.InitRcwHelper(&get_Current,
+            &GetMany);
 
             return true;
         }
@@ -52678,6 +53545,106 @@ namespace WinRT.GenericTypeInstantiations
         private unsafe static bool Init()
         {
             global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.UI.Xaml.VisualTransition, IntPtr>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_VisionInternal_ScreenRegionInternal
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.VisionInternal.ScreenRegionInternal get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.VisionInternal.ScreenRegionInternal __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.VisionInternal.ScreenRegionInternal, global::Microsoft.Windows.VisionInternal.ScreenRegionInternal>.InitRcwHelper(&get_Current,
+            &GetMany);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_Collections_IIterator_1_Microsoft_Windows_PrivateCommon_ImageBufferView
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe uint GetMany(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferView[] items)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.MarshalerArray __items = default;
+            int __items_length = default;
+            IntPtr __items_data = default;
+            uint __retval = default;
+            try
+            {
+                __items = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.CreateMarshalerArray(items);
+                (__items_length, __items_data) = MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.GetAbiArray(__items);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, uint*, int>**)ThisPtr)[9](ThisPtr, __items_length, __items_data, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+            finally
+            {
+                MarshalBlittable<global::Microsoft.Windows.PrivateCommon.ImageBufferView>.DisposeMarshalerArray(__items);
+            }
+        }
+        private static unsafe global::Microsoft.Windows.PrivateCommon.ImageBufferView get_Current(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.PrivateCommon.ImageBufferView __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.Collections.Generic.IEnumeratorMethods<global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferView>.InitRcwHelper(&get_Current,
             &GetMany);
 
             return true;
