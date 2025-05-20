@@ -10,7 +10,7 @@ namespace WinRT
 {
     internal static class ProjectionTypesInitializer
     {
-        internal static readonly System.Collections.Generic.Dictionary<string, string> TypeNameToBaseTypeNameMapping = new System.Collections.Generic.Dictionary<string, string>(733, System.StringComparer.Ordinal)
+        internal static readonly System.Collections.Generic.Dictionary<string, string> TypeNameToBaseTypeNameMapping = new System.Collections.Generic.Dictionary<string, string>(734, System.StringComparer.Ordinal)
         {
             ["Microsoft.UI.Xaml.Media.Animation.BasicConnectedAnimationConfiguration"] = "Microsoft.UI.Xaml.Media.Animation.ConnectedAnimationConfiguration",
             ["Microsoft.UI.Xaml.Media.Imaging.SurfaceImageSource"] = "Microsoft.UI.Xaml.Media.ImageSource",
@@ -119,6 +119,7 @@ namespace WinRT
             ["Microsoft.UI.Composition.Scenes.SceneRendererComponent"] = "Microsoft.UI.Composition.Scenes.SceneComponent",
             ["Microsoft.UI.Xaml.Controls.ListView"] = "Microsoft.UI.Xaml.Controls.ListViewBase",
             ["Microsoft.UI.Composition.CompositionLinearGradientBrush"] = "Microsoft.UI.Composition.CompositionGradientBrush",
+            ["Microsoft.UI.Content.PopupWindowSiteBridge"] = "Microsoft.UI.Content.DesktopSiteBridge",
             ["Microsoft.UI.Xaml.Controls.GridView"] = "Microsoft.UI.Xaml.Controls.ListViewBase",
             ["Microsoft.UI.Xaml.Controls.ListPickerFlyoutPresenter"] = "Microsoft.UI.Xaml.Controls.Control",
             ["Microsoft.UI.Xaml.Media.Animation.DiscretePointKeyFrame"] = "Microsoft.UI.Xaml.Media.Animation.PointKeyFrame",

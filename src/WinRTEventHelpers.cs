@@ -4650,6 +4650,86 @@ namespace WinRT
         }
     }
 
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_ContentIslandEnvironment__object_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_ContentIslandEnvironment__object.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_ContentIslandEnvironment__object_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Content.ContentIslandEnvironment sender, object args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointConnectionEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointConnectionEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointConnectionEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate sender, global::Microsoft.UI.Content.EndpointConnectionEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Composition_SystemBackdrops_ISystemBackdropControllerWithTargets__object_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropControllerWithTargets, object>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Composition_SystemBackdrops_ISystemBackdropControllerWithTargets__object.EnsureInitialized();
@@ -9770,6 +9850,46 @@ namespace WinRT
         }
     }
 
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPointerSource__global__Microsoft_UI_Input_TouchHitTestingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputPointerSource__Microsoft_UI_Input_TouchHitTestingEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPointerSource__global__Microsoft_UI_Input_TouchHitTestingEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Input.InputPointerSource sender, global::Microsoft.UI.Input.TouchHitTestingEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2__global__Microsoft_Web_WebView2_Core_CoreWebView2WebResourceResponseReceivedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2, global::Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2__Microsoft_Web_WebView2_Core_CoreWebView2WebResourceResponseReceivedEventArgs.EnsureInitialized();
@@ -9838,6 +9958,46 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TreeView, global::Microsoft.UI.Xaml.Controls.TreeViewDragItemsStartingEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.TreeView sender, global::Microsoft.UI.Xaml.Controls.TreeViewDragItemsStartingEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate sender, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)

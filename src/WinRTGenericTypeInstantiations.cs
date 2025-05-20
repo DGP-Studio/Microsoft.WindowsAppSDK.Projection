@@ -4064,6 +4064,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputPointerSource__Microsoft_UI_Input_TouchHitTestingEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Input.InputPointerSource sender, global::Microsoft.UI.Input.TouchHitTestingEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Input.InputPointerSource.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPointerSource, IntPtr, global::Microsoft.UI.Input.TouchHitTestingEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Input.InputPointerSource.FromAbi(sender), global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPointerSource, IntPtr, global::Microsoft.UI.Input.TouchHitTestingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPointerSource, IntPtr, global::Microsoft.UI.Input.TouchHitTestingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2Frame__Microsoft_Web_WebView2_Core_CoreWebView2ContentLoadingEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -12221,6 +12277,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate sender, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = MarshalInterface<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>.CreateMarshaler2(sender, global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.IID);
+                __args = global::ABI.Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>.FromAbi(sender), global::ABI.Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputLightDismissAction__Microsoft_UI_Input_InputLightDismissEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -16806,6 +16918,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_EventHandler_1_Microsoft_UI_Content_ContentIsland
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, object sender, global::Microsoft.UI.Content.ContentIsland args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = MarshalInspectable<object>.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Content.ContentIsland.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.System.EventHandlerMethods<global::Microsoft.UI.Content.ContentIsland, IntPtr>.Abi_Invoke(thisPtr, MarshalInspectable<object>.FromAbi(sender), global::ABI.Microsoft.UI.Content.ContentIsland.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.System.EventHandlerMethods<global::Microsoft.UI.Content.ContentIsland, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.System.EventHandlerMethods<global::Microsoft.UI.Content.ContentIsland, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_Collections_VectorChangedEventHandler_1_Microsoft_UI_Xaml_DependencyObject
     {
         private static bool Initialized { get; } = Init();
@@ -21241,6 +21409,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController, IntPtr, global::Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController, IntPtr, global::Microsoft.UI.Xaml.Controls.Primitives.ScrollControllerScrollToRequestedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_ContentIslandEnvironment__object
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Content.ContentIslandEnvironment sender, object args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Content.ContentIslandEnvironment.CreateMarshaler2(sender);
+                __args = MarshalInspectable<object>.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.ContentIslandEnvironment, IntPtr, object, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Content.ContentIslandEnvironment.FromAbi(sender), MarshalInspectable<object>.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.ContentIslandEnvironment, IntPtr, object, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.ContentIslandEnvironment, IntPtr, object, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }
@@ -35350,6 +35574,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputKeyboardSource, IntPtr, global::Microsoft.UI.Input.ContextMenuKeyEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputKeyboardSource, IntPtr, global::Microsoft.UI.Input.ContextMenuKeyEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointConnectionEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate sender, global::Microsoft.UI.Content.EndpointConnectionEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = MarshalInterface<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>.CreateMarshaler2(sender, global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.IID);
+                __args = global::ABI.Microsoft.UI.Content.EndpointConnectionEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointConnectionEventArgs, IntPtr>.Abi_Invoke(thisPtr, MarshalInterface<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>.FromAbi(sender), global::ABI.Microsoft.UI.Content.EndpointConnectionEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointConnectionEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, IntPtr, global::Microsoft.UI.Content.EndpointConnectionEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }

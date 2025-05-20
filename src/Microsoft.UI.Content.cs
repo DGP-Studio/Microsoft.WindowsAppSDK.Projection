@@ -244,6 +244,110 @@ namespace Microsoft.UI.Content
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ContentAppWindowBridge))]
+    [global::ABI.Microsoft.UI.Content.ContentAppWindowBridgeRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IContentAppWindowBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class ContentAppWindowBridge : IContentNodeOwner, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ContentAppWindowBridge>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentAppWindowBridge => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentNodeOwner;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentNodeOwner()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentNodeOwner, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentNodeOwnerMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentNodeOwner;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentNodeOwner => ___objRef_global__Microsoft_UI_Content_IContentNodeOwner ?? Make___objRef_global__Microsoft_UI_Content_IContentNodeOwner();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.ContentAppWindowBridge").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentAppWindowBridgeStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_IContentAppWindowBridgeStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_IContentAppWindowBridgeStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_IContentAppWindowBridgeStatics = ActivationFactory.Get("Microsoft.UI.Content.ContentAppWindowBridge", global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static ContentAppWindowBridge GetForWindowId(global::Microsoft.UI.WindowId childWindowId) => global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeStaticsMethods.GetForWindowId(_objRef_global__Microsoft_UI_Content_IContentAppWindowBridgeStatics, childWindowId);
+
+        public static ContentAppWindowBridge FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ContentAppWindowBridge>.FromAbi(thisPtr);
+        }
+
+        internal ContentAppWindowBridge(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ContentAppWindowBridge x, ContentAppWindowBridge y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ContentAppWindowBridge x, ContentAppWindowBridge y) => !(x == y);
+        public bool Equals(ContentAppWindowBridge other) => this == other;
+        public override bool Equals(object obj) => obj is ContentAppWindowBridge that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ContentAutomationOptions>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
     public enum ContentAutomationOptions : int
     {
@@ -476,6 +580,17 @@ namespace Microsoft.UI.Content
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
+    [FlagsAttribute]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ContentDisplayOrientations>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum ContentDisplayOrientations : uint
+    {
+        None = unchecked((uint)0),
+        Landscape = unchecked((uint)0x1),
+        Portrait = unchecked((uint)0x2),
+        LandscapeFlipped = unchecked((uint)0x4),
+        PortraitFlipped = unchecked((uint)0x8),
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ContentEnvironmentSettingChangedEventArgs))]
     [global::ABI.Microsoft.UI.Content.ContentEnvironmentSettingChangedEventArgsRcwFactory]
@@ -641,11 +756,271 @@ namespace Microsoft.UI.Content
         }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ContentExternalBackdropLink))]
+    [global::ABI.Microsoft.UI.Content.ContentExternalBackdropLinkRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IContentExternalBackdropLink))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class ContentExternalBackdropLink : global::System.IDisposable, global::Microsoft.UI.Composition.ICompositionSupportsSystemBackdrop, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ContentExternalBackdropLink>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentExternalBackdropLink => _inner;
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Composition.ICompositionSupportsSystemBackdropMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop => ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop ?? Make___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.ContentExternalBackdropLink").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentExternalBackdropLinkStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_IContentExternalBackdropLinkStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_IContentExternalBackdropLinkStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_IContentExternalBackdropLinkStatics = ActivationFactory.Get("Microsoft.UI.Content.ContentExternalBackdropLink", global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static ContentExternalBackdropLink Create(global::Microsoft.UI.Composition.Compositor compositor) => global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkStaticsMethods.Create(_objRef_global__Microsoft_UI_Content_IContentExternalBackdropLinkStatics, compositor);
+
+        public static ContentExternalBackdropLink FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ContentExternalBackdropLink>.FromAbi(thisPtr);
+        }
+
+        internal ContentExternalBackdropLink(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ContentExternalBackdropLink x, ContentExternalBackdropLink y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ContentExternalBackdropLink x, ContentExternalBackdropLink y) => !(x == y);
+        public bool Equals(ContentExternalBackdropLink other) => this == other;
+        public override bool Equals(object obj) => obj is ContentExternalBackdropLink that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.get_DispatcherQueue(_objRef_global__Microsoft_UI_Content_IContentExternalBackdropLink);
+
+        public global::Microsoft.UI.Composition.CompositionBorderMode ExternalBackdropBorderMode
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.get_ExternalBackdropBorderMode(_objRef_global__Microsoft_UI_Content_IContentExternalBackdropLink);
+            set => global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.set_ExternalBackdropBorderMode(_objRef_global__Microsoft_UI_Content_IContentExternalBackdropLink, value);
+        }
+
+        public global::Microsoft.UI.Composition.Visual PlacementVisual => global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.get_PlacementVisual(_objRef_global__Microsoft_UI_Content_IContentExternalBackdropLink);
+
+        public global::Windows.UI.Composition.CompositionBrush SystemBackdrop
+        {
+            get => global::ABI.Microsoft.UI.Composition.ICompositionSupportsSystemBackdropMethods.get_SystemBackdrop(_objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop);
+            set => global::ABI.Microsoft.UI.Composition.ICompositionSupportsSystemBackdropMethods.set_SystemBackdrop(_objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop, value);
+        }
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ContentExternalOutputLink))]
+    [global::ABI.Microsoft.UI.Content.ContentExternalOutputLinkRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IContentExternalOutputLink))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class ContentExternalOutputLink : global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ContentExternalOutputLink>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentExternalOutputLink => _inner;
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.ContentExternalOutputLink").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics = ActivationFactory.Get("Microsoft.UI.Content.ContentExternalOutputLink", global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static ContentExternalOutputLink Create(global::Microsoft.UI.Composition.Compositor compositor) => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkStaticsMethods.Create(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics, compositor);
+
+        public static bool IsSupported() => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkStaticsMethods.IsSupported(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLinkStatics);
+
+        public static ContentExternalOutputLink FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ContentExternalOutputLink>.FromAbi(thisPtr);
+        }
+
+        internal ContentExternalOutputLink(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ContentExternalOutputLink x, ContentExternalOutputLink y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ContentExternalOutputLink x, ContentExternalOutputLink y) => !(x == y);
+        public bool Equals(ContentExternalOutputLink other) => this == other;
+        public override bool Equals(object obj) => obj is ContentExternalOutputLink that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        public global::Windows.UI.Color BackgroundColor
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.get_BackgroundColor(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink);
+            set => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.set_BackgroundColor(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink, value);
+        }
+
+        public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.get_DispatcherQueue(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink);
+
+        public global::Microsoft.UI.Composition.CompositionBorderMode ExternalOutputBorderMode
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.get_ExternalOutputBorderMode(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink);
+            set => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.set_ExternalOutputBorderMode(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink, value);
+        }
+
+        public bool IsAboveContent
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.get_IsAboveContent(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink);
+            set => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.set_IsAboveContent(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink, value);
+        }
+
+        public global::Microsoft.UI.Composition.Visual PlacementVisual => global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.get_PlacementVisual(_objRef_global__Microsoft_UI_Content_IContentExternalOutputLink);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ContentIsland))]
     [global::ABI.Microsoft.UI.Content.ContentIslandRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IContentIsland))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
-    public class ContentIsland : global::System.IDisposable, global::Microsoft.UI.IClosableNotifier, global::Microsoft.UI.Composition.ICompositionSupportsSystemBackdrop, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ContentIsland>
+    public class ContentIsland : global::System.IDisposable, global::Microsoft.UI.IClosableNotifier, global::Microsoft.UI.Composition.ICompositionSupportsSystemBackdrop, IContentIslandEndpointConnectionPrivate, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ContentIsland>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
 
@@ -678,6 +1053,14 @@ namespace Microsoft.UI.Content
         }
         private IObjectReference _objRef_global__Microsoft_UI_Content_IContentIslandAutomation => ___objRef_global__Microsoft_UI_Content_IContentIslandAutomation ?? Make___objRef_global__Microsoft_UI_Content_IContentIslandAutomation();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentIslandExperimental;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentIslandExperimental()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentIslandExperimental, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentIslandExperimental;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentIslandExperimental => ___objRef_global__Microsoft_UI_Content_IContentIslandExperimental ?? Make___objRef_global__Microsoft_UI_Content_IContentIslandExperimental();
+
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -701,6 +1084,14 @@ namespace Microsoft.UI.Content
             return ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop;
         }
         private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop => ___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop ?? Make___objRef_global__Microsoft_UI_Composition_ICompositionSupportsSystemBackdrop();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate => ___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate ?? Make___objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate();
 
 
 
@@ -838,6 +1229,18 @@ namespace Microsoft.UI.Content
             remove => global::ABI.Microsoft.UI.Content.IContentIslandMethods.Get_StateChanged2(_objRef_global__Microsoft_UI_Content_IContentIsland, (IWinRTObject)this).Unsubscribe(value);
         }
 
+        public event global::System.EventHandler<ContentIsland> Connected
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.Get_Connected2(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.Get_Connected2(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::System.EventHandler<ContentIsland> Disconnected
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.Get_Disconnected2(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.Get_Disconnected2(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental, (IWinRTObject)this).Unsubscribe(value);
+        }
+
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
 
         public event global::Microsoft.UI.ClosableNotifierHandler Closed
@@ -852,6 +1255,8 @@ namespace Microsoft.UI.Content
             remove => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_FrameworkClosed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Unsubscribe(value);
         }
 
+        public void ConnectRemoteEndpoint(string siteConnectionInfo) => global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.ConnectRemoteEndpoint(_objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate, siteConnectionInfo);
+
         public global::System.Numerics.Vector2 ActualSize => global::ABI.Microsoft.UI.Content.IContentIslandMethods.get_ActualSize(_objRef_global__Microsoft_UI_Content_IContentIsland);
 
         public object AppData
@@ -863,6 +1268,8 @@ namespace Microsoft.UI.Content
         public ContentAutomationOptions AutomationOption => global::ABI.Microsoft.UI.Content.IContentIslandAutomationMethods.get_AutomationOption(_objRef_global__Microsoft_UI_Content_IContentIslandAutomation);
 
         public global::System.Collections.Generic.IEnumerable<ChildSiteLink> Children => global::ABI.Microsoft.UI.Content.IContentIsland2Methods.get_Children(_objRef_global__Microsoft_UI_Content_IContentIsland2);
+
+        public string ConnectionInfo => global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.get_ConnectionInfo(_objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate);
 
         public ContentCoordinateConverter CoordinateConverter => global::ABI.Microsoft.UI.Content.IContentIslandMethods.get_CoordinateConverter(_objRef_global__Microsoft_UI_Content_IContentIsland);
 
@@ -898,6 +1305,8 @@ namespace Microsoft.UI.Content
             set => global::ABI.Microsoft.UI.Content.IContentIslandMethods.set_IsIslandVisible(_objRef_global__Microsoft_UI_Content_IContentIsland, value);
         }
 
+        public bool IsRemoteEndpointConnected => global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.get_IsRemoteEndpointConnected(_objRef_global__Microsoft_UI_Content_IContentIslandEndpointConnectionPrivate);
+
         public bool IsSiteEnabled => global::ABI.Microsoft.UI.Content.IContentIslandMethods.get_IsSiteEnabled(_objRef_global__Microsoft_UI_Content_IContentIsland);
 
         public bool IsSiteVisible => global::ABI.Microsoft.UI.Content.IContentIslandMethods.get_IsSiteVisible(_objRef_global__Microsoft_UI_Content_IContentIsland);
@@ -921,6 +1330,12 @@ namespace Microsoft.UI.Content
         public bool ProcessesPointerInput => global::ABI.Microsoft.UI.Content.IContentIsland2Methods.get_ProcessesPointerInput(_objRef_global__Microsoft_UI_Content_IContentIsland2);
 
         public float RasterizationScale => global::ABI.Microsoft.UI.Content.IContentIslandMethods.get_RasterizationScale(_objRef_global__Microsoft_UI_Content_IContentIsland);
+
+        public global::Microsoft.UI.Composition.Visual Root
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.get_Root(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental);
+            set => global::ABI.Microsoft.UI.Content.IContentIslandExperimentalMethods.set_Root(_objRef_global__Microsoft_UI_Content_IContentIslandExperimental, value);
+        }
 
         public global::Windows.UI.Composition.CompositionBrush SystemBackdrop
         {
@@ -1062,6 +1477,14 @@ namespace Microsoft.UI.Content
         }
         private IObjectReference _objRef_global__Microsoft_UI_Content_IContentIslandEnvironment2 => ___objRef_global__Microsoft_UI_Content_IContentIslandEnvironment2 ?? Make___objRef_global__Microsoft_UI_Content_IContentIslandEnvironment2();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimentalMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental => ___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental ?? Make___objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental();
+
 
 
         private static class _IContentIslandEnvironmentFactoryMethods
@@ -1140,11 +1563,21 @@ namespace Microsoft.UI.Content
             remove => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentMethods.Get_StateChanged2(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironment, (IWinRTObject)this).Unsubscribe(value);
         }
 
+        public event global::Windows.Foundation.TypedEventHandler<ContentIslandEnvironment, object> ThemeChanged
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimentalMethods.Get_ThemeChanged2(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimentalMethods.Get_ThemeChanged2(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental, (IWinRTObject)this).Unsubscribe(value);
+        }
+
         public global::Microsoft.UI.WindowId AppWindowId => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentMethods.get_AppWindowId(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironment);
+
+        public ContentDisplayOrientations CurrentOrientation => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimentalMethods.get_CurrentOrientation(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental);
 
         public global::Microsoft.UI.DisplayId DisplayId => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentMethods.get_DisplayId(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironment);
 
         public float DisplayScale => global::ABI.Microsoft.UI.Content.IContentIslandEnvironment2Methods.get_DisplayScale(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironment2);
+
+        public ContentDisplayOrientations NativeOrientation => global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimentalMethods.get_NativeOrientation(_objRef_global__Microsoft_UI_Content_IContentIslandEnvironmentExperimental);
 
         protected virtual bool IsOverridableInterface(Guid iid) => false;
 
@@ -1296,6 +1729,14 @@ namespace Microsoft.UI.Content
         }
         private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSite2 => ___objRef_global__Microsoft_UI_Content_IContentSite2 ?? Make___objRef_global__Microsoft_UI_Content_IContentSite2();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentSiteExperimental;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentSiteExperimental()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentSiteExperimental, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentSiteExperimentalMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentSiteExperimental;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteExperimental => ___objRef_global__Microsoft_UI_Content_IContentSiteExperimental ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteExperimental();
+
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -1385,6 +1826,10 @@ namespace Microsoft.UI.Content
             add => global::ABI.Microsoft.UI.Content.IContentSiteMethods.Get_RequestedStateChanged2(_objRef_global__Microsoft_UI_Content_IContentSite, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Content.IContentSiteMethods.Get_RequestedStateChanged2(_objRef_global__Microsoft_UI_Content_IContentSite, (IWinRTObject)this).Unsubscribe(value);
         }
+
+        public void SetContentNodeParent(IContentNodeOwner value) => global::ABI.Microsoft.UI.Content.IContentSiteExperimentalMethods.SetContentNodeParent(_objRef_global__Microsoft_UI_Content_IContentSiteExperimental, value);
+
+        public bool TryGetAutomationProvider(out object provider) => global::ABI.Microsoft.UI.Content.IContentSiteExperimentalMethods.TryGetAutomationProvider(_objRef_global__Microsoft_UI_Content_IContentSiteExperimental, out provider);
 
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
 
@@ -1618,6 +2063,14 @@ namespace Microsoft.UI.Content
         }
         private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteEnvironment2 => ___objRef_global__Microsoft_UI_Content_IContentSiteEnvironment2 ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteEnvironment2();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental => ___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental();
+
 
 
         private static class _IContentSiteEnvironmentFactoryMethods
@@ -1686,10 +2139,18 @@ namespace Microsoft.UI.Content
 
         public void NotifySettingChanged(string setting) => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentMethods.NotifySettingChanged(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment, setting);
 
+        public void NotifyThemeChanged() => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.NotifyThemeChanged(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental);
+
         public global::Microsoft.UI.WindowId AppWindowId
         {
             get => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentMethods.get_AppWindowId(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment);
             set => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentMethods.set_AppWindowId(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment, value);
+        }
+
+        public ContentDisplayOrientations CurrentOrientation
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.get_CurrentOrientation(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.set_CurrentOrientation(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental, value);
         }
 
         public global::Microsoft.UI.DisplayId DisplayId
@@ -1702,6 +2163,12 @@ namespace Microsoft.UI.Content
         {
             get => global::ABI.Microsoft.UI.Content.IContentSiteEnvironment2Methods.get_DisplayScale(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment2);
             set => global::ABI.Microsoft.UI.Content.IContentSiteEnvironment2Methods.set_DisplayScale(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment2, value);
+        }
+
+        public ContentDisplayOrientations NativeOrientation
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.get_NativeOrientation(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimentalMethods.set_NativeOrientation(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironmentExperimental, value);
         }
 
         public ContentSiteEnvironmentView View => global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentMethods.get_View(_objRef_global__Microsoft_UI_Content_IContentSiteEnvironment);
@@ -2088,6 +2555,213 @@ namespace Microsoft.UI.Content
         ResizeParentWindowToContent = unchecked((int)0x2),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.CoreWindowSiteBridge))]
+    [global::ABI.Microsoft.UI.Content.CoreWindowSiteBridgeRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ICoreWindowSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class CoreWindowSiteBridge : IContentSiteBridge, global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CoreWindowSiteBridge>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridge => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentSiteBridge;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentSiteBridge()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentSiteBridge, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentSiteBridge;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteBridge => ___objRef_global__Microsoft_UI_Content_IContentSiteBridge ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteBridge();
+
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.CoreWindowSiteBridge").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics = ActivationFactory.Get("Microsoft.UI.Content.CoreWindowSiteBridge", global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static CoreWindowSiteBridge Create(global::Microsoft.UI.Composition.Compositor compositor, global::Windows.UI.Core.CoreWindow coreWindow) => global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeStaticsMethods.Create(_objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics, compositor, coreWindow);
+
+        public static bool IsSupported() => global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeStaticsMethods.IsSupported(_objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridgeStatics);
+
+        public static CoreWindowSiteBridge FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<CoreWindowSiteBridge>.FromAbi(thisPtr);
+        }
+
+        internal CoreWindowSiteBridge(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeMethods.IID);
+
+        }
+
+
+        public static bool operator ==(CoreWindowSiteBridge x, CoreWindowSiteBridge y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(CoreWindowSiteBridge x, CoreWindowSiteBridge y) => !(x == y);
+        public bool Equals(CoreWindowSiteBridge other) => this == other;
+        public override bool Equals(object obj) => obj is CoreWindowSiteBridge that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public void Connect(ContentIsland content) => global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeMethods.Connect(_objRef_global__Microsoft_UI_Content_ICoreWindowSiteBridge, content);
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_DispatcherQueue(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+
+        public global::System.Nullable<ContentLayoutDirection> LayoutDirectionOverride
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_LayoutDirectionOverride(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.set_LayoutDirectionOverride(_objRef_global__Microsoft_UI_Content_IContentSiteBridge, value);
+        }
+
+        public float OverrideScale
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_OverrideScale(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.set_OverrideScale(_objRef_global__Microsoft_UI_Content_IContentSiteBridge, value);
+        }
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.CoreWindowTopLevelWindowBridge))]
+    [global::ABI.Microsoft.UI.Content.CoreWindowTopLevelWindowBridgeRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IContentNodeOwner))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class CoreWindowTopLevelWindowBridge : IContentNodeOwner, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CoreWindowTopLevelWindowBridge>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentNodeOwner => _inner;
+
+
+        public static CoreWindowTopLevelWindowBridge FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<CoreWindowTopLevelWindowBridge>.FromAbi(thisPtr);
+        }
+
+        internal CoreWindowTopLevelWindowBridge(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IContentNodeOwnerMethods.IID);
+
+        }
+
+
+        public static bool operator ==(CoreWindowTopLevelWindowBridge x, CoreWindowTopLevelWindowBridge y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(CoreWindowTopLevelWindowBridge x, CoreWindowTopLevelWindowBridge y) => !(x == y);
+        public bool Equals(CoreWindowTopLevelWindowBridge other) => this == other;
+        public override bool Equals(object obj) => obj is CoreWindowTopLevelWindowBridge that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.DesktopAttachedSiteBridge))]
     [global::ABI.Microsoft.UI.Content.DesktopAttachedSiteBridgeRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IDesktopAttachedSiteBridge))]
@@ -2267,7 +2941,7 @@ namespace Microsoft.UI.Content
     [global::ABI.Microsoft.UI.Content.DesktopChildSiteBridgeRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IDesktopChildSiteBridge))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
-    public sealed class DesktopChildSiteBridge : DesktopSiteBridge, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<DesktopChildSiteBridge>
+    public sealed class DesktopChildSiteBridge : DesktopSiteBridge, IContentSiteBridgeEndpointConnectionPrivate, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<DesktopChildSiteBridge>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
 
@@ -2276,6 +2950,14 @@ namespace Microsoft.UI.Content
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Content_IDesktopChildSiteBridge => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate => ___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate();
+
 
 
         public static new I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.DesktopChildSiteBridge").AsInterface<I>();
@@ -2345,6 +3027,30 @@ namespace Microsoft.UI.Content
 
         private struct InterfaceTag<I>{};
 
+
+        public void AcceptRemoteEndpoint(string islandConnectionInfo) => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.AcceptRemoteEndpoint(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, islandConnectionInfo);
+
+        public event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointConnectionEventArgs> RemoteEndpointConnecting
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointConnecting2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointConnecting2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointConnectionEventArgs> RemoteEndpointDisconnected
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointDisconnected2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointDisconnected2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointRequestedStateChangedEventArgs> RemoteEndpointRequestedStateChanged
+        {
+            add => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointRequestedStateChanged2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointRequestedStateChanged2(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public string ConnectionInfo => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.get_ConnectionInfo(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate);
+
+        public bool IsRemoteEndpointConnected => global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.get_IsRemoteEndpointConnected(_objRef_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate);
 
         public ContentSizePolicy ResizePolicy
         {
@@ -2619,6 +3325,14 @@ namespace Microsoft.UI.Content
         }
         private IObjectReference _objRef_global__Microsoft_UI_Content_IDesktopSiteBridge => ___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge ?? Make___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IDesktopSiteBridge2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2 => ___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2 ?? Make___objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2();
+
         private volatile IObjectReference ___objRef_global__Microsoft_UI_IClosableNotifier;
         private IObjectReference Make___objRef_global__Microsoft_UI_IClosableNotifier()
         {
@@ -2748,6 +3462,8 @@ namespace Microsoft.UI.Content
 
         public void Show() => global::ABI.Microsoft.UI.Content.IDesktopSiteBridgeMethods.Show(_objRef_global__Microsoft_UI_Content_IDesktopSiteBridge);
 
+        public PopupWindowSiteBridge TryCreatePopupSiteBridge() => global::ABI.Microsoft.UI.Content.IDesktopSiteBridge2Methods.TryCreatePopupSiteBridge(_objRef_global__Microsoft_UI_Content_IDesktopSiteBridge2);
+
         public event global::Microsoft.UI.ClosableNotifierHandler Closed
         {
             add => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_Closed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Subscribe(value);
@@ -2802,6 +3518,160 @@ namespace Microsoft.UI.Content
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.EndpointConnectionEventArgs))]
+    [global::ABI.Microsoft.UI.Content.EndpointConnectionEventArgsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IEndpointConnectionEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class EndpointConnectionEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<EndpointConnectionEventArgs>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IEndpointConnectionEventArgs => _inner;
+
+
+        public static EndpointConnectionEventArgs FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<EndpointConnectionEventArgs>.FromAbi(thisPtr);
+        }
+
+        internal EndpointConnectionEventArgs(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IEndpointConnectionEventArgsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(EndpointConnectionEventArgs x, EndpointConnectionEventArgs y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(EndpointConnectionEventArgs x, EndpointConnectionEventArgs y) => !(x == y);
+        public bool Equals(EndpointConnectionEventArgs other) => this == other;
+        public override bool Equals(object obj) => obj is EndpointConnectionEventArgs that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public string ConnectionInfo => global::ABI.Microsoft.UI.Content.IEndpointConnectionEventArgsMethods.get_ConnectionInfo(_objRef_global__Microsoft_UI_Content_IEndpointConnectionEventArgs);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs))]
+    [global::ABI.Microsoft.UI.Content.EndpointRequestedStateChangedEventArgsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IEndpointRequestedStateChangedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class EndpointRequestedStateChangedEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<EndpointRequestedStateChangedEventArgs>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IEndpointRequestedStateChangedEventArgs => _inner;
+
+
+        public static EndpointRequestedStateChangedEventArgs FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<EndpointRequestedStateChangedEventArgs>.FromAbi(thisPtr);
+        }
+
+        internal EndpointRequestedStateChangedEventArgs(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(EndpointRequestedStateChangedEventArgs x, EndpointRequestedStateChangedEventArgs y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(EndpointRequestedStateChangedEventArgs x, EndpointRequestedStateChangedEventArgs y) => !(x == y);
+        public bool Equals(EndpointRequestedStateChangedEventArgs other) => this == other;
+        public override bool Equals(object obj) => obj is EndpointRequestedStateChangedEventArgs that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public bool DidRequestedSizeChange => global::ABI.Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgsMethods.get_DidRequestedSizeChange(_objRef_global__Microsoft_UI_Content_IEndpointRequestedStateChangedEventArgs);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("B5A64814-608B-5FB7-A7CB-EB628FD588CD")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IChildSiteLink))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
     internal interface IChildSiteLink
@@ -2818,6 +3688,19 @@ namespace Microsoft.UI.Content
     {
         ChildSiteLink Create(ContentIsland parent, global::Microsoft.UI.Composition.ContainerVisual placementVisual);
         ChildSiteLink CreateForSystemVisual(ContentIsland parent, global::Windows.UI.Composition.ContainerVisual placementVisual);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("A17D6B39-5B52-5974-88E5-60CDE3967B5E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentAppWindowBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentAppWindowBridge
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("84B9CD9C-E822-5F12-B21D-31A409B804F5")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentAppWindowBridgeStatics
+    {
+        ContentAppWindowBridge GetForWindowId(global::Microsoft.UI.WindowId childWindowId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("10A11230-5EB4-5840-A346-570F4A49040F")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentCoordinateConverter))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -2876,6 +3759,41 @@ namespace Microsoft.UI.Content
     {
         bool DidDisplayScaleChange { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("1054BF83-B35B-5FDE-8DD7-AC3BB3E6CE27")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentExternalBackdropLink))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentExternalBackdropLink
+    {
+        global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue { get; }
+        global::Microsoft.UI.Composition.CompositionBorderMode ExternalBackdropBorderMode { get; set; }
+        global::Microsoft.UI.Composition.Visual PlacementVisual { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("46CAC6FB-BB51-510A-958D-E0EB4160F678")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentExternalBackdropLinkStatics
+    {
+        ContentExternalBackdropLink Create(global::Microsoft.UI.Composition.Compositor compositor);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("3DAC8EC8-011F-5AD2-8DB7-B73C4452F755")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentExternalOutputLink))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentExternalOutputLink
+    {
+        global::Windows.UI.Color BackgroundColor { get; set; }
+        global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue { get; }
+        global::Microsoft.UI.Composition.CompositionBorderMode ExternalOutputBorderMode { get; set; }
+        bool IsAboveContent { get; set; }
+        global::Microsoft.UI.Composition.Visual PlacementVisual { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("B758F401-833E-587D-B0CD-A3934EBA3721")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentExternalOutputLinkStatics
+    {
+        ContentExternalOutputLink Create(global::Microsoft.UI.Composition.Compositor compositor);
+        bool IsSupported();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("5B2504BA-361C-50AA-BD6E-4122C6D93889")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIsland))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentIsland
@@ -2929,6 +3847,15 @@ namespace Microsoft.UI.Content
         object AutomationProvider { get; set; }
         bool Handled { get; set; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("7C5D833B-70B8-5448-8472-9406E58E0DB4")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public interface IContentIslandEndpointConnectionPrivate
+    {
+        void ConnectRemoteEndpoint(string siteConnectionInfo);
+        string ConnectionInfo { get; }
+        bool IsRemoteEndpointConnected { get; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C334236D-DA88-566D-811D-74AEF2EBA978")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandEnvironment))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentIslandEnvironment
@@ -2944,10 +3871,28 @@ namespace Microsoft.UI.Content
     {
         float DisplayScale { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("5A8339BC-F7A1-5718-96CF-00FC8332AC47")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentExperimental))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentIslandEnvironmentExperimental
+    {
+        ContentDisplayOrientations CurrentOrientation { get; }
+        ContentDisplayOrientations NativeOrientation { get; }
+        event global::Windows.Foundation.TypedEventHandler<ContentIslandEnvironment, object> ThemeChanged;
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("47A782D6-B177-5C1E-BF87-90437DD809D0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandEnvironmentFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentIslandEnvironmentFactory
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("215B5537-8085-51F8-88DB-00BA45F5BCEE")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandExperimental))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentIslandExperimental
+    {
+        global::Microsoft.UI.Composition.Visual Root { get; set; }
+        event global::System.EventHandler<ContentIsland> Connected;
+        event global::System.EventHandler<ContentIsland> Disconnected;
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("82383F52-E81A-5EC9-A954-BAC8A931BA7D")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentIslandFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -2988,6 +3933,12 @@ namespace Microsoft.UI.Content
         ContentIsland CreateForSystemVisual(global::Microsoft.UI.Dispatching.DispatcherQueue queue, global::Windows.UI.Composition.Visual root);
         ContentIsland[] FindAllForSystemCompositor(global::Windows.UI.Composition.Compositor compositor);
         ContentIsland GetBySystemVisual(global::Windows.UI.Composition.Visual child);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("2251C304-449D-4456-B008-FE7163403D7E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentNodeOwner))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public interface IContentNodeOwner
+    {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("996C60C4-02B2-5EEF-93B0-DD6B1EC2FD7B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSite))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -3046,6 +3997,18 @@ namespace Microsoft.UI.Content
         global::System.Nullable<ContentLayoutDirection> LayoutDirectionOverride { get; set; }
         float OverrideScale { get; set; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("84D1A059-692B-577D-A791-6AD4FAFBEB1F")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public interface IContentSiteBridgeEndpointConnectionPrivate
+    {
+        void AcceptRemoteEndpoint(string islandConnectionInfo);
+        string ConnectionInfo { get; }
+        bool IsRemoteEndpointConnected { get; }
+        event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointConnectionEventArgs> RemoteEndpointConnecting;
+        event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointConnectionEventArgs> RemoteEndpointDisconnected;
+        event global::Windows.Foundation.TypedEventHandler<IContentSiteBridgeEndpointConnectionPrivate, EndpointRequestedStateChangedEventArgs> RemoteEndpointRequestedStateChanged;
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("685D085D-BE53-55D1-AEC4-BA2273D5468B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteEnvironment))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentSiteEnvironment
@@ -3060,6 +4023,15 @@ namespace Microsoft.UI.Content
     internal interface IContentSiteEnvironment2
     {
         float DisplayScale { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("F8AC305F-E22C-53F6-81C8-4ECCD93295B3")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentExperimental))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentSiteEnvironmentExperimental
+    {
+        void NotifyThemeChanged();
+        ContentDisplayOrientations CurrentOrientation { get; set; }
+        ContentDisplayOrientations NativeOrientation { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("0BEFA998-CB15-5F16-A4A5-C0ED1674E186")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteEnvironmentFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -3083,6 +4055,14 @@ namespace Microsoft.UI.Content
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentSiteEnvironmentViewFactory
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("D454E98A-D4F1-5436-A0F0-5FB6C2848FAE")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteExperimental))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IContentSiteExperimental
+    {
+        void SetContentNodeParent(IContentNodeOwner value);
+        bool TryGetAutomationProvider(out object provider);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("72FB98D5-B28A-57F1-91FA-24C014A342C1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -3146,6 +4126,21 @@ namespace Microsoft.UI.Content
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IContentSiteViewFactory
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("03E1C02E-E5E3-526A-8492-939E26EE09D5")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ICoreWindowSiteBridge
+    {
+        void Connect(ContentIsland content);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("FBC56793-11F2-5754-AD70-30E82C07FA35")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ICoreWindowSiteBridgeStatics
+    {
+        CoreWindowSiteBridge Create(global::Microsoft.UI.Composition.Compositor compositor, global::Windows.UI.Core.CoreWindow coreWindow);
+        bool IsSupported();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C8AD3758-C8D3-5EA5-A274-CE12D9CF6845")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IDesktopAttachedSiteBridge))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
@@ -3221,6 +4216,13 @@ namespace Microsoft.UI.Content
         bool IsVisible { get; }
         global::Microsoft.UI.WindowId WindowId { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("1190C041-82FB-5F3B-9111-CA8F19A72B75")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IDesktopSiteBridge2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IDesktopSiteBridge2
+    {
+        PopupWindowSiteBridge TryCreatePopupSiteBridge();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("D94EE1FF-3AF1-54D0-9311-652B29C57C5B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IDesktopSiteBridgeFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IDesktopSiteBridgeFactory
@@ -3231,6 +4233,412 @@ namespace Microsoft.UI.Content
     internal interface IDesktopSiteBridgeStatics
     {
         bool IsSupported();
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("94BF2A15-EDF0-5EB2-9CEC-9B93AC531413")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IEndpointConnectionEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IEndpointConnectionEventArgs
+    {
+        string ConnectionInfo { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("513F95C6-4193-5388-90F8-8CF340815B1E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IEndpointRequestedStateChangedEventArgs
+    {
+        bool DidRequestedSizeChange { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("044597A2-E6EE-5DAB-ABE0-1923EBE34C2E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IPopupWindowSiteBridge
+    {
+        bool Anchored { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("122D01BC-7753-5592-B62D-F659A30A2AC0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IProcessStarter))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IProcessStarter
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("A01418D1-4E8B-54B4-A5F2-520187A58B80")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IProcessStarterFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IProcessStarterFactory
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("76F9D59D-8456-540F-BC74-0DCADF4581B8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IProcessStarterStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IProcessStarterStatics
+    {
+        void StartProcess(string executablePath, string connectionInfo, out uint processId);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("6EEDD227-3802-5772-B24E-1D8B736CFFA7")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ISystemVisualSiteBridge
+    {
+        void Connect(ContentIsland content);
+        ContentSite Site { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("6A79501C-83A0-5889-AA21-420100303276")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ISystemVisualSiteBridgeStatics
+    {
+        SystemVisualSiteBridge Create(global::Microsoft.UI.Dispatching.DispatcherQueue queue, global::Windows.UI.Composition.ContainerVisual hostVisual, global::Microsoft.UI.WindowId parentForInputWindowId);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.PopupWindowSiteBridge))]
+    [global::ABI.Microsoft.UI.Content.PopupWindowSiteBridgeRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IPopupWindowSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class PopupWindowSiteBridge : DesktopSiteBridge, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<PopupWindowSiteBridge>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IPopupWindowSiteBridge => _inner;
+
+
+        public static new PopupWindowSiteBridge FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<PopupWindowSiteBridge>.FromAbi(thisPtr);
+        }
+
+        internal PopupWindowSiteBridge(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridgeMethods.IID);
+
+        }
+
+
+        public static bool operator ==(PopupWindowSiteBridge x, PopupWindowSiteBridge y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(PopupWindowSiteBridge x, PopupWindowSiteBridge y) => !(x == y);
+        public bool Equals(PopupWindowSiteBridge other) => this == other;
+        public override bool Equals(object obj) => obj is PopupWindowSiteBridge that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        public bool Anchored
+        {
+            get => global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridgeMethods.get_Anchored(_objRef_global__Microsoft_UI_Content_IPopupWindowSiteBridge);
+            set => global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridgeMethods.set_Anchored(_objRef_global__Microsoft_UI_Content_IPopupWindowSiteBridge, value);
+        }
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.ProcessStarter))]
+    [global::ABI.Microsoft.UI.Content.ProcessStarterRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IProcessStarter))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class ProcessStarter : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ProcessStarter>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IProcessStarter;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IProcessStarter()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IProcessStarter, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IProcessStarterMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IProcessStarter;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IProcessStarter => ___objRef_global__Microsoft_UI_Content_IProcessStarter ?? Make___objRef_global__Microsoft_UI_Content_IProcessStarter();
+
+
+
+        private static class _IProcessStarterFactoryMethods
+        {}
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IProcessStarterFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_IProcessStarterFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_IProcessStarterFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_IProcessStarterFactory = ActivationFactory.Get("Microsoft.UI.Content.ProcessStarter", global::ABI.Microsoft.UI.Content.IProcessStarterFactoryMethods.IID);
+                }
+            }
+        }
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.ProcessStarter").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IProcessStarterStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_IProcessStarterStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_IProcessStarterStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_IProcessStarterStatics = ActivationFactory.Get("Microsoft.UI.Content.ProcessStarter", global::ABI.Microsoft.UI.Content.IProcessStarterStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static void StartProcess(string executablePath, string connectionInfo, out uint processId) => global::ABI.Microsoft.UI.Content.IProcessStarterStaticsMethods.StartProcess(_objRef_global__Microsoft_UI_Content_IProcessStarterStatics, executablePath, connectionInfo, out processId);
+
+        public static ProcessStarter FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ProcessStarter>.FromAbi(thisPtr);
+        }
+
+        protected internal ProcessStarter(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.IProcessStarterMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ProcessStarter x, ProcessStarter y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ProcessStarter x, ProcessStarter y) => !(x == y);
+        public bool Equals(ProcessStarter other) => this == other;
+        public override bool Equals(object obj) => obj is ProcessStarter that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected ProcessStarter(global::WinRT.DerivedComposed _)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(ProcessStarter);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        protected virtual bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.SystemVisualSiteBridge))]
+    [global::ABI.Microsoft.UI.Content.SystemVisualSiteBridgeRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ISystemVisualSiteBridge))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class SystemVisualSiteBridge : global::Microsoft.UI.IClosableNotifier, IContentSiteBridge, global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<SystemVisualSiteBridge>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridge => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_IClosableNotifier;
+        private IObjectReference Make___objRef_global__Microsoft_UI_IClosableNotifier()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_IClosableNotifier, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.IClosableNotifierMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_IClosableNotifier;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_IClosableNotifier => ___objRef_global__Microsoft_UI_IClosableNotifier ?? Make___objRef_global__Microsoft_UI_IClosableNotifier();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IContentSiteBridge;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IContentSiteBridge()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IContentSiteBridge, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IContentSiteBridge;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IContentSiteBridge => ___objRef_global__Microsoft_UI_Content_IContentSiteBridge ?? Make___objRef_global__Microsoft_UI_Content_IContentSiteBridge();
+
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Content.SystemVisualSiteBridge").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridgeStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridgeStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridgeStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridgeStatics = ActivationFactory.Get("Microsoft.UI.Content.SystemVisualSiteBridge", global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static SystemVisualSiteBridge Create(global::Microsoft.UI.Dispatching.DispatcherQueue queue, global::Windows.UI.Composition.ContainerVisual hostVisual, global::Microsoft.UI.WindowId parentForInputWindowId) => global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeStaticsMethods.Create(_objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridgeStatics, queue, hostVisual, parentForInputWindowId);
+
+        public static SystemVisualSiteBridge FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<SystemVisualSiteBridge>.FromAbi(thisPtr);
+        }
+
+        internal SystemVisualSiteBridge(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeMethods.IID);
+
+        }
+
+
+        public static bool operator ==(SystemVisualSiteBridge x, SystemVisualSiteBridge y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(SystemVisualSiteBridge x, SystemVisualSiteBridge y) => !(x == y);
+        public bool Equals(SystemVisualSiteBridge other) => this == other;
+        public override bool Equals(object obj) => obj is SystemVisualSiteBridge that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public void Connect(ContentIsland content) => global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeMethods.Connect(_objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridge, content);
+
+        public event global::Microsoft.UI.ClosableNotifierHandler Closed
+        {
+            add => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_Closed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_Closed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Microsoft.UI.ClosableNotifierHandler FrameworkClosed
+        {
+            add => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_FrameworkClosed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.IClosableNotifierMethods.Get_FrameworkClosed2(_objRef_global__Microsoft_UI_IClosableNotifier, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_DispatcherQueue(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+
+        public bool IsClosed => global::ABI.Microsoft.UI.IClosableNotifierMethods.get_IsClosed(_objRef_global__Microsoft_UI_IClosableNotifier);
+
+        public global::System.Nullable<ContentLayoutDirection> LayoutDirectionOverride
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_LayoutDirectionOverride(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.set_LayoutDirectionOverride(_objRef_global__Microsoft_UI_Content_IContentSiteBridge, value);
+        }
+
+        public float OverrideScale
+        {
+            get => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.get_OverrideScale(_objRef_global__Microsoft_UI_Content_IContentSiteBridge);
+            set => global::ABI.Microsoft.UI.Content.IContentSiteBridgeMethods.set_OverrideScale(_objRef_global__Microsoft_UI_Content_IContentSiteBridge, value);
+        }
+
+        public ContentSite Site => global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeMethods.get_Site(_objRef_global__Microsoft_UI_Content_ISystemVisualSiteBridge);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
     }
 }
 
@@ -3261,6 +4669,31 @@ namespace ABI.Microsoft.UI.Content
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Content.ChildSiteLink(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ContentAppWindowBridge
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.ContentAppWindowBridge obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.ContentAppWindowBridge>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.ContentAppWindowBridge obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IContentAppWindowBridgeMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.ContentAppWindowBridge FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.ContentAppWindowBridge.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.ContentAppWindowBridge obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.ContentAppWindowBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.ContentAppWindowBridge[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.ContentAppWindowBridge[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.ContentAppWindowBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentAppWindowBridge>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ContentAppWindowBridgeRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.ContentAppWindowBridge(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct ContentCoordinateConverter
@@ -3361,6 +4794,56 @@ namespace ABI.Microsoft.UI.Content
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Content.ContentEnvironmentStateChangedEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ContentExternalBackdropLink
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.ContentExternalBackdropLink obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.ContentExternalBackdropLink>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.ContentExternalBackdropLink obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IContentExternalBackdropLinkMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.ContentExternalBackdropLink FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.ContentExternalBackdropLink.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.ContentExternalBackdropLink obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.ContentExternalBackdropLink[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.ContentExternalBackdropLink[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.ContentExternalBackdropLink[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.ContentExternalBackdropLink[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalBackdropLink>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ContentExternalBackdropLinkRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.ContentExternalBackdropLink(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ContentExternalOutputLink
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.ContentExternalOutputLink obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.ContentExternalOutputLink>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.ContentExternalOutputLink obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IContentExternalOutputLinkMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.ContentExternalOutputLink FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.ContentExternalOutputLink.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.ContentExternalOutputLink obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.ContentExternalOutputLink[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.ContentExternalOutputLink[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.ContentExternalOutputLink[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.ContentExternalOutputLink[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ContentExternalOutputLink>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ContentExternalOutputLinkRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.ContentExternalOutputLink(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct ContentIsland
@@ -3613,6 +5096,56 @@ namespace ABI.Microsoft.UI.Content
             => new global::Microsoft.UI.Content.ContentSiteView(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct CoreWindowSiteBridge
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.CoreWindowSiteBridge obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.CoreWindowSiteBridge>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.CoreWindowSiteBridge obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.ICoreWindowSiteBridgeMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.CoreWindowSiteBridge FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.CoreWindowSiteBridge.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.CoreWindowSiteBridge obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.CoreWindowSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.CoreWindowSiteBridge[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.CoreWindowSiteBridge[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.CoreWindowSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowSiteBridge>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class CoreWindowSiteBridgeRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.CoreWindowSiteBridge(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct CoreWindowTopLevelWindowBridge
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge obj) => obj is null ? null : MarshalInterface<global::Microsoft.UI.Content.IContentNodeOwner>.CreateMarshaler(obj);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge obj) => MarshalInterface<global::Microsoft.UI.Content.IContentNodeOwner>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IContentNodeOwnerMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class CoreWindowTopLevelWindowBridgeRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.CoreWindowTopLevelWindowBridge(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct DesktopAttachedSiteBridge
     {
 
@@ -3711,6 +5244,56 @@ namespace ABI.Microsoft.UI.Content
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Content.DesktopSiteBridge(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct EndpointConnectionEventArgs
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.EndpointConnectionEventArgs obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IEndpointConnectionEventArgsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.EndpointConnectionEventArgs obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IEndpointConnectionEventArgsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.EndpointConnectionEventArgs FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.EndpointConnectionEventArgs.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.EndpointConnectionEventArgs obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.EndpointConnectionEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.EndpointConnectionEventArgs[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.EndpointConnectionEventArgs[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.EndpointConnectionEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointConnectionEventArgs>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class EndpointConnectionEventArgsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.EndpointConnectionEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct EndpointRequestedStateChangedEventArgs
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class EndpointRequestedStateChangedEventArgsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs(inspectable.ObjRef);
     }
     internal static class IChildSiteLinkMethods
     {
@@ -3881,6 +5464,63 @@ namespace ABI.Microsoft.UI.Content
     }
     [Guid("28EDC98A-4F94-50B1-8A87-9E7169EBF4B7")]
     internal interface IChildSiteLinkStatics : global::Microsoft.UI.Content.IChildSiteLinkStatics
+    {
+    }
+    internal static class IContentAppWindowBridgeMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x39, 0x6B, 0x7D, 0xA1, 0x52, 0x5B, 0x74, 0x59, 0x88, 0xE5, 0x60, 0xCD, 0xE3, 0x96, 0x7B, 0x5E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("A17D6B39-5B52-5974-88E5-60CDE3967B5E")]
+    internal interface IContentAppWindowBridge : global::Microsoft.UI.Content.IContentAppWindowBridge
+    {
+    }
+    internal static class IContentAppWindowBridgeStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.ContentAppWindowBridge GetForWindowId(IObjectReference _obj, global::Microsoft.UI.WindowId childWindowId)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.WindowId, IntPtr*, int>**)ThisPtr)[6](ThisPtr, childWindowId, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.ContentAppWindowBridge.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Content.ContentAppWindowBridge.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x9C, 0xCD, 0xB9, 0x84, 0x22, 0xE8, 0x12, 0x5F, 0xB2, 0x1D, 0x31, 0xA4, 0x9, 0xB8, 0x4, 0xF5 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("84B9CD9C-E822-5F12-B21D-31A409B804F5")]
+    internal interface IContentAppWindowBridgeStatics : global::Microsoft.UI.Content.IContentAppWindowBridgeStatics
     {
     }
     internal static class IContentCoordinateConverterMethods
@@ -4205,6 +5845,272 @@ namespace ABI.Microsoft.UI.Content
     }
     [Guid("CEC0497D-76C7-544B-BF6E-816C9B16C99F")]
     internal interface IContentEnvironmentStateChangedEventArgs2 : global::Microsoft.UI.Content.IContentEnvironmentStateChangedEventArgs2
+    {
+    }
+    internal static class IContentExternalBackdropLinkMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Dispatching.DispatcherQueue get_DispatcherQueue(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Dispatching.DispatcherQueue.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Dispatching.DispatcherQueue.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.CompositionBorderMode get_ExternalBackdropBorderMode(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Composition.CompositionBorderMode __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionBorderMode*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_ExternalBackdropBorderMode(IObjectReference _obj, global::Microsoft.UI.Composition.CompositionBorderMode value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionBorderMode, int>**)ThisPtr)[8](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.Visual get_PlacementVisual(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.Visual.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.Visual.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x83, 0xBF, 0x54, 0x10, 0x5B, 0xB3, 0xDE, 0x5F, 0x8D, 0xD7, 0xAC, 0x3B, 0xB3, 0xE6, 0xCE, 0x27 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("1054BF83-B35B-5FDE-8DD7-AC3BB3E6CE27")]
+    internal interface IContentExternalBackdropLink : global::Microsoft.UI.Content.IContentExternalBackdropLink
+    {
+    }
+    internal static class IContentExternalBackdropLinkStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.ContentExternalBackdropLink Create(IObjectReference _obj, global::Microsoft.UI.Composition.Compositor compositor)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __compositor = default;
+            IntPtr __retval = default;
+            try
+            {
+                __compositor = global::ABI.Microsoft.UI.Composition.Compositor.CreateMarshaler2(compositor);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__compositor), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.ContentExternalBackdropLink.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__compositor);
+                global::ABI.Microsoft.UI.Content.ContentExternalBackdropLink.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xFB, 0xC6, 0xCA, 0x46, 0x51, 0xBB, 0xA, 0x51, 0x95, 0x8D, 0xE0, 0xEB, 0x41, 0x60, 0xF6, 0x78 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("46CAC6FB-BB51-510A-958D-E0EB4160F678")]
+    internal interface IContentExternalBackdropLinkStatics : global::Microsoft.UI.Content.IContentExternalBackdropLinkStatics
+    {
+    }
+    internal static class IContentExternalOutputLinkMethods
+    {
+
+        internal static unsafe global::Windows.UI.Color get_BackgroundColor(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Windows.UI.Color __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_BackgroundColor(IObjectReference _obj, global::Windows.UI.Color value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Dispatching.DispatcherQueue get_DispatcherQueue(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Dispatching.DispatcherQueue.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Dispatching.DispatcherQueue.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.CompositionBorderMode get_ExternalOutputBorderMode(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Composition.CompositionBorderMode __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionBorderMode*, int>**)ThisPtr)[9](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_ExternalOutputBorderMode(IObjectReference _obj, global::Microsoft.UI.Composition.CompositionBorderMode value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionBorderMode, int>**)ThisPtr)[10](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe bool get_IsAboveContent(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[11](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_IsAboveContent(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[12](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.Visual get_PlacementVisual(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[13](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.Visual.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.Visual.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC8, 0x8E, 0xAC, 0x3D, 0x1F, 0x1, 0xD2, 0x5A, 0x8D, 0xB7, 0xB7, 0x3C, 0x44, 0x52, 0xF7, 0x55 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("3DAC8EC8-011F-5AD2-8DB7-B73C4452F755")]
+    internal interface IContentExternalOutputLink : global::Microsoft.UI.Content.IContentExternalOutputLink
+    {
+    }
+    internal static class IContentExternalOutputLinkStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.ContentExternalOutputLink Create(IObjectReference _obj, global::Microsoft.UI.Composition.Compositor compositor)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __compositor = default;
+            IntPtr __retval = default;
+            try
+            {
+                __compositor = global::ABI.Microsoft.UI.Composition.Compositor.CreateMarshaler2(compositor);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__compositor), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.ContentExternalOutputLink.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__compositor);
+                global::ABI.Microsoft.UI.Content.ContentExternalOutputLink.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe bool IsSupported(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x1, 0xF4, 0x58, 0xB7, 0x3E, 0x83, 0x7D, 0x58, 0xB0, 0xCD, 0xA3, 0x93, 0x4E, 0xBA, 0x37, 0x21 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("B758F401-833E-587D-B0CD-A3934EBA3721")]
+    internal interface IContentExternalOutputLinkStatics : global::Microsoft.UI.Content.IContentExternalOutputLinkStatics
     {
     }
     internal static class IContentIslandMethods
@@ -4808,6 +6714,164 @@ namespace ABI.Microsoft.UI.Content
     internal interface IContentIslandAutomationProviderRequestedEventArgs : global::Microsoft.UI.Content.IContentIslandAutomationProviderRequestedEventArgs
     {
     }
+    public static class IContentIslandEndpointConnectionPrivateMethods
+    {
+
+
+        public static unsafe void ConnectRemoteEndpoint(IObjectReference _obj, string siteConnectionInfo)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __siteConnectionInfo = new(siteConnectionInfo);
+            fixed(void* ___siteConnectionInfo = __siteConnectionInfo)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalString.GetAbi(ref __siteConnectionInfo)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+        public static unsafe string get_ConnectionInfo(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe bool get_IsRemoteEndpointConnected(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x3B, 0x83, 0x5D, 0x7C, 0xB8, 0x70, 0x48, 0x54, 0x84, 0x72, 0x94, 0x6, 0xE5, 0x8E, 0xD, 0xB4 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IContentIslandEndpointConnectionPrivate.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("7C5D833B-70B8-5448-8472-9406E58E0DB4")]
+    internal unsafe interface IContentIslandEndpointConnectionPrivate : global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IContentIslandEndpointConnectionPrivate()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IContentIslandEndpointConnectionPrivate), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 3);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_get_ConnectionInfo_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, byte*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_get_IsRemoteEndpointConnected_1;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>*)AbiToProjectionVftablePtr)[8] = &Do_Abi_ConnectRemoteEndpoint_2;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_ConnectRemoteEndpoint_2(IntPtr thisPtr, IntPtr siteConnectionInfo)
+        {
+
+
+
+            try
+            {
+                global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate>(thisPtr).ConnectRemoteEndpoint(MarshalString.FromAbi(siteConnectionInfo));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_ConnectionInfo_0(IntPtr thisPtr, IntPtr* value)
+        {
+
+            string __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate>(thisPtr).ConnectionInfo;
+                *value = MarshalString.FromManaged(__value);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_IsRemoteEndpointConnected_1(IntPtr thisPtr, byte* value)
+        {
+
+            bool __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate>(thisPtr).IsRemoteEndpointConnected;
+                *value = (byte)(__value ? 1 : 0);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe void global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate.ConnectRemoteEndpoint(string siteConnectionInfo)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate).TypeHandle));
+            global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.ConnectRemoteEndpoint(_obj, siteConnectionInfo);
+        }
+
+        unsafe string global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate.ConnectionInfo
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate).TypeHandle));
+                return global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.get_ConnectionInfo(_obj);
+            }
+        }
+
+        unsafe bool global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate.IsRemoteEndpointConnected
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentIslandEndpointConnectionPrivate).TypeHandle));
+                return global::ABI.Microsoft.UI.Content.IContentIslandEndpointConnectionPrivateMethods.get_IsRemoteEndpointConnected(_obj);
+            }
+        }
+    }
+
     internal static class IContentIslandEnvironmentMethods
     {
 
@@ -4930,6 +6994,72 @@ namespace ABI.Microsoft.UI.Content
     internal interface IContentIslandEnvironment2 : global::Microsoft.UI.Content.IContentIslandEnvironment2
     {
     }
+    internal static class IContentIslandEnvironmentExperimentalMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Content.ContentDisplayOrientations get_CurrentOrientation(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.ContentDisplayOrientations __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        internal static unsafe global::Microsoft.UI.Content.ContentDisplayOrientations get_NativeOrientation(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.ContentDisplayOrientations __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>>> _ThemeChanged_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>>> MakeThemeChangedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _ThemeChanged_, new(), null);
+            return _ThemeChanged_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>>> _ThemeChanged => _ThemeChanged_ ?? MakeThemeChangedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.ContentIslandEnvironment, object>> Get_ThemeChanged2(IObjectReference _obj, object _thisObj)
+        {
+            return _ThemeChanged.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_ContentIslandEnvironment__object_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
+                0);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xBC, 0x39, 0x83, 0x5A, 0xA1, 0xF7, 0x18, 0x57, 0x96, 0xCF, 0x0, 0xFC, 0x83, 0x32, 0xAC, 0x47 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("5A8339BC-F7A1-5718-96CF-00FC8332AC47")]
+    internal interface IContentIslandEnvironmentExperimental : global::Microsoft.UI.Content.IContentIslandEnvironmentExperimental
+    {
+    }
     internal static class IContentIslandEnvironmentFactoryMethods
     {
 
@@ -4948,6 +7078,109 @@ namespace ABI.Microsoft.UI.Content
     }
     [Guid("47A782D6-B177-5C1E-BF87-90437DD809D0")]
     internal interface IContentIslandEnvironmentFactory : global::Microsoft.UI.Content.IContentIslandEnvironmentFactory
+    {
+    }
+    internal static class IContentIslandExperimentalMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Composition.Visual get_Root(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.Visual.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.Visual.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Root(IObjectReference _obj, global::Microsoft.UI.Composition.Visual value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Composition.Visual.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> _Connected_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> MakeConnectedTable()
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_EventHandler_1_Microsoft_UI_Content_ContentIsland.EnsureInitialized();
+            global::System.Threading.Interlocked.CompareExchange(ref _Connected_, new(), null);
+            return _Connected_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> _Connected => _Connected_ ?? MakeConnectedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>> Get_Connected2(IObjectReference _obj, object _thisObj)
+        {
+            return _Connected.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return  new global::ABI.WinRT.Interop.EventHandlerEventSource<global::Microsoft.UI.Content.ContentIsland>(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
+                0);
+            });
+        }
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> _Disconnected_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> MakeDisconnectedTable()
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_EventHandler_1_Microsoft_UI_Content_ContentIsland.EnsureInitialized();
+            global::System.Threading.Interlocked.CompareExchange(ref _Disconnected_, new(), null);
+            return _Disconnected_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>>> _Disconnected => _Disconnected_ ?? MakeDisconnectedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::System.EventHandler<global::Microsoft.UI.Content.ContentIsland>> Get_Disconnected2(IObjectReference _obj, object _thisObj)
+        {
+            return _Disconnected.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return  new global::ABI.WinRT.Interop.EventHandlerEventSource<global::Microsoft.UI.Content.ContentIsland>(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[10],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[11],
+                1);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x37, 0x55, 0x5B, 0x21, 0x85, 0x80, 0xF8, 0x51, 0x88, 0xDB, 0x0, 0xBA, 0x45, 0xF5, 0xBC, 0xEE };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("215B5537-8085-51F8-88DB-00BA45F5BCEE")]
+    internal interface IContentIslandExperimental : global::Microsoft.UI.Content.IContentIslandExperimental
     {
     }
     internal static class IContentIslandFactoryMethods
@@ -5280,6 +7513,39 @@ namespace ABI.Microsoft.UI.Content
     internal interface IContentIslandStatics2 : global::Microsoft.UI.Content.IContentIslandStatics2
     {
     }
+    public static class IContentNodeOwnerMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x4, 0xC3, 0x51, 0x22, 0x9D, 0x44, 0x56, 0x44, 0xB0, 0x8, 0xFE, 0x71, 0x63, 0x40, 0x3D, 0x7E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IContentNodeOwner.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("2251C304-449D-4456-B008-FE7163403D7E")]
+    internal unsafe interface IContentNodeOwner : global::Microsoft.UI.Content.IContentNodeOwner
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IContentNodeOwner()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IContentNodeOwner), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 0);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+
+        }
+
+    }
+
     internal static class IContentSiteMethods
     {
 
@@ -6478,6 +8744,431 @@ namespace ABI.Microsoft.UI.Content
         void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
     }
 
+    public static class IContentSiteBridgeEndpointConnectionPrivateMethods
+    {
+
+
+        public static unsafe void AcceptRemoteEndpoint(IObjectReference _obj, string islandConnectionInfo)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __islandConnectionInfo = new(islandConnectionInfo);
+            fixed(void* ___islandConnectionInfo = __islandConnectionInfo)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalString.GetAbi(ref __islandConnectionInfo)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+        public static unsafe string get_ConnectionInfo(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+        public static unsafe bool get_IsRemoteEndpointConnected(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointConnecting_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> MakeRemoteEndpointConnectingTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointConnecting_, new(), null);
+            return _RemoteEndpointConnecting_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointConnecting => _RemoteEndpointConnecting_ ?? MakeRemoteEndpointConnectingTable();
+
+        public static unsafe (Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>, Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>) Get_RemoteEndpointConnecting(IObjectReference _obj, object _thisObj)
+        {
+            var eventSource = Get_RemoteEndpointConnecting2(_obj, _thisObj);
+            return (eventSource.Subscribe, eventSource.Unsubscribe);
+        }
+
+        public static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>> Get_RemoteEndpointConnecting2(IObjectReference _obj, object _thisObj)
+        {
+            return _RemoteEndpointConnecting.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointConnectionEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[9],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[10],
+                0);
+            });
+        }
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointDisconnected_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> MakeRemoteEndpointDisconnectedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointDisconnected_, new(), null);
+            return _RemoteEndpointDisconnected_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointDisconnected => _RemoteEndpointDisconnected_ ?? MakeRemoteEndpointDisconnectedTable();
+
+        public static unsafe (Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>, Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>) Get_RemoteEndpointDisconnected(IObjectReference _obj, object _thisObj)
+        {
+            var eventSource = Get_RemoteEndpointDisconnected2(_obj, _thisObj);
+            return (eventSource.Subscribe, eventSource.Unsubscribe);
+        }
+
+        public static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>> Get_RemoteEndpointDisconnected2(IObjectReference _obj, object _thisObj)
+        {
+            return _RemoteEndpointDisconnected.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointConnectionEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[11],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[12],
+                1);
+            });
+        }
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> _RemoteEndpointRequestedStateChanged_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> MakeRemoteEndpointRequestedStateChangedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointRequestedStateChanged_, new(), null);
+            return _RemoteEndpointRequestedStateChanged_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> _RemoteEndpointRequestedStateChanged => _RemoteEndpointRequestedStateChanged_ ?? MakeRemoteEndpointRequestedStateChangedTable();
+
+        public static unsafe (Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>, Action<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>) Get_RemoteEndpointRequestedStateChanged(IObjectReference _obj, object _thisObj)
+        {
+            var eventSource = Get_RemoteEndpointRequestedStateChanged2(_obj, _thisObj);
+            return (eventSource.Subscribe, eventSource.Unsubscribe);
+        }
+
+        public static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>> Get_RemoteEndpointRequestedStateChanged2(IObjectReference _obj, object _thisObj)
+        {
+            return _RemoteEndpointRequestedStateChanged.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__global__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[13],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[14],
+                2);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x59, 0xA0, 0xD1, 0x84, 0x2B, 0x69, 0x7D, 0x57, 0xA7, 0x91, 0x6A, 0xD4, 0xFA, 0xFB, 0xEB, 0x1F };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IContentSiteBridgeEndpointConnectionPrivate.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("84D1A059-692B-577D-A791-6AD4FAFBEB1F")]
+    internal unsafe interface IContentSiteBridgeEndpointConnectionPrivate : global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IContentSiteBridgeEndpointConnectionPrivate()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IContentSiteBridgeEndpointConnectionPrivate), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 9);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_get_ConnectionInfo_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, byte*, int>*)AbiToProjectionVftablePtr)[7] = &Do_Abi_get_IsRemoteEndpointConnected_1;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>*)AbiToProjectionVftablePtr)[8] = &Do_Abi_AcceptRemoteEndpoint_2;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>*)AbiToProjectionVftablePtr)[9] = &Do_Abi_add_RemoteEndpointConnecting_3;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>*)AbiToProjectionVftablePtr)[10] = &Do_Abi_remove_RemoteEndpointConnecting_4;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>*)AbiToProjectionVftablePtr)[11] = &Do_Abi_add_RemoteEndpointDisconnected_5;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>*)AbiToProjectionVftablePtr)[12] = &Do_Abi_remove_RemoteEndpointDisconnected_6;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>*)AbiToProjectionVftablePtr)[13] = &Do_Abi_add_RemoteEndpointRequestedStateChanged_7;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>*)AbiToProjectionVftablePtr)[14] = &Do_Abi_remove_RemoteEndpointRequestedStateChanged_8;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_AcceptRemoteEndpoint_2(IntPtr thisPtr, IntPtr islandConnectionInfo)
+        {
+
+
+
+            try
+            {
+                global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr).AcceptRemoteEndpoint(MarshalString.FromAbi(islandConnectionInfo));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_ConnectionInfo_0(IntPtr thisPtr, IntPtr* value)
+        {
+
+            string __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr).ConnectionInfo;
+                *value = MarshalString.FromManaged(__value);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_IsRemoteEndpointConnected_1(IntPtr thisPtr, byte* value)
+        {
+
+            bool __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr).IsRemoteEndpointConnected;
+                *value = (byte)(__value ? 1 : 0);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointConnecting_tokenTables;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> MakeRemoteEndpointConnectingTable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointConnecting_tokenTables, new(), null);
+            return _RemoteEndpointConnecting_tokenTables;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointConnecting_TokenTables => _RemoteEndpointConnecting_tokenTables ?? MakeRemoteEndpointConnectingTable();
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_add_RemoteEndpointConnecting_3(IntPtr thisPtr, IntPtr handler, global::WinRT.EventRegistrationToken* token)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointConnectionEventArgs.EnsureInitialized();
+            *token = default;
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                var __handler = global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>.FromAbi(handler);
+                *token = _RemoteEndpointConnecting_TokenTables.GetOrCreateValue(__this).AddEventHandler(__handler);
+                __this.RemoteEndpointConnecting += __handler;
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_remove_RemoteEndpointConnecting_4(IntPtr thisPtr, global::WinRT.EventRegistrationToken token)
+        {
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                if(__this != null && _RemoteEndpointConnecting_TokenTables.TryGetValue(__this, out var __table) && __table.RemoveEventHandler(token, out var __handler))
+                {
+                    __this.RemoteEndpointConnecting -= __handler;
+                }
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointDisconnected_tokenTables;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> MakeRemoteEndpointDisconnectedTable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointDisconnected_tokenTables, new(), null);
+            return _RemoteEndpointDisconnected_tokenTables;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>>> _RemoteEndpointDisconnected_TokenTables => _RemoteEndpointDisconnected_tokenTables ?? MakeRemoteEndpointDisconnectedTable();
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_add_RemoteEndpointDisconnected_5(IntPtr thisPtr, IntPtr handler, global::WinRT.EventRegistrationToken* token)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointConnectionEventArgs.EnsureInitialized();
+            *token = default;
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                var __handler = global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs>.FromAbi(handler);
+                *token = _RemoteEndpointDisconnected_TokenTables.GetOrCreateValue(__this).AddEventHandler(__handler);
+                __this.RemoteEndpointDisconnected += __handler;
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_remove_RemoteEndpointDisconnected_6(IntPtr thisPtr, global::WinRT.EventRegistrationToken token)
+        {
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                if(__this != null && _RemoteEndpointDisconnected_TokenTables.TryGetValue(__this, out var __table) && __table.RemoveEventHandler(token, out var __handler))
+                {
+                    __this.RemoteEndpointDisconnected -= __handler;
+                }
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> _RemoteEndpointRequestedStateChanged_tokenTables;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> MakeRemoteEndpointRequestedStateChangedTable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _RemoteEndpointRequestedStateChanged_tokenTables, new(), null);
+            return _RemoteEndpointRequestedStateChanged_tokenTables;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::WinRT.EventRegistrationTokenTable<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>>> _RemoteEndpointRequestedStateChanged_TokenTables => _RemoteEndpointRequestedStateChanged_tokenTables ?? MakeRemoteEndpointRequestedStateChangedTable();
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_add_RemoteEndpointRequestedStateChanged_7(IntPtr thisPtr, IntPtr handler, global::WinRT.EventRegistrationToken* token)
+        {
+            _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Content_IContentSiteBridgeEndpointConnectionPrivate__Microsoft_UI_Content_EndpointRequestedStateChangedEventArgs.EnsureInitialized();
+            *token = default;
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                var __handler = global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs>.FromAbi(handler);
+                *token = _RemoteEndpointRequestedStateChanged_TokenTables.GetOrCreateValue(__this).AddEventHandler(__handler);
+                __this.RemoteEndpointRequestedStateChanged += __handler;
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_remove_RemoteEndpointRequestedStateChanged_8(IntPtr thisPtr, global::WinRT.EventRegistrationToken token)
+        {
+            try
+            {
+                var __this = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate>(thisPtr);
+                if(__this != null && _RemoteEndpointRequestedStateChanged_TokenTables.TryGetValue(__this, out var __table) && __table.RemoveEventHandler(token, out var __handler))
+                {
+                    __this.RemoteEndpointRequestedStateChanged -= __handler;
+                }
+                return 0;
+            }
+            catch (Exception __ex)
+            {
+                return __ex.HResult;
+            }
+        }
+
+        unsafe void global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.AcceptRemoteEndpoint(string islandConnectionInfo)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+            global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.AcceptRemoteEndpoint(_obj, islandConnectionInfo);
+        }
+
+        unsafe string global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.ConnectionInfo
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                return global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.get_ConnectionInfo(_obj);
+            }
+        }
+
+        unsafe bool global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.IsRemoteEndpointConnected
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                return global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.get_IsRemoteEndpointConnected(_obj);
+            }
+        }
+
+        event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs> global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.RemoteEndpointConnecting
+        {
+            add 
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointConnecting2(_obj, (IWinRTObject)this).Subscribe(value);
+            }
+            remove
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointConnecting2(_obj, (IWinRTObject)this).Unsubscribe(value);
+            }
+        }
+
+        event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointConnectionEventArgs> global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.RemoteEndpointDisconnected
+        {
+            add 
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointDisconnected2(_obj, (IWinRTObject)this).Subscribe(value);
+            }
+            remove
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointDisconnected2(_obj, (IWinRTObject)this).Unsubscribe(value);
+            }
+        }
+
+        event global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate, global::Microsoft.UI.Content.EndpointRequestedStateChangedEventArgs> global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate.RemoteEndpointRequestedStateChanged
+        {
+            add 
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointRequestedStateChanged2(_obj, (IWinRTObject)this).Subscribe(value);
+            }
+            remove
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivate).TypeHandle));
+                global::ABI.Microsoft.UI.Content.IContentSiteBridgeEndpointConnectionPrivateMethods.Get_RemoteEndpointRequestedStateChanged2(_obj, (IWinRTObject)this).Unsubscribe(value);
+            }
+        }
+    }
+
     internal static class IContentSiteEnvironmentMethods
     {
 
@@ -6598,6 +9289,68 @@ namespace ABI.Microsoft.UI.Content
     internal interface IContentSiteEnvironment2 : global::Microsoft.UI.Content.IContentSiteEnvironment2
     {
     }
+    internal static class IContentSiteEnvironmentExperimentalMethods
+    {
+
+
+        internal static unsafe void NotifyThemeChanged(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[10](ThisPtr));
+            global::System.GC.KeepAlive(_obj);
+        }
+        internal static unsafe global::Microsoft.UI.Content.ContentDisplayOrientations get_CurrentOrientation(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.ContentDisplayOrientations __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_CurrentOrientation(IObjectReference _obj, global::Microsoft.UI.Content.ContentDisplayOrientations value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Content.ContentDisplayOrientations get_NativeOrientation(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.ContentDisplayOrientations __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_NativeOrientation(IObjectReference _obj, global::Microsoft.UI.Content.ContentDisplayOrientations value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentDisplayOrientations, int>**)ThisPtr)[9](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x5F, 0x30, 0xAC, 0xF8, 0x2C, 0xE2, 0xF6, 0x53, 0x81, 0xC8, 0x4E, 0xCC, 0xD9, 0x32, 0x95, 0xB3 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("F8AC305F-E22C-53F6-81C8-4ECCD93295B3")]
+    internal interface IContentSiteEnvironmentExperimental : global::Microsoft.UI.Content.IContentSiteEnvironmentExperimental
+    {
+    }
     internal static class IContentSiteEnvironmentFactoryMethods
     {
 
@@ -6706,6 +9459,62 @@ namespace ABI.Microsoft.UI.Content
     }
     [Guid("C901EDF2-F184-5A64-8D58-8CF8EFA8B678")]
     internal interface IContentSiteEnvironmentViewFactory : global::Microsoft.UI.Content.IContentSiteEnvironmentViewFactory
+    {
+    }
+    internal static class IContentSiteExperimentalMethods
+    {
+
+
+        internal static unsafe void SetContentNodeParent(IObjectReference _obj, global::Microsoft.UI.Content.IContentNodeOwner value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = MarshalInterface<global::Microsoft.UI.Content.IContentNodeOwner>.CreateMarshaler2(value, global::ABI.Microsoft.UI.Content.IContentNodeOwnerMethods.IID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        internal static unsafe bool TryGetAutomationProvider(IObjectReference _obj, out object provider)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __provider = default;
+            byte __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, byte*, int>**)ThisPtr)[7](ThisPtr, &__provider, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                provider = MarshalInspectable<object>.FromAbi(__provider);
+                return __retval != 0;
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeAbi(__provider);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x8A, 0xE9, 0x54, 0xD4, 0xF1, 0xD4, 0x36, 0x54, 0xA0, 0xF0, 0x5F, 0xB6, 0xC2, 0x84, 0x8F, 0xAE };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("D454E98A-D4F1-5436-A0F0-5FB6C2848FAE")]
+    internal interface IContentSiteExperimental : global::Microsoft.UI.Content.IContentSiteExperimental
     {
     }
     internal static class IContentSiteFactoryMethods
@@ -7305,6 +10114,96 @@ namespace ABI.Microsoft.UI.Content
     internal interface IContentSiteViewFactory : global::Microsoft.UI.Content.IContentSiteViewFactory
     {
     }
+    internal static class ICoreWindowSiteBridgeMethods
+    {
+
+
+        internal static unsafe void Connect(IObjectReference _obj, global::Microsoft.UI.Content.ContentIsland content)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __content = default;
+            try
+            {
+                __content = global::ABI.Microsoft.UI.Content.ContentIsland.CreateMarshaler2(content);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__content)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__content);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x2E, 0xC0, 0xE1, 0x3, 0xE3, 0xE5, 0x6A, 0x52, 0x84, 0x92, 0x93, 0x9E, 0x26, 0xEE, 0x9, 0xD5 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("03E1C02E-E5E3-526A-8492-939E26EE09D5")]
+    internal interface ICoreWindowSiteBridge : global::Microsoft.UI.Content.ICoreWindowSiteBridge
+    {
+    }
+    internal static class ICoreWindowSiteBridgeStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.CoreWindowSiteBridge Create(IObjectReference _obj, global::Microsoft.UI.Composition.Compositor compositor, global::Windows.UI.Core.CoreWindow coreWindow)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __compositor = default;
+            ObjectReferenceValue __coreWindow = default;
+            IntPtr __retval = default;
+            try
+            {
+                __compositor = global::ABI.Microsoft.UI.Composition.Compositor.CreateMarshaler2(compositor);
+                __coreWindow = global::ABI.Windows.UI.Core.CoreWindow.CreateMarshaler2(coreWindow);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__compositor), MarshalInspectable<object>.GetAbi(__coreWindow), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.CoreWindowSiteBridge.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__compositor);
+                MarshalInspectable<object>.DisposeMarshaler(__coreWindow);
+                global::ABI.Microsoft.UI.Content.CoreWindowSiteBridge.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe bool IsSupported(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x93, 0x67, 0xC5, 0xFB, 0xF2, 0x11, 0x54, 0x57, 0xAD, 0x70, 0x30, 0xE8, 0x2C, 0x7, 0xFA, 0x35 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("FBC56793-11F2-5754-AD70-30E82C07FA35")]
+    internal interface ICoreWindowSiteBridgeStatics : global::Microsoft.UI.Content.ICoreWindowSiteBridgeStatics
+    {
+    }
     internal static class IDesktopAttachedSiteBridgeMethods
     {
 
@@ -7862,6 +10761,43 @@ namespace ABI.Microsoft.UI.Content
     internal interface IDesktopSiteBridge : global::Microsoft.UI.Content.IDesktopSiteBridge
     {
     }
+    internal static class IDesktopSiteBridge2Methods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.PopupWindowSiteBridge TryCreatePopupSiteBridge(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.PopupWindowSiteBridge.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Content.PopupWindowSiteBridge.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x41, 0xC0, 0x90, 0x11, 0xFB, 0x82, 0x3B, 0x5F, 0x91, 0x11, 0xCA, 0x8F, 0x19, 0xA7, 0x2B, 0x75 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("1190C041-82FB-5F3B-9111-CA8F19A72B75")]
+    internal interface IDesktopSiteBridge2 : global::Microsoft.UI.Content.IDesktopSiteBridge2
+    {
+    }
     internal static class IDesktopSiteBridgeFactoryMethods
     {
 
@@ -7911,6 +10847,357 @@ namespace ABI.Microsoft.UI.Content
     [Guid("E0B38DAF-9CD4-50C5-83EE-C76E3CF34EBA")]
     internal interface IDesktopSiteBridgeStatics : global::Microsoft.UI.Content.IDesktopSiteBridgeStatics
     {
+    }
+    internal static class IEndpointConnectionEventArgsMethods
+    {
+
+        internal static unsafe string get_ConnectionInfo(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x15, 0x2A, 0xBF, 0x94, 0xF0, 0xED, 0xB2, 0x5E, 0x9C, 0xEC, 0x9B, 0x93, 0xAC, 0x53, 0x14, 0x13 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("94BF2A15-EDF0-5EB2-9CEC-9B93AC531413")]
+    internal interface IEndpointConnectionEventArgs : global::Microsoft.UI.Content.IEndpointConnectionEventArgs
+    {
+    }
+    internal static class IEndpointRequestedStateChangedEventArgsMethods
+    {
+
+        internal static unsafe bool get_DidRequestedSizeChange(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC6, 0x95, 0x3F, 0x51, 0x93, 0x41, 0x88, 0x53, 0x90, 0xF8, 0x8C, 0xF3, 0x40, 0x81, 0x5B, 0x1E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("513F95C6-4193-5388-90F8-8CF340815B1E")]
+    internal interface IEndpointRequestedStateChangedEventArgs : global::Microsoft.UI.Content.IEndpointRequestedStateChangedEventArgs
+    {
+    }
+    internal static class IPopupWindowSiteBridgeMethods
+    {
+
+        internal static unsafe bool get_Anchored(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_Anchored(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[7](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xA2, 0x97, 0x45, 0x4, 0xEE, 0xE6, 0xAB, 0x5D, 0xAB, 0xE0, 0x19, 0x23, 0xEB, 0xE3, 0x4C, 0x2E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("044597A2-E6EE-5DAB-ABE0-1923EBE34C2E")]
+    internal interface IPopupWindowSiteBridge : global::Microsoft.UI.Content.IPopupWindowSiteBridge
+    {
+    }
+    internal static class IProcessStarterMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xBC, 0x1, 0x2D, 0x12, 0x53, 0x77, 0x92, 0x55, 0xB6, 0x2D, 0xF6, 0x59, 0xA3, 0xA, 0x2A, 0xC0 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("122D01BC-7753-5592-B62D-F659A30A2AC0")]
+    internal interface IProcessStarter : global::Microsoft.UI.Content.IProcessStarter
+    {
+    }
+    internal static class IProcessStarterFactoryMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xD1, 0x18, 0x14, 0xA0, 0x8B, 0x4E, 0xB4, 0x54, 0xA5, 0xF2, 0x52, 0x1, 0x87, 0xA5, 0x8B, 0x80 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("A01418D1-4E8B-54B4-A5F2-520187A58B80")]
+    internal interface IProcessStarterFactory : global::Microsoft.UI.Content.IProcessStarterFactory
+    {
+    }
+    internal static class IProcessStarterStaticsMethods
+    {
+
+
+        internal static unsafe void StartProcess(IObjectReference _obj, string executablePath, string connectionInfo, out uint processId)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __processId = default;
+            MarshalString.Pinnable __executablePath = new(executablePath);
+            MarshalString.Pinnable __connectionInfo = new(connectionInfo);
+            fixed(void* ___executablePath = __executablePath, ___connectionInfo = __connectionInfo)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, uint*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __executablePath), MarshalString.GetAbi(ref __connectionInfo), &__processId));
+                global::System.GC.KeepAlive(_obj);
+                processId = __processId;
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x9D, 0xD5, 0xF9, 0x76, 0x56, 0x84, 0xF, 0x54, 0xBC, 0x74, 0xD, 0xCA, 0xDF, 0x45, 0x81, 0xB8 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("76F9D59D-8456-540F-BC74-0DCADF4581B8")]
+    internal interface IProcessStarterStatics : global::Microsoft.UI.Content.IProcessStarterStatics
+    {
+    }
+    internal static class ISystemVisualSiteBridgeMethods
+    {
+
+
+        internal static unsafe void Connect(IObjectReference _obj, global::Microsoft.UI.Content.ContentIsland content)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __content = default;
+            try
+            {
+                __content = global::ABI.Microsoft.UI.Content.ContentIsland.CreateMarshaler2(content);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__content)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__content);
+            }
+        }
+        internal static unsafe global::Microsoft.UI.Content.ContentSite get_Site(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.ContentSite.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Content.ContentSite.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x27, 0xD2, 0xED, 0x6E, 0x2, 0x38, 0x72, 0x57, 0xB2, 0x4E, 0x1D, 0x8B, 0x73, 0x6C, 0xFF, 0xA7 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("6EEDD227-3802-5772-B24E-1D8B736CFFA7")]
+    internal interface ISystemVisualSiteBridge : global::Microsoft.UI.Content.ISystemVisualSiteBridge
+    {
+    }
+    internal static class ISystemVisualSiteBridgeStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Content.SystemVisualSiteBridge Create(IObjectReference _obj, global::Microsoft.UI.Dispatching.DispatcherQueue queue, global::Windows.UI.Composition.ContainerVisual hostVisual, global::Microsoft.UI.WindowId parentForInputWindowId)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __queue = default;
+            ObjectReferenceValue __hostVisual = default;
+            IntPtr __retval = default;
+            try
+            {
+                __queue = global::ABI.Microsoft.UI.Dispatching.DispatcherQueue.CreateMarshaler2(queue);
+                __hostVisual = global::ABI.Windows.UI.Composition.ContainerVisual.CreateMarshaler2(hostVisual);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, global::Microsoft.UI.WindowId, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__queue), MarshalInspectable<object>.GetAbi(__hostVisual), parentForInputWindowId, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__queue);
+                MarshalInspectable<object>.DisposeMarshaler(__hostVisual);
+                global::ABI.Microsoft.UI.Content.SystemVisualSiteBridge.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x1C, 0x50, 0x79, 0x6A, 0xA0, 0x83, 0x89, 0x58, 0xAA, 0x21, 0x42, 0x1, 0x0, 0x30, 0x32, 0x76 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("6A79501C-83A0-5889-AA21-420100303276")]
+    internal interface ISystemVisualSiteBridgeStatics : global::Microsoft.UI.Content.ISystemVisualSiteBridgeStatics
+    {
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct PopupWindowSiteBridge
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.PopupWindowSiteBridge obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.PopupWindowSiteBridge>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridgeMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.PopupWindowSiteBridge obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IPopupWindowSiteBridgeMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.PopupWindowSiteBridge FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.PopupWindowSiteBridge.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.PopupWindowSiteBridge obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.PopupWindowSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.PopupWindowSiteBridge[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.PopupWindowSiteBridge[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.PopupWindowSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.PopupWindowSiteBridge>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class PopupWindowSiteBridgeRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.PopupWindowSiteBridge(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ProcessStarter
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.ProcessStarter obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.ProcessStarter>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.IProcessStarterMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.ProcessStarter obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.IProcessStarterMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.ProcessStarter FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.ProcessStarter.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.ProcessStarter obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.ProcessStarter[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.ProcessStarter[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.ProcessStarter[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.ProcessStarter[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.ProcessStarter>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ProcessStarterRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.ProcessStarter(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct SystemVisualSiteBridge
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Content.SystemVisualSiteBridge obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Content.SystemVisualSiteBridge>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Content.SystemVisualSiteBridge obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Content.ISystemVisualSiteBridgeMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Content.SystemVisualSiteBridge FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Content.SystemVisualSiteBridge obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Content.SystemVisualSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Content.SystemVisualSiteBridge[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Content.SystemVisualSiteBridge[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Content.SystemVisualSiteBridge[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Content.SystemVisualSiteBridge>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class SystemVisualSiteBridgeRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Content.SystemVisualSiteBridge(inspectable.ObjRef);
     }
 }
 #pragma warning restore CA1416

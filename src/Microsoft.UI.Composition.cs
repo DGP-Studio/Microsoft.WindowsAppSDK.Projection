@@ -3740,6 +3740,83 @@ namespace Microsoft.UI.Composition
         }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.CompositionNotificationDeferral))]
+    [global::ABI.Microsoft.UI.Composition.CompositionNotificationDeferralRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ICompositionNotificationDeferral))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class CompositionNotificationDeferral : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CompositionNotificationDeferral>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionNotificationDeferral => _inner;
+
+
+        public static CompositionNotificationDeferral FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<CompositionNotificationDeferral>.FromAbi(thisPtr);
+        }
+
+        internal CompositionNotificationDeferral(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferralMethods.IID);
+
+        }
+
+
+        public static bool operator ==(CompositionNotificationDeferral x, CompositionNotificationDeferral y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(CompositionNotificationDeferral x, CompositionNotificationDeferral y) => !(x == y);
+        public bool Equals(CompositionNotificationDeferral other) => this == other;
+        public override bool Equals(object obj) => obj is CompositionNotificationDeferral that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public void Complete() => global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferralMethods.Complete(_objRef_global__Microsoft_UI_Composition_ICompositionNotificationDeferral);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.CompositionObject))]
     [global::ABI.Microsoft.UI.Composition.CompositionObjectRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(ICompositionObject))]
@@ -4170,6 +4247,14 @@ namespace Microsoft.UI.Composition
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadow => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow => ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow ?? Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow();
+
 
 
         public static new CompositionProjectedShadow FromAbi(IntPtr thisPtr)
@@ -4220,10 +4305,28 @@ namespace Microsoft.UI.Composition
             set => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowMethods.set_MaxBlurRadius(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadow, value);
         }
 
+        public float MaxOpacity
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.get_MaxOpacity(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.set_MaxOpacity(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow, value);
+        }
+
         public float MinBlurRadius
         {
             get => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowMethods.get_MinBlurRadius(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadow);
             set => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowMethods.set_MinBlurRadius(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadow, value);
+        }
+
+        public float MinOpacity
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.get_MinOpacity(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.set_MinOpacity(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow, value);
+        }
+
+        public float OpacityFalloff
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.get_OpacityFalloff(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowMethods.set_OpacityFalloff(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadow, value);
         }
 
         public CompositionProjectedShadowReceiverUnorderedCollection Receivers => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowMethods.get_Receivers(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadow);
@@ -4260,6 +4363,14 @@ namespace Microsoft.UI.Composition
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadowCaster => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCasterMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster => ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster ?? Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster();
+
 
 
         public static new CompositionProjectedShadowCaster FromAbi(IntPtr thisPtr)
@@ -4290,6 +4401,12 @@ namespace Microsoft.UI.Composition
         private struct InterfaceTag<I>{};
 
 
+        public Visual AncestorClip
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCasterMethods.get_AncestorClip(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCasterMethods.set_AncestorClip(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster, value);
+        }
+
         public CompositionBrush Brush
         {
             get => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowCasterMethods.get_Brush(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadowCaster);
@@ -4300,6 +4417,12 @@ namespace Microsoft.UI.Composition
         {
             get => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowCasterMethods.get_CastingVisual(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadowCaster);
             set => global::ABI.Microsoft.UI.Composition.ICompositionProjectedShadowCasterMethods.set_CastingVisual(_objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadowCaster, value);
+        }
+
+        public CompositionBrush Mask
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCasterMethods.get_Mask(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCasterMethods.set_Mask(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowCaster, value);
         }
 
         protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
@@ -4430,6 +4553,13 @@ namespace Microsoft.UI.Composition
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<CompositionProjectedShadowDrawOrder>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum CompositionProjectedShadowDrawOrder : int
+    {
+        PostChildren = unchecked((int)0),
+        PreChildren = unchecked((int)0x1),
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.CompositionProjectedShadowReceiver))]
     [global::ABI.Microsoft.UI.Composition.CompositionProjectedShadowReceiverRcwFactory]
@@ -4444,6 +4574,14 @@ namespace Microsoft.UI.Composition
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Composition_ICompositionProjectedShadowReceiver => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiverMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver => ___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver ?? Make___objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver();
+
 
 
         public static new CompositionProjectedShadowReceiver FromAbi(IntPtr thisPtr)
@@ -4473,6 +4611,18 @@ namespace Microsoft.UI.Composition
 
         private struct InterfaceTag<I>{};
 
+
+        public CompositionProjectedShadowDrawOrder DrawOrder
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiverMethods.get_DrawOrder(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiverMethods.set_DrawOrder(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver, value);
+        }
+
+        public CompositionBrush Mask
+        {
+            get => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiverMethods.get_Mask(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver);
+            set => global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiverMethods.set_Mask(_objRef_global__Microsoft_UI_Composition_IExpCompositionProjectedShadowReceiver, value);
+        }
 
         public Visual ReceivingVisual
         {
@@ -7522,6 +7672,13 @@ namespace Microsoft.UI.Composition
         float TopInset { get; set; }
         float TopInsetScale { get; set; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("396698B7-437B-5ACF-AEC9-6342C437FAF1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferral))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface ICompositionNotificationDeferral
+    {
+        void Complete();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("0E583D49-FB5E-5481-A426-D3C41E059A5A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.ICompositionObject))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
     internal interface ICompositionObject
@@ -8041,6 +8198,31 @@ namespace Microsoft.UI.Composition
         CompositionEasingFunctionMode Mode { get; }
         int Oscillations { get; }
         float Springiness { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("DA7447BF-78A8-5023-B1D5-4EB090D3CE25")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadow))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IExpCompositionProjectedShadow
+    {
+        float MaxOpacity { get; set; }
+        float MinOpacity { get; set; }
+        float OpacityFalloff { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("201F3A32-B715-5A3B-AF0C-570F1DAE4F1B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCaster))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IExpCompositionProjectedShadowCaster
+    {
+        Visual AncestorClip { get; set; }
+        CompositionBrush Mask { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("85A2028B-896B-56A2-896B-5985BA7FB0CF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiver))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IExpCompositionProjectedShadowReceiver
+    {
+        CompositionProjectedShadowDrawOrder DrawOrder { get; set; }
+        CompositionBrush Mask { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("DF29ECC1-3FFC-565F-9D6C-533586908106")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExponentialEasingFunction))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
@@ -12425,6 +12607,31 @@ namespace ABI.Microsoft.UI.Composition
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Composition.CompositionNineGridBrush(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct CompositionNotificationDeferral
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Composition.CompositionNotificationDeferral obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferralMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Composition.CompositionNotificationDeferral obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferralMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Composition.CompositionNotificationDeferral FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Composition.CompositionNotificationDeferral.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Composition.CompositionNotificationDeferral obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Composition.CompositionNotificationDeferral[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Composition.CompositionNotificationDeferral[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Composition.CompositionNotificationDeferral[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Composition.CompositionNotificationDeferral[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Composition.CompositionNotificationDeferral>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class CompositionNotificationDeferralRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Composition.CompositionNotificationDeferral(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct CompositionObject
@@ -16875,6 +17082,34 @@ namespace ABI.Microsoft.UI.Composition
     }
     [Guid("C77A3D21-C7EE-517A-98F4-AD9A7202BC86")]
     internal interface ICompositionNineGridBrush : global::Microsoft.UI.Composition.ICompositionNineGridBrush
+    {
+    }
+    internal static class ICompositionNotificationDeferralMethods
+    {
+
+
+        internal static unsafe void Complete(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[6](ThisPtr));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB7, 0x98, 0x66, 0x39, 0x7B, 0x43, 0xCF, 0x5A, 0xAE, 0xC9, 0x63, 0x42, 0xC4, 0x37, 0xFA, 0xF1 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("396698B7-437B-5ACF-AEC9-6342C437FAF1")]
+    internal interface ICompositionNotificationDeferral : global::Microsoft.UI.Composition.ICompositionNotificationDeferral
     {
     }
     internal static class ICompositionObjectMethods
@@ -21755,6 +21990,233 @@ namespace ABI.Microsoft.UI.Composition
     }
     [Guid("B952E12F-4A50-51A9-A11A-23855F4AAE07")]
     internal interface IElasticEasingFunction : global::Microsoft.UI.Composition.IElasticEasingFunction
+    {
+    }
+    internal static class IExpCompositionProjectedShadowMethods
+    {
+
+        internal static unsafe float get_MaxOpacity(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            float __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_MaxOpacity(IObjectReference _obj, float value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe float get_MinOpacity(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            float __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_MinOpacity(IObjectReference _obj, float value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float, int>**)ThisPtr)[9](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe float get_OpacityFalloff(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            float __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_OpacityFalloff(IObjectReference _obj, float value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, float, int>**)ThisPtr)[11](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xBF, 0x47, 0x74, 0xDA, 0xA8, 0x78, 0x23, 0x50, 0xB1, 0xD5, 0x4E, 0xB0, 0x90, 0xD3, 0xCE, 0x25 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("DA7447BF-78A8-5023-B1D5-4EB090D3CE25")]
+    internal interface IExpCompositionProjectedShadow : global::Microsoft.UI.Composition.IExpCompositionProjectedShadow
+    {
+    }
+    internal static class IExpCompositionProjectedShadowCasterMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Composition.Visual get_AncestorClip(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.Visual.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.Visual.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_AncestorClip(IObjectReference _obj, global::Microsoft.UI.Composition.Visual value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Composition.Visual.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.CompositionBrush get_Mask(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.CompositionBrush.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.CompositionBrush.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Mask(IObjectReference _obj, global::Microsoft.UI.Composition.CompositionBrush value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Composition.CompositionBrush.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x32, 0x3A, 0x1F, 0x20, 0x15, 0xB7, 0x3B, 0x5A, 0xAF, 0xC, 0x57, 0xF, 0x1D, 0xAE, 0x4F, 0x1B };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("201F3A32-B715-5A3B-AF0C-570F1DAE4F1B")]
+    internal interface IExpCompositionProjectedShadowCaster : global::Microsoft.UI.Composition.IExpCompositionProjectedShadowCaster
+    {
+    }
+    internal static class IExpCompositionProjectedShadowReceiverMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Composition.CompositionProjectedShadowDrawOrder get_DrawOrder(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Composition.CompositionProjectedShadowDrawOrder __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionProjectedShadowDrawOrder*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_DrawOrder(IObjectReference _obj, global::Microsoft.UI.Composition.CompositionProjectedShadowDrawOrder value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Composition.CompositionProjectedShadowDrawOrder, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Composition.CompositionBrush get_Mask(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Composition.CompositionBrush.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.UI.Composition.CompositionBrush.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Mask(IObjectReference _obj, global::Microsoft.UI.Composition.CompositionBrush value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __value = default;
+            try
+            {
+                __value = global::ABI.Microsoft.UI.Composition.CompositionBrush.CreateMarshaler2(value);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__value);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x8B, 0x2, 0xA2, 0x85, 0x6B, 0x89, 0xA2, 0x56, 0x89, 0x6B, 0x59, 0x85, 0xBA, 0x7F, 0xB0, 0xCF };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("85A2028B-896B-56A2-896B-5985BA7FB0CF")]
+    internal interface IExpCompositionProjectedShadowReceiver : global::Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiver
     {
     }
     internal static class IExponentialEasingFunctionMethods
