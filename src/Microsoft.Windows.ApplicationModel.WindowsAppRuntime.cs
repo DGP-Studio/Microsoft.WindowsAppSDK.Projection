@@ -449,6 +449,9 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
         FixStuckPointerInputQueue = unchecked((int)0x35ff6ad),
         FixWebViewVisibilityReentrancyCrash = unchecked((int)0x36381f9),
         FixWindowCloseFocusCrash = unchecked((int)0x363d112),
+        ActivateDirectManipulationManager_CheckCanInit = unchecked((int)0x365b491),
+        DwmCoreI_OptimizeFirstFrameLatency = unchecked((int)0x36b04fe),
+        InputStateManager_PenInputCrashX86 = unchecked((int)0x365ce79),
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum RuntimeCompatibilityContract

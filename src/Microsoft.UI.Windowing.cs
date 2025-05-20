@@ -65,14 +65,6 @@ namespace Microsoft.UI.Windowing
         }
         private IObjectReference _objRef_global__Microsoft_UI_Windowing_IAppWindow4 => ___objRef_global__Microsoft_UI_Windowing_IAppWindow4 ?? Make___objRef_global__Microsoft_UI_Windowing_IAppWindow4();
 
-        private volatile IObjectReference ___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental;
-        private IObjectReference Make___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.IID), null);
-            return ___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental;
-        }
-        private IObjectReference _objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental => ___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental ?? Make___objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental();
-
 
 
         public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Windowing.AppWindow").AsInterface<I>();
@@ -120,25 +112,6 @@ namespace Microsoft.UI.Windowing
         }
 
         public static AppWindow Create(AppWindowPresenter appWindowPresenter, global::Microsoft.UI.WindowId ownerWindowId, global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue) => global::ABI.Microsoft.UI.Windowing.IAppWindowStatics2Methods.Create(_objRef_global__Microsoft_UI_Windowing_IAppWindowStatics2, appWindowPresenter, ownerWindowId, DispatcherQueue);
-
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Windowing_IAppWindowStatics3;
-        private static IObjectReference _objRef_global__Microsoft_UI_Windowing_IAppWindowStatics3
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Windowing_IAppWindowStatics3;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Windowing_IAppWindowStatics3 = ActivationFactory.Get("Microsoft.UI.Windowing.AppWindow", global::ABI.Microsoft.UI.Windowing.IAppWindowStatics3Methods.IID);
-                }
-            }
-        }
-
-        public static void SaveCurrentPlacementForAllPersistedStateIds() => global::ABI.Microsoft.UI.Windowing.IAppWindowStatics3Methods.SaveCurrentPlacementForAllPersistedStateIds(_objRef_global__Microsoft_UI_Windowing_IAppWindowStatics3);
 
         public static AppWindow FromAbi(IntPtr thisPtr)
         {
@@ -242,12 +215,6 @@ namespace Microsoft.UI.Windowing
 
         public void SetTitleBarIcon(global::Microsoft.UI.IconId iconId) => global::ABI.Microsoft.UI.Windowing.IAppWindow4Methods.SetTitleBarIcon(_objRef_global__Microsoft_UI_Windowing_IAppWindow4, iconId);
 
-        public AppWindowPlacementDetails GetCurrentPlacement() => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.GetCurrentPlacement(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental);
-
-        public void SaveCurrentPlacement() => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.SaveCurrentPlacement(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental);
-
-        public bool SetCurrentPlacement(AppWindowPlacementDetails placementDetails, bool isFirstWindow) => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.SetCurrentPlacement(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental, placementDetails, isFirstWindow);
-
         public global::Windows.Graphics.SizeInt32 ClientSize => global::ABI.Microsoft.UI.Windowing.IAppWindow2Methods.get_ClientSize(_objRef_global__Microsoft_UI_Windowing_IAppWindow2);
 
         public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.UI.Windowing.IAppWindow3Methods.get_DispatcherQueue(_objRef_global__Microsoft_UI_Windowing_IAppWindow3);
@@ -263,18 +230,6 @@ namespace Microsoft.UI.Windowing
         public bool IsVisible => global::ABI.Microsoft.UI.Windowing.IAppWindowMethods.get_IsVisible(_objRef_global__Microsoft_UI_Windowing_IAppWindow);
 
         public global::Microsoft.UI.WindowId OwnerWindowId => global::ABI.Microsoft.UI.Windowing.IAppWindowMethods.get_OwnerWindowId(_objRef_global__Microsoft_UI_Windowing_IAppWindow);
-
-        public global::System.Nullable<Guid> PersistedStateId
-        {
-            get => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.get_PersistedStateId(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental);
-            set => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.set_PersistedStateId(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental, value);
-        }
-
-        public PlacementRestorationBehavior PlacementRestorationBehavior
-        {
-            get => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.get_PlacementRestorationBehavior(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental);
-            set => global::ABI.Microsoft.UI.Windowing.IAppWindowExperimentalMethods.set_PlacementRestorationBehavior(_objRef_global__Microsoft_UI_Windowing_IAppWindowExperimental, value);
-        }
 
         public global::Windows.Graphics.PointInt32 Position => global::ABI.Microsoft.UI.Windowing.IAppWindowMethods.get_Position(_objRef_global__Microsoft_UI_Windowing_IAppWindow);
 
@@ -467,116 +422,6 @@ namespace Microsoft.UI.Windowing
             get => global::ABI.Microsoft.UI.Windowing.IAppWindowClosingEventArgsMethods.get_Cancel(_objRef_global__Microsoft_UI_Windowing_IAppWindowClosingEventArgs);
             set => global::ABI.Microsoft.UI.Windowing.IAppWindowClosingEventArgsMethods.set_Cancel(_objRef_global__Microsoft_UI_Windowing_IAppWindowClosingEventArgs, value);
         }
-
-        private bool IsOverridableInterface(Guid iid) => false;
-
-        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
-        {
-            ppv = IntPtr.Zero;
-            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
-            {
-                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
-            }
-
-            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
-            {
-                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
-            }
-
-            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
-        }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
-    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails))]
-    [global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetailsRcwFactory]
-    [global::WinRT.ProjectedRuntimeClass(typeof(IAppWindowPlacementDetails))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public sealed class AppWindowPlacementDetails : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<AppWindowPlacementDetails>
-    {
-        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
-
-        private readonly IObjectReference _inner = null;
-
-
-
-        private IObjectReference _objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails => _inner;
-
-
-        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Windowing.AppWindowPlacementDetails").AsInterface<I>();
-
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetailsStatics;
-        private static IObjectReference _objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetailsStatics
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetailsStatics;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetailsStatics = ActivationFactory.Get("Microsoft.UI.Windowing.AppWindowPlacementDetails", global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsStaticsMethods.IID);
-                }
-            }
-        }
-
-        public static AppWindowPlacementDetails Create(global::Windows.Graphics.RectInt32 normalRect, global::Windows.Graphics.RectInt32 workArea, int dpi, int showCmd, global::Windows.Graphics.RectInt32 arrangeRect, PlacementInfo flags, string deviceName) => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsStaticsMethods.Create(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetailsStatics, normalRect, workArea, dpi, showCmd, arrangeRect, flags, deviceName);
-
-        public static AppWindowPlacementDetails FromAbi(IntPtr thisPtr)
-        {
-            if (thisPtr == IntPtr.Zero) return null;
-            return MarshalInspectable<AppWindowPlacementDetails>.FromAbi(thisPtr);
-        }
-
-        internal AppWindowPlacementDetails(IObjectReference objRef)
-        {
-            _inner = objRef.As(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.IID);
-
-        }
-
-
-        public static bool operator ==(AppWindowPlacementDetails x, AppWindowPlacementDetails y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
-        public static bool operator !=(AppWindowPlacementDetails x, AppWindowPlacementDetails y) => !(x == y);
-        public bool Equals(AppWindowPlacementDetails other) => this == other;
-        public override bool Equals(object obj) => obj is AppWindowPlacementDetails that && this == that;
-        public override int GetHashCode() => ThisPtr.GetHashCode();
-
-
-        bool IWinRTObject.HasUnwrappableNativeObject => true;
-        IObjectReference IWinRTObject.NativeObject => _inner;
-        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
-        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
-            return _queryInterfaceCache;
-        }
-        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
-        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
-        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
-            return _additionalTypeData;
-        }
-        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
-
-        private struct InterfaceTag<I>{};
-
-
-        public global::Windows.Graphics.RectInt32 ArrangeRect => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_ArrangeRect(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public string DeviceName => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_DeviceName(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public int Dpi => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_Dpi(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public PlacementInfo Flags => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_Flags(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public global::Windows.Graphics.RectInt32 NormalRect => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_NormalRect(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public int ShowCmd => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_ShowCmd(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
-
-        public global::Windows.Graphics.RectInt32 WorkArea => global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.get_WorkArea(_objRef_global__Microsoft_UI_Windowing_IAppWindowPlacementDetails);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -1089,25 +934,6 @@ namespace Microsoft.UI.Windowing
 
         public static DisplayArea GetFromDisplayId(global::Microsoft.UI.DisplayId displayId) => global::ABI.Microsoft.UI.Windowing.IDisplayAreaStatics2Methods.GetFromDisplayId(_objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics2, displayId);
 
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics3;
-        private static IObjectReference _objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics3
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics3;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics3 = ActivationFactory.Get("Microsoft.UI.Windowing.DisplayArea", global::ABI.Microsoft.UI.Windowing.IDisplayAreaStatics3Methods.IID);
-                }
-            }
-        }
-
-        public static global::Microsoft.UI.DisplayId GetMetricsFromWindowId(global::Microsoft.UI.WindowId windowId) => global::ABI.Microsoft.UI.Windowing.IDisplayAreaStatics3Methods.GetMetricsFromWindowId(_objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics3, windowId);
-
         public static DisplayArea Primary => global::ABI.Microsoft.UI.Windowing.IDisplayAreaStaticsMethods.get_Primary(_objRef_global__Microsoft_UI_Windowing_IDisplayAreaStatics);
 
         public static DisplayArea FromAbi(IntPtr thisPtr)
@@ -1482,37 +1308,6 @@ namespace Microsoft.UI.Windowing
     {
         bool Cancel { get; set; }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowExperimental))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IAppWindowExperimental
-    {
-        AppWindowPlacementDetails GetCurrentPlacement();
-        void SaveCurrentPlacement();
-        bool SetCurrentPlacement(AppWindowPlacementDetails placementDetails, bool isFirstWindow);
-        global::System.Nullable<Guid> PersistedStateId { get; set; }
-        PlacementRestorationBehavior PlacementRestorationBehavior { get; set; }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("639EC5B2-AC0C-5BBF-8422-98DCA540D219")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetails))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IAppWindowPlacementDetails
-    {
-        global::Windows.Graphics.RectInt32 ArrangeRect { get; }
-        string DeviceName { get; }
-        int Dpi { get; }
-        PlacementInfo Flags { get; }
-        global::Windows.Graphics.RectInt32 NormalRect { get; }
-        int ShowCmd { get; }
-        global::Windows.Graphics.RectInt32 WorkArea { get; }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("F19F1745-52AD-5CF7-97EA-76C5FD6FF3C1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsStatics))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IAppWindowPlacementDetailsStatics
-    {
-        AppWindowPlacementDetails Create(global::Windows.Graphics.RectInt32 normalRect, global::Windows.Graphics.RectInt32 workArea, int dpi, int showCmd, global::Windows.Graphics.RectInt32 arrangeRect, PlacementInfo flags, string deviceName);
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("BC3042C2-C6C6-5632-8989-FF0EC6D3B40D")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPresenter))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
     internal interface IAppWindowPresenter
@@ -1542,13 +1337,6 @@ namespace Microsoft.UI.Windowing
     {
         [global::Windows.Foundation.Metadata.Overload(@"CreateWithDispatcherQueue")]
         AppWindow Create(AppWindowPresenter appWindowPresenter, global::Microsoft.UI.WindowId ownerWindowId, global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("0BCC835A-1286-5113-9F59-F1093D2E087A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IAppWindowStatics3
-    {
-        void SaveCurrentPlacementForAllPersistedStateIds();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("5574EFA2-C91C-5700-A363-539C71A7AAF4")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowTitleBar))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
@@ -1629,13 +1417,6 @@ namespace Microsoft.UI.Windowing
     internal interface IDisplayAreaStatics2
     {
         DisplayArea GetFromDisplayId(global::Microsoft.UI.DisplayId displayId);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("745D3602-268B-5060-8437-FCC025E255D6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IDisplayAreaStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IDisplayAreaStatics3
-    {
-        global::Microsoft.UI.DisplayId GetMetricsFromWindowId(global::Microsoft.UI.WindowId windowId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("83F6562F-D3A0-548B-8E4F-A99BE3D95C9C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IDisplayAreaWatcher))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
@@ -1920,30 +1701,6 @@ namespace Microsoft.UI.Windowing
         Minimized = unchecked((int)0x1),
         Restored = unchecked((int)0x2),
     }
-    [FlagsAttribute]
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementInfo>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum PlacementInfo : uint
-    {
-        None = unchecked((uint)0),
-        RestoreToMaximized = unchecked((uint)0x2),
-        RestoreToArranged = unchecked((uint)0x8),
-        Arranged = unchecked((uint)0x10),
-        Resizable = unchecked((uint)0x20),
-        FullScreen = unchecked((uint)0x40),
-    }
-    [FlagsAttribute]
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementRestorationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum PlacementRestorationBehavior : uint
-    {
-        None = unchecked((uint)0),
-        AllowShowMaximized = unchecked((uint)0x1),
-        AllowShowFullScreen = unchecked((uint)0x2),
-        AllowShowArranged = unchecked((uint)0x4),
-        UseStartupInfoForFirstWindow = unchecked((uint)0x8),
-        All = unchecked((uint)0xffffffff),
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<TitleBarHeightOption>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65537u)]
     public enum TitleBarHeightOption : int
     {
@@ -2038,31 +1795,6 @@ namespace ABI.Microsoft.UI.Windowing
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Windowing.AppWindowClosingEventArgs(inspectable.ObjRef);
-    }
-    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-    public struct AppWindowPlacementDetails
-    {
-
-        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Windowing.AppWindowPlacementDetails obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.IID);
-        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Windowing.AppWindowPlacementDetails obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsMethods.IID);
-        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
-        public static global::Microsoft.UI.Windowing.AppWindowPlacementDetails FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Windowing.AppWindowPlacementDetails.FromAbi(thisPtr);
-        public static IntPtr FromManaged(global::Microsoft.UI.Windowing.AppWindowPlacementDetails obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
-        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Windowing.AppWindowPlacementDetails[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
-        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.GetAbiArray(box);
-        public static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.FromAbiArray(box, FromAbi);
-        public static void CopyAbiArray(global::Microsoft.UI.Windowing.AppWindowPlacementDetails[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.CopyAbiArray(array, box, FromAbi);
-        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Windowing.AppWindowPlacementDetails[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.FromManagedArray(array, (o) => FromManaged(o));
-        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
-        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Windowing.AppWindowPlacementDetails>.DisposeMarshalerArray(array);
-        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
-        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
-    }
-    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-    internal sealed class AppWindowPlacementDetailsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
-    {
-        public override object CreateInstance(global::WinRT.IInspectable inspectable)
-            => new global::Microsoft.UI.Windowing.AppWindowPlacementDetails(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct AppWindowPresenter
@@ -2900,258 +2632,6 @@ namespace ABI.Microsoft.UI.Windowing
     internal interface IAppWindowClosingEventArgs : global::Microsoft.UI.Windowing.IAppWindowClosingEventArgs
     {
     }
-    internal static class IAppWindowExperimentalMethods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails GetCurrentPlacement(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe void SaveCurrentPlacement(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[11](ThisPtr));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-        internal static unsafe bool SetCurrentPlacement(IObjectReference _obj, global::Microsoft.UI.Windowing.AppWindowPlacementDetails placementDetails, bool isFirstWindow)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __placementDetails = default;
-            byte __retval = default;
-            try
-            {
-                __placementDetails = global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails.CreateMarshaler2(placementDetails);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, byte, byte*, int>**)ThisPtr)[12](ThisPtr, MarshalInspectable<object>.GetAbi(__placementDetails), (byte)(isFirstWindow ? 1 : 0), &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return __retval != 0;
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__placementDetails);
-            }
-        }
-        internal static unsafe global::System.Nullable<Guid> get_PersistedStateId(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalInterface<global::System.Nullable<Guid>>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::System.Nullable<Guid>>.DisposeAbi(__retval);
-            }
-        }
-        internal static unsafe void set_PersistedStateId(IObjectReference _obj, global::System.Nullable<Guid> value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                __value = MarshalInterface<global::System.Nullable<Guid>>.CreateMarshaler2(value, global::ABI.System.Nullable<Guid>.PIID);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
-        internal static unsafe global::Microsoft.UI.Windowing.PlacementRestorationBehavior get_PlacementRestorationBehavior(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.Windowing.PlacementRestorationBehavior __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Windowing.PlacementRestorationBehavior*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-        internal static unsafe void set_PlacementRestorationBehavior(IObjectReference _obj, global::Microsoft.UI.Windowing.PlacementRestorationBehavior value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Windowing.PlacementRestorationBehavior, int>**)ThisPtr)[9](ThisPtr, value));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC7, 0x96, 0xDB, 0x4, 0xB6, 0xDE, 0xE4, 0x5B, 0xBF, 0xDC, 0x1B, 0xC0, 0x36, 0x1C, 0x8A, 0x12 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12")]
-    internal interface IAppWindowExperimental : global::Microsoft.UI.Windowing.IAppWindowExperimental
-    {
-    }
-    internal static class IAppWindowPlacementDetailsMethods
-    {
-
-        internal static unsafe global::Windows.Graphics.RectInt32 get_ArrangeRect(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Windows.Graphics.RectInt32 __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.RectInt32*, int>**)ThisPtr)[10](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe string get_DeviceName(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[11](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalString.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalString.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe int get_Dpi(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            int __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe global::Microsoft.UI.Windowing.PlacementInfo get_Flags(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.Windowing.PlacementInfo __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Windowing.PlacementInfo*, int>**)ThisPtr)[12](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe global::Windows.Graphics.RectInt32 get_NormalRect(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Windows.Graphics.RectInt32 __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.RectInt32*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe int get_ShowCmd(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            int __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, int>**)ThisPtr)[9](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe global::Windows.Graphics.RectInt32 get_WorkArea(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Windows.Graphics.RectInt32 __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.RectInt32*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB2, 0xC5, 0x9E, 0x63, 0xC, 0xAC, 0xBF, 0x5B, 0x84, 0x22, 0x98, 0xDC, 0xA5, 0x40, 0xD2, 0x19 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("639EC5B2-AC0C-5BBF-8422-98DCA540D219")]
-    internal interface IAppWindowPlacementDetails : global::Microsoft.UI.Windowing.IAppWindowPlacementDetails
-    {
-    }
-    internal static class IAppWindowPlacementDetailsStaticsMethods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails Create(IObjectReference _obj, global::Windows.Graphics.RectInt32 normalRect, global::Windows.Graphics.RectInt32 workArea, int dpi, int showCmd, global::Windows.Graphics.RectInt32 arrangeRect, global::Microsoft.UI.Windowing.PlacementInfo flags, string deviceName)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                MarshalString.Pinnable __deviceName = new(deviceName);
-                fixed(void* ___deviceName = __deviceName)
-                {
-                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.RectInt32, global::Windows.Graphics.RectInt32, int, int, global::Windows.Graphics.RectInt32, global::Microsoft.UI.Windowing.PlacementInfo, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, normalRect, workArea, dpi, showCmd, arrangeRect, flags, MarshalString.GetAbi(ref __deviceName), &__retval));
-                    global::System.GC.KeepAlive(_obj);
-                    return global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails.FromAbi(__retval);
-                }
-            }
-            finally
-            {
-                global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails.DisposeAbi(__retval);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x45, 0x17, 0x9F, 0xF1, 0xAD, 0x52, 0xF7, 0x5C, 0x97, 0xEA, 0x76, 0xC5, 0xFD, 0x6F, 0xF3, 0xC1 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("F19F1745-52AD-5CF7-97EA-76C5FD6FF3C1")]
-    internal interface IAppWindowPlacementDetailsStatics : global::Microsoft.UI.Windowing.IAppWindowPlacementDetailsStatics
-    {
-    }
     internal static class IAppWindowPresenterMethods
     {
 
@@ -3337,34 +2817,6 @@ namespace ABI.Microsoft.UI.Windowing
     }
     [Guid("CABC23DB-4606-5D6E-89A5-06DE1D8BD3E2")]
     internal interface IAppWindowStatics2 : global::Microsoft.UI.Windowing.IAppWindowStatics2
-    {
-    }
-    internal static class IAppWindowStatics3Methods
-    {
-
-
-        internal static unsafe void SaveCurrentPlacementForAllPersistedStateIds(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[6](ThisPtr));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x5A, 0x83, 0xCC, 0xB, 0x86, 0x12, 0x13, 0x51, 0x9F, 0x59, 0xF1, 0x9, 0x3D, 0x2E, 0x8, 0x7A };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("0BCC835A-1286-5113-9F59-F1093D2E087A")]
-    internal interface IAppWindowStatics3 : global::Microsoft.UI.Windowing.IAppWindowStatics3
     {
     }
     internal static class IAppWindowTitleBarMethods
@@ -4271,36 +3723,6 @@ namespace ABI.Microsoft.UI.Windowing
     }
     [Guid("7207AD4B-890D-5DD7-BC18-78FFD9544D8F")]
     internal interface IDisplayAreaStatics2 : global::Microsoft.UI.Windowing.IDisplayAreaStatics2
-    {
-    }
-    internal static class IDisplayAreaStatics3Methods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.DisplayId GetMetricsFromWindowId(IObjectReference _obj, global::Microsoft.UI.WindowId windowId)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.DisplayId __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.WindowId, global::Microsoft.UI.DisplayId*, int>**)ThisPtr)[6](ThisPtr, windowId, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x2, 0x36, 0x5D, 0x74, 0x8B, 0x26, 0x60, 0x50, 0x84, 0x37, 0xFC, 0xC0, 0x25, 0xE2, 0x55, 0xD6 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("745D3602-268B-5060-8437-FCC025E255D6")]
-    internal interface IDisplayAreaStatics3 : global::Microsoft.UI.Windowing.IDisplayAreaStatics3
     {
     }
     internal static class IDisplayAreaWatcherMethods

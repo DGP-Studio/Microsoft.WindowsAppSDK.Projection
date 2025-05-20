@@ -1568,13 +1568,6 @@ namespace Microsoft.UI.Input
     {
         InputKeyboardSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island);
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("34B960C5-A5AE-52AF-8566-6D2D55FF52D1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputKeyboardSourceStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IInputKeyboardSourceStatics3
-    {
-        InputKeyboardSource GetForWindowId(global::Microsoft.UI.WindowId windowId);
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("E8A39502-A860-502F-8C10-3646D43AECF1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputLightDismissAction))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
     internal interface IInputLightDismissAction
@@ -1586,13 +1579,6 @@ namespace Microsoft.UI.Input
     internal interface IInputLightDismissActionStatics
     {
         InputLightDismissAction GetForWindowId(global::Microsoft.UI.WindowId windowId);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C499A8A8-7182-5179-A28C-EAB3F369B6F9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputLightDismissActionStatics2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IInputLightDismissActionStatics2
-    {
-        InputLightDismissAction GetForIsland(global::Microsoft.UI.Content.ContentIsland content);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("078660EE-07CA-5808-B982-E6E899CF098C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
@@ -1660,30 +1646,11 @@ namespace Microsoft.UI.Input
         event global::Windows.Foundation.TypedEventHandler<InputPointerSource, PointerEventArgs> PointerRoutedTo;
         event global::Windows.Foundation.TypedEventHandler<InputPointerSource, PointerEventArgs> PointerWheelChanged;
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("58757E6E-DA80-5AD2-A088-B90E8E407379")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPointerSource2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IInputPointerSource2
-    {
-        bool TrySetDeviceKinds(InputPointerSourceDeviceKinds DeviceKinds);
-        InputPointerActivationBehavior ActivationBehavior { get; set; }
-        event global::Windows.Foundation.TypedEventHandler<InputPointerSource, PointerEventArgs> DirectManipulationHitTest;
-        event global::Windows.Foundation.TypedEventHandler<InputPointerSource, TouchHitTestingEventArgs> TouchHitTesting;
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("E8A19FD1-A914-533F-9B0F-6BF0065E6781")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
     internal interface IInputPointerSourceStatics
     {
         InputPointerSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("76B37B4A-DE02-531A-A9D2-185186159D31")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IInputPointerSourceStatics2
-    {
-        InputPointerSource GetForVisual(global::Microsoft.UI.Composition.Visual visual);
-        InputPointerSource GetForWindowId(global::Microsoft.UI.WindowId windowId);
-        void RemoveForVisual(global::Microsoft.UI.Composition.Visual visual);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("2F327FEB-B7E7-5E37-A0CC-37DCABE76588")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPreTranslateKeyboardSource))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -1869,19 +1836,6 @@ namespace Microsoft.UI.Input
         PointerDeviceType PointerDeviceType { get; }
         global::Windows.Foundation.Point Position { get; }
         uint TapCount { get; }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C2196F0C-60ED-5B5D-B919-AA7357E0A25C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgs))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface ITouchHitTestingEventArgs
-    {
-        ProximityEvaluation GetProximityEvaluation();
-        void SetProximityEvaluation(ProximityEvaluation proximityEvaluation);
-        ProximityEvaluation EvaluateProximityToRect(global::Windows.Foundation.Rect controlBoundingBox);
-        ProximityEvaluation EvaluateProximityToPolygon(global::Windows.Foundation.Point[] controlVertices);
-        global::Windows.Foundation.Rect BoundingBox { get; }
-        bool Handled { get; set; }
-        global::Windows.Foundation.Point Point { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("8A885D28-D2D9-5DDA-9848-CDF247771037")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IWindowRectChangedEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65542u)]
@@ -2794,25 +2748,6 @@ namespace Microsoft.UI.Input
 
         public static InputKeyboardSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island) => global::ABI.Microsoft.UI.Input.IInputKeyboardSourceStatics2Methods.GetForIsland(_objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics2, island);
 
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics3;
-        private static IObjectReference _objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics3
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics3;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics3 = ActivationFactory.Get("Microsoft.UI.Input.InputKeyboardSource", global::ABI.Microsoft.UI.Input.IInputKeyboardSourceStatics3Methods.IID);
-                }
-            }
-        }
-
-        public static InputKeyboardSource GetForWindowId(global::Microsoft.UI.WindowId windowId) => global::ABI.Microsoft.UI.Input.IInputKeyboardSourceStatics3Methods.GetForWindowId(_objRef_global__Microsoft_UI_Input_IInputKeyboardSourceStatics3, windowId);
-
         public static new InputKeyboardSource FromAbi(IntPtr thisPtr)
         {
             if (thisPtr == IntPtr.Zero) return null;
@@ -2899,13 +2834,6 @@ namespace Microsoft.UI.Input
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputLayoutPolicy>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum InputLayoutPolicy : int
-    {
-        LeftToRight = unchecked((int)0),
-        RightToLeft = unchecked((int)0x1),
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.InputLightDismissAction))]
     [global::ABI.Microsoft.UI.Input.InputLightDismissActionRcwFactory]
@@ -2942,25 +2870,6 @@ namespace Microsoft.UI.Input
         }
 
         public static InputLightDismissAction GetForWindowId(global::Microsoft.UI.WindowId windowId) => global::ABI.Microsoft.UI.Input.IInputLightDismissActionStaticsMethods.GetForWindowId(_objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics, windowId);
-
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics2;
-        private static IObjectReference _objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics2
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics2;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics2 = ActivationFactory.Get("Microsoft.UI.Input.InputLightDismissAction", global::ABI.Microsoft.UI.Input.IInputLightDismissActionStatics2Methods.IID);
-                }
-            }
-        }
-
-        public static InputLightDismissAction GetForIsland(global::Microsoft.UI.Content.ContentIsland content) => global::ABI.Microsoft.UI.Input.IInputLightDismissActionStatics2Methods.GetForIsland(_objRef_global__Microsoft_UI_Input_IInputLightDismissActionStatics2, content);
 
         public static new InputLightDismissAction FromAbi(IntPtr thisPtr)
         {
@@ -3381,14 +3290,6 @@ namespace Microsoft.UI.Input
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputPointerActivationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum InputPointerActivationBehavior : int
-    {
-        Default = unchecked((int)0),
-        Activate = unchecked((int)0x1),
-        NoActivate = unchecked((int)0x3),
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.InputPointerSource))]
     [global::ABI.Microsoft.UI.Input.InputPointerSourceRcwFactory]
@@ -3403,14 +3304,6 @@ namespace Microsoft.UI.Input
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Input_IInputPointerSource => _inner;
-        private volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputPointerSource2;
-        private IObjectReference Make___objRef_global__Microsoft_UI_Input_IInputPointerSource2()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Input_IInputPointerSource2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.IID), null);
-            return ___objRef_global__Microsoft_UI_Input_IInputPointerSource2;
-        }
-        private IObjectReference _objRef_global__Microsoft_UI_Input_IInputPointerSource2 => ___objRef_global__Microsoft_UI_Input_IInputPointerSource2 ?? Make___objRef_global__Microsoft_UI_Input_IInputPointerSource2();
-
 
 
         public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Input.InputPointerSource").AsInterface<I>();
@@ -3433,29 +3326,6 @@ namespace Microsoft.UI.Input
         }
 
         public static InputPointerSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island) => global::ABI.Microsoft.UI.Input.IInputPointerSourceStaticsMethods.GetForIsland(_objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics, island);
-
-        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2;
-        private static IObjectReference _objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2
-        {
-            get
-            { 
-                var factory = ___objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2;
-                if (factory != null && factory.IsInCurrentContext)
-                {
-                    return factory;
-                }
-                else
-                {
-                    return ___objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2 = ActivationFactory.Get("Microsoft.UI.Input.InputPointerSource", global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2Methods.IID);
-                }
-            }
-        }
-
-        public static InputPointerSource GetForVisual(global::Microsoft.UI.Composition.Visual visual) => global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2Methods.GetForVisual(_objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2, visual);
-
-        public static InputPointerSource GetForWindowId(global::Microsoft.UI.WindowId windowId) => global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2Methods.GetForWindowId(_objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2, windowId);
-
-        public static void RemoveForVisual(global::Microsoft.UI.Composition.Visual visual) => global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2Methods.RemoveForVisual(_objRef_global__Microsoft_UI_Input_IInputPointerSourceStatics2, visual);
 
         public static new InputPointerSource FromAbi(IntPtr thisPtr)
         {
@@ -3543,26 +3413,6 @@ namespace Microsoft.UI.Input
         {
             add => global::ABI.Microsoft.UI.Input.IInputPointerSourceMethods.Get_PointerWheelChanged2(_objRef_global__Microsoft_UI_Input_IInputPointerSource, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Input.IInputPointerSourceMethods.Get_PointerWheelChanged2(_objRef_global__Microsoft_UI_Input_IInputPointerSource, (IWinRTObject)this).Unsubscribe(value);
-        }
-
-        public bool TrySetDeviceKinds(InputPointerSourceDeviceKinds DeviceKinds) => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.TrySetDeviceKinds(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, DeviceKinds);
-
-        public event global::Windows.Foundation.TypedEventHandler<InputPointerSource, PointerEventArgs> DirectManipulationHitTest
-        {
-            add => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.Get_DirectManipulationHitTest2(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, (IWinRTObject)this).Subscribe(value);
-            remove => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.Get_DirectManipulationHitTest2(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, (IWinRTObject)this).Unsubscribe(value);
-        }
-
-        public event global::Windows.Foundation.TypedEventHandler<InputPointerSource, TouchHitTestingEventArgs> TouchHitTesting
-        {
-            add => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.Get_TouchHitTesting2(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, (IWinRTObject)this).Subscribe(value);
-            remove => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.Get_TouchHitTesting2(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, (IWinRTObject)this).Unsubscribe(value);
-        }
-
-        public InputPointerActivationBehavior ActivationBehavior
-        {
-            get => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.get_ActivationBehavior(_objRef_global__Microsoft_UI_Input_IInputPointerSource2);
-            set => global::ABI.Microsoft.UI.Input.IInputPointerSource2Methods.set_ActivationBehavior(_objRef_global__Microsoft_UI_Input_IInputPointerSource2, value);
         }
 
         public InputCursor Cursor
@@ -5053,24 +4903,6 @@ namespace Microsoft.UI.Input
         XButton2Pressed = unchecked((int)0x9),
         XButton2Released = unchecked((int)0xa),
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI", "struct(Microsoft.UI.Input.ProximityEvaluation;i4;struct(Windows.Foundation.Point;f4;f4))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<ProximityEvaluation, ProximityEvaluation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public struct ProximityEvaluation: IEquatable<ProximityEvaluation>
-    {
-        public int Score;
-        public global::Windows.Foundation.Point AdjustedPoint;
-
-        public ProximityEvaluation(int _Score, global::Windows.Foundation.Point _AdjustedPoint)
-        {
-            Score = _Score; AdjustedPoint = _AdjustedPoint; 
-        }
-
-        public static bool operator ==(ProximityEvaluation x, ProximityEvaluation y) => x.Score == y.Score && x.AdjustedPoint == y.AdjustedPoint;
-        public static bool operator !=(ProximityEvaluation x, ProximityEvaluation y) => !(x == y);
-        public bool Equals(ProximityEvaluation other) => this == other;
-        public override bool Equals(object obj) => obj is ProximityEvaluation that && this == that;
-        public override int GetHashCode() => Score.GetHashCode() ^ AdjustedPoint.GetHashCode();
-    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.RightTappedEventArgs))]
     [global::ABI.Microsoft.UI.Input.RightTappedEventArgsRcwFactory]
@@ -5210,99 +5042,6 @@ namespace Microsoft.UI.Input
         public global::Windows.Foundation.Point Position => global::ABI.Microsoft.UI.Input.ITappedEventArgsMethods.get_Position(_objRef_global__Microsoft_UI_Input_ITappedEventArgs);
 
         public uint TapCount => global::ABI.Microsoft.UI.Input.ITappedEventArgsMethods.get_TapCount(_objRef_global__Microsoft_UI_Input_ITappedEventArgs);
-
-        private bool IsOverridableInterface(Guid iid) => false;
-
-        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
-        {
-            ppv = IntPtr.Zero;
-            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
-            {
-                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
-            }
-
-            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
-            {
-                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
-            }
-
-            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
-        }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
-    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgs))]
-    [global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgsRcwFactory]
-    [global::WinRT.ProjectedRuntimeClass(typeof(ITouchHitTestingEventArgs))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public sealed class TouchHitTestingEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<TouchHitTestingEventArgs>
-    {
-        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
-
-        private readonly IObjectReference _inner = null;
-
-
-
-        private IObjectReference _objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs => _inner;
-
-
-        public static TouchHitTestingEventArgs FromAbi(IntPtr thisPtr)
-        {
-            if (thisPtr == IntPtr.Zero) return null;
-            return MarshalInspectable<TouchHitTestingEventArgs>.FromAbi(thisPtr);
-        }
-
-        internal TouchHitTestingEventArgs(IObjectReference objRef)
-        {
-            _inner = objRef.As(global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.IID);
-
-        }
-
-
-        public static bool operator ==(TouchHitTestingEventArgs x, TouchHitTestingEventArgs y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
-        public static bool operator !=(TouchHitTestingEventArgs x, TouchHitTestingEventArgs y) => !(x == y);
-        public bool Equals(TouchHitTestingEventArgs other) => this == other;
-        public override bool Equals(object obj) => obj is TouchHitTestingEventArgs that && this == that;
-        public override int GetHashCode() => ThisPtr.GetHashCode();
-
-
-        bool IWinRTObject.HasUnwrappableNativeObject => true;
-        IObjectReference IWinRTObject.NativeObject => _inner;
-        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
-        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
-            return _queryInterfaceCache;
-        }
-        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
-        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
-        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
-            return _additionalTypeData;
-        }
-        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
-
-        private struct InterfaceTag<I>{};
-
-
-        public ProximityEvaluation GetProximityEvaluation() => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.GetProximityEvaluation(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs);
-
-        public void SetProximityEvaluation(ProximityEvaluation proximityEvaluation) => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.SetProximityEvaluation(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs, proximityEvaluation);
-
-        public ProximityEvaluation EvaluateProximityToRect(global::Windows.Foundation.Rect controlBoundingBox) => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.EvaluateProximityToRect(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs, controlBoundingBox);
-
-        public ProximityEvaluation EvaluateProximityToPolygon(global::Windows.Foundation.Point[] controlVertices) => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.EvaluateProximityToPolygon(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs, controlVertices);
-
-        public global::Windows.Foundation.Rect BoundingBox => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.get_BoundingBox(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs);
-
-        public bool Handled
-        {
-            get => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.get_Handled(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs);
-            set => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.set_Handled(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs, value);
-        }
-
-        public global::Windows.Foundation.Point Point => global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.get_Point(_objRef_global__Microsoft_UI_Input_ITouchHitTestingEventArgs);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -8204,43 +7943,6 @@ namespace ABI.Microsoft.UI.Input
     internal interface IInputKeyboardSourceStatics2 : global::Microsoft.UI.Input.IInputKeyboardSourceStatics2
     {
     }
-    internal static class IInputKeyboardSourceStatics3Methods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Input.InputKeyboardSource GetForWindowId(IObjectReference _obj, global::Microsoft.UI.WindowId windowId)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.WindowId, IntPtr*, int>**)ThisPtr)[6](ThisPtr, windowId, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.UI.Input.InputKeyboardSource.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.UI.Input.InputKeyboardSource.DisposeAbi(__retval);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC5, 0x60, 0xB9, 0x34, 0xAE, 0xA5, 0xAF, 0x52, 0x85, 0x66, 0x6D, 0x2D, 0x55, 0xFF, 0x52, 0xD1 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("34B960C5-A5AE-52AF-8566-6D2D55FF52D1")]
-    internal interface IInputKeyboardSourceStatics3 : global::Microsoft.UI.Input.IInputKeyboardSourceStatics3
-    {
-    }
     internal static class IInputLightDismissActionMethods
     {
 
@@ -8322,46 +8024,6 @@ namespace ABI.Microsoft.UI.Input
     }
     [Guid("ED9B8DEF-6496-5169-984D-D44B4E690623")]
     internal interface IInputLightDismissActionStatics : global::Microsoft.UI.Input.IInputLightDismissActionStatics
-    {
-    }
-    internal static class IInputLightDismissActionStatics2Methods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Input.InputLightDismissAction GetForIsland(IObjectReference _obj, global::Microsoft.UI.Content.ContentIsland content)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __content = default;
-            IntPtr __retval = default;
-            try
-            {
-                __content = global::ABI.Microsoft.UI.Content.ContentIsland.CreateMarshaler2(content);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__content), &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.UI.Input.InputLightDismissAction.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__content);
-                global::ABI.Microsoft.UI.Input.InputLightDismissAction.DisposeAbi(__retval);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xA8, 0xA8, 0x99, 0xC4, 0x82, 0x71, 0x79, 0x51, 0xA2, 0x8C, 0xEA, 0xB3, 0xF3, 0x69, 0xB6, 0xF9 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("C499A8A8-7182-5179-A28C-EAB3F369B6F9")]
-    internal interface IInputLightDismissActionStatics2 : global::Microsoft.UI.Input.IInputLightDismissActionStatics2
     {
     }
     internal static class IInputLightDismissEventArgsMethods
@@ -9224,105 +8886,6 @@ namespace ABI.Microsoft.UI.Input
     internal interface IInputPointerSource : global::Microsoft.UI.Input.IInputPointerSource
     {
     }
-    internal static class IInputPointerSource2Methods
-    {
-
-
-        internal static unsafe bool TrySetDeviceKinds(IObjectReference _obj, global::Microsoft.UI.Input.InputPointerSourceDeviceKinds DeviceKinds)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            byte __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.InputPointerSourceDeviceKinds, byte*, int>**)ThisPtr)[6](ThisPtr, DeviceKinds, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval != 0;
-        }
-        internal static unsafe global::Microsoft.UI.Input.InputPointerActivationBehavior get_ActivationBehavior(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.Input.InputPointerActivationBehavior __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.InputPointerActivationBehavior*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-        internal static unsafe void set_ActivationBehavior(IObjectReference _obj, global::Microsoft.UI.Input.InputPointerActivationBehavior value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.InputPointerActivationBehavior, int>**)ThisPtr)[8](ThisPtr, value));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-
-        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.PointerEventArgs>>> _DirectManipulationHitTest_;
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.PointerEventArgs>>> MakeDirectManipulationHitTestTable()
-        {
-            
-            global::System.Threading.Interlocked.CompareExchange(ref _DirectManipulationHitTest_, new(), null);
-            return _DirectManipulationHitTest_;
-        }
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.PointerEventArgs>>> _DirectManipulationHitTest => _DirectManipulationHitTest_ ?? MakeDirectManipulationHitTestTable();
-
-
-
-        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.PointerEventArgs>> Get_DirectManipulationHitTest2(IObjectReference _obj, object _thisObj)
-        {
-            return _DirectManipulationHitTest.GetValue(_thisObj, (key) =>
-            {
-
-                var ThisPtr = _obj.ThisPtr;
-
-                return 
-                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPointerSource__global__Microsoft_UI_Input_PointerEventArgs_(_obj,
-                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[9],
-                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[10],
-                0);
-            });
-        }
-
-        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>>> _TouchHitTesting_;
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>>> MakeTouchHitTestingTable()
-        {
-            
-            global::System.Threading.Interlocked.CompareExchange(ref _TouchHitTesting_, new(), null);
-            return _TouchHitTesting_;
-        }
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>>> _TouchHitTesting => _TouchHitTesting_ ?? MakeTouchHitTestingTable();
-
-
-
-        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPointerSource, global::Microsoft.UI.Input.TouchHitTestingEventArgs>> Get_TouchHitTesting2(IObjectReference _obj, object _thisObj)
-        {
-            return _TouchHitTesting.GetValue(_thisObj, (key) =>
-            {
-
-                var ThisPtr = _obj.ThisPtr;
-
-                return 
-                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPointerSource__global__Microsoft_UI_Input_TouchHitTestingEventArgs_(_obj,
-                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[11],
-                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[12],
-                1);
-            });
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x6E, 0x7E, 0x75, 0x58, 0x80, 0xDA, 0xD2, 0x5A, 0xA0, 0x88, 0xB9, 0xE, 0x8E, 0x40, 0x73, 0x79 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("58757E6E-DA80-5AD2-A088-B90E8E407379")]
-    internal interface IInputPointerSource2 : global::Microsoft.UI.Input.IInputPointerSource2
-    {
-    }
     internal static class IInputPointerSourceStaticsMethods
     {
 
@@ -9361,80 +8924,6 @@ namespace ABI.Microsoft.UI.Input
     }
     [Guid("E8A19FD1-A914-533F-9B0F-6BF0065E6781")]
     internal interface IInputPointerSourceStatics : global::Microsoft.UI.Input.IInputPointerSourceStatics
-    {
-    }
-    internal static class IInputPointerSourceStatics2Methods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Input.InputPointerSource GetForVisual(IObjectReference _obj, global::Microsoft.UI.Composition.Visual visual)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __visual = default;
-            IntPtr __retval = default;
-            try
-            {
-                __visual = global::ABI.Microsoft.UI.Composition.Visual.CreateMarshaler2(visual);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__visual), &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.UI.Input.InputPointerSource.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__visual);
-                global::ABI.Microsoft.UI.Input.InputPointerSource.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe global::Microsoft.UI.Input.InputPointerSource GetForWindowId(IObjectReference _obj, global::Microsoft.UI.WindowId windowId)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.WindowId, IntPtr*, int>**)ThisPtr)[7](ThisPtr, windowId, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return global::ABI.Microsoft.UI.Input.InputPointerSource.FromAbi(__retval);
-            }
-            finally
-            {
-                global::ABI.Microsoft.UI.Input.InputPointerSource.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe void RemoveForVisual(IObjectReference _obj, global::Microsoft.UI.Composition.Visual visual)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __visual = default;
-            try
-            {
-                __visual = global::ABI.Microsoft.UI.Composition.Visual.CreateMarshaler2(visual);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__visual)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__visual);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x4A, 0x7B, 0xB3, 0x76, 0x2, 0xDE, 0x1A, 0x53, 0xA9, 0xD2, 0x18, 0x51, 0x86, 0x15, 0x9D, 0x31 };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("76B37B4A-DE02-531A-A9D2-185186159D31")]
-    internal interface IInputPointerSourceStatics2 : global::Microsoft.UI.Input.IInputPointerSourceStatics2
     {
     }
     internal static class IInputPreTranslateKeyboardSourceMethods
@@ -10934,113 +10423,6 @@ namespace ABI.Microsoft.UI.Input
     internal interface ITappedEventArgs : global::Microsoft.UI.Input.ITappedEventArgs
     {
     }
-    internal static class ITouchHitTestingEventArgsMethods
-    {
-
-
-        internal static unsafe global::Microsoft.UI.Input.ProximityEvaluation GetProximityEvaluation(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.Input.ProximityEvaluation __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.ProximityEvaluation*, int>**)ThisPtr)[10](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe void SetProximityEvaluation(IObjectReference _obj, global::Microsoft.UI.Input.ProximityEvaluation proximityEvaluation)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.ProximityEvaluation, int>**)ThisPtr)[11](ThisPtr, proximityEvaluation));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-        internal static unsafe global::Microsoft.UI.Input.ProximityEvaluation EvaluateProximityToRect(IObjectReference _obj, global::Windows.Foundation.Rect controlBoundingBox)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.UI.Input.ProximityEvaluation __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Foundation.Rect, global::Microsoft.UI.Input.ProximityEvaluation*, int>**)ThisPtr)[12](ThisPtr, controlBoundingBox, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe global::Microsoft.UI.Input.ProximityEvaluation EvaluateProximityToPolygon(IObjectReference _obj, global::Windows.Foundation.Point[] controlVertices)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalBlittable<global::Windows.Foundation.Point>.MarshalerArray __controlVertices = default;
-            int __controlVertices_length = default;
-            IntPtr __controlVertices_data = default;
-            global::Microsoft.UI.Input.ProximityEvaluation __retval = default;
-            try
-            {
-                __controlVertices = MarshalBlittable<global::Windows.Foundation.Point>.CreateMarshalerArray(controlVertices);
-                (__controlVertices_length, __controlVertices_data) = MarshalBlittable<global::Windows.Foundation.Point>.GetAbiArray(__controlVertices);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, global::Microsoft.UI.Input.ProximityEvaluation*, int>**)ThisPtr)[13](ThisPtr, __controlVertices_length, __controlVertices_data, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return __retval;
-            }
-            finally
-            {
-                MarshalBlittable<global::Windows.Foundation.Point>.DisposeMarshalerArray(__controlVertices);
-            }
-        }
-        internal static unsafe global::Windows.Foundation.Rect get_BoundingBox(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Windows.Foundation.Rect __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Foundation.Rect*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe bool get_Handled(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            byte __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval != 0;
-        }
-        internal static unsafe void set_Handled(IObjectReference _obj, bool value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[8](ThisPtr, (byte)(value ? 1 : 0)));
-            global::System.GC.KeepAlive(_obj);
-        }
-
-        internal static unsafe global::Windows.Foundation.Point get_Point(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Windows.Foundation.Point __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Foundation.Point*, int>**)ThisPtr)[9](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC, 0x6F, 0x19, 0xC2, 0xED, 0x60, 0x5D, 0x5B, 0xB9, 0x19, 0xAA, 0x73, 0x57, 0xE0, 0xA2, 0x5C };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("C2196F0C-60ED-5B5D-B919-AA7357E0A25C")]
-    internal interface ITouchHitTestingEventArgs : global::Microsoft.UI.Input.ITouchHitTestingEventArgs
-    {
-    }
     internal static class IWindowRectChangedEventArgsMethods
     {
 
@@ -12046,31 +11428,6 @@ namespace ABI.Microsoft.UI.Input
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Input.TappedEventArgs(inspectable.ObjRef);
-    }
-    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-    public struct TouchHitTestingEventArgs
-    {
-
-        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Input.TouchHitTestingEventArgs obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.IID);
-        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Input.TouchHitTestingEventArgs obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgsMethods.IID);
-        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
-        public static global::Microsoft.UI.Input.TouchHitTestingEventArgs FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Input.TouchHitTestingEventArgs.FromAbi(thisPtr);
-        public static IntPtr FromManaged(global::Microsoft.UI.Input.TouchHitTestingEventArgs obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
-        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Input.TouchHitTestingEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
-        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.GetAbiArray(box);
-        public static unsafe global::Microsoft.UI.Input.TouchHitTestingEventArgs[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.FromAbiArray(box, FromAbi);
-        public static void CopyAbiArray(global::Microsoft.UI.Input.TouchHitTestingEventArgs[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.CopyAbiArray(array, box, FromAbi);
-        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Input.TouchHitTestingEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.FromManagedArray(array, (o) => FromManaged(o));
-        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
-        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.TouchHitTestingEventArgs>.DisposeMarshalerArray(array);
-        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
-        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
-    }
-    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-    internal sealed class TouchHitTestingEventArgsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
-    {
-        public override object CreateInstance(global::WinRT.IInspectable inspectable)
-            => new global::Microsoft.UI.Input.TouchHitTestingEventArgs(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct WindowRectChangedEventArgs

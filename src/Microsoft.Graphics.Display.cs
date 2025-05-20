@@ -150,14 +150,6 @@ namespace Microsoft.Graphics.Display
 
 
         private IObjectReference _objRef_global__Microsoft_Graphics_Display_IDisplayInformation => _inner;
-        private volatile IObjectReference ___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2;
-        private IObjectReference Make___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.IID), null);
-            return ___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2;
-        }
-        private IObjectReference _objRef_global__Microsoft_Graphics_Display_IDisplayInformation2 => ___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2 ?? Make___objRef_global__Microsoft_Graphics_Display_IDisplayInformation2();
-
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -261,29 +253,11 @@ namespace Microsoft.Graphics.Display
             remove => global::ABI.Microsoft.Graphics.Display.IDisplayInformationMethods.Get_IsStereoEnabledChanged2(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation, (IWinRTObject)this).Unsubscribe(value);
         }
 
-        public event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> DpiChanged
-        {
-            add => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.Get_DpiChanged2(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2, (IWinRTObject)this).Subscribe(value);
-            remove => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.Get_DpiChanged2(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2, (IWinRTObject)this).Unsubscribe(value);
-        }
-
-        public event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> OrientationChanged
-        {
-            add => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.Get_OrientationChanged2(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2, (IWinRTObject)this).Subscribe(value);
-            remove => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.Get_OrientationChanged2(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2, (IWinRTObject)this).Unsubscribe(value);
-        }
-
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
-
-        public DisplayOrientation AngularOffsetFromNativeOrientation => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.get_AngularOffsetFromNativeOrientation(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2);
 
         public global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue => global::ABI.Microsoft.Graphics.Display.IDisplayInformationMethods.get_DispatcherQueue(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation);
 
         public bool IsStereoEnabled => global::ABI.Microsoft.Graphics.Display.IDisplayInformationMethods.get_IsStereoEnabled(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation);
-
-        public global::System.Nullable<global::Windows.Foundation.Point> RawDpi => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.get_RawDpi(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2);
-
-        public double RawPixelsPerViewPixel => global::ABI.Microsoft.Graphics.Display.IDisplayInformation2Methods.get_RawPixelsPerViewPixel(_objRef_global__Microsoft_Graphics_Display_IDisplayInformation2);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -302,15 +276,6 @@ namespace Microsoft.Graphics.Display
 
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<DisplayOrientation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    public enum DisplayOrientation : int
-    {
-        RotateNone = unchecked((int)0),
-        Rotate90Degrees = unchecked((int)0x5a),
-        Rotate180Degrees = unchecked((int)0xb4),
-        Rotate270Degrees = unchecked((int)0x10e),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][Guid("B44F0F47-7065-5175-BA3E-714489C85A3E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Display.IDisplayAdvancedColorInfo))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65538u)]
@@ -341,17 +306,6 @@ namespace Microsoft.Graphics.Display
         event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> ColorProfileChanged;
         event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> Destroyed;
         event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> IsStereoEnabledChanged;
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][Guid("5586D03C-B4B6-594E-96AD-8372700B08DD")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Display.IDisplayInformation2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
-    [global::Windows.Foundation.Metadata.Experimental]
-    internal interface IDisplayInformation2
-    {
-        DisplayOrientation AngularOffsetFromNativeOrientation { get; }
-        global::System.Nullable<global::Windows.Foundation.Point> RawDpi { get; }
-        double RawPixelsPerViewPixel { get; }
-        event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> DpiChanged;
-        event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> OrientationChanged;
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][Guid("2DE85048-37FA-56C0-AC30-47E2044D7EA8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Display.IDisplayInformationStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65538u)]
@@ -746,115 +700,6 @@ namespace ABI.Microsoft.Graphics.Display
     }
     [Guid("F0D58D4F-84CE-5B27-B222-4F8F7DC0AAEB")]
     internal interface IDisplayInformation : global::Microsoft.Graphics.Display.IDisplayInformation
-    {
-    }
-    internal static class IDisplayInformation2Methods
-    {
-
-        internal static unsafe global::Microsoft.Graphics.Display.DisplayOrientation get_AngularOffsetFromNativeOrientation(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            global::Microsoft.Graphics.Display.DisplayOrientation __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Graphics.Display.DisplayOrientation*, int>**)ThisPtr)[10](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-        internal static unsafe global::System.Nullable<global::Windows.Foundation.Point> get_RawDpi(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalInterface<global::System.Nullable<global::Windows.Foundation.Point>>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::System.Nullable<global::Windows.Foundation.Point>>.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe double get_RawPixelsPerViewPixel(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            double __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, double*, int>**)ThisPtr)[7](ThisPtr, &__retval));
-            global::System.GC.KeepAlive(_obj);
-            return __retval;
-        }
-
-
-        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> _DpiChanged_;
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> MakeDpiChangedTable()
-        {
-            
-            global::System.Threading.Interlocked.CompareExchange(ref _DpiChanged_, new(), null);
-            return _DpiChanged_;
-        }
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> _DpiChanged => _DpiChanged_ ?? MakeDpiChangedTable();
-
-
-
-        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>> Get_DpiChanged2(IObjectReference _obj, object _thisObj)
-        {
-            return _DpiChanged.GetValue(_thisObj, (key) =>
-            {
-
-                var ThisPtr = _obj.ThisPtr;
-
-                return 
-                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Graphics_Display_DisplayInformation__object_(_obj,
-                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
-                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
-                0);
-            });
-        }
-
-        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> _OrientationChanged_;
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> MakeOrientationChangedTable()
-        {
-            
-            global::System.Threading.Interlocked.CompareExchange(ref _OrientationChanged_, new(), null);
-            return _OrientationChanged_;
-        }
-        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>>> _OrientationChanged => _OrientationChanged_ ?? MakeOrientationChangedTable();
-
-
-
-        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Graphics.Display.DisplayInformation, object>> Get_OrientationChanged2(IObjectReference _obj, object _thisObj)
-        {
-            return _OrientationChanged.GetValue(_thisObj, (key) =>
-            {
-
-                var ThisPtr = _obj.ThisPtr;
-
-                return 
-                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Graphics_Display_DisplayInformation__object_(_obj,
-                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[11],
-                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[12],
-                1);
-            });
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x3C, 0xD0, 0x86, 0x55, 0xB6, 0xB4, 0x4E, 0x59, 0x96, 0xAD, 0x83, 0x72, 0x70, 0xB, 0x8, 0xDD };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-    }
-    [Guid("5586D03C-B4B6-594E-96AD-8372700B08DD")]
-    internal interface IDisplayInformation2 : global::Microsoft.Graphics.Display.IDisplayInformation2
     {
     }
     internal static class IDisplayInformationStaticsMethods
