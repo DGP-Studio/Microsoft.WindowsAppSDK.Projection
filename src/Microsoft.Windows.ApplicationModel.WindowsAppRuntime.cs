@@ -452,6 +452,9 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
         ActivateDirectManipulationManager_CheckCanInit = unchecked((int)0x365b491),
         DwmCoreI_OptimizeFirstFrameLatency = unchecked((int)0x36b04fe),
         InputStateManager_PenInputCrashX86 = unchecked((int)0x365ce79),
+        ApplicationDataProvider_ReentrancyProtection = unchecked((int)0x3703fdc),
+        InputPointerSource_FlushReentrancyCrash = unchecked((int)0x3708441),
+        WindowChrome_SetTitleBarCrash = unchecked((int)0x3705519),
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum RuntimeCompatibilityContract
