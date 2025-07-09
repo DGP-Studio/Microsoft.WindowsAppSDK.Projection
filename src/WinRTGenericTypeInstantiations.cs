@@ -16065,6 +16065,62 @@ namespace WinRT.GenericTypeInstantiations
         }
     }
 
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputPopupController__Microsoft_UI_Input_InputLightDismissEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Input.InputPopupController sender, global::Microsoft.UI.Input.InputLightDismissEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Input.InputPopupController.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Input.InputLightDismissEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPopupController, IntPtr, global::Microsoft.UI.Input.InputLightDismissEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Input.InputPopupController.FromAbi(sender), global::ABI.Microsoft.UI.Input.InputLightDismissEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPopupController, IntPtr, global::Microsoft.UI.Input.InputLightDismissEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Input.InputPopupController, IntPtr, global::Microsoft.UI.Input.InputLightDismissEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
     internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_MediaTransportControls__Microsoft_UI_Xaml_Media_MediaTransportControlsThumbnailRequestedEventArgs
     {
         private static bool Initialized { get; } = Init();
@@ -32697,6 +32753,62 @@ namespace WinRT.GenericTypeInstantiations
         {
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.NavigationView, IntPtr, global::Microsoft.UI.Xaml.Controls.NavigationViewItemExpandingEventArgs, IntPtr>.InitRcwHelper(&Invoke);
             global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.NavigationView, IntPtr, global::Microsoft.UI.Xaml.Controls.NavigationViewItemExpandingEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
+
+            return true;
+        }
+    }
+
+    internal static class Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_InfoBar__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs
+    {
+        private static bool Initialized { get; } = Init();
+
+        public static bool EnsureInitialized() => Initialized;
+
+
+        private static unsafe void Invoke(IObjectReference _obj, global::Microsoft.UI.Xaml.Controls.InfoBar sender, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs args)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __sender = default;
+            ObjectReferenceValue __args = default;
+            try
+            {
+                __sender = global::ABI.Microsoft.UI.Xaml.Controls.InfoBar.CreateMarshaler2(sender);
+                __args = global::ABI.Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs.CreateMarshaler2(args);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[3](ThisPtr, MarshalInspectable<object>.GetAbi(__sender), MarshalInspectable<object>.GetAbi(__args)));
+                global::System.GC.KeepAlive(_obj);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__sender);
+                MarshalInspectable<object>.DisposeMarshaler(__args);
+            }
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_Invoke(IntPtr thisPtr, IntPtr sender, IntPtr args)
+        {
+
+
+
+            try
+            {
+                global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.InfoBar, IntPtr, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs, IntPtr>.Abi_Invoke(thisPtr, global::ABI.Microsoft.UI.Xaml.Controls.InfoBar.FromAbi(sender), global::ABI.Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs.FromAbi(args));
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+
+        private unsafe static bool Init()
+        {
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.InfoBar, IntPtr, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs, IntPtr>.InitRcwHelper(&Invoke);
+            global::ABI.Windows.Foundation.TypedEventHandlerMethods<global::Microsoft.UI.Xaml.Controls.InfoBar, IntPtr, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs, IntPtr>.InitCcw(&Do_Abi_Invoke);
 
             return true;
         }

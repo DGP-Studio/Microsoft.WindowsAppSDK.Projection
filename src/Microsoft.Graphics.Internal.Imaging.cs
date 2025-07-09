@@ -710,8 +710,8 @@ namespace Microsoft.Graphics.Internal.Imaging
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.Internal.Imaging")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession))]
     [global::ABI.Microsoft.Graphics.Internal.Imaging.ImageSegmenterSessionRcwFactory]
-    [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3))]
-    public sealed class ImageSegmenterSession : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3, global::System.IDisposable, global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession, global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2, global::Microsoft.Windows.PrivateCommon.IAnchorInstance, global::Microsoft.Windows.PrivateCommon.IGetSessionHostProcessId, global::Microsoft.Windows.PrivateCommon.IModelManager3, global::Microsoft.Windows.PrivateCommon.IModelManager, global::Microsoft.Windows.PrivateCommon.IModelManager2, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ImageSegmenterSession>
+    [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession))]
+    public sealed class ImageSegmenterSession : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession, global::System.IDisposable, global::Microsoft.Windows.PrivateCommon.IAnchorInstance, global::Microsoft.Windows.PrivateCommon.IGetSessionHostProcessId, global::Microsoft.Windows.PrivateCommon.IModelManager3, global::Microsoft.Windows.PrivateCommon.IModelManager, global::Microsoft.Windows.PrivateCommon.IModelManager2, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ImageSegmenterSession>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
 
@@ -719,7 +719,7 @@ namespace Microsoft.Graphics.Internal.Imaging
 
 
 
-        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession3 => _inner;
+        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession => _inner;
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -727,22 +727,6 @@ namespace Microsoft.Graphics.Internal.Imaging
             return ___objRef_global__System_IDisposable;
         }
         private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
-
-        private volatile IObjectReference ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession;
-        private IObjectReference Make___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.IID), null);
-            return ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession;
-        }
-        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession => ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession ?? Make___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession();
-
-        private volatile IObjectReference ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2;
-        private IObjectReference Make___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2()
-        {
-            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2Methods.IID), null);
-            return ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2;
-        }
-        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2 => ___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2 ?? Make___objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2();
 
         private volatile IObjectReference ___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance;
         private IObjectReference Make___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance()
@@ -805,7 +789,7 @@ namespace Microsoft.Graphics.Internal.Imaging
 
         public ImageSegmenterSession() 
         {
-            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Graphics_Internal_Imaging_ImageSegmenterSession, global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3Methods.IID);
+            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Graphics_Internal_Imaging_ImageSegmenterSession, global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.IID);
             ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
             ComWrappersHelper.Init(_inner, false);
 
@@ -819,7 +803,7 @@ namespace Microsoft.Graphics.Internal.Imaging
 
         internal ImageSegmenterSession(IObjectReference objRef)
         {
-            _inner = objRef.As(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3Methods.IID);
+            _inner = objRef.As(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.IID);
 
         }
 
@@ -851,13 +835,9 @@ namespace Microsoft.Graphics.Internal.Imaging
         private struct InterfaceTag<I>{};
 
 
-        public void RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, uint priority, uint frequency) => global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3Methods.RemoveBackground(_objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession3, inputImageBufferResource, outputImageBufferResource, priority, frequency);
+        public void RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource) => global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.RemoveBackground(_objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession, inputImageBufferResource, outputImageBufferResource);
 
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
-
-        public global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData) => global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.RemoveBackgroundAsync(_objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession, inputView, inputViewData, outputView, outputViewData);
-
-        public global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency) => global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2Methods.RemoveBackgroundAsync(_objRef_global__Microsoft_Graphics_ImagingInternal_IImageSegmenterSession2, inputView, inputViewData, outputView, outputViewData, priority, frequency);
 
         public void AnchorInstance(object instance) => global::ABI.Microsoft.Windows.PrivateCommon.IAnchorInstanceMethods.AnchorInstance(_objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance, instance);
 
@@ -1374,8 +1354,8 @@ namespace ABI.Microsoft.Graphics.Internal.Imaging
     public struct ImageSegmenterSession
     {
 
-        public static IObjectReference CreateMarshaler(global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession obj) => obj is null ? null : MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3>.CreateMarshaler(obj);
-        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession obj) => MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3>.CreateMarshaler2(obj, global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3Methods.IID);
+        public static IObjectReference CreateMarshaler(global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession obj) => obj is null ? null : MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession>.CreateMarshaler(obj);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession obj) => MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession>.CreateMarshaler2(obj, global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.IID);
         public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
         public static global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession FromAbi(IntPtr thisPtr) => global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession.FromAbi(thisPtr);
         public static IntPtr FromManaged(global::Microsoft.Graphics.Internal.Imaging.ImageSegmenterSession obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();

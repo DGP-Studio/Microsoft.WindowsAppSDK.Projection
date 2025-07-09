@@ -80,7 +80,6 @@ namespace Microsoft.Windows.AI.Imaging
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")][Guid("CFA20FAF-5AE1-5B8C-B0D8-E7C64DB59D26")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemover))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IImageObjectRemover
     {
         global::Windows.Graphics.Imaging.SoftwareBitmap RemoveFromSoftwareBitmap(global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap, global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmapMask);
@@ -88,7 +87,6 @@ namespace Microsoft.Windows.AI.Imaging
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")][Guid("CBCBD7E1-5B81-503F-8FCB-66AE1D6E5B9C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IImageObjectRemoverStatics
     {
         global::Microsoft.Windows.AI.AIFeatureReadyState GetReadyState();
@@ -630,7 +628,6 @@ namespace Microsoft.Windows.AI.Imaging
     [global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectRemoverRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IImageObjectRemover))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public sealed class ImageObjectRemover : global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ImageObjectRemover>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -740,7 +737,6 @@ namespace Microsoft.Windows.AI.Imaging
         }
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public enum ImageObjectRemoverContract
     {
     }

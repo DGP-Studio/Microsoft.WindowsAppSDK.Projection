@@ -18298,6 +18298,13 @@ namespace Microsoft.UI.Xaml.Controls
         event global::Windows.Foundation.TypedEventHandler<InfoBar, InfoBarClosedEventArgs> Closed;
         event global::Windows.Foundation.TypedEventHandler<InfoBar, InfoBarClosingEventArgs> Closing;
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("3B6A60CA-FDDC-5D90-82CC-0122E5AD6E10")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBar2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInfoBar2
+    {
+        event global::Windows.Foundation.TypedEventHandler<InfoBar, InfoBarOpenedEventArgs> Opened;
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("593AF0B3-BDED-53DA-8F56-80ED3C64322C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarClosedEventArgs))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 65536u)]
     internal interface IInfoBarClosedEventArgs
@@ -18326,6 +18333,18 @@ namespace Microsoft.UI.Xaml.Controls
     internal interface IInfoBarFactory
     {
         InfoBar CreateInstance(object baseInterface, out object innerInterface);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("92880A94-49D2-5659-B523-52BF4D696747")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInfoBarOpenedEventArgs
+    {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("0D376EEF-D3BD-5D8A-A502-8913358443CA")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsFactory))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInfoBarOpenedEventArgsFactory
+    {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")][Guid("5FB1E80D-EA5D-57BA-9915-B6782B982ACA")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 65536u)]
@@ -25231,6 +25250,14 @@ namespace Microsoft.UI.Xaml.Controls
         }
         private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar => ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBar2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2 => ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2 ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2();
+
 
 
         private static class _IInfoBarFactoryMethods
@@ -25385,6 +25412,12 @@ namespace Microsoft.UI.Xaml.Controls
         {
             add => global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarMethods.Get_Closing2(_objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarMethods.Get_Closing2(_objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<InfoBar, InfoBarOpenedEventArgs> Opened
+        {
+            add => global::ABI.Microsoft.UI.Xaml.Controls.IInfoBar2Methods.Get_Opened2(_objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Xaml.Controls.IInfoBar2Methods.Get_Opened2(_objRef_global__Microsoft_UI_Xaml_Controls_IInfoBar2, (IWinRTObject)this).Unsubscribe(value);
         }
 
         public global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase ActionButton
@@ -25694,6 +25727,113 @@ namespace Microsoft.UI.Xaml.Controls
         }
 
         public InfoBarCloseReason Reason => global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarClosingEventArgsMethods.get_Reason(_objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarClosingEventArgs);
+
+        protected virtual bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI.Xaml")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs))]
+    [global::ABI.Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IInfoBarOpenedEventArgs))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.UI.Xaml.XamlContract), 589824u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public class InfoBarOpenedEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<InfoBarOpenedEventArgs>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsMethods.IID), null);
+            return ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs => ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs ?? Make___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgs();
+
+
+
+        private static class _IInfoBarOpenedEventArgsFactoryMethods
+        {}
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgsFactory;
+        private static IObjectReference _objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgsFactory
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgsFactory;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Xaml_Controls_IInfoBarOpenedEventArgsFactory = ActivationFactory.Get("Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs", global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsFactoryMethods.IID);
+                }
+            }
+        }
+
+        public static InfoBarOpenedEventArgs FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<InfoBarOpenedEventArgs>.FromAbi(thisPtr);
+        }
+
+        protected internal InfoBarOpenedEventArgs(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(InfoBarOpenedEventArgs x, InfoBarOpenedEventArgs y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(InfoBarOpenedEventArgs x, InfoBarOpenedEventArgs y) => !(x == y);
+        public bool Equals(InfoBarOpenedEventArgs other) => this == other;
+        public override bool Equals(object obj) => obj is InfoBarOpenedEventArgs that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        protected InfoBarOpenedEventArgs(global::WinRT.DerivedComposed _)
+        {
+
+        }
+        bool IWinRTObject.HasUnwrappableNativeObject => this.GetType() == typeof(InfoBarOpenedEventArgs);
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
 
         protected virtual bool IsOverridableInterface(Guid iid) => false;
 
@@ -95436,6 +95576,52 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     internal interface IInfoBar : global::Microsoft.UI.Xaml.Controls.IInfoBar
     {
     }
+    internal static class IInfoBar2Methods
+    {
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>> _Opened_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>> MakeOpenedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _Opened_, new(), null);
+            return _Opened_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>> _Opened => _Opened_ ?? MakeOpenedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>> Get_Opened2(IObjectReference _obj, object _thisObj)
+        {
+            return _Opened.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_InfoBar__global__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[6],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[7],
+                0);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xCA, 0x60, 0x6A, 0x3B, 0xDC, 0xFD, 0x90, 0x5D, 0x82, 0xCC, 0x1, 0x22, 0xE5, 0xAD, 0x6E, 0x10 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("3B6A60CA-FDDC-5D90-82CC-0122E5AD6E10")]
+    internal interface IInfoBar2 : global::Microsoft.UI.Xaml.Controls.IInfoBar2
+    {
+    }
     internal static class IInfoBarClosedEventArgsMethods
     {
 
@@ -95594,6 +95780,46 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     }
     [Guid("60618A60-9BE7-5DF5-BE0D-933D34DDB44C")]
     internal interface IInfoBarFactory : global::Microsoft.UI.Xaml.Controls.IInfoBarFactory
+    {
+    }
+    internal static class IInfoBarOpenedEventArgsMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x94, 0xA, 0x88, 0x92, 0xD2, 0x49, 0x59, 0x56, 0xB5, 0x23, 0x52, 0xBF, 0x4D, 0x69, 0x67, 0x47 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("92880A94-49D2-5659-B523-52BF4D696747")]
+    internal interface IInfoBarOpenedEventArgs : global::Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgs
+    {
+    }
+    internal static class IInfoBarOpenedEventArgsFactoryMethods
+    {
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xEF, 0x6E, 0x37, 0xD, 0xBD, 0xD3, 0x8A, 0x5D, 0xA5, 0x2, 0x89, 0x13, 0x35, 0x84, 0x43, 0xCA };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("0D376EEF-D3BD-5D8A-A502-8913358443CA")]
+    internal interface IInfoBarOpenedEventArgsFactory : global::Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsFactory
     {
     }
     internal static class IInfoBarStaticsMethods
@@ -156597,6 +156823,31 @@ namespace ABI.Microsoft.UI.Xaml.Controls
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Xaml.Controls.InfoBarClosingEventArgs(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct InfoBarOpenedEventArgs
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Xaml.Controls.IInfoBarOpenedEventArgsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class InfoBarOpenedEventArgsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct InfoBarTemplateSettings

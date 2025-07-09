@@ -1827,8 +1827,6 @@ namespace Microsoft.UI.Content
             remove => global::ABI.Microsoft.UI.Content.IContentSiteMethods.Get_RequestedStateChanged2(_objRef_global__Microsoft_UI_Content_IContentSite, (IWinRTObject)this).Unsubscribe(value);
         }
 
-        public void SetContentNodeParent(IContentNodeOwner value) => global::ABI.Microsoft.UI.Content.IContentSiteExperimentalMethods.SetContentNodeParent(_objRef_global__Microsoft_UI_Content_IContentSiteExperimental, value);
-
         public bool TryGetAutomationProvider(out object provider) => global::ABI.Microsoft.UI.Content.IContentSiteExperimentalMethods.TryGetAutomationProvider(_objRef_global__Microsoft_UI_Content_IContentSiteExperimental, out provider);
 
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
@@ -3092,6 +3090,14 @@ namespace Microsoft.UI.Content
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2 => ___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2 ?? Make___objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2();
+
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -3249,6 +3255,18 @@ namespace Microsoft.UI.Content
         {
             add => global::ABI.Microsoft.UI.Content.IContentSiteAutomationMethods.Get_PreviousSiblingAutomationProviderRequested2(_objRef_global__Microsoft_UI_Content_IContentSiteAutomation, (IWinRTObject)this).Subscribe(value);
             remove => global::ABI.Microsoft.UI.Content.IContentSiteAutomationMethods.Get_PreviousSiblingAutomationProviderRequested2(_objRef_global__Microsoft_UI_Content_IContentSiteAutomation, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public PopupAnchoringOptions AnchoringBehavior
+        {
+            get => global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2Methods.get_AnchoringBehavior(_objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2);
+            set => global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2Methods.set_AnchoringBehavior(_objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2, value);
+        }
+
+        public ContentCoordinateRoundingMode AnchoringPixelAlignment
+        {
+            get => global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2Methods.get_AnchoringPixelAlignment(_objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2);
+            set => global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2Methods.set_AnchoringPixelAlignment(_objRef_global__Microsoft_UI_Content_IDesktopPopupSiteBridge2, value);
         }
 
         public ContentAutomationOptions AutomationOption
@@ -4056,12 +4074,11 @@ namespace Microsoft.UI.Content
     internal interface IContentSiteEnvironmentViewFactory
     {
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("D454E98A-D4F1-5436-A0F0-5FB6C2848FAE")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteExperimental))]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("BA0DA06B-C976-549C-852B-9657FC2C03F9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteExperimental))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IContentSiteExperimental
     {
-        void SetContentNodeParent(IContentNodeOwner value);
         bool TryGetAutomationProvider(out object provider);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("72FB98D5-B28A-57F1-91FA-24C014A342C1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IContentSiteFactory))]
@@ -4193,6 +4210,14 @@ namespace Microsoft.UI.Content
         ContentSiteView SiteView { get; }
         global::Microsoft.UI.WindowId WindowId { get; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("F256EFB0-EF4C-56B8-AE5D-DF7FB2C4B78E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridge2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IDesktopPopupSiteBridge2
+    {
+        PopupAnchoringOptions AnchoringBehavior { get; set; }
+        ContentCoordinateRoundingMode AnchoringPixelAlignment { get; set; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("4EA2B77B-3177-5E5B-8D0D-A76E15C6D080")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.IDesktopPopupSiteBridgeStatics))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
     internal interface IDesktopPopupSiteBridgeStatics
@@ -4288,6 +4313,14 @@ namespace Microsoft.UI.Content
     internal interface ISystemVisualSiteBridgeStatics
     {
         SystemVisualSiteBridge Create(global::Microsoft.UI.Dispatching.DispatcherQueue queue, global::Windows.UI.Composition.ContainerVisual hostVisual, global::Microsoft.UI.WindowId parentForInputWindowId);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PopupAnchoringOptions>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum PopupAnchoringOptions : int
+    {
+        None = unchecked((int)0),
+        TopLevelWindow = unchecked((int)0x1),
+        ParentIsland = unchecked((int)0x2),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Content.PopupWindowSiteBridge))]
@@ -9465,23 +9498,6 @@ namespace ABI.Microsoft.UI.Content
     {
 
 
-        internal static unsafe void SetContentNodeParent(IObjectReference _obj, global::Microsoft.UI.Content.IContentNodeOwner value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __value = default;
-            try
-            {
-                __value = MarshalInterface<global::Microsoft.UI.Content.IContentNodeOwner>.CreateMarshaler2(value, global::ABI.Microsoft.UI.Content.IContentNodeOwnerMethods.IID);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
-            }
-        }
-
         internal static unsafe bool TryGetAutomationProvider(IObjectReference _obj, out object provider)
         {
             var ThisPtr = _obj.ThisPtr;
@@ -9490,7 +9506,7 @@ namespace ABI.Microsoft.UI.Content
             byte __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, byte*, int>**)ThisPtr)[7](ThisPtr, &__provider, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, byte*, int>**)ThisPtr)[6](ThisPtr, &__provider, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 provider = MarshalInspectable<object>.FromAbi(__provider);
                 return __retval != 0;
@@ -9507,13 +9523,13 @@ namespace ABI.Microsoft.UI.Content
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x8A, 0xE9, 0x54, 0xD4, 0xF1, 0xD4, 0x36, 0x54, 0xA0, 0xF0, 0x5F, 0xB6, 0xC2, 0x84, 0x8F, 0xAE };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x6B, 0xA0, 0xD, 0xBA, 0x76, 0xC9, 0x9C, 0x54, 0x85, 0x2B, 0x96, 0x57, 0xFC, 0x2C, 0x3, 0xF9 };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("D454E98A-D4F1-5436-A0F0-5FB6C2848FAE")]
+    [Guid("BA0DA06B-C976-549C-852B-9657FC2C03F9")]
     internal interface IContentSiteExperimental : global::Microsoft.UI.Content.IContentSiteExperimental
     {
     }
@@ -10588,6 +10604,60 @@ namespace ABI.Microsoft.UI.Content
     }
     [Guid("84EAAB23-F716-5AD8-AC00-3D77C01D42CC")]
     internal interface IDesktopPopupSiteBridge : global::Microsoft.UI.Content.IDesktopPopupSiteBridge
+    {
+    }
+    internal static class IDesktopPopupSiteBridge2Methods
+    {
+
+        internal static unsafe global::Microsoft.UI.Content.PopupAnchoringOptions get_AnchoringBehavior(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.PopupAnchoringOptions __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.PopupAnchoringOptions*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_AnchoringBehavior(IObjectReference _obj, global::Microsoft.UI.Content.PopupAnchoringOptions value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.PopupAnchoringOptions, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Content.ContentCoordinateRoundingMode get_AnchoringPixelAlignment(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Content.ContentCoordinateRoundingMode __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentCoordinateRoundingMode*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_AnchoringPixelAlignment(IObjectReference _obj, global::Microsoft.UI.Content.ContentCoordinateRoundingMode value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Content.ContentCoordinateRoundingMode, int>**)ThisPtr)[9](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB0, 0xEF, 0x56, 0xF2, 0x4C, 0xEF, 0xB8, 0x56, 0xAE, 0x5D, 0xDF, 0x7F, 0xB2, 0xC4, 0xB7, 0x8E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("F256EFB0-EF4C-56B8-AE5D-DF7FB2C4B78E")]
+    internal interface IDesktopPopupSiteBridge2 : global::Microsoft.UI.Content.IDesktopPopupSiteBridge2
     {
     }
     internal static class IDesktopPopupSiteBridgeStaticsMethods

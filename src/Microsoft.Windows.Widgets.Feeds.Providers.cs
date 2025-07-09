@@ -1378,7 +1378,7 @@ namespace Microsoft.Windows.Widgets.Feeds.Providers
         void TryShowAnnouncement(string feedProviderDefinitionId, string feedDefinitionId, global::Microsoft.Windows.Widgets.Notifications.FeedAnnouncement announcement);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Widgets")][Guid("A6AF915B-0CDC-46F1-A4D6-10D8C644984A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Widgets.Feeds.Providers.IFeedManager3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 458752u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Windows.Widgets.WidgetContract), 786432u)]
     public interface IFeedManager3
     {
         void TryRemoveAnnouncementById(string feedProviderDefinitionId, string feedDefinitionId, string announcementId);

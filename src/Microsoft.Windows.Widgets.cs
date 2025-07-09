@@ -27,7 +27,7 @@ using WinRT.Interop;
 
 namespace Microsoft.Windows.Widgets
 {
-    [global::Windows.Foundation.Metadata.ContractVersion(720896u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(786432u)]
     public enum WidgetContract
     {
     }

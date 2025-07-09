@@ -1330,6 +1330,46 @@ namespace WinRT
         }
     }
 
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_InfoBar__global__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_InfoBar__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_InfoBar__global__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Xaml.Controls.InfoBar sender, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_GestureRecognizer__global__Microsoft_UI_Input_TappedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.GestureRecognizer, global::Microsoft.UI.Input.TappedEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_GestureRecognizer__Microsoft_UI_Input_TappedEventArgs.EnsureInitialized();
@@ -9125,6 +9165,46 @@ namespace WinRT
                         return ;
                     }
                     targetDelegate.Invoke(sender, e);
+                };
+            }
+        }
+    }
+
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPopupController__global__Microsoft_UI_Input_InputLightDismissEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputPopupController__Microsoft_UI_Input_InputLightDismissEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPopupController__global__Microsoft_UI_Input_InputLightDismissEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Input.InputPopupController sender, global::Microsoft.UI.Input.InputLightDismissEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
                 };
             }
         }
