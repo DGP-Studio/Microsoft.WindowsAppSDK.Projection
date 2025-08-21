@@ -204,6 +204,286 @@ namespace Microsoft.Graphics.Internal.Imaging
         }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.Internal.Imaging")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Internal.Imaging.DetectFacesResult))]
+    [global::ABI.Microsoft.Graphics.Internal.Imaging.DetectFacesResultRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult))]
+    public sealed class DetectFacesResult : global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<DetectFacesResult>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IDetectFacesResult => _inner;
+
+
+        public static DetectFacesResult FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<DetectFacesResult>.FromAbi(thisPtr);
+        }
+
+        internal DetectFacesResult(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Graphics.ImagingInternal.IDetectFacesResultMethods.IID);
+
+        }
+
+
+        public static bool operator ==(DetectFacesResult x, DetectFacesResult y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(DetectFacesResult x, DetectFacesResult y) => !(x == y);
+        public bool Equals(DetectFacesResult other) => this == other;
+        public override bool Equals(object obj) => obj is DetectFacesResult that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::Microsoft.Graphics.ImagingInternal.IDetectedFace[] Faces => global::ABI.Microsoft.Graphics.ImagingInternal.IDetectFacesResultMethods.get_Faces(_objRef_global__Microsoft_Graphics_ImagingInternal_IDetectFacesResult);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.Internal.Imaging")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Internal.Imaging.DetectedFace))]
+    [global::ABI.Microsoft.Graphics.Internal.Imaging.DetectedFaceRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IDetectedFace))]
+    public sealed class DetectedFace : global::Microsoft.Graphics.ImagingInternal.IDetectedFace, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<DetectedFace>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IDetectedFace => _inner;
+
+
+        public static DetectedFace FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<DetectedFace>.FromAbi(thisPtr);
+        }
+
+        internal DetectedFace(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Graphics.ImagingInternal.IDetectedFaceMethods.IID);
+
+        }
+
+
+        public static bool operator ==(DetectedFace x, DetectedFace y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(DetectedFace x, DetectedFace y) => !(x == y);
+        public bool Equals(DetectedFace other) => this == other;
+        public override bool Equals(object obj) => obj is DetectedFace that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::Windows.Graphics.Imaging.BitmapBounds FaceBoundingBox => global::ABI.Microsoft.Graphics.ImagingInternal.IDetectedFaceMethods.get_FaceBoundingBox(_objRef_global__Microsoft_Graphics_ImagingInternal_IDetectedFace);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.Internal.Imaging")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Internal.Imaging.FaceDetectorSession))]
+    [global::ABI.Microsoft.Graphics.Internal.Imaging.FaceDetectorSessionRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession))]
+    public sealed class FaceDetectorSession : global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession, global::System.IDisposable, global::Microsoft.Windows.PrivateCommon.IAnchorInstance, global::Microsoft.Windows.PrivateCommon.IGetSessionHostProcessId, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FaceDetectorSession>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Graphics_ImagingInternal_IFaceDetectorSession => _inner;
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.PrivateCommon.IAnchorInstanceMethods.IID), null);
+            return ___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance => ___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance ?? Make___objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.PrivateCommon.IGetSessionHostProcessIdMethods.IID), null);
+            return ___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId => ___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId ?? Make___objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId();
+
+
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Graphics_Internal_Imaging_FaceDetectorSession;
+        private static IObjectReference _objRef_global__Microsoft_Graphics_Internal_Imaging_FaceDetectorSession
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Graphics_Internal_Imaging_FaceDetectorSession;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Graphics_Internal_Imaging_FaceDetectorSession = ActivationFactory.Get("Microsoft.Graphics.Internal.Imaging.FaceDetectorSession");
+                }
+            }
+        }
+
+        public FaceDetectorSession() 
+        {
+            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Graphics_Internal_Imaging_FaceDetectorSession, global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSessionMethods.IID);
+            ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
+            ComWrappersHelper.Init(_inner, false);
+
+        }
+
+        public static FaceDetectorSession FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<FaceDetectorSession>.FromAbi(thisPtr);
+        }
+
+        internal FaceDetectorSession(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSessionMethods.IID);
+
+        }
+
+
+        public static bool operator ==(FaceDetectorSession x, FaceDetectorSession y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(FaceDetectorSession x, FaceDetectorSession y) => !(x == y);
+        public bool Equals(FaceDetectorSession other) => this == other;
+        public override bool Equals(object obj) => obj is FaceDetectorSession that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult DetectFacesInRegion(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Windows.Graphics.Imaging.BitmapBounds region) => global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSessionMethods.DetectFacesInRegion(_objRef_global__Microsoft_Graphics_ImagingInternal_IFaceDetectorSession, imageBufferResource, region);
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        public void AnchorInstance(object instance) => global::ABI.Microsoft.Windows.PrivateCommon.IAnchorInstanceMethods.AnchorInstance(_objRef_global__Microsoft_Windows_PrivateCommon_IAnchorInstance, instance);
+
+        public uint GetSessionHostProcessId() => global::ABI.Microsoft.Windows.PrivateCommon.IGetSessionHostProcessIdMethods.GetSessionHostProcessId(_objRef_global__Microsoft_Windows_PrivateCommon_IGetSessionHostProcessId);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.Internal.Imaging")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Internal.Imaging.ImageObjectExtractorSession))]
     [global::ABI.Microsoft.Graphics.Internal.Imaging.ImageObjectExtractorSessionRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(global::Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession))]
@@ -1274,6 +1554,81 @@ namespace ABI.Microsoft.Graphics.Internal.Imaging
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.Graphics.Internal.Imaging.DepthMapCreatorSession(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct DetectFacesResult
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult obj) => obj is null ? null : MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>.CreateMarshaler(obj);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult obj) => MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>.CreateMarshaler2(obj, global::ABI.Microsoft.Graphics.ImagingInternal.IDetectFacesResultMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult FromAbi(IntPtr thisPtr) => global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.MarshalerArray CreateMarshalerArray(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class DetectFacesResultRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Graphics.Internal.Imaging.DetectFacesResult(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct DetectedFace
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Graphics.Internal.Imaging.DetectedFace obj) => obj is null ? null : MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>.CreateMarshaler(obj);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Graphics.Internal.Imaging.DetectedFace obj) => MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>.CreateMarshaler2(obj, global::ABI.Microsoft.Graphics.ImagingInternal.IDetectedFaceMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Graphics.Internal.Imaging.DetectedFace FromAbi(IntPtr thisPtr) => global::Microsoft.Graphics.Internal.Imaging.DetectedFace.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Graphics.Internal.Imaging.DetectedFace obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.MarshalerArray CreateMarshalerArray(global::Microsoft.Graphics.Internal.Imaging.DetectedFace[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Graphics.Internal.Imaging.DetectedFace[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Graphics.Internal.Imaging.DetectedFace[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Graphics.Internal.Imaging.DetectedFace[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.DetectedFace>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class DetectedFaceRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Graphics.Internal.Imaging.DetectedFace(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct FaceDetectorSession
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession obj) => obj is null ? null : MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession>.CreateMarshaler(obj);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession obj) => MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession>.CreateMarshaler2(obj, global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSessionMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession FromAbi(IntPtr thisPtr) => global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.MarshalerArray CreateMarshalerArray(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession[] array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class FaceDetectorSessionRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Graphics.Internal.Imaging.FaceDetectorSession(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct ImageObjectExtractorSession

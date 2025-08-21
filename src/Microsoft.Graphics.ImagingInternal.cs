@@ -31,6 +31,10 @@ namespace Microsoft.Graphics.ImagingInternal
     public enum DepthMapSessionContract
     {
     }
+    [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
+    public enum FaceAnalysisContract
+    {
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("6CDA0FA0-12CC-5FDE-A9A6-43CEC28E9743")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(DepthMapSessionContract), 65536u)]
     public interface IDepthMapCreatorSession : global::System.IDisposable
@@ -42,6 +46,24 @@ namespace Microsoft.Graphics.ImagingInternal
     public interface IDepthMapCreatorSession2 : IDepthMapCreatorSession, global::System.IDisposable
     {
         void Create(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, uint priority, uint frequency);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("59BF0161-0327-50DA-A61D-6631471FA4AB")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IDetectFacesResult))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(FaceAnalysisContract), 65536u)]
+    public interface IDetectFacesResult
+    {
+        IDetectedFace[] Faces { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("B465AB4E-DEB5-5B04-A3B8-80F7ADDD80EE")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IDetectedFace))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(FaceAnalysisContract), 65536u)]
+    public interface IDetectedFace
+    {
+        global::Windows.Graphics.Imaging.BitmapBounds FaceBoundingBox { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("FAE93005-5159-5690-BA42-362B8006EBDF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSession))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(FaceAnalysisContract), 65536u)]
+    public interface IFaceDetectorSession : global::System.IDisposable
+    {
+        IDetectFacesResult DetectFacesInRegion(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Windows.Graphics.Imaging.BitmapBounds region);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("7476CC04-51CA-5022-8B18-E742AA511D0A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectExtractorSessionContract), 65536u)]
@@ -325,6 +347,243 @@ namespace ABI.Microsoft.Graphics.ImagingInternal
         }
 
         global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputBufferViewData) => ((global::Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession)(IWinRTObject)this).CreateAsync(inputBufferView, inputBufferViewData, outputBufferView, outputBufferViewData);
+
+        void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
+    }
+
+    public static class IDetectFacesResultMethods
+    {
+
+        public static unsafe global::Microsoft.Graphics.ImagingInternal.IDetectedFace[] get_Faces(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            int __retval_length = default;
+            IntPtr __retval_data = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval_length, &__retval_data));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>.FromAbiArray((__retval_length, __retval_data));
+            }
+            finally
+            {
+                MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>.DisposeAbiArray((__retval_length, __retval_data));
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x61, 0x1, 0xBF, 0x59, 0x27, 0x3, 0xDA, 0x50, 0xA6, 0x1D, 0x66, 0x31, 0x47, 0x1F, 0xA4, 0xAB };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IDetectFacesResult.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("59BF0161-0327-50DA-A61D-6631471FA4AB")]
+    internal unsafe interface IDetectFacesResult : global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IDetectFacesResult()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IDetectFacesResult), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, int*, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_get_Faces_0;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_Faces_0(IntPtr thisPtr, int* __valueSize, IntPtr* value)
+        {
+
+            global::Microsoft.Graphics.ImagingInternal.IDetectedFace[] __value = default;
+
+            *value = default;
+            *__valueSize = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>(thisPtr).Faces;
+                (*__valueSize, *value) = MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>.FromManagedArray(__value);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe global::Microsoft.Graphics.ImagingInternal.IDetectedFace[] global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult.Faces
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult).TypeHandle));
+                return global::ABI.Microsoft.Graphics.ImagingInternal.IDetectFacesResultMethods.get_Faces(_obj);
+            }
+        }
+    }
+
+    public static class IDetectedFaceMethods
+    {
+
+        public static unsafe global::Windows.Graphics.Imaging.BitmapBounds get_FaceBoundingBox(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Windows.Graphics.Imaging.BitmapBounds __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.Imaging.BitmapBounds*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x4E, 0xAB, 0x65, 0xB4, 0xB5, 0xDE, 0x4, 0x5B, 0xA3, 0xB8, 0x80, 0xF7, 0xAD, 0xDD, 0x80, 0xEE };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IDetectedFace.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("B465AB4E-DEB5-5B04-A3B8-80F7ADDD80EE")]
+    internal unsafe interface IDetectedFace : global::Microsoft.Graphics.ImagingInternal.IDetectedFace
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IDetectedFace()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IDetectedFace), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, global::Windows.Graphics.Imaging.BitmapBounds*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_get_FaceBoundingBox_0;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_get_FaceBoundingBox_0(IntPtr thisPtr, global::Windows.Graphics.Imaging.BitmapBounds* value)
+        {
+
+            global::Windows.Graphics.Imaging.BitmapBounds __value = default;
+
+            *value = default;
+
+            try
+            {
+                __value = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IDetectedFace>(thisPtr).FaceBoundingBox;
+                *value = __value;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe global::Windows.Graphics.Imaging.BitmapBounds global::Microsoft.Graphics.ImagingInternal.IDetectedFace.FaceBoundingBox
+        {
+            get
+            {
+                var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IDetectedFace).TypeHandle));
+                return global::ABI.Microsoft.Graphics.ImagingInternal.IDetectedFaceMethods.get_FaceBoundingBox(_obj);
+            }
+        }
+    }
+
+    public static class IFaceDetectorSessionMethods
+    {
+
+
+        public static unsafe global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult DetectFacesInRegion(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Windows.Graphics.Imaging.BitmapBounds region)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __imageBufferResource = default;
+            IntPtr __retval = default;
+            try
+            {
+                __imageBufferResource = global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.CreateMarshaler2(imageBufferResource);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Windows.Graphics.Imaging.BitmapBounds, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__imageBufferResource), region, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__imageBufferResource);
+                MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x5, 0x30, 0xE9, 0xFA, 0x59, 0x51, 0x90, 0x56, 0xBA, 0x42, 0x36, 0x2B, 0x80, 0x6, 0xEB, 0xDF };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IFaceDetectorSession.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("FAE93005-5159-5690-BA42-362B8006EBDF")]
+    internal unsafe interface IFaceDetectorSession : global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe IFaceDetectorSession()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IFaceDetectorSession), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Windows.Graphics.Imaging.BitmapBounds, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_DetectFacesInRegion_0;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_DetectFacesInRegion_0(IntPtr thisPtr, IntPtr imageBufferResource, global::Windows.Graphics.Imaging.BitmapBounds region, IntPtr* result)
+        {
+
+            global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession>(thisPtr).DetectFacesInRegion(global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.FromAbi(imageBufferResource), region);
+                *result = MarshalInterface<global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult>.FromManaged(__result);
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe global::Microsoft.Graphics.ImagingInternal.IDetectFacesResult global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession.DetectFacesInRegion(global::Microsoft.Windows.PrivateCommon.ImageBufferResource imageBufferResource, global::Windows.Graphics.Imaging.BitmapBounds region)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IFaceDetectorSession).TypeHandle));
+            return global::ABI.Microsoft.Graphics.ImagingInternal.IFaceDetectorSessionMethods.DetectFacesInRegion(_obj, imageBufferResource, region);
+        }
 
         void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
     }

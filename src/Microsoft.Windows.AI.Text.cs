@@ -32,7 +32,6 @@ namespace Microsoft.Windows.AI.Text
     [global::ABI.Microsoft.Windows.AI.Text.ConversationItemRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IConversationItem))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public sealed class ConversationItem : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ConversationItem>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -144,7 +143,6 @@ namespace Microsoft.Windows.AI.Text
     [global::ABI.Microsoft.Windows.AI.Text.ConversationSummaryOptionsRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IConversationSummaryOptions))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public sealed class ConversationSummaryOptions : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ConversationSummaryOptions>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -271,7 +269,6 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("957B0B85-4D7E-5788-BAAE-AF7CF256BB8E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.IConversationItem))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IConversationItem
     {
         string Message { get; set; }
@@ -279,7 +276,6 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("360BCE9F-FD14-5D0E-BD24-FD78ED3038E6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptions))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IConversationSummaryOptions
     {
         bool IncludeMessageCitations { get; set; }
@@ -295,7 +291,6 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("653B714E-F9B3-51CB-954F-5EA58F63AB89")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface ILanguageModel2
     {
         [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseAsync")]
@@ -333,7 +328,6 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("4DBDB154-EE3C-56F6-A40B-413E95BD5ACB")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResult))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface ILanguageModelEmbeddingVectorResult
     {
         global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> EmbeddingVectors { get; }
@@ -373,10 +367,9 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("7937D261-13CE-5B24-B17C-FE5CD0BE23B6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 262144u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface ITextRewriter2
     {
-        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone flavor);
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone tone);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("F452E60D-EF50-5BC9-B483-217D5B4E7151")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextRewriterFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
@@ -393,17 +386,21 @@ namespace Microsoft.Windows.AI.Text
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("9E20797D-1FF6-5295-8CB6-D48FB8BA483B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer2))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 131072u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface ITextSummarizer2
     {
         global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeConversationAsync(global::System.Collections.Generic.IReadOnlyList<ConversationItem> messages, ConversationSummaryOptions options);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("493D32B9-DBC9-5D4B-802F-90473850500E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer3))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 196608u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface ITextSummarizer3
     {
         bool IsPromptLargerThanContext(ConversationItem[] messages, ConversationSummaryOptions options, out ulong cutoffPosition);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("5B7A28C0-7777-52E5-9934-B95B514CF535")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 327680u)]
+    internal interface ITextSummarizer4
+    {
+        bool IsPromptLargerThanContext(string text, out ulong cutoffPosition);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("B6A75913-4A1E-59E7-856A-AE7AB2383864")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizerFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 131072u)]
@@ -438,7 +435,6 @@ namespace Microsoft.Windows.AI.Text
         string[] GetColumns();
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputKind>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public enum InputKind : int
     {
         GeneralConversation = unchecked((int)0),
@@ -682,7 +678,6 @@ namespace Microsoft.Windows.AI.Text
     [global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResultRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(ILanguageModelEmbeddingVectorResult))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public sealed class LanguageModelEmbeddingVectorResult : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<LanguageModelEmbeddingVectorResult>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -972,12 +967,11 @@ namespace Microsoft.Windows.AI.Text
         ResponseBlockedByContentModeration = unchecked((int)0x5),
         Error = unchecked((int)0x6),
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(262144u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(327680u)]
     public enum TextIntelligenceContract
     {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<TextRewriteTone>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 262144u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public enum TextRewriteTone : int
     {
         Default = unchecked((int)0),
@@ -1107,7 +1101,7 @@ namespace Microsoft.Windows.AI.Text
 
         public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text) => global::ABI.Microsoft.Windows.AI.Text.ITextRewriterMethods.RewriteAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextRewriter, text);
 
-        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone flavor) => global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2Methods.RewriteAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2, text, flavor);
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone tone) => global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2Methods.RewriteAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2, text, tone);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -1156,6 +1150,14 @@ namespace Microsoft.Windows.AI.Text
             return ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3;
         }
         private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3 => ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4 => ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4();
 
 
 
@@ -1262,6 +1264,8 @@ namespace Microsoft.Windows.AI.Text
         public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeConversationAsync(global::System.Collections.Generic.IReadOnlyList<ConversationItem> messages, ConversationSummaryOptions options) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer2Methods.SummarizeConversationAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2, messages, options);
 
         public bool IsPromptLargerThanContext(ConversationItem[] messages, ConversationSummaryOptions options, out ulong cutoffPosition) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer3Methods.IsPromptLargerThanContext(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3, messages, options, out cutoffPosition);
+
+        public bool IsPromptLargerThanContext(string text, out ulong cutoffPosition) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4Methods.IsPromptLargerThanContext(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4, text, out cutoffPosition);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -2522,7 +2526,7 @@ namespace ABI.Microsoft.Windows.AI.Text
     {
 
 
-        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> RewriteAsync(IObjectReference _obj, string text, global::Microsoft.Windows.AI.Text.TextRewriteTone flavor)
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> RewriteAsync(IObjectReference _obj, string text, global::Microsoft.Windows.AI.Text.TextRewriteTone tone)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -2532,7 +2536,7 @@ namespace ABI.Microsoft.Windows.AI.Text
                 MarshalString.Pinnable __text = new(text);
                 fixed(void* ___text = __text)
                 {
-                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.Text.TextRewriteTone, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __text), flavor, &__retval));
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.Text.TextRewriteTone, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __text), tone, &__retval));
                     global::System.GC.KeepAlive(_obj);
                     _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
                     return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
@@ -2753,6 +2757,42 @@ namespace ABI.Microsoft.Windows.AI.Text
     }
     [Guid("493D32B9-DBC9-5D4B-802F-90473850500E")]
     internal interface ITextSummarizer3 : global::Microsoft.Windows.AI.Text.ITextSummarizer3
+    {
+    }
+    internal static class ITextSummarizer4Methods
+    {
+
+
+        internal static unsafe bool IsPromptLargerThanContext(IObjectReference _obj, string text, out ulong cutoffPosition)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ulong __cutoffPosition = default;
+            byte __retval = default;
+            MarshalString.Pinnable __text = new(text);
+            fixed(void* ___text = __text)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, ulong*, byte*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __text), &__cutoffPosition, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                cutoffPosition = __cutoffPosition;
+                return __retval != 0;
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC0, 0x28, 0x7A, 0x5B, 0x77, 0x77, 0xE5, 0x52, 0x99, 0x34, 0xB9, 0x5B, 0x51, 0x4C, 0xF5, 0x35 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("5B7A28C0-7777-52E5-9934-B95B514CF535")]
+    internal interface ITextSummarizer4 : global::Microsoft.Windows.AI.Text.ITextSummarizer4
     {
     }
     internal static class ITextSummarizerFactoryMethods

@@ -31,7 +31,7 @@ namespace Microsoft.Windows.Storage.Pickers
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.FileOpenPicker))]
     [global::ABI.Microsoft.Windows.Storage.Pickers.FileOpenPickerRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IFileOpenPicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public sealed class FileOpenPicker : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FileOpenPicker>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -142,12 +142,6 @@ namespace Microsoft.Windows.Storage.Pickers
 
         public global::System.Collections.Generic.IList<string> FileTypeFilter => global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPickerMethods.get_FileTypeFilter(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileOpenPicker);
 
-        public string SettingsIdentifier
-        {
-            get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPickerMethods.get_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileOpenPicker);
-            set => global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPickerMethods.set_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileOpenPicker, value);
-        }
-
         public PickerLocationId SuggestedStartLocation
         {
             get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPickerMethods.get_SuggestedStartLocation(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileOpenPicker);
@@ -182,7 +176,7 @@ namespace Microsoft.Windows.Storage.Pickers
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.FileSavePicker))]
     [global::ABI.Microsoft.Windows.Storage.Pickers.FileSavePickerRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IFileSavePicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public sealed class FileSavePicker : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FileSavePicker>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -297,22 +291,16 @@ namespace Microsoft.Windows.Storage.Pickers
 
         public global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>> FileTypeChoices => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.get_FileTypeChoices(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker);
 
-        public string SettingsIdentifier
-        {
-            get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.get_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker);
-            set => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.set_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker, value);
-        }
-
         public string SuggestedFileName
         {
             get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.get_SuggestedFileName(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker);
             set => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.set_SuggestedFileName(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker, value);
         }
 
-        public global::Windows.Storage.StorageFile SuggestedSaveFile
+        public string SuggestedFolder
         {
-            get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.get_SuggestedSaveFile(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker);
-            set => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.set_SuggestedSaveFile(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker, value);
+            get => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.get_SuggestedFolder(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker);
+            set => global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerMethods.set_SuggestedFolder(_objRef_global__Microsoft_Windows_Storage_Pickers_IFileSavePicker, value);
         }
 
         public PickerLocationId SuggestedStartLocation
@@ -343,7 +331,7 @@ namespace Microsoft.Windows.Storage.Pickers
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.FolderPicker))]
     [global::ABI.Microsoft.Windows.Storage.Pickers.FolderPickerRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IFolderPicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public sealed class FolderPicker : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<FolderPicker>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -450,14 +438,6 @@ namespace Microsoft.Windows.Storage.Pickers
             set => global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerMethods.set_CommitButtonText(_objRef_global__Microsoft_Windows_Storage_Pickers_IFolderPicker, value);
         }
 
-        public global::System.Collections.Generic.IList<string> FileTypeFilter => global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerMethods.get_FileTypeFilter(_objRef_global__Microsoft_Windows_Storage_Pickers_IFolderPicker);
-
-        public string SettingsIdentifier
-        {
-            get => global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerMethods.get_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFolderPicker);
-            set => global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerMethods.set_SettingsIdentifier(_objRef_global__Microsoft_Windows_Storage_Pickers_IFolderPicker, value);
-        }
-
         public PickerLocationId SuggestedStartLocation
         {
             get => global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerMethods.get_SuggestedStartLocation(_objRef_global__Microsoft_Windows_Storage_Pickers_IFolderPicker);
@@ -488,68 +468,64 @@ namespace Microsoft.Windows.Storage.Pickers
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("8B16E6B5-250E-55BE-9BAE-FED3640B062E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("9D00F175-C783-51BD-8C93-FB63695D3ABC")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPicker))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFileOpenPicker
     {
         global::Windows.Foundation.IAsyncOperation<PickFileResult> PickSingleFileAsync();
         global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<PickFileResult>> PickMultipleFilesAsync();
         string CommitButtonText { get; set; }
         global::System.Collections.Generic.IList<string> FileTypeFilter { get; }
-        string SettingsIdentifier { get; set; }
         PickerLocationId SuggestedStartLocation { get; set; }
         PickerViewMode ViewMode { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("315E86D7-D7A2-5D81-B379-7AF78207B1AF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileOpenPickerFactory))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFileOpenPickerFactory
     {
         FileOpenPicker CreateInstance(global::Microsoft.UI.WindowId windowId);
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("C1E6D3D3-0880-50AE-BDCC-20B8AE6A7AF6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("79F1F4DF-741B-59B2-AA06-FE9AC817B7DD")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePicker))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFileSavePicker
     {
         global::Windows.Foundation.IAsyncOperation<PickFileResult> PickSaveFileAsync();
         string CommitButtonText { get; set; }
         string DefaultFileExtension { get; set; }
         global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>> FileTypeChoices { get; }
-        string SettingsIdentifier { get; set; }
         string SuggestedFileName { get; set; }
-        global::Windows.Storage.StorageFile SuggestedSaveFile { get; set; }
+        string SuggestedFolder { get; set; }
         PickerLocationId SuggestedStartLocation { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("2E256696-30B6-5A05-A8F5-C752DB6DD268")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFileSavePickerFactory))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFileSavePickerFactory
     {
         FileSavePicker CreateInstance(global::Microsoft.UI.WindowId windowId);
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("01C5BB98-CFB8-52F5-9994-E94EF1A734D8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPicker))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("3EF0D1CA-97C6-5873-8EA2-02C450174290")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPicker))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFolderPicker
     {
         global::Windows.Foundation.IAsyncOperation<PickFolderResult> PickSingleFolderAsync();
         string CommitButtonText { get; set; }
-        global::System.Collections.Generic.IList<string> FileTypeFilter { get; }
-        string SettingsIdentifier { get; set; }
         PickerLocationId SuggestedStartLocation { get; set; }
         PickerViewMode ViewMode { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("E1550D89-B389-5886-8395-022B1588D6A8")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IFolderPickerFactory))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IFolderPickerFactory
     {
         FolderPicker CreateInstance(global::Microsoft.UI.WindowId windowId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("E6F2E3D6-7BB0-5D81-9E7D-6FD35A1F25AB")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IPickFileResult))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IPickFileResult
     {
         string Path { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][Guid("6F7FD316-FE29-59D1-9343-C49CF5CDE680")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.IPickFolderResult))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     internal interface IPickFolderResult
     {
         string Path { get; }
@@ -558,7 +534,7 @@ namespace Microsoft.Windows.Storage.Pickers
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.PickFileResult))]
     [global::ABI.Microsoft.Windows.Storage.Pickers.PickFileResultRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IPickFileResult))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public sealed class PickFileResult : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<PickFileResult>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -634,7 +610,7 @@ namespace Microsoft.Windows.Storage.Pickers
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.Storage.Pickers.PickFolderResult))]
     [global::ABI.Microsoft.Windows.Storage.Pickers.PickFolderResultRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IPickFolderResult))]
-    [global::Windows.Foundation.Metadata.Experimental]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public sealed class PickFolderResult : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<PickFolderResult>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -706,25 +682,28 @@ namespace Microsoft.Windows.Storage.Pickers
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PickerLocationId>))][global::Windows.Foundation.Metadata.Experimental]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PickerLocationId>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public enum PickerLocationId : int
     {
         DocumentsLibrary = unchecked((int)0),
         ComputerFolder = unchecked((int)0x1),
         Desktop = unchecked((int)0x2),
         Downloads = unchecked((int)0x3),
-        HomeGroup = unchecked((int)0x4),
         MusicLibrary = unchecked((int)0x5),
         PicturesLibrary = unchecked((int)0x6),
         VideosLibrary = unchecked((int)0x7),
         Objects3D = unchecked((int)0x8),
         Unspecified = unchecked((int)0x9),
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PickerViewMode>))][global::Windows.Foundation.Metadata.Experimental]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.Storage.Pickers")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PickerViewMode>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(StoragePickersContract), 65544u)]
     public enum PickerViewMode : int
     {
         List = unchecked((int)0),
         Thumbnail = unchecked((int)0x1),
+    }
+    [global::Windows.Foundation.Metadata.ContractVersion(65544u)]
+    public enum StoragePickersContract
+    {
     }
 }
 
@@ -817,7 +796,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[15](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[13](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Storage_Pickers_PickFileResult.EnsureInitialized();
                 return MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.Storage.Pickers.PickFileResult>>.FromAbi(__retval);
@@ -835,7 +814,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[16](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[14](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_Storage_Pickers_PickFileResult_.EnsureInitialized();
                 return MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.Storage.Pickers.PickFileResult>>>.FromAbi(__retval);
@@ -852,7 +831,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalString.FromAbi(__retval);
             }
@@ -868,7 +847,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             MarshalString.Pinnable __value = new(value);
             fixed(void* ___value = __value)
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[13](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
             }
         }
@@ -880,7 +859,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[14](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVector_1_String.EnsureInitialized();
                 return MarshalInterface<global::System.Collections.Generic.IList<string>>.FromAbi(__retval);
@@ -891,40 +870,12 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             }
         }
 
-        internal static unsafe string get_SettingsIdentifier(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalString.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalString.DisposeAbi(__retval);
-            }
-        }
-        internal static unsafe void set_SettingsIdentifier(IObjectReference _obj, string value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalString.Pinnable __value = new(value);
-            fixed(void* ___value = __value)
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalString.GetAbi(ref __value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-        }
-
         internal static unsafe global::Microsoft.Windows.Storage.Pickers.PickerLocationId get_SuggestedStartLocation(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
             global::Microsoft.Windows.Storage.Pickers.PickerLocationId __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[8](ThisPtr, &__retval));
             global::System.GC.KeepAlive(_obj);
             return __retval;
         }
@@ -932,7 +883,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
         {
             var ThisPtr = _obj.ThisPtr;
 
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[11](ThisPtr, value));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[9](ThisPtr, value));
             global::System.GC.KeepAlive(_obj);
         }
 
@@ -960,13 +911,13 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB5, 0xE6, 0x16, 0x8B, 0xE, 0x25, 0xBE, 0x55, 0x9B, 0xAE, 0xFE, 0xD3, 0x64, 0xB, 0x6, 0x2E };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x75, 0xF1, 0x0, 0x9D, 0x83, 0xC7, 0xBD, 0x51, 0x8C, 0x93, 0xFB, 0x63, 0x69, 0x5D, 0x3A, 0xBC };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("8B16E6B5-250E-55BE-9BAE-FED3640B062E")]
+    [Guid("9D00F175-C783-51BD-8C93-FB63695D3ABC")]
     internal interface IFileOpenPicker : global::Microsoft.Windows.Storage.Pickers.IFileOpenPicker
     {
     }
@@ -1018,7 +969,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[19](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[17](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Storage_Pickers_PickFileResult.EnsureInitialized();
                 return MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.Storage.Pickers.PickFileResult>>.FromAbi(__retval);
@@ -1035,7 +986,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalString.FromAbi(__retval);
             }
@@ -1051,7 +1002,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             MarshalString.Pinnable __value = new(value);
             fixed(void* ___value = __value)
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
             }
         }
@@ -1063,7 +1014,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[13](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[11](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalString.FromAbi(__retval);
             }
@@ -1079,7 +1030,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             MarshalString.Pinnable __value = new(value);
             fixed(void* ___value = __value)
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[14](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[12](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
             }
         }
@@ -1091,7 +1042,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IMap_2_String__Windows_Foundation_Collections_IVector_1_String_.EnsureInitialized();
                 return MarshalInterface<global::System.Collections.Generic.IDictionary<string, global::System.Collections.Generic.IList<string>>>.FromAbi(__retval);
@@ -1102,34 +1053,6 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             }
         }
 
-        internal static unsafe string get_SettingsIdentifier(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalString.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalString.DisposeAbi(__retval);
-            }
-        }
-        internal static unsafe void set_SettingsIdentifier(IObjectReference _obj, string value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalString.Pinnable __value = new(value);
-            fixed(void* ___value = __value)
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalString.GetAbi(ref __value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-        }
-
         internal static unsafe string get_SuggestedFileName(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
@@ -1137,7 +1060,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[17](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[13](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalString.FromAbi(__retval);
             }
@@ -1153,12 +1076,12 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             MarshalString.Pinnable __value = new(value);
             fixed(void* ___value = __value)
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[18](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[14](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
             }
         }
 
-        internal static unsafe global::Windows.Storage.StorageFile get_SuggestedSaveFile(IObjectReference _obj)
+        internal static unsafe string get_SuggestedFolder(IObjectReference _obj)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -1167,27 +1090,22 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             {
                 global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[15](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
-                return global::ABI.Windows.Storage.StorageFile.FromAbi(__retval);
+                return MarshalString.FromAbi(__retval);
             }
             finally
             {
-                global::ABI.Windows.Storage.StorageFile.DisposeAbi(__retval);
+                MarshalString.DisposeAbi(__retval);
             }
         }
-        internal static unsafe void set_SuggestedSaveFile(IObjectReference _obj, global::Windows.Storage.StorageFile value)
+        internal static unsafe void set_SuggestedFolder(IObjectReference _obj, string value)
         {
             var ThisPtr = _obj.ThisPtr;
 
-            ObjectReferenceValue __value = default;
-            try
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
             {
-                __value = global::ABI.Windows.Storage.StorageFile.CreateMarshaler2(value);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[16](ThisPtr, MarshalInspectable<object>.GetAbi(__value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[16](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__value);
             }
         }
 
@@ -1196,7 +1114,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             var ThisPtr = _obj.ThisPtr;
 
             global::Microsoft.Windows.Storage.Pickers.PickerLocationId __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[6](ThisPtr, &__retval));
             global::System.GC.KeepAlive(_obj);
             return __retval;
         }
@@ -1204,7 +1122,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
         {
             var ThisPtr = _obj.ThisPtr;
 
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[9](ThisPtr, value));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[7](ThisPtr, value));
             global::System.GC.KeepAlive(_obj);
         }
 
@@ -1215,13 +1133,13 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xD3, 0xD3, 0xE6, 0xC1, 0x80, 0x8, 0xAE, 0x50, 0xBD, 0xCC, 0x20, 0xB8, 0xAE, 0x6A, 0x7A, 0xF6 };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xDF, 0xF4, 0xF1, 0x79, 0x1B, 0x74, 0xB2, 0x59, 0xAA, 0x6, 0xFE, 0x9A, 0xC8, 0x17, 0xB7, 0xDD };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("C1E6D3D3-0880-50AE-BDCC-20B8AE6A7AF6")]
+    [Guid("79F1F4DF-741B-59B2-AA06-FE9AC817B7DD")]
     internal interface IFileSavePicker : global::Microsoft.Windows.Storage.Pickers.IFileSavePicker
     {
     }
@@ -1273,7 +1191,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[15](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_Storage_Pickers_PickFolderResult.EnsureInitialized();
                 return MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.Storage.Pickers.PickFolderResult>>.FromAbi(__retval);
@@ -1290,7 +1208,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             IntPtr __retval = default;
             try
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, &__retval));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, &__retval));
                 global::System.GC.KeepAlive(_obj);
                 return MarshalString.FromAbi(__retval);
             }
@@ -1306,53 +1224,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             MarshalString.Pinnable __value = new(value);
             fixed(void* ___value = __value)
             {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[13](ThisPtr, MarshalString.GetAbi(ref __value)));
-                global::System.GC.KeepAlive(_obj);
-            }
-        }
-
-        internal static unsafe global::System.Collections.Generic.IList<string> get_FileTypeFilter(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[14](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVector_1_String.EnsureInitialized();
-                return MarshalInterface<global::System.Collections.Generic.IList<string>>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::System.Collections.Generic.IList<string>>.DisposeAbi(__retval);
-            }
-        }
-
-        internal static unsafe string get_SettingsIdentifier(IObjectReference _obj)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalString.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalString.DisposeAbi(__retval);
-            }
-        }
-        internal static unsafe void set_SettingsIdentifier(IObjectReference _obj, string value)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            MarshalString.Pinnable __value = new(value);
-            fixed(void* ___value = __value)
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[11](ThisPtr, MarshalString.GetAbi(ref __value)));
                 global::System.GC.KeepAlive(_obj);
             }
         }
@@ -1362,7 +1234,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             var ThisPtr = _obj.ThisPtr;
 
             global::Microsoft.Windows.Storage.Pickers.PickerLocationId __retval = default;
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId*, int>**)ThisPtr)[8](ThisPtr, &__retval));
             global::System.GC.KeepAlive(_obj);
             return __retval;
         }
@@ -1370,7 +1242,7 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
         {
             var ThisPtr = _obj.ThisPtr;
 
-            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[11](ThisPtr, value));
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.Storage.Pickers.PickerLocationId, int>**)ThisPtr)[9](ThisPtr, value));
             global::System.GC.KeepAlive(_obj);
         }
 
@@ -1398,13 +1270,13 @@ namespace ABI.Microsoft.Windows.Storage.Pickers
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x98, 0xBB, 0xC5, 0x1, 0xB8, 0xCF, 0xF5, 0x52, 0x99, 0x94, 0xE9, 0x4E, 0xF1, 0xA7, 0x34, 0xD8 };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xCA, 0xD1, 0xF0, 0x3E, 0xC6, 0x97, 0x73, 0x58, 0x8E, 0xA2, 0x2, 0xC4, 0x50, 0x17, 0x42, 0x90 };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("01C5BB98-CFB8-52F5-9994-E94EF1A734D8")]
+    [Guid("3EF0D1CA-97C6-5873-8EA2-02C450174290")]
     internal interface IFolderPicker : global::Microsoft.Windows.Storage.Pickers.IFolderPicker
     {
     }

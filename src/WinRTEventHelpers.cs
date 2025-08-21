@@ -450,46 +450,6 @@ namespace WinRT
         }
     }
 
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_SelectionModel__global__Microsoft_UI_Xaml_Controls_SelectionModelChildrenRequestedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_SelectionModel__Microsoft_UI_Xaml_Controls_SelectionModelChildrenRequestedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_SelectionModel__global__Microsoft_UI_Xaml_Controls_SelectionModelChildrenRequestedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.SelectionModel sender, global::Microsoft.UI.Xaml.Controls.SelectionModelChildrenRequestedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_LinedFlowLayout__object_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.LinedFlowLayout, object>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_LinedFlowLayout__object.EnsureInitialized();
@@ -1318,46 +1278,6 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Expander, global::Microsoft.UI.Xaml.Controls.ExpanderCollapsedEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.Expander sender, global::Microsoft.UI.Xaml.Controls.ExpanderCollapsedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_InfoBar__global__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_InfoBar__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_InfoBar__global__Microsoft_UI_Xaml_Controls_InfoBarOpenedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.InfoBar, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.InfoBar sender, global::Microsoft.UI.Xaml.Controls.InfoBarOpenedEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)
@@ -2650,46 +2570,6 @@ namespace WinRT
         }
     }
 
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TeachingTip__global__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TeachingTip__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TeachingTip__global__Microsoft_UI_Xaml_Controls_TeachingTipOpenedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TeachingTip, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.TeachingTip sender, global::Microsoft.UI.Xaml.Controls.TeachingTipOpenedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TextBox__global__Microsoft_UI_Xaml_Controls_TextBoxSelectionChangingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TextBox, global::Microsoft.UI.Xaml.Controls.TextBoxSelectionChangingEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TextBox__Microsoft_UI_Xaml_Controls_TextBoxSelectionChangingEventArgs.EnsureInitialized();
@@ -3438,46 +3318,6 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputNonClientPointerSource, global::Microsoft.UI.Input.WindowRectChangingEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Input.InputNonClientPointerSource sender, global::Microsoft.UI.Input.WindowRectChangingEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter sender, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)
@@ -5290,46 +5130,6 @@ namespace WinRT
         }
     }
 
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_PagerControl__global__Microsoft_UI_Xaml_Controls_PagerControlSelectedIndexChangedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_PagerControl__Microsoft_UI_Xaml_Controls_PagerControlSelectedIndexChangedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_PagerControl__global__Microsoft_UI_Xaml_Controls_PagerControlSelectedIndexChangedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.PagerControl, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.PagerControl sender, global::Microsoft.UI.Xaml.Controls.PagerControlSelectedIndexChangedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_TabView__object_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.TabView, object>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_TabView__object.EnsureInitialized();
@@ -6805,46 +6605,6 @@ namespace WinRT
                         return ;
                     }
                     targetDelegate.Invoke(sender, e);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_Primitives_ScrollPresenter__global__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter sender, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
                 };
             }
         }
@@ -8930,46 +8690,6 @@ namespace WinRT
         }
     }
 
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ScrollView__global__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ScrollView__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ScrollView__global__Microsoft_UI_Xaml_Controls_ScrollingScrollStartingEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.ScrollView sender, global::Microsoft.UI.Xaml.Controls.ScrollingScrollStartingEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2CompositionController__global__Microsoft_Web_WebView2_Core_CoreWebView2NonClientRegionChangedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2CompositionController, global::Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionChangedEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController__Microsoft_Web_WebView2_Core_CoreWebView2NonClientRegionChangedEventArgs.EnsureInitialized();
@@ -9278,46 +8998,6 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.XamlRoot, global::Microsoft.UI.Xaml.XamlRootChangedEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.XamlRoot sender, global::Microsoft.UI.Xaml.XamlRootChangedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ItemContainer__global__Microsoft_UI_Xaml_Controls_ItemContainerInvokedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ItemContainer__Microsoft_UI_Xaml_Controls_ItemContainerInvokedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ItemContainer__global__Microsoft_UI_Xaml_Controls_ItemContainerInvokedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ItemContainer, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.ItemContainer sender, global::Microsoft.UI.Xaml.Controls.ItemContainerInvokedEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)
@@ -10250,46 +9930,6 @@ namespace WinRT
         }
     }
 
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_SelectionModel__global__Microsoft_UI_Xaml_Controls_SelectionModelSelectionChangedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_SelectionModel__Microsoft_UI_Xaml_Controls_SelectionModelSelectionChangedEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_SelectionModel__global__Microsoft_UI_Xaml_Controls_SelectionModelSelectionChangedEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SelectionModel, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.SelectionModel sender, global::Microsoft.UI.Xaml.Controls.SelectionModelSelectionChangedEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2__global__Microsoft_Web_WebView2_Core_CoreWebView2WebResourceResponseReceivedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2, global::Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2__Microsoft_Web_WebView2_Core_CoreWebView2WebResourceResponseReceivedEventArgs.EnsureInitialized();
@@ -10678,46 +10318,6 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RichEditBox, global::Microsoft.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.RichEditBox sender, global::Microsoft.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ScrollView__global__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_ScrollView__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_ScrollView__global__Microsoft_UI_Xaml_Controls_ScrollingZoomStartingEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ScrollView, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.ScrollView sender, global::Microsoft.UI.Xaml.Controls.ScrollingZoomStartingEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)
@@ -12278,46 +11878,6 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.SplitView, object> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.SplitView sender, object args) =>
-                {
-                    var targetDelegate = TargetDelegate;
-                    if (targetDelegate is null)
-                    {
-                        return ;
-                    }
-                    targetDelegate.Invoke(sender, args);
-                };
-            }
-        }
-    }
-
-    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_RecyclingElementFactory__global__Microsoft_UI_Xaml_Controls_SelectTemplateEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs>>
-    {
-        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Xaml_Controls_RecyclingElementFactory__Microsoft_UI_Xaml_Controls_SelectTemplateEventArgs.EnsureInitialized();
-
-        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Xaml_Controls_RecyclingElementFactory__global__Microsoft_UI_Xaml_Controls_SelectTemplateEventArgs_(IObjectReference obj,
-        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
-        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
-        {
-            _ = initialized;
-        }
-
-        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs> handler) =>
-        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs>.CreateMarshaler2(handler);
-
-        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs>> CreateEventSourceState() =>
-        new EventState(ObjectReference.ThisPtr, Index);
-
-        [global::WinRT.WinRTExposedType]
-        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs>>
-        {
-            public EventState(System.IntPtr obj, int index)
-            : base(obj, index)
-            {
-            }
-
-            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs> GetEventInvoke()
-            {
-                return (global::Microsoft.UI.Xaml.Controls.RecyclingElementFactory sender, global::Microsoft.UI.Xaml.Controls.SelectTemplateEventArgs args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)

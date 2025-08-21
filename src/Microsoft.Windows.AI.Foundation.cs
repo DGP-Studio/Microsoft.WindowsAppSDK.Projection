@@ -36,7 +36,6 @@ namespace Microsoft.Windows.AI.Foundation
     [global::ABI.Microsoft.Windows.AI.Foundation.EmbeddingVectorRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IEmbeddingVector))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     public sealed class EmbeddingVector : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<EmbeddingVector>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
@@ -173,7 +172,6 @@ namespace Microsoft.Windows.AI.Foundation
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Foundation")][Guid("07BDAA90-B3D2-5701-97D1-C390EC62799C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVector))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IEmbeddingVector
     {
         void GetValues(float[] values);
@@ -182,7 +180,6 @@ namespace Microsoft.Windows.AI.Foundation
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Foundation")][Guid("16B72758-2B69-5E97-B865-6A6A71683DD0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Foundation.IEmbeddingVectorFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(AIFoundationContract), 65536u)]
-    [global::Windows.Foundation.Metadata.Experimental]
     internal interface IEmbeddingVectorFactory
     {
         EmbeddingVector CreateInstance(float[] data, Guid vectorSpaceID);
