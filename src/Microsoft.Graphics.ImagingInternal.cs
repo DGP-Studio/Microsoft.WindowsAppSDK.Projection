@@ -58,23 +58,11 @@ namespace Microsoft.Graphics.ImagingInternal
         void ScaleImage(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, int width, int height, uint priority, uint frequency);
         int MaxSupportedScaleFactor();
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("FABC102C-F65E-58EA-BC35-50E6D7323B7D")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession))]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("4A2E2F79-4439-56DC-B90D-E63793EF0ED0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageSegmenterSessionContract), 65536u)]
     public interface IImageSegmenterSession : global::System.IDisposable
     {
-        global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("E580261C-D2FE-418C-B927-A3DF8C4304DB")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageSegmenterSessionContract), 131072u)]
-    public interface IImageSegmenterSession2 : IImageSegmenterSession, global::System.IDisposable
-    {
-        global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency);
-    }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("148E3F36-251E-5655-A4F7-04D29181D8F4")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageSegmenterSessionContract), 196608u)]
-    public interface IImageSegmenterSession3 : IImageSegmenterSession2, IImageSegmenterSession, global::System.IDisposable
-    {
-        void RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, uint priority, uint frequency);
+        void RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")][Guid("0914119E-78A7-52EB-94E1-D483DD6EA5D0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ParallaxCreatorSessionContract), 65536u)]
@@ -120,7 +108,7 @@ namespace Microsoft.Graphics.ImagingInternal
     public enum ImageScalerSessionContract
     {
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(196608u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum ImageSegmenterSessionContract
     {
     }
@@ -650,167 +638,7 @@ namespace ABI.Microsoft.Graphics.ImagingInternal
     {
 
 
-        public static unsafe global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, IntPtr*, int>**)ThisPtr)[6](ThisPtr, inputView, inputViewData, outputView, outputViewData, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalInterface<global::Windows.Foundation.IAsyncAction>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::Windows.Foundation.IAsyncAction>.DisposeAbi(__retval);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x2C, 0x10, 0xBC, 0xFA, 0x5E, 0xF6, 0xEA, 0x58, 0xBC, 0x35, 0x50, 0xE6, 0xD7, 0x32, 0x3B, 0x7D };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-        public static global::System.IntPtr AbiToProjectionVftablePtr => IImageSegmenterSession.AbiToProjectionVftablePtr;
-
-    }
-    [DynamicInterfaceCastableImplementation]
-    [Guid("FABC102C-F65E-58EA-BC35-50E6D7323B7D")]
-    internal unsafe interface IImageSegmenterSession : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession
-    {
-
-        public static readonly IntPtr AbiToProjectionVftablePtr;
-        static unsafe IImageSegmenterSession()
-        {
-            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageSegmenterSession), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
-            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
-            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_RemoveBackgroundAsync_0;
-        }
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_RemoveBackgroundAsync_0(IntPtr thisPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, IntPtr* operation)
-        {
-
-            global::Windows.Foundation.IAsyncAction __operation = default;
-
-            *operation = default;
-
-            try
-            {
-                __operation = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession>(thisPtr).RemoveBackgroundAsync(inputView, inputViewData, outputView, outputViewData);
-                *operation = MarshalInterface<global::Windows.Foundation.IAsyncAction>.FromManaged(__operation);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-        unsafe global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession.RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData)
-        {
-            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession).TypeHandle));
-            return global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.RemoveBackgroundAsync(_obj, inputView, inputViewData, outputView, outputViewData);
-        }
-
-        void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
-    }
-
-    public static class IImageSegmenterSession2Methods
-    {
-
-
-        public static unsafe global::Windows.Foundation.IAsyncAction RemoveBackgroundAsync(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            IntPtr __retval = default;
-            try
-            {
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, uint, uint, IntPtr*, int>**)ThisPtr)[6](ThisPtr, inputView, inputViewData, outputView, outputViewData, priority, frequency, &__retval));
-                global::System.GC.KeepAlive(_obj);
-                return MarshalInterface<global::Windows.Foundation.IAsyncAction>.FromAbi(__retval);
-            }
-            finally
-            {
-                MarshalInterface<global::Windows.Foundation.IAsyncAction>.DisposeAbi(__retval);
-            }
-        }
-
-
-        public static ref readonly global::System.Guid IID
-        {
-            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-            get
-            {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x1C, 0x26, 0x80, 0xE5, 0xFE, 0xD2, 0x8C, 0x41, 0xB9, 0x27, 0xA3, 0xDF, 0x8C, 0x43, 0x4, 0xDB };
-                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
-            }
-        }
-
-        public static global::System.IntPtr AbiToProjectionVftablePtr => IImageSegmenterSession2.AbiToProjectionVftablePtr;
-
-    }
-    [DynamicInterfaceCastableImplementation]
-    [Guid("E580261C-D2FE-418C-B927-A3DF8C4304DB")]
-    internal unsafe interface IImageSegmenterSession2 : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2
-    {
-
-        public static readonly IntPtr AbiToProjectionVftablePtr;
-        static unsafe IImageSegmenterSession2()
-        {
-            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageSegmenterSession2), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
-            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
-            ((delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData, uint, uint, IntPtr*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_RemoveBackgroundAsync_0;
-        }
-
-        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_RemoveBackgroundAsync_0(IntPtr thisPtr, global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency, IntPtr* operation)
-        {
-
-            global::Windows.Foundation.IAsyncAction __operation = default;
-
-            *operation = default;
-
-            try
-            {
-                __operation = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2>(thisPtr).RemoveBackgroundAsync(inputView, inputViewData, outputView, outputViewData, priority, frequency);
-                *operation = MarshalInterface<global::Windows.Foundation.IAsyncAction>.FromManaged(__operation);
-
-            }
-            catch (Exception __exception__)
-            {
-                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
-                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
-            }
-            return 0;
-        }
-
-        unsafe global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2.RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency)
-        {
-            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2).TypeHandle));
-            return global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2Methods.RemoveBackgroundAsync(_obj, inputView, inputViewData, outputView, outputViewData, priority, frequency);
-        }
-
-        global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession.RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData) => ((global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession)(IWinRTObject)this).RemoveBackgroundAsync(inputView, inputViewData, outputView, outputViewData);
-
-        void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
-    }
-
-    public static class IImageSegmenterSession3Methods
-    {
-
-
-        public static unsafe void RemoveBackground(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, uint priority, uint frequency)
+        public static unsafe void RemoveBackground(IObjectReference _obj, global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource)
         {
             var ThisPtr = _obj.ThisPtr;
 
@@ -820,7 +648,7 @@ namespace ABI.Microsoft.Graphics.ImagingInternal
             {
                 __inputImageBufferResource = global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.CreateMarshaler2(inputImageBufferResource);
                 __outputImageBufferResource = global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.CreateMarshaler2(outputImageBufferResource);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, uint, uint, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__inputImageBufferResource), MarshalInspectable<object>.GetAbi(__outputImageBufferResource), priority, frequency));
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__inputImageBufferResource), MarshalInspectable<object>.GetAbi(__outputImageBufferResource)));
                 global::System.GC.KeepAlive(_obj);
             }
             finally
@@ -836,36 +664,36 @@ namespace ABI.Microsoft.Graphics.ImagingInternal
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0x36, 0x3F, 0x8E, 0x14, 0x1E, 0x25, 0x55, 0x56, 0xA4, 0xF7, 0x4, 0xD2, 0x91, 0x81, 0xD8, 0xF4 };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x79, 0x2F, 0x2E, 0x4A, 0x39, 0x44, 0xDC, 0x56, 0xB9, 0xD, 0xE6, 0x37, 0x93, 0xEF, 0xE, 0xD0 };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
-        public static global::System.IntPtr AbiToProjectionVftablePtr => IImageSegmenterSession3.AbiToProjectionVftablePtr;
+        public static global::System.IntPtr AbiToProjectionVftablePtr => IImageSegmenterSession.AbiToProjectionVftablePtr;
 
     }
     [DynamicInterfaceCastableImplementation]
-    [Guid("148E3F36-251E-5655-A4F7-04D29181D8F4")]
-    internal unsafe interface IImageSegmenterSession3 : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3
+    [Guid("4A2E2F79-4439-56DC-B90D-E63793EF0ED0")]
+    internal unsafe interface IImageSegmenterSession : global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession
     {
 
         public static readonly IntPtr AbiToProjectionVftablePtr;
-        static unsafe IImageSegmenterSession3()
+        static unsafe IImageSegmenterSession()
         {
-            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageSegmenterSession3), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(IImageSegmenterSession), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
             *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
-            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, uint, uint, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_RemoveBackground_0;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_RemoveBackground_0;
         }
 
         [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
-        private static unsafe int Do_Abi_RemoveBackground_0(IntPtr thisPtr, IntPtr inputImageBufferResource, IntPtr outputImageBufferResource, uint priority, uint frequency)
+        private static unsafe int Do_Abi_RemoveBackground_0(IntPtr thisPtr, IntPtr inputImageBufferResource, IntPtr outputImageBufferResource)
         {
 
 
 
             try
             {
-                global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3>(thisPtr).RemoveBackground(global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.FromAbi(inputImageBufferResource), global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.FromAbi(outputImageBufferResource), priority, frequency);
+                global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession>(thisPtr).RemoveBackground(global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.FromAbi(inputImageBufferResource), global::ABI.Microsoft.Windows.PrivateCommon.ImageBufferResource.FromAbi(outputImageBufferResource));
 
             }
             catch (Exception __exception__)
@@ -876,15 +704,11 @@ namespace ABI.Microsoft.Graphics.ImagingInternal
             return 0;
         }
 
-        unsafe void global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3.RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource, uint priority, uint frequency)
+        unsafe void global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession.RemoveBackground(global::Microsoft.Windows.PrivateCommon.ImageBufferResource inputImageBufferResource, global::Microsoft.Windows.PrivateCommon.ImageBufferResource outputImageBufferResource)
         {
-            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3).TypeHandle));
-            global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSession3Methods.RemoveBackground(_obj, inputImageBufferResource, outputImageBufferResource, priority, frequency);
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession).TypeHandle));
+            global::ABI.Microsoft.Graphics.ImagingInternal.IImageSegmenterSessionMethods.RemoveBackground(_obj, inputImageBufferResource, outputImageBufferResource);
         }
-
-        global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession.RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData) => ((global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession)(IWinRTObject)this).RemoveBackgroundAsync(inputView, inputViewData, outputView, outputViewData);
-
-        global::Windows.Foundation.IAsyncAction global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2.RemoveBackgroundAsync(global::Microsoft.Windows.PrivateCommon.ImageBufferView inputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData inputViewData, global::Microsoft.Windows.PrivateCommon.ImageBufferView outputView, global::Microsoft.Windows.PrivateCommon.ImageBufferViewData outputViewData, uint priority, uint frequency) => ((global::Microsoft.Graphics.ImagingInternal.IImageSegmenterSession2)(IWinRTObject)this).RemoveBackgroundAsync(inputView, inputViewData, outputView, outputViewData, priority, frequency);
 
         void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
     }

@@ -27,7 +27,7 @@ using WinRT.Interop;
 
 namespace Microsoft.UI.Composition.Experimental
 {
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public static class ExpCompositionVisualSurface
     {
@@ -53,7 +53,7 @@ namespace Microsoft.UI.Composition.Experimental
 
         public static global::Microsoft.UI.Composition.CompositionVisualSurface CreateVisualSurface(global::Microsoft.UI.Composition.Compositor compositor, global::Windows.Graphics.SizeInt32 realizationSize, bool frozen) => global::ABI.Microsoft.UI.Composition.Experimental.IExpCompositionVisualSurfaceStaticsMethods.CreateVisualSurface(_objRef_global__Microsoft_UI_Composition_Experimental_IExpCompositionVisualSurfaceStatics, compositor, realizationSize, frozen);
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ExpExpressionNotificationProperty>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ExpExpressionNotificationProperty>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum ExpExpressionNotificationProperty : int
     {
@@ -85,14 +85,14 @@ namespace Microsoft.UI.Composition.Experimental
         TopRightRadiusY = unchecked((int)0x19),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("12B579A9-6A27-5CDE-A2A1-C557BB7DFDB3")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.Experimental.IExpCompositionPropertyChanged))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public interface IExpCompositionPropertyChanged
     {
         void SetPropertyChangedListener(ExpExpressionNotificationProperty property, IExpCompositionPropertyChangedListener listener);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("5F9C3D96-1E77-5980-8B28-7A9B8614A863")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.Experimental.IExpCompositionPropertyChangedListener))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public interface IExpCompositionPropertyChangedListener
     {
@@ -107,7 +107,7 @@ namespace Microsoft.UI.Composition.Experimental
         void NotifyVector4PropertyChanged(global::Microsoft.UI.Composition.CompositionObject target, ExpExpressionNotificationProperty property, global::System.Numerics.Vector4 value);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("46193461-9018-5674-A09C-4AE6A29DAA35")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.Experimental.IExpCompositionVisualSurfaceStatics))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpCompositionVisualSurfaceStatics
     {
@@ -115,14 +115,14 @@ namespace Microsoft.UI.Composition.Experimental
         global::Microsoft.UI.Composition.CompositionVisualSurface CreateVisualSurface(global::Microsoft.UI.Composition.Compositor compositor, global::Windows.Graphics.SizeInt32 realizationSize, bool frozen);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("DDFE7441-66C9-5654-9E80-FF2677295995")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.Experimental.IExpCompositor))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public interface IExpCompositor
     {
         object OpenSharedManipulationTransformFromHandle(ulong handle);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("8FACCF79-665B-578F-8197-F8A64F8833D6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.Experimental.IExpVisual))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public interface IExpVisual
     {

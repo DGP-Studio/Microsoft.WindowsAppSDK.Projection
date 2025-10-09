@@ -27,15 +27,312 @@ using WinRT.Interop;
 
 namespace Microsoft.Windows.AI.Text
 {
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ConversationItem))]
+    [global::ABI.Microsoft.Windows.AI.Text.ConversationItemRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IConversationItem))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
+    public sealed class ConversationItem : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ConversationItem>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_IConversationItem => _inner;
+
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ConversationItem;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ConversationItem
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_AI_Text_ConversationItem;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_AI_Text_ConversationItem = ActivationFactory.Get("Microsoft.Windows.AI.Text.ConversationItem");
+                }
+            }
+        }
+
+        public ConversationItem() 
+        {
+            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Windows_AI_Text_ConversationItem, global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.IID);
+            ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
+            ComWrappersHelper.Init(_inner, false);
+
+        }
+
+        public static ConversationItem FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ConversationItem>.FromAbi(thisPtr);
+        }
+
+        internal ConversationItem(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ConversationItem x, ConversationItem y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ConversationItem x, ConversationItem y) => !(x == y);
+        public bool Equals(ConversationItem other) => this == other;
+        public override bool Equals(object obj) => obj is ConversationItem that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public string Message
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.get_Message(_objRef_global__Microsoft_Windows_AI_Text_IConversationItem);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.set_Message(_objRef_global__Microsoft_Windows_AI_Text_IConversationItem, value);
+        }
+
+        public string Participant
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.get_Participant(_objRef_global__Microsoft_Windows_AI_Text_IConversationItem);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.set_Participant(_objRef_global__Microsoft_Windows_AI_Text_IConversationItem, value);
+        }
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ConversationSummaryOptions))]
+    [global::ABI.Microsoft.Windows.AI.Text.ConversationSummaryOptionsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IConversationSummaryOptions))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
+    public sealed class ConversationSummaryOptions : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ConversationSummaryOptions>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions => _inner;
+
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ConversationSummaryOptions;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ConversationSummaryOptions
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_AI_Text_ConversationSummaryOptions;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_AI_Text_ConversationSummaryOptions = ActivationFactory.Get("Microsoft.Windows.AI.Text.ConversationSummaryOptions");
+                }
+            }
+        }
+
+        public ConversationSummaryOptions() 
+        {
+            _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Windows_AI_Text_ConversationSummaryOptions, global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.IID);
+            ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
+            ComWrappersHelper.Init(_inner, false);
+
+        }
+
+        public static ConversationSummaryOptions FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ConversationSummaryOptions>.FromAbi(thisPtr);
+        }
+
+        internal ConversationSummaryOptions(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ConversationSummaryOptions x, ConversationSummaryOptions y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ConversationSummaryOptions x, ConversationSummaryOptions y) => !(x == y);
+        public bool Equals(ConversationSummaryOptions other) => this == other;
+        public override bool Equals(object obj) => obj is ConversationSummaryOptions that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public bool IncludeMessageCitations
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.get_IncludeMessageCitations(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.set_IncludeMessageCitations(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions, value);
+        }
+
+        public bool IncludeParticipantAttribution
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.get_IncludeParticipantAttribution(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.set_IncludeParticipantAttribution(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions, value);
+        }
+
+        public InputKind InputKind
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.get_InputKind(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.set_InputKind(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions, value);
+        }
+
+        public string Language
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.get_Language(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.set_Language(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions, value);
+        }
+
+        public uint MaxKeyPoints
+        {
+            get => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.get_MaxKeyPoints(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions);
+            set => global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.set_MaxKeyPoints(_objRef_global__Microsoft_Windows_AI_Text_IConversationSummaryOptions, value);
+        }
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("957B0B85-4D7E-5788-BAAE-AF7CF256BB8E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.IConversationItem))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
+    internal interface IConversationItem
+    {
+        string Message { get; set; }
+        string Participant { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("360BCE9F-FD14-5D0E-BD24-FD78ED3038E6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptions))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
+    internal interface IConversationSummaryOptions
+    {
+        bool IncludeMessageCitations { get; set; }
+        bool IncludeParticipantAttribution { get; set; }
+        InputKind InputKind { get; set; }
+        string Language { get; set; }
+        uint MaxKeyPoints { get; set; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("6331C629-8C86-5BFE-8C4E-9CA5573CC14B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModel))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 65536u)]
     internal interface ILanguageModel
     {
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("653B714E-F9B3-51CB-954F-5EA58F63AB89")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
+    internal interface ILanguageModel2
+    {
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseAsync")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseAsync2")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt, LanguageModelOptions options);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseAsync3")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(LanguageModelContext context, string prompt, LanguageModelOptions options);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseFromEmbeddingsAsync")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseFromEmbeddingsAsync2")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, LanguageModelOptions options);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseFromEmbeddingsAsync3")]
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(LanguageModelContext context, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, LanguageModelOptions options);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateEmbeddingVectors")]
+        LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt);
+        [global::Windows.Foundation.Metadata.Overload(@"GenerateEmbeddingVectors2")]
+        LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions);
+        [global::Windows.Foundation.Metadata.Overload(@"GetUsablePromptLength")]
+        ulong GetUsablePromptLength(string prompt);
+        [global::Windows.Foundation.Metadata.Overload(@"GetUsablePromptLength2")]
+        ulong GetUsablePromptLength(LanguageModelContext context, string prompt);
+        Guid GetVectorSpaceId();
+        [global::Windows.Foundation.Metadata.Overload(@"CreateContext")]
+        LanguageModelContext CreateContext();
+        [global::Windows.Foundation.Metadata.Overload(@"CreateContext2")]
+        LanguageModelContext CreateContext(string systemPrompt);
+        [global::Windows.Foundation.Metadata.Overload(@"CreateContext3")]
+        LanguageModelContext CreateContext(string systemPrompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions);
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("518B305C-7B69-5A33-8129-D47D6B8EEC4E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModelContext))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 65536u)]
     internal interface ILanguageModelContext
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("4DBDB154-EE3C-56F6-A40B-413E95BD5ACB")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResult))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
+    internal interface ILanguageModelEmbeddingVectorResult
+    {
+        global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> EmbeddingVectors { get; }
+        global::System.Exception ExtendedError { get; }
+        LanguageModelResponseStatus Status { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("7F380003-5A09-5F1F-AFB0-AA483E3670CC")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ILanguageModelOptions))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 65536u)]
@@ -68,6 +365,12 @@ namespace Microsoft.Windows.AI.Text
     {
         global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("7937D261-13CE-5B24-B17C-FE5CD0BE23B6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 262144u)]
+    internal interface ITextRewriter2
+    {
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone tone);
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("F452E60D-EF50-5BC9-B483-217D5B4E7151")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextRewriterFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
     internal interface ITextRewriterFactory
@@ -80,6 +383,24 @@ namespace Microsoft.Windows.AI.Text
     {
         global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeAsync(string text);
         global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeParagraphAsync(string text);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("9E20797D-1FF6-5295-8CB6-D48FB8BA483B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 131072u)]
+    internal interface ITextSummarizer2
+    {
+        global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeConversationAsync(global::System.Collections.Generic.IReadOnlyList<ConversationItem> messages, ConversationSummaryOptions options);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("493D32B9-DBC9-5D4B-802F-90473850500E")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer3))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 196608u)]
+    internal interface ITextSummarizer3
+    {
+        bool IsPromptLargerThanContext(ConversationItem[] messages, ConversationSummaryOptions options, out ulong cutoffPosition);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("5B7A28C0-7777-52E5-9934-B95B514CF535")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 327680u)]
+    internal interface ITextSummarizer4
+    {
+        bool IsPromptLargerThanContext(string text, out ulong cutoffPosition);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][Guid("B6A75913-4A1E-59E7-856A-AE7AB2383864")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizerFactory))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 131072u)]
@@ -113,6 +434,12 @@ namespace Microsoft.Windows.AI.Text
     {
         string[] GetColumns();
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputKind>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 65536u)]
+    public enum InputKind : int
+    {
+        GeneralConversation = unchecked((int)0),
+        Email = unchecked((int)0x1),
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.LanguageModel))]
     [global::ABI.Microsoft.Windows.AI.Text.LanguageModelRcwFactory]
@@ -127,6 +454,14 @@ namespace Microsoft.Windows.AI.Text
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ILanguageModel => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2 => ___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2();
+
         private volatile IObjectReference ___objRef_global__System_IDisposable;
         private IObjectReference Make___objRef_global__System_IDisposable()
         {
@@ -201,6 +536,34 @@ namespace Microsoft.Windows.AI.Text
 
         private struct InterfaceTag<I>{};
 
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, prompt);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt, LanguageModelOptions options) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, prompt, options);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(LanguageModelContext context, string prompt, LanguageModelOptions options) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, context, prompt, options);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseFromEmbeddingsAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, promptEmbedding);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, LanguageModelOptions options) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseFromEmbeddingsAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, promptEmbedding, options);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(LanguageModelContext context, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, LanguageModelOptions options) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateResponseFromEmbeddingsAsync(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, context, promptEmbedding, options);
+
+        public LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateEmbeddingVectors(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, prompt);
+
+        public LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GenerateEmbeddingVectors(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, prompt, contentFilterOptions);
+
+        public ulong GetUsablePromptLength(string prompt) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GetUsablePromptLength(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, prompt);
+
+        public ulong GetUsablePromptLength(LanguageModelContext context, string prompt) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GetUsablePromptLength(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, context, prompt);
+
+        public Guid GetVectorSpaceId() => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.GetVectorSpaceId(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2);
+
+        public LanguageModelContext CreateContext() => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.CreateContext(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2);
+
+        public LanguageModelContext CreateContext(string systemPrompt) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.CreateContext(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, systemPrompt);
+
+        public LanguageModelContext CreateContext(string systemPrompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions) => global::ABI.Microsoft.Windows.AI.Text.ILanguageModel2Methods.CreateContext(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModel2, systemPrompt, contentFilterOptions);
 
         public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
 
@@ -309,6 +672,86 @@ namespace Microsoft.Windows.AI.Text
     [global::Windows.Foundation.Metadata.ContractVersion(131072u)]
     public enum LanguageModelContract
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult))]
+    [global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResultRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ILanguageModelEmbeddingVectorResult))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelContract), 131072u)]
+    public sealed class LanguageModelEmbeddingVectorResult : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<LanguageModelEmbeddingVectorResult>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ILanguageModelEmbeddingVectorResult => _inner;
+
+
+        public static LanguageModelEmbeddingVectorResult FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<LanguageModelEmbeddingVectorResult>.FromAbi(thisPtr);
+        }
+
+        internal LanguageModelEmbeddingVectorResult(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.IID);
+
+        }
+
+
+        public static bool operator ==(LanguageModelEmbeddingVectorResult x, LanguageModelEmbeddingVectorResult y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(LanguageModelEmbeddingVectorResult x, LanguageModelEmbeddingVectorResult y) => !(x == y);
+        public bool Equals(LanguageModelEmbeddingVectorResult other) => this == other;
+        public override bool Equals(object obj) => obj is LanguageModelEmbeddingVectorResult that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> EmbeddingVectors => global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.get_EmbeddingVectors(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModelEmbeddingVectorResult);
+
+        public global::System.Exception ExtendedError => global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.get_ExtendedError(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModelEmbeddingVectorResult);
+
+        public LanguageModelResponseStatus Status => global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.get_Status(_objRef_global__Microsoft_Windows_AI_Text_ILanguageModelEmbeddingVectorResult);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.LanguageModelOptions))]
@@ -524,9 +967,18 @@ namespace Microsoft.Windows.AI.Text
         ResponseBlockedByContentModeration = unchecked((int)0x5),
         Error = unchecked((int)0x6),
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(131072u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(393216u)]
     public enum TextIntelligenceContract
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<TextRewriteTone>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(TextIntelligenceContract), 393216u)]
+    public enum TextRewriteTone : int
+    {
+        Default = unchecked((int)0),
+        General = unchecked((int)0x1),
+        Casual = unchecked((int)0x2),
+        Concise = unchecked((int)0x3),
+        Formal = unchecked((int)0x4),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Text")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Text.TextRewriter))]
@@ -542,6 +994,14 @@ namespace Microsoft.Windows.AI.Text
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextRewriter => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2 => ___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2();
+
 
 
         private static class _ITextRewriterFactoryMethods
@@ -642,6 +1102,8 @@ namespace Microsoft.Windows.AI.Text
 
         public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text) => global::ABI.Microsoft.Windows.AI.Text.ITextRewriterMethods.RewriteAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextRewriter, text);
 
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> RewriteAsync(string text, TextRewriteTone tone) => global::ABI.Microsoft.Windows.AI.Text.ITextRewriter2Methods.RewriteAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextRewriter2, text, tone);
+
         private bool IsOverridableInterface(Guid iid) => false;
 
         global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
@@ -674,6 +1136,30 @@ namespace Microsoft.Windows.AI.Text
 
 
         private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer2Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2 => ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer3Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3 => ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4;
+        private IObjectReference Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4Methods.IID), null);
+            return ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4;
+        }
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4 => ___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4 ?? Make___objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4();
+
 
 
         private static class _ITextSummarizerFactoryMethods
@@ -775,6 +1261,12 @@ namespace Microsoft.Windows.AI.Text
         public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeAsync(string text) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizerMethods.SummarizeAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer, text);
 
         public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeParagraphAsync(string text) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizerMethods.SummarizeParagraphAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer, text);
+
+        public global::Windows.Foundation.IAsyncOperationWithProgress<LanguageModelResponseResult, string> SummarizeConversationAsync(global::System.Collections.Generic.IReadOnlyList<ConversationItem> messages, ConversationSummaryOptions options) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer2Methods.SummarizeConversationAsync(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer2, messages, options);
+
+        public bool IsPromptLargerThanContext(ConversationItem[] messages, ConversationSummaryOptions options, out ulong cutoffPosition) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer3Methods.IsPromptLargerThanContext(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer3, messages, options, out cutoffPosition);
+
+        public bool IsPromptLargerThanContext(string text, out ulong cutoffPosition) => global::ABI.Microsoft.Windows.AI.Text.ITextSummarizer4Methods.IsPromptLargerThanContext(_objRef_global__Microsoft_Windows_AI_Text_ITextSummarizer4, text, out cutoffPosition);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -1087,6 +1579,248 @@ namespace Microsoft.Windows.AI.Text
 #pragma warning disable CA1416
 namespace ABI.Microsoft.Windows.AI.Text
 {
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ConversationItem
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AI.Text.ConversationItem obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AI.Text.ConversationItem>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AI.Text.ConversationItem obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AI.Text.IConversationItemMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Windows.AI.Text.ConversationItem FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AI.Text.ConversationItem.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AI.Text.ConversationItem obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AI.Text.ConversationItem[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AI.Text.ConversationItem[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AI.Text.ConversationItem[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AI.Text.ConversationItem[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ConversationItemRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Windows.AI.Text.ConversationItem(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ConversationSummaryOptions
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AI.Text.IConversationSummaryOptionsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Windows.AI.Text.ConversationSummaryOptions FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AI.Text.ConversationSummaryOptions.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AI.Text.ConversationSummaryOptions[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AI.Text.ConversationSummaryOptions[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationSummaryOptions>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ConversationSummaryOptionsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Windows.AI.Text.ConversationSummaryOptions(inspectable.ObjRef);
+    }
+    internal static class IConversationItemMethods
+    {
+
+        internal static unsafe string get_Message(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Message(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[9](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+        internal static unsafe string get_Participant(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Participant(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x85, 0xB, 0x7B, 0x95, 0x7E, 0x4D, 0x88, 0x57, 0xBA, 0xAE, 0xAF, 0x7C, 0xF2, 0x56, 0xBB, 0x8E };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("957B0B85-4D7E-5788-BAAE-AF7CF256BB8E")]
+    internal interface IConversationItem : global::Microsoft.Windows.AI.Text.IConversationItem
+    {
+    }
+    internal static class IConversationSummaryOptionsMethods
+    {
+
+        internal static unsafe bool get_IncludeMessageCitations(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_IncludeMessageCitations(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[9](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe bool get_IncludeParticipantAttribution(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_IncludeParticipantAttribution(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[11](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.InputKind get_InputKind(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.AI.Text.InputKind __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.Text.InputKind*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_InputKind(IObjectReference _obj, global::Microsoft.Windows.AI.Text.InputKind value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.Text.InputKind, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe string get_Language(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[14](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_Language(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[15](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+        internal static unsafe uint get_MaxKeyPoints(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            uint __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint*, int>**)ThisPtr)[12](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_MaxKeyPoints(IObjectReference _obj, uint value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, uint, int>**)ThisPtr)[13](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x9F, 0xCE, 0xB, 0x36, 0x14, 0xFD, 0xE, 0x5D, 0xBD, 0x24, 0xFD, 0x78, 0xED, 0x30, 0x38, 0xE6 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("360BCE9F-FD14-5D0E-BD24-FD78ED3038E6")]
+    internal interface IConversationSummaryOptions : global::Microsoft.Windows.AI.Text.IConversationSummaryOptions
+    {
+    }
     internal static class ILanguageModelMethods
     {
 
@@ -1107,6 +1841,327 @@ namespace ABI.Microsoft.Windows.AI.Text
     internal interface ILanguageModel : global::Microsoft.Windows.AI.Text.ILanguageModel
     {
     }
+    internal static class ILanguageModel2Methods
+    {
+
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseAsync(IObjectReference _obj, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __prompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                    return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseAsync(IObjectReference _obj, string prompt, global::Microsoft.Windows.AI.Text.LanguageModelOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __options = global::ABI.Microsoft.Windows.AI.Text.LanguageModelOptions.CreateMarshaler2(options);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, MarshalString.GetAbi(ref __prompt), MarshalInspectable<object>.GetAbi(__options), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                    return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseAsync(IObjectReference _obj, global::Microsoft.Windows.AI.Text.LanguageModelContext context, string prompt, global::Microsoft.Windows.AI.Text.LanguageModelOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __context = global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.CreateMarshaler2(context);
+                __options = global::ABI.Microsoft.Windows.AI.Text.LanguageModelOptions.CreateMarshaler2(options);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __prompt), MarshalInspectable<object>.GetAbi(__options), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                    return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(IObjectReference _obj, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __promptEmbedding = default;
+            IntPtr __retval = default;
+            try
+            {
+                __promptEmbedding = MarshalInterface<global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.CreateMarshaler2(promptEmbedding, global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.IID);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[9](ThisPtr, MarshalInspectable<object>.GetAbi(__promptEmbedding), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__promptEmbedding);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(IObjectReference _obj, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, global::Microsoft.Windows.AI.Text.LanguageModelOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __promptEmbedding = default;
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __promptEmbedding = MarshalInterface<global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.CreateMarshaler2(promptEmbedding, global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.IID);
+                __options = global::ABI.Microsoft.Windows.AI.Text.LanguageModelOptions.CreateMarshaler2(options);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[10](ThisPtr, MarshalInspectable<object>.GetAbi(__promptEmbedding), MarshalInspectable<object>.GetAbi(__options), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__promptEmbedding);
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(IObjectReference _obj, global::Microsoft.Windows.AI.Text.LanguageModelContext context, global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> promptEmbedding, global::Microsoft.Windows.AI.Text.LanguageModelOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ObjectReferenceValue __promptEmbedding = default;
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __context = global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.CreateMarshaler2(context);
+                __promptEmbedding = MarshalInterface<global::System.Collections.Generic.IEnumerable<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.CreateMarshaler2(promptEmbedding, global::ABI.System.Collections.Generic.IEnumerableMethods<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>.IID);
+                __options = global::ABI.Microsoft.Windows.AI.Text.LanguageModelOptions.CreateMarshaler2(options);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[11](ThisPtr, MarshalInspectable<object>.GetAbi(__context), MarshalInspectable<object>.GetAbi(__promptEmbedding), MarshalInspectable<object>.GetAbi(__options), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+                MarshalInspectable<object>.DisposeMarshaler(__promptEmbedding);
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(IObjectReference _obj, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, MarshalString.GetAbi(ref __prompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(IObjectReference _obj, string prompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __contentFilterOptions = default;
+            IntPtr __retval = default;
+            try
+            {
+                __contentFilterOptions = global::ABI.Microsoft.Windows.AI.ContentSafety.ContentFilterOptions.CreateMarshaler2(contentFilterOptions);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[13](ThisPtr, MarshalString.GetAbi(ref __prompt), MarshalInspectable<object>.GetAbi(__contentFilterOptions), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__contentFilterOptions);
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe ulong GetUsablePromptLength(IObjectReference _obj, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ulong __retval = default;
+            MarshalString.Pinnable __prompt = new(prompt);
+            fixed(void* ___prompt = __prompt)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, ulong*, int>**)ThisPtr)[14](ThisPtr, MarshalString.GetAbi(ref __prompt), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return __retval;
+            }
+        }
+
+        internal static unsafe ulong GetUsablePromptLength(IObjectReference _obj, global::Microsoft.Windows.AI.Text.LanguageModelContext context, string prompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ulong __retval = default;
+            try
+            {
+                __context = global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.CreateMarshaler2(context);
+                MarshalString.Pinnable __prompt = new(prompt);
+                fixed(void* ___prompt = __prompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, ulong*, int>**)ThisPtr)[15](ThisPtr, MarshalInspectable<object>.GetAbi(__context), MarshalString.GetAbi(ref __prompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return __retval;
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+            }
+        }
+
+        internal static unsafe Guid GetVectorSpaceId(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            Guid __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, Guid*, int>**)ThisPtr)[16](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelContext CreateContext(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[17](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelContext CreateContext(IObjectReference _obj, string systemPrompt)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __systemPrompt = new(systemPrompt);
+                fixed(void* ___systemPrompt = __systemPrompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[18](ThisPtr, MarshalString.GetAbi(ref __systemPrompt), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelContext CreateContext(IObjectReference _obj, string systemPrompt, global::Microsoft.Windows.AI.ContentSafety.ContentFilterOptions contentFilterOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __contentFilterOptions = default;
+            IntPtr __retval = default;
+            try
+            {
+                __contentFilterOptions = global::ABI.Microsoft.Windows.AI.ContentSafety.ContentFilterOptions.CreateMarshaler2(contentFilterOptions);
+                MarshalString.Pinnable __systemPrompt = new(systemPrompt);
+                fixed(void* ___systemPrompt = __systemPrompt)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[19](ThisPtr, MarshalString.GetAbi(ref __systemPrompt), MarshalInspectable<object>.GetAbi(__contentFilterOptions), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__contentFilterOptions);
+                global::ABI.Microsoft.Windows.AI.Text.LanguageModelContext.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x4E, 0x71, 0x3B, 0x65, 0xB3, 0xF9, 0xCB, 0x51, 0x95, 0x4F, 0x5E, 0xA5, 0x8F, 0x63, 0xAB, 0x89 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("653B714E-F9B3-51CB-954F-5EA58F63AB89")]
+    internal interface ILanguageModel2 : global::Microsoft.Windows.AI.Text.ILanguageModel2
+    {
+    }
     internal static class ILanguageModelContextMethods
     {
 
@@ -1125,6 +2180,71 @@ namespace ABI.Microsoft.Windows.AI.Text
     }
     [Guid("518B305C-7B69-5A33-8129-D47D6B8EEC4E")]
     internal interface ILanguageModelContext : global::Microsoft.Windows.AI.Text.ILanguageModelContext
+    {
+    }
+    internal static class ILanguageModelEmbeddingVectorResultMethods
+    {
+
+        internal static unsafe global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector> get_EmbeddingVectors(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_Collections_IVectorView_1_Microsoft_Windows_AI_Foundation_EmbeddingVector.EnsureInitialized();
+                return MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Foundation.EmbeddingVector>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::System.Exception get_ExtendedError(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::ABI.System.Exception __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::ABI.System.Exception*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.System.Exception.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.System.Exception.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Windows.AI.Text.LanguageModelResponseStatus get_Status(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.AI.Text.LanguageModelResponseStatus __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.Text.LanguageModelResponseStatus*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x54, 0xB1, 0xBD, 0x4D, 0x3C, 0xEE, 0xF6, 0x56, 0xA4, 0xB, 0x41, 0x3E, 0x95, 0xBD, 0x5A, 0xCB };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("4DBDB154-EE3C-56F6-A40B-413E95BD5ACB")]
+    internal interface ILanguageModelEmbeddingVectorResult : global::Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResult
     {
     }
     internal static class ILanguageModelOptionsMethods
@@ -1403,6 +2523,48 @@ namespace ABI.Microsoft.Windows.AI.Text
     internal interface ITextRewriter : global::Microsoft.Windows.AI.Text.ITextRewriter
     {
     }
+    internal static class ITextRewriter2Methods
+    {
+
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> RewriteAsync(IObjectReference _obj, string text, global::Microsoft.Windows.AI.Text.TextRewriteTone tone)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                MarshalString.Pinnable __text = new(text);
+                fixed(void* ___text = __text)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::Microsoft.Windows.AI.Text.TextRewriteTone, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __text), tone, &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                    return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+                }
+            }
+            finally
+            {
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x61, 0xD2, 0x37, 0x79, 0xCE, 0x13, 0x24, 0x5B, 0xB1, 0x7C, 0xFE, 0x5C, 0xD0, 0xBE, 0x23, 0xB6 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("7937D261-13CE-5B24-B17C-FE5CD0BE23B6")]
+    internal interface ITextRewriter2 : global::Microsoft.Windows.AI.Text.ITextRewriter2
+    {
+    }
     internal static class ITextRewriterFactoryMethods
     {
 
@@ -1505,6 +2667,133 @@ namespace ABI.Microsoft.Windows.AI.Text
     }
     [Guid("EEF548C5-D7BC-50BE-A8AB-29E241B78BD1")]
     internal interface ITextSummarizer : global::Microsoft.Windows.AI.Text.ITextSummarizer
+    {
+    }
+    internal static class ITextSummarizer2Methods
+    {
+
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string> SummarizeConversationAsync(IObjectReference _obj, global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Text.ConversationItem> messages, global::Microsoft.Windows.AI.Text.ConversationSummaryOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __messages = default;
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __messages = MarshalInterface<global::System.Collections.Generic.IReadOnlyList<global::Microsoft.Windows.AI.Text.ConversationItem>>.CreateMarshaler2(messages, global::ABI.System.Collections.Generic.IReadOnlyListMethods<global::Microsoft.Windows.AI.Text.ConversationItem>.IID);
+                __options = global::ABI.Microsoft.Windows.AI.Text.ConversationSummaryOptions.CreateMarshaler2(options);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__messages), MarshalInspectable<object>.GetAbi(__options), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_Text_LanguageModelResponseResult__String.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__messages);
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x7D, 0x79, 0x20, 0x9E, 0xF6, 0x1F, 0x95, 0x52, 0x8C, 0xB6, 0xD4, 0x8F, 0xB8, 0xBA, 0x48, 0x3B };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("9E20797D-1FF6-5295-8CB6-D48FB8BA483B")]
+    internal interface ITextSummarizer2 : global::Microsoft.Windows.AI.Text.ITextSummarizer2
+    {
+    }
+    internal static class ITextSummarizer3Methods
+    {
+
+
+        internal static unsafe bool IsPromptLargerThanContext(IObjectReference _obj, global::Microsoft.Windows.AI.Text.ConversationItem[] messages, global::Microsoft.Windows.AI.Text.ConversationSummaryOptions options, out ulong cutoffPosition)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.ConversationItem>.MarshalerArray __messages = default;
+            int __messages_length = default;
+            IntPtr __messages_data = default;
+            ObjectReferenceValue __options = default;
+            ulong __cutoffPosition = default;
+            byte __retval = default;
+            try
+            {
+                __messages = global::ABI.Microsoft.Windows.AI.Text.ConversationItem.CreateMarshalerArray(messages);
+                (__messages_length, __messages_data) = global::ABI.Microsoft.Windows.AI.Text.ConversationItem.GetAbiArray(__messages);
+                __options = global::ABI.Microsoft.Windows.AI.Text.ConversationSummaryOptions.CreateMarshaler2(options);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int, IntPtr, IntPtr, ulong*, byte*, int>**)ThisPtr)[6](ThisPtr, __messages_length, __messages_data, MarshalInspectable<object>.GetAbi(__options), &__cutoffPosition, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                cutoffPosition = __cutoffPosition;
+                return __retval != 0;
+            }
+            finally
+            {
+                global::ABI.Microsoft.Windows.AI.Text.ConversationItem.DisposeMarshalerArray(__messages);
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB9, 0x32, 0x3D, 0x49, 0xC9, 0xDB, 0x4B, 0x5D, 0x80, 0x2F, 0x90, 0x47, 0x38, 0x50, 0x50, 0xE };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("493D32B9-DBC9-5D4B-802F-90473850500E")]
+    internal interface ITextSummarizer3 : global::Microsoft.Windows.AI.Text.ITextSummarizer3
+    {
+    }
+    internal static class ITextSummarizer4Methods
+    {
+
+
+        internal static unsafe bool IsPromptLargerThanContext(IObjectReference _obj, string text, out ulong cutoffPosition)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ulong __cutoffPosition = default;
+            byte __retval = default;
+            MarshalString.Pinnable __text = new(text);
+            fixed(void* ___text = __text)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, ulong*, byte*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __text), &__cutoffPosition, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                cutoffPosition = __cutoffPosition;
+                return __retval != 0;
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xC0, 0x28, 0x7A, 0x5B, 0x77, 0x77, 0xE5, 0x52, 0x99, 0x34, 0xB9, 0x5B, 0x51, 0x4C, 0xF5, 0x35 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("5B7A28C0-7777-52E5-9934-B95B514CF535")]
+    internal interface ITextSummarizer4 : global::Microsoft.Windows.AI.Text.ITextSummarizer4
     {
     }
     internal static class ITextSummarizerFactoryMethods
@@ -1781,6 +3070,31 @@ namespace ABI.Microsoft.Windows.AI.Text
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.Windows.AI.Text.LanguageModelContext(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct LanguageModelEmbeddingVectorResult
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AI.Text.ILanguageModelEmbeddingVectorResultMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class LanguageModelEmbeddingVectorResultRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct LanguageModelOptions

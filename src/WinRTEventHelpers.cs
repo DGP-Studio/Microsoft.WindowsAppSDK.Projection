@@ -8890,6 +8890,46 @@ namespace WinRT
         }
     }
 
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPopupController__global__Microsoft_UI_Input_InputLightDismissEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputPopupController__Microsoft_UI_Input_InputLightDismissEventArgs.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPopupController__global__Microsoft_UI_Input_InputLightDismissEventArgs_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs> GetEventInvoke()
+            {
+                return (global::Microsoft.UI.Input.InputPopupController sender, global::Microsoft.UI.Input.InputLightDismissEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
     internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputActivationListener__global__Microsoft_UI_Input_InputActivationListenerActivationChangedEventArgs_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputActivationListener, global::Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs>>
     {
         private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_UI_Input_InputActivationListener__Microsoft_UI_Input_InputActivationListenerActivationChangedEventArgs.EnsureInitialized();
@@ -12918,6 +12958,46 @@ namespace WinRT
             protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Xaml.Controls.ColorPicker, global::Microsoft.UI.Xaml.Controls.ColorChangedEventArgs> GetEventInvoke()
             {
                 return (global::Microsoft.UI.Xaml.Controls.ColorPicker sender, global::Microsoft.UI.Xaml.Controls.ColorChangedEventArgs args) =>
+                {
+                    var targetDelegate = TargetDelegate;
+                    if (targetDelegate is null)
+                    {
+                        return ;
+                    }
+                    targetDelegate.Invoke(sender, args);
+                };
+            }
+        }
+    }
+
+    internal sealed unsafe class _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Find__object_ : global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>
+    {
+        private static readonly bool initialized = global::WinRT.GenericTypeInstantiations.Windows_Foundation_TypedEventHandler_2_Microsoft_Web_WebView2_Core_CoreWebView2Find__object.EnsureInitialized();
+
+        internal _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Find__object_(IObjectReference obj,
+        delegate* unmanaged[Stdcall]<System.IntPtr, System.IntPtr, WinRT.EventRegistrationToken*, int> addHandler,
+        delegate* unmanaged[Stdcall]<System.IntPtr, WinRT.EventRegistrationToken, int> removeHandler, int index) : base(obj, addHandler, removeHandler, index)
+        {
+            _ = initialized;
+        }
+
+        protected override ObjectReferenceValue CreateMarshaler(global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object> handler) =>
+        global::ABI.Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>.CreateMarshaler2(handler);
+
+        protected override global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>> CreateEventSourceState() =>
+        new EventState(ObjectReference.ThisPtr, Index);
+
+        [global::WinRT.WinRTExposedType]
+        private sealed class EventState : global::ABI.WinRT.Interop.EventSourceState<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>
+        {
+            public EventState(System.IntPtr obj, int index)
+            : base(obj, index)
+            {
+            }
+
+            protected override global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object> GetEventInvoke()
+            {
+                return (global::Microsoft.Web.WebView2.Core.CoreWebView2Find sender, object args) =>
                 {
                     var targetDelegate = TargetDelegate;
                     if (targetDelegate is null)

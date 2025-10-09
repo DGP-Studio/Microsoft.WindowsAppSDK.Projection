@@ -78,6 +78,21 @@ namespace Microsoft.Windows.AI.Imaging
         global::Microsoft.Windows.AI.AIFeatureReadyState GetReadyState();
         global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double> EnsureReadyAsync();
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")][Guid("CFA20FAF-5AE1-5B8C-B0D8-E7C64DB59D26")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemover))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
+    internal interface IImageObjectRemover
+    {
+        global::Windows.Graphics.Imaging.SoftwareBitmap RemoveFromSoftwareBitmap(global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap, global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmapMask);
+        global::Microsoft.Graphics.Imaging.ImageBuffer RemoveFromImageBuffer(global::Microsoft.Graphics.Imaging.ImageBuffer imageBuffer, global::Microsoft.Graphics.Imaging.ImageBuffer imageBufferMask);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")][Guid("CBCBD7E1-5B81-503F-8FCB-66AE1D6E5B9C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
+    internal interface IImageObjectRemoverStatics
+    {
+        global::Microsoft.Windows.AI.AIFeatureReadyState GetReadyState();
+        global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double> EnsureReadyAsync();
+        global::Windows.Foundation.IAsyncOperation<ImageObjectRemover> CreateAsync();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")][Guid("06EEC88E-91C5-5326-8128-2807FAAFA571")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.IImageScaler))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageScalerContract), 65536u)]
     internal interface IImageScaler
@@ -607,6 +622,123 @@ namespace Microsoft.Windows.AI.Imaging
 
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectRemover))]
+    [global::ABI.Microsoft.Windows.AI.Imaging.ImageObjectRemoverRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IImageObjectRemover))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageObjectRemoverContract), 65536u)]
+    public sealed class ImageObjectRemover : global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ImageObjectRemover>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemover => _inner;
+        private volatile IObjectReference ___objRef_global__System_IDisposable;
+        private IObjectReference Make___objRef_global__System_IDisposable()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__System_IDisposable, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.System.IDisposableMethods.IID), null);
+            return ___objRef_global__System_IDisposable;
+        }
+        private IObjectReference _objRef_global__System_IDisposable => ___objRef_global__System_IDisposable ?? Make___objRef_global__System_IDisposable();
+
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.Windows.AI.Imaging.ImageObjectRemover").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics;
+        private static IObjectReference _objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics = ActivationFactory.Get("Microsoft.Windows.AI.Imaging.ImageObjectRemover", global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static global::Microsoft.Windows.AI.AIFeatureReadyState GetReadyState() => global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStaticsMethods.GetReadyState(_objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics);
+
+        public static global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double> EnsureReadyAsync() => global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStaticsMethods.EnsureReadyAsync(_objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics);
+
+        public static global::Windows.Foundation.IAsyncOperation<ImageObjectRemover> CreateAsync() => global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverStaticsMethods.CreateAsync(_objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemoverStatics);
+
+        public static ImageObjectRemover FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<ImageObjectRemover>.FromAbi(thisPtr);
+        }
+
+        internal ImageObjectRemover(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverMethods.IID);
+
+        }
+
+
+        public static bool operator ==(ImageObjectRemover x, ImageObjectRemover y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(ImageObjectRemover x, ImageObjectRemover y) => !(x == y);
+        public bool Equals(ImageObjectRemover other) => this == other;
+        public override bool Equals(object obj) => obj is ImageObjectRemover that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::Windows.Graphics.Imaging.SoftwareBitmap RemoveFromSoftwareBitmap(global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap, global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmapMask) => global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverMethods.RemoveFromSoftwareBitmap(_objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemover, softwareBitmap, softwareBitmapMask);
+
+        public global::Microsoft.Graphics.Imaging.ImageBuffer RemoveFromImageBuffer(global::Microsoft.Graphics.Imaging.ImageBuffer imageBuffer, global::Microsoft.Graphics.Imaging.ImageBuffer imageBufferMask) => global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverMethods.RemoveFromImageBuffer(_objRef_global__Microsoft_Windows_AI_Imaging_IImageObjectRemover, imageBuffer, imageBufferMask);
+
+        public void Dispose() => global::ABI.System.IDisposableMethods.Dispose(_objRef_global__System_IDisposable);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
+    public enum ImageObjectRemoverContract
+    {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.Imaging")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.Imaging.ImageScaler))]
@@ -1542,6 +1674,138 @@ namespace ABI.Microsoft.Windows.AI.Imaging
     internal interface IImageObjectExtractorStatics : global::Microsoft.Windows.AI.Imaging.IImageObjectExtractorStatics
     {
     }
+    internal static class IImageObjectRemoverMethods
+    {
+
+
+        internal static unsafe global::Windows.Graphics.Imaging.SoftwareBitmap RemoveFromSoftwareBitmap(IObjectReference _obj, global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmap, global::Windows.Graphics.Imaging.SoftwareBitmap softwareBitmapMask)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __softwareBitmap = default;
+            ObjectReferenceValue __softwareBitmapMask = default;
+            IntPtr __retval = default;
+            try
+            {
+                __softwareBitmap = global::ABI.Windows.Graphics.Imaging.SoftwareBitmap.CreateMarshaler2(softwareBitmap);
+                __softwareBitmapMask = global::ABI.Windows.Graphics.Imaging.SoftwareBitmap.CreateMarshaler2(softwareBitmapMask);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__softwareBitmap), MarshalInspectable<object>.GetAbi(__softwareBitmapMask), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Windows.Graphics.Imaging.SoftwareBitmap.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__softwareBitmap);
+                MarshalInspectable<object>.DisposeMarshaler(__softwareBitmapMask);
+                global::ABI.Windows.Graphics.Imaging.SoftwareBitmap.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Microsoft.Graphics.Imaging.ImageBuffer RemoveFromImageBuffer(IObjectReference _obj, global::Microsoft.Graphics.Imaging.ImageBuffer imageBuffer, global::Microsoft.Graphics.Imaging.ImageBuffer imageBufferMask)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __imageBuffer = default;
+            ObjectReferenceValue __imageBufferMask = default;
+            IntPtr __retval = default;
+            try
+            {
+                __imageBuffer = global::ABI.Microsoft.Graphics.Imaging.ImageBuffer.CreateMarshaler2(imageBuffer);
+                __imageBufferMask = global::ABI.Microsoft.Graphics.Imaging.ImageBuffer.CreateMarshaler2(imageBufferMask);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, MarshalInspectable<object>.GetAbi(__imageBuffer), MarshalInspectable<object>.GetAbi(__imageBufferMask), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__imageBuffer);
+                MarshalInspectable<object>.DisposeMarshaler(__imageBufferMask);
+                global::ABI.Microsoft.Graphics.Imaging.ImageBuffer.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xAF, 0xF, 0xA2, 0xCF, 0xE1, 0x5A, 0x8C, 0x5B, 0xB0, 0xD8, 0xE7, 0xC6, 0x4D, 0xB5, 0x9D, 0x26 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("CFA20FAF-5AE1-5B8C-B0D8-E7C64DB59D26")]
+    internal interface IImageObjectRemover : global::Microsoft.Windows.AI.Imaging.IImageObjectRemover
+    {
+    }
+    internal static class IImageObjectRemoverStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.Windows.AI.AIFeatureReadyState GetReadyState(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.Windows.AI.AIFeatureReadyState __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.Windows.AI.AIFeatureReadyState*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double> EnsureReadyAsync(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperationWithProgress_2_Microsoft_Windows_AI_AIFeatureReadyResult__Double.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::Windows.Foundation.IAsyncOperationWithProgress<global::Microsoft.Windows.AI.AIFeatureReadyResult, double>>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover> CreateAsync(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                _ = global::WinRT.GenericTypeInstantiations.Windows_Foundation_IAsyncOperation_1_Microsoft_Windows_AI_Imaging_ImageObjectRemover.EnsureInitialized();
+                return MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInterface<global::Windows.Foundation.IAsyncOperation<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>>.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xE1, 0xD7, 0xCB, 0xCB, 0x81, 0x5B, 0x3F, 0x50, 0x8F, 0xCB, 0x66, 0xAE, 0x1D, 0x6E, 0x5B, 0x9C };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("CBCBD7E1-5B81-503F-8FCB-66AE1D6E5B9C")]
+    internal interface IImageObjectRemoverStatics : global::Microsoft.Windows.AI.Imaging.IImageObjectRemoverStatics
+    {
+    }
     internal static class IImageScalerMethods
     {
 
@@ -2094,6 +2358,31 @@ namespace ABI.Microsoft.Windows.AI.Imaging
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.Windows.AI.Imaging.ImageObjectExtractorHint(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct ImageObjectRemover
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Windows.AI.Imaging.IImageObjectRemoverMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Windows.AI.Imaging.ImageObjectRemover FromAbi(IntPtr thisPtr) => global::Microsoft.Windows.AI.Imaging.ImageObjectRemover.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.MarshalerArray CreateMarshalerArray(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Windows.AI.Imaging.ImageObjectRemover[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Windows.AI.Imaging.ImageObjectRemover[] array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Windows.AI.Imaging.ImageObjectRemover>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class ImageObjectRemoverRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Windows.AI.Imaging.ImageObjectRemover(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct ImageScaler

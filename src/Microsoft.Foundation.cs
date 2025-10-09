@@ -27,7 +27,7 @@ using WinRT.Interop;
 
 namespace Microsoft.Foundation
 {
-    [global::Windows.Foundation.Metadata.ContractVersion(65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(65544u)]
     public enum WindowsAppSDKContract
     {
     }

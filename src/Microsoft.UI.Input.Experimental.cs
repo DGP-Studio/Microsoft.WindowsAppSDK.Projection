@@ -31,7 +31,7 @@ namespace Microsoft.UI.Input.Experimental
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.Experimental.ExpInputSite))]
     [global::ABI.Microsoft.UI.Input.Experimental.ExpInputSiteRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IExpInputSite))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class ExpInputSite : global::System.IDisposable, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ExpInputSite>
     {
@@ -116,7 +116,7 @@ namespace Microsoft.UI.Input.Experimental
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.Experimental.ExpPointerPoint))]
     [global::ABI.Microsoft.UI.Input.Experimental.ExpPointerPointRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IExpPointerPoint))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class ExpPointerPoint : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<ExpPointerPoint>
     {
@@ -215,19 +215,19 @@ namespace Microsoft.UI.Input.Experimental
         }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("6B707B95-BBE8-5131-A6D7-B11C26CB7CB6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.Experimental.IExpInputSite))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpInputSite
     {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("F9DC0C95-F286-5A1C-B038-7FF84A4E4AF5")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.Experimental.IExpPointerPoint))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpPointerPoint
     {
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("FAE05D62-8E52-5BF5-A577-FF07BB15E031")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.Experimental.IExpPointerPointStatics))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpPointerPointStatics
     {

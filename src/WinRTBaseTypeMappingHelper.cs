@@ -10,7 +10,7 @@ namespace WinRT
 {
     internal static class ProjectionTypesInitializer
     {
-        internal static readonly System.Collections.Generic.Dictionary<string, string> TypeNameToBaseTypeNameMapping = new System.Collections.Generic.Dictionary<string, string>(734, System.StringComparer.Ordinal)
+        internal static readonly System.Collections.Generic.Dictionary<string, string> TypeNameToBaseTypeNameMapping = new System.Collections.Generic.Dictionary<string, string>(735, System.StringComparer.Ordinal)
         {
             ["Microsoft.UI.Xaml.Media.Animation.BasicConnectedAnimationConfiguration"] = "Microsoft.UI.Xaml.Media.Animation.ConnectedAnimationConfiguration",
             ["Microsoft.UI.Xaml.Media.Imaging.SurfaceImageSource"] = "Microsoft.UI.Xaml.Media.ImageSource",
@@ -406,6 +406,7 @@ namespace WinRT
             ["Microsoft.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer"] = "Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer",
             ["Microsoft.UI.Composition.KeyFrameAnimation"] = "Microsoft.UI.Composition.CompositionAnimation",
             ["Microsoft.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer"] = "Microsoft.UI.Xaml.Automation.Peers.ListViewAutomationPeer",
+            ["Microsoft.UI.Input.InputPopupController"] = "Microsoft.UI.Input.InputObject",
             ["Microsoft.UI.Xaml.Automation.Peers.RadioButtonAutomationPeer"] = "Microsoft.UI.Xaml.Automation.Peers.ToggleButtonAutomationPeer",
             ["Microsoft.UI.Xaml.Controls.VirtualizingPanel"] = "Microsoft.UI.Xaml.Controls.Panel",
             ["Microsoft.UI.Composition.Visual"] = "Microsoft.UI.Composition.CompositionObject",

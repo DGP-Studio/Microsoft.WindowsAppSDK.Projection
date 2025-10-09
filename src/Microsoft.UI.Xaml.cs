@@ -11180,7 +11180,7 @@ namespace Microsoft.UI.Xaml
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(589824u)]
     public enum WinUIContract
     {
     }
@@ -11758,7 +11758,7 @@ namespace Microsoft.UI.Xaml
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(589824u)]
     public enum XamlContract
     {
     }

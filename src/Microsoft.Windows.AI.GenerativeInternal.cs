@@ -198,6 +198,12 @@ namespace Microsoft.Windows.AI.GenerativeInternal
         [global::Windows.Foundation.Metadata.Overload(@"GenerateResponseWithProgressEvent2")]
         string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, string skillOptions, ILanguageModelSessionAdapter adapter);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][Guid("39B5AE48-F70B-4709-88EB-617FB136EB2C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSession))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(LanguageModelSessionContract), 589824u)]
+    public interface ITextIntelligenceSession
+    {
+        ulong GetTIContextPromptCutoffIndex(string prompt, ILanguageModelSessionContext context, LanguageModelSkill skill, string skillOptions);
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<ImageDescriptionKindInternal>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(ImageDescriptionSessionContract), 65536u)]
     public enum ImageDescriptionKindInternal : int
     {
@@ -262,7 +268,7 @@ namespace Microsoft.Windows.AI.GenerativeInternal
         public override bool Equals(object obj) => obj is LanguageModelOptionsInternal that && this == that;
         public override int GetHashCode() => Skill.GetHashCode() ^ Temp.GetHashCode() ^ Top_p.GetHashCode() ^ Top_k.GetHashCode();
     }
-    [global::Windows.Foundation.Metadata.ContractVersion(524288u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(589824u)]
     public enum LanguageModelSessionContract
     {
     }
@@ -3554,6 +3560,90 @@ namespace ABI.Microsoft.Windows.AI.GenerativeInternal
         Guid global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId => ((global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore)(IWinRTObject)this).VectorSpaceId;
 
         void global::System.IDisposable.Dispose() => ((global::System.IDisposable)(IWinRTObject)this).Dispose();
+    }
+
+    public static class ITextIntelligenceSessionMethods
+    {
+
+
+        public static unsafe ulong GetTIContextPromptCutoffIndex(IObjectReference _obj, string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelSkill skill, string skillOptions)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __context = default;
+            ulong __retval = default;
+            try
+            {
+                __context = MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.CreateMarshaler2(context, global::ABI.Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContextMethods.IID);
+                MarshalString.Pinnable __prompt = new(prompt);
+                MarshalString.Pinnable __skillOptions = new(skillOptions);
+                fixed(void* ___prompt = __prompt, ___skillOptions = __skillOptions)
+                {
+                    global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelSkill, IntPtr, ulong*, int>**)ThisPtr)[6](ThisPtr, MarshalString.GetAbi(ref __prompt), MarshalInspectable<object>.GetAbi(__context), skill, MarshalString.GetAbi(ref __skillOptions), &__retval));
+                    global::System.GC.KeepAlive(_obj);
+                    return __retval;
+                }
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__context);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x48, 0xAE, 0xB5, 0x39, 0xB, 0xF7, 0x9, 0x47, 0x88, 0xEB, 0x61, 0x7F, 0xB1, 0x36, 0xEB, 0x2C };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+        public static global::System.IntPtr AbiToProjectionVftablePtr => ITextIntelligenceSession.AbiToProjectionVftablePtr;
+
+    }
+    [DynamicInterfaceCastableImplementation]
+    [Guid("39B5AE48-F70B-4709-88EB-617FB136EB2C")]
+    internal unsafe interface ITextIntelligenceSession : global::Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSession
+    {
+
+        public static readonly IntPtr AbiToProjectionVftablePtr;
+        static unsafe ITextIntelligenceSession()
+        {
+            AbiToProjectionVftablePtr = ComWrappersSupport.AllocateVtableMemory(typeof(ITextIntelligenceSession), sizeof(IInspectable.Vftbl) + sizeof(IntPtr) * 1);
+            *(IInspectable.Vftbl*)AbiToProjectionVftablePtr = IInspectable.Vftbl.AbiToProjectionVftable;
+            ((delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelSkill, IntPtr, ulong*, int>*)AbiToProjectionVftablePtr)[6] = &Do_Abi_GetTIContextPromptCutoffIndex_0;
+        }
+
+        [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvStdcall) })]
+        private static unsafe int Do_Abi_GetTIContextPromptCutoffIndex_0(IntPtr thisPtr, IntPtr prompt, IntPtr context, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelSkill skill, IntPtr skillOptions, ulong* result)
+        {
+
+            ulong __result = default;
+
+            *result = default;
+
+            try
+            {
+                __result = global::WinRT.ComWrappersSupport.FindObject<global::Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSession>(thisPtr).GetTIContextPromptCutoffIndex(MarshalString.FromAbi(prompt), MarshalInterface<global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext>.FromAbi(context), skill, MarshalString.FromAbi(skillOptions));
+                *result = __result;
+
+            }
+            catch (Exception __exception__)
+            {
+                global::WinRT.ExceptionHelpers.SetErrorInfo(__exception__);
+                return global::WinRT.ExceptionHelpers.GetHRForException(__exception__);
+            }
+            return 0;
+        }
+
+        unsafe ulong global::Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSession.GetTIContextPromptCutoffIndex(string prompt, global::Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext context, global::Microsoft.Windows.AI.GenerativeInternal.LanguageModelSkill skill, string skillOptions)
+        {
+            var _obj = ((IObjectReference)((IWinRTObject)this).GetObjectReferenceForType(typeof(global::Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSession).TypeHandle));
+            return global::ABI.Microsoft.Windows.AI.GenerativeInternal.ITextIntelligenceSessionMethods.GetTIContextPromptCutoffIndex(_obj, prompt, context, skill, skillOptions);
+        }
     }
 
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]

@@ -1569,7 +1569,7 @@ namespace Microsoft.UI.Input
         InputKeyboardSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("34B960C5-A5AE-52AF-8566-6D2D55FF52D1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputKeyboardSourceStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IInputKeyboardSourceStatics3
     {
@@ -1588,7 +1588,7 @@ namespace Microsoft.UI.Input
         InputLightDismissAction GetForWindowId(global::Microsoft.UI.WindowId windowId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C499A8A8-7182-5179-A28C-EAB3F369B6F9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputLightDismissActionStatics2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IInputLightDismissActionStatics2
     {
@@ -1598,6 +1598,14 @@ namespace Microsoft.UI.Input
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65536u)]
     internal interface IInputLightDismissEventArgs
     {
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("099DE760-B54F-5BAB-8B69-66C5546D80D1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs2))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInputLightDismissEventArgs2
+    {
+        bool Handled { get; set; }
+        LightDismissReason Reason { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("471732B4-3D07-5104-B192-EBACF71E86DF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputNonClientPointerSource))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -1661,7 +1669,7 @@ namespace Microsoft.UI.Input
         event global::Windows.Foundation.TypedEventHandler<InputPointerSource, PointerEventArgs> PointerWheelChanged;
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("58757E6E-DA80-5AD2-A088-B90E8E407379")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPointerSource2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IInputPointerSource2
     {
@@ -1677,13 +1685,28 @@ namespace Microsoft.UI.Input
         InputPointerSource GetForIsland(global::Microsoft.UI.Content.ContentIsland island);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("76B37B4A-DE02-531A-A9D2-185186159D31")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPointerSourceStatics2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IInputPointerSourceStatics2
     {
         InputPointerSource GetForVisual(global::Microsoft.UI.Composition.Visual visual);
         InputPointerSource GetForWindowId(global::Microsoft.UI.WindowId windowId);
         void RemoveForVisual(global::Microsoft.UI.Composition.Visual visual);
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("433EAD0D-3822-58EA-90FA-EB3E0B39829B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPopupController))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInputPopupController
+    {
+        PopupPointerMode Mode { get; set; }
+        event global::Windows.Foundation.TypedEventHandler<InputPopupController, InputLightDismissEventArgs> LightDismissed;
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("B7EC6BDB-FEA5-581C-966F-8D4238817B3B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPopupControllerStatics))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    internal interface IInputPopupControllerStatics
+    {
+        InputPopupController GetForPopup(global::Microsoft.UI.Content.DesktopPopupSiteBridge popupBridge);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("2F327FEB-B7E7-5E37-A0CC-37DCABE76588")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.IInputPreTranslateKeyboardSource))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65540u)]
@@ -1871,7 +1894,7 @@ namespace Microsoft.UI.Input
         uint TapCount { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("C2196F0C-60ED-5B5D-B919-AA7357E0A25C")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.ITouchHitTestingEventArgs))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface ITouchHitTestingEventArgs
     {
@@ -2899,7 +2922,7 @@ namespace Microsoft.UI.Input
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputLayoutPolicy>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputLayoutPolicy>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum InputLayoutPolicy : int
     {
@@ -3028,6 +3051,14 @@ namespace Microsoft.UI.Input
 
 
         private IObjectReference _objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs => _inner;
+        private volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2;
+        private IObjectReference Make___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs2Methods.IID), null);
+            return ___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2;
+        }
+        private IObjectReference _objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2 => ___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2 ?? Make___objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2();
+
 
 
         public static InputLightDismissEventArgs FromAbi(IntPtr thisPtr)
@@ -3069,6 +3100,14 @@ namespace Microsoft.UI.Input
 
         private struct InterfaceTag<I>{};
 
+
+        public bool Handled
+        {
+            get => global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs2Methods.get_Handled(_objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2);
+            set => global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs2Methods.set_Handled(_objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2, value);
+        }
+
+        public LightDismissReason Reason => global::ABI.Microsoft.UI.Input.IInputLightDismissEventArgs2Methods.get_Reason(_objRef_global__Microsoft_UI_Input_IInputLightDismissEventArgs2);
 
         private bool IsOverridableInterface(Guid iid) => false;
 
@@ -3381,7 +3420,7 @@ namespace Microsoft.UI.Input
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputPointerActivationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<InputPointerActivationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum InputPointerActivationBehavior : int
     {
@@ -3599,6 +3638,102 @@ namespace Microsoft.UI.Input
         Touch = unchecked((uint)0x1),
         Pen = unchecked((uint)0x2),
         Mouse = unchecked((uint)0x4),
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.InputPopupController))]
+    [global::ABI.Microsoft.UI.Input.InputPopupControllerRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(IInputPopupController))]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public sealed class InputPopupController : InputObject, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<InputPopupController>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_UI_Input_IInputPopupController => _inner;
+
+
+        public static I As<I>() => ActivationFactory.Get("Microsoft.UI.Input.InputPopupController").AsInterface<I>();
+
+        private static volatile IObjectReference ___objRef_global__Microsoft_UI_Input_IInputPopupControllerStatics;
+        private static IObjectReference _objRef_global__Microsoft_UI_Input_IInputPopupControllerStatics
+        {
+            get
+            { 
+                var factory = ___objRef_global__Microsoft_UI_Input_IInputPopupControllerStatics;
+                if (factory != null && factory.IsInCurrentContext)
+                {
+                    return factory;
+                }
+                else
+                {
+                    return ___objRef_global__Microsoft_UI_Input_IInputPopupControllerStatics = ActivationFactory.Get("Microsoft.UI.Input.InputPopupController", global::ABI.Microsoft.UI.Input.IInputPopupControllerStaticsMethods.IID);
+                }
+            }
+        }
+
+        public static InputPopupController GetForPopup(global::Microsoft.UI.Content.DesktopPopupSiteBridge popupBridge) => global::ABI.Microsoft.UI.Input.IInputPopupControllerStaticsMethods.GetForPopup(_objRef_global__Microsoft_UI_Input_IInputPopupControllerStatics, popupBridge);
+
+        public static new InputPopupController FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<InputPopupController>.FromAbi(thisPtr);
+        }
+
+        internal InputPopupController(IObjectReference objRef)
+            : base(global::WinRT.DerivedComposed.Instance)
+
+        {
+            _inner = objRef.As(global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.IID);
+
+        }
+
+
+        public static bool operator ==(InputPopupController x, InputPopupController y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(InputPopupController x, InputPopupController y) => !(x == y);
+        public bool Equals(InputPopupController other) => this == other;
+        public override bool Equals(object obj) => obj is InputPopupController that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+
+        private struct InterfaceTag<I>{};
+
+
+        public event global::Windows.Foundation.TypedEventHandler<InputPopupController, InputLightDismissEventArgs> LightDismissed
+        {
+            add => global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.Get_LightDismissed2(_objRef_global__Microsoft_UI_Input_IInputPopupController, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.Get_LightDismissed2(_objRef_global__Microsoft_UI_Input_IInputPopupController, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public PopupPointerMode Mode
+        {
+            get => global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.get_Mode(_objRef_global__Microsoft_UI_Input_IInputPopupController);
+            set => global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.set_Mode(_objRef_global__Microsoft_UI_Input_IInputPopupController, value);
+        }
+
+        protected override bool IsOverridableInterface(Guid iid) => base.IsOverridableInterface(iid);
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.InputPreTranslateKeyboardSource))]
@@ -3873,6 +4008,17 @@ namespace Microsoft.UI.Input
 
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<LightDismissReason>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum LightDismissReason : int
+    {
+        Programmatic = unchecked((int)0),
+        WindowMoved = unchecked((int)0x1),
+        ActivationChanged = unchecked((int)0x2),
+        KeyboardEvent = unchecked((int)0x3),
+        PointerEvent = unchecked((int)0x4),
+        VisibilityChanged = unchecked((int)0x5),
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.ManipulationCompletedEventArgs))]
@@ -5053,7 +5199,15 @@ namespace Microsoft.UI.Input
         XButton2Pressed = unchecked((int)0x9),
         XButton2Released = unchecked((int)0xa),
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI", "struct(Microsoft.UI.Input.ProximityEvaluation;i4;struct(Windows.Foundation.Point;f4;f4))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<ProximityEvaluation, ProximityEvaluation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PopupPointerMode>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
+    [global::Windows.Foundation.Metadata.Experimental]
+    public enum PopupPointerMode : int
+    {
+        Default = unchecked((int)0),
+        Modal = unchecked((int)0x1),
+        LightDismiss = unchecked((int)0x2),
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI", "struct(Microsoft.UI.Input.ProximityEvaluation;i4;struct(Windows.Foundation.Point;f4;f4))")][global::WinRT.WindowsRuntimeHelperType][global::WinRT.WinRTExposedType(typeof(global::WinRT.StructTypeDetails<ProximityEvaluation, ProximityEvaluation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public struct ProximityEvaluation: IEquatable<ProximityEvaluation>
     {
@@ -5233,7 +5387,7 @@ namespace Microsoft.UI.Input
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgs))]
     [global::ABI.Microsoft.UI.Input.TouchHitTestingEventArgsRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(ITouchHitTestingEventArgs))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class TouchHitTestingEventArgs : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<TouchHitTestingEventArgs>
     {
@@ -8384,6 +8538,53 @@ namespace ABI.Microsoft.UI.Input
     internal interface IInputLightDismissEventArgs : global::Microsoft.UI.Input.IInputLightDismissEventArgs
     {
     }
+    internal static class IInputLightDismissEventArgs2Methods
+    {
+
+        internal static unsafe bool get_Handled(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_Handled(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[8](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe global::Microsoft.UI.Input.LightDismissReason get_Reason(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Input.LightDismissReason __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.LightDismissReason*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x60, 0xE7, 0x9D, 0x9, 0x4F, 0xB5, 0xAB, 0x5B, 0x8B, 0x69, 0x66, 0xC5, 0x54, 0x6D, 0x80, 0xD1 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("099DE760-B54F-5BAB-8B69-66C5546D80D1")]
+    internal interface IInputLightDismissEventArgs2 : global::Microsoft.UI.Input.IInputLightDismissEventArgs2
+    {
+    }
     internal static class IInputNonClientPointerSourceMethods
     {
 
@@ -9435,6 +9636,109 @@ namespace ABI.Microsoft.UI.Input
     }
     [Guid("76B37B4A-DE02-531A-A9D2-185186159D31")]
     internal interface IInputPointerSourceStatics2 : global::Microsoft.UI.Input.IInputPointerSourceStatics2
+    {
+    }
+    internal static class IInputPopupControllerMethods
+    {
+
+        internal static unsafe global::Microsoft.UI.Input.PopupPointerMode get_Mode(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Microsoft.UI.Input.PopupPointerMode __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.PopupPointerMode*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_Mode(IObjectReference _obj, global::Microsoft.UI.Input.PopupPointerMode value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Microsoft.UI.Input.PopupPointerMode, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>> _LightDismissed_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>> MakeLightDismissedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _LightDismissed_, new(), null);
+            return _LightDismissed_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>>> _LightDismissed => _LightDismissed_ ?? MakeLightDismissedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.UI.Input.InputPopupController, global::Microsoft.UI.Input.InputLightDismissEventArgs>> Get_LightDismissed2(IObjectReference _obj, object _thisObj)
+        {
+            return _LightDismissed.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_UI_Input_InputPopupController__global__Microsoft_UI_Input_InputLightDismissEventArgs_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
+                0);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xD, 0xAD, 0x3E, 0x43, 0x22, 0x38, 0xEA, 0x58, 0x90, 0xFA, 0xEB, 0x3E, 0xB, 0x39, 0x82, 0x9B };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("433EAD0D-3822-58EA-90FA-EB3E0B39829B")]
+    internal interface IInputPopupController : global::Microsoft.UI.Input.IInputPopupController
+    {
+    }
+    internal static class IInputPopupControllerStaticsMethods
+    {
+
+
+        internal static unsafe global::Microsoft.UI.Input.InputPopupController GetForPopup(IObjectReference _obj, global::Microsoft.UI.Content.DesktopPopupSiteBridge popupBridge)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __popupBridge = default;
+            IntPtr __retval = default;
+            try
+            {
+                __popupBridge = global::ABI.Microsoft.UI.Content.DesktopPopupSiteBridge.CreateMarshaler2(popupBridge);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__popupBridge), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.UI.Input.InputPopupController.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__popupBridge);
+                global::ABI.Microsoft.UI.Input.InputPopupController.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xDB, 0x6B, 0xEC, 0xB7, 0xA5, 0xFE, 0x1C, 0x58, 0x96, 0x6F, 0x8D, 0x42, 0x38, 0x81, 0x7B, 0x3B };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("B7EC6BDB-FEA5-581C-966F-8D4238817B3B")]
+    internal interface IInputPopupControllerStatics : global::Microsoft.UI.Input.IInputPopupControllerStatics
     {
     }
     internal static class IInputPreTranslateKeyboardSourceMethods
@@ -11551,6 +11855,31 @@ namespace ABI.Microsoft.UI.Input
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.UI.Input.InputPointerSource(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct InputPopupController
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.UI.Input.InputPopupController obj) => obj is null ? null : MarshalInspectable<global::Microsoft.UI.Input.InputPopupController>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.UI.Input.InputPopupController obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.UI.Input.IInputPopupControllerMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.UI.Input.InputPopupController FromAbi(IntPtr thisPtr) => global::Microsoft.UI.Input.InputPopupController.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.UI.Input.InputPopupController obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.MarshalerArray CreateMarshalerArray(global::Microsoft.UI.Input.InputPopupController[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.GetAbiArray(box);
+        public static unsafe global::Microsoft.UI.Input.InputPopupController[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.UI.Input.InputPopupController[] array, object box) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.UI.Input.InputPopupController[] array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.UI.Input.InputPopupController>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class InputPopupControllerRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.UI.Input.InputPopupController(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct InputPreTranslateKeyboardSource

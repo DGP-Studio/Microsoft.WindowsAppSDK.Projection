@@ -27,18 +27,17 @@ using WinRT.Interop;
 
 namespace Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
 {
-    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Background.UniversalBGTask")][Guid("D47C97E5-A23F-5B32-8A2E-B93C8CAE4299")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITask))]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Background.UniversalBGTask")][Guid("89CF5F73-8195-590B-8158-BC7D2816CE16")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITask))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(UniversalBackgroundTaskContract), 65536u)]
     internal interface ITask
     {
-        void Run(global::Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Background.UniversalBGTask")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.Task))]
     [global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.TaskRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(ITask))]
     [global::Windows.Foundation.Metadata.ContractVersion(typeof(UniversalBackgroundTaskContract), 65536u)]
-    public sealed class Task : global::Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITask, global::Windows.ApplicationModel.Background.IBackgroundTask, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<Task>
+    public sealed class Task : global::Windows.ApplicationModel.Background.IBackgroundTask, global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<Task>
     {
         private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
 
@@ -61,7 +60,7 @@ namespace Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
         private static IObjectReference _objRef_global__Microsoft_Windows_ApplicationModel_Background_UniversalBGTask_Task
         {
             get
-            {
+            { 
                 var factory = ___objRef_global__Microsoft_Windows_ApplicationModel_Background_UniversalBGTask_Task;
                 if (factory != null && factory.IsInCurrentContext)
                 {
@@ -74,7 +73,7 @@ namespace Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
             }
         }
 
-        public Task()
+        public Task() 
         {
             _inner = global::ABI.WinRT.Interop.IActivationFactoryMethods.ActivateInstanceUnsafe(_objRef_global__Microsoft_Windows_ApplicationModel_Background_UniversalBGTask_Task, global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITaskMethods.IID);
             ComWrappersSupport.RegisterObjectForInterface(this, ThisPtr);
@@ -107,14 +106,14 @@ namespace Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
         private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
         private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
         {
-            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null);
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
             return _queryInterfaceCache;
         }
         global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
         private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
         private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
         {
-            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null);
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
             return _additionalTypeData;
         }
         global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
@@ -122,9 +121,9 @@ namespace Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
         private struct InterfaceTag<I>{};
 
 
-        void ITask.Run(global::Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance) => global::ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITaskMethods.Run(_objRef_global__Microsoft_Windows_ApplicationModel_Background_UniversalBGTask_ITask, taskInstance);
         [global::System.Runtime.Versioning.SupportedOSPlatform("Windows10.0.10240.0")]
-        void global::Windows.ApplicationModel.Background.IBackgroundTask.Run(global::Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance) => global::ABI.Windows.ApplicationModel.Background.IBackgroundTaskMethods.Run(_objRef_global__Windows_ApplicationModel_Background_IBackgroundTask, taskInstance);
+        public void Run(global::Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance) => global::ABI.Windows.ApplicationModel.Background.IBackgroundTaskMethods.Run(_objRef_global__Windows_ApplicationModel_Background_IBackgroundTask, taskInstance);
+
         private bool IsOverridableInterface(Guid iid) => false;
 
         global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
@@ -156,36 +155,19 @@ namespace ABI.Microsoft.Windows.ApplicationModel.Background.UniversalBGTask
     {
 
 
-        internal static unsafe void Run(IObjectReference _obj, global::Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance)
-        {
-            var ThisPtr = _obj.ThisPtr;
-
-            ObjectReferenceValue __taskInstance = default;
-            try
-            {
-                __taskInstance = MarshalInterface<global::Windows.ApplicationModel.Background.IBackgroundTaskInstance>.CreateMarshaler2(taskInstance, global::ABI.Windows.ApplicationModel.Background.IBackgroundTaskInstanceMethods.IID);
-                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[6](ThisPtr, MarshalInspectable<object>.GetAbi(__taskInstance)));
-                global::System.GC.KeepAlive(_obj);
-            }
-            finally
-            {
-                MarshalInspectable<object>.DisposeMarshaler(__taskInstance);
-            }
-        }
-
 
         public static ref readonly global::System.Guid IID
         {
             [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
             get
             {
-                global::System.ReadOnlySpan<byte> data = new byte[] { 0xE5, 0x97, 0x7C, 0xD4, 0x3F, 0xA2, 0x32, 0x5B, 0x8A, 0x2E, 0xB9, 0x3C, 0x8C, 0xAE, 0x42, 0x99 };
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x73, 0x5F, 0xCF, 0x89, 0x95, 0x81, 0xB, 0x59, 0x81, 0x58, 0xBC, 0x7D, 0x28, 0x16, 0xCE, 0x16 };
                 return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
             }
         }
 
     }
-    [Guid("D47C97E5-A23F-5B32-8A2E-B93C8CAE4299")]
+    [Guid("89CF5F73-8195-590B-8158-BC7D2816CE16")]
     internal interface ITask : global::Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.ITask
     {
     }

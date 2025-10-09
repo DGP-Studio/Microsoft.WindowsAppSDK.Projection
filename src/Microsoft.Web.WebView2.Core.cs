@@ -200,6 +200,14 @@ namespace Microsoft.Web.WebView2.Core
         }
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_27 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_27 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_27();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28;
+        private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_28Methods.IID), null);
+            return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28;
+        }
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28();
+
         private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_3;
         private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_3()
         {
@@ -625,6 +633,8 @@ namespace Microsoft.Web.WebView2.Core
         public CoreWebView2Environment Environment => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_2Methods.get_Environment(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_2);
 
         public string FaviconUri => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_15Methods.get_FaviconUri(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_15);
+
+        public CoreWebView2Find Find => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_28Methods.get_Find(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_28);
 
         public uint FrameId => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_20Methods.get_FrameId(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2_20);
 
@@ -2270,6 +2280,22 @@ namespace Microsoft.Web.WebView2.Core
             return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions2;
         }
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions2 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions2 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions2();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3;
+        private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions3Methods.IID), null);
+            return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3;
+        }
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3();
+
+        private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4;
+        private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions4Methods.IID), null);
+            return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4;
+        }
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4();
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions => _inner;
 
 
@@ -2312,6 +2338,18 @@ namespace Microsoft.Web.WebView2.Core
 
         private struct InterfaceTag<I>{};
 
+
+        public bool AllowHostInputProcessing
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions4Methods.get_AllowHostInputProcessing(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions4Methods.set_AllowHostInputProcessing(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions4, value);
+        }
+
+        public global::Windows.UI.Color DefaultBackgroundColor
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions3Methods.get_DefaultBackgroundColor(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions3Methods.set_DefaultBackgroundColor(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2ControllerOptions3, value);
+        }
 
         public bool IsInPrivateModeEnabled
         {
@@ -3361,6 +3399,14 @@ namespace Microsoft.Web.WebView2.Core
         }
         private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment14 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment14 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment14();
 
+        private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15;
+        private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15, ((IWinRTObject)this).NativeObject.As<IUnknownVftbl>(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment15Methods.IID), null);
+            return ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15;
+        }
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15 => ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15 ?? Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15();
+
         private volatile IObjectReference ___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment2;
         private IObjectReference Make___objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment2()
         {
@@ -3532,6 +3578,8 @@ namespace Microsoft.Web.WebView2.Core
         public CoreWebView2FileSystemHandle CreateWebFileSystemFileHandle(string Path, CoreWebView2FileSystemHandlePermission Permission) => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment14Methods.CreateWebFileSystemFileHandle(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment14, Path, Permission);
 
         public CoreWebView2FileSystemHandle CreateWebFileSystemDirectoryHandle(string Path, CoreWebView2FileSystemHandlePermission Permission) => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment14Methods.CreateWebFileSystemDirectoryHandle(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment14, Path, Permission);
+
+        public CoreWebView2FindOptions CreateFindOptions() => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment15Methods.CreateFindOptions(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment15);
 
         public CoreWebView2WebResourceRequest CreateWebResourceRequest(string uri, string Method, global::Windows.Storage.Streams.IRandomAccessStream postData, string Headers) => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment2Methods.CreateWebResourceRequest(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Environment2, uri, Method, postData, Headers);
 
@@ -4094,6 +4142,206 @@ namespace Microsoft.Web.WebView2.Core
     {
         ReadOnly = unchecked((int)0),
         ReadWrite = unchecked((int)0x1),
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Find))]
+    [global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ICoreWebView2Find))]
+    public sealed class CoreWebView2Find : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CoreWebView2Find>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find => _inner;
+
+
+        public static CoreWebView2Find FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<CoreWebView2Find>.FromAbi(thisPtr);
+        }
+
+        internal CoreWebView2Find(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.IID);
+
+        }
+
+
+        public static bool operator ==(CoreWebView2Find x, CoreWebView2Find y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(CoreWebView2Find x, CoreWebView2Find y) => !(x == y);
+        public bool Equals(CoreWebView2Find other) => this == other;
+        public override bool Equals(object obj) => obj is CoreWebView2Find that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public global::Windows.Foundation.IAsyncAction StartAsync(CoreWebView2FindOptions options) => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.StartAsync(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find, options);
+
+        public void FindNext() => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.FindNext(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find);
+
+        public void FindPrevious() => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.FindPrevious(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find);
+
+        public void Stop() => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.Stop(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find);
+
+        public event global::Windows.Foundation.TypedEventHandler<CoreWebView2Find, object> ActiveMatchIndexChanged
+        {
+            add => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.Get_ActiveMatchIndexChanged2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.Get_ActiveMatchIndexChanged2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public event global::Windows.Foundation.TypedEventHandler<CoreWebView2Find, object> MatchCountChanged
+        {
+            add => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.Get_MatchCountChanged2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find, (IWinRTObject)this).Subscribe(value);
+            remove => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.Get_MatchCountChanged2(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find, (IWinRTObject)this).Unsubscribe(value);
+        }
+
+        public int ActiveMatchIndex => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.get_ActiveMatchIndex(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find);
+
+        public int MatchCount => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.get_MatchCount(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2Find);
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")]
+    [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindOptions))]
+    [global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindOptionsRcwFactory]
+    [global::WinRT.ProjectedRuntimeClass(typeof(ICoreWebView2FindOptions))]
+    public sealed class CoreWebView2FindOptions : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CoreWebView2FindOptions>
+    {
+        private IntPtr ThisPtr => _inner == null ? (((IWinRTObject)this).NativeObject).ThisPtr : _inner.ThisPtr;
+
+        private readonly IObjectReference _inner = null;
+
+
+
+        private IObjectReference _objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions => _inner;
+
+
+        public static CoreWebView2FindOptions FromAbi(IntPtr thisPtr)
+        {
+            if (thisPtr == IntPtr.Zero) return null;
+            return MarshalInspectable<CoreWebView2FindOptions>.FromAbi(thisPtr);
+        }
+
+        internal CoreWebView2FindOptions(IObjectReference objRef)
+        {
+            _inner = objRef.As(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.IID);
+
+        }
+
+
+        public static bool operator ==(CoreWebView2FindOptions x, CoreWebView2FindOptions y) => (x?.ThisPtr ?? IntPtr.Zero) == (y?.ThisPtr ?? IntPtr.Zero);
+        public static bool operator !=(CoreWebView2FindOptions x, CoreWebView2FindOptions y) => !(x == y);
+        public bool Equals(CoreWebView2FindOptions other) => this == other;
+        public override bool Equals(object obj) => obj is CoreWebView2FindOptions that && this == that;
+        public override int GetHashCode() => ThisPtr.GetHashCode();
+
+
+        bool IWinRTObject.HasUnwrappableNativeObject => true;
+        IObjectReference IWinRTObject.NativeObject => _inner;
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> _queryInterfaceCache;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> MakeQueryInterfaceCache()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _queryInterfaceCache, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>(), null); 
+            return _queryInterfaceCache;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, IObjectReference> IWinRTObject.QueryInterfaceCache => _queryInterfaceCache ?? MakeQueryInterfaceCache();
+        private volatile global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> _additionalTypeData;
+        private global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> MakeAdditionalTypeData()
+        {
+            global::System.Threading.Interlocked.CompareExchange(ref _additionalTypeData, new global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object>(), null); 
+            return _additionalTypeData;
+        }
+        global::System.Collections.Concurrent.ConcurrentDictionary<RuntimeTypeHandle, object> IWinRTObject.AdditionalTypeData => _additionalTypeData ?? MakeAdditionalTypeData();
+
+        private struct InterfaceTag<I>{};
+
+
+        public string FindTerm
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.get_FindTerm(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.set_FindTerm(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions, value);
+        }
+
+        public bool IsCaseSensitive
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.get_IsCaseSensitive(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.set_IsCaseSensitive(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions, value);
+        }
+
+        public bool ShouldHighlightAllMatches
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.get_ShouldHighlightAllMatches(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.set_ShouldHighlightAllMatches(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions, value);
+        }
+
+        public bool ShouldMatchWord
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.get_ShouldMatchWord(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.set_ShouldMatchWord(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions, value);
+        }
+
+        public bool SuppressDefaultFindDialog
+        {
+            get => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.get_SuppressDefaultFindDialog(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions);
+            set => global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.set_SuppressDefaultFindDialog(_objRef_global__Microsoft_Web_WebView2_Core_ICoreWebView2FindOptions, value);
+        }
+
+        private bool IsOverridableInterface(Guid iid) => false;
+
+        global::System.Runtime.InteropServices.CustomQueryInterfaceResult global::System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref Guid iid, out IntPtr ppv)
+        {
+            ppv = IntPtr.Zero;
+            if (IsOverridableInterface(iid) || global::WinRT.Interop.IID.IID_IInspectable == iid)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+            }
+
+            if (((IWinRTObject)this).NativeObject.TryAs(iid, out ppv) >= 0)
+            {
+                return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.Handled;
+            }
+
+            return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
+        }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")]
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Frame))]
@@ -8829,6 +9077,16 @@ namespace Microsoft.Web.WebView2.Core
     {
         string ScriptLocale { get; set; }
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("D8DE3799-3BD3-5656-A9FE-EF2CB8879239")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions3))]
+    internal interface ICoreWebView2ControllerOptions3
+    {
+        global::Windows.UI.Color DefaultBackgroundColor { get; set; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("650FCF6C-966D-542E-86E5-8889D6C734A5")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions4))]
+    internal interface ICoreWebView2ControllerOptions4
+    {
+        bool AllowHostInputProcessing { get; set; }
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("0FEDDAD4-48A3-5CC4-9F61-E7ADFD1E9C76")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2ControllerWindowReference))]
     internal interface ICoreWebView2ControllerWindowReference
     {
@@ -8978,6 +9236,11 @@ namespace Microsoft.Web.WebView2.Core
         CoreWebView2FileSystemHandle CreateWebFileSystemFileHandle(string Path, CoreWebView2FileSystemHandlePermission Permission);
         CoreWebView2FileSystemHandle CreateWebFileSystemDirectoryHandle(string Path, CoreWebView2FileSystemHandlePermission Permission);
     }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("37B49C50-B262-5563-A5ED-AE60182495C0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment15))]
+    internal interface ICoreWebView2Environment15
+    {
+        CoreWebView2FindOptions CreateFindOptions();
+    }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("0B634668-1017-5FC7-9921-F1F51866A8C0")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Environment2))]
     internal interface ICoreWebView2Environment2
     {
@@ -9117,6 +9380,27 @@ namespace Microsoft.Web.WebView2.Core
         CoreWebView2FileSystemHandleKind Kind { get; }
         string Path { get; }
         CoreWebView2FileSystemHandlePermission Permission { get; }
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("D9AFBD37-AEB2-5109-BB8F-6FF27CF9D279")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Find))]
+    internal interface ICoreWebView2Find
+    {
+        global::Windows.Foundation.IAsyncAction StartAsync(CoreWebView2FindOptions options);
+        void FindNext();
+        void FindPrevious();
+        void Stop();
+        int ActiveMatchIndex { get; }
+        int MatchCount { get; }
+        event global::Windows.Foundation.TypedEventHandler<CoreWebView2Find, object> ActiveMatchIndexChanged;
+        event global::Windows.Foundation.TypedEventHandler<CoreWebView2Find, object> MatchCountChanged;
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("157B920B-E1DC-5792-8A21-26A1C882C3F6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptions))]
+    internal interface ICoreWebView2FindOptions
+    {
+        string FindTerm { get; set; }
+        bool IsCaseSensitive { get; set; }
+        bool ShouldHighlightAllMatches { get; set; }
+        bool ShouldMatchWord { get; set; }
+        bool SuppressDefaultFindDialog { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("02FFCBF9-19E7-5BB8-8273-346420FB1503")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2Frame))]
     internal interface ICoreWebView2Frame
@@ -9786,6 +10070,11 @@ namespace Microsoft.Web.WebView2.Core
     internal interface ICoreWebView2_27
     {
         event global::Windows.Foundation.TypedEventHandler<CoreWebView2, CoreWebView2ScreenCaptureStartingEventArgs> ScreenCaptureStarting;
+    }
+    [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("6E43A033-D2E9-59FC-8856-88D4F7438C4D")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_28))]
+    internal interface ICoreWebView2_28
+    {
+        CoreWebView2Find Find { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Web.WebView2.Core")][Guid("A8C76AE7-6170-5DFE-8F00-79CD76A9B4D9")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2_3))]
     internal interface ICoreWebView2_3
@@ -10674,6 +10963,56 @@ namespace ABI.Microsoft.Web.WebView2.Core
     {
         public override object CreateInstance(global::WinRT.IInspectable inspectable)
             => new global::Microsoft.Web.WebView2.Core.CoreWebView2FileSystemHandle(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct CoreWebView2Find
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Web.WebView2.Core.CoreWebView2Find obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Web.WebView2.Core.CoreWebView2Find obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Web.WebView2.Core.CoreWebView2Find FromAbi(IntPtr thisPtr) => global::Microsoft.Web.WebView2.Core.CoreWebView2Find.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Web.WebView2.Core.CoreWebView2Find obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.MarshalerArray CreateMarshalerArray(global::Microsoft.Web.WebView2.Core.CoreWebView2Find[] array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Web.WebView2.Core.CoreWebView2Find[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Web.WebView2.Core.CoreWebView2Find[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Web.WebView2.Core.CoreWebView2Find[] array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2Find>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class CoreWebView2FindRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Web.WebView2.Core.CoreWebView2Find(inspectable.ObjRef);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    public struct CoreWebView2FindOptions
+    {
+
+        public static IObjectReference CreateMarshaler(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions obj) => obj is null ? null : MarshalInspectable<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.CreateMarshaler<IUnknownVftbl>(obj, global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.IID);
+        public static ObjectReferenceValue CreateMarshaler2(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions obj) => MarshalInspectable<object>.CreateMarshaler2(obj, global::ABI.Microsoft.Web.WebView2.Core.ICoreWebView2FindOptionsMethods.IID);
+        public static IntPtr GetAbi(IObjectReference value) => value is null ? IntPtr.Zero : MarshalInterfaceHelper<object>.GetAbi(value);
+        public static global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions FromAbi(IntPtr thisPtr) => global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions.FromAbi(thisPtr);
+        public static IntPtr FromManaged(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions obj) => obj is null ? IntPtr.Zero : CreateMarshaler2(obj).Detach();
+        public static unsafe MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.MarshalerArray CreateMarshalerArray(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions[] array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.CreateMarshalerArray2(array, (o) => CreateMarshaler2(o));
+        public static (int length, IntPtr data) GetAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.GetAbiArray(box);
+        public static unsafe global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions[] FromAbiArray(object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.FromAbiArray(box, FromAbi);
+        public static void CopyAbiArray(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions[] array, object box) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.CopyAbiArray(array, box, FromAbi);
+        public static (int length, IntPtr data) FromManagedArray(global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions[] array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.FromManagedArray(array, (o) => FromManaged(o));
+        public static void DisposeMarshaler(IObjectReference value) => MarshalInspectable<object>.DisposeMarshaler(value);
+        public static void DisposeMarshalerArray(MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.MarshalerArray array) => MarshalInterfaceHelper<global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions>.DisposeMarshalerArray(array);
+        public static void DisposeAbi(IntPtr abi) => MarshalInspectable<object>.DisposeAbi(abi);
+        public static unsafe void DisposeAbiArray(object box) => MarshalInspectable<object>.DisposeAbiArray(box);
+    }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+    internal sealed class CoreWebView2FindOptionsRcwFactoryAttribute : global::WinRT.WinRTImplementationTypeRcwFactoryAttribute
+    {
+        public override object CreateInstance(global::WinRT.IInspectable inspectable)
+            => new global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions(inspectable.ObjRef);
     }
     [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
     public struct CoreWebView2Frame
@@ -14926,6 +15265,80 @@ namespace ABI.Microsoft.Web.WebView2.Core
     internal interface ICoreWebView2ControllerOptions2 : global::Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions2
     {
     }
+    internal static class ICoreWebView2ControllerOptions3Methods
+    {
+
+        internal static unsafe global::Windows.UI.Color get_DefaultBackgroundColor(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::Windows.UI.Color __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+        internal static unsafe void set_DefaultBackgroundColor(IObjectReference _obj, global::Windows.UI.Color value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, global::Windows.UI.Color, int>**)ThisPtr)[7](ThisPtr, value));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x99, 0x37, 0xDE, 0xD8, 0xD3, 0x3B, 0x56, 0x56, 0xA9, 0xFE, 0xEF, 0x2C, 0xB8, 0x87, 0x92, 0x39 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("D8DE3799-3BD3-5656-A9FE-EF2CB8879239")]
+    internal interface ICoreWebView2ControllerOptions3 : global::Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions3
+    {
+    }
+    internal static class ICoreWebView2ControllerOptions4Methods
+    {
+
+        internal static unsafe bool get_AllowHostInputProcessing(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_AllowHostInputProcessing(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[7](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x6C, 0xCF, 0xF, 0x65, 0x6D, 0x96, 0x2E, 0x54, 0x86, 0xE5, 0x88, 0x89, 0xD6, 0xC7, 0x34, 0xA5 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("650FCF6C-966D-542E-86E5-8889D6C734A5")]
+    internal interface ICoreWebView2ControllerOptions4 : global::Microsoft.Web.WebView2.Core.ICoreWebView2ControllerOptions4
+    {
+    }
     internal static class ICoreWebView2ControllerWindowReferenceMethods
     {
 
@@ -16591,6 +17004,43 @@ namespace ABI.Microsoft.Web.WebView2.Core
     internal interface ICoreWebView2Environment14 : global::Microsoft.Web.WebView2.Core.ICoreWebView2Environment14
     {
     }
+    internal static class ICoreWebView2Environment15Methods
+    {
+
+
+        internal static unsafe global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions CreateFindOptions(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindOptions.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindOptions.DisposeAbi(__retval);
+            }
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x50, 0x9C, 0xB4, 0x37, 0x62, 0xB2, 0x63, 0x55, 0xA5, 0xED, 0xAE, 0x60, 0x18, 0x24, 0x95, 0xC0 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("37B49C50-B262-5563-A5ED-AE60182495C0")]
+    internal interface ICoreWebView2Environment15 : global::Microsoft.Web.WebView2.Core.ICoreWebView2Environment15
+    {
+    }
     internal static class ICoreWebView2Environment2Methods
     {
 
@@ -17821,6 +18271,258 @@ namespace ABI.Microsoft.Web.WebView2.Core
     }
     [Guid("241CB4C8-0021-5F72-8BF2-E141DCE4C151")]
     internal interface ICoreWebView2FileSystemHandle : global::Microsoft.Web.WebView2.Core.ICoreWebView2FileSystemHandle
+    {
+    }
+    internal static class ICoreWebView2FindMethods
+    {
+
+
+        internal static unsafe global::Windows.Foundation.IAsyncAction StartAsync(IObjectReference _obj, global::Microsoft.Web.WebView2.Core.CoreWebView2FindOptions options)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            ObjectReferenceValue __options = default;
+            IntPtr __retval = default;
+            try
+            {
+                __options = global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2FindOptions.CreateMarshaler2(options);
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, IntPtr*, int>**)ThisPtr)[12](ThisPtr, MarshalInspectable<object>.GetAbi(__options), &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalInterface<global::Windows.Foundation.IAsyncAction>.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalInspectable<object>.DisposeMarshaler(__options);
+                MarshalInterface<global::Windows.Foundation.IAsyncAction>.DisposeAbi(__retval);
+            }
+        }
+
+        internal static unsafe void FindNext(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[13](ThisPtr));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe void FindPrevious(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[14](ThisPtr));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe void Stop(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int>**)ThisPtr)[15](ThisPtr));
+            global::System.GC.KeepAlive(_obj);
+        }
+        internal static unsafe int get_ActiveMatchIndex(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            int __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+        internal static unsafe int get_MatchCount(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            int __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, int*, int>**)ThisPtr)[7](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval;
+        }
+
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> _ActiveMatchIndexChanged_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> MakeActiveMatchIndexChangedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _ActiveMatchIndexChanged_, new(), null);
+            return _ActiveMatchIndexChanged_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> _ActiveMatchIndexChanged => _ActiveMatchIndexChanged_ ?? MakeActiveMatchIndexChangedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>> Get_ActiveMatchIndexChanged2(IObjectReference _obj, object _thisObj)
+        {
+            return _ActiveMatchIndexChanged.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Find__object_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[8],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[9],
+                0);
+            });
+        }
+
+        private volatile static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> _MatchCountChanged_;
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> MakeMatchCountChangedTable()
+        {
+            
+            global::System.Threading.Interlocked.CompareExchange(ref _MatchCountChanged_, new(), null);
+            return _MatchCountChanged_;
+        }
+        private static global::System.Runtime.CompilerServices.ConditionalWeakTable<object, global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>>> _MatchCountChanged => _MatchCountChanged_ ?? MakeMatchCountChangedTable();
+
+
+
+        internal static unsafe global::ABI.WinRT.Interop.EventSource<global::Windows.Foundation.TypedEventHandler<global::Microsoft.Web.WebView2.Core.CoreWebView2Find, object>> Get_MatchCountChanged2(IObjectReference _obj, object _thisObj)
+        {
+            return _MatchCountChanged.GetValue(_thisObj, (key) =>
+            {
+
+                var ThisPtr = _obj.ThisPtr;
+
+                return 
+                new _EventSource_global__Windows_Foundation_TypedEventHandler_global__Microsoft_Web_WebView2_Core_CoreWebView2Find__object_(_obj,
+                (*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, global::WinRT.EventRegistrationToken*, int>**)ThisPtr)[10],
+                (*(delegate* unmanaged[Stdcall]<IntPtr, global::WinRT.EventRegistrationToken, int>**)ThisPtr)[11],
+                1);
+            });
+        }
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x37, 0xBD, 0xAF, 0xD9, 0xB2, 0xAE, 0x9, 0x51, 0xBB, 0x8F, 0x6F, 0xF2, 0x7C, 0xF9, 0xD2, 0x79 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("D9AFBD37-AEB2-5109-BB8F-6FF27CF9D279")]
+    internal interface ICoreWebView2Find : global::Microsoft.Web.WebView2.Core.ICoreWebView2Find
+    {
+    }
+    internal static class ICoreWebView2FindOptionsMethods
+    {
+
+        internal static unsafe string get_FindTerm(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return MarshalString.FromAbi(__retval);
+            }
+            finally
+            {
+                MarshalString.DisposeAbi(__retval);
+            }
+        }
+        internal static unsafe void set_FindTerm(IObjectReference _obj, string value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            MarshalString.Pinnable __value = new(value);
+            fixed(void* ___value = __value)
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr, int>**)ThisPtr)[7](ThisPtr, MarshalString.GetAbi(ref __value)));
+                global::System.GC.KeepAlive(_obj);
+            }
+        }
+
+        internal static unsafe bool get_IsCaseSensitive(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[8](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_IsCaseSensitive(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[9](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe bool get_ShouldHighlightAllMatches(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[10](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_ShouldHighlightAllMatches(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[11](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe bool get_ShouldMatchWord(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[12](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_ShouldMatchWord(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[13](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+        internal static unsafe bool get_SuppressDefaultFindDialog(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            byte __retval = default;
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte*, int>**)ThisPtr)[14](ThisPtr, &__retval));
+            global::System.GC.KeepAlive(_obj);
+            return __retval != 0;
+        }
+        internal static unsafe void set_SuppressDefaultFindDialog(IObjectReference _obj, bool value)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, byte, int>**)ThisPtr)[15](ThisPtr, (byte)(value ? 1 : 0)));
+            global::System.GC.KeepAlive(_obj);
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0xB, 0x92, 0x7B, 0x15, 0xDC, 0xE1, 0x92, 0x57, 0x8A, 0x21, 0x26, 0xA1, 0xC8, 0x82, 0xC3, 0xF6 };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("157B920B-E1DC-5792-8A21-26A1C882C3F6")]
+    internal interface ICoreWebView2FindOptions : global::Microsoft.Web.WebView2.Core.ICoreWebView2FindOptions
     {
     }
     internal static class ICoreWebView2FrameMethods
@@ -24627,6 +25329,43 @@ namespace ABI.Microsoft.Web.WebView2.Core
     }
     [Guid("D964F497-FFDF-5BCD-BF52-FF4585F2EBC2")]
     internal interface ICoreWebView2_27 : global::Microsoft.Web.WebView2.Core.ICoreWebView2_27
+    {
+    }
+    internal static class ICoreWebView2_28Methods
+    {
+
+        internal static unsafe global::Microsoft.Web.WebView2.Core.CoreWebView2Find get_Find(IObjectReference _obj)
+        {
+            var ThisPtr = _obj.ThisPtr;
+
+            IntPtr __retval = default;
+            try
+            {
+                global::WinRT.ExceptionHelpers.ThrowExceptionForHR((*(delegate* unmanaged[Stdcall]<IntPtr, IntPtr*, int>**)ThisPtr)[6](ThisPtr, &__retval));
+                global::System.GC.KeepAlive(_obj);
+                return global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Find.FromAbi(__retval);
+            }
+            finally
+            {
+                global::ABI.Microsoft.Web.WebView2.Core.CoreWebView2Find.DisposeAbi(__retval);
+            }
+        }
+
+
+
+        public static ref readonly global::System.Guid IID
+        {
+            [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+            get
+            {
+                global::System.ReadOnlySpan<byte> data = new byte[] { 0x33, 0xA0, 0x43, 0x6E, 0xE9, 0xD2, 0xFC, 0x59, 0x88, 0x56, 0x88, 0xD4, 0xF7, 0x43, 0x8C, 0x4D };
+                return ref global::System.Runtime.CompilerServices.Unsafe.As<byte, global::System.Guid>(ref global::System.Runtime.InteropServices.MemoryMarshal.GetReference(data));
+            }
+        }
+
+    }
+    [Guid("6E43A033-D2E9-59FC-8856-88D4F7438C4D")]
+    internal interface ICoreWebView2_28 : global::Microsoft.Web.WebView2.Core.ICoreWebView2_28
     {
     }
     internal static class ICoreWebView2_3Methods

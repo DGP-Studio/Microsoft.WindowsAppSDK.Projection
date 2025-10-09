@@ -441,20 +441,6 @@ namespace Microsoft.Windows.ApplicationModel.WindowsAppRuntime
     public enum RuntimeCompatibilityChange : int
     {
         None = unchecked((int)0),
-        EnsurePackageReadyVersionSupercedence = unchecked((int)0x35d343e),
-        FixPopupClosingReentrancyCrash = unchecked((int)0x363c856),
-        FixPopupUnloadingCrash = unchecked((int)0x360f820),
-        FixRandomUIFreezeInDispatcher = unchecked((int)0x35ed0a4),
-        FixSetProgressBarIndicatorWidthCrash = unchecked((int)0x3626302),
-        FixStuckPointerInputQueue = unchecked((int)0x35ff6ad),
-        FixWebViewVisibilityReentrancyCrash = unchecked((int)0x36381f9),
-        FixWindowCloseFocusCrash = unchecked((int)0x363d112),
-        ActivateDirectManipulationManager_CheckCanInit = unchecked((int)0x365b491),
-        DwmCoreI_OptimizeFirstFrameLatency = unchecked((int)0x36b04fe),
-        InputStateManager_PenInputCrashX86 = unchecked((int)0x365ce79),
-        ApplicationDataProvider_ReentrancyProtection = unchecked((int)0x3703fdc),
-        InputPointerSource_FlushReentrancyCrash = unchecked((int)0x3708441),
-        WindowChrome_SetTitleBarCrash = unchecked((int)0x3705519),
     }
     [global::Windows.Foundation.Metadata.ContractVersion(65536u)]
     public enum RuntimeCompatibilityContract

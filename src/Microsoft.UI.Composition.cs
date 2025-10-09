@@ -3743,7 +3743,7 @@ namespace Microsoft.UI.Composition
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.CompositionNotificationDeferral))]
     [global::ABI.Microsoft.UI.Composition.CompositionNotificationDeferralRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(ICompositionNotificationDeferral))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class CompositionNotificationDeferral : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<CompositionNotificationDeferral>
     {
@@ -4553,7 +4553,7 @@ namespace Microsoft.UI.Composition
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<CompositionProjectedShadowDrawOrder>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<CompositionProjectedShadowDrawOrder>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum CompositionProjectedShadowDrawOrder : int
     {
@@ -7673,7 +7673,7 @@ namespace Microsoft.UI.Composition
         float TopInsetScale { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("396698B7-437B-5ACF-AEC9-6342C437FAF1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.ICompositionNotificationDeferral))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface ICompositionNotificationDeferral
     {
@@ -8200,7 +8200,7 @@ namespace Microsoft.UI.Composition
         float Springiness { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("DA7447BF-78A8-5023-B1D5-4EB090D3CE25")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadow))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpCompositionProjectedShadow
     {
@@ -8209,7 +8209,7 @@ namespace Microsoft.UI.Composition
         float OpacityFalloff { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("201F3A32-B715-5A3B-AF0C-570F1DAE4F1B")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowCaster))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpCompositionProjectedShadowCaster
     {
@@ -8217,7 +8217,7 @@ namespace Microsoft.UI.Composition
         CompositionBrush Mask { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("85A2028B-896B-56A2-896B-5985BA7FB0CF")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Composition.IExpCompositionProjectedShadowReceiver))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IExpCompositionProjectedShadowReceiver
     {

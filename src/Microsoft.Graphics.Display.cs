@@ -303,7 +303,7 @@ namespace Microsoft.Graphics.Display
             return global::System.Runtime.InteropServices.CustomQueryInterfaceResult.NotHandled;
         }
     }
-    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<DisplayOrientation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<DisplayOrientation>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum DisplayOrientation : int
     {
@@ -343,7 +343,7 @@ namespace Microsoft.Graphics.Display
         event global::Windows.Foundation.TypedEventHandler<DisplayInformation, object> IsStereoEnabledChanged;
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.Graphics")][Guid("5586D03C-B4B6-594E-96AD-8372700B08DD")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.Graphics.Display.IDisplayInformation2))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IDisplayInformation2
     {

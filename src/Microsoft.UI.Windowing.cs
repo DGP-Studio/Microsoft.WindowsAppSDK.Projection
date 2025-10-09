@@ -490,7 +490,7 @@ namespace Microsoft.UI.Windowing
     [global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetails))]
     [global::ABI.Microsoft.UI.Windowing.AppWindowPlacementDetailsRcwFactory]
     [global::WinRT.ProjectedRuntimeClass(typeof(IAppWindowPlacementDetails))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public sealed class AppWindowPlacementDetails : global::System.Runtime.InteropServices.ICustomQueryInterface, IWinRTObject, IEquatable<AppWindowPlacementDetails>
     {
@@ -1483,7 +1483,7 @@ namespace Microsoft.UI.Windowing
         bool Cancel { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowExperimental))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IAppWindowExperimental
     {
@@ -1494,7 +1494,7 @@ namespace Microsoft.UI.Windowing
         PlacementRestorationBehavior PlacementRestorationBehavior { get; set; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("639EC5B2-AC0C-5BBF-8422-98DCA540D219")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetails))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IAppWindowPlacementDetails
     {
@@ -1507,7 +1507,7 @@ namespace Microsoft.UI.Windowing
         global::Windows.Graphics.RectInt32 WorkArea { get; }
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("F19F1745-52AD-5CF7-97EA-76C5FD6FF3C1")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetailsStatics))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IAppWindowPlacementDetailsStatics
     {
@@ -1544,7 +1544,7 @@ namespace Microsoft.UI.Windowing
         AppWindow Create(AppWindowPresenter appWindowPresenter, global::Microsoft.UI.WindowId ownerWindowId, global::Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("0BCC835A-1286-5113-9F59-F1093D2E087A")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IAppWindowStatics3
     {
@@ -1631,7 +1631,7 @@ namespace Microsoft.UI.Windowing
         DisplayArea GetFromDisplayId(global::Microsoft.UI.DisplayId displayId);
     }
     [global::WinRT.WindowsRuntimeType("Microsoft.UI")][Guid("745D3602-268B-5060-8437-FCC025E255D6")][global::WinRT.WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IDisplayAreaStatics3))]
-    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     internal interface IDisplayAreaStatics3
     {
@@ -1921,7 +1921,7 @@ namespace Microsoft.UI.Windowing
         Restored = unchecked((int)0x2),
     }
     [FlagsAttribute]
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementInfo>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementInfo>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum PlacementInfo : uint
     {
@@ -1933,7 +1933,7 @@ namespace Microsoft.UI.Windowing
         FullScreen = unchecked((uint)0x40),
     }
     [FlagsAttribute]
-    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementRestorationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65543u)]
+    [global::WinRT.WindowsRuntimeType("Microsoft.UI")][global::WinRT.WinRTExposedType(typeof(global::WinRT.EnumTypeDetails<PlacementRestorationBehavior>))][global::Windows.Foundation.Metadata.ContractVersion(typeof(global::Microsoft.Foundation.WindowsAppSDKContract), 65544u)]
     [global::Windows.Foundation.Metadata.Experimental]
     public enum PlacementRestorationBehavior : uint
     {
