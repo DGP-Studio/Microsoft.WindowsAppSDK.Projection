@@ -1,0 +1,3632 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.ResourceDictionary
+  commentId: T:Microsoft.UI.Xaml.ResourceDictionary
+  id: ResourceDictionary
+  parent: Microsoft.UI.Xaml
+  children:
+  - Microsoft.UI.Xaml.ResourceDictionary.#ctor
+  - Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Xaml.ResourceDictionary.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  - Microsoft.UI.Xaml.ResourceDictionary.Add(System.Object,System.Object)
+  - Microsoft.UI.Xaml.ResourceDictionary.Clear
+  - Microsoft.UI.Xaml.ResourceDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  - Microsoft.UI.Xaml.ResourceDictionary.ContainsKey(System.Object)
+  - Microsoft.UI.Xaml.ResourceDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  - Microsoft.UI.Xaml.ResourceDictionary.Count
+  - Microsoft.UI.Xaml.ResourceDictionary.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  - Microsoft.UI.Xaml.ResourceDictionary.Equals(System.Object)
+  - Microsoft.UI.Xaml.ResourceDictionary.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator
+  - Microsoft.UI.Xaml.ResourceDictionary.GetHashCode
+  - Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+  - Microsoft.UI.Xaml.ResourceDictionary.Item(System.Object)
+  - Microsoft.UI.Xaml.ResourceDictionary.Keys
+  - Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+  - Microsoft.UI.Xaml.ResourceDictionary.Remove(System.Object)
+  - Microsoft.UI.Xaml.ResourceDictionary.Source
+  - Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+  - Microsoft.UI.Xaml.ResourceDictionary.TryGetValue(System.Object,System.Object@)
+  - Microsoft.UI.Xaml.ResourceDictionary.Values
+  - Microsoft.UI.Xaml.ResourceDictionary.op_Equality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  - Microsoft.UI.Xaml.ResourceDictionary.op_Inequality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: Microsoft.UI.Xaml.ResourceDictionary
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ResourceDictionary
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6794
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(ResourceDictionary))]
+
+      [ProjectedRuntimeClass(typeof(IResourceDictionary))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public class ResourceDictionary : DependencyObject, IEquatable<DependencyObject>, IDictionary<object, object>, ICollection<KeyValuePair<object, object>>, IEnumerable<KeyValuePair<object, object>>, IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ResourceDictionary>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(ResourceDictionary))>
+
+      <ProjectedRuntimeClass(GetType(IResourceDictionary))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Class ResourceDictionary Inherits DependencyObject Implements IEquatable(Of DependencyObject), IDictionary(Of Object, Object), ICollection(Of KeyValuePair(Of Object, Object)), IEnumerable(Of KeyValuePair(Of Object, Object)), IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ResourceDictionary)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Xaml.DependencyObject
+  derivedClasses:
+  - Microsoft.UI.Xaml.ColorPaletteResources
+  - Microsoft.UI.Xaml.Controls.XamlControlsResources
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  - System.Collections.IEnumerable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}
+  inheritedMembers:
+  - Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  - Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  - Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  - Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  - Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  - Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.ResourceDictionary.#ctor
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.#ctor
+  id: '#ctor'
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary()
+  nameWithType: ResourceDictionary.ResourceDictionary()
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6877
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public ResourceDictionary()
+    content.vb: Public Sub New()
+  overload: Microsoft.UI.Xaml.ResourceDictionary.#ctor*
+  nameWithType.vb: ResourceDictionary.New()
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.New()
+  name.vb: New()
+- uid: Microsoft.UI.Xaml.ResourceDictionary.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ResourceDictionary.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6893
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static ResourceDictionary FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.ResourceDictionary
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ResourceDictionary
+  overload: Microsoft.UI.Xaml.ResourceDictionary.FromAbi*
+  nameWithType.vb: ResourceDictionary.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary(IObjectReference)
+  nameWithType: ResourceDictionary.ResourceDictionary(IObjectReference)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6899
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: protected ResourceDictionary(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.#ctor*
+  nameWithType.vb: ResourceDictionary.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.op_Equality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.op_Equality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  id: op_Equality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ResourceDictionary, ResourceDictionary)
+  nameWithType: ResourceDictionary.operator ==(ResourceDictionary, ResourceDictionary)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.operator ==(Microsoft.UI.Xaml.ResourceDictionary, Microsoft.UI.Xaml.ResourceDictionary)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6908
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator ==(ResourceDictionary x, ResourceDictionary y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.ResourceDictionary
+    - id: y
+      type: Microsoft.UI.Xaml.ResourceDictionary
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ResourceDictionary, y As ResourceDictionary) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.op_Equality*
+  nameWithType.vb: ResourceDictionary.=(ResourceDictionary, ResourceDictionary)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.=(Microsoft.UI.Xaml.ResourceDictionary, Microsoft.UI.Xaml.ResourceDictionary)
+  name.vb: =(ResourceDictionary, ResourceDictionary)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.op_Inequality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.op_Inequality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  id: op_Inequality(Microsoft.UI.Xaml.ResourceDictionary,Microsoft.UI.Xaml.ResourceDictionary)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ResourceDictionary, ResourceDictionary)
+  nameWithType: ResourceDictionary.operator !=(ResourceDictionary, ResourceDictionary)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.operator !=(Microsoft.UI.Xaml.ResourceDictionary, Microsoft.UI.Xaml.ResourceDictionary)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6909
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator !=(ResourceDictionary x, ResourceDictionary y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.ResourceDictionary
+    - id: y
+      type: Microsoft.UI.Xaml.ResourceDictionary
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ResourceDictionary, y As ResourceDictionary) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.op_Inequality*
+  nameWithType.vb: ResourceDictionary.<>(ResourceDictionary, ResourceDictionary)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.<>(Microsoft.UI.Xaml.ResourceDictionary, Microsoft.UI.Xaml.ResourceDictionary)
+  name.vb: <>(ResourceDictionary, ResourceDictionary)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  id: Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Equals(ResourceDictionary)
+  nameWithType: ResourceDictionary.Equals(ResourceDictionary)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6910
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ResourceDictionary other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.ResourceDictionary
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ResourceDictionary) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ResourceDictionary.Equals(object)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6911
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Equals*
+  nameWithType.vb: ResourceDictionary.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ResourceDictionary.GetHashCode()
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6912
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  overload: Microsoft.UI.Xaml.ResourceDictionary.GetHashCode*
+- uid: Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary(DerivedComposed)
+  nameWithType: ResourceDictionary.ResourceDictionary(DerivedComposed)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6915
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: protected ResourceDictionary(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.#ctor*
+  nameWithType.vb: ResourceDictionary.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Keys
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.Keys
+  id: Keys
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: ResourceDictionary.Keys
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Keys
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Keys
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6925
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets an <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> containing the keys of the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ICollection<object> Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Object}
+      description: An <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> containing the keys of the object that implements <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Keys As ICollection(Of Object)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Keys*
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.Keys
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Values
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.Values
+  id: Values
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: ResourceDictionary.Values
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Values
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Values
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6926
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets an <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> containing the values in the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ICollection<object> Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Object}
+      description: An <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> containing the values in the object that implements <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Values As ICollection(Of Object)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Values*
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.Values
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Count
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.Count
+  id: Count
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ResourceDictionary.Count
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Count
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Count
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6927
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Count*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Count
+- uid: Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: ResourceDictionary.IsReadOnly
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsReadOnly
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6928
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.IsReadOnly
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Item(System.Object)
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.Item(System.Object)
+  id: Item(System.Object)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: this[object]
+  nameWithType: ResourceDictionary.this[object]
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.this[object]
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: this[]
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6929
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets or sets the element with the specified key.
+  example: []
+  syntax:
+    content: public object this[object key] { get; set; }
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to get or set.
+    return:
+      type: System.Object
+      description: The element with the specified key.
+    content.vb: Public Default Property this[](key As Object) As Object
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Item*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: The property is retrieved and <code class="paramref">key</code> is not found.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The property is set and the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.Item(System.Object)
+  nameWithType.vb: ResourceDictionary.this[](Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.this[](Object)
+  name.vb: this[](Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Add(System.Object,System.Object)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Add(object, object)
+  nameWithType: ResourceDictionary.Add(object, object)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Add(object, object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Add
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6934
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Adds an element with the provided key and value to the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(object key, object value)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The object to use as the key of the element to add.
+    - id: value
+      type: System.Object
+      description: The object to use as the value of the element to add.
+    content.vb: Public Sub Add(key As Object, value As Object)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Add*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: An element with the same key already exists in the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.Add(System.Object,System.Object)
+  nameWithType.vb: ResourceDictionary.Add(Object, Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.Add(Object, Object)
+  name.vb: Add(Object, Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey(System.Object)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.ContainsKey(System.Object)
+  id: ContainsKey(System.Object)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(object)
+  nameWithType: ResourceDictionary.ContainsKey(object)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ContainsKey
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6935
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> contains an element with the specified key.
+  example: []
+  syntax:
+    content: public bool ContainsKey(object key)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> contains an element with the key; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ContainsKey(key As Object) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.ContainsKey(System.Object)
+  nameWithType.vb: ResourceDictionary.ContainsKey(Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey(Object)
+  name.vb: ContainsKey(Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Remove(System.Object)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Remove(object)
+  nameWithType: ResourceDictionary.Remove(object)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Remove(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Remove
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6936
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Removes the element with the specified key from the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(object key)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to remove.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element is successfully removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.  This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">key</code> was not found in the original <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Remove(key As Object) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Remove*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.Remove(System.Object)
+  nameWithType.vb: ResourceDictionary.Remove(Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.Remove(Object)
+  name.vb: Remove(Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue(System.Object,System.Object@)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.TryGetValue(System.Object,System.Object@)
+  id: TryGetValue(System.Object,System.Object@)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(object, out object)
+  nameWithType: ResourceDictionary.TryGetValue(object, out object)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue(object, out object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TryGetValue
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6937
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets the value associated with the specified key.
+  example: []
+  syntax:
+    content: public bool TryGetValue(object key, out object value)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key whose value to get.
+    - id: value
+      type: System.Object
+      description: When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the <code class="paramref">value</code> parameter. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object that implements <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> contains an element with the specified key; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetValue(key As Object, value As Object) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IDictionary{System.Object,System.Object}.TryGetValue(System.Object,System.Object@)
+  nameWithType.vb: ResourceDictionary.TryGetValue(Object, Object)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue(Object, Object)
+  name.vb: TryGetValue(Object, Object)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  id: Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Add(KeyValuePair<object, object>)
+  nameWithType: ResourceDictionary.Add(KeyValuePair<object, object>)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Add(System.Collections.Generic.KeyValuePair<object, object>)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Add
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6938
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(KeyValuePair<object, object> item)
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.Object,System.Object}
+      description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As KeyValuePair(Of Object, Object))
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  nameWithType.vb: ResourceDictionary.Add(KeyValuePair(Of Object, Object))
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.Add(System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: Add(KeyValuePair(Of Object, Object))
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Clear
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Clear
+  id: Clear
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ResourceDictionary.Clear()
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Clear
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6939
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Clear
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  id: Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Contains(KeyValuePair<object, object>)
+  nameWithType: ResourceDictionary.Contains(KeyValuePair<object, object>)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Contains(System.Collections.Generic.KeyValuePair<object, object>)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Contains
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6940
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(KeyValuePair<object, object> item)
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.Object,System.Object}
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As KeyValuePair(Of Object, Object)) As Boolean
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  nameWithType.vb: ResourceDictionary.Contains(KeyValuePair(Of Object, Object))
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.Contains(System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: Contains(KeyValuePair(Of Object, Object))
+- uid: Microsoft.UI.Xaml.ResourceDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  id: CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(KeyValuePair<object, object>[], int)
+  nameWithType: ResourceDictionary.CopyTo(KeyValuePair<object, object>[], int)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.CopyTo(System.Collections.Generic.KeyValuePair<object, object>[], int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyTo
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6941
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(KeyValuePair<object, object>[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: System.Collections.Generic.KeyValuePair{System.Object,System.Object}[]
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As KeyValuePair(Of Object, Object)(), arrayIndex As Integer)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  nameWithType.vb: ResourceDictionary.CopyTo(KeyValuePair(Of Object, Object)(), Integer)
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.CopyTo(System.Collections.Generic.KeyValuePair(Of Object, Object)(), Integer)
+  name.vb: CopyTo(KeyValuePair(Of Object, Object)(), Integer)
+- uid: Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ResourceDictionary.GetEnumerator()
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnumerator
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6944
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<KeyValuePair<object, object>> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of KeyValuePair(Of Object, Object))
+  overload: Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.GetEnumerator
+- uid: Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+  id: MergedDictionaries
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: MergedDictionaries
+  nameWithType: ResourceDictionary.MergedDictionaries
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MergedDictionaries
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6948
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public IList<ResourceDictionary> MergedDictionaries { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Microsoft.UI.Xaml.ResourceDictionary}
+    content.vb: Public ReadOnly Property MergedDictionaries As IList(Of ResourceDictionary)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries*
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Source
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.Source
+  id: Source
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: ResourceDictionary.Source
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Source
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Source
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6950
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public Uri Source { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property Source As Uri
+  overload: Microsoft.UI.Xaml.ResourceDictionary.Source*
+- uid: Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+  commentId: P:Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+  id: ThemeDictionaries
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ThemeDictionaries
+  nameWithType: ResourceDictionary.ThemeDictionaries
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ThemeDictionaries
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6956
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public IDictionary<object, object> ThemeDictionaries { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.Object,System.Object}
+    content.vb: Public ReadOnly Property ThemeDictionaries As IDictionary(Of Object, Object)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries*
+- uid: Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: ResourceDictionary.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6958
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  example: []
+  syntax:
+    content: protected override bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsOverridableInterface(iid As Guid) As Boolean
+  overridden: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  overload: Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Xaml.DependencyObject
+  commentId: T:Microsoft.UI.Xaml.DependencyObject
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyObject.html
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: Microsoft.UI.Xaml.DependencyObject
+- uid: System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DependencyObject>
+  nameWithType: IEquatable<DependencyObject>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.DependencyObject>
+  nameWithType.vb: IEquatable(Of DependencyObject)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.DependencyObject)
+  name.vb: IEquatable(Of DependencyObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.Object,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<object, object>
+  nameWithType: IDictionary<object, object>
+  fullName: System.Collections.Generic.IDictionary<object, object>
+  nameWithType.vb: IDictionary(Of Object, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object)
+  name.vb: IDictionary(Of Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<object, object>>
+  nameWithType: ICollection<KeyValuePair<object, object>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: ICollection(Of KeyValuePair(Of Object, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<object, object>>
+  nameWithType: IEnumerable<KeyValuePair<object, object>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object, object>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of Object, Object))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: IEnumerable(Of KeyValuePair(Of Object, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ResourceDictionary>
+  nameWithType: IEquatable<ResourceDictionary>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.ResourceDictionary>
+  nameWithType.vb: IEquatable(Of ResourceDictionary)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.ResourceDictionary)
+  name.vb: IEquatable(Of ResourceDictionary)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  name: Equals(DependencyObject)
+  nameWithType: DependencyObject.Equals(DependencyObject)
+  fullName: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  name: SetValue(DependencyProperty, object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, object)
+  fullName: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, object)
+  nameWithType.vb: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, Object)
+  name.vb: SetValue(DependencyProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ReadLocalValue(DependencyProperty)
+  nameWithType: DependencyObject.ReadLocalValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetAnimationBaseValue(DependencyProperty)
+  nameWithType: DependencyObject.GetAnimationBaseValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  name: RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  nameWithType: DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  fullName: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  name: UnregisterPropertyChangedCallback(DependencyProperty, long)
+  nameWithType: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)
+  fullName: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, long)
+  nameWithType.vb: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Long)
+  name.vb: UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher
+  name: Dispatcher
+  nameWithType: DependencyObject.Dispatcher
+  fullName: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+- uid: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: DependencyObject.DispatcherQueue
+  fullName: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: Microsoft.UI.Xaml.ResourceDictionary.#ctor*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.#ctor
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary__ctor
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary.ResourceDictionary
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ResourceDictionary
+  nameWithType.vb: ResourceDictionary.New
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.New
+  name.vb: New
+- uid: Microsoft.UI.Xaml.ResourceDictionary.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.FromAbi
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ResourceDictionary.FromAbi
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.ResourceDictionary
+  commentId: T:Microsoft.UI.Xaml.ResourceDictionary
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.ResourceDictionary.html
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: Microsoft.UI.Xaml.ResourceDictionary
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Xaml.ResourceDictionary.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.op_Equality
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_op_Equality_Microsoft_UI_Xaml_ResourceDictionary_Microsoft_UI_Xaml_ResourceDictionary_
+  name: operator ==
+  nameWithType: ResourceDictionary.operator ==
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.operator ==
+  nameWithType.vb: ResourceDictionary.=
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.ResourceDictionary.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_op_Equality_Microsoft_UI_Xaml_ResourceDictionary_Microsoft_UI_Xaml_ResourceDictionary_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.ResourceDictionary.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.op_Inequality
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_op_Inequality_Microsoft_UI_Xaml_ResourceDictionary_Microsoft_UI_Xaml_ResourceDictionary_
+  name: operator !=
+  nameWithType: ResourceDictionary.operator !=
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.operator !=
+  nameWithType.vb: ResourceDictionary.<>
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.ResourceDictionary.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_op_Inequality_Microsoft_UI_Xaml_ResourceDictionary_Microsoft_UI_Xaml_ResourceDictionary_
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Equals
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Equals_Microsoft_UI_Xaml_ResourceDictionary_
+  name: Equals
+  nameWithType: ResourceDictionary.Equals
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  parent: System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ResourceDictionary)
+  nameWithType: IEquatable<ResourceDictionary>.Equals(ResourceDictionary)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.ResourceDictionary>.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  nameWithType.vb: IEquatable(Of ResourceDictionary).Equals(ResourceDictionary)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.ResourceDictionary).Equals(Microsoft.UI.Xaml.ResourceDictionary)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.ResourceDictionary}.Equals(Microsoft.UI.Xaml.ResourceDictionary)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: DependencyObject.Equals(object)
+  fullName: Microsoft.UI.Xaml.DependencyObject.Equals(object)
+  nameWithType.vb: DependencyObject.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: DependencyObject.GetHashCode()
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.GetHashCode
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_GetHashCode
+  name: GetHashCode
+  nameWithType: ResourceDictionary.GetHashCode
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Keys*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Keys
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Keys
+  name: Keys
+  nameWithType: ResourceDictionary.Keys
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Keys
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Keys
+  commentId: P:System.Collections.Generic.IDictionary{System.Object,System.Object}.Keys
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.Keys
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.keys
+  name: Keys
+  nameWithType: IDictionary<object, object>.Keys
+  fullName: System.Collections.Generic.IDictionary<object, object>.Keys
+  nameWithType.vb: IDictionary(Of Object, Object).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).Keys
+- uid: System.Collections.Generic.ICollection{System.Object}
+  commentId: T:System.Collections.Generic.ICollection{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<object>
+  nameWithType: ICollection<object>
+  fullName: System.Collections.Generic.ICollection<object>
+  nameWithType.vb: ICollection(Of Object)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object)
+  name.vb: ICollection(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Keys
+  commentId: P:System.Collections.Generic.IDictionary`2.Keys
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.keys
+  name: Keys
+  nameWithType: IDictionary<TKey, TValue>.Keys
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Keys
+  nameWithType.vb: IDictionary(Of TKey, TValue).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Keys
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Values*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Values
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Values
+  name: Values
+  nameWithType: ResourceDictionary.Values
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Values
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Values
+  commentId: P:System.Collections.Generic.IDictionary{System.Object,System.Object}.Values
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.Values
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.values
+  name: Values
+  nameWithType: IDictionary<object, object>.Values
+  fullName: System.Collections.Generic.IDictionary<object, object>.Values
+  nameWithType.vb: IDictionary(Of Object, Object).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).Values
+- uid: System.Collections.Generic.IDictionary`2.Values
+  commentId: P:System.Collections.Generic.IDictionary`2.Values
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.values
+  name: Values
+  nameWithType: IDictionary<TKey, TValue>.Values
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Values
+  nameWithType.vb: IDictionary(Of TKey, TValue).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Values
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Count*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Count
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Count
+  name: Count
+  nameWithType: ResourceDictionary.Count
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Count
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Count
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Count
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<KeyValuePair<object, object>>.Count
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.Count
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ResourceDictionary.IsReadOnly
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.IsReadOnly
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<KeyValuePair<object, object>>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.IsReadOnly
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Item*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Item
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Item_System_Object_
+  name: this
+  nameWithType: ResourceDictionary.this
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.this
+  nameWithType.vb: ResourceDictionary.this[]
+  fullName.vb: Microsoft.UI.Xaml.ResourceDictionary.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Item(System.Object)
+  commentId: P:System.Collections.Generic.IDictionary{System.Object,System.Object}.Item(System.Object)
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.Item(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: this[object]
+  nameWithType: IDictionary<object, object>.this[object]
+  fullName: System.Collections.Generic.IDictionary<object, object>.this[object]
+  nameWithType.vb: IDictionary(Of Object, Object).this[](Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).this[](Object)
+  name.vb: this[](Object)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Item(System.Object)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.IDictionary`2.Item(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  name: this[TKey]
+  nameWithType: IDictionary<TKey, TValue>.this[TKey]
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.this[TKey]
+  nameWithType.vb: IDictionary(Of TKey, TValue).this[](TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Add*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Add
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Add_System_Object_System_Object_
+  name: Add
+  nameWithType: ResourceDictionary.Add
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Add
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Add(System.Object,System.Object)
+  commentId: M:System.Collections.Generic.IDictionary{System.Object,System.Object}.Add(System.Object,System.Object)
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(object, object)
+  nameWithType: IDictionary<object, object>.Add(object, object)
+  fullName: System.Collections.Generic.IDictionary<object, object>.Add(object, object)
+  nameWithType.vb: IDictionary(Of Object, Object).Add(Object, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).Add(Object, Object)
+  name.vb: Add(Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Add(System.Object,System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  commentId: M:System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.ContainsKey
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_ContainsKey_System_Object_
+  name: ContainsKey
+  nameWithType: ResourceDictionary.ContainsKey
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ContainsKey
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.ContainsKey(System.Object)
+  commentId: M:System.Collections.Generic.IDictionary{System.Object,System.Object}.ContainsKey(System.Object)
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(object)
+  nameWithType: IDictionary<object, object>.ContainsKey(object)
+  fullName: System.Collections.Generic.IDictionary<object, object>.ContainsKey(object)
+  nameWithType.vb: IDictionary(Of Object, Object).ContainsKey(Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).ContainsKey(Object)
+  name.vb: ContainsKey(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.ContainsKey(System.Object)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.ContainsKey(System.Object)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: IDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Remove*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Remove
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Remove_System_Object_
+  name: Remove
+  nameWithType: ResourceDictionary.Remove
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Remove
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Remove(System.Object)
+  commentId: M:System.Collections.Generic.IDictionary{System.Object,System.Object}.Remove(System.Object)
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(object)
+  nameWithType: IDictionary<object, object>.Remove(object)
+  fullName: System.Collections.Generic.IDictionary<object, object>.Remove(object)
+  nameWithType.vb: IDictionary(Of Object, Object).Remove(Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(TKey)
+  nameWithType: IDictionary<TKey, TValue>.Remove(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.TryGetValue
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_TryGetValue_System_Object_System_Object__
+  name: TryGetValue
+  nameWithType: ResourceDictionary.TryGetValue
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.TryGetValue
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.TryGetValue(System.Object,System.Object@)
+  commentId: M:System.Collections.Generic.IDictionary{System.Object,System.Object}.TryGetValue(System.Object,System.Object@)
+  parent: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  definition: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  name: TryGetValue(object, out object)
+  nameWithType: IDictionary<object, object>.TryGetValue(object, out object)
+  fullName: System.Collections.Generic.IDictionary<object, object>.TryGetValue(object, out object)
+  nameWithType.vb: IDictionary(Of Object, Object).TryGetValue(Object, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object).TryGetValue(Object, Object)
+  name.vb: TryGetValue(Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.Object,System.Object}.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: IDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(KeyValuePair<object, object>)
+  nameWithType: ICollection<KeyValuePair<object, object>>.Add(KeyValuePair<object, object>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.Add(System.Collections.Generic.KeyValuePair<object, object>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).Add(KeyValuePair(Of Object, Object))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).Add(System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: Add(KeyValuePair(Of Object, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Add(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair{System.Object,System.Object}
+  commentId: T:System.Collections.Generic.KeyValuePair{System.Object,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<object, object>
+  nameWithType: KeyValuePair<object, object>
+  fullName: System.Collections.Generic.KeyValuePair<object, object>
+  nameWithType.vb: KeyValuePair(Of Object, Object)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of Object, Object)
+  name.vb: KeyValuePair(Of Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Clear*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Clear
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Clear
+  name: Clear
+  nameWithType: ResourceDictionary.Clear
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Clear
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Clear
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<KeyValuePair<object, object>>.Clear()
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.Clear()
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Contains*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Contains
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Contains_System_Collections_Generic_KeyValuePair_System_Object_System_Object__
+  name: Contains
+  nameWithType: ResourceDictionary.Contains
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Contains
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(KeyValuePair<object, object>)
+  nameWithType: ICollection<KeyValuePair<object, object>>.Contains(KeyValuePair<object, object>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.Contains(System.Collections.Generic.KeyValuePair<object, object>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).Contains(KeyValuePair(Of Object, Object))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).Contains(System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: Contains(KeyValuePair(Of Object, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.Contains(System.Collections.Generic.KeyValuePair{System.Object,System.Object})
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Microsoft.UI.Xaml.ResourceDictionary.CopyTo*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.CopyTo
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_CopyTo_System_Collections_Generic_KeyValuePair_System_Object_System_Object____System_Int32_
+  name: CopyTo
+  nameWithType: ResourceDictionary.CopyTo
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.CopyTo
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(KeyValuePair<object, object>[], int)
+  nameWithType: ICollection<KeyValuePair<object, object>>.CopyTo(KeyValuePair<object, object>[], int)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object, object>>.CopyTo(System.Collections.Generic.KeyValuePair<object, object>[], int)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Object, Object)).CopyTo(KeyValuePair(Of Object, Object)(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).CopyTo(System.Collections.Generic.KeyValuePair(Of Object, Object)(), Integer)
+  name.vb: CopyTo(KeyValuePair(Of Object, Object)(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.CopyTo(System.Collections.Generic.KeyValuePair{System.Object,System.Object}[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair{System.Object,System.Object}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<object, object>[]
+  nameWithType: KeyValuePair<object, object>[]
+  fullName: System.Collections.Generic.KeyValuePair<object, object>[]
+  nameWithType.vb: KeyValuePair(Of Object, Object)()
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of Object, Object)()
+  name.vb: KeyValuePair(Of Object, Object)()
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ResourceDictionary.GetEnumerator
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<KeyValuePair<object, object>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object, object>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of Object, Object)).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of Object, Object)).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.Object,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<KeyValuePair<object, object>>
+  nameWithType: IEnumerator<KeyValuePair<object, object>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<object, object>>
+  nameWithType.vb: IEnumerator(Of KeyValuePair(Of Object, Object))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of Object, Object))
+  name.vb: IEnumerator(Of KeyValuePair(Of Object, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_MergedDictionaries
+  name: MergedDictionaries
+  nameWithType: ResourceDictionary.MergedDictionaries
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.MergedDictionaries
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.ResourceDictionary}
+  commentId: T:System.Collections.Generic.IList{Microsoft.UI.Xaml.ResourceDictionary}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<ResourceDictionary>
+  nameWithType: IList<ResourceDictionary>
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.ResourceDictionary>
+  nameWithType.vb: IList(Of ResourceDictionary)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.ResourceDictionary)
+  name.vb: IList(Of ResourceDictionary)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.ResourceDictionary
+    name: ResourceDictionary
+    href: Microsoft.UI.Xaml.ResourceDictionary.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.Source*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.Source
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_Source
+  name: Source
+  nameWithType: ResourceDictionary.Source
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.Source
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_ThemeDictionaries
+  name: ThemeDictionaries
+  nameWithType: ResourceDictionary.ThemeDictionaries
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.ThemeDictionaries
+- uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface(Guid)
+  nameWithType: DependencyObject.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface
+  href: Microsoft.UI.Xaml.ResourceDictionary.html#Microsoft_UI_Xaml_ResourceDictionary_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: ResourceDictionary.IsOverridableInterface
+  fullName: Microsoft.UI.Xaml.ResourceDictionary.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

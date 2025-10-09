@@ -1,0 +1,1889 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Media.Brush
+  commentId: T:Microsoft.UI.Xaml.Media.Brush
+  id: Brush
+  parent: Microsoft.UI.Xaml.Media
+  children:
+  - Microsoft.UI.Xaml.Media.Brush.#ctor
+  - Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Xaml.Media.Brush.As``1
+  - Microsoft.UI.Xaml.Media.Brush.Equals(Microsoft.UI.Xaml.Media.Brush)
+  - Microsoft.UI.Xaml.Media.Brush.Equals(System.Object)
+  - Microsoft.UI.Xaml.Media.Brush.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Media.Brush.GetHashCode
+  - Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Xaml.Media.Brush.Opacity
+  - Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+  - Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  - Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  - Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+  - Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+  - Microsoft.UI.Xaml.Media.Brush.Transform
+  - Microsoft.UI.Xaml.Media.Brush.TransformProperty
+  - Microsoft.UI.Xaml.Media.Brush.op_Equality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  - Microsoft.UI.Xaml.Media.Brush.op_Inequality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  langs:
+  - csharp
+  - vb
+  name: Brush
+  nameWithType: Brush
+  fullName: Microsoft.UI.Xaml.Media.Brush
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Brush
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 624
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(Brush))]
+
+      [ProjectedRuntimeClass(typeof(IBrush))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public class Brush : DependencyObject, IEquatable<DependencyObject>, IAnimationObject, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<Brush>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(Brush))>
+
+      <ProjectedRuntimeClass(GetType(IBrush))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Class Brush Inherits DependencyObject Implements IEquatable(Of DependencyObject), IAnimationObject, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of Brush)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Xaml.DependencyObject
+  derivedClasses:
+  - Microsoft.UI.Xaml.Media.GradientBrush
+  - Microsoft.UI.Xaml.Media.SolidColorBrush
+  - Microsoft.UI.Xaml.Media.TileBrush
+  - Microsoft.UI.Xaml.Media.XamlCompositionBrushBase
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  - Microsoft.UI.Composition.IAnimationObject
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.Media.Brush}
+  inheritedMembers:
+  - Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  - Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  - Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  - Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  - Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  - Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Media.Brush.#ctor
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.#ctor
+  id: '#ctor'
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Brush()
+  nameWithType: Brush.Brush()
+  fullName: Microsoft.UI.Xaml.Media.Brush.Brush()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 705
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: protected Brush()
+    content.vb: Protected Sub New()
+  overload: Microsoft.UI.Xaml.Media.Brush.#ctor*
+  nameWithType.vb: Brush.New()
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.New()
+  name.vb: New()
+- uid: Microsoft.UI.Xaml.Media.Brush.As``1
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.As``1
+  id: As``1
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: Brush.As<I>()
+  fullName: Microsoft.UI.Xaml.Media.Brush.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 721
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Xaml.Media.Brush.As*
+  nameWithType.vb: Brush.As(Of I)()
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+  id: OpacityProperty
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: OpacityProperty
+  nameWithType: Brush.OpacityProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OpacityProperty
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 740
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static DependencyProperty OpacityProperty { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.DependencyProperty
+    content.vb: Public Shared ReadOnly Property OpacityProperty As DependencyProperty
+  overload: Microsoft.UI.Xaml.Media.Brush.OpacityProperty*
+- uid: Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+  id: RelativeTransformProperty
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: RelativeTransformProperty
+  nameWithType: Brush.RelativeTransformProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RelativeTransformProperty
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 742
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static DependencyProperty RelativeTransformProperty { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.DependencyProperty
+    content.vb: Public Shared ReadOnly Property RelativeTransformProperty As DependencyProperty
+  overload: Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty*
+- uid: Microsoft.UI.Xaml.Media.Brush.TransformProperty
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.TransformProperty
+  id: TransformProperty
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: TransformProperty
+  nameWithType: Brush.TransformProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.TransformProperty
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TransformProperty
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 744
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static DependencyProperty TransformProperty { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.DependencyProperty
+    content.vb: Public Shared ReadOnly Property TransformProperty As DependencyProperty
+  overload: Microsoft.UI.Xaml.Media.Brush.TransformProperty*
+- uid: Microsoft.UI.Xaml.Media.Brush.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: Brush.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.Media.Brush.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 746
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static Brush FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.Media.Brush
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As Brush
+  overload: Microsoft.UI.Xaml.Media.Brush.FromAbi*
+  nameWithType.vb: Brush.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Brush(IObjectReference)
+  nameWithType: Brush.Brush(IObjectReference)
+  fullName: Microsoft.UI.Xaml.Media.Brush.Brush(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 752
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: protected Brush(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Xaml.Media.Brush.#ctor*
+  nameWithType.vb: Brush.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Xaml.Media.Brush.op_Equality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.op_Equality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  id: op_Equality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Brush, Brush)
+  nameWithType: Brush.operator ==(Brush, Brush)
+  fullName: Microsoft.UI.Xaml.Media.Brush.operator ==(Microsoft.UI.Xaml.Media.Brush, Microsoft.UI.Xaml.Media.Brush)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 761
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static bool operator ==(Brush x, Brush y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Media.Brush
+    - id: y
+      type: Microsoft.UI.Xaml.Media.Brush
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As Brush, y As Brush) As Boolean
+  overload: Microsoft.UI.Xaml.Media.Brush.op_Equality*
+  nameWithType.vb: Brush.=(Brush, Brush)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.=(Microsoft.UI.Xaml.Media.Brush, Microsoft.UI.Xaml.Media.Brush)
+  name.vb: =(Brush, Brush)
+- uid: Microsoft.UI.Xaml.Media.Brush.op_Inequality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.op_Inequality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  id: op_Inequality(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Brush, Brush)
+  nameWithType: Brush.operator !=(Brush, Brush)
+  fullName: Microsoft.UI.Xaml.Media.Brush.operator !=(Microsoft.UI.Xaml.Media.Brush, Microsoft.UI.Xaml.Media.Brush)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 762
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public static bool operator !=(Brush x, Brush y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Media.Brush
+    - id: y
+      type: Microsoft.UI.Xaml.Media.Brush
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As Brush, y As Brush) As Boolean
+  overload: Microsoft.UI.Xaml.Media.Brush.op_Inequality*
+  nameWithType.vb: Brush.<>(Brush, Brush)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.<>(Microsoft.UI.Xaml.Media.Brush, Microsoft.UI.Xaml.Media.Brush)
+  name.vb: <>(Brush, Brush)
+- uid: Microsoft.UI.Xaml.Media.Brush.Equals(Microsoft.UI.Xaml.Media.Brush)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.Equals(Microsoft.UI.Xaml.Media.Brush)
+  id: Equals(Microsoft.UI.Xaml.Media.Brush)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Equals(Brush)
+  nameWithType: Brush.Equals(Brush)
+  fullName: Microsoft.UI.Xaml.Media.Brush.Equals(Microsoft.UI.Xaml.Media.Brush)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 763
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Brush other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.Media.Brush
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Brush) As Boolean
+  overload: Microsoft.UI.Xaml.Media.Brush.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.Media.Brush}.Equals(Microsoft.UI.Xaml.Media.Brush)
+- uid: Microsoft.UI.Xaml.Media.Brush.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Brush.Equals(object)
+  fullName: Microsoft.UI.Xaml.Media.Brush.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 764
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.Media.Brush.Equals*
+  nameWithType.vb: Brush.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.Media.Brush.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Brush.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Media.Brush.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 765
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  overload: Microsoft.UI.Xaml.Media.Brush.GetHashCode*
+- uid: Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Brush(DerivedComposed)
+  nameWithType: Brush.Brush(DerivedComposed)
+  fullName: Microsoft.UI.Xaml.Media.Brush.Brush(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 768
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: protected Brush(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Xaml.Media.Brush.#ctor*
+  nameWithType.vb: Brush.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  id: PopulatePropertyInfoOverride(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: PopulatePropertyInfoOverride(string, AnimationPropertyInfo)
+  nameWithType: Brush.PopulatePropertyInfoOverride(string, AnimationPropertyInfo)
+  fullName: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride(string, Microsoft.UI.Composition.AnimationPropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PopulatePropertyInfoOverride
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 778
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: protected virtual void PopulatePropertyInfoOverride(string propertyName, AnimationPropertyInfo animationPropertyInfo)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: animationPropertyInfo
+      type: Microsoft.UI.Composition.AnimationPropertyInfo
+    content.vb: Protected Overridable Sub PopulatePropertyInfoOverride(propertyName As String, animationPropertyInfo As AnimationPropertyInfo)
+  overload: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride*
+  nameWithType.vb: Brush.PopulatePropertyInfoOverride(String, AnimationPropertyInfo)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride(String, Microsoft.UI.Composition.AnimationPropertyInfo)
+  name.vb: PopulatePropertyInfoOverride(String, AnimationPropertyInfo)
+- uid: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  id: PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: PopulatePropertyInfo(string, AnimationPropertyInfo)
+  nameWithType: Brush.PopulatePropertyInfo(string, AnimationPropertyInfo)
+  fullName: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo(string, Microsoft.UI.Composition.AnimationPropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PopulatePropertyInfo
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 781
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  example: []
+  syntax:
+    content: public void PopulatePropertyInfo(string propertyName, AnimationPropertyInfo propertyInfo)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: propertyInfo
+      type: Microsoft.UI.Composition.AnimationPropertyInfo
+    content.vb: Public Sub PopulatePropertyInfo(propertyName As String, propertyInfo As AnimationPropertyInfo)
+  overload: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo*
+  implements:
+  - Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  nameWithType.vb: Brush.PopulatePropertyInfo(String, AnimationPropertyInfo)
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo(String, Microsoft.UI.Composition.AnimationPropertyInfo)
+  name.vb: PopulatePropertyInfo(String, AnimationPropertyInfo)
+- uid: Microsoft.UI.Xaml.Media.Brush.Opacity
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.Opacity
+  id: Opacity
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Opacity
+  nameWithType: Brush.Opacity
+  fullName: Microsoft.UI.Xaml.Media.Brush.Opacity
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Opacity
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 783
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public double Opacity { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Opacity As Double
+  overload: Microsoft.UI.Xaml.Media.Brush.Opacity*
+- uid: Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+  id: RelativeTransform
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: RelativeTransform
+  nameWithType: Brush.RelativeTransform
+  fullName: Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RelativeTransform
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 789
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public Transform RelativeTransform { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Media.Transform
+    content.vb: Public Property RelativeTransform As Transform
+  overload: Microsoft.UI.Xaml.Media.Brush.RelativeTransform*
+- uid: Microsoft.UI.Xaml.Media.Brush.Transform
+  commentId: P:Microsoft.UI.Xaml.Media.Brush.Transform
+  id: Transform
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: Brush.Transform
+  fullName: Microsoft.UI.Xaml.Media.Brush.Transform
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Transform
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 795
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  syntax:
+    content: public Transform Transform { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Media.Transform
+    content.vb: Public Property Transform As Transform
+  overload: Microsoft.UI.Xaml.Media.Brush.Transform*
+- uid: Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.Media.Brush
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: Brush.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Media.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Xaml.Media.cs
+    startLine: 801
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Media
+  example: []
+  syntax:
+    content: protected override bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsOverridableInterface(iid As Guid) As Boolean
+  overridden: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  overload: Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Xaml.Media
+  commentId: N:Microsoft.UI.Xaml.Media
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Media
+  nameWithType: Microsoft.UI.Xaml.Media
+  fullName: Microsoft.UI.Xaml.Media
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Media
+    name: Media
+    href: Microsoft.UI.Xaml.Media.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Media
+    name: Media
+    href: Microsoft.UI.Xaml.Media.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Xaml.DependencyObject
+  commentId: T:Microsoft.UI.Xaml.DependencyObject
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyObject.html
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: Microsoft.UI.Xaml.DependencyObject
+- uid: System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DependencyObject>
+  nameWithType: IEquatable<DependencyObject>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.DependencyObject>
+  nameWithType.vb: IEquatable(Of DependencyObject)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.DependencyObject)
+  name.vb: IEquatable(Of DependencyObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: Microsoft.UI.Composition.IAnimationObject
+  commentId: T:Microsoft.UI.Composition.IAnimationObject
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.IAnimationObject.html
+  name: IAnimationObject
+  nameWithType: IAnimationObject
+  fullName: Microsoft.UI.Composition.IAnimationObject
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.Media.Brush}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Media.Brush}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Brush>
+  nameWithType: IEquatable<Brush>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Media.Brush>
+  nameWithType.vb: IEquatable(Of Brush)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Media.Brush)
+  name.vb: IEquatable(Of Brush)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Media.Brush
+    name: Brush
+    href: Microsoft.UI.Xaml.Media.Brush.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Media.Brush
+    name: Brush
+    href: Microsoft.UI.Xaml.Media.Brush.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  name: Equals(DependencyObject)
+  nameWithType: DependencyObject.Equals(DependencyObject)
+  fullName: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  name: SetValue(DependencyProperty, object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, object)
+  fullName: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, object)
+  nameWithType.vb: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, Object)
+  name.vb: SetValue(DependencyProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ReadLocalValue(DependencyProperty)
+  nameWithType: DependencyObject.ReadLocalValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetAnimationBaseValue(DependencyProperty)
+  nameWithType: DependencyObject.GetAnimationBaseValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  name: RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  nameWithType: DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  fullName: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  name: UnregisterPropertyChangedCallback(DependencyProperty, long)
+  nameWithType: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)
+  fullName: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, long)
+  nameWithType.vb: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Long)
+  name.vb: UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher
+  name: Dispatcher
+  nameWithType: DependencyObject.Dispatcher
+  fullName: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+- uid: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: DependencyObject.DispatcherQueue
+  fullName: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Composition
+  commentId: N:Microsoft.UI.Composition
+  href: Microsoft.html
+  name: Microsoft.UI.Composition
+  nameWithType: Microsoft.UI.Composition
+  fullName: Microsoft.UI.Composition
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: Microsoft.UI.Xaml.Media.Brush.#ctor*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.#ctor
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush__ctor
+  name: Brush
+  nameWithType: Brush.Brush
+  fullName: Microsoft.UI.Xaml.Media.Brush.Brush
+  nameWithType.vb: Brush.New
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.New
+  name.vb: New
+- uid: Microsoft.UI.Xaml.Media.Brush.As*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.As
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_As__1
+  name: As
+  nameWithType: Brush.As
+  fullName: Microsoft.UI.Xaml.Media.Brush.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Xaml.Media.Brush.OpacityProperty*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_OpacityProperty
+  name: OpacityProperty
+  nameWithType: Brush.OpacityProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.OpacityProperty
+- uid: Microsoft.UI.Xaml.DependencyProperty
+  commentId: T:Microsoft.UI.Xaml.DependencyProperty
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyProperty.html
+  name: DependencyProperty
+  nameWithType: DependencyProperty
+  fullName: Microsoft.UI.Xaml.DependencyProperty
+- uid: Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_RelativeTransformProperty
+  name: RelativeTransformProperty
+  nameWithType: Brush.RelativeTransformProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.RelativeTransformProperty
+- uid: Microsoft.UI.Xaml.Media.Brush.TransformProperty*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.TransformProperty
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_TransformProperty
+  name: TransformProperty
+  nameWithType: Brush.TransformProperty
+  fullName: Microsoft.UI.Xaml.Media.Brush.TransformProperty
+- uid: Microsoft.UI.Xaml.Media.Brush.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.FromAbi
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: Brush.FromAbi
+  fullName: Microsoft.UI.Xaml.Media.Brush.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.Media.Brush
+  commentId: T:Microsoft.UI.Xaml.Media.Brush
+  parent: Microsoft.UI.Xaml.Media
+  href: Microsoft.UI.Xaml.Media.Brush.html
+  name: Brush
+  nameWithType: Brush
+  fullName: Microsoft.UI.Xaml.Media.Brush
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Xaml.Media.Brush.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.op_Equality
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_op_Equality_Microsoft_UI_Xaml_Media_Brush_Microsoft_UI_Xaml_Media_Brush_
+  name: operator ==
+  nameWithType: Brush.operator ==
+  fullName: Microsoft.UI.Xaml.Media.Brush.operator ==
+  nameWithType.vb: Brush.=
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Media.Brush.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_op_Equality_Microsoft_UI_Xaml_Media_Brush_Microsoft_UI_Xaml_Media_Brush_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Media.Brush.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.op_Inequality
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_op_Inequality_Microsoft_UI_Xaml_Media_Brush_Microsoft_UI_Xaml_Media_Brush_
+  name: operator !=
+  nameWithType: Brush.operator !=
+  fullName: Microsoft.UI.Xaml.Media.Brush.operator !=
+  nameWithType.vb: Brush.<>
+  fullName.vb: Microsoft.UI.Xaml.Media.Brush.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Media.Brush.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_op_Inequality_Microsoft_UI_Xaml_Media_Brush_Microsoft_UI_Xaml_Media_Brush_
+- uid: Microsoft.UI.Xaml.Media.Brush.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.Equals
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_Equals_Microsoft_UI_Xaml_Media_Brush_
+  name: Equals
+  nameWithType: Brush.Equals
+  fullName: Microsoft.UI.Xaml.Media.Brush.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.Media.Brush}.Equals(Microsoft.UI.Xaml.Media.Brush)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.Media.Brush}.Equals(Microsoft.UI.Xaml.Media.Brush)
+  parent: System.IEquatable{Microsoft.UI.Xaml.Media.Brush}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Brush)
+  nameWithType: IEquatable<Brush>.Equals(Brush)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Media.Brush>.Equals(Microsoft.UI.Xaml.Media.Brush)
+  nameWithType.vb: IEquatable(Of Brush).Equals(Brush)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Media.Brush).Equals(Microsoft.UI.Xaml.Media.Brush)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Media.Brush}.Equals(Microsoft.UI.Xaml.Media.Brush)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Media.Brush
+    name: Brush
+    href: Microsoft.UI.Xaml.Media.Brush.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Media.Brush}.Equals(Microsoft.UI.Xaml.Media.Brush)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Media.Brush
+    name: Brush
+    href: Microsoft.UI.Xaml.Media.Brush.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: DependencyObject.Equals(object)
+  fullName: Microsoft.UI.Xaml.DependencyObject.Equals(object)
+  nameWithType.vb: DependencyObject.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetHashCode
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: DependencyObject.GetHashCode()
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Media.Brush.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.GetHashCode
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_GetHashCode
+  name: GetHashCode
+  nameWithType: Brush.GetHashCode
+  fullName: Microsoft.UI.Xaml.Media.Brush.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_PopulatePropertyInfoOverride_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  name: PopulatePropertyInfoOverride
+  nameWithType: Brush.PopulatePropertyInfoOverride
+  fullName: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfoOverride
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Composition.AnimationPropertyInfo
+  commentId: T:Microsoft.UI.Composition.AnimationPropertyInfo
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.AnimationPropertyInfo.html
+  name: AnimationPropertyInfo
+  nameWithType: AnimationPropertyInfo
+  fullName: Microsoft.UI.Composition.AnimationPropertyInfo
+- uid: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  name: PopulatePropertyInfo
+  nameWithType: Brush.PopulatePropertyInfo
+  fullName: Microsoft.UI.Xaml.Media.Brush.PopulatePropertyInfo
+- uid: Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  commentId: M:Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  parent: Microsoft.UI.Composition.IAnimationObject
+  isExternal: true
+  href: Microsoft.UI.Composition.IAnimationObject.html#Microsoft_UI_Composition_IAnimationObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  name: PopulatePropertyInfo(string, AnimationPropertyInfo)
+  nameWithType: IAnimationObject.PopulatePropertyInfo(string, AnimationPropertyInfo)
+  fullName: Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(string, Microsoft.UI.Composition.AnimationPropertyInfo)
+  nameWithType.vb: IAnimationObject.PopulatePropertyInfo(String, AnimationPropertyInfo)
+  fullName.vb: Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(String, Microsoft.UI.Composition.AnimationPropertyInfo)
+  name.vb: PopulatePropertyInfo(String, AnimationPropertyInfo)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+    name: PopulatePropertyInfo
+    href: Microsoft.UI.Composition.IAnimationObject.html#Microsoft_UI_Composition_IAnimationObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationPropertyInfo
+    name: AnimationPropertyInfo
+    href: Microsoft.UI.Composition.AnimationPropertyInfo.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.IAnimationObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+    name: PopulatePropertyInfo
+    href: Microsoft.UI.Composition.IAnimationObject.html#Microsoft_UI_Composition_IAnimationObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationPropertyInfo
+    name: AnimationPropertyInfo
+    href: Microsoft.UI.Composition.AnimationPropertyInfo.html
+  - name: )
+- uid: Microsoft.UI.Xaml.Media.Brush.Opacity*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.Opacity
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_Opacity
+  name: Opacity
+  nameWithType: Brush.Opacity
+  fullName: Microsoft.UI.Xaml.Media.Brush.Opacity
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Microsoft.UI.Xaml.Media.Brush.RelativeTransform*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_RelativeTransform
+  name: RelativeTransform
+  nameWithType: Brush.RelativeTransform
+  fullName: Microsoft.UI.Xaml.Media.Brush.RelativeTransform
+- uid: Microsoft.UI.Xaml.Media.Transform
+  commentId: T:Microsoft.UI.Xaml.Media.Transform
+  parent: Microsoft.UI.Xaml.Media
+  href: Microsoft.UI.Xaml.Media.Transform.html
+  name: Transform
+  nameWithType: Transform
+  fullName: Microsoft.UI.Xaml.Media.Transform
+- uid: Microsoft.UI.Xaml.Media.Brush.Transform*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.Transform
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_Transform
+  name: Transform
+  nameWithType: Brush.Transform
+  fullName: Microsoft.UI.Xaml.Media.Brush.Transform
+- uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface(Guid)
+  nameWithType: DependencyObject.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface
+  href: Microsoft.UI.Xaml.Media.Brush.html#Microsoft_UI_Xaml_Media_Brush_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: Brush.IsOverridableInterface
+  fullName: Microsoft.UI.Xaml.Media.Brush.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

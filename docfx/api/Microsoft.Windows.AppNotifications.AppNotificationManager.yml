@@ -1,0 +1,1796 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationManager
+  id: AppNotificationManager
+  parent: Microsoft.Windows.AppNotifications
+  children:
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.As``1
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(System.Object)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(System.IntPtr)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.NotificationInvoked
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Register
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Register(System.String,System.Uri)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(System.String)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(System.UInt32)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(System.String,System.String)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(System.String)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Show(Microsoft.Windows.AppNotifications.AppNotification)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String,System.String)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  - Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  langs:
+  - csharp
+  - vb
+  name: AppNotificationManager
+  nameWithType: AppNotificationManager
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppNotificationManager
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 288
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AppNotifications")]
+
+      [WindowsRuntimeHelperType(typeof(AppNotificationManager))]
+
+      [ProjectedRuntimeClass(typeof(IAppNotificationManager))]
+
+      [ContractVersion(typeof(AppNotificationsContract), 65536)]
+
+      public sealed class AppNotificationManager : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<AppNotificationManager>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AppNotifications")>
+
+      <WindowsRuntimeHelperType(GetType(AppNotificationManager))>
+
+      <ProjectedRuntimeClass(GetType(IAppNotificationManager))>
+
+      <ContractVersion(GetType(AppNotificationsContract), 65536)>
+
+      Public NotInheritable Class AppNotificationManager Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of AppNotificationManager)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AppNotifications
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AppNotifications.AppNotificationsContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.As``1
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.As``1
+  id: As``1
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: AppNotificationManager.As<I>()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 312
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.As*
+  nameWithType.vb: AppNotificationManager.As(Of I)()
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported
+  id: IsSupported
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: IsSupported()
+  nameWithType: AppNotificationManager.IsSupported()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSupported
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 348
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static bool IsSupported()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsSupported() As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+  id: Default
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: AppNotificationManager.Default
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Default
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 350
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static AppNotificationManager Default { get; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    content.vb: Public Shared ReadOnly Property [Default] As AppNotificationManager
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Default*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: AppNotificationManager.FromAbi(nint)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 352
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static AppNotificationManager FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As AppNotificationManager
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi*
+  nameWithType.vb: AppNotificationManager.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  id: op_Equality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AppNotificationManager, AppNotificationManager)
+  nameWithType: AppNotificationManager.operator ==(AppNotificationManager, AppNotificationManager)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.operator ==(Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationManager)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 365
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static bool operator ==(AppNotificationManager x, AppNotificationManager y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    - id: y
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As AppNotificationManager, y As AppNotificationManager) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality*
+  nameWithType.vb: AppNotificationManager.=(AppNotificationManager, AppNotificationManager)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.=(Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationManager)
+  name.vb: =(AppNotificationManager, AppNotificationManager)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  id: op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AppNotificationManager, AppNotificationManager)
+  nameWithType: AppNotificationManager.operator !=(AppNotificationManager, AppNotificationManager)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.operator !=(Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationManager)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 366
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static bool operator !=(AppNotificationManager x, AppNotificationManager y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    - id: y
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As AppNotificationManager, y As AppNotificationManager) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality*
+  nameWithType.vb: AppNotificationManager.<>(AppNotificationManager, AppNotificationManager)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.<>(Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationManager)
+  name.vb: <>(AppNotificationManager, AppNotificationManager)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  id: Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Equals(AppNotificationManager)
+  nameWithType: AppNotificationManager.Equals(AppNotificationManager)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 367
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(AppNotificationManager other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.AppNotifications.AppNotificationManager
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As AppNotificationManager) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(System.Object)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AppNotificationManager.Equals(object)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 368
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals*
+  nameWithType.vb: AppNotificationManager.Equals(Object)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AppNotificationManager.GetHashCode()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 369
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Register
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Register
+  id: Register
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Register()
+  nameWithType: AppNotificationManager.Register()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Register()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Register
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 392
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public void Register()
+    content.vb: Public Sub Register()
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Register*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister
+  id: Unregister
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Unregister()
+  nameWithType: AppNotificationManager.Unregister()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Unregister
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 394
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public void Unregister()
+    content.vb: Public Sub Unregister()
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll
+  id: UnregisterAll
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterAll()
+  nameWithType: AppNotificationManager.UnregisterAll()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UnregisterAll
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 396
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public void UnregisterAll()
+    content.vb: Public Sub UnregisterAll()
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Show(Microsoft.Windows.AppNotifications.AppNotification)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Show(Microsoft.Windows.AppNotifications.AppNotification)
+  id: Show(Microsoft.Windows.AppNotifications.AppNotification)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Show(AppNotification)
+  nameWithType: AppNotificationManager.Show(AppNotification)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Show(Microsoft.Windows.AppNotifications.AppNotification)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Show
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 398
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public void Show(AppNotification notification)
+    parameters:
+    - id: notification
+      type: Microsoft.Windows.AppNotifications.AppNotification
+    content.vb: Public Sub Show(notification As AppNotification)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Show*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String,System.String)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String,System.String)
+  id: UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String,System.String)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(AppNotificationProgressData, string, string)
+  nameWithType: AppNotificationManager.UpdateAsync(AppNotificationProgressData, string, string)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UpdateAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 400
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncOperation<AppNotificationProgressResult> UpdateAsync(AppNotificationProgressData data, string tag, string group)
+    parameters:
+    - id: data
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    - id: tag
+      type: System.String
+    - id: group
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.Windows.AppNotifications.AppNotificationProgressResult}
+    content.vb: Public Function UpdateAsync(data As AppNotificationProgressData, tag As String, group As String) As IAsyncOperation(Of AppNotificationProgressResult)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync*
+  nameWithType.vb: AppNotificationManager.UpdateAsync(AppNotificationProgressData, String, String)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData, String, String)
+  name.vb: UpdateAsync(AppNotificationProgressData, String, String)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String)
+  id: UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(AppNotificationProgressData, string)
+  nameWithType: AppNotificationManager.UpdateAsync(AppNotificationProgressData, string)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UpdateAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 402
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncOperation<AppNotificationProgressResult> UpdateAsync(AppNotificationProgressData data, string tag)
+    parameters:
+    - id: data
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    - id: tag
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.Windows.AppNotifications.AppNotificationProgressResult}
+    content.vb: Public Function UpdateAsync(data As AppNotificationProgressData, tag As String) As IAsyncOperation(Of AppNotificationProgressResult)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync*
+  nameWithType.vb: AppNotificationManager.UpdateAsync(AppNotificationProgressData, String)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData, String)
+  name.vb: UpdateAsync(AppNotificationProgressData, String)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(System.UInt32)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(System.UInt32)
+  id: RemoveByIdAsync(System.UInt32)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveByIdAsync(uint)
+  nameWithType: AppNotificationManager.RemoveByIdAsync(uint)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveByIdAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 404
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncAction RemoveByIdAsync(uint notificationId)
+    parameters:
+    - id: notificationId
+      type: System.UInt32
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RemoveByIdAsync(notificationId As UInteger) As IAsyncAction
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync*
+  nameWithType.vb: AppNotificationManager.RemoveByIdAsync(UInteger)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(UInteger)
+  name.vb: RemoveByIdAsync(UInteger)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(System.String)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(System.String)
+  id: RemoveByTagAsync(System.String)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveByTagAsync(string)
+  nameWithType: AppNotificationManager.RemoveByTagAsync(string)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveByTagAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 406
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncAction RemoveByTagAsync(string tag)
+    parameters:
+    - id: tag
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RemoveByTagAsync(tag As String) As IAsyncAction
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync*
+  nameWithType.vb: AppNotificationManager.RemoveByTagAsync(String)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(String)
+  name.vb: RemoveByTagAsync(String)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(System.String,System.String)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(System.String,System.String)
+  id: RemoveByTagAndGroupAsync(System.String,System.String)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveByTagAndGroupAsync(string, string)
+  nameWithType: AppNotificationManager.RemoveByTagAndGroupAsync(string, string)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveByTagAndGroupAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 408
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncAction RemoveByTagAndGroupAsync(string tag, string group)
+    parameters:
+    - id: tag
+      type: System.String
+    - id: group
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RemoveByTagAndGroupAsync(tag As String, group As String) As IAsyncAction
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync*
+  nameWithType.vb: AppNotificationManager.RemoveByTagAndGroupAsync(String, String)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(String, String)
+  name.vb: RemoveByTagAndGroupAsync(String, String)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(System.String)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(System.String)
+  id: RemoveByGroupAsync(System.String)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveByGroupAsync(string)
+  nameWithType: AppNotificationManager.RemoveByGroupAsync(string)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveByGroupAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 410
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncAction RemoveByGroupAsync(string group)
+    parameters:
+    - id: group
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RemoveByGroupAsync(group As String) As IAsyncAction
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync*
+  nameWithType.vb: AppNotificationManager.RemoveByGroupAsync(String)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(String)
+  name.vb: RemoveByGroupAsync(String)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync
+  id: RemoveAllAsync
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllAsync()
+  nameWithType: AppNotificationManager.RemoveAllAsync()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveAllAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 412
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncAction RemoveAllAsync()
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RemoveAllAsync() As IAsyncAction
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync
+  id: GetAllAsync
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: AppNotificationManager.GetAllAsync()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetAllAsync
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 414
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public IAsyncOperation<IList<AppNotification>> GetAllAsync()
+    return:
+      type: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IList{Microsoft.Windows.AppNotifications.AppNotification}}
+    content.vb: Public Function GetAllAsync() As IAsyncOperation(Of IList(Of AppNotification))
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.NotificationInvoked
+  commentId: E:Microsoft.Windows.AppNotifications.AppNotificationManager.NotificationInvoked
+  id: NotificationInvoked
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: NotificationInvoked
+  nameWithType: AppNotificationManager.NotificationInvoked
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.NotificationInvoked
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: NotificationInvoked
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 416
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public event TypedEventHandler<AppNotificationManager, AppNotificationActivatedEventArgs> NotificationInvoked
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs}
+    content.vb: Public Event NotificationInvoked As TypedEventHandler(Of AppNotificationManager, AppNotificationActivatedEventArgs)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Register(System.String,System.Uri)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationManager.Register(System.String,System.Uri)
+  id: Register(System.String,System.Uri)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Register(string, Uri)
+  nameWithType: AppNotificationManager.Register(string, Uri)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Register(string, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Register
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 422
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public void Register(string displayName, Uri iconUri)
+    parameters:
+    - id: displayName
+      type: System.String
+    - id: iconUri
+      type: System.Uri
+    content.vb: Public Sub Register(displayName As String, iconUri As Uri)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Register*
+  nameWithType.vb: AppNotificationManager.Register(String, Uri)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.Register(String, System.Uri)
+  name.vb: Register(String, Uri)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+  id: Setting
+  parent: Microsoft.Windows.AppNotifications.AppNotificationManager
+  langs:
+  - csharp
+  - vb
+  name: Setting
+  nameWithType: AppNotificationManager.Setting
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Setting
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 424
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public AppNotificationSetting Setting { get; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.AppNotifications.AppNotificationSetting
+    content.vb: Public ReadOnly Property Setting As AppNotificationSetting
+  overload: Microsoft.Windows.AppNotifications.AppNotificationManager.Setting*
+references:
+- uid: Microsoft.Windows.AppNotifications
+  commentId: N:Microsoft.Windows.AppNotifications
+  href: Microsoft.html
+  name: Microsoft.Windows.AppNotifications
+  nameWithType: Microsoft.Windows.AppNotifications
+  fullName: Microsoft.Windows.AppNotifications
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppNotifications
+    name: AppNotifications
+    href: Microsoft.Windows.AppNotifications.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppNotifications
+    name: AppNotifications
+    href: Microsoft.Windows.AppNotifications.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}
+  commentId: T:System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AppNotificationManager>
+  nameWithType: IEquatable<AppNotificationManager>
+  fullName: System.IEquatable<Microsoft.Windows.AppNotifications.AppNotificationManager>
+  nameWithType.vb: IEquatable(Of AppNotificationManager)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppNotifications.AppNotificationManager)
+  name.vb: IEquatable(Of AppNotificationManager)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.As*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.As
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_As__1
+  name: As
+  nameWithType: AppNotificationManager.As
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_IsSupported
+  name: IsSupported
+  nameWithType: AppNotificationManager.IsSupported
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Default*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Default
+  name: Default
+  nameWithType: AppNotificationManager.Default
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Default
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationManager
+  parent: Microsoft.Windows.AppNotifications
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  name: AppNotificationManager
+  nameWithType: AppNotificationManager
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: AppNotificationManager.FromAbi
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_op_Equality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_
+  name: operator ==
+  nameWithType: AppNotificationManager.operator ==
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.operator ==
+  nameWithType.vb: AppNotificationManager.=
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality*
+    name: ==
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_op_Equality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_op_Inequality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_
+  name: operator !=
+  nameWithType: AppNotificationManager.operator !=
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.operator !=
+  nameWithType.vb: AppNotificationManager.<>
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationManager.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_op_Inequality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Equals
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Equals_Microsoft_Windows_AppNotifications_AppNotificationManager_
+  name: Equals
+  nameWithType: AppNotificationManager.Equals
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Equals
+- uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  commentId: M:System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  parent: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AppNotificationManager)
+  nameWithType: IEquatable<AppNotificationManager>.Equals(AppNotificationManager)
+  fullName: System.IEquatable<Microsoft.Windows.AppNotifications.AppNotificationManager>.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  nameWithType.vb: IEquatable(Of AppNotificationManager).Equals(AppNotificationManager)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppNotifications.AppNotificationManager).Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationManager}.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_GetHashCode
+  name: GetHashCode
+  nameWithType: AppNotificationManager.GetHashCode
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Register*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Register
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Register
+  name: Register
+  nameWithType: AppNotificationManager.Register
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Register
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Unregister
+  name: Unregister
+  nameWithType: AppNotificationManager.Unregister
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_UnregisterAll
+  name: UnregisterAll
+  nameWithType: AppNotificationManager.UnregisterAll
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Show*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Show
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Show_Microsoft_Windows_AppNotifications_AppNotification_
+  name: Show
+  nameWithType: AppNotificationManager.Show
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Show
+- uid: Microsoft.Windows.AppNotifications.AppNotification
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotification
+  parent: Microsoft.Windows.AppNotifications
+  href: Microsoft.Windows.AppNotifications.AppNotification.html
+  name: AppNotification
+  nameWithType: AppNotification
+  fullName: Microsoft.Windows.AppNotifications.AppNotification
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_UpdateAsync_Microsoft_Windows_AppNotifications_AppNotificationProgressData_System_String_System_String_
+  name: UpdateAsync
+  nameWithType: AppNotificationManager.UpdateAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  parent: Microsoft.Windows.AppNotifications
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  name: AppNotificationProgressData
+  nameWithType: AppNotificationProgressData
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.Windows.AppNotifications.AppNotificationProgressResult}
+  commentId: T:Windows.Foundation.IAsyncOperation{Microsoft.Windows.AppNotifications.AppNotificationProgressResult}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<AppNotificationProgressResult>
+  nameWithType: IAsyncOperation<AppNotificationProgressResult>
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.Windows.AppNotifications.AppNotificationProgressResult>
+  nameWithType.vb: IAsyncOperation(Of AppNotificationProgressResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.Windows.AppNotifications.AppNotificationProgressResult)
+  name.vb: IAsyncOperation(Of AppNotificationProgressResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressResult
+    name: AppNotificationProgressResult
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressResult.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressResult
+    name: AppNotificationProgressResult
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressResult.html
+  - name: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByIdAsync_System_UInt32_
+  name: RemoveByIdAsync
+  nameWithType: AppNotificationManager.RemoveByIdAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAsync_System_String_
+  name: RemoveByTagAsync
+  nameWithType: AppNotificationManager.RemoveByTagAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAndGroupAsync_System_String_System_String_
+  name: RemoveByTagAndGroupAsync
+  nameWithType: AppNotificationManager.RemoveByTagAndGroupAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByGroupAsync_System_String_
+  name: RemoveByGroupAsync
+  nameWithType: AppNotificationManager.RemoveByGroupAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveAllAsync
+  name: RemoveAllAsync
+  nameWithType: AppNotificationManager.RemoveAllAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_GetAllAsync
+  name: GetAllAsync
+  nameWithType: AppNotificationManager.GetAllAsync
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync
+- uid: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IList{Microsoft.Windows.AppNotifications.AppNotification}}
+  commentId: T:Windows.Foundation.IAsyncOperation{System.Collections.Generic.IList{Microsoft.Windows.AppNotifications.AppNotification}}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<IList<AppNotification>>
+  nameWithType: IAsyncOperation<IList<AppNotification>>
+  fullName: Windows.Foundation.IAsyncOperation<System.Collections.Generic.IList<Microsoft.Windows.AppNotifications.AppNotification>>
+  nameWithType.vb: IAsyncOperation(Of IList(Of AppNotification))
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of System.Collections.Generic.IList(Of Microsoft.Windows.AppNotifications.AppNotification))
+  name.vb: IAsyncOperation(Of IList(Of AppNotification))
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.Windows.AppNotifications.AppNotification
+    name: AppNotification
+    href: Microsoft.Windows.AppNotifications.AppNotification.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotification
+    name: AppNotification
+    href: Microsoft.Windows.AppNotifications.AppNotification.html
+  - name: )
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<AppNotificationManager, AppNotificationActivatedEventArgs>
+  nameWithType: TypedEventHandler<AppNotificationManager, AppNotificationActivatedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of AppNotificationManager, AppNotificationActivatedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.Windows.AppNotifications.AppNotificationManager, Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs)
+  name.vb: TypedEventHandler(Of AppNotificationManager, AppNotificationActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs
+    name: AppNotificationActivatedEventArgs
+    href: Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationManager
+    name: AppNotificationManager
+    href: Microsoft.Windows.AppNotifications.AppNotificationManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs
+    name: AppNotificationActivatedEventArgs
+    href: Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Windows.AppNotifications.AppNotificationManager.Setting*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+  href: Microsoft.Windows.AppNotifications.AppNotificationManager.html#Microsoft_Windows_AppNotifications_AppNotificationManager_Setting
+  name: Setting
+  nameWithType: AppNotificationManager.Setting
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationManager.Setting
+- uid: Microsoft.Windows.AppNotifications.AppNotificationSetting
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationSetting
+  parent: Microsoft.Windows.AppNotifications
+  href: Microsoft.Windows.AppNotifications.AppNotificationSetting.html
+  name: AppNotificationSetting
+  nameWithType: AppNotificationSetting
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationSetting

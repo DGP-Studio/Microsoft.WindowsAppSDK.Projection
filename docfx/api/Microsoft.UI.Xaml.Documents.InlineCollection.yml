@@ -1,0 +1,2457 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection
+  commentId: T:Microsoft.UI.Xaml.Documents.InlineCollection
+  id: InlineCollection
+  parent: Microsoft.UI.Xaml.Documents
+  children:
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Add(Microsoft.UI.Xaml.Documents.Inline)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Clear
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Count
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Equals(System.Object)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator
+  - Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode
+  - Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+  - Microsoft.UI.Xaml.Documents.InlineCollection.ListItem(System.Int32)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt(System.Int32)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  - Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  langs:
+  - csharp
+  - vb
+  name: InlineCollection
+  nameWithType: InlineCollection
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InlineCollection
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1458
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(InlineCollection))]
+
+      [ProjectedRuntimeClass(typeof(IList<Inline>))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public sealed class InlineCollection : IList<Inline>, ICollection<Inline>, IEnumerable<Inline>, IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<InlineCollection>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(InlineCollection))>
+
+      <ProjectedRuntimeClass(GetType(IList(Of Inline)))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public NotInheritable Class InlineCollection Implements IList(Of Inline), ICollection(Of Inline), IEnumerable(Of Inline), IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of InlineCollection)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  - System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}
+  - System.Collections.IEnumerable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: WinRT.ProjectedRuntimeClassAttribute
+    ctor: WinRT.ProjectedRuntimeClassAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: InlineCollection.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1492
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  syntax:
+    content: public static InlineCollection FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As InlineCollection
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi*
+  nameWithType.vb: InlineCollection.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  id: op_Equality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: operator ==(InlineCollection, InlineCollection)
+  nameWithType: InlineCollection.operator ==(InlineCollection, InlineCollection)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.operator ==(Microsoft.UI.Xaml.Documents.InlineCollection, Microsoft.UI.Xaml.Documents.InlineCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1505
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  syntax:
+    content: public static bool operator ==(InlineCollection x, InlineCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+    - id: y
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As InlineCollection, y As InlineCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality*
+  nameWithType.vb: InlineCollection.=(InlineCollection, InlineCollection)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.=(Microsoft.UI.Xaml.Documents.InlineCollection, Microsoft.UI.Xaml.Documents.InlineCollection)
+  name.vb: =(InlineCollection, InlineCollection)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  id: op_Inequality(Microsoft.UI.Xaml.Documents.InlineCollection,Microsoft.UI.Xaml.Documents.InlineCollection)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: operator !=(InlineCollection, InlineCollection)
+  nameWithType: InlineCollection.operator !=(InlineCollection, InlineCollection)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.operator !=(Microsoft.UI.Xaml.Documents.InlineCollection, Microsoft.UI.Xaml.Documents.InlineCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1506
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  syntax:
+    content: public static bool operator !=(InlineCollection x, InlineCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+    - id: y
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As InlineCollection, y As InlineCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality*
+  nameWithType.vb: InlineCollection.<>(InlineCollection, InlineCollection)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.<>(Microsoft.UI.Xaml.Documents.InlineCollection, Microsoft.UI.Xaml.Documents.InlineCollection)
+  name.vb: <>(InlineCollection, InlineCollection)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  id: Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(InlineCollection)
+  nameWithType: InlineCollection.Equals(InlineCollection)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1507
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(InlineCollection other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.Documents.InlineCollection
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As InlineCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: InlineCollection.Equals(object)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1508
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Equals*
+  nameWithType.vb: InlineCollection.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: InlineCollection.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1509
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode*
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Count
+  commentId: P:Microsoft.UI.Xaml.Documents.InlineCollection.Count
+  id: Count
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: InlineCollection.Count
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Count
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Count
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1532
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Count*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Count
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+  commentId: P:Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: InlineCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsReadOnly
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1533
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.IsReadOnly
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.ListItem(System.Int32)
+  commentId: P:Microsoft.UI.Xaml.Documents.InlineCollection.ListItem(System.Int32)
+  id: ListItem(System.Int32)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: InlineCollection.this[int]
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.this[int]
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: this[]
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1534
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Gets or sets the element at the specified index.
+  example: []
+  syntax:
+    content: public Inline this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The element at the specified index.
+    content.vb: Public Default Property this[](index As Integer) As Inline
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.ListItem*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The property is set and the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Item(System.Int32)
+  nameWithType.vb: InlineCollection.this[](Integer)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  id: IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(Inline)
+  nameWithType: InlineCollection.IndexOf(Inline)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IndexOf
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1540
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Determines the index of a specific item in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int IndexOf(Inline item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The object to locate in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int32
+      description: The index of <code class="paramref">item</code> if found in the list; otherwise, -1.
+    content.vb: Public Function IndexOf(item As Inline) As Integer
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  id: Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, Inline)
+  nameWithType: InlineCollection.Insert(int, Inline)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Insert(int, Microsoft.UI.Xaml.Documents.Inline)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Insert
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1541
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Inserts an item to the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void Insert(int index, Inline item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which <code class="paramref">item</code> should be inserted.
+    - id: item
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The object to insert into the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Insert(index As Integer, item As Inline)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: InlineCollection.Insert(Integer, Inline)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.Insert(Integer, Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: Insert(Integer, Inline)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt(System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: InlineCollection.RemoveAt(int)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveAt
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1542
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Removes the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to remove.
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.RemoveAt(System.Int32)
+  nameWithType.vb: InlineCollection.RemoveAt(Integer)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Add(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Add(Microsoft.UI.Xaml.Documents.Inline)
+  id: Add(Microsoft.UI.Xaml.Documents.Inline)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Add(Inline)
+  nameWithType: InlineCollection.Add(Inline)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Add(Microsoft.UI.Xaml.Documents.Inline)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Add
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1543
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(Inline item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As Inline)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Add(Microsoft.UI.Xaml.Documents.Inline)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Clear
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Clear
+  id: Clear
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: InlineCollection.Clear()
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Clear
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1544
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Clear
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  id: Contains(Microsoft.UI.Xaml.Documents.Inline)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(Inline)
+  nameWithType: InlineCollection.Contains(Inline)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Contains
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1545
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(Inline item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As Inline) As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Contains(Microsoft.UI.Xaml.Documents.Inline)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  id: CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Inline[], int)
+  nameWithType: InlineCollection.CopyTo(Inline[], int)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo(Microsoft.UI.Xaml.Documents.Inline[], int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyTo
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1546
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(Inline[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: Microsoft.UI.Xaml.Documents.Inline[]
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As Inline(), arrayIndex As Integer)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  nameWithType.vb: InlineCollection.CopyTo(Inline(), Integer)
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo(Microsoft.UI.Xaml.Documents.Inline(), Integer)
+  name.vb: CopyTo(Inline(), Integer)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  id: Remove(Microsoft.UI.Xaml.Documents.Inline)
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(Inline)
+  nameWithType: InlineCollection.Remove(Inline)
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Remove
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1547
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Removes the first occurrence of a specific object from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(Inline item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.Documents.Inline
+      description: The object to remove from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> was successfully removed from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">item</code> is not found in the original <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Remove(item As Inline) As Boolean
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.Remove*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Remove(Microsoft.UI.Xaml.Documents.Inline)
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator
+  commentId: M:Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.UI.Xaml.Documents.InlineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: InlineCollection.GetEnumerator()
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Documents.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnumerator
+    path: ../src/Microsoft.UI.Xaml.Documents.cs
+    startLine: 1549
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Documents
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<Inline> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.Documents.Inline}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Inline)
+  overload: Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}.GetEnumerator
+references:
+- uid: Microsoft.UI.Xaml.Documents
+  commentId: N:Microsoft.UI.Xaml.Documents
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Documents
+  nameWithType: Microsoft.UI.Xaml.Documents
+  fullName: Microsoft.UI.Xaml.Documents
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Documents
+    name: Documents
+    href: Microsoft.UI.Xaml.Documents.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Documents
+    name: Documents
+    href: Microsoft.UI.Xaml.Documents.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  commentId: T:System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<Inline>
+  nameWithType: IList<Inline>
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.Documents.Inline>
+  nameWithType.vb: IList(Of Inline)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: IList(Of Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Inline>
+  nameWithType: ICollection<Inline>
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>
+  nameWithType.vb: ICollection(Of Inline)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: ICollection(Of Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Inline>
+  nameWithType: IEnumerable<Inline>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.UI.Xaml.Documents.Inline>
+  nameWithType.vb: IEnumerable(Of Inline)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: IEnumerable(Of Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InlineCollection>
+  nameWithType: IEquatable<InlineCollection>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Documents.InlineCollection>
+  nameWithType.vb: IEquatable(Of InlineCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Documents.InlineCollection)
+  name.vb: IEquatable(Of InlineCollection)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection
+    name: InlineCollection
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection
+    name: InlineCollection
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: InlineCollection.FromAbi
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection
+  commentId: T:Microsoft.UI.Xaml.Documents.InlineCollection
+  parent: Microsoft.UI.Xaml.Documents
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html
+  name: InlineCollection
+  nameWithType: InlineCollection
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_op_Equality_Microsoft_UI_Xaml_Documents_InlineCollection_Microsoft_UI_Xaml_Documents_InlineCollection_
+  name: operator ==
+  nameWithType: InlineCollection.operator ==
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.operator ==
+  nameWithType.vb: InlineCollection.=
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_op_Equality_Microsoft_UI_Xaml_Documents_InlineCollection_Microsoft_UI_Xaml_Documents_InlineCollection_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_op_Inequality_Microsoft_UI_Xaml_Documents_InlineCollection_Microsoft_UI_Xaml_Documents_InlineCollection_
+  name: operator !=
+  nameWithType: InlineCollection.operator !=
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.operator !=
+  nameWithType.vb: InlineCollection.<>
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_op_Inequality_Microsoft_UI_Xaml_Documents_InlineCollection_Microsoft_UI_Xaml_Documents_InlineCollection_
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Equals
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Equals_Microsoft_UI_Xaml_Documents_InlineCollection_
+  name: Equals
+  nameWithType: InlineCollection.Equals
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  parent: System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(InlineCollection)
+  nameWithType: IEquatable<InlineCollection>.Equals(InlineCollection)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Documents.InlineCollection>.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  nameWithType.vb: IEquatable(Of InlineCollection).Equals(InlineCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Documents.InlineCollection).Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection
+    name: InlineCollection
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Documents.InlineCollection}.Equals(Microsoft.UI.Xaml.Documents.InlineCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.InlineCollection
+    name: InlineCollection
+    href: Microsoft.UI.Xaml.Documents.InlineCollection.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_GetHashCode
+  name: GetHashCode
+  nameWithType: InlineCollection.GetHashCode
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Count*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Count
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Count
+  name: Count
+  nameWithType: InlineCollection.Count
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Count
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Count
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Count
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<Inline>.Count
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.Count
+  nameWithType.vb: ICollection(Of Inline).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_IsReadOnly
+  name: IsReadOnly
+  nameWithType: InlineCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.IsReadOnly
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<Inline>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.IsReadOnly
+  nameWithType.vb: ICollection(Of Inline).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.ListItem*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.ListItem
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_ListItem_System_Int32_
+  name: this
+  nameWithType: InlineCollection.this
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.this
+  nameWithType.vb: InlineCollection.this[]
+  fullName.vb: Microsoft.UI.Xaml.Documents.InlineCollection.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<Inline>.this[int]
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.Documents.Inline>.this[int]
+  nameWithType.vb: IList(Of Inline).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.Documents.Inline).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.Inline
+  commentId: T:Microsoft.UI.Xaml.Documents.Inline
+  parent: Microsoft.UI.Xaml.Documents
+  href: Microsoft.UI.Xaml.Documents.Inline.html
+  name: Inline
+  nameWithType: Inline
+  fullName: Microsoft.UI.Xaml.Documents.Inline
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<T>.this[int]
+  fullName: System.Collections.Generic.IList<T>.this[int]
+  nameWithType.vb: IList(Of T).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_IndexOf_Microsoft_UI_Xaml_Documents_Inline_
+  name: IndexOf
+  nameWithType: InlineCollection.IndexOf
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.IndexOf
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(Inline)
+  nameWithType: IList<Inline>.IndexOf(Inline)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.Documents.Inline>.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: IList(Of Inline).IndexOf(Inline)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.Documents.Inline).IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.IndexOf(Microsoft.UI.Xaml.Documents.Inline)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Insert*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Insert
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Insert_System_Int32_Microsoft_UI_Xaml_Documents_Inline_
+  name: Insert
+  nameWithType: InlineCollection.Insert
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Insert
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, Inline)
+  nameWithType: IList<Inline>.Insert(int, Inline)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.Documents.Inline>.Insert(int, Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: IList(Of Inline).Insert(Integer, Inline)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.Documents.Inline).Insert(Integer, Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: Insert(Integer, Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.Insert(System.Int32,Microsoft.UI.Xaml.Documents.Inline)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, T)
+  nameWithType: IList<T>.Insert(int, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(int, T)
+  nameWithType.vb: IList(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: InlineCollection.RemoveAt
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.RemoveAt
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<Inline>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.Documents.Inline>.RemoveAt(int)
+  nameWithType.vb: IList(Of Inline).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.Documents.Inline).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.Documents.Inline}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<T>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(int)
+  nameWithType.vb: IList(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Add*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Add
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Add_Microsoft_UI_Xaml_Documents_Inline_
+  name: Add
+  nameWithType: InlineCollection.Add
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Add
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Add(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Add(Microsoft.UI.Xaml.Documents.Inline)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(Inline)
+  nameWithType: ICollection<Inline>.Add(Inline)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.Add(Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: ICollection(Of Inline).Add(Inline)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).Add(Microsoft.UI.Xaml.Documents.Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Add(Microsoft.UI.Xaml.Documents.Inline)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Add(Microsoft.UI.Xaml.Documents.Inline)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Clear*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Clear
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Clear
+  name: Clear
+  nameWithType: InlineCollection.Clear
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Clear
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Clear
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Clear
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<Inline>.Clear()
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.Clear()
+  nameWithType.vb: ICollection(Of Inline).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Contains*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Contains
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Contains_Microsoft_UI_Xaml_Documents_Inline_
+  name: Contains
+  nameWithType: InlineCollection.Contains
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Contains
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(Inline)
+  nameWithType: ICollection<Inline>.Contains(Inline)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.Contains(Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: ICollection(Of Inline).Contains(Inline)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).Contains(Microsoft.UI.Xaml.Documents.Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Contains(Microsoft.UI.Xaml.Documents.Inline)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Contains(Microsoft.UI.Xaml.Documents.Inline)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_CopyTo_Microsoft_UI_Xaml_Documents_Inline___System_Int32_
+  name: CopyTo
+  nameWithType: InlineCollection.CopyTo
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.CopyTo
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(Inline[], int)
+  nameWithType: ICollection<Inline>.CopyTo(Inline[], int)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.CopyTo(Microsoft.UI.Xaml.Documents.Inline[], int)
+  nameWithType.vb: ICollection(Of Inline).CopyTo(Inline(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).CopyTo(Microsoft.UI.Xaml.Documents.Inline(), Integer)
+  name.vb: CopyTo(Inline(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.CopyTo(Microsoft.UI.Xaml.Documents.Inline[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.Inline[]
+  isExternal: true
+  href: Microsoft.UI.Xaml.Documents.Inline.html
+  name: Inline[]
+  nameWithType: Inline[]
+  fullName: Microsoft.UI.Xaml.Documents.Inline[]
+  nameWithType.vb: Inline()
+  fullName.vb: Microsoft.UI.Xaml.Documents.Inline()
+  name.vb: Inline()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.Remove*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.Remove
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_Remove_Microsoft_UI_Xaml_Documents_Inline_
+  name: Remove
+  nameWithType: InlineCollection.Remove
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.Remove
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(Inline)
+  nameWithType: ICollection<Inline>.Remove(Inline)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.Documents.Inline>.Remove(Microsoft.UI.Xaml.Documents.Inline)
+  nameWithType.vb: ICollection(Of Inline).Remove(Inline)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.Documents.Inline).Remove(Microsoft.UI.Xaml.Documents.Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Remove(Microsoft.UI.Xaml.Documents.Inline)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.Documents.Inline}.Remove(Microsoft.UI.Xaml.Documents.Inline)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator*
+  commentId: Overload:Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator
+  href: Microsoft.UI.Xaml.Documents.InlineCollection.html#Microsoft_UI_Xaml_Documents_InlineCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: InlineCollection.GetEnumerator
+  fullName: Microsoft.UI.Xaml.Documents.InlineCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Inline>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.UI.Xaml.Documents.Inline>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Inline).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.UI.Xaml.Documents.Inline).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.Documents.Inline}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.Documents.Inline}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.Documents.Inline}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Inline>
+  nameWithType: IEnumerator<Inline>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.UI.Xaml.Documents.Inline>
+  nameWithType.vb: IEnumerator(Of Inline)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.UI.Xaml.Documents.Inline)
+  name.vb: IEnumerator(Of Inline)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Documents.Inline
+    name: Inline
+    href: Microsoft.UI.Xaml.Documents.Inline.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

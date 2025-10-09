@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Content.IContentSiteAutomation
+  commentId: T:Microsoft.UI.Content.IContentSiteAutomation
+  id: IContentSiteAutomation
+  parent: Microsoft.UI.Content
+  children:
+  - Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+  - Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+  - Microsoft.UI.Content.IContentSiteAutomation.FragmentRootAutomationProviderRequested
+  - Microsoft.UI.Content.IContentSiteAutomation.NextSiblingAutomationProviderRequested
+  - Microsoft.UI.Content.IContentSiteAutomation.ParentAutomationProviderRequested
+  - Microsoft.UI.Content.IContentSiteAutomation.PreviousSiblingAutomationProviderRequested
+  langs:
+  - csharp
+  - vb
+  name: IContentSiteAutomation
+  nameWithType: IContentSiteAutomation
+  fullName: Microsoft.UI.Content.IContentSiteAutomation
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IContentSiteAutomation
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3991
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [Guid("DB4F4683-CD76-50D0-9AE1-044CEB3D3C7A")]
+
+      [WindowsRuntimeHelperType(typeof(IContentSiteAutomation))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65543)]
+
+      public interface IContentSiteAutomation
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <Guid("DB4F4683-CD76-50D0-9AE1-044CEB3D3C7A")>
+
+      <WindowsRuntimeHelperType(GetType(IContentSiteAutomation))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65543)>
+
+      Public Interface IContentSiteAutomation
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DB4F4683-CD76-50D0-9AE1-044CEB3D3C7A
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65543"
+- uid: Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+  commentId: P:Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+  id: AutomationOption
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: AutomationOption
+  nameWithType: IContentSiteAutomation.AutomationOption
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AutomationOption
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3995
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: ContentAutomationOptions AutomationOption { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentAutomationOptions
+    content.vb: Property AutomationOption As ContentAutomationOptions
+  overload: Microsoft.UI.Content.IContentSiteAutomation.AutomationOption*
+- uid: Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+  commentId: P:Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+  id: AutomationProvider
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: AutomationProvider
+  nameWithType: IContentSiteAutomation.AutomationProvider
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AutomationProvider
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3996
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: object AutomationProvider { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property AutomationProvider As Object
+  overload: Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider*
+- uid: Microsoft.UI.Content.IContentSiteAutomation.FragmentRootAutomationProviderRequested
+  commentId: E:Microsoft.UI.Content.IContentSiteAutomation.FragmentRootAutomationProviderRequested
+  id: FragmentRootAutomationProviderRequested
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: FragmentRootAutomationProviderRequested
+  nameWithType: IContentSiteAutomation.FragmentRootAutomationProviderRequested
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.FragmentRootAutomationProviderRequested
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FragmentRootAutomationProviderRequested
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3997
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: event TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs> FragmentRootAutomationProviderRequested
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+    content.vb: Event FragmentRootAutomationProviderRequested As TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+- uid: Microsoft.UI.Content.IContentSiteAutomation.NextSiblingAutomationProviderRequested
+  commentId: E:Microsoft.UI.Content.IContentSiteAutomation.NextSiblingAutomationProviderRequested
+  id: NextSiblingAutomationProviderRequested
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: NextSiblingAutomationProviderRequested
+  nameWithType: IContentSiteAutomation.NextSiblingAutomationProviderRequested
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.NextSiblingAutomationProviderRequested
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: NextSiblingAutomationProviderRequested
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3998
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: event TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs> NextSiblingAutomationProviderRequested
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+    content.vb: Event NextSiblingAutomationProviderRequested As TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+- uid: Microsoft.UI.Content.IContentSiteAutomation.ParentAutomationProviderRequested
+  commentId: E:Microsoft.UI.Content.IContentSiteAutomation.ParentAutomationProviderRequested
+  id: ParentAutomationProviderRequested
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: ParentAutomationProviderRequested
+  nameWithType: IContentSiteAutomation.ParentAutomationProviderRequested
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.ParentAutomationProviderRequested
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ParentAutomationProviderRequested
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 3999
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: event TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs> ParentAutomationProviderRequested
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+    content.vb: Event ParentAutomationProviderRequested As TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+- uid: Microsoft.UI.Content.IContentSiteAutomation.PreviousSiblingAutomationProviderRequested
+  commentId: E:Microsoft.UI.Content.IContentSiteAutomation.PreviousSiblingAutomationProviderRequested
+  id: PreviousSiblingAutomationProviderRequested
+  parent: Microsoft.UI.Content.IContentSiteAutomation
+  langs:
+  - csharp
+  - vb
+  name: PreviousSiblingAutomationProviderRequested
+  nameWithType: IContentSiteAutomation.PreviousSiblingAutomationProviderRequested
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.PreviousSiblingAutomationProviderRequested
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PreviousSiblingAutomationProviderRequested
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4000
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: event TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs> PreviousSiblingAutomationProviderRequested
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+    content.vb: Event PreviousSiblingAutomationProviderRequested As TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+references:
+- uid: Microsoft.UI.Content
+  commentId: N:Microsoft.UI.Content
+  href: Microsoft.html
+  name: Microsoft.UI.Content
+  nameWithType: Microsoft.UI.Content
+  fullName: Microsoft.UI.Content
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+- uid: Microsoft.UI.Content.IContentSiteAutomation.AutomationOption*
+  commentId: Overload:Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+  href: Microsoft.UI.Content.IContentSiteAutomation.html#Microsoft_UI_Content_IContentSiteAutomation_AutomationOption
+  name: AutomationOption
+  nameWithType: IContentSiteAutomation.AutomationOption
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.AutomationOption
+- uid: Microsoft.UI.Content.ContentAutomationOptions
+  commentId: T:Microsoft.UI.Content.ContentAutomationOptions
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentAutomationOptions.html
+  name: ContentAutomationOptions
+  nameWithType: ContentAutomationOptions
+  fullName: Microsoft.UI.Content.ContentAutomationOptions
+- uid: Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider*
+  commentId: Overload:Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+  href: Microsoft.UI.Content.IContentSiteAutomation.html#Microsoft_UI_Content_IContentSiteAutomation_AutomationProvider
+  name: AutomationProvider
+  nameWithType: IContentSiteAutomation.AutomationProvider
+  fullName: Microsoft.UI.Content.IContentSiteAutomation.AutomationProvider
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.IContentSiteAutomation,Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs>
+  nameWithType: TypedEventHandler<IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Content.IContentSiteAutomation, Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Content.IContentSiteAutomation, Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs)
+  name.vb: TypedEventHandler(Of IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Content.IContentSiteAutomation
+    name: IContentSiteAutomation
+    href: Microsoft.UI.Content.IContentSiteAutomation.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs
+    name: ContentSiteAutomationProviderRequestedEventArgs
+    href: Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Content.IContentSiteAutomation
+    name: IContentSiteAutomation
+    href: Microsoft.UI.Content.IContentSiteAutomation.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs
+    name: ContentSiteAutomationProviderRequestedEventArgs
+    href: Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

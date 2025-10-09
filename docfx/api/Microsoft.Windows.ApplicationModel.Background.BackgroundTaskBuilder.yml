@@ -1,0 +1,1237 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  commentId: T:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  id: BackgroundTaskBuilder
+  parent: Microsoft.Windows.ApplicationModel.Background
+  children:
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition(Windows.ApplicationModel.Background.IBackgroundCondition)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(System.Object)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi(System.IntPtr)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register(System.String)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid(System.Guid)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger(Windows.ApplicationModel.Background.IBackgroundTrigger)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  - Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  langs:
+  - csharp
+  - vb
+  name: BackgroundTaskBuilder
+  nameWithType: BackgroundTaskBuilder
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: BackgroundTaskBuilder
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Background")]
+
+      [WindowsRuntimeHelperType(typeof(BackgroundTaskBuilder))]
+
+      [ProjectedRuntimeClass(typeof(IBackgroundTaskBuilder))]
+
+      [ContractVersion(typeof(BackgroundTaskContract), 65536)]
+
+      public sealed class BackgroundTaskBuilder : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<BackgroundTaskBuilder>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Background")>
+
+      <WindowsRuntimeHelperType(GetType(BackgroundTaskBuilder))>
+
+      <ProjectedRuntimeClass(GetType(IBackgroundTaskBuilder))>
+
+      <ContractVersion(GetType(BackgroundTaskContract), 65536)>
+
+      Public NotInheritable Class BackgroundTaskBuilder Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of BackgroundTaskBuilder)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.ApplicationModel.Background
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor
+  id: '#ctor'
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: BackgroundTaskBuilder()
+  nameWithType: BackgroundTaskBuilder.BackgroundTaskBuilder()
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.BackgroundTaskBuilder()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public BackgroundTaskBuilder()
+    content.vb: Public Sub New()
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor*
+  nameWithType.vb: BackgroundTaskBuilder.New()
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.New()
+  name.vb: New()
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: BackgroundTaskBuilder.FromAbi(nint)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public static BackgroundTaskBuilder FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As BackgroundTaskBuilder
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi*
+  nameWithType.vb: BackgroundTaskBuilder.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  id: op_Equality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: operator ==(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  nameWithType: BackgroundTaskBuilder.operator ==(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.operator ==(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder, Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 83
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public static bool operator ==(BackgroundTaskBuilder x, BackgroundTaskBuilder y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    - id: y
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As BackgroundTaskBuilder, y As BackgroundTaskBuilder) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality*
+  nameWithType.vb: BackgroundTaskBuilder.=(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.=(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder, Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  name.vb: =(BackgroundTaskBuilder, BackgroundTaskBuilder)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  id: op_Inequality(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder,Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: operator !=(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  nameWithType: BackgroundTaskBuilder.operator !=(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.operator !=(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder, Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public static bool operator !=(BackgroundTaskBuilder x, BackgroundTaskBuilder y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    - id: y
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As BackgroundTaskBuilder, y As BackgroundTaskBuilder) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality*
+  nameWithType.vb: BackgroundTaskBuilder.<>(BackgroundTaskBuilder, BackgroundTaskBuilder)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.<>(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder, Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  name.vb: <>(BackgroundTaskBuilder, BackgroundTaskBuilder)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  id: Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: Equals(BackgroundTaskBuilder)
+  nameWithType: BackgroundTaskBuilder.Equals(BackgroundTaskBuilder)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 85
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(BackgroundTaskBuilder other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As BackgroundTaskBuilder) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(System.Object)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: BackgroundTaskBuilder.Equals(object)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals*
+  nameWithType.vb: BackgroundTaskBuilder.Equals(Object)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BackgroundTaskBuilder.GetHashCode()
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 87
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger(Windows.ApplicationModel.Background.IBackgroundTrigger)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger(Windows.ApplicationModel.Background.IBackgroundTrigger)
+  id: SetTrigger(Windows.ApplicationModel.Background.IBackgroundTrigger)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetTrigger(IBackgroundTrigger)
+  nameWithType: BackgroundTaskBuilder.SetTrigger(IBackgroundTrigger)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger(Windows.ApplicationModel.Background.IBackgroundTrigger)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTrigger
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 110
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public void SetTrigger(IBackgroundTrigger trigger)
+    parameters:
+    - id: trigger
+      type: Windows.ApplicationModel.Background.IBackgroundTrigger
+    content.vb: Public Sub SetTrigger(trigger As IBackgroundTrigger)
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid(System.Guid)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid(System.Guid)
+  id: SetTaskEntryPointClsid(System.Guid)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetTaskEntryPointClsid(Guid)
+  nameWithType: BackgroundTaskBuilder.SetTaskEntryPointClsid(Guid)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTaskEntryPointClsid
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public void SetTaskEntryPointClsid(Guid clsId)
+    parameters:
+    - id: clsId
+      type: System.Guid
+    content.vb: Public Sub SetTaskEntryPointClsid(clsId As Guid)
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition(Windows.ApplicationModel.Background.IBackgroundCondition)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition(Windows.ApplicationModel.Background.IBackgroundCondition)
+  id: AddCondition(Windows.ApplicationModel.Background.IBackgroundCondition)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddCondition(IBackgroundCondition)
+  nameWithType: BackgroundTaskBuilder.AddCondition(IBackgroundCondition)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition(Windows.ApplicationModel.Background.IBackgroundCondition)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AddCondition
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 114
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public void AddCondition(IBackgroundCondition condition)
+    parameters:
+    - id: condition
+      type: Windows.ApplicationModel.Background.IBackgroundCondition
+    content.vb: Public Sub AddCondition(condition As IBackgroundCondition)
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register
+  id: Register
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: Register()
+  nameWithType: BackgroundTaskBuilder.Register()
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Register
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public BackgroundTaskRegistration Register()
+    return:
+      type: Windows.ApplicationModel.Background.BackgroundTaskRegistration
+    content.vb: Public Function Register() As BackgroundTaskRegistration
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register(System.String)
+  commentId: M:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register(System.String)
+  id: Register(System.String)
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: Register(string)
+  nameWithType: BackgroundTaskBuilder.Register(string)
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Register
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public BackgroundTaskRegistration Register(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Windows.ApplicationModel.Background.BackgroundTaskRegistration
+    content.vb: Public Function Register(name As String) As BackgroundTaskRegistration
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register*
+  nameWithType.vb: BackgroundTaskBuilder.Register(String)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register(String)
+  name.vb: Register(String)
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+  commentId: P:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+  id: Name
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: BackgroundTaskBuilder.Name
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Name
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 120
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name*
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+  commentId: P:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+  id: TaskGroup
+  parent: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  langs:
+  - csharp
+  - vb
+  name: TaskGroup
+  nameWithType: BackgroundTaskBuilder.TaskGroup
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Background.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TaskGroup
+    path: ../src/Microsoft.Windows.ApplicationModel.Background.cs
+    startLine: 126
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Background
+  syntax:
+    content: public BackgroundTaskRegistrationGroup TaskGroup { get; set; }
+    parameters: []
+    return:
+      type: Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup
+    content.vb: Public Property TaskGroup As BackgroundTaskRegistrationGroup
+  overload: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup*
+references:
+- uid: Microsoft.Windows.ApplicationModel.Background
+  commentId: N:Microsoft.Windows.ApplicationModel.Background
+  href: Microsoft.html
+  name: Microsoft.Windows.ApplicationModel.Background
+  nameWithType: Microsoft.Windows.ApplicationModel.Background
+  fullName: Microsoft.Windows.ApplicationModel.Background
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Background
+    name: Background
+    href: Microsoft.Windows.ApplicationModel.Background.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Background
+    name: Background
+    href: Microsoft.Windows.ApplicationModel.Background.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}
+  commentId: T:System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BackgroundTaskBuilder>
+  nameWithType: IEquatable<BackgroundTaskBuilder>
+  fullName: System.IEquatable<Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder>
+  nameWithType.vb: IEquatable(Of BackgroundTaskBuilder)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  name.vb: IEquatable(Of BackgroundTaskBuilder)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    name: BackgroundTaskBuilder
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    name: BackgroundTaskBuilder
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.#ctor
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder__ctor
+  name: BackgroundTaskBuilder
+  nameWithType: BackgroundTaskBuilder.BackgroundTaskBuilder
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.BackgroundTaskBuilder
+  nameWithType.vb: BackgroundTaskBuilder.New
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.New
+  name.vb: New
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: BackgroundTaskBuilder.FromAbi
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  commentId: T:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+  parent: Microsoft.Windows.ApplicationModel.Background
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html
+  name: BackgroundTaskBuilder
+  nameWithType: BackgroundTaskBuilder
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_op_Equality_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_
+  name: operator ==
+  nameWithType: BackgroundTaskBuilder.operator ==
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.operator ==
+  nameWithType.vb: BackgroundTaskBuilder.=
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Equality*
+    name: ==
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_op_Equality_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_op_Inequality_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_
+  name: operator !=
+  nameWithType: BackgroundTaskBuilder.operator !=
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.operator !=
+  nameWithType.vb: BackgroundTaskBuilder.<>
+  fullName.vb: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_op_Inequality_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Equals_Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_
+  name: Equals
+  nameWithType: BackgroundTaskBuilder.Equals
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Equals
+- uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  commentId: M:System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  parent: System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(BackgroundTaskBuilder)
+  nameWithType: IEquatable<BackgroundTaskBuilder>.Equals(BackgroundTaskBuilder)
+  fullName: System.IEquatable<Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder>.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  nameWithType.vb: IEquatable(Of BackgroundTaskBuilder).Equals(BackgroundTaskBuilder)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder).Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    name: BackgroundTaskBuilder
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder}.Equals(Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder
+    name: BackgroundTaskBuilder
+    href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_GetHashCode
+  name: GetHashCode
+  nameWithType: BackgroundTaskBuilder.GetHashCode
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_SetTrigger_Windows_ApplicationModel_Background_IBackgroundTrigger_
+  name: SetTrigger
+  nameWithType: BackgroundTaskBuilder.SetTrigger
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger
+- uid: Windows.ApplicationModel.Background.IBackgroundTrigger
+  commentId: T:Windows.ApplicationModel.Background.IBackgroundTrigger
+  parent: Windows.ApplicationModel.Background
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background.ibackgroundtrigger
+  name: IBackgroundTrigger
+  nameWithType: IBackgroundTrigger
+  fullName: Windows.ApplicationModel.Background.IBackgroundTrigger
+- uid: Windows.ApplicationModel.Background
+  commentId: N:Windows.ApplicationModel.Background
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.ApplicationModel.Background
+  nameWithType: Windows.ApplicationModel.Background
+  fullName: Windows.ApplicationModel.Background
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.ApplicationModel
+    name: ApplicationModel
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel
+  - name: .
+  - uid: Windows.ApplicationModel.Background
+    name: Background
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.ApplicationModel
+    name: ApplicationModel
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel
+  - name: .
+  - uid: Windows.ApplicationModel.Background
+    name: Background
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_SetTaskEntryPointClsid_System_Guid_
+  name: SetTaskEntryPointClsid
+  nameWithType: BackgroundTaskBuilder.SetTaskEntryPointClsid
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTaskEntryPointClsid
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_AddCondition_Windows_ApplicationModel_Background_IBackgroundCondition_
+  name: AddCondition
+  nameWithType: BackgroundTaskBuilder.AddCondition
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition
+- uid: Windows.ApplicationModel.Background.IBackgroundCondition
+  commentId: T:Windows.ApplicationModel.Background.IBackgroundCondition
+  parent: Windows.ApplicationModel.Background
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background.ibackgroundcondition
+  name: IBackgroundCondition
+  nameWithType: IBackgroundCondition
+  fullName: Windows.ApplicationModel.Background.IBackgroundCondition
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Register
+  name: Register
+  nameWithType: BackgroundTaskBuilder.Register
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register
+- uid: Windows.ApplicationModel.Background.BackgroundTaskRegistration
+  commentId: T:Windows.ApplicationModel.Background.BackgroundTaskRegistration
+  parent: Windows.ApplicationModel.Background
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background.backgroundtaskregistration
+  name: BackgroundTaskRegistration
+  nameWithType: BackgroundTaskRegistration
+  fullName: Windows.ApplicationModel.Background.BackgroundTaskRegistration
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_Name
+  name: Name
+  nameWithType: BackgroundTaskBuilder.Name
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.Name
+- uid: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+  href: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.html#Microsoft_Windows_ApplicationModel_Background_BackgroundTaskBuilder_TaskGroup
+  name: TaskGroup
+  nameWithType: BackgroundTaskBuilder.TaskGroup
+  fullName: Microsoft.Windows.ApplicationModel.Background.BackgroundTaskBuilder.TaskGroup
+- uid: Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup
+  commentId: T:Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup
+  parent: Windows.ApplicationModel.Background
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.background.backgroundtaskregistrationgroup
+  name: BackgroundTaskRegistrationGroup
+  nameWithType: BackgroundTaskRegistrationGroup
+  fullName: Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup

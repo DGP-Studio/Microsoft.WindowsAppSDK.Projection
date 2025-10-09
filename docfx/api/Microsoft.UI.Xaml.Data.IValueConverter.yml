@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Data.IValueConverter
+  commentId: T:Microsoft.UI.Xaml.Data.IValueConverter
+  id: IValueConverter
+  parent: Microsoft.UI.Xaml.Data
+  children:
+  - Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  - Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IValueConverter
+  nameWithType: IValueConverter
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IValueConverter
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1221
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("AFDD2BFF-10F5-5173-B7C0-3590BD96CB35")]
+
+      [WindowsRuntimeHelperType(typeof(IValueConverter))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface IValueConverter
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("AFDD2BFF-10F5-5173-B7C0-3590BD96CB35")>
+
+      <WindowsRuntimeHelperType(GetType(IValueConverter))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface IValueConverter
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AFDD2BFF-10F5-5173-B7C0-3590BD96CB35
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Microsoft.UI.Xaml.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.String)
+  id: Convert(System.Object,System.Type,System.Object,System.String)
+  parent: Microsoft.UI.Xaml.Data.IValueConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert(object, Type, object, string)
+  nameWithType: IValueConverter.Convert(object, Type, object, string)
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.Convert(object, System.Type, object, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Convert
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1225
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: object Convert(object value, Type targetType, object parameter, string language)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: targetType
+      type: System.Type
+    - id: parameter
+      type: System.Object
+    - id: language
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function Convert(value As Object, targetType As Type, parameter As Object, language As String) As Object
+  overload: Microsoft.UI.Xaml.Data.IValueConverter.Convert*
+  nameWithType.vb: IValueConverter.Convert(Object, Type, Object, String)
+  fullName.vb: Microsoft.UI.Xaml.Data.IValueConverter.Convert(Object, System.Type, Object, String)
+  name.vb: Convert(Object, Type, Object, String)
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  commentId: M:Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)
+  id: ConvertBack(System.Object,System.Type,System.Object,System.String)
+  parent: Microsoft.UI.Xaml.Data.IValueConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertBack(object, Type, object, string)
+  nameWithType: IValueConverter.ConvertBack(object, Type, object, string)
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(object, System.Type, object, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ConvertBack
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1226
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: object ConvertBack(object value, Type targetType, object parameter, string language)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: targetType
+      type: System.Type
+    - id: parameter
+      type: System.Object
+    - id: language
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function ConvertBack(value As Object, targetType As Type, parameter As Object, language As String) As Object
+  overload: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack*
+  nameWithType.vb: IValueConverter.ConvertBack(Object, Type, Object, String)
+  fullName.vb: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack(Object, System.Type, Object, String)
+  name.vb: ConvertBack(Object, Type, Object, String)
+references:
+- uid: Microsoft.UI.Xaml.Data
+  commentId: N:Microsoft.UI.Xaml.Data
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Data
+  nameWithType: Microsoft.UI.Xaml.Data
+  fullName: Microsoft.UI.Xaml.Data
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.Convert*
+  commentId: Overload:Microsoft.UI.Xaml.Data.IValueConverter.Convert
+  href: Microsoft.UI.Xaml.Data.IValueConverter.html#Microsoft_UI_Xaml_Data_IValueConverter_Convert_System_Object_System_Type_System_Object_System_String_
+  name: Convert
+  nameWithType: IValueConverter.Convert
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.Convert
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack*
+  commentId: Overload:Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack
+  href: Microsoft.UI.Xaml.Data.IValueConverter.html#Microsoft_UI_Xaml_Data_IValueConverter_ConvertBack_System_Object_System_Type_System_Object_System_String_
+  name: ConvertBack
+  nameWithType: IValueConverter.ConvertBack
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter.ConvertBack

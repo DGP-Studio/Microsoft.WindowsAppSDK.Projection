@@ -1,0 +1,2004 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Text.ITextRange
+  commentId: T:Microsoft.UI.Text.ITextRange
+  id: ITextRange
+  parent: Microsoft.UI.Text
+  children:
+  - Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  - Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  - Microsoft.UI.Text.ITextRange.Character
+  - Microsoft.UI.Text.ITextRange.CharacterFormat
+  - Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  - Microsoft.UI.Text.ITextRange.Copy
+  - Microsoft.UI.Text.ITextRange.Cut
+  - Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  - Microsoft.UI.Text.ITextRange.EndPosition
+  - Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  - Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  - Microsoft.UI.Text.ITextRange.FormattedText
+  - Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  - Microsoft.UI.Text.ITextRange.GetClone
+  - Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  - Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  - Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  - Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  - Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.ITextRange.Gravity
+  - Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.ITextRange.Length
+  - Microsoft.UI.Text.ITextRange.Link
+  - Microsoft.UI.Text.ITextRange.MatchSelection
+  - Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.ITextRange.ParagraphFormat
+  - Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  - Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  - Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  - Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  - Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  - Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  - Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  - Microsoft.UI.Text.ITextRange.StartPosition
+  - Microsoft.UI.Text.ITextRange.StoryLength
+  - Microsoft.UI.Text.ITextRange.Text
+  langs:
+  - csharp
+  - vb
+  name: ITextRange
+  nameWithType: ITextRange
+  fullName: Microsoft.UI.Text.ITextRange
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 312
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Text")]
+
+      [Guid("06D4ABCF-0C06-5D12-A743-85537EFD09EA")]
+
+      [WindowsRuntimeHelperType(typeof(ITextRange))]
+
+      [ContractVersion(typeof(TextApiContract), 65536)]
+
+      public interface ITextRange
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Text")>
+
+      <Guid("06D4ABCF-0C06-5D12-A743-85537EFD09EA")>
+
+      <WindowsRuntimeHelperType(GetType(ITextRange))>
+
+      <ContractVersion(GetType(TextApiContract), 65536)>
+
+      Public Interface ITextRange
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Text
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 06D4ABCF-0C06-5D12-A743-85537EFD09EA
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Text.TextApiContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  id: CanPaste(System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: CanPaste(int)
+  nameWithType: ITextRange.CanPaste(int)
+  fullName: Microsoft.UI.Text.ITextRange.CanPaste(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CanPaste
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 316
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: bool CanPaste(int format)
+    parameters:
+    - id: format
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function CanPaste(format As Integer) As Boolean
+  overload: Microsoft.UI.Text.ITextRange.CanPaste*
+  nameWithType.vb: ITextRange.CanPaste(Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.CanPaste(Integer)
+  name.vb: CanPaste(Integer)
+- uid: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  commentId: M:Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  id: ChangeCase(Microsoft.UI.Text.LetterCase)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: ChangeCase(LetterCase)
+  nameWithType: ITextRange.ChangeCase(LetterCase)
+  fullName: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ChangeCase
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 317
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void ChangeCase(LetterCase value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Text.LetterCase
+    content.vb: Sub ChangeCase(value As LetterCase)
+  overload: Microsoft.UI.Text.ITextRange.ChangeCase*
+- uid: Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  id: Collapse(System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Collapse(bool)
+  nameWithType: ITextRange.Collapse(bool)
+  fullName: Microsoft.UI.Text.ITextRange.Collapse(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Collapse
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 318
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void Collapse(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Sub Collapse(value As Boolean)
+  overload: Microsoft.UI.Text.ITextRange.Collapse*
+  nameWithType.vb: ITextRange.Collapse(Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Collapse(Boolean)
+  name.vb: Collapse(Boolean)
+- uid: Microsoft.UI.Text.ITextRange.Copy
+  commentId: M:Microsoft.UI.Text.ITextRange.Copy
+  id: Copy
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: ITextRange.Copy()
+  fullName: Microsoft.UI.Text.ITextRange.Copy()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Copy
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 319
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void Copy()
+    content.vb: Sub Copy()
+  overload: Microsoft.UI.Text.ITextRange.Copy*
+- uid: Microsoft.UI.Text.ITextRange.Cut
+  commentId: M:Microsoft.UI.Text.ITextRange.Cut
+  id: Cut
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Cut()
+  nameWithType: ITextRange.Cut()
+  fullName: Microsoft.UI.Text.ITextRange.Cut()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Cut
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 320
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void Cut()
+    content.vb: Sub Cut()
+  overload: Microsoft.UI.Text.ITextRange.Cut*
+- uid: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Delete(TextRangeUnit, int)
+  nameWithType: ITextRange.Delete(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Delete
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 321
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int Delete(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Delete(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.ITextRange.Delete*
+  nameWithType.vb: ITextRange.Delete(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Delete(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  id: EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: EndOf(TextRangeUnit, bool)
+  nameWithType: ITextRange.EndOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EndOf
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 322
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int EndOf(TextRangeUnit unit, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: extend
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Function EndOf(unit As TextRangeUnit, extend As Boolean) As Integer
+  overload: Microsoft.UI.Text.ITextRange.EndOf*
+  nameWithType.vb: ITextRange.EndOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: EndOf(TextRangeUnit, Boolean)
+- uid: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  id: Expand(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Expand(TextRangeUnit)
+  nameWithType: ITextRange.Expand(TextRangeUnit)
+  fullName: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Expand
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 323
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int Expand(TextRangeUnit unit)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    return:
+      type: System.Int32
+    content.vb: Function Expand(unit As TextRangeUnit) As Integer
+  overload: Microsoft.UI.Text.ITextRange.Expand*
+- uid: Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  commentId: M:Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  id: FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: FindText(string, int, FindOptions)
+  nameWithType: ITextRange.FindText(string, int, FindOptions)
+  fullName: Microsoft.UI.Text.ITextRange.FindText(string, int, Microsoft.UI.Text.FindOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 324
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int FindText(string value, int scanLength, FindOptions options)
+    parameters:
+    - id: value
+      type: System.String
+    - id: scanLength
+      type: System.Int32
+    - id: options
+      type: Microsoft.UI.Text.FindOptions
+    return:
+      type: System.Int32
+    content.vb: Function FindText(value As String, scanLength As Integer, options As FindOptions) As Integer
+  overload: Microsoft.UI.Text.ITextRange.FindText*
+  nameWithType.vb: ITextRange.FindText(String, Integer, FindOptions)
+  fullName.vb: Microsoft.UI.Text.ITextRange.FindText(String, Integer, Microsoft.UI.Text.FindOptions)
+  name.vb: FindText(String, Integer, FindOptions)
+- uid: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  id: GetCharacterUtf32(System.UInt32@,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetCharacterUtf32(out uint, int)
+  nameWithType: ITextRange.GetCharacterUtf32(out uint, int)
+  fullName: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(out uint, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetCharacterUtf32
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 325
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetCharacterUtf32(out uint value, int offset)
+    parameters:
+    - id: value
+      type: System.UInt32
+    - id: offset
+      type: System.Int32
+    content.vb: Sub GetCharacterUtf32(value As UInteger, offset As Integer)
+  overload: Microsoft.UI.Text.ITextRange.GetCharacterUtf32*
+  nameWithType.vb: ITextRange.GetCharacterUtf32(UInteger, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(UInteger, Integer)
+  name.vb: GetCharacterUtf32(UInteger, Integer)
+- uid: Microsoft.UI.Text.ITextRange.GetClone
+  commentId: M:Microsoft.UI.Text.ITextRange.GetClone
+  id: GetClone
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetClone()
+  nameWithType: ITextRange.GetClone()
+  fullName: Microsoft.UI.Text.ITextRange.GetClone()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetClone
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 326
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ITextRange GetClone()
+    return:
+      type: Microsoft.UI.Text.ITextRange
+    content.vb: Function GetClone() As ITextRange
+  overload: Microsoft.UI.Text.ITextRange.GetClone*
+- uid: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  id: GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetIndex(TextRangeUnit)
+  nameWithType: ITextRange.GetIndex(TextRangeUnit)
+  fullName: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetIndex
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 327
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int GetIndex(TextRangeUnit unit)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    return:
+      type: System.Int32
+    content.vb: Function GetIndex(unit As TextRangeUnit) As Integer
+  overload: Microsoft.UI.Text.ITextRange.GetIndex*
+- uid: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  id: GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  nameWithType: ITextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  fullName: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, out Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetPoint
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetPoint(HorizontalCharacterAlignment horizontalAlign, VerticalCharacterAlignment verticalAlign, PointOptions options, out Point point)
+    parameters:
+    - id: horizontalAlign
+      type: Microsoft.UI.Text.HorizontalCharacterAlignment
+    - id: verticalAlign
+      type: Microsoft.UI.Text.VerticalCharacterAlignment
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: point
+      type: Windows.Foundation.Point
+    content.vb: Sub GetPoint(horizontalAlign As HorizontalCharacterAlignment, verticalAlign As VerticalCharacterAlignment, options As PointOptions, point As Point)
+  overload: Microsoft.UI.Text.ITextRange.GetPoint*
+  nameWithType.vb: ITextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, Windows.Foundation.Point)
+  name.vb: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+- uid: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  id: GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetRect(PointOptions, out Rect, out int)
+  nameWithType: ITextRange.GetRect(PointOptions, out Rect, out int)
+  fullName: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions, out Windows.Foundation.Rect, out int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetRect
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 329
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetRect(PointOptions options, out Rect rect, out int hit)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: rect
+      type: Windows.Foundation.Rect
+    - id: hit
+      type: System.Int32
+    content.vb: Sub GetRect(options As PointOptions, rect As Rect, hit As Integer)
+  overload: Microsoft.UI.Text.ITextRange.GetRect*
+  nameWithType.vb: ITextRange.GetRect(PointOptions, Rect, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions, Windows.Foundation.Rect, Integer)
+  name.vb: GetRect(PointOptions, Rect, Integer)
+- uid: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  id: GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetText(TextGetOptions, out string)
+  nameWithType: ITextRange.GetText(TextGetOptions, out string)
+  fullName: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions, out string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 330
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetText(TextGetOptions options, out string value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextGetOptions
+    - id: value
+      type: System.String
+    content.vb: Sub GetText(options As TextGetOptions, value As String)
+  overload: Microsoft.UI.Text.ITextRange.GetText*
+  nameWithType.vb: ITextRange.GetText(TextGetOptions, String)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions, String)
+  name.vb: GetText(TextGetOptions, String)
+- uid: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  id: GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  nameWithType: ITextRange.GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetTextViaStream
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 331
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetTextViaStream(TextGetOptions options, IRandomAccessStream value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextGetOptions
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Sub GetTextViaStream(options As TextGetOptions, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.ITextRange.GetTextViaStream*
+- uid: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  id: InRange(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: InRange(ITextRange)
+  nameWithType: ITextRange.InRange(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 332
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: bool InRange(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Function InRange(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.ITextRange.InRange*
+- uid: Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  id: InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  nameWithType: ITextRange.InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.InsertImage(int, int, int, Microsoft.UI.Text.VerticalCharacterAlignment, string, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InsertImage
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 333
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void InsertImage(int width, int height, int ascent, VerticalCharacterAlignment verticalAlign, string alternateText, IRandomAccessStream value)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: ascent
+      type: System.Int32
+    - id: verticalAlign
+      type: Microsoft.UI.Text.VerticalCharacterAlignment
+    - id: alternateText
+      type: System.String
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Sub InsertImage(width As Integer, height As Integer, ascent As Integer, verticalAlign As VerticalCharacterAlignment, alternateText As String, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.ITextRange.InsertImage*
+  nameWithType.vb: ITextRange.InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+  fullName.vb: Microsoft.UI.Text.ITextRange.InsertImage(Integer, Integer, Integer, Microsoft.UI.Text.VerticalCharacterAlignment, String, Windows.Storage.Streams.IRandomAccessStream)
+  name.vb: InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+- uid: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  id: InStory(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: InStory(ITextRange)
+  nameWithType: ITextRange.InStory(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InStory
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: bool InStory(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Function InStory(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.ITextRange.InStory*
+- uid: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  id: IsEqual(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: IsEqual(ITextRange)
+  nameWithType: ITextRange.IsEqual(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsEqual
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 335
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: bool IsEqual(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Function IsEqual(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.ITextRange.IsEqual*
+- uid: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Move(TextRangeUnit, int)
+  nameWithType: ITextRange.Move(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Move
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 336
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int Move(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Move(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.ITextRange.Move*
+  nameWithType.vb: ITextRange.Move(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Move(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: MoveEnd(TextRangeUnit, int)
+  nameWithType: ITextRange.MoveEnd(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveEnd
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int MoveEnd(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function MoveEnd(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.ITextRange.MoveEnd*
+  nameWithType.vb: ITextRange.MoveEnd(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveEnd(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: MoveStart(TextRangeUnit, int)
+  nameWithType: ITextRange.MoveStart(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveStart
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 338
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int MoveStart(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function MoveStart(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.ITextRange.MoveStart*
+  nameWithType.vb: ITextRange.MoveStart(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveStart(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  id: Paste(System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Paste(int)
+  nameWithType: ITextRange.Paste(int)
+  fullName: Microsoft.UI.Text.ITextRange.Paste(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Paste
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 339
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void Paste(int format)
+    parameters:
+    - id: format
+      type: System.Int32
+    content.vb: Sub Paste(format As Integer)
+  overload: Microsoft.UI.Text.ITextRange.Paste*
+  nameWithType.vb: ITextRange.Paste(Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Paste(Integer)
+  name.vb: Paste(Integer)
+- uid: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  commentId: M:Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  id: ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: ScrollIntoView(PointOptions)
+  nameWithType: ITextRange.ScrollIntoView(PointOptions)
+  fullName: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ScrollIntoView
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 340
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void ScrollIntoView(PointOptions value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Text.PointOptions
+    content.vb: Sub ScrollIntoView(value As PointOptions)
+  overload: Microsoft.UI.Text.ITextRange.ScrollIntoView*
+- uid: Microsoft.UI.Text.ITextRange.MatchSelection
+  commentId: M:Microsoft.UI.Text.ITextRange.MatchSelection
+  id: MatchSelection
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: MatchSelection()
+  nameWithType: ITextRange.MatchSelection()
+  fullName: Microsoft.UI.Text.ITextRange.MatchSelection()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MatchSelection
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 341
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void MatchSelection()
+    content.vb: Sub MatchSelection()
+  overload: Microsoft.UI.Text.ITextRange.MatchSelection*
+- uid: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  id: SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: SetIndex(TextRangeUnit, int, bool)
+  nameWithType: ITextRange.SetIndex(TextRangeUnit, int, bool)
+  fullName: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, int, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetIndex
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 342
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetIndex(TextRangeUnit unit, int index, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: index
+      type: System.Int32
+    - id: extend
+      type: System.Boolean
+    content.vb: Sub SetIndex(unit As TextRangeUnit, index As Integer, extend As Boolean)
+  overload: Microsoft.UI.Text.ITextRange.SetIndex*
+  nameWithType.vb: ITextRange.SetIndex(TextRangeUnit, Integer, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, Integer, Boolean)
+  name.vb: SetIndex(TextRangeUnit, Integer, Boolean)
+- uid: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  id: SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: SetPoint(Point, PointOptions, bool)
+  nameWithType: ITextRange.SetPoint(Point, PointOptions, bool)
+  fullName: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetPoint
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 343
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetPoint(Point point, PointOptions options, bool extend)
+    parameters:
+    - id: point
+      type: Windows.Foundation.Point
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: extend
+      type: System.Boolean
+    content.vb: Sub SetPoint(point As Point, options As PointOptions, extend As Boolean)
+  overload: Microsoft.UI.Text.ITextRange.SetPoint*
+  nameWithType.vb: ITextRange.SetPoint(Point, PointOptions, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, Boolean)
+  name.vb: SetPoint(Point, PointOptions, Boolean)
+- uid: Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  id: SetRange(System.Int32,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: SetRange(int, int)
+  nameWithType: ITextRange.SetRange(int, int)
+  fullName: Microsoft.UI.Text.ITextRange.SetRange(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 344
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetRange(int startPosition, int endPosition)
+    parameters:
+    - id: startPosition
+      type: System.Int32
+    - id: endPosition
+      type: System.Int32
+    content.vb: Sub SetRange(startPosition As Integer, endPosition As Integer)
+  overload: Microsoft.UI.Text.ITextRange.SetRange*
+  nameWithType.vb: ITextRange.SetRange(Integer, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetRange(Integer, Integer)
+  name.vb: SetRange(Integer, Integer)
+- uid: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  id: SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: SetText(TextSetOptions, string)
+  nameWithType: ITextRange.SetText(TextSetOptions, string)
+  fullName: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 345
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetText(TextSetOptions options, string value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextSetOptions
+    - id: value
+      type: System.String
+    content.vb: Sub SetText(options As TextSetOptions, value As String)
+  overload: Microsoft.UI.Text.ITextRange.SetText*
+  nameWithType.vb: ITextRange.SetText(TextSetOptions, String)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions, String)
+  name.vb: SetText(TextSetOptions, String)
+- uid: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  id: SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  nameWithType: ITextRange.SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTextViaStream
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 346
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetTextViaStream(TextSetOptions options, IRandomAccessStream value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextSetOptions
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Sub SetTextViaStream(options As TextSetOptions, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.ITextRange.SetTextViaStream*
+- uid: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  id: StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: StartOf(TextRangeUnit, bool)
+  nameWithType: ITextRange.StartOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StartOf
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 347
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int StartOf(TextRangeUnit unit, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: extend
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Function StartOf(unit As TextRangeUnit, extend As Boolean) As Integer
+  overload: Microsoft.UI.Text.ITextRange.StartOf*
+  nameWithType.vb: ITextRange.StartOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: StartOf(TextRangeUnit, Boolean)
+- uid: Microsoft.UI.Text.ITextRange.Character
+  commentId: P:Microsoft.UI.Text.ITextRange.Character
+  id: Character
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: ITextRange.Character
+  fullName: Microsoft.UI.Text.ITextRange.Character
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Character
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 348
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: char Character { get; set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Property Character As Char
+  overload: Microsoft.UI.Text.ITextRange.Character*
+- uid: Microsoft.UI.Text.ITextRange.CharacterFormat
+  commentId: P:Microsoft.UI.Text.ITextRange.CharacterFormat
+  id: CharacterFormat
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: CharacterFormat
+  nameWithType: ITextRange.CharacterFormat
+  fullName: Microsoft.UI.Text.ITextRange.CharacterFormat
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CharacterFormat
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 349
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ITextCharacterFormat CharacterFormat { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextCharacterFormat
+    content.vb: Property CharacterFormat As ITextCharacterFormat
+  overload: Microsoft.UI.Text.ITextRange.CharacterFormat*
+- uid: Microsoft.UI.Text.ITextRange.EndPosition
+  commentId: P:Microsoft.UI.Text.ITextRange.EndPosition
+  id: EndPosition
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: EndPosition
+  nameWithType: ITextRange.EndPosition
+  fullName: Microsoft.UI.Text.ITextRange.EndPosition
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EndPosition
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 350
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int EndPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property EndPosition As Integer
+  overload: Microsoft.UI.Text.ITextRange.EndPosition*
+- uid: Microsoft.UI.Text.ITextRange.FormattedText
+  commentId: P:Microsoft.UI.Text.ITextRange.FormattedText
+  id: FormattedText
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: FormattedText
+  nameWithType: ITextRange.FormattedText
+  fullName: Microsoft.UI.Text.ITextRange.FormattedText
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FormattedText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 351
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ITextRange FormattedText { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextRange
+    content.vb: Property FormattedText As ITextRange
+  overload: Microsoft.UI.Text.ITextRange.FormattedText*
+- uid: Microsoft.UI.Text.ITextRange.Gravity
+  commentId: P:Microsoft.UI.Text.ITextRange.Gravity
+  id: Gravity
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: ITextRange.Gravity
+  fullName: Microsoft.UI.Text.ITextRange.Gravity
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Gravity
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 352
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: RangeGravity Gravity { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.RangeGravity
+    content.vb: Property Gravity As RangeGravity
+  overload: Microsoft.UI.Text.ITextRange.Gravity*
+- uid: Microsoft.UI.Text.ITextRange.Length
+  commentId: P:Microsoft.UI.Text.ITextRange.Length
+  id: Length
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: ITextRange.Length
+  fullName: Microsoft.UI.Text.ITextRange.Length
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Length
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 353
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Length As Integer
+  overload: Microsoft.UI.Text.ITextRange.Length*
+- uid: Microsoft.UI.Text.ITextRange.Link
+  commentId: P:Microsoft.UI.Text.ITextRange.Link
+  id: Link
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: ITextRange.Link
+  fullName: Microsoft.UI.Text.ITextRange.Link
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Link
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 354
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: string Link { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Link As String
+  overload: Microsoft.UI.Text.ITextRange.Link*
+- uid: Microsoft.UI.Text.ITextRange.ParagraphFormat
+  commentId: P:Microsoft.UI.Text.ITextRange.ParagraphFormat
+  id: ParagraphFormat
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: ParagraphFormat
+  nameWithType: ITextRange.ParagraphFormat
+  fullName: Microsoft.UI.Text.ITextRange.ParagraphFormat
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ParagraphFormat
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 355
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ITextParagraphFormat ParagraphFormat { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextParagraphFormat
+    content.vb: Property ParagraphFormat As ITextParagraphFormat
+  overload: Microsoft.UI.Text.ITextRange.ParagraphFormat*
+- uid: Microsoft.UI.Text.ITextRange.StartPosition
+  commentId: P:Microsoft.UI.Text.ITextRange.StartPosition
+  id: StartPosition
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: StartPosition
+  nameWithType: ITextRange.StartPosition
+  fullName: Microsoft.UI.Text.ITextRange.StartPosition
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StartPosition
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 356
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int StartPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property StartPosition As Integer
+  overload: Microsoft.UI.Text.ITextRange.StartPosition*
+- uid: Microsoft.UI.Text.ITextRange.StoryLength
+  commentId: P:Microsoft.UI.Text.ITextRange.StoryLength
+  id: StoryLength
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: StoryLength
+  nameWithType: ITextRange.StoryLength
+  fullName: Microsoft.UI.Text.ITextRange.StoryLength
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StoryLength
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 357
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int StoryLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StoryLength As Integer
+  overload: Microsoft.UI.Text.ITextRange.StoryLength*
+- uid: Microsoft.UI.Text.ITextRange.Text
+  commentId: P:Microsoft.UI.Text.ITextRange.Text
+  id: Text
+  parent: Microsoft.UI.Text.ITextRange
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: ITextRange.Text
+  fullName: Microsoft.UI.Text.ITextRange.Text
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Text
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 358
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Text As String
+  overload: Microsoft.UI.Text.ITextRange.Text*
+references:
+- uid: Microsoft.UI.Text
+  commentId: N:Microsoft.UI.Text
+  href: Microsoft.html
+  name: Microsoft.UI.Text
+  nameWithType: Microsoft.UI.Text
+  fullName: Microsoft.UI.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+- uid: Microsoft.UI.Text.ITextRange.CanPaste*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.CanPaste
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CanPaste_System_Int32_
+  name: CanPaste
+  nameWithType: ITextRange.CanPaste
+  fullName: Microsoft.UI.Text.ITextRange.CanPaste
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Text.ITextRange.ChangeCase*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.ChangeCase
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ChangeCase_Microsoft_UI_Text_LetterCase_
+  name: ChangeCase
+  nameWithType: ITextRange.ChangeCase
+  fullName: Microsoft.UI.Text.ITextRange.ChangeCase
+- uid: Microsoft.UI.Text.LetterCase
+  commentId: T:Microsoft.UI.Text.LetterCase
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.LetterCase.html
+  name: LetterCase
+  nameWithType: LetterCase
+  fullName: Microsoft.UI.Text.LetterCase
+- uid: Microsoft.UI.Text.ITextRange.Collapse*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Collapse
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Collapse_System_Boolean_
+  name: Collapse
+  nameWithType: ITextRange.Collapse
+  fullName: Microsoft.UI.Text.ITextRange.Collapse
+- uid: Microsoft.UI.Text.ITextRange.Copy*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Copy
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Copy
+  name: Copy
+  nameWithType: ITextRange.Copy
+  fullName: Microsoft.UI.Text.ITextRange.Copy
+- uid: Microsoft.UI.Text.ITextRange.Cut*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Cut
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Cut
+  name: Cut
+  nameWithType: ITextRange.Cut
+  fullName: Microsoft.UI.Text.ITextRange.Cut
+- uid: Microsoft.UI.Text.ITextRange.Delete*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Delete
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Delete_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Delete
+  nameWithType: ITextRange.Delete
+  fullName: Microsoft.UI.Text.ITextRange.Delete
+- uid: Microsoft.UI.Text.TextRangeUnit
+  commentId: T:Microsoft.UI.Text.TextRangeUnit
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextRangeUnit.html
+  name: TextRangeUnit
+  nameWithType: TextRangeUnit
+  fullName: Microsoft.UI.Text.TextRangeUnit
+- uid: Microsoft.UI.Text.ITextRange.EndOf*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.EndOf
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: EndOf
+  nameWithType: ITextRange.EndOf
+  fullName: Microsoft.UI.Text.ITextRange.EndOf
+- uid: Microsoft.UI.Text.ITextRange.Expand*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Expand
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Expand_Microsoft_UI_Text_TextRangeUnit_
+  name: Expand
+  nameWithType: ITextRange.Expand
+  fullName: Microsoft.UI.Text.ITextRange.Expand
+- uid: Microsoft.UI.Text.ITextRange.FindText*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.FindText
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FindText_System_String_System_Int32_Microsoft_UI_Text_FindOptions_
+  name: FindText
+  nameWithType: ITextRange.FindText
+  fullName: Microsoft.UI.Text.ITextRange.FindText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Text.FindOptions
+  commentId: T:Microsoft.UI.Text.FindOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.FindOptions.html
+  name: FindOptions
+  nameWithType: FindOptions
+  fullName: Microsoft.UI.Text.FindOptions
+- uid: Microsoft.UI.Text.ITextRange.GetCharacterUtf32*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetCharacterUtf32
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetCharacterUtf32_System_UInt32__System_Int32_
+  name: GetCharacterUtf32
+  nameWithType: ITextRange.GetCharacterUtf32
+  fullName: Microsoft.UI.Text.ITextRange.GetCharacterUtf32
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.UI.Text.ITextRange.GetClone*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetClone
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetClone
+  name: GetClone
+  nameWithType: ITextRange.GetClone
+  fullName: Microsoft.UI.Text.ITextRange.GetClone
+- uid: Microsoft.UI.Text.ITextRange
+  commentId: T:Microsoft.UI.Text.ITextRange
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextRange.html
+  name: ITextRange
+  nameWithType: ITextRange
+  fullName: Microsoft.UI.Text.ITextRange
+- uid: Microsoft.UI.Text.ITextRange.GetIndex*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetIndex
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetIndex_Microsoft_UI_Text_TextRangeUnit_
+  name: GetIndex
+  nameWithType: ITextRange.GetIndex
+  fullName: Microsoft.UI.Text.ITextRange.GetIndex
+- uid: Microsoft.UI.Text.ITextRange.GetPoint*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetPoint
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetPoint_Microsoft_UI_Text_HorizontalCharacterAlignment_Microsoft_UI_Text_VerticalCharacterAlignment_Microsoft_UI_Text_PointOptions_Windows_Foundation_Point__
+  name: GetPoint
+  nameWithType: ITextRange.GetPoint
+  fullName: Microsoft.UI.Text.ITextRange.GetPoint
+- uid: Microsoft.UI.Text.HorizontalCharacterAlignment
+  commentId: T:Microsoft.UI.Text.HorizontalCharacterAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.HorizontalCharacterAlignment.html
+  name: HorizontalCharacterAlignment
+  nameWithType: HorizontalCharacterAlignment
+  fullName: Microsoft.UI.Text.HorizontalCharacterAlignment
+- uid: Microsoft.UI.Text.VerticalCharacterAlignment
+  commentId: T:Microsoft.UI.Text.VerticalCharacterAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  name: VerticalCharacterAlignment
+  nameWithType: VerticalCharacterAlignment
+  fullName: Microsoft.UI.Text.VerticalCharacterAlignment
+- uid: Microsoft.UI.Text.PointOptions
+  commentId: T:Microsoft.UI.Text.PointOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.PointOptions.html
+  name: PointOptions
+  nameWithType: PointOptions
+  fullName: Microsoft.UI.Text.PointOptions
+- uid: Windows.Foundation.Point
+  commentId: T:Windows.Foundation.Point
+  parent: Windows.Foundation
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Windows.Foundation.Point
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Text.ITextRange.GetRect*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetRect
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetRect_Microsoft_UI_Text_PointOptions_Windows_Foundation_Rect__System_Int32__
+  name: GetRect
+  nameWithType: ITextRange.GetRect
+  fullName: Microsoft.UI.Text.ITextRange.GetRect
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Microsoft.UI.Text.ITextRange.GetText*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetText
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetText_Microsoft_UI_Text_TextGetOptions_System_String__
+  name: GetText
+  nameWithType: ITextRange.GetText
+  fullName: Microsoft.UI.Text.ITextRange.GetText
+- uid: Microsoft.UI.Text.TextGetOptions
+  commentId: T:Microsoft.UI.Text.TextGetOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextGetOptions.html
+  name: TextGetOptions
+  nameWithType: TextGetOptions
+  fullName: Microsoft.UI.Text.TextGetOptions
+- uid: Microsoft.UI.Text.ITextRange.GetTextViaStream*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.GetTextViaStream
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetTextViaStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: GetTextViaStream
+  nameWithType: ITextRange.GetTextViaStream
+  fullName: Microsoft.UI.Text.ITextRange.GetTextViaStream
+- uid: Windows.Storage.Streams.IRandomAccessStream
+  commentId: T:Windows.Storage.Streams.IRandomAccessStream
+  parent: Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  name: IRandomAccessStream
+  nameWithType: IRandomAccessStream
+  fullName: Windows.Storage.Streams.IRandomAccessStream
+- uid: Windows.Storage.Streams
+  commentId: N:Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Storage.Streams
+  nameWithType: Windows.Storage.Streams
+  fullName: Windows.Storage.Streams
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+- uid: Microsoft.UI.Text.ITextRange.InRange*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.InRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InRange_Microsoft_UI_Text_ITextRange_
+  name: InRange
+  nameWithType: ITextRange.InRange
+  fullName: Microsoft.UI.Text.ITextRange.InRange
+- uid: Microsoft.UI.Text.ITextRange.InsertImage*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.InsertImage
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InsertImage_System_Int32_System_Int32_System_Int32_Microsoft_UI_Text_VerticalCharacterAlignment_System_String_Windows_Storage_Streams_IRandomAccessStream_
+  name: InsertImage
+  nameWithType: ITextRange.InsertImage
+  fullName: Microsoft.UI.Text.ITextRange.InsertImage
+- uid: Microsoft.UI.Text.ITextRange.InStory*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.InStory
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InStory_Microsoft_UI_Text_ITextRange_
+  name: InStory
+  nameWithType: ITextRange.InStory
+  fullName: Microsoft.UI.Text.ITextRange.InStory
+- uid: Microsoft.UI.Text.ITextRange.IsEqual*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.IsEqual
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_IsEqual_Microsoft_UI_Text_ITextRange_
+  name: IsEqual
+  nameWithType: ITextRange.IsEqual
+  fullName: Microsoft.UI.Text.ITextRange.IsEqual
+- uid: Microsoft.UI.Text.ITextRange.Move*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Move
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Move_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Move
+  nameWithType: ITextRange.Move
+  fullName: Microsoft.UI.Text.ITextRange.Move
+- uid: Microsoft.UI.Text.ITextRange.MoveEnd*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.MoveEnd
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveEnd_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveEnd
+  nameWithType: ITextRange.MoveEnd
+  fullName: Microsoft.UI.Text.ITextRange.MoveEnd
+- uid: Microsoft.UI.Text.ITextRange.MoveStart*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.MoveStart
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveStart_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveStart
+  nameWithType: ITextRange.MoveStart
+  fullName: Microsoft.UI.Text.ITextRange.MoveStart
+- uid: Microsoft.UI.Text.ITextRange.Paste*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Paste
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Paste_System_Int32_
+  name: Paste
+  nameWithType: ITextRange.Paste
+  fullName: Microsoft.UI.Text.ITextRange.Paste
+- uid: Microsoft.UI.Text.ITextRange.ScrollIntoView*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.ScrollIntoView
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ScrollIntoView_Microsoft_UI_Text_PointOptions_
+  name: ScrollIntoView
+  nameWithType: ITextRange.ScrollIntoView
+  fullName: Microsoft.UI.Text.ITextRange.ScrollIntoView
+- uid: Microsoft.UI.Text.ITextRange.MatchSelection*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.MatchSelection
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MatchSelection
+  name: MatchSelection
+  nameWithType: ITextRange.MatchSelection
+  fullName: Microsoft.UI.Text.ITextRange.MatchSelection
+- uid: Microsoft.UI.Text.ITextRange.SetIndex*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.SetIndex
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetIndex_Microsoft_UI_Text_TextRangeUnit_System_Int32_System_Boolean_
+  name: SetIndex
+  nameWithType: ITextRange.SetIndex
+  fullName: Microsoft.UI.Text.ITextRange.SetIndex
+- uid: Microsoft.UI.Text.ITextRange.SetPoint*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.SetPoint
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_System_Boolean_
+  name: SetPoint
+  nameWithType: ITextRange.SetPoint
+  fullName: Microsoft.UI.Text.ITextRange.SetPoint
+- uid: Microsoft.UI.Text.ITextRange.SetRange*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.SetRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetRange_System_Int32_System_Int32_
+  name: SetRange
+  nameWithType: ITextRange.SetRange
+  fullName: Microsoft.UI.Text.ITextRange.SetRange
+- uid: Microsoft.UI.Text.ITextRange.SetText*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.SetText
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetText_Microsoft_UI_Text_TextSetOptions_System_String_
+  name: SetText
+  nameWithType: ITextRange.SetText
+  fullName: Microsoft.UI.Text.ITextRange.SetText
+- uid: Microsoft.UI.Text.TextSetOptions
+  commentId: T:Microsoft.UI.Text.TextSetOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextSetOptions.html
+  name: TextSetOptions
+  nameWithType: TextSetOptions
+  fullName: Microsoft.UI.Text.TextSetOptions
+- uid: Microsoft.UI.Text.ITextRange.SetTextViaStream*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.SetTextViaStream
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetTextViaStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: SetTextViaStream
+  nameWithType: ITextRange.SetTextViaStream
+  fullName: Microsoft.UI.Text.ITextRange.SetTextViaStream
+- uid: Microsoft.UI.Text.ITextRange.StartOf*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.StartOf
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: StartOf
+  nameWithType: ITextRange.StartOf
+  fullName: Microsoft.UI.Text.ITextRange.StartOf
+- uid: Microsoft.UI.Text.ITextRange.Character*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Character
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Character
+  name: Character
+  nameWithType: ITextRange.Character
+  fullName: Microsoft.UI.Text.ITextRange.Character
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: Microsoft.UI.Text.ITextRange.CharacterFormat*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.CharacterFormat
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CharacterFormat
+  name: CharacterFormat
+  nameWithType: ITextRange.CharacterFormat
+  fullName: Microsoft.UI.Text.ITextRange.CharacterFormat
+- uid: Microsoft.UI.Text.ITextCharacterFormat
+  commentId: T:Microsoft.UI.Text.ITextCharacterFormat
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextCharacterFormat.html
+  name: ITextCharacterFormat
+  nameWithType: ITextCharacterFormat
+  fullName: Microsoft.UI.Text.ITextCharacterFormat
+- uid: Microsoft.UI.Text.ITextRange.EndPosition*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.EndPosition
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndPosition
+  name: EndPosition
+  nameWithType: ITextRange.EndPosition
+  fullName: Microsoft.UI.Text.ITextRange.EndPosition
+- uid: Microsoft.UI.Text.ITextRange.FormattedText*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.FormattedText
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FormattedText
+  name: FormattedText
+  nameWithType: ITextRange.FormattedText
+  fullName: Microsoft.UI.Text.ITextRange.FormattedText
+- uid: Microsoft.UI.Text.ITextRange.Gravity*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Gravity
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Gravity
+  name: Gravity
+  nameWithType: ITextRange.Gravity
+  fullName: Microsoft.UI.Text.ITextRange.Gravity
+- uid: Microsoft.UI.Text.RangeGravity
+  commentId: T:Microsoft.UI.Text.RangeGravity
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.RangeGravity.html
+  name: RangeGravity
+  nameWithType: RangeGravity
+  fullName: Microsoft.UI.Text.RangeGravity
+- uid: Microsoft.UI.Text.ITextRange.Length*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Length
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Length
+  name: Length
+  nameWithType: ITextRange.Length
+  fullName: Microsoft.UI.Text.ITextRange.Length
+- uid: Microsoft.UI.Text.ITextRange.Link*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Link
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Link
+  name: Link
+  nameWithType: ITextRange.Link
+  fullName: Microsoft.UI.Text.ITextRange.Link
+- uid: Microsoft.UI.Text.ITextRange.ParagraphFormat*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.ParagraphFormat
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ParagraphFormat
+  name: ParagraphFormat
+  nameWithType: ITextRange.ParagraphFormat
+  fullName: Microsoft.UI.Text.ITextRange.ParagraphFormat
+- uid: Microsoft.UI.Text.ITextParagraphFormat
+  commentId: T:Microsoft.UI.Text.ITextParagraphFormat
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextParagraphFormat.html
+  name: ITextParagraphFormat
+  nameWithType: ITextParagraphFormat
+  fullName: Microsoft.UI.Text.ITextParagraphFormat
+- uid: Microsoft.UI.Text.ITextRange.StartPosition*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.StartPosition
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartPosition
+  name: StartPosition
+  nameWithType: ITextRange.StartPosition
+  fullName: Microsoft.UI.Text.ITextRange.StartPosition
+- uid: Microsoft.UI.Text.ITextRange.StoryLength*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.StoryLength
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StoryLength
+  name: StoryLength
+  nameWithType: ITextRange.StoryLength
+  fullName: Microsoft.UI.Text.ITextRange.StoryLength
+- uid: Microsoft.UI.Text.ITextRange.Text*
+  commentId: Overload:Microsoft.UI.Text.ITextRange.Text
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Text
+  name: Text
+  nameWithType: ITextRange.Text
+  fullName: Microsoft.UI.Text.ITextRange.Text

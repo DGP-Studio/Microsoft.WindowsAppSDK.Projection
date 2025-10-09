@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.ClosableNotifierHandler
+  commentId: T:Microsoft.UI.ClosableNotifierHandler
+  id: ClosableNotifierHandler
+  parent: Microsoft.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ClosableNotifierHandler
+  nameWithType: ClosableNotifierHandler
+  fullName: Microsoft.UI.ClosableNotifierHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClosableNotifierHandler
+    path: ../src/Microsoft.UI.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(ClosableNotifierHandler))]
+
+      [WinRTExposedType(typeof(ClosableNotifierHandlerWinRTTypeDetails))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65540)]
+
+      public delegate void ClosableNotifierHandler()
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(ClosableNotifierHandler))>
+
+      <WinRTExposedType(GetType(ClosableNotifierHandlerWinRTTypeDetails))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65540)>
+
+      Public Delegate Sub ClosableNotifierHandler()
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65540"
+references:
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html

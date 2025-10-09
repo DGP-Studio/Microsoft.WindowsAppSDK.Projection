@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Controls.ListViewKeyToItemHandler
+  commentId: T:Microsoft.UI.Xaml.Controls.ListViewKeyToItemHandler
+  id: ListViewKeyToItemHandler
+  parent: Microsoft.UI.Xaml.Controls
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ListViewKeyToItemHandler
+  nameWithType: ListViewKeyToItemHandler
+  fullName: Microsoft.UI.Xaml.Controls.ListViewKeyToItemHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListViewKeyToItemHandler
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 30056
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(ListViewKeyToItemHandler))]
+
+      [WinRTExposedType(typeof(ListViewKeyToItemHandlerWinRTTypeDetails))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public delegate IAsyncOperation<object> ListViewKeyToItemHandler(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncOperation{System.Object}
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(ListViewKeyToItemHandler))>
+
+      <WinRTExposedType(GetType(ListViewKeyToItemHandlerWinRTTypeDetails))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Delegate Function ListViewKeyToItemHandler(key As String) As IAsyncOperation(Of Object)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+references:
+- uid: Microsoft.UI.Xaml.Controls
+  commentId: N:Microsoft.UI.Xaml.Controls
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Controls
+  nameWithType: Microsoft.UI.Xaml.Controls
+  fullName: Microsoft.UI.Xaml.Controls
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Controls
+    name: Controls
+    href: Microsoft.UI.Xaml.Controls.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Controls
+    name: Controls
+    href: Microsoft.UI.Xaml.Controls.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Windows.Foundation.IAsyncOperation{System.Object}
+  commentId: T:Windows.Foundation.IAsyncOperation{System.Object}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<object>
+  nameWithType: IAsyncOperation<object>
+  fullName: Windows.Foundation.IAsyncOperation<object>
+  nameWithType.vb: IAsyncOperation(Of Object)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Object)
+  name.vb: IAsyncOperation(Of Object)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

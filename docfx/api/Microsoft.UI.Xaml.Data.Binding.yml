@@ -1,0 +1,1921 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Data.Binding
+  commentId: T:Microsoft.UI.Xaml.Data.Binding
+  id: Binding
+  parent: Microsoft.UI.Xaml.Data
+  children:
+  - Microsoft.UI.Xaml.Data.Binding.#ctor
+  - Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Xaml.Data.Binding.Converter
+  - Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+  - Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+  - Microsoft.UI.Xaml.Data.Binding.ElementName
+  - Microsoft.UI.Xaml.Data.Binding.Equals(Microsoft.UI.Xaml.Data.Binding)
+  - Microsoft.UI.Xaml.Data.Binding.Equals(System.Object)
+  - Microsoft.UI.Xaml.Data.Binding.FallbackValue
+  - Microsoft.UI.Xaml.Data.Binding.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Data.Binding.GetHashCode
+  - Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Xaml.Data.Binding.Mode
+  - Microsoft.UI.Xaml.Data.Binding.Path
+  - Microsoft.UI.Xaml.Data.Binding.RelativeSource
+  - Microsoft.UI.Xaml.Data.Binding.Source
+  - Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+  - Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+  - Microsoft.UI.Xaml.Data.Binding.op_Equality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  - Microsoft.UI.Xaml.Data.Binding.op_Inequality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  langs:
+  - csharp
+  - vb
+  name: Binding
+  nameWithType: Binding
+  fullName: Microsoft.UI.Xaml.Data.Binding
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Binding
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(Binding))]
+
+      [ProjectedRuntimeClass(typeof(IBinding))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public class Binding : BindingBase, IEquatable<DependencyObject>, IEquatable<BindingBase>, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<Binding>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(Binding))>
+
+      <ProjectedRuntimeClass(GetType(IBinding))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Class Binding Inherits BindingBase Implements IEquatable(Of DependencyObject), IEquatable(Of BindingBase), IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of Binding)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Xaml.DependencyObject
+  - Microsoft.UI.Xaml.Data.BindingBase
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  - System.IEquatable{Microsoft.UI.Xaml.Data.BindingBase}
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.Data.Binding}
+  inheritedMembers:
+  - Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+  - Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  - Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  - Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  - Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  - Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  - Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  - Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Data.Binding.#ctor
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.#ctor
+  id: '#ctor'
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Binding()
+  nameWithType: Binding.Binding()
+  fullName: Microsoft.UI.Xaml.Data.Binding.Binding()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public Binding()
+    content.vb: Public Sub New()
+  overload: Microsoft.UI.Xaml.Data.Binding.#ctor*
+  nameWithType.vb: Binding.New()
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.New()
+  name.vb: New()
+- uid: Microsoft.UI.Xaml.Data.Binding.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: Binding.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.Data.Binding.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 116
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public static Binding FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.Data.Binding
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As Binding
+  overload: Microsoft.UI.Xaml.Data.Binding.FromAbi*
+  nameWithType.vb: Binding.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Binding(IObjectReference)
+  nameWithType: Binding.Binding(IObjectReference)
+  fullName: Microsoft.UI.Xaml.Data.Binding.Binding(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: protected Binding(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Xaml.Data.Binding.#ctor*
+  nameWithType.vb: Binding.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Xaml.Data.Binding.op_Equality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.op_Equality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  id: op_Equality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Binding, Binding)
+  nameWithType: Binding.operator ==(Binding, Binding)
+  fullName: Microsoft.UI.Xaml.Data.Binding.operator ==(Microsoft.UI.Xaml.Data.Binding, Microsoft.UI.Xaml.Data.Binding)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 131
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public static bool operator ==(Binding x, Binding y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Data.Binding
+    - id: y
+      type: Microsoft.UI.Xaml.Data.Binding
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As Binding, y As Binding) As Boolean
+  overload: Microsoft.UI.Xaml.Data.Binding.op_Equality*
+  nameWithType.vb: Binding.=(Binding, Binding)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.=(Microsoft.UI.Xaml.Data.Binding, Microsoft.UI.Xaml.Data.Binding)
+  name.vb: =(Binding, Binding)
+- uid: Microsoft.UI.Xaml.Data.Binding.op_Inequality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.op_Inequality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  id: op_Inequality(Microsoft.UI.Xaml.Data.Binding,Microsoft.UI.Xaml.Data.Binding)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Binding, Binding)
+  nameWithType: Binding.operator !=(Binding, Binding)
+  fullName: Microsoft.UI.Xaml.Data.Binding.operator !=(Microsoft.UI.Xaml.Data.Binding, Microsoft.UI.Xaml.Data.Binding)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public static bool operator !=(Binding x, Binding y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Data.Binding
+    - id: y
+      type: Microsoft.UI.Xaml.Data.Binding
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As Binding, y As Binding) As Boolean
+  overload: Microsoft.UI.Xaml.Data.Binding.op_Inequality*
+  nameWithType.vb: Binding.<>(Binding, Binding)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.<>(Microsoft.UI.Xaml.Data.Binding, Microsoft.UI.Xaml.Data.Binding)
+  name.vb: <>(Binding, Binding)
+- uid: Microsoft.UI.Xaml.Data.Binding.Equals(Microsoft.UI.Xaml.Data.Binding)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.Equals(Microsoft.UI.Xaml.Data.Binding)
+  id: Equals(Microsoft.UI.Xaml.Data.Binding)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Equals(Binding)
+  nameWithType: Binding.Equals(Binding)
+  fullName: Microsoft.UI.Xaml.Data.Binding.Equals(Microsoft.UI.Xaml.Data.Binding)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Binding other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.Data.Binding
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Binding) As Boolean
+  overload: Microsoft.UI.Xaml.Data.Binding.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.Data.Binding}.Equals(Microsoft.UI.Xaml.Data.Binding)
+- uid: Microsoft.UI.Xaml.Data.Binding.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Binding.Equals(object)
+  fullName: Microsoft.UI.Xaml.Data.Binding.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.UI.Xaml.Data.BindingBase.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.Data.Binding.Equals*
+  nameWithType.vb: Binding.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.Data.Binding.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Binding.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Data.Binding.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.UI.Xaml.Data.BindingBase.GetHashCode
+  overload: Microsoft.UI.Xaml.Data.Binding.GetHashCode*
+- uid: Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Binding(DerivedComposed)
+  nameWithType: Binding.Binding(DerivedComposed)
+  fullName: Microsoft.UI.Xaml.Data.Binding.Binding(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 138
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: protected Binding(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Xaml.Data.Binding.#ctor*
+  nameWithType.vb: Binding.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Xaml.Data.Binding.Converter
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.Converter
+  id: Converter
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Converter
+  nameWithType: Binding.Converter
+  fullName: Microsoft.UI.Xaml.Data.Binding.Converter
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Converter
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 148
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public IValueConverter Converter { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Data.IValueConverter
+    content.vb: Public Property Converter As IValueConverter
+  overload: Microsoft.UI.Xaml.Data.Binding.Converter*
+- uid: Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+  id: ConverterLanguage
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: ConverterLanguage
+  nameWithType: Binding.ConverterLanguage
+  fullName: Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ConverterLanguage
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public string ConverterLanguage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConverterLanguage As String
+  overload: Microsoft.UI.Xaml.Data.Binding.ConverterLanguage*
+- uid: Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+  id: ConverterParameter
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: ConverterParameter
+  nameWithType: Binding.ConverterParameter
+  fullName: Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ConverterParameter
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 160
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public object ConverterParameter { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property ConverterParameter As Object
+  overload: Microsoft.UI.Xaml.Data.Binding.ConverterParameter*
+- uid: Microsoft.UI.Xaml.Data.Binding.ElementName
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.ElementName
+  id: ElementName
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: ElementName
+  nameWithType: Binding.ElementName
+  fullName: Microsoft.UI.Xaml.Data.Binding.ElementName
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ElementName
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 166
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public string ElementName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ElementName As String
+  overload: Microsoft.UI.Xaml.Data.Binding.ElementName*
+- uid: Microsoft.UI.Xaml.Data.Binding.FallbackValue
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.FallbackValue
+  id: FallbackValue
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: FallbackValue
+  nameWithType: Binding.FallbackValue
+  fullName: Microsoft.UI.Xaml.Data.Binding.FallbackValue
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FallbackValue
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 172
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public object FallbackValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property FallbackValue As Object
+  overload: Microsoft.UI.Xaml.Data.Binding.FallbackValue*
+- uid: Microsoft.UI.Xaml.Data.Binding.Mode
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.Mode
+  id: Mode
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: Binding.Mode
+  fullName: Microsoft.UI.Xaml.Data.Binding.Mode
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Mode
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 178
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public BindingMode Mode { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Data.BindingMode
+    content.vb: Public Property Mode As BindingMode
+  overload: Microsoft.UI.Xaml.Data.Binding.Mode*
+- uid: Microsoft.UI.Xaml.Data.Binding.Path
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.Path
+  id: Path
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: Binding.Path
+  fullName: Microsoft.UI.Xaml.Data.Binding.Path
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Path
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 184
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public PropertyPath Path { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.PropertyPath
+    content.vb: Public Property Path As PropertyPath
+  overload: Microsoft.UI.Xaml.Data.Binding.Path*
+- uid: Microsoft.UI.Xaml.Data.Binding.RelativeSource
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.RelativeSource
+  id: RelativeSource
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: RelativeSource
+  nameWithType: Binding.RelativeSource
+  fullName: Microsoft.UI.Xaml.Data.Binding.RelativeSource
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RelativeSource
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public RelativeSource RelativeSource { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Data.RelativeSource
+    content.vb: Public Property RelativeSource As RelativeSource
+  overload: Microsoft.UI.Xaml.Data.Binding.RelativeSource*
+- uid: Microsoft.UI.Xaml.Data.Binding.Source
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.Source
+  id: Source
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: Binding.Source
+  fullName: Microsoft.UI.Xaml.Data.Binding.Source
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Source
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 196
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public object Source { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Source As Object
+  overload: Microsoft.UI.Xaml.Data.Binding.Source*
+- uid: Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+  id: TargetNullValue
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: TargetNullValue
+  nameWithType: Binding.TargetNullValue
+  fullName: Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TargetNullValue
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 202
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public object TargetNullValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property TargetNullValue As Object
+  overload: Microsoft.UI.Xaml.Data.Binding.TargetNullValue*
+- uid: Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+  commentId: P:Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+  id: UpdateSourceTrigger
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: UpdateSourceTrigger
+  nameWithType: Binding.UpdateSourceTrigger
+  fullName: Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UpdateSourceTrigger
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 208
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: public UpdateSourceTrigger UpdateSourceTrigger { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Data.UpdateSourceTrigger
+    content.vb: Public Property UpdateSourceTrigger As UpdateSourceTrigger
+  overload: Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger*
+- uid: Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.Data.Binding
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: Binding.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 214
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  example: []
+  syntax:
+    content: protected override bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsOverridableInterface(iid As Guid) As Boolean
+  overridden: Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+  overload: Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Xaml.Data
+  commentId: N:Microsoft.UI.Xaml.Data
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Data
+  nameWithType: Microsoft.UI.Xaml.Data
+  fullName: Microsoft.UI.Xaml.Data
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Xaml.DependencyObject
+  commentId: T:Microsoft.UI.Xaml.DependencyObject
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyObject.html
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: Microsoft.UI.Xaml.DependencyObject
+- uid: Microsoft.UI.Xaml.Data.BindingBase
+  commentId: T:Microsoft.UI.Xaml.Data.BindingBase
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.BindingBase.html
+  name: BindingBase
+  nameWithType: BindingBase
+  fullName: Microsoft.UI.Xaml.Data.BindingBase
+- uid: System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.DependencyObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DependencyObject>
+  nameWithType: IEquatable<DependencyObject>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.DependencyObject>
+  nameWithType.vb: IEquatable(Of DependencyObject)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.DependencyObject)
+  name.vb: IEquatable(Of DependencyObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: System.IEquatable{Microsoft.UI.Xaml.Data.BindingBase}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Data.BindingBase}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BindingBase>
+  nameWithType: IEquatable<BindingBase>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Data.BindingBase>
+  nameWithType.vb: IEquatable(Of BindingBase)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Data.BindingBase)
+  name.vb: IEquatable(Of BindingBase)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Data.BindingBase
+    name: BindingBase
+    href: Microsoft.UI.Xaml.Data.BindingBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Data.BindingBase
+    name: BindingBase
+    href: Microsoft.UI.Xaml.Data.BindingBase.html
+  - name: )
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.Data.Binding}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Data.Binding}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Binding>
+  nameWithType: IEquatable<Binding>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Data.Binding>
+  nameWithType.vb: IEquatable(Of Binding)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Data.Binding)
+  name.vb: IEquatable(Of Binding)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Data.Binding
+    name: Binding
+    href: Microsoft.UI.Xaml.Data.Binding.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Data.Binding
+    name: Binding
+    href: Microsoft.UI.Xaml.Data.Binding.html
+  - name: )
+- uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+  commentId: M:Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+  parent: Microsoft.UI.Xaml.Data.BindingBase
+  href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_Microsoft_UI_Xaml_Data_BindingBase_
+  name: Equals(BindingBase)
+  nameWithType: BindingBase.Equals(BindingBase)
+  fullName: Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+    name: Equals
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_Microsoft_UI_Xaml_Data_BindingBase_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Data.BindingBase
+    name: BindingBase
+    href: Microsoft.UI.Xaml.Data.BindingBase.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(Microsoft.UI.Xaml.Data.BindingBase)
+    name: Equals
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_Microsoft_UI_Xaml_Data_BindingBase_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Data.BindingBase
+    name: BindingBase
+    href: Microsoft.UI.Xaml.Data.BindingBase.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  name: Equals(DependencyObject)
+  nameWithType: DependencyObject.Equals(DependencyObject)
+  fullName: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.Equals(Microsoft.UI.Xaml.DependencyObject)
+    name: Equals
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyObject
+    name: DependencyObject
+    href: Microsoft.UI.Xaml.DependencyObject.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  name: SetValue(DependencyProperty, object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, object)
+  fullName: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, object)
+  nameWithType.vb: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty, Object)
+  name.vb: SetValue(DependencyProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.SetValue(Microsoft.UI.Xaml.DependencyProperty,System.Object)
+    name: SetValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ClearValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ClearValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: ReadLocalValue(DependencyProperty)
+  nameWithType: DependencyObject.ReadLocalValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.ReadLocalValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: ReadLocalValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  name: GetAnimationBaseValue(DependencyProperty)
+  nameWithType: DependencyObject.GetAnimationBaseValue(DependencyProperty)
+  fullName: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.GetAnimationBaseValue(Microsoft.UI.Xaml.DependencyProperty)
+    name: GetAnimationBaseValue
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  name: RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  nameWithType: DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)
+  fullName: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.RegisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,Microsoft.UI.Xaml.DependencyPropertyChangedCallback)
+    name: RegisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.DependencyPropertyChangedCallback
+    name: DependencyPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyPropertyChangedCallback.html
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  commentId: M:Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+  parent: Microsoft.UI.Xaml.DependencyObject
+  isExternal: true
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  name: UnregisterPropertyChangedCallback(DependencyProperty, long)
+  nameWithType: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)
+  fullName: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, long)
+  nameWithType.vb: DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  fullName.vb: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty, Long)
+  name.vb: UnregisterPropertyChangedCallback(DependencyProperty, Long)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.DependencyObject.UnregisterPropertyChangedCallback(Microsoft.UI.Xaml.DependencyProperty,System.Int64)
+    name: UnregisterPropertyChangedCallback
+    href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_
+  - name: (
+  - uid: Microsoft.UI.Xaml.DependencyProperty
+    name: DependencyProperty
+    href: Microsoft.UI.Xaml.DependencyProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.Dispatcher
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher
+  name: Dispatcher
+  nameWithType: DependencyObject.Dispatcher
+  fullName: Microsoft.UI.Xaml.DependencyObject.Dispatcher
+- uid: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  commentId: P:Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+  parent: Microsoft.UI.Xaml.DependencyObject
+  href: Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: DependencyObject.DispatcherQueue
+  fullName: Microsoft.UI.Xaml.DependencyObject.DispatcherQueue
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: Microsoft.UI.Xaml.Data.Binding.#ctor*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.#ctor
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding__ctor
+  name: Binding
+  nameWithType: Binding.Binding
+  fullName: Microsoft.UI.Xaml.Data.Binding.Binding
+  nameWithType.vb: Binding.New
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.New
+  name.vb: New
+- uid: Microsoft.UI.Xaml.Data.Binding.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.FromAbi
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: Binding.FromAbi
+  fullName: Microsoft.UI.Xaml.Data.Binding.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.Data.Binding
+  commentId: T:Microsoft.UI.Xaml.Data.Binding
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.Binding.html
+  name: Binding
+  nameWithType: Binding
+  fullName: Microsoft.UI.Xaml.Data.Binding
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Xaml.Data.Binding.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.op_Equality
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_op_Equality_Microsoft_UI_Xaml_Data_Binding_Microsoft_UI_Xaml_Data_Binding_
+  name: operator ==
+  nameWithType: Binding.operator ==
+  fullName: Microsoft.UI.Xaml.Data.Binding.operator ==
+  nameWithType.vb: Binding.=
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Data.Binding.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_op_Equality_Microsoft_UI_Xaml_Data_Binding_Microsoft_UI_Xaml_Data_Binding_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Data.Binding.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.op_Inequality
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_op_Inequality_Microsoft_UI_Xaml_Data_Binding_Microsoft_UI_Xaml_Data_Binding_
+  name: operator !=
+  nameWithType: Binding.operator !=
+  fullName: Microsoft.UI.Xaml.Data.Binding.operator !=
+  nameWithType.vb: Binding.<>
+  fullName.vb: Microsoft.UI.Xaml.Data.Binding.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Data.Binding.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_op_Inequality_Microsoft_UI_Xaml_Data_Binding_Microsoft_UI_Xaml_Data_Binding_
+- uid: Microsoft.UI.Xaml.Data.Binding.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.Equals
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_Equals_Microsoft_UI_Xaml_Data_Binding_
+  name: Equals
+  nameWithType: Binding.Equals
+  fullName: Microsoft.UI.Xaml.Data.Binding.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.Data.Binding}.Equals(Microsoft.UI.Xaml.Data.Binding)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.Data.Binding}.Equals(Microsoft.UI.Xaml.Data.Binding)
+  parent: System.IEquatable{Microsoft.UI.Xaml.Data.Binding}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Binding)
+  nameWithType: IEquatable<Binding>.Equals(Binding)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Data.Binding>.Equals(Microsoft.UI.Xaml.Data.Binding)
+  nameWithType.vb: IEquatable(Of Binding).Equals(Binding)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Data.Binding).Equals(Microsoft.UI.Xaml.Data.Binding)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Data.Binding}.Equals(Microsoft.UI.Xaml.Data.Binding)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Data.Binding
+    name: Binding
+    href: Microsoft.UI.Xaml.Data.Binding.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Data.Binding}.Equals(Microsoft.UI.Xaml.Data.Binding)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Data.Binding
+    name: Binding
+    href: Microsoft.UI.Xaml.Data.Binding.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Data.BindingBase.Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Data.BindingBase
+  isExternal: true
+  href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: BindingBase.Equals(object)
+  fullName: Microsoft.UI.Xaml.Data.BindingBase.Equals(object)
+  nameWithType.vb: BindingBase.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Data.BindingBase.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Xaml.Data.BindingBase.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Data.BindingBase.GetHashCode
+  parent: Microsoft.UI.Xaml.Data.BindingBase
+  href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_GetHashCode
+  name: GetHashCode()
+  nameWithType: BindingBase.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Data.BindingBase.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Data.Binding.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.GetHashCode
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_GetHashCode
+  name: GetHashCode
+  nameWithType: Binding.GetHashCode
+  fullName: Microsoft.UI.Xaml.Data.Binding.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Xaml.Data.Binding.Converter*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.Converter
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_Converter
+  name: Converter
+  nameWithType: Binding.Converter
+  fullName: Microsoft.UI.Xaml.Data.Binding.Converter
+- uid: Microsoft.UI.Xaml.Data.IValueConverter
+  commentId: T:Microsoft.UI.Xaml.Data.IValueConverter
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.IValueConverter.html
+  name: IValueConverter
+  nameWithType: IValueConverter
+  fullName: Microsoft.UI.Xaml.Data.IValueConverter
+- uid: Microsoft.UI.Xaml.Data.Binding.ConverterLanguage*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_ConverterLanguage
+  name: ConverterLanguage
+  nameWithType: Binding.ConverterLanguage
+  fullName: Microsoft.UI.Xaml.Data.Binding.ConverterLanguage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Xaml.Data.Binding.ConverterParameter*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_ConverterParameter
+  name: ConverterParameter
+  nameWithType: Binding.ConverterParameter
+  fullName: Microsoft.UI.Xaml.Data.Binding.ConverterParameter
+- uid: Microsoft.UI.Xaml.Data.Binding.ElementName*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.ElementName
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_ElementName
+  name: ElementName
+  nameWithType: Binding.ElementName
+  fullName: Microsoft.UI.Xaml.Data.Binding.ElementName
+- uid: Microsoft.UI.Xaml.Data.Binding.FallbackValue*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.FallbackValue
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_FallbackValue
+  name: FallbackValue
+  nameWithType: Binding.FallbackValue
+  fullName: Microsoft.UI.Xaml.Data.Binding.FallbackValue
+- uid: Microsoft.UI.Xaml.Data.Binding.Mode*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.Mode
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_Mode
+  name: Mode
+  nameWithType: Binding.Mode
+  fullName: Microsoft.UI.Xaml.Data.Binding.Mode
+- uid: Microsoft.UI.Xaml.Data.BindingMode
+  commentId: T:Microsoft.UI.Xaml.Data.BindingMode
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.BindingMode.html
+  name: BindingMode
+  nameWithType: BindingMode
+  fullName: Microsoft.UI.Xaml.Data.BindingMode
+- uid: Microsoft.UI.Xaml.Data.Binding.Path*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.Path
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_Path
+  name: Path
+  nameWithType: Binding.Path
+  fullName: Microsoft.UI.Xaml.Data.Binding.Path
+- uid: Microsoft.UI.Xaml.PropertyPath
+  commentId: T:Microsoft.UI.Xaml.PropertyPath
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.PropertyPath.html
+  name: PropertyPath
+  nameWithType: PropertyPath
+  fullName: Microsoft.UI.Xaml.PropertyPath
+- uid: Microsoft.UI.Xaml.Data.Binding.RelativeSource*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.RelativeSource
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_RelativeSource
+  name: RelativeSource
+  nameWithType: Binding.RelativeSource
+  fullName: Microsoft.UI.Xaml.Data.Binding.RelativeSource
+- uid: Microsoft.UI.Xaml.Data.RelativeSource
+  commentId: T:Microsoft.UI.Xaml.Data.RelativeSource
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.RelativeSource.html
+  name: RelativeSource
+  nameWithType: RelativeSource
+  fullName: Microsoft.UI.Xaml.Data.RelativeSource
+- uid: Microsoft.UI.Xaml.Data.Binding.Source*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.Source
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_Source
+  name: Source
+  nameWithType: Binding.Source
+  fullName: Microsoft.UI.Xaml.Data.Binding.Source
+- uid: Microsoft.UI.Xaml.Data.Binding.TargetNullValue*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_TargetNullValue
+  name: TargetNullValue
+  nameWithType: Binding.TargetNullValue
+  fullName: Microsoft.UI.Xaml.Data.Binding.TargetNullValue
+- uid: Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_UpdateSourceTrigger
+  name: UpdateSourceTrigger
+  nameWithType: Binding.UpdateSourceTrigger
+  fullName: Microsoft.UI.Xaml.Data.Binding.UpdateSourceTrigger
+- uid: Microsoft.UI.Xaml.Data.UpdateSourceTrigger
+  commentId: T:Microsoft.UI.Xaml.Data.UpdateSourceTrigger
+  parent: Microsoft.UI.Xaml.Data
+  href: Microsoft.UI.Xaml.Data.UpdateSourceTrigger.html
+  name: UpdateSourceTrigger
+  nameWithType: UpdateSourceTrigger
+  fullName: Microsoft.UI.Xaml.Data.UpdateSourceTrigger
+- uid: Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.Data.BindingBase
+  isExternal: true
+  href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface(Guid)
+  nameWithType: BindingBase.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Data.BindingBase.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Xaml.Data.BindingBase.html#Microsoft_UI_Xaml_Data_BindingBase_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface
+  href: Microsoft.UI.Xaml.Data.Binding.html#Microsoft_UI_Xaml_Data_Binding_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: Binding.IsOverridableInterface
+  fullName: Microsoft.UI.Xaml.Data.Binding.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

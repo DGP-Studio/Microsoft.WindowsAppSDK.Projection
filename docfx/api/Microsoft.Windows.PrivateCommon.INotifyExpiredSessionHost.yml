@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost
+  commentId: T:Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost
+  id: INotifyExpiredSessionHost
+  parent: Microsoft.Windows.PrivateCommon
+  children:
+  - Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost
+  langs:
+  - csharp
+  - vb
+  name: INotifyExpiredSessionHost
+  nameWithType: INotifyExpiredSessionHost
+  fullName: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: INotifyExpiredSessionHost
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.PrivateCommon")]
+
+      [Guid("94C562D6-4752-5008-AF26-04C82AC73F80")]
+
+      [WindowsRuntimeHelperType(typeof(INotifyExpiredSessionHost))]
+
+      [ContractVersion(typeof(SessionHostingSharedContract), 65536)]
+
+      public interface INotifyExpiredSessionHost
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.PrivateCommon")>
+
+      <Guid("94C562D6-4752-5008-AF26-04C82AC73F80")>
+
+      <WindowsRuntimeHelperType(GetType(INotifyExpiredSessionHost))>
+
+      <ContractVersion(GetType(SessionHostingSharedContract), 65536)>
+
+      Public Interface INotifyExpiredSessionHost
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.PrivateCommon
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 94C562D6-4752-5008-AF26-04C82AC73F80
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.PrivateCommon.SessionHostingSharedContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost
+  commentId: M:Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost
+  id: NotifyExpiredSessionHost
+  parent: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost
+  langs:
+  - csharp
+  - vb
+  name: NotifyExpiredSessionHost()
+  nameWithType: INotifyExpiredSessionHost.NotifyExpiredSessionHost()
+  fullName: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: NotifyExpiredSessionHost
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: IAsyncAction NotifyExpiredSessionHost()
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Function NotifyExpiredSessionHost() As IAsyncAction
+  overload: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost*
+references:
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost*
+  commentId: Overload:Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost
+  href: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.html#Microsoft_Windows_PrivateCommon_INotifyExpiredSessionHost_NotifyExpiredSessionHost
+  name: NotifyExpiredSessionHost
+  nameWithType: INotifyExpiredSessionHost.NotifyExpiredSessionHost
+  fullName: Microsoft.Windows.PrivateCommon.INotifyExpiredSessionHost.NotifyExpiredSessionHost
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

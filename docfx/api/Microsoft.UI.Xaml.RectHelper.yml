@@ -1,0 +1,1502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.RectHelper
+  commentId: T:Microsoft.UI.Xaml.RectHelper
+  id: RectHelper
+  parent: Microsoft.UI.Xaml
+  children:
+  - Microsoft.UI.Xaml.RectHelper.As``1
+  - Microsoft.UI.Xaml.RectHelper.Contains(Windows.Foundation.Rect,Windows.Foundation.Point)
+  - Microsoft.UI.Xaml.RectHelper.Empty
+  - Microsoft.UI.Xaml.RectHelper.Equals(Microsoft.UI.Xaml.RectHelper)
+  - Microsoft.UI.Xaml.RectHelper.Equals(System.Object)
+  - Microsoft.UI.Xaml.RectHelper.Equals(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions(System.Single,System.Single,System.Single,System.Single)
+  - Microsoft.UI.Xaml.RectHelper.FromLocationAndSize(Windows.Foundation.Point,Windows.Foundation.Size)
+  - Microsoft.UI.Xaml.RectHelper.FromPoints(Windows.Foundation.Point,Windows.Foundation.Point)
+  - Microsoft.UI.Xaml.RectHelper.GetBottom(Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.GetHashCode
+  - Microsoft.UI.Xaml.RectHelper.GetIsEmpty(Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.GetLeft(Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.GetRight(Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.GetTop(Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.Intersect(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Point)
+  - Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  - Microsoft.UI.Xaml.RectHelper.op_Equality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  - Microsoft.UI.Xaml.RectHelper.op_Inequality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  langs:
+  - csharp
+  - vb
+  name: RectHelper
+  nameWithType: RectHelper
+  fullName: Microsoft.UI.Xaml.RectHelper
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RectHelper
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6673
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(RectHelper))]
+
+      [ProjectedRuntimeClass(typeof(IRectHelper))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public sealed class RectHelper : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<RectHelper>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(RectHelper))>
+
+      <ProjectedRuntimeClass(GetType(IRectHelper))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public NotInheritable Class RectHelper Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of RectHelper)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.RectHelper}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.RectHelper.As``1
+  commentId: M:Microsoft.UI.Xaml.RectHelper.As``1
+  id: As``1
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: RectHelper.As<I>()
+  fullName: Microsoft.UI.Xaml.RectHelper.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6689
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Xaml.RectHelper.As*
+  nameWithType.vb: RectHelper.As(Of I)()
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions(System.Single,System.Single,System.Single,System.Single)
+  id: FromCoordinatesAndDimensions(System.Single,System.Single,System.Single,System.Single)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: FromCoordinatesAndDimensions(float, float, float, float)
+  nameWithType: RectHelper.FromCoordinatesAndDimensions(float, float, float, float)
+  fullName: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromCoordinatesAndDimensions
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6708
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect FromCoordinatesAndDimensions(float x, float y, float width, float height)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function FromCoordinatesAndDimensions(x As Single, y As Single, width As Single, height As Single) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions*
+  nameWithType.vb: RectHelper.FromCoordinatesAndDimensions(Single, Single, Single, Single)
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions(Single, Single, Single, Single)
+  name.vb: FromCoordinatesAndDimensions(Single, Single, Single, Single)
+- uid: Microsoft.UI.Xaml.RectHelper.FromPoints(Windows.Foundation.Point,Windows.Foundation.Point)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.FromPoints(Windows.Foundation.Point,Windows.Foundation.Point)
+  id: FromPoints(Windows.Foundation.Point,Windows.Foundation.Point)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: FromPoints(Point, Point)
+  nameWithType: RectHelper.FromPoints(Point, Point)
+  fullName: Microsoft.UI.Xaml.RectHelper.FromPoints(Windows.Foundation.Point, Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromPoints
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6710
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect FromPoints(Point point1, Point point2)
+    parameters:
+    - id: point1
+      type: Windows.Foundation.Point
+    - id: point2
+      type: Windows.Foundation.Point
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function FromPoints(point1 As Point, point2 As Point) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.FromPoints*
+- uid: Microsoft.UI.Xaml.RectHelper.FromLocationAndSize(Windows.Foundation.Point,Windows.Foundation.Size)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.FromLocationAndSize(Windows.Foundation.Point,Windows.Foundation.Size)
+  id: FromLocationAndSize(Windows.Foundation.Point,Windows.Foundation.Size)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: FromLocationAndSize(Point, Size)
+  nameWithType: RectHelper.FromLocationAndSize(Point, Size)
+  fullName: Microsoft.UI.Xaml.RectHelper.FromLocationAndSize(Windows.Foundation.Point, Windows.Foundation.Size)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromLocationAndSize
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6712
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect FromLocationAndSize(Point location, Size size)
+    parameters:
+    - id: location
+      type: Windows.Foundation.Point
+    - id: size
+      type: Windows.Foundation.Size
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function FromLocationAndSize(location As Point, size As Size) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.FromLocationAndSize*
+- uid: Microsoft.UI.Xaml.RectHelper.GetIsEmpty(Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetIsEmpty(Windows.Foundation.Rect)
+  id: GetIsEmpty(Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetIsEmpty(Rect)
+  nameWithType: RectHelper.GetIsEmpty(Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.GetIsEmpty(Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetIsEmpty
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6714
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool GetIsEmpty(Rect target)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetIsEmpty(target As Rect) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.GetIsEmpty*
+- uid: Microsoft.UI.Xaml.RectHelper.GetBottom(Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetBottom(Windows.Foundation.Rect)
+  id: GetBottom(Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetBottom(Rect)
+  nameWithType: RectHelper.GetBottom(Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.GetBottom(Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetBottom
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6716
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static float GetBottom(Rect target)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBottom(target As Rect) As Single
+  overload: Microsoft.UI.Xaml.RectHelper.GetBottom*
+- uid: Microsoft.UI.Xaml.RectHelper.GetLeft(Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetLeft(Windows.Foundation.Rect)
+  id: GetLeft(Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetLeft(Rect)
+  nameWithType: RectHelper.GetLeft(Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.GetLeft(Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetLeft
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6718
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static float GetLeft(Rect target)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetLeft(target As Rect) As Single
+  overload: Microsoft.UI.Xaml.RectHelper.GetLeft*
+- uid: Microsoft.UI.Xaml.RectHelper.GetRight(Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetRight(Windows.Foundation.Rect)
+  id: GetRight(Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRight(Rect)
+  nameWithType: RectHelper.GetRight(Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.GetRight(Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetRight
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6720
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static float GetRight(Rect target)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetRight(target As Rect) As Single
+  overload: Microsoft.UI.Xaml.RectHelper.GetRight*
+- uid: Microsoft.UI.Xaml.RectHelper.GetTop(Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetTop(Windows.Foundation.Rect)
+  id: GetTop(Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTop(Rect)
+  nameWithType: RectHelper.GetTop(Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.GetTop(Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetTop
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6722
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static float GetTop(Rect target)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetTop(target As Rect) As Single
+  overload: Microsoft.UI.Xaml.RectHelper.GetTop*
+- uid: Microsoft.UI.Xaml.RectHelper.Contains(Windows.Foundation.Rect,Windows.Foundation.Point)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Contains(Windows.Foundation.Rect,Windows.Foundation.Point)
+  id: Contains(Windows.Foundation.Rect,Windows.Foundation.Point)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Contains(Rect, Point)
+  nameWithType: RectHelper.Contains(Rect, Point)
+  fullName: Microsoft.UI.Xaml.RectHelper.Contains(Windows.Foundation.Rect, Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Contains
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6724
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool Contains(Rect target, Point point)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    - id: point
+      type: Windows.Foundation.Point
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Contains(target As Rect, point As Point) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.Contains*
+- uid: Microsoft.UI.Xaml.RectHelper.Equals(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Equals(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  id: Equals(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Equals(Rect, Rect)
+  nameWithType: RectHelper.Equals(Rect, Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.Equals(Windows.Foundation.Rect, Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6726
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool Equals(Rect target, Rect value)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    - id: value
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Equals(target As Rect, value As Rect) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.Equals*
+- uid: Microsoft.UI.Xaml.RectHelper.Intersect(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Intersect(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  id: Intersect(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Intersect(Rect, Rect)
+  nameWithType: RectHelper.Intersect(Rect, Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.Intersect(Windows.Foundation.Rect, Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Intersect
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6728
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect Intersect(Rect target, Rect rect)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    - id: rect
+      type: Windows.Foundation.Rect
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function Intersect(target As Rect, rect As Rect) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.Intersect*
+- uid: Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Point)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Point)
+  id: Union(Windows.Foundation.Rect,Windows.Foundation.Point)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Union(Rect, Point)
+  nameWithType: RectHelper.Union(Rect, Point)
+  fullName: Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect, Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Union
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6730
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect Union(Rect target, Point point)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    - id: point
+      type: Windows.Foundation.Point
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function Union(target As Rect, point As Point) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.Union*
+- uid: Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  id: Union(Windows.Foundation.Rect,Windows.Foundation.Rect)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Union(Rect, Rect)
+  nameWithType: RectHelper.Union(Rect, Rect)
+  fullName: Microsoft.UI.Xaml.RectHelper.Union(Windows.Foundation.Rect, Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Union
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6732
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect Union(Rect target, Rect rect)
+    parameters:
+    - id: target
+      type: Windows.Foundation.Rect
+    - id: rect
+      type: Windows.Foundation.Rect
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared Function Union(target As Rect, rect As Rect) As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.Union*
+- uid: Microsoft.UI.Xaml.RectHelper.Empty
+  commentId: P:Microsoft.UI.Xaml.RectHelper.Empty
+  id: Empty
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: RectHelper.Empty
+  fullName: Microsoft.UI.Xaml.RectHelper.Empty
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Empty
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6734
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Rect Empty { get; }
+    parameters: []
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public Shared ReadOnly Property Empty As Rect
+  overload: Microsoft.UI.Xaml.RectHelper.Empty*
+- uid: Microsoft.UI.Xaml.RectHelper.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: RectHelper.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.RectHelper.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6736
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static RectHelper FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.RectHelper
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As RectHelper
+  overload: Microsoft.UI.Xaml.RectHelper.FromAbi*
+  nameWithType.vb: RectHelper.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.RectHelper.op_Equality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.op_Equality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  id: op_Equality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RectHelper, RectHelper)
+  nameWithType: RectHelper.operator ==(RectHelper, RectHelper)
+  fullName: Microsoft.UI.Xaml.RectHelper.operator ==(Microsoft.UI.Xaml.RectHelper, Microsoft.UI.Xaml.RectHelper)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6749
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator ==(RectHelper x, RectHelper y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.RectHelper
+    - id: y
+      type: Microsoft.UI.Xaml.RectHelper
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As RectHelper, y As RectHelper) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.op_Equality*
+  nameWithType.vb: RectHelper.=(RectHelper, RectHelper)
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.=(Microsoft.UI.Xaml.RectHelper, Microsoft.UI.Xaml.RectHelper)
+  name.vb: =(RectHelper, RectHelper)
+- uid: Microsoft.UI.Xaml.RectHelper.op_Inequality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.op_Inequality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  id: op_Inequality(Microsoft.UI.Xaml.RectHelper,Microsoft.UI.Xaml.RectHelper)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RectHelper, RectHelper)
+  nameWithType: RectHelper.operator !=(RectHelper, RectHelper)
+  fullName: Microsoft.UI.Xaml.RectHelper.operator !=(Microsoft.UI.Xaml.RectHelper, Microsoft.UI.Xaml.RectHelper)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6750
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator !=(RectHelper x, RectHelper y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.RectHelper
+    - id: y
+      type: Microsoft.UI.Xaml.RectHelper
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As RectHelper, y As RectHelper) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.op_Inequality*
+  nameWithType.vb: RectHelper.<>(RectHelper, RectHelper)
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.<>(Microsoft.UI.Xaml.RectHelper, Microsoft.UI.Xaml.RectHelper)
+  name.vb: <>(RectHelper, RectHelper)
+- uid: Microsoft.UI.Xaml.RectHelper.Equals(Microsoft.UI.Xaml.RectHelper)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Equals(Microsoft.UI.Xaml.RectHelper)
+  id: Equals(Microsoft.UI.Xaml.RectHelper)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Equals(RectHelper)
+  nameWithType: RectHelper.Equals(RectHelper)
+  fullName: Microsoft.UI.Xaml.RectHelper.Equals(Microsoft.UI.Xaml.RectHelper)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6751
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(RectHelper other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.RectHelper
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As RectHelper) As Boolean
+  overload: Microsoft.UI.Xaml.RectHelper.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.RectHelper}.Equals(Microsoft.UI.Xaml.RectHelper)
+- uid: Microsoft.UI.Xaml.RectHelper.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.RectHelper.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: RectHelper.Equals(object)
+  fullName: Microsoft.UI.Xaml.RectHelper.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6752
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.RectHelper.Equals*
+  nameWithType.vb: RectHelper.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.RectHelper.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.RectHelper.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.RectHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RectHelper.GetHashCode()
+  fullName: Microsoft.UI.Xaml.RectHelper.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6753
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Xaml.RectHelper.GetHashCode*
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.RectHelper}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.RectHelper}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RectHelper>
+  nameWithType: IEquatable<RectHelper>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.RectHelper>
+  nameWithType.vb: IEquatable(Of RectHelper)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.RectHelper)
+  name.vb: IEquatable(Of RectHelper)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.RectHelper
+    name: RectHelper
+    href: Microsoft.UI.Xaml.RectHelper.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.RectHelper
+    name: RectHelper
+    href: Microsoft.UI.Xaml.RectHelper.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.RectHelper.As*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.As
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_As__1
+  name: As
+  nameWithType: RectHelper.As
+  fullName: Microsoft.UI.Xaml.RectHelper.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_FromCoordinatesAndDimensions_System_Single_System_Single_System_Single_System_Single_
+  name: FromCoordinatesAndDimensions
+  nameWithType: RectHelper.FromCoordinatesAndDimensions
+  fullName: Microsoft.UI.Xaml.RectHelper.FromCoordinatesAndDimensions
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Xaml.RectHelper.FromPoints*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.FromPoints
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_FromPoints_Windows_Foundation_Point_Windows_Foundation_Point_
+  name: FromPoints
+  nameWithType: RectHelper.FromPoints
+  fullName: Microsoft.UI.Xaml.RectHelper.FromPoints
+- uid: Windows.Foundation.Point
+  commentId: T:Windows.Foundation.Point
+  parent: Windows.Foundation
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Windows.Foundation.Point
+- uid: Microsoft.UI.Xaml.RectHelper.FromLocationAndSize*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.FromLocationAndSize
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_FromLocationAndSize_Windows_Foundation_Point_Windows_Foundation_Size_
+  name: FromLocationAndSize
+  nameWithType: RectHelper.FromLocationAndSize
+  fullName: Microsoft.UI.Xaml.RectHelper.FromLocationAndSize
+- uid: Windows.Foundation.Size
+  commentId: T:Windows.Foundation.Size
+  parent: Windows.Foundation
+  isExternal: true
+  name: Size
+  nameWithType: Size
+  fullName: Windows.Foundation.Size
+- uid: Microsoft.UI.Xaml.RectHelper.GetIsEmpty*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetIsEmpty
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetIsEmpty_Windows_Foundation_Rect_
+  name: GetIsEmpty
+  nameWithType: RectHelper.GetIsEmpty
+  fullName: Microsoft.UI.Xaml.RectHelper.GetIsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.RectHelper.GetBottom*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetBottom
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetBottom_Windows_Foundation_Rect_
+  name: GetBottom
+  nameWithType: RectHelper.GetBottom
+  fullName: Microsoft.UI.Xaml.RectHelper.GetBottom
+- uid: Microsoft.UI.Xaml.RectHelper.GetLeft*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetLeft
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetLeft_Windows_Foundation_Rect_
+  name: GetLeft
+  nameWithType: RectHelper.GetLeft
+  fullName: Microsoft.UI.Xaml.RectHelper.GetLeft
+- uid: Microsoft.UI.Xaml.RectHelper.GetRight*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetRight
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetRight_Windows_Foundation_Rect_
+  name: GetRight
+  nameWithType: RectHelper.GetRight
+  fullName: Microsoft.UI.Xaml.RectHelper.GetRight
+- uid: Microsoft.UI.Xaml.RectHelper.GetTop*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetTop
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetTop_Windows_Foundation_Rect_
+  name: GetTop
+  nameWithType: RectHelper.GetTop
+  fullName: Microsoft.UI.Xaml.RectHelper.GetTop
+- uid: Microsoft.UI.Xaml.RectHelper.Contains*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.Contains
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_Contains_Windows_Foundation_Rect_Windows_Foundation_Point_
+  name: Contains
+  nameWithType: RectHelper.Contains
+  fullName: Microsoft.UI.Xaml.RectHelper.Contains
+- uid: Microsoft.UI.Xaml.RectHelper.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.Equals
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_Equals_Windows_Foundation_Rect_Windows_Foundation_Rect_
+  name: Equals
+  nameWithType: RectHelper.Equals
+  fullName: Microsoft.UI.Xaml.RectHelper.Equals
+- uid: Microsoft.UI.Xaml.RectHelper.Intersect*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.Intersect
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_Intersect_Windows_Foundation_Rect_Windows_Foundation_Rect_
+  name: Intersect
+  nameWithType: RectHelper.Intersect
+  fullName: Microsoft.UI.Xaml.RectHelper.Intersect
+- uid: Microsoft.UI.Xaml.RectHelper.Union*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.Union
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_Union_Windows_Foundation_Rect_Windows_Foundation_Point_
+  name: Union
+  nameWithType: RectHelper.Union
+  fullName: Microsoft.UI.Xaml.RectHelper.Union
+- uid: Microsoft.UI.Xaml.RectHelper.Empty*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.Empty
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_Empty
+  name: Empty
+  nameWithType: RectHelper.Empty
+  fullName: Microsoft.UI.Xaml.RectHelper.Empty
+- uid: Microsoft.UI.Xaml.RectHelper.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.FromAbi
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: RectHelper.FromAbi
+  fullName: Microsoft.UI.Xaml.RectHelper.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.RectHelper
+  commentId: T:Microsoft.UI.Xaml.RectHelper
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.RectHelper.html
+  name: RectHelper
+  nameWithType: RectHelper
+  fullName: Microsoft.UI.Xaml.RectHelper
+- uid: Microsoft.UI.Xaml.RectHelper.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.op_Equality
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_op_Equality_Microsoft_UI_Xaml_RectHelper_Microsoft_UI_Xaml_RectHelper_
+  name: operator ==
+  nameWithType: RectHelper.operator ==
+  fullName: Microsoft.UI.Xaml.RectHelper.operator ==
+  nameWithType.vb: RectHelper.=
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.RectHelper.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_op_Equality_Microsoft_UI_Xaml_RectHelper_Microsoft_UI_Xaml_RectHelper_
+- uid: Microsoft.UI.Xaml.RectHelper.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.op_Inequality
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_op_Inequality_Microsoft_UI_Xaml_RectHelper_Microsoft_UI_Xaml_RectHelper_
+  name: operator !=
+  nameWithType: RectHelper.operator !=
+  fullName: Microsoft.UI.Xaml.RectHelper.operator !=
+  nameWithType.vb: RectHelper.<>
+  fullName.vb: Microsoft.UI.Xaml.RectHelper.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.RectHelper.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_op_Inequality_Microsoft_UI_Xaml_RectHelper_Microsoft_UI_Xaml_RectHelper_
+- uid: System.IEquatable{Microsoft.UI.Xaml.RectHelper}.Equals(Microsoft.UI.Xaml.RectHelper)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.RectHelper}.Equals(Microsoft.UI.Xaml.RectHelper)
+  parent: System.IEquatable{Microsoft.UI.Xaml.RectHelper}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(RectHelper)
+  nameWithType: IEquatable<RectHelper>.Equals(RectHelper)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.RectHelper>.Equals(Microsoft.UI.Xaml.RectHelper)
+  nameWithType.vb: IEquatable(Of RectHelper).Equals(RectHelper)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.RectHelper).Equals(Microsoft.UI.Xaml.RectHelper)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.RectHelper}.Equals(Microsoft.UI.Xaml.RectHelper)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.RectHelper
+    name: RectHelper
+    href: Microsoft.UI.Xaml.RectHelper.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.RectHelper}.Equals(Microsoft.UI.Xaml.RectHelper)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.RectHelper
+    name: RectHelper
+    href: Microsoft.UI.Xaml.RectHelper.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.RectHelper.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.RectHelper.GetHashCode
+  href: Microsoft.UI.Xaml.RectHelper.html#Microsoft_UI_Xaml_RectHelper_GetHashCode
+  name: GetHashCode
+  nameWithType: RectHelper.GetHashCode
+  fullName: Microsoft.UI.Xaml.RectHelper.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

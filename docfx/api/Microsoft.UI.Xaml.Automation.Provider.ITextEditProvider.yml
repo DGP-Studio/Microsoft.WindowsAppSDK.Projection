@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider
+  id: ITextEditProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  children:
+  - Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition
+  - Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget
+  langs:
+  - csharp
+  - vb
+  name: ITextEditProvider
+  nameWithType: ITextEditProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextEditProvider
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 292
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("7F09BBE8-BEA7-5DD3-BA6B-28DBB402FAD4")]
+
+      [WindowsRuntimeHelperType(typeof(ITextEditProvider))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface ITextEditProvider : ITextProvider
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("7F09BBE8-BEA7-5DD3-BA6B-28DBB402FAD4")>
+
+      <WindowsRuntimeHelperType(GetType(ITextEditProvider))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface ITextEditProvider Inherits ITextProvider
+  inheritedMembers:
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7F09BBE8-BEA7-5DD3-BA6B-28DBB402FAD4
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition
+  id: GetActiveComposition
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider
+  langs:
+  - csharp
+  - vb
+  name: GetActiveComposition()
+  nameWithType: ITextEditProvider.GetActiveComposition()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetActiveComposition
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 296
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider GetActiveComposition()
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function GetActiveComposition() As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget
+  id: GetConversionTarget
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider
+  langs:
+  - csharp
+  - vb
+  name: GetConversionTarget()
+  nameWithType: ITextEditProvider.GetConversionTarget()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetConversionTarget
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 297
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider GetConversionTarget()
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function GetConversionTarget() As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget*
+references:
+- uid: Microsoft.UI.Xaml.Automation.Provider
+  commentId: N:Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Automation.Provider
+  nameWithType: Microsoft.UI.Xaml.Automation.Provider
+  fullName: Microsoft.UI.Xaml.Automation.Provider
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  name: GetSelection()
+  nameWithType: ITextProvider.GetSelection()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+    name: GetSelection
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+    name: GetSelection
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  name: GetVisibleRanges()
+  nameWithType: ITextProvider.GetVisibleRanges()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+    name: GetVisibleRanges
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+    name: GetVisibleRanges
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  name: RangeFromChild(IRawElementProviderSimple)
+  nameWithType: ITextProvider.RangeFromChild(IRawElementProviderSimple)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+    name: RangeFromChild
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+    name: RangeFromChild
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  isExternal: true
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  name: RangeFromPoint(Point)
+  nameWithType: ITextProvider.RangeFromPoint(Point)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+    name: RangeFromPoint
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+    name: RangeFromPoint
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  commentId: P:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_DocumentRange
+  name: DocumentRange
+  nameWithType: ITextProvider.DocumentRange
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  commentId: P:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_SupportedTextSelection
+  name: SupportedTextSelection
+  nameWithType: ITextProvider.SupportedTextSelection
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html
+  name: ITextProvider
+  nameWithType: ITextProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextEditProvider_GetActiveComposition
+  name: GetActiveComposition
+  nameWithType: ITextEditProvider.GetActiveComposition
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetActiveComposition
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html
+  name: ITextRangeProvider
+  nameWithType: ITextRangeProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextEditProvider_GetConversionTarget
+  name: GetConversionTarget
+  nameWithType: ITextEditProvider.GetConversionTarget
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextEditProvider.GetConversionTarget

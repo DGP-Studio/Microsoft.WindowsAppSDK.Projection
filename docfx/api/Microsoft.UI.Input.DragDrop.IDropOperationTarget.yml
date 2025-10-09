@@ -1,0 +1,371 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  commentId: T:Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  id: IDropOperationTarget
+  parent: Microsoft.UI.Input.DragDrop
+  children:
+  - Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  - Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  - Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  - Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  langs:
+  - csharp
+  - vb
+  name: IDropOperationTarget
+  nameWithType: IDropOperationTarget
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.DragDrop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IDropOperationTarget
+    path: ../src/Microsoft.UI.Input.DragDrop.cs
+    startLine: 604
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input.DragDrop
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [Guid("1C2707D9-0065-53C7-BBFB-50850378CAF3")]
+
+      [WindowsRuntimeHelperType(typeof(IDropOperationTarget))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65540)]
+
+      public interface IDropOperationTarget
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <Guid("1C2707D9-0065-53C7-BBFB-50850378CAF3")>
+
+      <WindowsRuntimeHelperType(GetType(IDropOperationTarget))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65540)>
+
+      Public Interface IDropOperationTarget
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1C2707D9-0065-53C7-BBFB-50850378CAF3
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65540"
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  commentId: M:Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  id: DropAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  parent: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  langs:
+  - csharp
+  - vb
+  name: DropAsync(DragInfo)
+  nameWithType: IDropOperationTarget.DropAsync(DragInfo)
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.DragDrop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DropAsync
+    path: ../src/Microsoft.UI.Input.DragDrop.cs
+    startLine: 608
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input.DragDrop
+  syntax:
+    content: IAsyncOperation<DataPackageOperation> DropAsync(DragInfo dragInfo)
+    parameters:
+    - id: dragInfo
+      type: Microsoft.UI.Input.DragDrop.DragInfo
+    return:
+      type: Windows.Foundation.IAsyncOperation{Windows.ApplicationModel.DataTransfer.DataPackageOperation}
+    content.vb: Function DropAsync(dragInfo As DragInfo) As IAsyncOperation(Of DataPackageOperation)
+  overload: Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync*
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  commentId: M:Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  id: EnterAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  parent: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  langs:
+  - csharp
+  - vb
+  name: EnterAsync(DragInfo, DragUIOverride)
+  nameWithType: IDropOperationTarget.EnterAsync(DragInfo, DragUIOverride)
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync(Microsoft.UI.Input.DragDrop.DragInfo, Microsoft.UI.Input.DragDrop.DragUIOverride)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.DragDrop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EnterAsync
+    path: ../src/Microsoft.UI.Input.DragDrop.cs
+    startLine: 609
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input.DragDrop
+  syntax:
+    content: IAsyncOperation<DataPackageOperation> EnterAsync(DragInfo dragInfo, DragUIOverride dragUIOverride)
+    parameters:
+    - id: dragInfo
+      type: Microsoft.UI.Input.DragDrop.DragInfo
+    - id: dragUIOverride
+      type: Microsoft.UI.Input.DragDrop.DragUIOverride
+    return:
+      type: Windows.Foundation.IAsyncOperation{Windows.ApplicationModel.DataTransfer.DataPackageOperation}
+    content.vb: Function EnterAsync(dragInfo As DragInfo, dragUIOverride As DragUIOverride) As IAsyncOperation(Of DataPackageOperation)
+  overload: Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync*
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  commentId: M:Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  id: LeaveAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  parent: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  langs:
+  - csharp
+  - vb
+  name: LeaveAsync(DragInfo)
+  nameWithType: IDropOperationTarget.LeaveAsync(DragInfo)
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync(Microsoft.UI.Input.DragDrop.DragInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.DragDrop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LeaveAsync
+    path: ../src/Microsoft.UI.Input.DragDrop.cs
+    startLine: 610
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input.DragDrop
+  syntax:
+    content: IAsyncAction LeaveAsync(DragInfo dragInfo)
+    parameters:
+    - id: dragInfo
+      type: Microsoft.UI.Input.DragDrop.DragInfo
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Function LeaveAsync(dragInfo As DragInfo) As IAsyncAction
+  overload: Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync*
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  commentId: M:Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  id: OverAsync(Microsoft.UI.Input.DragDrop.DragInfo,Microsoft.UI.Input.DragDrop.DragUIOverride)
+  parent: Microsoft.UI.Input.DragDrop.IDropOperationTarget
+  langs:
+  - csharp
+  - vb
+  name: OverAsync(DragInfo, DragUIOverride)
+  nameWithType: IDropOperationTarget.OverAsync(DragInfo, DragUIOverride)
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync(Microsoft.UI.Input.DragDrop.DragInfo, Microsoft.UI.Input.DragDrop.DragUIOverride)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.DragDrop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OverAsync
+    path: ../src/Microsoft.UI.Input.DragDrop.cs
+    startLine: 611
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input.DragDrop
+  syntax:
+    content: IAsyncOperation<DataPackageOperation> OverAsync(DragInfo dragInfo, DragUIOverride dragUIOverride)
+    parameters:
+    - id: dragInfo
+      type: Microsoft.UI.Input.DragDrop.DragInfo
+    - id: dragUIOverride
+      type: Microsoft.UI.Input.DragDrop.DragUIOverride
+    return:
+      type: Windows.Foundation.IAsyncOperation{Windows.ApplicationModel.DataTransfer.DataPackageOperation}
+    content.vb: Function OverAsync(dragInfo As DragInfo, dragUIOverride As DragUIOverride) As IAsyncOperation(Of DataPackageOperation)
+  overload: Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync*
+references:
+- uid: Microsoft.UI.Input.DragDrop
+  commentId: N:Microsoft.UI.Input.DragDrop
+  href: Microsoft.html
+  name: Microsoft.UI.Input.DragDrop
+  nameWithType: Microsoft.UI.Input.DragDrop
+  fullName: Microsoft.UI.Input.DragDrop
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  - name: .
+  - uid: Microsoft.UI.Input.DragDrop
+    name: DragDrop
+    href: Microsoft.UI.Input.DragDrop.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  - name: .
+  - uid: Microsoft.UI.Input.DragDrop
+    name: DragDrop
+    href: Microsoft.UI.Input.DragDrop.html
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync*
+  commentId: Overload:Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync
+  href: Microsoft.UI.Input.DragDrop.IDropOperationTarget.html#Microsoft_UI_Input_DragDrop_IDropOperationTarget_DropAsync_Microsoft_UI_Input_DragDrop_DragInfo_
+  name: DropAsync
+  nameWithType: IDropOperationTarget.DropAsync
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.DropAsync
+- uid: Microsoft.UI.Input.DragDrop.DragInfo
+  commentId: T:Microsoft.UI.Input.DragDrop.DragInfo
+  parent: Microsoft.UI.Input.DragDrop
+  href: Microsoft.UI.Input.DragDrop.DragInfo.html
+  name: DragInfo
+  nameWithType: DragInfo
+  fullName: Microsoft.UI.Input.DragDrop.DragInfo
+- uid: Windows.Foundation.IAsyncOperation{Windows.ApplicationModel.DataTransfer.DataPackageOperation}
+  commentId: T:Windows.Foundation.IAsyncOperation{Windows.ApplicationModel.DataTransfer.DataPackageOperation}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<DataPackageOperation>
+  nameWithType: IAsyncOperation<DataPackageOperation>
+  fullName: Windows.Foundation.IAsyncOperation<Windows.ApplicationModel.DataTransfer.DataPackageOperation>
+  nameWithType.vb: IAsyncOperation(Of DataPackageOperation)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Windows.ApplicationModel.DataTransfer.DataPackageOperation)
+  name.vb: IAsyncOperation(Of DataPackageOperation)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Windows.ApplicationModel.DataTransfer.DataPackageOperation
+    name: DataPackageOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.datapackageoperation
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Windows.ApplicationModel.DataTransfer.DataPackageOperation
+    name: DataPackageOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.datapackageoperation
+  - name: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync*
+  commentId: Overload:Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync
+  href: Microsoft.UI.Input.DragDrop.IDropOperationTarget.html#Microsoft_UI_Input_DragDrop_IDropOperationTarget_EnterAsync_Microsoft_UI_Input_DragDrop_DragInfo_Microsoft_UI_Input_DragDrop_DragUIOverride_
+  name: EnterAsync
+  nameWithType: IDropOperationTarget.EnterAsync
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.EnterAsync
+- uid: Microsoft.UI.Input.DragDrop.DragUIOverride
+  commentId: T:Microsoft.UI.Input.DragDrop.DragUIOverride
+  parent: Microsoft.UI.Input.DragDrop
+  href: Microsoft.UI.Input.DragDrop.DragUIOverride.html
+  name: DragUIOverride
+  nameWithType: DragUIOverride
+  fullName: Microsoft.UI.Input.DragDrop.DragUIOverride
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync*
+  commentId: Overload:Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync
+  href: Microsoft.UI.Input.DragDrop.IDropOperationTarget.html#Microsoft_UI_Input_DragDrop_IDropOperationTarget_LeaveAsync_Microsoft_UI_Input_DragDrop_DragInfo_
+  name: LeaveAsync
+  nameWithType: IDropOperationTarget.LeaveAsync
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.LeaveAsync
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync*
+  commentId: Overload:Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync
+  href: Microsoft.UI.Input.DragDrop.IDropOperationTarget.html#Microsoft_UI_Input_DragDrop_IDropOperationTarget_OverAsync_Microsoft_UI_Input_DragDrop_DragInfo_Microsoft_UI_Input_DragDrop_DragUIOverride_
+  name: OverAsync
+  nameWithType: IDropOperationTarget.OverAsync
+  fullName: Microsoft.UI.Input.DragDrop.IDropOperationTarget.OverAsync

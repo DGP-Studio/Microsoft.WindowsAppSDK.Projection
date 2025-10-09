@@ -1,0 +1,2058 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.Text.LanguageModel
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModel
+  id: LanguageModel
+  parent: Microsoft.Windows.AI.Text
+  children:
+  - Microsoft.Windows.AI.Text.LanguageModel.As``1
+  - Microsoft.Windows.AI.Text.LanguageModel.CreateAsync
+  - Microsoft.Windows.AI.Text.LanguageModel.CreateContext
+  - Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String)
+  - Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.Dispose
+  - Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync
+  - Microsoft.Windows.AI.Text.LanguageModel.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  - Microsoft.Windows.AI.Text.LanguageModel.Equals(System.Object)
+  - Microsoft.Windows.AI.Text.LanguageModel.FromAbi(System.IntPtr)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector})
+  - Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModel.GetHashCode
+  - Microsoft.Windows.AI.Text.LanguageModel.GetReadyState
+  - Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext,System.String)
+  - Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(System.String)
+  - Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId
+  - Microsoft.Windows.AI.Text.LanguageModel.op_Equality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  - Microsoft.Windows.AI.Text.LanguageModel.op_Inequality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  langs:
+  - csharp
+  - vb
+  name: LanguageModel
+  nameWithType: LanguageModel
+  fullName: Microsoft.Windows.AI.Text.LanguageModel
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LanguageModel
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 442
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.Text")]
+
+      [WindowsRuntimeHelperType(typeof(LanguageModel))]
+
+      [ProjectedRuntimeClass(typeof(ILanguageModel))]
+
+      [ContractVersion(typeof(LanguageModelContract), 65536)]
+
+      public sealed class LanguageModel : IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<LanguageModel>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.Text")>
+
+      <WindowsRuntimeHelperType(GetType(LanguageModel))>
+
+      <ProjectedRuntimeClass(GetType(ILanguageModel))>
+
+      <ContractVersion(GetType(LanguageModelContract), 65536)>
+
+      Public NotInheritable Class LanguageModel Implements IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of LanguageModel)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.Text
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.Text.LanguageModelContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.Text.LanguageModel.As``1
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.As``1
+  id: As``1
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: LanguageModel.As<I>()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 474
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.AI.Text.LanguageModel.As*
+  nameWithType.vb: LanguageModel.As(Of I)()
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetReadyState
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GetReadyState
+  id: GetReadyState
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GetReadyState()
+  nameWithType: LanguageModel.GetReadyState()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetReadyState()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetReadyState
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 493
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static AIFeatureReadyState GetReadyState()
+    return:
+      type: Microsoft.Windows.AI.AIFeatureReadyState
+    content.vb: Public Shared Function GetReadyState() As AIFeatureReadyState
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GetReadyState*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync
+  id: EnsureReadyAsync
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: EnsureReadyAsync()
+  nameWithType: LanguageModel.EnsureReadyAsync()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EnsureReadyAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 495
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static IAsyncOperationWithProgress<AIFeatureReadyResult, double> EnsureReadyAsync()
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.AIFeatureReadyResult,System.Double}
+    content.vb: Public Shared Function EnsureReadyAsync() As IAsyncOperationWithProgress(Of AIFeatureReadyResult, Double)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateAsync
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.CreateAsync
+  id: CreateAsync
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync()
+  nameWithType: LanguageModel.CreateAsync()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 497
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static IAsyncOperation<LanguageModel> CreateAsync()
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.Windows.AI.Text.LanguageModel}
+    content.vb: Public Shared Function CreateAsync() As IAsyncOperation(Of LanguageModel)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.CreateAsync*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: LanguageModel.FromAbi(nint)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 499
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static LanguageModel FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModel
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As LanguageModel
+  overload: Microsoft.Windows.AI.Text.LanguageModel.FromAbi*
+  nameWithType.vb: LanguageModel.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.op_Equality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.op_Equality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  id: op_Equality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LanguageModel, LanguageModel)
+  nameWithType: LanguageModel.operator ==(LanguageModel, LanguageModel)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.operator ==(Microsoft.Windows.AI.Text.LanguageModel, Microsoft.Windows.AI.Text.LanguageModel)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 512
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static bool operator ==(LanguageModel x, LanguageModel y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AI.Text.LanguageModel
+    - id: y
+      type: Microsoft.Windows.AI.Text.LanguageModel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As LanguageModel, y As LanguageModel) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModel.op_Equality*
+  nameWithType.vb: LanguageModel.=(LanguageModel, LanguageModel)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.=(Microsoft.Windows.AI.Text.LanguageModel, Microsoft.Windows.AI.Text.LanguageModel)
+  name.vb: =(LanguageModel, LanguageModel)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.op_Inequality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.op_Inequality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  id: op_Inequality(Microsoft.Windows.AI.Text.LanguageModel,Microsoft.Windows.AI.Text.LanguageModel)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LanguageModel, LanguageModel)
+  nameWithType: LanguageModel.operator !=(LanguageModel, LanguageModel)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.operator !=(Microsoft.Windows.AI.Text.LanguageModel, Microsoft.Windows.AI.Text.LanguageModel)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 513
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static bool operator !=(LanguageModel x, LanguageModel y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AI.Text.LanguageModel
+    - id: y
+      type: Microsoft.Windows.AI.Text.LanguageModel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As LanguageModel, y As LanguageModel) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModel.op_Inequality*
+  nameWithType.vb: LanguageModel.<>(LanguageModel, LanguageModel)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.<>(Microsoft.Windows.AI.Text.LanguageModel, Microsoft.Windows.AI.Text.LanguageModel)
+  name.vb: <>(LanguageModel, LanguageModel)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  id: Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: Equals(LanguageModel)
+  nameWithType: LanguageModel.Equals(LanguageModel)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 514
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(LanguageModel other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.AI.Text.LanguageModel
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As LanguageModel) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModel.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.Equals(System.Object)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LanguageModel.Equals(object)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 515
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.Equals*
+  nameWithType.vb: LanguageModel.Equals(Object)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetHashCode
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LanguageModel.GetHashCode()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 516
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GetHashCode*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String)
+  id: GenerateResponseAsync(System.String)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseAsync(string)
+  nameWithType: LanguageModel.GenerateResponseAsync(string)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 539
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt)
+    parameters:
+    - id: prompt
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseAsync(prompt As String) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseAsync(String)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(String)
+  name.vb: GenerateResponseAsync(String)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: GenerateResponseAsync(System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseAsync(string, LanguageModelOptions)
+  nameWithType: LanguageModel.GenerateResponseAsync(string, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(string, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 541
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(string prompt, LanguageModelOptions options)
+    parameters:
+    - id: prompt
+      type: System.String
+    - id: options
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseAsync(prompt As String, options As LanguageModelOptions) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseAsync(String, LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(String, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: GenerateResponseAsync(String, LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.String,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseAsync(LanguageModelContext, string, LanguageModelOptions)
+  nameWithType: LanguageModel.GenerateResponseAsync(LanguageModelContext, string, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext, string, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 543
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseAsync(LanguageModelContext context, string prompt, LanguageModelOptions options)
+    parameters:
+    - id: context
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    - id: prompt
+      type: System.String
+    - id: options
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseAsync(context As LanguageModelContext, prompt As String, options As LanguageModelOptions) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseAsync(LanguageModelContext, String, LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync(Microsoft.Windows.AI.Text.LanguageModelContext, String, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: GenerateResponseAsync(LanguageModelContext, String, LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector})
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector})
+  id: GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector})
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector>)
+  nameWithType: LanguageModel.GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector>)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable<Microsoft.Windows.AI.Foundation.EmbeddingVector>)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseFromEmbeddingsAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 545
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector> promptEmbedding)
+    parameters:
+    - id: promptEmbedding
+      type: System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector}
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseFromEmbeddingsAsync(promptEmbedding As IEnumerable(Of EmbeddingVector)) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseFromEmbeddingsAsync(IEnumerable(Of EmbeddingVector))
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable(Of Microsoft.Windows.AI.Foundation.EmbeddingVector))
+  name.vb: GenerateResponseFromEmbeddingsAsync(IEnumerable(Of EmbeddingVector))
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector>, LanguageModelOptions)
+  nameWithType: LanguageModel.GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector>, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable<Microsoft.Windows.AI.Foundation.EmbeddingVector>, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseFromEmbeddingsAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 547
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(IEnumerable<EmbeddingVector> promptEmbedding, LanguageModelOptions options)
+    parameters:
+    - id: promptEmbedding
+      type: System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector}
+    - id: options
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseFromEmbeddingsAsync(promptEmbedding As IEnumerable(Of EmbeddingVector), options As LanguageModelOptions) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseFromEmbeddingsAsync(IEnumerable(Of EmbeddingVector), LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(System.Collections.Generic.IEnumerable(Of Microsoft.Windows.AI.Foundation.EmbeddingVector), Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: GenerateResponseFromEmbeddingsAsync(IEnumerable(Of EmbeddingVector), LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext,System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector},Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseFromEmbeddingsAsync(LanguageModelContext, IEnumerable<EmbeddingVector>, LanguageModelOptions)
+  nameWithType: LanguageModel.GenerateResponseFromEmbeddingsAsync(LanguageModelContext, IEnumerable<EmbeddingVector>, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext, System.Collections.Generic.IEnumerable<Microsoft.Windows.AI.Foundation.EmbeddingVector>, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseFromEmbeddingsAsync
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 549
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public IAsyncOperationWithProgress<LanguageModelResponseResult, string> GenerateResponseFromEmbeddingsAsync(LanguageModelContext context, IEnumerable<EmbeddingVector> promptEmbedding, LanguageModelOptions options)
+    parameters:
+    - id: context
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    - id: promptEmbedding
+      type: System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector}
+    - id: options
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+    content.vb: Public Function GenerateResponseFromEmbeddingsAsync(context As LanguageModelContext, promptEmbedding As IEnumerable(Of EmbeddingVector), options As LanguageModelOptions) As IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync*
+  nameWithType.vb: LanguageModel.GenerateResponseFromEmbeddingsAsync(LanguageModelContext, IEnumerable(Of EmbeddingVector), LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync(Microsoft.Windows.AI.Text.LanguageModelContext, System.Collections.Generic.IEnumerable(Of Microsoft.Windows.AI.Foundation.EmbeddingVector), Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: GenerateResponseFromEmbeddingsAsync(LanguageModelContext, IEnumerable(Of EmbeddingVector), LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String)
+  id: GenerateEmbeddingVectors(System.String)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateEmbeddingVectors(string)
+  nameWithType: LanguageModel.GenerateEmbeddingVectors(string)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateEmbeddingVectors
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 551
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt)
+    parameters:
+    - id: prompt
+      type: System.String
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult
+    content.vb: Public Function GenerateEmbeddingVectors(prompt As String) As LanguageModelEmbeddingVectorResult
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors*
+  nameWithType.vb: LanguageModel.GenerateEmbeddingVectors(String)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(String)
+  name.vb: GenerateEmbeddingVectors(String)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  id: GenerateEmbeddingVectors(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateEmbeddingVectors(string, ContentFilterOptions)
+  nameWithType: LanguageModel.GenerateEmbeddingVectors(string, ContentFilterOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(string, Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateEmbeddingVectors
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 553
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelEmbeddingVectorResult GenerateEmbeddingVectors(string prompt, ContentFilterOptions contentFilterOptions)
+    parameters:
+    - id: prompt
+      type: System.String
+    - id: contentFilterOptions
+      type: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult
+    content.vb: Public Function GenerateEmbeddingVectors(prompt As String, contentFilterOptions As ContentFilterOptions) As LanguageModelEmbeddingVectorResult
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors*
+  nameWithType.vb: LanguageModel.GenerateEmbeddingVectors(String, ContentFilterOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors(String, Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  name.vb: GenerateEmbeddingVectors(String, ContentFilterOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(System.String)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(System.String)
+  id: GetUsablePromptLength(System.String)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GetUsablePromptLength(string)
+  nameWithType: LanguageModel.GetUsablePromptLength(string)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetUsablePromptLength
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 555
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public ulong GetUsablePromptLength(string prompt)
+    parameters:
+    - id: prompt
+      type: System.String
+    return:
+      type: System.UInt64
+    content.vb: Public Function GetUsablePromptLength(prompt As String) As ULong
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength*
+  nameWithType.vb: LanguageModel.GetUsablePromptLength(String)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(String)
+  name.vb: GetUsablePromptLength(String)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext,System.String)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext,System.String)
+  id: GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext,System.String)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GetUsablePromptLength(LanguageModelContext, string)
+  nameWithType: LanguageModel.GetUsablePromptLength(LanguageModelContext, string)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetUsablePromptLength
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 557
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public ulong GetUsablePromptLength(LanguageModelContext context, string prompt)
+    parameters:
+    - id: context
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    - id: prompt
+      type: System.String
+    return:
+      type: System.UInt64
+    content.vb: Public Function GetUsablePromptLength(context As LanguageModelContext, prompt As String) As ULong
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength*
+  nameWithType.vb: LanguageModel.GetUsablePromptLength(LanguageModelContext, String)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength(Microsoft.Windows.AI.Text.LanguageModelContext, String)
+  name.vb: GetUsablePromptLength(LanguageModelContext, String)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId
+  id: GetVectorSpaceId
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: GetVectorSpaceId()
+  nameWithType: LanguageModel.GetVectorSpaceId()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetVectorSpaceId
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 559
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public Guid GetVectorSpaceId()
+    return:
+      type: System.Guid
+    content.vb: Public Function GetVectorSpaceId() As Guid
+  overload: Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateContext
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.CreateContext
+  id: CreateContext
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateContext()
+  nameWithType: LanguageModel.CreateContext()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateContext()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateContext
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 561
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelContext CreateContext()
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    content.vb: Public Function CreateContext() As LanguageModelContext
+  overload: Microsoft.Windows.AI.Text.LanguageModel.CreateContext*
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String)
+  id: CreateContext(System.String)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateContext(string)
+  nameWithType: LanguageModel.CreateContext(string)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateContext
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 563
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelContext CreateContext(string systemPrompt)
+    parameters:
+    - id: systemPrompt
+      type: System.String
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    content.vb: Public Function CreateContext(systemPrompt As String) As LanguageModelContext
+  overload: Microsoft.Windows.AI.Text.LanguageModel.CreateContext*
+  nameWithType.vb: LanguageModel.CreateContext(String)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(String)
+  name.vb: CreateContext(String)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.CreateContext(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  id: CreateContext(System.String,Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateContext(string, ContentFilterOptions)
+  nameWithType: LanguageModel.CreateContext(string, ContentFilterOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(string, Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateContext
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 565
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelContext CreateContext(string systemPrompt, ContentFilterOptions contentFilterOptions)
+    parameters:
+    - id: systemPrompt
+      type: System.String
+    - id: contentFilterOptions
+      type: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelContext
+    content.vb: Public Function CreateContext(systemPrompt As String, contentFilterOptions As ContentFilterOptions) As LanguageModelContext
+  overload: Microsoft.Windows.AI.Text.LanguageModel.CreateContext*
+  nameWithType.vb: LanguageModel.CreateContext(String, ContentFilterOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.CreateContext(String, Microsoft.Windows.AI.ContentSafety.ContentFilterOptions)
+  name.vb: CreateContext(String, ContentFilterOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModel.Dispose
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModel.Dispose
+  id: Dispose
+  parent: Microsoft.Windows.AI.Text.LanguageModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: LanguageModel.Dispose()
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispose
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 567
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.Windows.AI.Text.LanguageModel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Microsoft.Windows.AI.Text
+  commentId: N:Microsoft.Windows.AI.Text
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.Text
+  nameWithType: Microsoft.Windows.AI.Text
+  fullName: Microsoft.Windows.AI.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.Text
+    name: Text
+    href: Microsoft.Windows.AI.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.Text
+    name: Text
+    href: Microsoft.Windows.AI.Text.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}
+  commentId: T:System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LanguageModel>
+  nameWithType: IEquatable<LanguageModel>
+  fullName: System.IEquatable<Microsoft.Windows.AI.Text.LanguageModel>
+  nameWithType.vb: IEquatable(Of LanguageModel)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AI.Text.LanguageModel)
+  name.vb: IEquatable(Of LanguageModel)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModel.As*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.As
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_As__1
+  name: As
+  nameWithType: LanguageModel.As
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetReadyState*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GetReadyState
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GetReadyState
+  name: GetReadyState
+  nameWithType: LanguageModel.GetReadyState
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetReadyState
+- uid: Microsoft.Windows.AI.AIFeatureReadyState
+  commentId: T:Microsoft.Windows.AI.AIFeatureReadyState
+  parent: Microsoft.Windows.AI
+  href: Microsoft.Windows.AI.AIFeatureReadyState.html
+  name: AIFeatureReadyState
+  nameWithType: AIFeatureReadyState
+  fullName: Microsoft.Windows.AI.AIFeatureReadyState
+- uid: Microsoft.Windows.AI
+  commentId: N:Microsoft.Windows.AI
+  href: Microsoft.html
+  name: Microsoft.Windows.AI
+  nameWithType: Microsoft.Windows.AI
+  fullName: Microsoft.Windows.AI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+- uid: Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_EnsureReadyAsync
+  name: EnsureReadyAsync
+  nameWithType: LanguageModel.EnsureReadyAsync
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.EnsureReadyAsync
+- uid: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.AIFeatureReadyResult,System.Double}
+  commentId: T:Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.AIFeatureReadyResult,System.Double}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperationWithProgress`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  name: IAsyncOperationWithProgress<AIFeatureReadyResult, double>
+  nameWithType: IAsyncOperationWithProgress<AIFeatureReadyResult, double>
+  fullName: Windows.Foundation.IAsyncOperationWithProgress<Microsoft.Windows.AI.AIFeatureReadyResult, double>
+  nameWithType.vb: IAsyncOperationWithProgress(Of AIFeatureReadyResult, Double)
+  fullName.vb: Windows.Foundation.IAsyncOperationWithProgress(Of Microsoft.Windows.AI.AIFeatureReadyResult, Double)
+  name.vb: IAsyncOperationWithProgress(Of AIFeatureReadyResult, Double)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: <
+  - uid: Microsoft.Windows.AI.AIFeatureReadyResult
+    name: AIFeatureReadyResult
+    href: Microsoft.Windows.AI.AIFeatureReadyResult.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.AIFeatureReadyResult
+    name: AIFeatureReadyResult
+    href: Microsoft.Windows.AI.AIFeatureReadyResult.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Windows.Foundation.IAsyncOperationWithProgress`2
+  commentId: T:Windows.Foundation.IAsyncOperationWithProgress`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  name: IAsyncOperationWithProgress<TResult, TProgress>
+  nameWithType: IAsyncOperationWithProgress<TResult, TProgress>
+  fullName: Windows.Foundation.IAsyncOperationWithProgress<TResult, TProgress>
+  nameWithType.vb: IAsyncOperationWithProgress(Of TResult, TProgress)
+  fullName.vb: Windows.Foundation.IAsyncOperationWithProgress(Of TResult, TProgress)
+  name.vb: IAsyncOperationWithProgress(Of TResult, TProgress)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TProgress
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TProgress
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateAsync*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.CreateAsync
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_CreateAsync
+  name: CreateAsync
+  nameWithType: LanguageModel.CreateAsync
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateAsync
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.Windows.AI.Text.LanguageModel}
+  commentId: T:Windows.Foundation.IAsyncOperation{Microsoft.Windows.AI.Text.LanguageModel}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<LanguageModel>
+  nameWithType: IAsyncOperation<LanguageModel>
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.Windows.AI.Text.LanguageModel>
+  nameWithType.vb: IAsyncOperation(Of LanguageModel)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.Windows.AI.Text.LanguageModel)
+  name.vb: IAsyncOperation(Of LanguageModel)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModel.FromAbi*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.FromAbi
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: LanguageModel.FromAbi
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.AI.Text.LanguageModel
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModel
+  parent: Microsoft.Windows.AI.Text
+  href: Microsoft.Windows.AI.Text.LanguageModel.html
+  name: LanguageModel
+  nameWithType: LanguageModel
+  fullName: Microsoft.Windows.AI.Text.LanguageModel
+- uid: Microsoft.Windows.AI.Text.LanguageModel.op_Equality*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.op_Equality
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_op_Equality_Microsoft_Windows_AI_Text_LanguageModel_Microsoft_Windows_AI_Text_LanguageModel_
+  name: operator ==
+  nameWithType: LanguageModel.operator ==
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.operator ==
+  nameWithType.vb: LanguageModel.=
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModel.op_Equality*
+    name: ==
+    href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_op_Equality_Microsoft_Windows_AI_Text_LanguageModel_Microsoft_Windows_AI_Text_LanguageModel_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.AI.Text.LanguageModel.op_Inequality*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.op_Inequality
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_op_Inequality_Microsoft_Windows_AI_Text_LanguageModel_Microsoft_Windows_AI_Text_LanguageModel_
+  name: operator !=
+  nameWithType: LanguageModel.operator !=
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.operator !=
+  nameWithType.vb: LanguageModel.<>
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModel.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModel.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_op_Inequality_Microsoft_Windows_AI_Text_LanguageModel_Microsoft_Windows_AI_Text_LanguageModel_
+- uid: Microsoft.Windows.AI.Text.LanguageModel.Equals*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.Equals
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_Equals_Microsoft_Windows_AI_Text_LanguageModel_
+  name: Equals
+  nameWithType: LanguageModel.Equals
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.Equals
+- uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  commentId: M:System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  parent: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(LanguageModel)
+  nameWithType: IEquatable<LanguageModel>.Equals(LanguageModel)
+  fullName: System.IEquatable<Microsoft.Windows.AI.Text.LanguageModel>.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  nameWithType.vb: IEquatable(Of LanguageModel).Equals(LanguageModel)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AI.Text.LanguageModel).Equals(Microsoft.Windows.AI.Text.LanguageModel)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModel}.Equals(Microsoft.Windows.AI.Text.LanguageModel)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AI.Text.LanguageModel
+    name: LanguageModel
+    href: Microsoft.Windows.AI.Text.LanguageModel.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetHashCode*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GetHashCode
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GetHashCode
+  name: GetHashCode
+  nameWithType: LanguageModel.GetHashCode
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GenerateResponseAsync_System_String_
+  name: GenerateResponseAsync
+  nameWithType: LanguageModel.GenerateResponseAsync
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+  commentId: T:Windows.Foundation.IAsyncOperationWithProgress{Microsoft.Windows.AI.Text.LanguageModelResponseResult,System.String}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperationWithProgress`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  name: IAsyncOperationWithProgress<LanguageModelResponseResult, string>
+  nameWithType: IAsyncOperationWithProgress<LanguageModelResponseResult, string>
+  fullName: Windows.Foundation.IAsyncOperationWithProgress<Microsoft.Windows.AI.Text.LanguageModelResponseResult, string>
+  nameWithType.vb: IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  fullName.vb: Windows.Foundation.IAsyncOperationWithProgress(Of Microsoft.Windows.AI.Text.LanguageModelResponseResult, String)
+  name.vb: IAsyncOperationWithProgress(Of LanguageModelResponseResult, String)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: <
+  - uid: Microsoft.Windows.AI.Text.LanguageModelResponseResult
+    name: LanguageModelResponseResult
+    href: Microsoft.Windows.AI.Text.LanguageModelResponseResult.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: IAsyncOperationWithProgress
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModelResponseResult
+    name: LanguageModelResponseResult
+    href: Microsoft.Windows.AI.Text.LanguageModelResponseResult.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModelOptions
+  parent: Microsoft.Windows.AI.Text
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  name: LanguageModelOptions
+  nameWithType: LanguageModelOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions
+- uid: Microsoft.Windows.AI.Text.LanguageModelContext
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModelContext
+  parent: Microsoft.Windows.AI.Text
+  href: Microsoft.Windows.AI.Text.LanguageModelContext.html
+  name: LanguageModelContext
+  nameWithType: LanguageModelContext
+  fullName: Microsoft.Windows.AI.Text.LanguageModelContext
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GenerateResponseFromEmbeddingsAsync_System_Collections_Generic_IEnumerable_Microsoft_Windows_AI_Foundation_EmbeddingVector__
+  name: GenerateResponseFromEmbeddingsAsync
+  nameWithType: LanguageModel.GenerateResponseFromEmbeddingsAsync
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateResponseFromEmbeddingsAsync
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Windows.AI.Foundation.EmbeddingVector}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EmbeddingVector>
+  nameWithType: IEnumerable<EmbeddingVector>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Windows.AI.Foundation.EmbeddingVector>
+  nameWithType.vb: IEnumerable(Of EmbeddingVector)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Windows.AI.Foundation.EmbeddingVector)
+  name.vb: IEnumerable(Of EmbeddingVector)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.Windows.AI.Foundation.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.Foundation.EmbeddingVector.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.Foundation.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.Foundation.EmbeddingVector.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GenerateEmbeddingVectors_System_String_
+  name: GenerateEmbeddingVectors
+  nameWithType: LanguageModel.GenerateEmbeddingVectors
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GenerateEmbeddingVectors
+- uid: Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult
+  parent: Microsoft.Windows.AI.Text
+  href: Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult.html
+  name: LanguageModelEmbeddingVectorResult
+  nameWithType: LanguageModelEmbeddingVectorResult
+  fullName: Microsoft.Windows.AI.Text.LanguageModelEmbeddingVectorResult
+- uid: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+  commentId: T:Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+  parent: Microsoft.Windows.AI.ContentSafety
+  href: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions.html
+  name: ContentFilterOptions
+  nameWithType: ContentFilterOptions
+  fullName: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+- uid: Microsoft.Windows.AI.ContentSafety
+  commentId: N:Microsoft.Windows.AI.ContentSafety
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.ContentSafety
+  nameWithType: Microsoft.Windows.AI.ContentSafety
+  fullName: Microsoft.Windows.AI.ContentSafety
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentSafety
+    name: ContentSafety
+    href: Microsoft.Windows.AI.ContentSafety.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentSafety
+    name: ContentSafety
+    href: Microsoft.Windows.AI.ContentSafety.html
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GetUsablePromptLength_System_String_
+  name: GetUsablePromptLength
+  nameWithType: LanguageModel.GetUsablePromptLength
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetUsablePromptLength
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_GetVectorSpaceId
+  name: GetVectorSpaceId
+  nameWithType: LanguageModel.GetVectorSpaceId
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.GetVectorSpaceId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.Windows.AI.Text.LanguageModel.CreateContext*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.CreateContext
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_CreateContext
+  name: CreateContext
+  nameWithType: LanguageModel.CreateContext
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.CreateContext
+- uid: Microsoft.Windows.AI.Text.LanguageModel.Dispose*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModel.Dispose
+  href: Microsoft.Windows.AI.Text.LanguageModel.html#Microsoft_Windows_AI_Text_LanguageModel_Dispose
+  name: Dispose
+  nameWithType: LanguageModel.Dispose
+  fullName: Microsoft.Windows.AI.Text.LanguageModel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

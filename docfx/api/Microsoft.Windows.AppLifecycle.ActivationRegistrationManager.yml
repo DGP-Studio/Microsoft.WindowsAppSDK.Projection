@@ -1,0 +1,667 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  commentId: T:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  id: ActivationRegistrationManager
+  parent: Microsoft.Windows.AppLifecycle
+  children:
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As``1
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation(System.String[],System.String,System.String,System.String[],System.String)
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation(System.String,System.String,System.String,System.String)
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation(System.String,System.String)
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation(System.String[],System.String)
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation(System.String,System.String)
+  - Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ActivationRegistrationManager
+  nameWithType: ActivationRegistrationManager
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ActivationRegistrationManager
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AppLifecycle")]
+
+      [ContractVersion(typeof(AppLifecycleContract), 65536)]
+
+      public static class ActivationRegistrationManager
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AppLifecycle")>
+
+      <ContractVersion(GetType(AppLifecycleContract), 65536)>
+
+      Public Module ActivationRegistrationManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AppLifecycle
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AppLifecycle.AppLifecycleContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As``1
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As``1
+  id: As``1
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: ActivationRegistrationManager.As<I>()
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As*
+  nameWithType.vb: ActivationRegistrationManager.As(Of I)()
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation(System.String[],System.String,System.String,System.String[],System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation(System.String[],System.String,System.String,System.String[],System.String)
+  id: RegisterForFileTypeActivation(System.String[],System.String,System.String,System.String[],System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterForFileTypeActivation(string[], string, string, string[], string)
+  nameWithType: ActivationRegistrationManager.RegisterForFileTypeActivation(string[], string, string, string[], string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation(string[], string, string, string[], string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RegisterForFileTypeActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void RegisterForFileTypeActivation(string[] supportedFileTypes, string logo, string displayName, string[] supportedVerbs, string exePath)
+    parameters:
+    - id: supportedFileTypes
+      type: System.String[]
+    - id: logo
+      type: System.String
+    - id: displayName
+      type: System.String
+    - id: supportedVerbs
+      type: System.String[]
+    - id: exePath
+      type: System.String
+    content.vb: Public Shared Sub RegisterForFileTypeActivation(supportedFileTypes As String(), logo As String, displayName As String, supportedVerbs As String(), exePath As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation*
+  nameWithType.vb: ActivationRegistrationManager.RegisterForFileTypeActivation(String(), String, String, String(), String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation(String(), String, String, String(), String)
+  name.vb: RegisterForFileTypeActivation(String(), String, String, String(), String)
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation(System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation(System.String,System.String,System.String,System.String)
+  id: RegisterForProtocolActivation(System.String,System.String,System.String,System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterForProtocolActivation(string, string, string, string)
+  nameWithType: ActivationRegistrationManager.RegisterForProtocolActivation(string, string, string, string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RegisterForProtocolActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void RegisterForProtocolActivation(string scheme, string logo, string displayName, string exePath)
+    parameters:
+    - id: scheme
+      type: System.String
+    - id: logo
+      type: System.String
+    - id: displayName
+      type: System.String
+    - id: exePath
+      type: System.String
+    content.vb: Public Shared Sub RegisterForProtocolActivation(scheme As String, logo As String, displayName As String, exePath As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation*
+  nameWithType.vb: ActivationRegistrationManager.RegisterForProtocolActivation(String, String, String, String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation(String, String, String, String)
+  name.vb: RegisterForProtocolActivation(String, String, String, String)
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation(System.String,System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation(System.String,System.String)
+  id: RegisterForStartupActivation(System.String,System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterForStartupActivation(string, string)
+  nameWithType: ActivationRegistrationManager.RegisterForStartupActivation(string, string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RegisterForStartupActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void RegisterForStartupActivation(string taskId, string exePath)
+    parameters:
+    - id: taskId
+      type: System.String
+    - id: exePath
+      type: System.String
+    content.vb: Public Shared Sub RegisterForStartupActivation(taskId As String, exePath As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation*
+  nameWithType.vb: ActivationRegistrationManager.RegisterForStartupActivation(String, String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation(String, String)
+  name.vb: RegisterForStartupActivation(String, String)
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation(System.String[],System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation(System.String[],System.String)
+  id: UnregisterForFileTypeActivation(System.String[],System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterForFileTypeActivation(string[], string)
+  nameWithType: ActivationRegistrationManager.UnregisterForFileTypeActivation(string[], string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation(string[], string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UnregisterForFileTypeActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void UnregisterForFileTypeActivation(string[] fileTypes, string exePath)
+    parameters:
+    - id: fileTypes
+      type: System.String[]
+    - id: exePath
+      type: System.String
+    content.vb: Public Shared Sub UnregisterForFileTypeActivation(fileTypes As String(), exePath As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation*
+  nameWithType.vb: ActivationRegistrationManager.UnregisterForFileTypeActivation(String(), String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation(String(), String)
+  name.vb: UnregisterForFileTypeActivation(String(), String)
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation(System.String,System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation(System.String,System.String)
+  id: UnregisterForProtocolActivation(System.String,System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterForProtocolActivation(string, string)
+  nameWithType: ActivationRegistrationManager.UnregisterForProtocolActivation(string, string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UnregisterForProtocolActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 60
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void UnregisterForProtocolActivation(string scheme, string exePath)
+    parameters:
+    - id: scheme
+      type: System.String
+    - id: exePath
+      type: System.String
+    content.vb: Public Shared Sub UnregisterForProtocolActivation(scheme As String, exePath As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation*
+  nameWithType.vb: ActivationRegistrationManager.UnregisterForProtocolActivation(String, String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation(String, String)
+  name.vb: UnregisterForProtocolActivation(String, String)
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation(System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation(System.String)
+  id: UnregisterForStartupActivation(System.String)
+  parent: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterForStartupActivation(string)
+  nameWithType: ActivationRegistrationManager.UnregisterForStartupActivation(string)
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UnregisterForStartupActivation
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static void UnregisterForStartupActivation(string taskId)
+    parameters:
+    - id: taskId
+      type: System.String
+    content.vb: Public Shared Sub UnregisterForStartupActivation(taskId As String)
+  overload: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation*
+  nameWithType.vb: ActivationRegistrationManager.UnregisterForStartupActivation(String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation(String)
+  name.vb: UnregisterForStartupActivation(String)
+references:
+- uid: Microsoft.Windows.AppLifecycle
+  commentId: N:Microsoft.Windows.AppLifecycle
+  href: Microsoft.html
+  name: Microsoft.Windows.AppLifecycle
+  nameWithType: Microsoft.Windows.AppLifecycle
+  fullName: Microsoft.Windows.AppLifecycle
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppLifecycle
+    name: AppLifecycle
+    href: Microsoft.Windows.AppLifecycle.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppLifecycle
+    name: AppLifecycle
+    href: Microsoft.Windows.AppLifecycle.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_As__1
+  name: As
+  nameWithType: ActivationRegistrationManager.As
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_RegisterForFileTypeActivation_System_String___System_String_System_String_System_String___System_String_
+  name: RegisterForFileTypeActivation
+  nameWithType: ActivationRegistrationManager.RegisterForFileTypeActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForFileTypeActivation
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_RegisterForProtocolActivation_System_String_System_String_System_String_System_String_
+  name: RegisterForProtocolActivation
+  nameWithType: ActivationRegistrationManager.RegisterForProtocolActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForProtocolActivation
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_RegisterForStartupActivation_System_String_System_String_
+  name: RegisterForStartupActivation
+  nameWithType: ActivationRegistrationManager.RegisterForStartupActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.RegisterForStartupActivation
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_UnregisterForFileTypeActivation_System_String___System_String_
+  name: UnregisterForFileTypeActivation
+  nameWithType: ActivationRegistrationManager.UnregisterForFileTypeActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForFileTypeActivation
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_UnregisterForProtocolActivation_System_String_System_String_
+  name: UnregisterForProtocolActivation
+  nameWithType: ActivationRegistrationManager.UnregisterForProtocolActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForProtocolActivation
+- uid: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation
+  href: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.html#Microsoft_Windows_AppLifecycle_ActivationRegistrationManager_UnregisterForStartupActivation_System_String_
+  name: UnregisterForStartupActivation
+  nameWithType: ActivationRegistrationManager.UnregisterForStartupActivation
+  fullName: Microsoft.Windows.AppLifecycle.ActivationRegistrationManager.UnregisterForStartupActivation

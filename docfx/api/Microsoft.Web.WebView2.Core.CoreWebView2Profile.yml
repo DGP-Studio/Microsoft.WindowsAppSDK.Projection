@@ -1,0 +1,1823 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  id: CoreWebView2Profile
+  parent: Microsoft.Web.WebView2.Core
+  children:
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync(System.String)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds,System.DateTimeOffset,System.DateTimeOffset)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.Deleted
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(System.Object)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi(System.IntPtr)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind,System.String,Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  - Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  langs:
+  - csharp
+  - vb
+  name: CoreWebView2Profile
+  nameWithType: CoreWebView2Profile
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CoreWebView2Profile
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6873
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Web.WebView2.Core")]
+
+      [WindowsRuntimeHelperType(typeof(CoreWebView2Profile))]
+
+      [ProjectedRuntimeClass(typeof(ICoreWebView2Profile))]
+
+      public sealed class CoreWebView2Profile : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<CoreWebView2Profile>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Web.WebView2.Core")>
+
+      <WindowsRuntimeHelperType(GetType(CoreWebView2Profile))>
+
+      <ProjectedRuntimeClass(GetType(ICoreWebView2Profile))>
+
+      Public NotInheritable Class CoreWebView2Profile Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of CoreWebView2Profile)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Web.WebView2.Core
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: CoreWebView2Profile.FromAbi(nint)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6968
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public static CoreWebView2Profile FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As CoreWebView2Profile
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi*
+  nameWithType.vb: CoreWebView2Profile.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  id: op_Equality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: operator ==(CoreWebView2Profile, CoreWebView2Profile)
+  nameWithType: CoreWebView2Profile.operator ==(CoreWebView2Profile, CoreWebView2Profile)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.operator ==(Microsoft.Web.WebView2.Core.CoreWebView2Profile, Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6981
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public static bool operator ==(CoreWebView2Profile x, CoreWebView2Profile y)
+    parameters:
+    - id: x
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    - id: y
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As CoreWebView2Profile, y As CoreWebView2Profile) As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality*
+  nameWithType.vb: CoreWebView2Profile.=(CoreWebView2Profile, CoreWebView2Profile)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.=(Microsoft.Web.WebView2.Core.CoreWebView2Profile, Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  name.vb: =(CoreWebView2Profile, CoreWebView2Profile)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  id: op_Inequality(Microsoft.Web.WebView2.Core.CoreWebView2Profile,Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: operator !=(CoreWebView2Profile, CoreWebView2Profile)
+  nameWithType: CoreWebView2Profile.operator !=(CoreWebView2Profile, CoreWebView2Profile)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.operator !=(Microsoft.Web.WebView2.Core.CoreWebView2Profile, Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6982
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public static bool operator !=(CoreWebView2Profile x, CoreWebView2Profile y)
+    parameters:
+    - id: x
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    - id: y
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As CoreWebView2Profile, y As CoreWebView2Profile) As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality*
+  nameWithType.vb: CoreWebView2Profile.<>(CoreWebView2Profile, CoreWebView2Profile)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.<>(Microsoft.Web.WebView2.Core.CoreWebView2Profile, Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  name.vb: <>(CoreWebView2Profile, CoreWebView2Profile)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  id: Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: Equals(CoreWebView2Profile)
+  nameWithType: CoreWebView2Profile.Equals(CoreWebView2Profile)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6983
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(CoreWebView2Profile other)
+    parameters:
+    - id: other
+      type: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As CoreWebView2Profile) As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(System.Object)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: CoreWebView2Profile.Equals(object)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6984
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals*
+  nameWithType.vb: CoreWebView2Profile.Equals(Object)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CoreWebView2Profile.GetHashCode()
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 6985
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds,System.DateTimeOffset,System.DateTimeOffset)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds,System.DateTimeOffset,System.DateTimeOffset)
+  id: ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds,System.DateTimeOffset,System.DateTimeOffset)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds, DateTimeOffset, DateTimeOffset)
+  nameWithType: CoreWebView2Profile.ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds, DateTimeOffset, DateTimeOffset)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds, System.DateTimeOffset, System.DateTimeOffset)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearBrowsingDataAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7008
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncAction ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds dataKinds, DateTimeOffset startTime, DateTimeOffset endTime)
+    parameters:
+    - id: dataKinds
+      type: Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds
+    - id: startTime
+      type: System.DateTimeOffset
+    - id: endTime
+      type: System.DateTimeOffset
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function ClearBrowsingDataAsync(dataKinds As CoreWebView2BrowsingDataKinds, startTime As DateTimeOffset, endTime As DateTimeOffset) As IAsyncAction
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+  id: ClearBrowsingDataAsync
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: ClearBrowsingDataAsync()
+  nameWithType: CoreWebView2Profile.ClearBrowsingDataAsync()
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearBrowsingDataAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7010
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncAction ClearBrowsingDataAsync()
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function ClearBrowsingDataAsync() As IAsyncAction
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+  id: GetNonDefaultPermissionSettingsAsync
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: GetNonDefaultPermissionSettingsAsync()
+  nameWithType: CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync()
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetNonDefaultPermissionSettingsAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7012
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncOperation<IReadOnlyList<CoreWebView2PermissionSetting>> GetNonDefaultPermissionSettingsAsync()
+    return:
+      type: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting}}
+    content.vb: Public Function GetNonDefaultPermissionSettingsAsync() As IAsyncOperation(Of IReadOnlyList(Of CoreWebView2PermissionSetting))
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync
+  id: GetBrowserExtensionsAsync
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: GetBrowserExtensionsAsync()
+  nameWithType: CoreWebView2Profile.GetBrowserExtensionsAsync()
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetBrowserExtensionsAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7014
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncOperation<IReadOnlyList<CoreWebView2BrowserExtension>> GetBrowserExtensionsAsync()
+    return:
+      type: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}}
+    content.vb: Public Function GetBrowserExtensionsAsync() As IAsyncOperation(Of IReadOnlyList(Of CoreWebView2BrowserExtension))
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds)
+  id: ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds)
+  nameWithType: CoreWebView2Profile.ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync(Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearBrowsingDataAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7016
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncAction ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds dataKinds)
+    parameters:
+    - id: dataKinds
+      type: Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function ClearBrowsingDataAsync(dataKinds As CoreWebView2BrowsingDataKinds) As IAsyncAction
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind,System.String,Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind,System.String,Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  id: SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind,System.String,Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: SetPermissionStateAsync(CoreWebView2PermissionKind, string, CoreWebView2PermissionState)
+  nameWithType: CoreWebView2Profile.SetPermissionStateAsync(CoreWebView2PermissionKind, string, CoreWebView2PermissionState)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind, string, Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetPermissionStateAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7018
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncAction SetPermissionStateAsync(CoreWebView2PermissionKind PermissionKind, string origin, CoreWebView2PermissionState State)
+    parameters:
+    - id: PermissionKind
+      type: Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind
+    - id: origin
+      type: System.String
+    - id: State
+      type: Microsoft.Web.WebView2.Core.CoreWebView2PermissionState
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function SetPermissionStateAsync(PermissionKind As CoreWebView2PermissionKind, origin As String, State As CoreWebView2PermissionState) As IAsyncAction
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync*
+  nameWithType.vb: CoreWebView2Profile.SetPermissionStateAsync(CoreWebView2PermissionKind, String, CoreWebView2PermissionState)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync(Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind, String, Microsoft.Web.WebView2.Core.CoreWebView2PermissionState)
+  name.vb: SetPermissionStateAsync(CoreWebView2PermissionKind, String, CoreWebView2PermissionState)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync(System.String)
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync(System.String)
+  id: AddBrowserExtensionAsync(System.String)
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: AddBrowserExtensionAsync(string)
+  nameWithType: CoreWebView2Profile.AddBrowserExtensionAsync(string)
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AddBrowserExtensionAsync
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7020
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public IAsyncOperation<CoreWebView2BrowserExtension> AddBrowserExtensionAsync(string extensionFolderPath)
+    parameters:
+    - id: extensionFolderPath
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}
+    content.vb: Public Function AddBrowserExtensionAsync(extensionFolderPath As String) As IAsyncOperation(Of CoreWebView2BrowserExtension)
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync*
+  nameWithType.vb: CoreWebView2Profile.AddBrowserExtensionAsync(String)
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync(String)
+  name.vb: AddBrowserExtensionAsync(String)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+  commentId: M:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+  id: Delete
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: CoreWebView2Profile.Delete()
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Delete
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7022
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public void Delete()
+    content.vb: Public Sub Delete()
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Deleted
+  commentId: E:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Deleted
+  id: Deleted
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: Deleted
+  nameWithType: CoreWebView2Profile.Deleted
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Deleted
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Deleted
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7024
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public event TypedEventHandler<CoreWebView2Profile, object> Deleted
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.Web.WebView2.Core.CoreWebView2Profile,System.Object}
+    content.vb: Public Event Deleted As TypedEventHandler(Of CoreWebView2Profile, Object)
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+  id: CookieManager
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: CookieManager
+  nameWithType: CoreWebView2Profile.CookieManager
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CookieManager
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7030
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public CoreWebView2CookieManager CookieManager { get; }
+    parameters: []
+    return:
+      type: Microsoft.Web.WebView2.Core.CoreWebView2CookieManager
+    content.vb: Public ReadOnly Property CookieManager As CoreWebView2CookieManager
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+  id: DefaultDownloadFolderPath
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: DefaultDownloadFolderPath
+  nameWithType: CoreWebView2Profile.DefaultDownloadFolderPath
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DefaultDownloadFolderPath
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7032
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public string DefaultDownloadFolderPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultDownloadFolderPath As String
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+  id: IsGeneralAutofillEnabled
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: IsGeneralAutofillEnabled
+  nameWithType: CoreWebView2Profile.IsGeneralAutofillEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsGeneralAutofillEnabled
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7038
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public bool IsGeneralAutofillEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsGeneralAutofillEnabled As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+  id: IsInPrivateModeEnabled
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: IsInPrivateModeEnabled
+  nameWithType: CoreWebView2Profile.IsInPrivateModeEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsInPrivateModeEnabled
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7044
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public bool IsInPrivateModeEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInPrivateModeEnabled As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+  id: IsPasswordAutosaveEnabled
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: IsPasswordAutosaveEnabled
+  nameWithType: CoreWebView2Profile.IsPasswordAutosaveEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsPasswordAutosaveEnabled
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7046
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public bool IsPasswordAutosaveEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPasswordAutosaveEnabled As Boolean
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+  id: PreferredColorScheme
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: PreferredColorScheme
+  nameWithType: CoreWebView2Profile.PreferredColorScheme
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PreferredColorScheme
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7052
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public CoreWebView2PreferredColorScheme PreferredColorScheme { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme
+    content.vb: Public Property PreferredColorScheme As CoreWebView2PreferredColorScheme
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+  id: PreferredTrackingPreventionLevel
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: PreferredTrackingPreventionLevel
+  nameWithType: CoreWebView2Profile.PreferredTrackingPreventionLevel
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PreferredTrackingPreventionLevel
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7058
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public CoreWebView2TrackingPreventionLevel PreferredTrackingPreventionLevel { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel
+    content.vb: Public Property PreferredTrackingPreventionLevel As CoreWebView2TrackingPreventionLevel
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+  id: ProfileName
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: ProfileName
+  nameWithType: CoreWebView2Profile.ProfileName
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProfileName
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7064
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public string ProfileName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ProfileName As String
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName*
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+  commentId: P:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+  id: ProfilePath
+  parent: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  langs:
+  - csharp
+  - vb
+  name: ProfilePath
+  nameWithType: CoreWebView2Profile.ProfilePath
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Web.WebView2.Core.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProfilePath
+    path: ../src/Microsoft.Web.WebView2.Core.cs
+    startLine: 7066
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Web.WebView2.Core
+  syntax:
+    content: public string ProfilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ProfilePath As String
+  overload: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath*
+references:
+- uid: Microsoft.Web.WebView2.Core
+  commentId: N:Microsoft.Web.WebView2.Core
+  href: Microsoft.html
+  name: Microsoft.Web.WebView2.Core
+  nameWithType: Microsoft.Web.WebView2.Core
+  fullName: Microsoft.Web.WebView2.Core
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Web
+    name: Web
+    href: Microsoft.Web.html
+  - name: .
+  - uid: Microsoft.Web.WebView2
+    name: WebView2
+    href: Microsoft.Web.WebView2.html
+  - name: .
+  - uid: Microsoft.Web.WebView2.Core
+    name: Core
+    href: Microsoft.Web.WebView2.Core.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Web
+    name: Web
+    href: Microsoft.Web.html
+  - name: .
+  - uid: Microsoft.Web.WebView2
+    name: WebView2
+    href: Microsoft.Web.WebView2.html
+  - name: .
+  - uid: Microsoft.Web.WebView2.Core
+    name: Core
+    href: Microsoft.Web.WebView2.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}
+  commentId: T:System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CoreWebView2Profile>
+  nameWithType: IEquatable<CoreWebView2Profile>
+  fullName: System.IEquatable<Microsoft.Web.WebView2.Core.CoreWebView2Profile>
+  nameWithType.vb: IEquatable(Of CoreWebView2Profile)
+  fullName.vb: System.IEquatable(Of Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  name.vb: IEquatable(Of CoreWebView2Profile)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: CoreWebView2Profile.FromAbi
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2Profile
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  name: CoreWebView2Profile
+  nameWithType: CoreWebView2Profile
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_op_Equality_Microsoft_Web_WebView2_Core_CoreWebView2Profile_Microsoft_Web_WebView2_Core_CoreWebView2Profile_
+  name: operator ==
+  nameWithType: CoreWebView2Profile.operator ==
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.operator ==
+  nameWithType.vb: CoreWebView2Profile.=
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Equality*
+    name: ==
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_op_Equality_Microsoft_Web_WebView2_Core_CoreWebView2Profile_Microsoft_Web_WebView2_Core_CoreWebView2Profile_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_op_Inequality_Microsoft_Web_WebView2_Core_CoreWebView2Profile_Microsoft_Web_WebView2_Core_CoreWebView2Profile_
+  name: operator !=
+  nameWithType: CoreWebView2Profile.operator !=
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.operator !=
+  nameWithType.vb: CoreWebView2Profile.<>
+  fullName.vb: Microsoft.Web.WebView2.Core.CoreWebView2Profile.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.op_Inequality*
+    name: '!='
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_op_Inequality_Microsoft_Web_WebView2_Core_CoreWebView2Profile_Microsoft_Web_WebView2_Core_CoreWebView2Profile_
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_Equals_Microsoft_Web_WebView2_Core_CoreWebView2Profile_
+  name: Equals
+  nameWithType: CoreWebView2Profile.Equals
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Equals
+- uid: System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  commentId: M:System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  parent: System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(CoreWebView2Profile)
+  nameWithType: IEquatable<CoreWebView2Profile>.Equals(CoreWebView2Profile)
+  fullName: System.IEquatable<Microsoft.Web.WebView2.Core.CoreWebView2Profile>.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  nameWithType.vb: IEquatable(Of CoreWebView2Profile).Equals(CoreWebView2Profile)
+  fullName.vb: System.IEquatable(Of Microsoft.Web.WebView2.Core.CoreWebView2Profile).Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Web.WebView2.Core.CoreWebView2Profile}.Equals(Microsoft.Web.WebView2.Core.CoreWebView2Profile)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_GetHashCode
+  name: GetHashCode
+  nameWithType: CoreWebView2Profile.GetHashCode
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_ClearBrowsingDataAsync_Microsoft_Web_WebView2_Core_CoreWebView2BrowsingDataKinds_System_DateTimeOffset_System_DateTimeOffset_
+  name: ClearBrowsingDataAsync
+  nameWithType: CoreWebView2Profile.ClearBrowsingDataAsync
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ClearBrowsingDataAsync
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds.html
+  name: CoreWebView2BrowsingDataKinds
+  nameWithType: CoreWebView2BrowsingDataKinds
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2BrowsingDataKinds
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_GetNonDefaultPermissionSettingsAsync
+  name: GetNonDefaultPermissionSettingsAsync
+  nameWithType: CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+- uid: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting}}
+  commentId: T:Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting}}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<IReadOnlyList<CoreWebView2PermissionSetting>>
+  nameWithType: IAsyncOperation<IReadOnlyList<CoreWebView2PermissionSetting>>
+  fullName: Windows.Foundation.IAsyncOperation<System.Collections.Generic.IReadOnlyList<Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting>>
+  nameWithType.vb: IAsyncOperation(Of IReadOnlyList(Of CoreWebView2PermissionSetting))
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of System.Collections.Generic.IReadOnlyList(Of Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting))
+  name.vb: IAsyncOperation(Of IReadOnlyList(Of CoreWebView2PermissionSetting))
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting
+    name: CoreWebView2PermissionSetting
+    href: Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting
+    name: CoreWebView2PermissionSetting
+    href: Microsoft.Web.WebView2.Core.CoreWebView2PermissionSetting.html
+  - name: )
+  - name: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_GetBrowserExtensionsAsync
+  name: GetBrowserExtensionsAsync
+  nameWithType: CoreWebView2Profile.GetBrowserExtensionsAsync
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.GetBrowserExtensionsAsync
+- uid: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}}
+  commentId: T:Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<IReadOnlyList<CoreWebView2BrowserExtension>>
+  nameWithType: IAsyncOperation<IReadOnlyList<CoreWebView2BrowserExtension>>
+  fullName: Windows.Foundation.IAsyncOperation<System.Collections.Generic.IReadOnlyList<Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension>>
+  nameWithType.vb: IAsyncOperation(Of IReadOnlyList(Of CoreWebView2BrowserExtension))
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of System.Collections.Generic.IReadOnlyList(Of Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension))
+  name.vb: IAsyncOperation(Of IReadOnlyList(Of CoreWebView2BrowserExtension))
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension
+    name: CoreWebView2BrowserExtension
+    href: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension
+    name: CoreWebView2BrowserExtension
+    href: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.html
+  - name: )
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_SetPermissionStateAsync_Microsoft_Web_WebView2_Core_CoreWebView2PermissionKind_System_String_Microsoft_Web_WebView2_Core_CoreWebView2PermissionState_
+  name: SetPermissionStateAsync
+  nameWithType: CoreWebView2Profile.SetPermissionStateAsync
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.SetPermissionStateAsync
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind.html
+  name: CoreWebView2PermissionKind
+  nameWithType: CoreWebView2PermissionKind
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2PermissionKind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2PermissionState
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2PermissionState
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2PermissionState.html
+  name: CoreWebView2PermissionState
+  nameWithType: CoreWebView2PermissionState
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2PermissionState
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_AddBrowserExtensionAsync_System_String_
+  name: AddBrowserExtensionAsync
+  nameWithType: CoreWebView2Profile.AddBrowserExtensionAsync
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.AddBrowserExtensionAsync
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}
+  commentId: T:Windows.Foundation.IAsyncOperation{Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<CoreWebView2BrowserExtension>
+  nameWithType: IAsyncOperation<CoreWebView2BrowserExtension>
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension>
+  nameWithType.vb: IAsyncOperation(Of CoreWebView2BrowserExtension)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension)
+  name.vb: IAsyncOperation(Of CoreWebView2BrowserExtension)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension
+    name: CoreWebView2BrowserExtension
+    href: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension
+    name: CoreWebView2BrowserExtension
+    href: Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.html
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_Delete
+  name: Delete
+  nameWithType: CoreWebView2Profile.Delete
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.Delete
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.Web.WebView2.Core.CoreWebView2Profile,System.Object}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.Web.WebView2.Core.CoreWebView2Profile,System.Object}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<CoreWebView2Profile, object>
+  nameWithType: TypedEventHandler<CoreWebView2Profile, object>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.Web.WebView2.Core.CoreWebView2Profile, object>
+  nameWithType.vb: TypedEventHandler(Of CoreWebView2Profile, Object)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.Web.WebView2.Core.CoreWebView2Profile, Object)
+  name.vb: TypedEventHandler(Of CoreWebView2Profile, Object)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile
+    name: CoreWebView2Profile
+    href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_CookieManager
+  name: CookieManager
+  nameWithType: CoreWebView2Profile.CookieManager
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.CookieManager
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2CookieManager
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2CookieManager
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2CookieManager.html
+  name: CoreWebView2CookieManager
+  nameWithType: CoreWebView2CookieManager
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2CookieManager
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_DefaultDownloadFolderPath
+  name: DefaultDownloadFolderPath
+  nameWithType: CoreWebView2Profile.DefaultDownloadFolderPath
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.DefaultDownloadFolderPath
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_IsGeneralAutofillEnabled
+  name: IsGeneralAutofillEnabled
+  nameWithType: CoreWebView2Profile.IsGeneralAutofillEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsGeneralAutofillEnabled
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_IsInPrivateModeEnabled
+  name: IsInPrivateModeEnabled
+  nameWithType: CoreWebView2Profile.IsInPrivateModeEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsInPrivateModeEnabled
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_IsPasswordAutosaveEnabled
+  name: IsPasswordAutosaveEnabled
+  nameWithType: CoreWebView2Profile.IsPasswordAutosaveEnabled
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.IsPasswordAutosaveEnabled
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_PreferredColorScheme
+  name: PreferredColorScheme
+  nameWithType: CoreWebView2Profile.PreferredColorScheme
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredColorScheme
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme.html
+  name: CoreWebView2PreferredColorScheme
+  nameWithType: CoreWebView2PreferredColorScheme
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2PreferredColorScheme
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_PreferredTrackingPreventionLevel
+  name: PreferredTrackingPreventionLevel
+  nameWithType: CoreWebView2Profile.PreferredTrackingPreventionLevel
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.PreferredTrackingPreventionLevel
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel
+  commentId: T:Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel
+  parent: Microsoft.Web.WebView2.Core
+  href: Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel.html
+  name: CoreWebView2TrackingPreventionLevel
+  nameWithType: CoreWebView2TrackingPreventionLevel
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2TrackingPreventionLevel
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_ProfileName
+  name: ProfileName
+  nameWithType: CoreWebView2Profile.ProfileName
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfileName
+- uid: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath*
+  commentId: Overload:Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath
+  href: Microsoft.Web.WebView2.Core.CoreWebView2Profile.html#Microsoft_Web_WebView2_Core_CoreWebView2Profile_ProfilePath
+  name: ProfilePath
+  nameWithType: CoreWebView2Profile.ProfilePath
+  fullName: Microsoft.Web.WebView2.Core.CoreWebView2Profile.ProfilePath

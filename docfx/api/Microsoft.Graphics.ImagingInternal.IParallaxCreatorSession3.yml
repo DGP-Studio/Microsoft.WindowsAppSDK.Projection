@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3
+  commentId: T:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3
+  id: IParallaxCreatorSession3
+  parent: Microsoft.Graphics.ImagingInternal
+  children:
+  - Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource[],Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IParallaxCreatorSession3
+  nameWithType: IParallaxCreatorSession3
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IParallaxCreatorSession3
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")]
+
+      [Guid("63F1EC38-8201-5A7F-A06F-34BDE1AC2568")]
+
+      [WindowsRuntimeHelperType(typeof(IParallaxCreatorSession3))]
+
+      [ContractVersion(typeof(ParallaxCreatorSessionContract), 196608)]
+
+      public interface IParallaxCreatorSession3 : IParallaxCreatorSession2, IParallaxCreatorSession, IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")>
+
+      <Guid("63F1EC38-8201-5A7F-A06F-34BDE1AC2568")>
+
+      <WindowsRuntimeHelperType(GetType(IParallaxCreatorSession3))>
+
+      <ContractVersion(GetType(ParallaxCreatorSessionContract), 196608)>
+
+      Public Interface IParallaxCreatorSession3 Inherits IParallaxCreatorSession2, IParallaxCreatorSession, IDisposable
+  inheritedMembers:
+  - Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  - Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Graphics.ImagingInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 63F1EC38-8201-5A7F-A06F-34BDE1AC2568
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graphics.ImagingInternal.ParallaxCreatorSessionContract
+    - type: System.UInt32
+      value: "196608"
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource[],Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource[],Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  id: CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource[],Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  parent: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3
+  langs:
+  - csharp
+  - vb
+  name: CreateParallaxImages(ImageBufferResource, ImageBufferResource[], ParallaxImageOptions, uint, uint)
+  nameWithType: IParallaxCreatorSession3.CreateParallaxImages(ImageBufferResource, ImageBufferResource[], ParallaxImageOptions, uint, uint)
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource, Microsoft.Windows.PrivateCommon.ImageBufferResource[], Microsoft.Graphics.ImagingInternal.ParallaxImageOptions, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateParallaxImages
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 82
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: void CreateParallaxImages(ImageBufferResource inputImageBufferResource, ImageBufferResource[] outputImageBufferResources, ParallaxImageOptions options, uint priority, uint frequency)
+    parameters:
+    - id: inputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: outputImageBufferResources
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource[]
+    - id: options
+      type: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    content.vb: Sub CreateParallaxImages(inputImageBufferResource As ImageBufferResource, outputImageBufferResources As ImageBufferResource(), options As ParallaxImageOptions, priority As UInteger, frequency As UInteger)
+  overload: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages*
+  nameWithType.vb: IParallaxCreatorSession3.CreateParallaxImages(ImageBufferResource, ImageBufferResource(), ParallaxImageOptions, UInteger, UInteger)
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages(Microsoft.Windows.PrivateCommon.ImageBufferResource, Microsoft.Windows.PrivateCommon.ImageBufferResource(), Microsoft.Graphics.ImagingInternal.ParallaxImageOptions, UInteger, UInteger)
+  name.vb: CreateParallaxImages(ImageBufferResource, ImageBufferResource(), ParallaxImageOptions, UInteger, UInteger)
+references:
+- uid: Microsoft.Graphics.ImagingInternal
+  commentId: N:Microsoft.Graphics.ImagingInternal
+  href: Microsoft.html
+  name: Microsoft.Graphics.ImagingInternal
+  nameWithType: Microsoft.Graphics.ImagingInternal
+  fullName: Microsoft.Graphics.ImagingInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+  parent: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2
+  isExternal: true
+  href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession2_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_System_UInt32_System_UInt32_
+  name: CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList<ImageBufferView>, IReadOnlyList<ImageBufferViewData>, ParallaxImageOptions, uint, uint)
+  nameWithType: IParallaxCreatorSession2.CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList<ImageBufferView>, IReadOnlyList<ImageBufferViewData>, ParallaxImageOptions, uint, uint)
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, System.Collections.Generic.IReadOnlyList<Microsoft.Windows.PrivateCommon.ImageBufferView>, System.Collections.Generic.IReadOnlyList<Microsoft.Windows.PrivateCommon.ImageBufferViewData>, Microsoft.Graphics.ImagingInternal.ParallaxImageOptions, uint, uint)
+  nameWithType.vb: IParallaxCreatorSession2.CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList(Of ImageBufferView), IReadOnlyList(Of ImageBufferViewData), ParallaxImageOptions, UInteger, UInteger)
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, System.Collections.Generic.IReadOnlyList(Of Microsoft.Windows.PrivateCommon.ImageBufferView), System.Collections.Generic.IReadOnlyList(Of Microsoft.Windows.PrivateCommon.ImageBufferViewData), Microsoft.Graphics.ImagingInternal.ParallaxImageOptions, UInteger, UInteger)
+  name.vb: CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList(Of ImageBufferView), IReadOnlyList(Of ImageBufferViewData), ParallaxImageOptions, UInteger, UInteger)
+  spec.csharp:
+  - uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+    name: CreateParallaxImagesAsync
+    href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession2_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_System_UInt32_System_UInt32_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+    name: ParallaxImageOptions
+    href: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions,System.UInt32,System.UInt32)
+    name: CreateParallaxImagesAsync
+    href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession2_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_System_UInt32_System_UInt32_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+    name: ParallaxImageOptions
+    href: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+  parent: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession
+  isExternal: true
+  href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_
+  name: CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList<ImageBufferView>, IReadOnlyList<ImageBufferViewData>, ParallaxImageOptions)
+  nameWithType: IParallaxCreatorSession.CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList<ImageBufferView>, IReadOnlyList<ImageBufferViewData>, ParallaxImageOptions)
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, System.Collections.Generic.IReadOnlyList<Microsoft.Windows.PrivateCommon.ImageBufferView>, System.Collections.Generic.IReadOnlyList<Microsoft.Windows.PrivateCommon.ImageBufferViewData>, Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+  nameWithType.vb: IParallaxCreatorSession.CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList(Of ImageBufferView), IReadOnlyList(Of ImageBufferViewData), ParallaxImageOptions)
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, System.Collections.Generic.IReadOnlyList(Of Microsoft.Windows.PrivateCommon.ImageBufferView), System.Collections.Generic.IReadOnlyList(Of Microsoft.Windows.PrivateCommon.ImageBufferViewData), Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+  name.vb: CreateParallaxImagesAsync(ImageBufferView, ImageBufferViewData, IReadOnlyList(Of ImageBufferView), IReadOnlyList(Of ImageBufferViewData), ParallaxImageOptions)
+  spec.csharp:
+  - uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+    name: CreateParallaxImagesAsync
+    href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+    name: ParallaxImageOptions
+    href: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.CreateParallaxImagesAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferView},System.Collections.Generic.IReadOnlyList{Microsoft.Windows.PrivateCommon.ImageBufferViewData},Microsoft.Graphics.ImagingInternal.ParallaxImageOptions)
+    name: CreateParallaxImagesAsync
+    href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession_CreateParallaxImagesAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferView__System_Collections_Generic_IReadOnlyList_Microsoft_Windows_PrivateCommon_ImageBufferViewData__Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+    name: ParallaxImageOptions
+    href: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions.html
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2
+  commentId: T:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2
+  parent: Microsoft.Graphics.ImagingInternal
+  href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2.html
+  name: IParallaxCreatorSession2
+  nameWithType: IParallaxCreatorSession2
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession2
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession
+  commentId: T:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession
+  parent: Microsoft.Graphics.ImagingInternal
+  href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession.html
+  name: IParallaxCreatorSession
+  nameWithType: IParallaxCreatorSession
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages
+  href: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.html#Microsoft_Graphics_ImagingInternal_IParallaxCreatorSession3_CreateParallaxImages_Microsoft_Windows_PrivateCommon_ImageBufferResource_Microsoft_Windows_PrivateCommon_ImageBufferResource___Microsoft_Graphics_ImagingInternal_ParallaxImageOptions_System_UInt32_System_UInt32_
+  name: CreateParallaxImages
+  nameWithType: IParallaxCreatorSession3.CreateParallaxImages
+  fullName: Microsoft.Graphics.ImagingInternal.IParallaxCreatorSession3.CreateParallaxImages
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferResource
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource
+  nameWithType: ImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource[]
+  isExternal: true
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource[]
+  nameWithType: ImageBufferResource[]
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource[]
+  nameWithType.vb: ImageBufferResource()
+  fullName.vb: Microsoft.Windows.PrivateCommon.ImageBufferResource()
+  name.vb: ImageBufferResource()
+  spec.csharp:
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    name: ImageBufferResource
+    href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    name: ImageBufferResource
+    href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+  commentId: T:Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+  parent: Microsoft.Graphics.ImagingInternal
+  href: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions.html
+  name: ParallaxImageOptions
+  nameWithType: ParallaxImageOptions
+  fullName: Microsoft.Graphics.ImagingInternal.ParallaxImageOptions
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html

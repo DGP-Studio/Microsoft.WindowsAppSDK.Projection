@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  id: IImageLLMAdapterSession
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  children:
+  - Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings(System.Single[],System.UInt32)
+  - Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize(System.UInt32)
+  - Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize(System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IImageLLMAdapterSession
+  nameWithType: IImageLLMAdapterSession
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IImageLLMAdapterSession
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")]
+
+      [Guid("48F51A4A-C075-443A-9F14-AA1A24390F25")]
+
+      [WindowsRuntimeHelperType(typeof(IImageLLMAdapterSession))]
+
+      [ContractVersion(typeof(ImageLLMAdapterSessionContract), 65536)]
+
+      public interface IImageLLMAdapterSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")>
+
+      <Guid("48F51A4A-C075-443A-9F14-AA1A24390F25")>
+
+      <WindowsRuntimeHelperType(GetType(IImageLLMAdapterSession))>
+
+      <ContractVersion(GetType(ImageLLMAdapterSessionContract), 65536)>
+
+      Public Interface IImageLLMAdapterSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.GenerativeInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 48F51A4A-C075-443A-9F14-AA1A24390F25
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.GenerativeInternal.ImageLLMAdapterSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings(System.Single[],System.UInt32)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings(System.Single[],System.UInt32)
+  id: GetImageLLMEmbeddings(System.Single[],System.UInt32)
+  parent: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  langs:
+  - csharp
+  - vb
+  name: GetImageLLMEmbeddings(float[], uint)
+  nameWithType: IImageLLMAdapterSession.GetImageLLMEmbeddings(float[], uint)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings(float[], uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetImageLLMEmbeddings
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: IReadOnlyList<float> GetImageLLMEmbeddings(float[] data, uint priority)
+    parameters:
+    - id: data
+      type: System.Single[]
+    - id: priority
+      type: System.UInt32
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Single}
+    content.vb: Function GetImageLLMEmbeddings(data As Single(), priority As UInteger) As IReadOnlyList(Of Single)
+  overload: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings*
+  nameWithType.vb: IImageLLMAdapterSession.GetImageLLMEmbeddings(Single(), UInteger)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings(Single(), UInteger)
+  name.vb: GetImageLLMEmbeddings(Single(), UInteger)
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize(System.UInt32)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize(System.UInt32)
+  id: GetModelInputSize(System.UInt32)
+  parent: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  langs:
+  - csharp
+  - vb
+  name: GetModelInputSize(uint)
+  nameWithType: IImageLLMAdapterSession.GetModelInputSize(uint)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetModelInputSize
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: uint GetModelInputSize(uint priority)
+    parameters:
+    - id: priority
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Function GetModelInputSize(priority As UInteger) As UInteger
+  overload: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize*
+  nameWithType.vb: IImageLLMAdapterSession.GetModelInputSize(UInteger)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize(UInteger)
+  name.vb: GetModelInputSize(UInteger)
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize(System.UInt32)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize(System.UInt32)
+  id: GetModelOutputSize(System.UInt32)
+  parent: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession
+  langs:
+  - csharp
+  - vb
+  name: GetModelOutputSize(uint)
+  nameWithType: IImageLLMAdapterSession.GetModelOutputSize(uint)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetModelOutputSize
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: uint GetModelOutputSize(uint priority)
+    parameters:
+    - id: priority
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Function GetModelOutputSize(priority As UInteger) As UInteger
+  overload: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize*
+  nameWithType.vb: IImageLLMAdapterSession.GetModelOutputSize(UInteger)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize(UInteger)
+  name.vb: GetModelOutputSize(UInteger)
+references:
+- uid: Microsoft.Windows.AI.GenerativeInternal
+  commentId: N:Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.GenerativeInternal
+  nameWithType: Microsoft.Windows.AI.GenerativeInternal
+  fullName: Microsoft.Windows.AI.GenerativeInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.GenerativeInternal
+    name: GenerativeInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.GenerativeInternal
+    name: GenerativeInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings*
+  commentId: Overload:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings
+  href: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.html#Microsoft_Windows_AI_GenerativeInternal_IImageLLMAdapterSession_GetImageLLMEmbeddings_System_Single___System_UInt32_
+  name: GetImageLLMEmbeddings
+  nameWithType: IImageLLMAdapterSession.GetImageLLMEmbeddings
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetImageLLMEmbeddings
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Collections.Generic.IReadOnlyList{System.Single}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<float>
+  nameWithType: IReadOnlyList<float>
+  fullName: System.Collections.Generic.IReadOnlyList<float>
+  nameWithType.vb: IReadOnlyList(Of Single)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Single)
+  name.vb: IReadOnlyList(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize*
+  commentId: Overload:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize
+  href: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.html#Microsoft_Windows_AI_GenerativeInternal_IImageLLMAdapterSession_GetModelInputSize_System_UInt32_
+  name: GetModelInputSize
+  nameWithType: IImageLLMAdapterSession.GetModelInputSize
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelInputSize
+- uid: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize*
+  commentId: Overload:Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize
+  href: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.html#Microsoft_Windows_AI_GenerativeInternal_IImageLLMAdapterSession_GetModelOutputSize_System_UInt32_
+  name: GetModelOutputSize
+  nameWithType: IImageLLMAdapterSession.GetModelOutputSize
+  fullName: Microsoft.Windows.AI.GenerativeInternal.IImageLLMAdapterSession.GetModelOutputSize

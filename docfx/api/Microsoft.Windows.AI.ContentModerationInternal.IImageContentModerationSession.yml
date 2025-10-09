@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession
+  commentId: T:Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession
+  id: IImageContentModerationSession
+  parent: Microsoft.Windows.AI.ContentModerationInternal
+  children:
+  - Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  - Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IImageContentModerationSession
+  nameWithType: IImageContentModerationSession
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IImageContentModerationSession
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")]
+
+      [Guid("1AFCEA00-B9DF-454A-B0E0-9C36B7A6FA2C")]
+
+      [WindowsRuntimeHelperType(typeof(IImageContentModerationSession))]
+
+      [ContractVersion(typeof(ImageContentModerationSessionContract), 65536)]
+
+      public interface IImageContentModerationSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")>
+
+      <Guid("1AFCEA00-B9DF-454A-B0E0-9C36B7A6FA2C")>
+
+      <WindowsRuntimeHelperType(GetType(IImageContentModerationSession))>
+
+      <ContractVersion(GetType(ImageContentModerationSessionContract), 65536)>
+
+      Public Interface IImageContentModerationSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.ContentModerationInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1AFCEA00-B9DF-454A-B0E0-9C36B7A6FA2C
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.ContentModerationInternal.ImageContentModerationSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  id: ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  parent: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession
+  langs:
+  - csharp
+  - vb
+  name: ValidateImage(ImageBufferResource, uint, uint)
+  nameWithType: IImageContentModerationSession.ValidateImage(ImageBufferResource, uint, uint)
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ValidateImage
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: bool ValidateImage(ImageBufferResource inputImageBufferResource, uint priority, uint frequency)
+    parameters:
+    - id: inputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Function ValidateImage(inputImageBufferResource As ImageBufferResource, priority As UInteger, frequency As UInteger) As Boolean
+  overload: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage*
+  nameWithType.vb: IImageContentModerationSession.ValidateImage(ImageBufferResource, UInteger, UInteger)
+  fullName.vb: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, UInteger, UInteger)
+  name.vb: ValidateImage(ImageBufferResource, UInteger, UInteger)
+- uid: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  id: AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32)
+  parent: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeImage(ImageBufferResource, uint, uint)
+  nameWithType: IImageContentModerationSession.AnalyzeImage(ImageBufferResource, uint, uint)
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AnalyzeImage
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: ImageContentAnalysisScores AnalyzeImage(ImageBufferResource inputImageBufferResource, uint priority, uint frequency)
+    parameters:
+    - id: inputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    return:
+      type: Microsoft.Windows.AI.ContentModerationInternal.ImageContentAnalysisScores
+    content.vb: Function AnalyzeImage(inputImageBufferResource As ImageBufferResource, priority As UInteger, frequency As UInteger) As ImageContentAnalysisScores
+  overload: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage*
+  nameWithType.vb: IImageContentModerationSession.AnalyzeImage(ImageBufferResource, UInteger, UInteger)
+  fullName.vb: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, UInteger, UInteger)
+  name.vb: AnalyzeImage(ImageBufferResource, UInteger, UInteger)
+references:
+- uid: Microsoft.Windows.AI.ContentModerationInternal
+  commentId: N:Microsoft.Windows.AI.ContentModerationInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.ContentModerationInternal
+  nameWithType: Microsoft.Windows.AI.ContentModerationInternal
+  fullName: Microsoft.Windows.AI.ContentModerationInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage*
+  commentId: Overload:Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage
+  href: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.html#Microsoft_Windows_AI_ContentModerationInternal_IImageContentModerationSession_ValidateImage_Microsoft_Windows_PrivateCommon_ImageBufferResource_System_UInt32_System_UInt32_
+  name: ValidateImage
+  nameWithType: IImageContentModerationSession.ValidateImage
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.ValidateImage
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferResource
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource
+  nameWithType: ImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage*
+  commentId: Overload:Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage
+  href: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.html#Microsoft_Windows_AI_ContentModerationInternal_IImageContentModerationSession_AnalyzeImage_Microsoft_Windows_PrivateCommon_ImageBufferResource_System_UInt32_System_UInt32_
+  name: AnalyzeImage
+  nameWithType: IImageContentModerationSession.AnalyzeImage
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.IImageContentModerationSession.AnalyzeImage
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ImageContentAnalysisScores
+  commentId: T:Microsoft.Windows.AI.ContentModerationInternal.ImageContentAnalysisScores
+  parent: Microsoft.Windows.AI.ContentModerationInternal
+  href: Microsoft.Windows.AI.ContentModerationInternal.ImageContentAnalysisScores.html
+  name: ImageContentAnalysisScores
+  nameWithType: ImageContentAnalysisScores
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ImageContentAnalysisScores

@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Graphics.ImagingInternal.IImageScalerSession
+  commentId: T:Microsoft.Graphics.ImagingInternal.IImageScalerSession
+  id: IImageScalerSession
+  parent: Microsoft.Graphics.ImagingInternal
+  children:
+  - Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor
+  - Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource,System.Int32,System.Int32,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IImageScalerSession
+  nameWithType: IImageScalerSession
+  fullName: Microsoft.Graphics.ImagingInternal.IImageScalerSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IImageScalerSession
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")]
+
+      [Guid("E7853D0E-D3BF-5865-BECF-5EFCF9A5F3AD")]
+
+      [WindowsRuntimeHelperType(typeof(IImageScalerSession))]
+
+      [ContractVersion(typeof(ImageScalerSessionContract), 65536)]
+
+      public interface IImageScalerSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")>
+
+      <Guid("E7853D0E-D3BF-5865-BECF-5EFCF9A5F3AD")>
+
+      <WindowsRuntimeHelperType(GetType(IImageScalerSession))>
+
+      <ContractVersion(GetType(ImageScalerSessionContract), 65536)>
+
+      Public Interface IImageScalerSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Graphics.ImagingInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E7853D0E-D3BF-5865-BECF-5EFCF9A5F3AD
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graphics.ImagingInternal.ImageScalerSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource,System.Int32,System.Int32,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource,System.Int32,System.Int32,System.UInt32,System.UInt32)
+  id: ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource,Microsoft.Windows.PrivateCommon.ImageBufferResource,System.Int32,System.Int32,System.UInt32,System.UInt32)
+  parent: Microsoft.Graphics.ImagingInternal.IImageScalerSession
+  langs:
+  - csharp
+  - vb
+  name: ScaleImage(ImageBufferResource, ImageBufferResource, int, int, uint, uint)
+  nameWithType: IImageScalerSession.ScaleImage(ImageBufferResource, ImageBufferResource, int, int, uint, uint)
+  fullName: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, Microsoft.Windows.PrivateCommon.ImageBufferResource, int, int, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ScaleImage
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: void ScaleImage(ImageBufferResource inputImageBufferResource, ImageBufferResource outputImageBufferResource, int width, int height, uint priority, uint frequency)
+    parameters:
+    - id: inputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: outputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    content.vb: Sub ScaleImage(inputImageBufferResource As ImageBufferResource, outputImageBufferResource As ImageBufferResource, width As Integer, height As Integer, priority As UInteger, frequency As UInteger)
+  overload: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage*
+  nameWithType.vb: IImageScalerSession.ScaleImage(ImageBufferResource, ImageBufferResource, Integer, Integer, UInteger, UInteger)
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage(Microsoft.Windows.PrivateCommon.ImageBufferResource, Microsoft.Windows.PrivateCommon.ImageBufferResource, Integer, Integer, UInteger, UInteger)
+  name.vb: ScaleImage(ImageBufferResource, ImageBufferResource, Integer, Integer, UInteger, UInteger)
+- uid: Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor
+  commentId: M:Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor
+  id: MaxSupportedScaleFactor
+  parent: Microsoft.Graphics.ImagingInternal.IImageScalerSession
+  langs:
+  - csharp
+  - vb
+  name: MaxSupportedScaleFactor()
+  nameWithType: IImageScalerSession.MaxSupportedScaleFactor()
+  fullName: Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MaxSupportedScaleFactor
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: int MaxSupportedScaleFactor()
+    return:
+      type: System.Int32
+    content.vb: Function MaxSupportedScaleFactor() As Integer
+  overload: Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor*
+references:
+- uid: Microsoft.Graphics.ImagingInternal
+  commentId: N:Microsoft.Graphics.ImagingInternal
+  href: Microsoft.html
+  name: Microsoft.Graphics.ImagingInternal
+  nameWithType: Microsoft.Graphics.ImagingInternal
+  fullName: Microsoft.Graphics.ImagingInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage
+  href: Microsoft.Graphics.ImagingInternal.IImageScalerSession.html#Microsoft_Graphics_ImagingInternal_IImageScalerSession_ScaleImage_Microsoft_Windows_PrivateCommon_ImageBufferResource_Microsoft_Windows_PrivateCommon_ImageBufferResource_System_Int32_System_Int32_System_UInt32_System_UInt32_
+  name: ScaleImage
+  nameWithType: IImageScalerSession.ScaleImage
+  fullName: Microsoft.Graphics.ImagingInternal.IImageScalerSession.ScaleImage
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferResource
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource
+  nameWithType: ImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor
+  href: Microsoft.Graphics.ImagingInternal.IImageScalerSession.html#Microsoft_Graphics_ImagingInternal_IImageScalerSession_MaxSupportedScaleFactor
+  name: MaxSupportedScaleFactor
+  nameWithType: IImageScalerSession.MaxSupportedScaleFactor
+  fullName: Microsoft.Graphics.ImagingInternal.IImageScalerSession.MaxSupportedScaleFactor

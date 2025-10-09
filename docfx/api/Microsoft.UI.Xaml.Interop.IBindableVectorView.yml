@@ -1,0 +1,322 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView
+  commentId: T:Microsoft.UI.Xaml.Interop.IBindableVectorView
+  id: IBindableVectorView
+  parent: Microsoft.UI.Xaml.Interop
+  children:
+  - Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt(System.UInt32)
+  - Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf(System.Object,System.UInt32@)
+  - Microsoft.UI.Xaml.Interop.IBindableVectorView.Size
+  langs:
+  - csharp
+  - vb
+  name: IBindableVectorView
+  nameWithType: IBindableVectorView
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Interop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IBindableVectorView
+    path: ../src/Microsoft.UI.Xaml.Interop.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Interop
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("346DD6E7-976E-4BC3-815D-ECE243BC0F33")]
+
+      [WindowsRuntimeHelperType(typeof(IBindableVectorView))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface IBindableVectorView : IEnumerable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("346DD6E7-976E-4BC3-815D-ECE243BC0F33")>
+
+      <WindowsRuntimeHelperType(GetType(IBindableVectorView))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface IBindableVectorView Inherits IEnumerable
+  inheritedMembers:
+  - System.Collections.IEnumerable.GetEnumerator
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 346DD6E7-976E-4BC3-815D-ECE243BC0F33
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt(System.UInt32)
+  commentId: M:Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt(System.UInt32)
+  id: GetAt(System.UInt32)
+  parent: Microsoft.UI.Xaml.Interop.IBindableVectorView
+  langs:
+  - csharp
+  - vb
+  name: GetAt(uint)
+  nameWithType: IBindableVectorView.GetAt(uint)
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Interop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetAt
+    path: ../src/Microsoft.UI.Xaml.Interop.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Interop
+  syntax:
+    content: object GetAt(uint index)
+    parameters:
+    - id: index
+      type: System.UInt32
+    return:
+      type: System.Object
+    content.vb: Function GetAt(index As UInteger) As Object
+  overload: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt*
+  nameWithType.vb: IBindableVectorView.GetAt(UInteger)
+  fullName.vb: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt(UInteger)
+  name.vb: GetAt(UInteger)
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf(System.Object,System.UInt32@)
+  commentId: M:Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf(System.Object,System.UInt32@)
+  id: IndexOf(System.Object,System.UInt32@)
+  parent: Microsoft.UI.Xaml.Interop.IBindableVectorView
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(object, out uint)
+  nameWithType: IBindableVectorView.IndexOf(object, out uint)
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf(object, out uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Interop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IndexOf
+    path: ../src/Microsoft.UI.Xaml.Interop.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Interop
+  syntax:
+    content: bool IndexOf(object value, out uint index)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: index
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Function IndexOf(value As Object, index As UInteger) As Boolean
+  overload: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf*
+  nameWithType.vb: IBindableVectorView.IndexOf(Object, UInteger)
+  fullName.vb: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf(Object, UInteger)
+  name.vb: IndexOf(Object, UInteger)
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.Size
+  commentId: P:Microsoft.UI.Xaml.Interop.IBindableVectorView.Size
+  id: Size
+  parent: Microsoft.UI.Xaml.Interop.IBindableVectorView
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: IBindableVectorView.Size
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.Size
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Interop.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Size
+    path: ../src/Microsoft.UI.Xaml.Interop.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Interop
+  syntax:
+    content: uint Size { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: ReadOnly Property Size As UInteger
+  overload: Microsoft.UI.Xaml.Interop.IBindableVectorView.Size*
+references:
+- uid: Microsoft.UI.Xaml.Interop
+  commentId: N:Microsoft.UI.Xaml.Interop
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Interop
+  nameWithType: Microsoft.UI.Xaml.Interop
+  fullName: Microsoft.UI.Xaml.Interop
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Interop
+    name: Interop
+    href: Microsoft.UI.Xaml.Interop.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Interop
+    name: Interop
+    href: Microsoft.UI.Xaml.Interop.html
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt*
+  commentId: Overload:Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt
+  href: Microsoft.UI.Xaml.Interop.IBindableVectorView.html#Microsoft_UI_Xaml_Interop_IBindableVectorView_GetAt_System_UInt32_
+  name: GetAt
+  nameWithType: IBindableVectorView.GetAt
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.GetAt
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf*
+  commentId: Overload:Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf
+  href: Microsoft.UI.Xaml.Interop.IBindableVectorView.html#Microsoft_UI_Xaml_Interop_IBindableVectorView_IndexOf_System_Object_System_UInt32__
+  name: IndexOf
+  nameWithType: IBindableVectorView.IndexOf
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.IndexOf
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Interop.IBindableVectorView.Size*
+  commentId: Overload:Microsoft.UI.Xaml.Interop.IBindableVectorView.Size
+  href: Microsoft.UI.Xaml.Interop.IBindableVectorView.html#Microsoft_UI_Xaml_Interop_IBindableVectorView_Size
+  name: Size
+  nameWithType: IBindableVectorView.Size
+  fullName: Microsoft.UI.Xaml.Interop.IBindableVectorView.Size

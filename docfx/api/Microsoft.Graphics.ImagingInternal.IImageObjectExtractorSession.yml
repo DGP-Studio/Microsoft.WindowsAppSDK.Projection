@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  commentId: T:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  id: IImageObjectExtractorSession
+  parent: Microsoft.Graphics.ImagingInternal
+  children:
+  - Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground(System.Single[],Microsoft.Windows.PrivateCommon.ImageBufferResource,Windows.Graphics.RectInt32[],Windows.Graphics.PointInt32[],Windows.Graphics.PointInt32[],System.UInt32,System.UInt32)
+  - Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties
+  - Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32,System.Single[])
+  langs:
+  - csharp
+  - vb
+  name: IImageObjectExtractorSession
+  nameWithType: IImageObjectExtractorSession
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IImageObjectExtractorSession
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")]
+
+      [Guid("7476CC04-51CA-5022-8B18-E742AA511D0A")]
+
+      [WindowsRuntimeHelperType(typeof(IImageObjectExtractorSession))]
+
+      [ContractVersion(typeof(ImageObjectExtractorSessionContract), 65536)]
+
+      public interface IImageObjectExtractorSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")>
+
+      <Guid("7476CC04-51CA-5022-8B18-E742AA511D0A")>
+
+      <WindowsRuntimeHelperType(GetType(IImageObjectExtractorSession))>
+
+      <ContractVersion(GetType(ImageObjectExtractorSessionContract), 65536)>
+
+      Public Interface IImageObjectExtractorSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Graphics.ImagingInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7476CC04-51CA-5022-8B18-E742AA511D0A
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graphics.ImagingInternal.ImageObjectExtractorSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32,System.Single[])
+  commentId: M:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32,System.Single[])
+  id: InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource,System.UInt32,System.UInt32,System.Single[])
+  parent: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  langs:
+  - csharp
+  - vb
+  name: InitializeWithImageBuffer(ImageBufferResource, uint, uint, float[])
+  nameWithType: IImageObjectExtractorSession.InitializeWithImageBuffer(ImageBufferResource, uint, uint, float[])
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource, uint, uint, float[])
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InitializeWithImageBuffer
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: void InitializeWithImageBuffer(ImageBufferResource inputImageBufferResource, uint priority, uint frequency, float[] encoding)
+    parameters:
+    - id: inputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    - id: encoding
+      type: System.Single[]
+    content.vb: Sub InitializeWithImageBuffer(inputImageBufferResource As ImageBufferResource, priority As UInteger, frequency As UInteger, encoding As Single())
+  overload: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer*
+  nameWithType.vb: IImageObjectExtractorSession.InitializeWithImageBuffer(ImageBufferResource, UInteger, UInteger, Single())
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer(Microsoft.Windows.PrivateCommon.ImageBufferResource, UInteger, UInteger, Single())
+  name.vb: InitializeWithImageBuffer(ImageBufferResource, UInteger, UInteger, Single())
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground(System.Single[],Microsoft.Windows.PrivateCommon.ImageBufferResource,Windows.Graphics.RectInt32[],Windows.Graphics.PointInt32[],Windows.Graphics.PointInt32[],System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground(System.Single[],Microsoft.Windows.PrivateCommon.ImageBufferResource,Windows.Graphics.RectInt32[],Windows.Graphics.PointInt32[],Windows.Graphics.PointInt32[],System.UInt32,System.UInt32)
+  id: GetBackground(System.Single[],Microsoft.Windows.PrivateCommon.ImageBufferResource,Windows.Graphics.RectInt32[],Windows.Graphics.PointInt32[],Windows.Graphics.PointInt32[],System.UInt32,System.UInt32)
+  parent: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  langs:
+  - csharp
+  - vb
+  name: GetBackground(float[], ImageBufferResource, RectInt32[], PointInt32[], PointInt32[], uint, uint)
+  nameWithType: IImageObjectExtractorSession.GetBackground(float[], ImageBufferResource, RectInt32[], PointInt32[], PointInt32[], uint, uint)
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground(float[], Microsoft.Windows.PrivateCommon.ImageBufferResource, Windows.Graphics.RectInt32[], Windows.Graphics.PointInt32[], Windows.Graphics.PointInt32[], uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetBackground
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: void GetBackground(float[] encoding, ImageBufferResource outputImageBufferResource, RectInt32[] rects, PointInt32[] inclusionPoints, PointInt32[] exclusionPoints, uint priority, uint frequency)
+    parameters:
+    - id: encoding
+      type: System.Single[]
+    - id: outputImageBufferResource
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    - id: rects
+      type: Windows.Graphics.RectInt32[]
+    - id: inclusionPoints
+      type: Windows.Graphics.PointInt32[]
+    - id: exclusionPoints
+      type: Windows.Graphics.PointInt32[]
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    content.vb: Sub GetBackground(encoding As Single(), outputImageBufferResource As ImageBufferResource, rects As RectInt32(), inclusionPoints As PointInt32(), exclusionPoints As PointInt32(), priority As UInteger, frequency As UInteger)
+  overload: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground*
+  nameWithType.vb: IImageObjectExtractorSession.GetBackground(Single(), ImageBufferResource, RectInt32(), PointInt32(), PointInt32(), UInteger, UInteger)
+  fullName.vb: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground(Single(), Microsoft.Windows.PrivateCommon.ImageBufferResource, Windows.Graphics.RectInt32(), Windows.Graphics.PointInt32(), Windows.Graphics.PointInt32(), UInteger, UInteger)
+  name.vb: GetBackground(Single(), ImageBufferResource, RectInt32(), PointInt32(), PointInt32(), UInteger, UInteger)
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties
+  commentId: M:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties
+  id: GetModelProperties
+  parent: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession
+  langs:
+  - csharp
+  - vb
+  name: GetModelProperties()
+  nameWithType: IImageObjectExtractorSession.GetModelProperties()
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetModelProperties
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: ModelProperties GetModelProperties()
+    return:
+      type: Microsoft.Graphics.ImagingInternal.ModelProperties
+    content.vb: Function GetModelProperties() As ModelProperties
+  overload: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties*
+references:
+- uid: Microsoft.Graphics.ImagingInternal
+  commentId: N:Microsoft.Graphics.ImagingInternal
+  href: Microsoft.html
+  name: Microsoft.Graphics.ImagingInternal
+  nameWithType: Microsoft.Graphics.ImagingInternal
+  fullName: Microsoft.Graphics.ImagingInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer
+  href: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.html#Microsoft_Graphics_ImagingInternal_IImageObjectExtractorSession_InitializeWithImageBuffer_Microsoft_Windows_PrivateCommon_ImageBufferResource_System_UInt32_System_UInt32_System_Single___
+  name: InitializeWithImageBuffer
+  nameWithType: IImageObjectExtractorSession.InitializeWithImageBuffer
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.InitializeWithImageBuffer
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferResource
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource
+  nameWithType: ImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground
+  href: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.html#Microsoft_Graphics_ImagingInternal_IImageObjectExtractorSession_GetBackground_System_Single___Microsoft_Windows_PrivateCommon_ImageBufferResource_Windows_Graphics_RectInt32___Windows_Graphics_PointInt32___Windows_Graphics_PointInt32___System_UInt32_System_UInt32_
+  name: GetBackground
+  nameWithType: IImageObjectExtractorSession.GetBackground
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetBackground
+- uid: Windows.Graphics.RectInt32[]
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.graphics.rectint32
+  name: RectInt32[]
+  nameWithType: RectInt32[]
+  fullName: Windows.Graphics.RectInt32[]
+  nameWithType.vb: RectInt32()
+  fullName.vb: Windows.Graphics.RectInt32()
+  name.vb: RectInt32()
+  spec.csharp:
+  - uid: Windows.Graphics.RectInt32
+    name: RectInt32
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.rectint32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Windows.Graphics.RectInt32
+    name: RectInt32
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.rectint32
+  - name: (
+  - name: )
+- uid: Windows.Graphics.PointInt32[]
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.graphics.pointint32
+  name: PointInt32[]
+  nameWithType: PointInt32[]
+  fullName: Windows.Graphics.PointInt32[]
+  nameWithType.vb: PointInt32()
+  fullName.vb: Windows.Graphics.PointInt32()
+  name.vb: PointInt32()
+  spec.csharp:
+  - uid: Windows.Graphics.PointInt32
+    name: PointInt32
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.pointint32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Windows.Graphics.PointInt32
+    name: PointInt32
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.pointint32
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties
+  href: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.html#Microsoft_Graphics_ImagingInternal_IImageObjectExtractorSession_GetModelProperties
+  name: GetModelProperties
+  nameWithType: IImageObjectExtractorSession.GetModelProperties
+  fullName: Microsoft.Graphics.ImagingInternal.IImageObjectExtractorSession.GetModelProperties
+- uid: Microsoft.Graphics.ImagingInternal.ModelProperties
+  commentId: T:Microsoft.Graphics.ImagingInternal.ModelProperties
+  parent: Microsoft.Graphics.ImagingInternal
+  href: Microsoft.Graphics.ImagingInternal.ModelProperties.html
+  name: ModelProperties
+  nameWithType: ModelProperties
+  fullName: Microsoft.Graphics.ImagingInternal.ModelProperties

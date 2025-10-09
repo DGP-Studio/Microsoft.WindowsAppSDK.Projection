@@ -1,0 +1,1107 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  id: AppNotificationProgressData
+  parent: Microsoft.Windows.AppNotifications
+  children:
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor(System.UInt32)
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(System.Object)
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi(System.IntPtr)
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  - Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  langs:
+  - csharp
+  - vb
+  name: AppNotificationProgressData
+  nameWithType: AppNotificationProgressData
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppNotificationProgressData
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 450
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AppNotifications")]
+
+      [WindowsRuntimeHelperType(typeof(AppNotificationProgressData))]
+
+      [ProjectedRuntimeClass(typeof(IAppNotificationProgressData))]
+
+      [ContractVersion(typeof(AppNotificationsContract), 65536)]
+
+      public sealed class AppNotificationProgressData : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<AppNotificationProgressData>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AppNotifications")>
+
+      <WindowsRuntimeHelperType(GetType(AppNotificationProgressData))>
+
+      <ProjectedRuntimeClass(GetType(IAppNotificationProgressData))>
+
+      <ContractVersion(GetType(AppNotificationsContract), 65536)>
+
+      Public NotInheritable Class AppNotificationProgressData Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of AppNotificationProgressData)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AppNotifications
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AppNotifications.AppNotificationsContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor(System.UInt32)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor(System.UInt32)
+  id: '#ctor(System.UInt32)'
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: AppNotificationProgressData(uint)
+  nameWithType: AppNotificationProgressData.AppNotificationProgressData(uint)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.AppNotificationProgressData(uint)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 496
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public AppNotificationProgressData(uint sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: System.UInt32
+    content.vb: Public Sub New(sequenceNumber As UInteger)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor*
+  nameWithType.vb: AppNotificationProgressData.New(UInteger)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.New(UInteger)
+  name.vb: New(UInteger)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: AppNotificationProgressData.FromAbi(nint)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 513
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static AppNotificationProgressData FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As AppNotificationProgressData
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi*
+  nameWithType.vb: AppNotificationProgressData.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  id: op_Equality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AppNotificationProgressData, AppNotificationProgressData)
+  nameWithType: AppNotificationProgressData.operator ==(AppNotificationProgressData, AppNotificationProgressData)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.operator ==(Microsoft.Windows.AppNotifications.AppNotificationProgressData, Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 526
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static bool operator ==(AppNotificationProgressData x, AppNotificationProgressData y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    - id: y
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As AppNotificationProgressData, y As AppNotificationProgressData) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality*
+  nameWithType.vb: AppNotificationProgressData.=(AppNotificationProgressData, AppNotificationProgressData)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.=(Microsoft.Windows.AppNotifications.AppNotificationProgressData, Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  name.vb: =(AppNotificationProgressData, AppNotificationProgressData)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  id: op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationProgressData,Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AppNotificationProgressData, AppNotificationProgressData)
+  nameWithType: AppNotificationProgressData.operator !=(AppNotificationProgressData, AppNotificationProgressData)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.operator !=(Microsoft.Windows.AppNotifications.AppNotificationProgressData, Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 527
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public static bool operator !=(AppNotificationProgressData x, AppNotificationProgressData y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    - id: y
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As AppNotificationProgressData, y As AppNotificationProgressData) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality*
+  nameWithType.vb: AppNotificationProgressData.<>(AppNotificationProgressData, AppNotificationProgressData)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.<>(Microsoft.Windows.AppNotifications.AppNotificationProgressData, Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  name.vb: <>(AppNotificationProgressData, AppNotificationProgressData)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  id: Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: Equals(AppNotificationProgressData)
+  nameWithType: AppNotificationProgressData.Equals(AppNotificationProgressData)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 528
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(AppNotificationProgressData other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As AppNotificationProgressData) As Boolean
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(System.Object)
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AppNotificationProgressData.Equals(object)
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 529
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals*
+  nameWithType.vb: AppNotificationProgressData.Equals(Object)
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode
+  commentId: M:Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AppNotificationProgressData.GetHashCode()
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 530
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+  id: SequenceNumber
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: SequenceNumber
+  nameWithType: AppNotificationProgressData.SequenceNumber
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SequenceNumber
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 553
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public uint SequenceNumber { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property SequenceNumber As UInteger
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+  id: Status
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: AppNotificationProgressData.Status
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Status
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 559
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+  id: Title
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: AppNotificationProgressData.Title
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Title
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 565
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+  id: Value
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: AppNotificationProgressData.Value
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Value
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 571
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public double Value { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Value As Double
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value*
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride
+  commentId: P:Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride
+  id: ValueStringOverride
+  parent: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  langs:
+  - csharp
+  - vb
+  name: ValueStringOverride
+  nameWithType: AppNotificationProgressData.ValueStringOverride
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppNotifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ValueStringOverride
+    path: ../src/Microsoft.Windows.AppNotifications.cs
+    startLine: 577
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppNotifications
+  syntax:
+    content: public string ValueStringOverride { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ValueStringOverride As String
+  overload: Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride*
+references:
+- uid: Microsoft.Windows.AppNotifications
+  commentId: N:Microsoft.Windows.AppNotifications
+  href: Microsoft.html
+  name: Microsoft.Windows.AppNotifications
+  nameWithType: Microsoft.Windows.AppNotifications
+  fullName: Microsoft.Windows.AppNotifications
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppNotifications
+    name: AppNotifications
+    href: Microsoft.Windows.AppNotifications.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppNotifications
+    name: AppNotifications
+    href: Microsoft.Windows.AppNotifications.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}
+  commentId: T:System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AppNotificationProgressData>
+  nameWithType: IEquatable<AppNotificationProgressData>
+  fullName: System.IEquatable<Microsoft.Windows.AppNotifications.AppNotificationProgressData>
+  nameWithType.vb: IEquatable(Of AppNotificationProgressData)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  name.vb: IEquatable(Of AppNotificationProgressData)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    name: AppNotificationProgressData
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    name: AppNotificationProgressData
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.#ctor
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData__ctor_System_UInt32_
+  name: AppNotificationProgressData
+  nameWithType: AppNotificationProgressData.AppNotificationProgressData
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.AppNotificationProgressData
+  nameWithType.vb: AppNotificationProgressData.New
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.New
+  name.vb: New
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: AppNotificationProgressData.FromAbi
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  commentId: T:Microsoft.Windows.AppNotifications.AppNotificationProgressData
+  parent: Microsoft.Windows.AppNotifications
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  name: AppNotificationProgressData
+  nameWithType: AppNotificationProgressData
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_op_Equality_Microsoft_Windows_AppNotifications_AppNotificationProgressData_Microsoft_Windows_AppNotifications_AppNotificationProgressData_
+  name: operator ==
+  nameWithType: AppNotificationProgressData.operator ==
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.operator ==
+  nameWithType.vb: AppNotificationProgressData.=
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Equality*
+    name: ==
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_op_Equality_Microsoft_Windows_AppNotifications_AppNotificationProgressData_Microsoft_Windows_AppNotifications_AppNotificationProgressData_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_op_Inequality_Microsoft_Windows_AppNotifications_AppNotificationProgressData_Microsoft_Windows_AppNotifications_AppNotificationProgressData_
+  name: operator !=
+  nameWithType: AppNotificationProgressData.operator !=
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.operator !=
+  nameWithType.vb: AppNotificationProgressData.<>
+  fullName.vb: Microsoft.Windows.AppNotifications.AppNotificationProgressData.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_op_Inequality_Microsoft_Windows_AppNotifications_AppNotificationProgressData_Microsoft_Windows_AppNotifications_AppNotificationProgressData_
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_Equals_Microsoft_Windows_AppNotifications_AppNotificationProgressData_
+  name: Equals
+  nameWithType: AppNotificationProgressData.Equals
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Equals
+- uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  commentId: M:System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  parent: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AppNotificationProgressData)
+  nameWithType: IEquatable<AppNotificationProgressData>.Equals(AppNotificationProgressData)
+  fullName: System.IEquatable<Microsoft.Windows.AppNotifications.AppNotificationProgressData>.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  nameWithType.vb: IEquatable(Of AppNotificationProgressData).Equals(AppNotificationProgressData)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppNotifications.AppNotificationProgressData).Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    name: AppNotificationProgressData
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.AppNotifications.AppNotificationProgressData}.Equals(Microsoft.Windows.AppNotifications.AppNotificationProgressData)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData
+    name: AppNotificationProgressData
+    href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_GetHashCode
+  name: GetHashCode
+  nameWithType: AppNotificationProgressData.GetHashCode
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_SequenceNumber
+  name: SequenceNumber
+  nameWithType: AppNotificationProgressData.SequenceNumber
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.SequenceNumber
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_Status
+  name: Status
+  nameWithType: AppNotificationProgressData.Status
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Status
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_Title
+  name: Title
+  nameWithType: AppNotificationProgressData.Title
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Title
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_Value
+  name: Value
+  nameWithType: AppNotificationProgressData.Value
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.Value
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride*
+  commentId: Overload:Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride
+  href: Microsoft.Windows.AppNotifications.AppNotificationProgressData.html#Microsoft_Windows_AppNotifications_AppNotificationProgressData_ValueStringOverride
+  name: ValueStringOverride
+  nameWithType: AppNotificationProgressData.ValueStringOverride
+  fullName: Microsoft.Windows.AppNotifications.AppNotificationProgressData.ValueStringOverride

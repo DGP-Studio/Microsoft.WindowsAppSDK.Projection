@@ -1,0 +1,1431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Graphics.Imaging.ImageBuffer
+  commentId: T:Microsoft.Graphics.Imaging.ImageBuffer
+  id: ImageBuffer
+  parent: Microsoft.Graphics.Imaging
+  children:
+  - Microsoft.Graphics.Imaging.ImageBuffer.As``1
+  - Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+  - Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray(System.Byte[])
+  - Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap
+  - Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer(Windows.Storage.Streams.IBuffer,Microsoft.Graphics.Imaging.ImageBufferPixelFormat,System.Int32,System.Int32,System.Int32)
+  - Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+  - Microsoft.Graphics.Imaging.ImageBuffer.Dispose
+  - Microsoft.Graphics.Imaging.ImageBuffer.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  - Microsoft.Graphics.Imaging.ImageBuffer.Equals(System.Object)
+  - Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(System.IntPtr)
+  - Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode
+  - Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+  - Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+  - Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+  - Microsoft.Graphics.Imaging.ImageBuffer.RowStride
+  - Microsoft.Graphics.Imaging.ImageBuffer.op_Equality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  - Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  langs:
+  - csharp
+  - vb
+  name: ImageBuffer
+  nameWithType: ImageBuffer
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ImageBuffer
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Graphics.Imaging")]
+
+      [WindowsRuntimeHelperType(typeof(ImageBuffer))]
+
+      [ProjectedRuntimeClass(typeof(IImageBuffer))]
+
+      [ContractVersion(typeof(ImageBufferContract), 65536)]
+
+      public sealed class ImageBuffer : IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ImageBuffer>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Graphics.Imaging")>
+
+      <WindowsRuntimeHelperType(GetType(ImageBuffer))>
+
+      <ProjectedRuntimeClass(GetType(IImageBuffer))>
+
+      <ContractVersion(GetType(ImageBufferContract), 65536)>
+
+      Public NotInheritable Class ImageBuffer Implements IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ImageBuffer)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Graphics.Imaging
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graphics.Imaging.ImageBufferContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.As``1
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.As``1
+  id: As``1
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: ImageBuffer.As<I>()
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.As*
+  nameWithType.vb: ImageBuffer.As(Of I)()
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer(Windows.Storage.Streams.IBuffer,Microsoft.Graphics.Imaging.ImageBufferPixelFormat,System.Int32,System.Int32,System.Int32)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer(Windows.Storage.Streams.IBuffer,Microsoft.Graphics.Imaging.ImageBufferPixelFormat,System.Int32,System.Int32,System.Int32)
+  id: CreateForBuffer(Windows.Storage.Streams.IBuffer,Microsoft.Graphics.Imaging.ImageBufferPixelFormat,System.Int32,System.Int32,System.Int32)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: CreateForBuffer(IBuffer, ImageBufferPixelFormat, int, int, int)
+  nameWithType: ImageBuffer.CreateForBuffer(IBuffer, ImageBufferPixelFormat, int, int, int)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer(Windows.Storage.Streams.IBuffer, Microsoft.Graphics.Imaging.ImageBufferPixelFormat, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateForBuffer
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static ImageBuffer CreateForBuffer(IBuffer buffer, ImageBufferPixelFormat pixelFormat, int width, int height, int rowStride)
+    parameters:
+    - id: buffer
+      type: Windows.Storage.Streams.IBuffer
+    - id: pixelFormat
+      type: Microsoft.Graphics.Imaging.ImageBufferPixelFormat
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: rowStride
+      type: System.Int32
+    return:
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    content.vb: Public Shared Function CreateForBuffer(buffer As IBuffer, pixelFormat As ImageBufferPixelFormat, width As Integer, height As Integer, rowStride As Integer) As ImageBuffer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer*
+  nameWithType.vb: ImageBuffer.CreateForBuffer(IBuffer, ImageBufferPixelFormat, Integer, Integer, Integer)
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer(Windows.Storage.Streams.IBuffer, Microsoft.Graphics.Imaging.ImageBufferPixelFormat, Integer, Integer, Integer)
+  name.vb: CreateForBuffer(IBuffer, ImageBufferPixelFormat, Integer, Integer, Integer)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+  id: CreateForSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: CreateForSoftwareBitmap(SoftwareBitmap)
+  nameWithType: ImageBuffer.CreateForSoftwareBitmap(SoftwareBitmap)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap(Windows.Graphics.Imaging.SoftwareBitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateForSoftwareBitmap
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static ImageBuffer CreateForSoftwareBitmap(SoftwareBitmap softwareBitmap)
+    parameters:
+    - id: softwareBitmap
+      type: Windows.Graphics.Imaging.SoftwareBitmap
+    return:
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    content.vb: Public Shared Function CreateForSoftwareBitmap(softwareBitmap As SoftwareBitmap) As ImageBuffer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ImageBuffer.FromAbi(nint)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static ImageBuffer FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ImageBuffer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi*
+  nameWithType.vb: ImageBuffer.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Equality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.op_Equality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  id: op_Equality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ImageBuffer, ImageBuffer)
+  nameWithType: ImageBuffer.operator ==(ImageBuffer, ImageBuffer)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.operator ==(Microsoft.Graphics.Imaging.ImageBuffer, Microsoft.Graphics.Imaging.ImageBuffer)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 108
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static bool operator ==(ImageBuffer x, ImageBuffer y)
+    parameters:
+    - id: x
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    - id: y
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ImageBuffer, y As ImageBuffer) As Boolean
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.op_Equality*
+  nameWithType.vb: ImageBuffer.=(ImageBuffer, ImageBuffer)
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.=(Microsoft.Graphics.Imaging.ImageBuffer, Microsoft.Graphics.Imaging.ImageBuffer)
+  name.vb: =(ImageBuffer, ImageBuffer)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  id: op_Inequality(Microsoft.Graphics.Imaging.ImageBuffer,Microsoft.Graphics.Imaging.ImageBuffer)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ImageBuffer, ImageBuffer)
+  nameWithType: ImageBuffer.operator !=(ImageBuffer, ImageBuffer)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.operator !=(Microsoft.Graphics.Imaging.ImageBuffer, Microsoft.Graphics.Imaging.ImageBuffer)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public static bool operator !=(ImageBuffer x, ImageBuffer y)
+    parameters:
+    - id: x
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    - id: y
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ImageBuffer, y As ImageBuffer) As Boolean
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality*
+  nameWithType.vb: ImageBuffer.<>(ImageBuffer, ImageBuffer)
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.<>(Microsoft.Graphics.Imaging.ImageBuffer, Microsoft.Graphics.Imaging.ImageBuffer)
+  name.vb: <>(ImageBuffer, ImageBuffer)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  id: Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: Equals(ImageBuffer)
+  nameWithType: ImageBuffer.Equals(ImageBuffer)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 110
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ImageBuffer other)
+    parameters:
+    - id: other
+      type: Microsoft.Graphics.Imaging.ImageBuffer
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ImageBuffer) As Boolean
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Equals(System.Object)
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ImageBuffer.Equals(object)
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 111
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.Equals*
+  nameWithType.vb: ImageBuffer.Equals(Object)
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ImageBuffer.GetHashCode()
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray(System.Byte[])
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray(System.Byte[])
+  id: CopyToByteArray(System.Byte[])
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: CopyToByteArray(byte[])
+  nameWithType: ImageBuffer.CopyToByteArray(byte[])
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray(byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyToByteArray
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public void CopyToByteArray(byte[] values)
+    parameters:
+    - id: values
+      type: System.Byte[]
+    content.vb: Public Sub CopyToByteArray(values As Byte())
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray*
+  nameWithType.vb: ImageBuffer.CopyToByteArray(Byte())
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray(Byte())
+  name.vb: CopyToByteArray(Byte())
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap
+  id: CopyToSoftwareBitmap
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: CopyToSoftwareBitmap()
+  nameWithType: ImageBuffer.CopyToSoftwareBitmap()
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyToSoftwareBitmap
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 137
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public SoftwareBitmap CopyToSoftwareBitmap()
+    return:
+      type: Windows.Graphics.Imaging.SoftwareBitmap
+    content.vb: Public Function CopyToSoftwareBitmap() As SoftwareBitmap
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Dispose
+  commentId: M:Microsoft.Graphics.Imaging.ImageBuffer.Dispose
+  id: Dispose
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ImageBuffer.Dispose()
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispose
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 139
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+  commentId: P:Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+  id: Buffer
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: Buffer
+  nameWithType: ImageBuffer.Buffer
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Buffer
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public IBuffer Buffer { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.Streams.IBuffer
+    content.vb: Public ReadOnly Property Buffer As IBuffer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.Buffer*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+  commentId: P:Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+  id: PixelFormat
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: PixelFormat
+  nameWithType: ImageBuffer.PixelFormat
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PixelFormat
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public ImageBufferPixelFormat PixelFormat { get; }
+    parameters: []
+    return:
+      type: Microsoft.Graphics.Imaging.ImageBufferPixelFormat
+    content.vb: Public ReadOnly Property PixelFormat As ImageBufferPixelFormat
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+  commentId: P:Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+  id: PixelHeight
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: PixelHeight
+  nameWithType: ImageBuffer.PixelHeight
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PixelHeight
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public int PixelHeight { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property PixelHeight As Integer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+  commentId: P:Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+  id: PixelWidth
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: PixelWidth
+  nameWithType: ImageBuffer.PixelWidth
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PixelWidth
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 147
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public int PixelWidth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property PixelWidth As Integer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth*
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.RowStride
+  commentId: P:Microsoft.Graphics.Imaging.ImageBuffer.RowStride
+  id: RowStride
+  parent: Microsoft.Graphics.Imaging.ImageBuffer
+  langs:
+  - csharp
+  - vb
+  name: RowStride
+  nameWithType: ImageBuffer.RowStride
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.RowStride
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Graphics.Imaging.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RowStride
+    path: ../src/Microsoft.Graphics.Imaging.cs
+    startLine: 149
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.Imaging
+  syntax:
+    content: public int RowStride { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RowStride As Integer
+  overload: Microsoft.Graphics.Imaging.ImageBuffer.RowStride*
+references:
+- uid: Microsoft.Graphics.Imaging
+  commentId: N:Microsoft.Graphics.Imaging
+  href: Microsoft.html
+  name: Microsoft.Graphics.Imaging
+  nameWithType: Microsoft.Graphics.Imaging
+  fullName: Microsoft.Graphics.Imaging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.Imaging
+    name: Imaging
+    href: Microsoft.Graphics.Imaging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.Imaging
+    name: Imaging
+    href: Microsoft.Graphics.Imaging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}
+  commentId: T:System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ImageBuffer>
+  nameWithType: IEquatable<ImageBuffer>
+  fullName: System.IEquatable<Microsoft.Graphics.Imaging.ImageBuffer>
+  nameWithType.vb: IEquatable(Of ImageBuffer)
+  fullName.vb: System.IEquatable(Of Microsoft.Graphics.Imaging.ImageBuffer)
+  name.vb: IEquatable(Of ImageBuffer)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer
+    name: ImageBuffer
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer
+    name: ImageBuffer
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.As*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.As
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_As__1
+  name: As
+  nameWithType: ImageBuffer.As
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_CreateForBuffer_Windows_Storage_Streams_IBuffer_Microsoft_Graphics_Imaging_ImageBufferPixelFormat_System_Int32_System_Int32_System_Int32_
+  name: CreateForBuffer
+  nameWithType: ImageBuffer.CreateForBuffer
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CreateForBuffer
+- uid: Windows.Storage.Streams.IBuffer
+  commentId: T:Windows.Storage.Streams.IBuffer
+  parent: Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.storage.streams.ibuffer
+  name: IBuffer
+  nameWithType: IBuffer
+  fullName: Windows.Storage.Streams.IBuffer
+- uid: Microsoft.Graphics.Imaging.ImageBufferPixelFormat
+  commentId: T:Microsoft.Graphics.Imaging.ImageBufferPixelFormat
+  parent: Microsoft.Graphics.Imaging
+  href: Microsoft.Graphics.Imaging.ImageBufferPixelFormat.html
+  name: ImageBufferPixelFormat
+  nameWithType: ImageBufferPixelFormat
+  fullName: Microsoft.Graphics.Imaging.ImageBufferPixelFormat
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Graphics.Imaging.ImageBuffer
+  commentId: T:Microsoft.Graphics.Imaging.ImageBuffer
+  parent: Microsoft.Graphics.Imaging
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html
+  name: ImageBuffer
+  nameWithType: ImageBuffer
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer
+- uid: Windows.Storage.Streams
+  commentId: N:Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Storage.Streams
+  nameWithType: Windows.Storage.Streams
+  fullName: Windows.Storage.Streams
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_CreateForSoftwareBitmap_Windows_Graphics_Imaging_SoftwareBitmap_
+  name: CreateForSoftwareBitmap
+  nameWithType: ImageBuffer.CreateForSoftwareBitmap
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CreateForSoftwareBitmap
+- uid: Windows.Graphics.Imaging.SoftwareBitmap
+  commentId: T:Windows.Graphics.Imaging.SoftwareBitmap
+  parent: Windows.Graphics.Imaging
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.graphics.imaging.softwarebitmap
+  name: SoftwareBitmap
+  nameWithType: SoftwareBitmap
+  fullName: Windows.Graphics.Imaging.SoftwareBitmap
+- uid: Windows.Graphics.Imaging
+  commentId: N:Windows.Graphics.Imaging
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Graphics.Imaging
+  nameWithType: Windows.Graphics.Imaging
+  fullName: Windows.Graphics.Imaging
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics
+  - name: .
+  - uid: Windows.Graphics.Imaging
+    name: Imaging
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.imaging
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics
+  - name: .
+  - uid: Windows.Graphics.Imaging
+    name: Imaging
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics.imaging
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.FromAbi
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ImageBuffer.FromAbi
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Equality*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.op_Equality
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_op_Equality_Microsoft_Graphics_Imaging_ImageBuffer_Microsoft_Graphics_Imaging_ImageBuffer_
+  name: operator ==
+  nameWithType: ImageBuffer.operator ==
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.operator ==
+  nameWithType.vb: ImageBuffer.=
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Equality*
+    name: ==
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_op_Equality_Microsoft_Graphics_Imaging_ImageBuffer_Microsoft_Graphics_Imaging_ImageBuffer_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_op_Inequality_Microsoft_Graphics_Imaging_ImageBuffer_Microsoft_Graphics_Imaging_ImageBuffer_
+  name: operator !=
+  nameWithType: ImageBuffer.operator !=
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.operator !=
+  nameWithType.vb: ImageBuffer.<>
+  fullName.vb: Microsoft.Graphics.Imaging.ImageBuffer.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer.op_Inequality*
+    name: '!='
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_op_Inequality_Microsoft_Graphics_Imaging_ImageBuffer_Microsoft_Graphics_Imaging_ImageBuffer_
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Equals*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.Equals
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_Equals_Microsoft_Graphics_Imaging_ImageBuffer_
+  name: Equals
+  nameWithType: ImageBuffer.Equals
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Equals
+- uid: System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  commentId: M:System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  parent: System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ImageBuffer)
+  nameWithType: IEquatable<ImageBuffer>.Equals(ImageBuffer)
+  fullName: System.IEquatable<Microsoft.Graphics.Imaging.ImageBuffer>.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  nameWithType.vb: IEquatable(Of ImageBuffer).Equals(ImageBuffer)
+  fullName.vb: System.IEquatable(Of Microsoft.Graphics.Imaging.ImageBuffer).Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer
+    name: ImageBuffer
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Graphics.Imaging.ImageBuffer}.Equals(Microsoft.Graphics.Imaging.ImageBuffer)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Graphics.Imaging.ImageBuffer
+    name: ImageBuffer
+    href: Microsoft.Graphics.Imaging.ImageBuffer.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_GetHashCode
+  name: GetHashCode
+  nameWithType: ImageBuffer.GetHashCode
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.GetHashCode
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_CopyToByteArray_System_Byte___
+  name: CopyToByteArray
+  nameWithType: ImageBuffer.CopyToByteArray
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CopyToByteArray
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_CopyToSoftwareBitmap
+  name: CopyToSoftwareBitmap
+  nameWithType: ImageBuffer.CopyToSoftwareBitmap
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.CopyToSoftwareBitmap
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Dispose*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.Dispose
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_Dispose
+  name: Dispose
+  nameWithType: ImageBuffer.Dispose
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.Buffer*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_Buffer
+  name: Buffer
+  nameWithType: ImageBuffer.Buffer
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.Buffer
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_PixelFormat
+  name: PixelFormat
+  nameWithType: ImageBuffer.PixelFormat
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelFormat
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_PixelHeight
+  name: PixelHeight
+  nameWithType: ImageBuffer.PixelHeight
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelHeight
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_PixelWidth
+  name: PixelWidth
+  nameWithType: ImageBuffer.PixelWidth
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.PixelWidth
+- uid: Microsoft.Graphics.Imaging.ImageBuffer.RowStride*
+  commentId: Overload:Microsoft.Graphics.Imaging.ImageBuffer.RowStride
+  href: Microsoft.Graphics.Imaging.ImageBuffer.html#Microsoft_Graphics_Imaging_ImageBuffer_RowStride
+  name: RowStride
+  nameWithType: ImageBuffer.RowStride
+  fullName: Microsoft.Graphics.Imaging.ImageBuffer.RowStride

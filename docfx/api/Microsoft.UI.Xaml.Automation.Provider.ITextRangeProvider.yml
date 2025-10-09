@@ -1,0 +1,978 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  id: ITextRangeProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  children:
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare(Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(Microsoft.UI.Xaml.Automation.Text.TextUnit)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute(System.Int32,System.Object,System.Boolean)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText(System.String,System.Boolean,System.Boolean)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue(System.Int32)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles(System.Double[]@)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText(System.Int32)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move(Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView(System.Boolean)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select
+  langs:
+  - csharp
+  - vb
+  name: ITextRangeProvider
+  nameWithType: ITextRangeProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextRangeProvider
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 317
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("84210361-6CE2-5084-BF3B-28AFA6E9851F")]
+
+      [WindowsRuntimeHelperType(typeof(ITextRangeProvider))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface ITextRangeProvider
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("84210361-6CE2-5084-BF3B-28AFA6E9851F")>
+
+      <WindowsRuntimeHelperType(GetType(ITextRangeProvider))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface ITextRangeProvider
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 84210361-6CE2-5084-BF3B-28AFA6E9851F
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone
+  id: Clone
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ITextRangeProvider.Clone()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Clone
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 321
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider Clone()
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function Clone() As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare(Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare(Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider)
+  id: Compare(Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: Compare(ITextRangeProvider)
+  nameWithType: ITextRangeProvider.Compare(ITextRangeProvider)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare(Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Compare
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 322
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: bool Compare(ITextRangeProvider textRangeProvider)
+    parameters:
+    - id: textRangeProvider
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    return:
+      type: System.Boolean
+    content.vb: Function Compare(textRangeProvider As ITextRangeProvider) As Boolean
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  id: CompareEndpoints(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: CompareEndpoints(TextPatternRangeEndpoint, ITextRangeProvider, TextPatternRangeEndpoint)
+  nameWithType: ITextRangeProvider.CompareEndpoints(TextPatternRangeEndpoint, ITextRangeProvider, TextPatternRangeEndpoint)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint, Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider, Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CompareEndpoints
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 323
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: int CompareEndpoints(TextPatternRangeEndpoint endpoint, ITextRangeProvider textRangeProvider, TextPatternRangeEndpoint targetEndpoint)
+    parameters:
+    - id: endpoint
+      type: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+    - id: textRangeProvider
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    - id: targetEndpoint
+      type: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+    return:
+      type: System.Int32
+    content.vb: Function CompareEndpoints(endpoint As TextPatternRangeEndpoint, textRangeProvider As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint) As Integer
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(Microsoft.UI.Xaml.Automation.Text.TextUnit)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(Microsoft.UI.Xaml.Automation.Text.TextUnit)
+  id: ExpandToEnclosingUnit(Microsoft.UI.Xaml.Automation.Text.TextUnit)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: ExpandToEnclosingUnit(TextUnit)
+  nameWithType: ITextRangeProvider.ExpandToEnclosingUnit(TextUnit)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(Microsoft.UI.Xaml.Automation.Text.TextUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ExpandToEnclosingUnit
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 324
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void ExpandToEnclosingUnit(TextUnit unit)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Xaml.Automation.Text.TextUnit
+    content.vb: Sub ExpandToEnclosingUnit(unit As TextUnit)
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute(System.Int32,System.Object,System.Boolean)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute(System.Int32,System.Object,System.Boolean)
+  id: FindAttribute(System.Int32,System.Object,System.Boolean)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: FindAttribute(int, object, bool)
+  nameWithType: ITextRangeProvider.FindAttribute(int, object, bool)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute(int, object, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindAttribute
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 325
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider FindAttribute(int attributeId, object value, bool backward)
+    parameters:
+    - id: attributeId
+      type: System.Int32
+    - id: value
+      type: System.Object
+    - id: backward
+      type: System.Boolean
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function FindAttribute(attributeId As Integer, value As Object, backward As Boolean) As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute*
+  nameWithType.vb: ITextRangeProvider.FindAttribute(Integer, Object, Boolean)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute(Integer, Object, Boolean)
+  name.vb: FindAttribute(Integer, Object, Boolean)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText(System.String,System.Boolean,System.Boolean)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText(System.String,System.Boolean,System.Boolean)
+  id: FindText(System.String,System.Boolean,System.Boolean)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: FindText(string, bool, bool)
+  nameWithType: ITextRangeProvider.FindText(string, bool, bool)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText(string, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindText
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 326
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider FindText(string text, bool backward, bool ignoreCase)
+    parameters:
+    - id: text
+      type: System.String
+    - id: backward
+      type: System.Boolean
+    - id: ignoreCase
+      type: System.Boolean
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function FindText(text As String, backward As Boolean, ignoreCase As Boolean) As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText*
+  nameWithType.vb: ITextRangeProvider.FindText(String, Boolean, Boolean)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText(String, Boolean, Boolean)
+  name.vb: FindText(String, Boolean, Boolean)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue(System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue(System.Int32)
+  id: GetAttributeValue(System.Int32)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAttributeValue(int)
+  nameWithType: ITextRangeProvider.GetAttributeValue(int)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetAttributeValue
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 327
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: object GetAttributeValue(int attributeId)
+    parameters:
+    - id: attributeId
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Function GetAttributeValue(attributeId As Integer) As Object
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue*
+  nameWithType.vb: ITextRangeProvider.GetAttributeValue(Integer)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue(Integer)
+  name.vb: GetAttributeValue(Integer)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles(System.Double[]@)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles(System.Double[]@)
+  id: GetBoundingRectangles(System.Double[]@)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: GetBoundingRectangles(out double[])
+  nameWithType: ITextRangeProvider.GetBoundingRectangles(out double[])
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles(out double[])
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetBoundingRectangles
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void GetBoundingRectangles(out double[] returnValue)
+    parameters:
+    - id: returnValue
+      type: System.Double[]
+    content.vb: Sub GetBoundingRectangles(returnValue As Double())
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles*
+  nameWithType.vb: ITextRangeProvider.GetBoundingRectangles(Double())
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles(Double())
+  name.vb: GetBoundingRectangles(Double())
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement
+  id: GetEnclosingElement
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEnclosingElement()
+  nameWithType: ITextRangeProvider.GetEnclosingElement()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnclosingElement
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 329
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: IRawElementProviderSimple GetEnclosingElement()
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    content.vb: Function GetEnclosingElement() As IRawElementProviderSimple
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText(System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText(System.Int32)
+  id: GetText(System.Int32)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: GetText(int)
+  nameWithType: ITextRangeProvider.GetText(int)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetText
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 330
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: string GetText(int maxLength)
+    parameters:
+    - id: maxLength
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function GetText(maxLength As Integer) As String
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText*
+  nameWithType.vb: ITextRangeProvider.GetText(Integer)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText(Integer)
+  name.vb: GetText(Integer)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move(Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move(Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  id: Move(Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: Move(TextUnit, int)
+  nameWithType: ITextRangeProvider.Move(TextUnit, int)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move(Microsoft.UI.Xaml.Automation.Text.TextUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Move
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 331
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: int Move(TextUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Xaml.Automation.Text.TextUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Move(unit As TextUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move*
+  nameWithType.vb: ITextRangeProvider.Move(TextUnit, Integer)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move(Microsoft.UI.Xaml.Automation.Text.TextUnit, Integer)
+  name.vb: Move(TextUnit, Integer)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  id: MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Text.TextUnit,System.Int32)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: MoveEndpointByUnit(TextPatternRangeEndpoint, TextUnit, int)
+  nameWithType: ITextRangeProvider.MoveEndpointByUnit(TextPatternRangeEndpoint, TextUnit, int)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint, Microsoft.UI.Xaml.Automation.Text.TextUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveEndpointByUnit
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 332
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: int MoveEndpointByUnit(TextPatternRangeEndpoint endpoint, TextUnit unit, int count)
+    parameters:
+    - id: endpoint
+      type: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+    - id: unit
+      type: Microsoft.UI.Xaml.Automation.Text.TextUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function MoveEndpointByUnit(endpoint As TextPatternRangeEndpoint, unit As TextUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit*
+  nameWithType.vb: ITextRangeProvider.MoveEndpointByUnit(TextPatternRangeEndpoint, TextUnit, Integer)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint, Microsoft.UI.Xaml.Automation.Text.TextUnit, Integer)
+  name.vb: MoveEndpointByUnit(TextPatternRangeEndpoint, TextUnit, Integer)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  id: MoveEndpointByRange(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint,Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider,Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: MoveEndpointByRange(TextPatternRangeEndpoint, ITextRangeProvider, TextPatternRangeEndpoint)
+  nameWithType: ITextRangeProvider.MoveEndpointByRange(TextPatternRangeEndpoint, ITextRangeProvider, TextPatternRangeEndpoint)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint, Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider, Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveEndpointByRange
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 333
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void MoveEndpointByRange(TextPatternRangeEndpoint endpoint, ITextRangeProvider textRangeProvider, TextPatternRangeEndpoint targetEndpoint)
+    parameters:
+    - id: endpoint
+      type: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+    - id: textRangeProvider
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    - id: targetEndpoint
+      type: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+    content.vb: Sub MoveEndpointByRange(endpoint As TextPatternRangeEndpoint, textRangeProvider As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint)
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select
+  id: Select
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: Select()
+  nameWithType: ITextRangeProvider.Select()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Select
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void Select()
+    content.vb: Sub [Select]()
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection
+  id: AddToSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: AddToSelection()
+  nameWithType: ITextRangeProvider.AddToSelection()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AddToSelection
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 335
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void AddToSelection()
+    content.vb: Sub AddToSelection()
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection
+  id: RemoveFromSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: RemoveFromSelection()
+  nameWithType: ITextRangeProvider.RemoveFromSelection()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveFromSelection
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 336
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void RemoveFromSelection()
+    content.vb: Sub RemoveFromSelection()
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView(System.Boolean)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView(System.Boolean)
+  id: ScrollIntoView(System.Boolean)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: ScrollIntoView(bool)
+  nameWithType: ITextRangeProvider.ScrollIntoView(bool)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ScrollIntoView
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: void ScrollIntoView(bool alignToTop)
+    parameters:
+    - id: alignToTop
+      type: System.Boolean
+    content.vb: Sub ScrollIntoView(alignToTop As Boolean)
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView*
+  nameWithType.vb: ITextRangeProvider.ScrollIntoView(Boolean)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView(Boolean)
+  name.vb: ScrollIntoView(Boolean)
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren
+  id: GetChildren
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  langs:
+  - csharp
+  - vb
+  name: GetChildren()
+  nameWithType: ITextRangeProvider.GetChildren()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetChildren
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 338
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: IRawElementProviderSimple[] GetChildren()
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple[]
+    content.vb: Function GetChildren() As IRawElementProviderSimple()
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren*
+references:
+- uid: Microsoft.UI.Xaml.Automation.Provider
+  commentId: N:Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Automation.Provider
+  nameWithType: Microsoft.UI.Xaml.Automation.Provider
+  fullName: Microsoft.UI.Xaml.Automation.Provider
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Clone
+  name: Clone
+  nameWithType: ITextRangeProvider.Clone
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Clone
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html
+  name: ITextRangeProvider
+  nameWithType: ITextRangeProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Compare_Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_
+  name: Compare
+  nameWithType: ITextRangeProvider.Compare
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Compare
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_CompareEndpoints_Microsoft_UI_Xaml_Automation_Text_TextPatternRangeEndpoint_Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Microsoft_UI_Xaml_Automation_Text_TextPatternRangeEndpoint_
+  name: CompareEndpoints
+  nameWithType: ITextRangeProvider.CompareEndpoints
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.CompareEndpoints
+- uid: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+  commentId: T:Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+  parent: Microsoft.UI.Xaml.Automation.Text
+  href: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint.html
+  name: TextPatternRangeEndpoint
+  nameWithType: TextPatternRangeEndpoint
+  fullName: Microsoft.UI.Xaml.Automation.Text.TextPatternRangeEndpoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Xaml.Automation.Text
+  commentId: N:Microsoft.UI.Xaml.Automation.Text
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Automation.Text
+  nameWithType: Microsoft.UI.Xaml.Automation.Text
+  fullName: Microsoft.UI.Xaml.Automation.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Text
+    name: Text
+    href: Microsoft.UI.Xaml.Automation.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Text
+    name: Text
+    href: Microsoft.UI.Xaml.Automation.Text.html
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_ExpandToEnclosingUnit_Microsoft_UI_Xaml_Automation_Text_TextUnit_
+  name: ExpandToEnclosingUnit
+  nameWithType: ITextRangeProvider.ExpandToEnclosingUnit
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit
+- uid: Microsoft.UI.Xaml.Automation.Text.TextUnit
+  commentId: T:Microsoft.UI.Xaml.Automation.Text.TextUnit
+  parent: Microsoft.UI.Xaml.Automation.Text
+  href: Microsoft.UI.Xaml.Automation.Text.TextUnit.html
+  name: TextUnit
+  nameWithType: TextUnit
+  fullName: Microsoft.UI.Xaml.Automation.Text.TextUnit
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_FindAttribute_System_Int32_System_Object_System_Boolean_
+  name: FindAttribute
+  nameWithType: ITextRangeProvider.FindAttribute
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindAttribute
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_FindText_System_String_System_Boolean_System_Boolean_
+  name: FindText
+  nameWithType: ITextRangeProvider.FindText
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.FindText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_GetAttributeValue_System_Int32_
+  name: GetAttributeValue
+  nameWithType: ITextRangeProvider.GetAttributeValue
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetAttributeValue
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_GetBoundingRectangles_System_Double____
+  name: GetBoundingRectangles
+  nameWithType: ITextRangeProvider.GetBoundingRectangles
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetBoundingRectangles
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_GetEnclosingElement
+  name: GetEnclosingElement
+  nameWithType: ITextRangeProvider.GetEnclosingElement
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetEnclosingElement
+- uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  name: IRawElementProviderSimple
+  nameWithType: IRawElementProviderSimple
+  fullName: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_GetText_System_Int32_
+  name: GetText
+  nameWithType: ITextRangeProvider.GetText
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetText
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Move_Microsoft_UI_Xaml_Automation_Text_TextUnit_System_Int32_
+  name: Move
+  nameWithType: ITextRangeProvider.Move
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Move
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_MoveEndpointByUnit_Microsoft_UI_Xaml_Automation_Text_TextPatternRangeEndpoint_Microsoft_UI_Xaml_Automation_Text_TextUnit_System_Int32_
+  name: MoveEndpointByUnit
+  nameWithType: ITextRangeProvider.MoveEndpointByUnit
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_MoveEndpointByRange_Microsoft_UI_Xaml_Automation_Text_TextPatternRangeEndpoint_Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Microsoft_UI_Xaml_Automation_Text_TextPatternRangeEndpoint_
+  name: MoveEndpointByRange
+  nameWithType: ITextRangeProvider.MoveEndpointByRange
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.MoveEndpointByRange
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_Select
+  name: Select
+  nameWithType: ITextRangeProvider.Select
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.Select
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_AddToSelection
+  name: AddToSelection
+  nameWithType: ITextRangeProvider.AddToSelection
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.AddToSelection
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_RemoveFromSelection
+  name: RemoveFromSelection
+  nameWithType: ITextRangeProvider.RemoveFromSelection
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.RemoveFromSelection
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_ScrollIntoView_System_Boolean_
+  name: ScrollIntoView
+  nameWithType: ITextRangeProvider.ScrollIntoView
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.ScrollIntoView
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextRangeProvider_GetChildren
+  name: GetChildren
+  nameWithType: ITextRangeProvider.GetChildren
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.GetChildren
+- uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple[]
+  isExternal: true
+  href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  name: IRawElementProviderSimple[]
+  nameWithType: IRawElementProviderSimple[]
+  fullName: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple[]
+  nameWithType.vb: IRawElementProviderSimple()
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple()
+  name.vb: IRawElementProviderSimple()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: (
+  - name: )

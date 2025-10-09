@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession
+  commentId: T:Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession
+  id: IDepthMapCreatorSession
+  parent: Microsoft.Graphics.ImagingInternal
+  children:
+  - Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  langs:
+  - csharp
+  - vb
+  name: IDepthMapCreatorSession
+  nameWithType: IDepthMapCreatorSession
+  fullName: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IDepthMapCreatorSession
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")]
+
+      [Guid("6CDA0FA0-12CC-5FDE-A9A6-43CEC28E9743")]
+
+      [WindowsRuntimeHelperType(typeof(IDepthMapCreatorSession))]
+
+      [ContractVersion(typeof(DepthMapSessionContract), 65536)]
+
+      public interface IDepthMapCreatorSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Graphics.ImagingInternal")>
+
+      <Guid("6CDA0FA0-12CC-5FDE-A9A6-43CEC28E9743")>
+
+      <WindowsRuntimeHelperType(GetType(IDepthMapCreatorSession))>
+
+      <ContractVersion(GetType(DepthMapSessionContract), 65536)>
+
+      Public Interface IDepthMapCreatorSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Graphics.ImagingInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6CDA0FA0-12CC-5FDE-A9A6-43CEC28E9743
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graphics.ImagingInternal.DepthMapSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  commentId: M:Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  id: CreateAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  parent: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(ImageBufferView, ImageBufferViewData, ImageBufferView, ImageBufferViewData)
+  nameWithType: IDepthMapCreatorSession.CreateAsync(ImageBufferView, ImageBufferViewData, ImageBufferView, ImageBufferViewData)
+  fullName: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Graphics.ImagingInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateAsync
+    path: ../src/Microsoft.Graphics.ImagingInternal.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Graphics.ImagingInternal
+  syntax:
+    content: IAsyncAction CreateAsync(ImageBufferView inputBufferView, ImageBufferViewData inputBufferViewData, ImageBufferView outputBufferView, ImageBufferViewData outputBufferViewData)
+    parameters:
+    - id: inputBufferView
+      type: Microsoft.Windows.PrivateCommon.ImageBufferView
+    - id: inputBufferViewData
+      type: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    - id: outputBufferView
+      type: Microsoft.Windows.PrivateCommon.ImageBufferView
+    - id: outputBufferViewData
+      type: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Function CreateAsync(inputBufferView As ImageBufferView, inputBufferViewData As ImageBufferViewData, outputBufferView As ImageBufferView, outputBufferViewData As ImageBufferViewData) As IAsyncAction
+  overload: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync*
+references:
+- uid: Microsoft.Graphics.ImagingInternal
+  commentId: N:Microsoft.Graphics.ImagingInternal
+  href: Microsoft.html
+  name: Microsoft.Graphics.ImagingInternal
+  nameWithType: Microsoft.Graphics.ImagingInternal
+  fullName: Microsoft.Graphics.ImagingInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Graphics
+    name: Graphics
+    href: Microsoft.Graphics.html
+  - name: .
+  - uid: Microsoft.Graphics.ImagingInternal
+    name: ImagingInternal
+    href: Microsoft.Graphics.ImagingInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync*
+  commentId: Overload:Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync
+  href: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.html#Microsoft_Graphics_ImagingInternal_IDepthMapCreatorSession_CreateAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_
+  name: CreateAsync
+  nameWithType: IDepthMapCreatorSession.CreateAsync
+  fullName: Microsoft.Graphics.ImagingInternal.IDepthMapCreatorSession.CreateAsync
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferView
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  name: ImageBufferView
+  nameWithType: ImageBufferView
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferView
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  name: ImageBufferViewData
+  nameWithType: ImageBufferViewData
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

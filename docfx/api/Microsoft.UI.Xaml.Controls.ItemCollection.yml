@@ -1,0 +1,2703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection
+  commentId: T:Microsoft.UI.Xaml.Controls.ItemCollection
+  id: ItemCollection
+  parent: Microsoft.UI.Xaml.Controls
+  children:
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Add(System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Clear
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Contains(System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo(System.Object[],System.Int32)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Count
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Equals(System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator
+  - Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode
+  - Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf(System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Insert(System.Int32,System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+  - Microsoft.UI.Xaml.Controls.ItemCollection.ListItem(System.Int32)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.Remove(System.Object)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt(System.Int32)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.VectorChanged
+  - Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  - Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  langs:
+  - csharp
+  - vb
+  name: ItemCollection
+  nameWithType: ItemCollection
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ItemCollection
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24802
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(ItemCollection))]
+
+      [ProjectedRuntimeClass(typeof(IObservableVector<object>))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public sealed class ItemCollection : IObservableVector<object>, IList<object>, ICollection<object>, IEnumerable<object>, IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ItemCollection>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(ItemCollection))>
+
+      <ProjectedRuntimeClass(GetType(IObservableVector(Of Object)))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public NotInheritable Class ItemCollection Implements IObservableVector(Of Object), IList(Of Object), ICollection(Of Object), IEnumerable(Of Object), IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ItemCollection)
+  inheritance:
+  - System.Object
+  implements:
+  - Windows.Foundation.Collections.IObservableVector{System.Object}
+  - System.Collections.Generic.IList{System.Object}
+  - System.Collections.Generic.ICollection{System.Object}
+  - System.Collections.Generic.IEnumerable{System.Object}
+  - System.Collections.IEnumerable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: WinRT.ProjectedRuntimeClassAttribute
+    ctor: WinRT.ProjectedRuntimeClassAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Windows.Foundation.Collections.IObservableVector{System.Object}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ItemCollection.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24845
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  syntax:
+    content: public static ItemCollection FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ItemCollection
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi*
+  nameWithType.vb: ItemCollection.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  id: op_Equality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ItemCollection, ItemCollection)
+  nameWithType: ItemCollection.operator ==(ItemCollection, ItemCollection)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.operator ==(Microsoft.UI.Xaml.Controls.ItemCollection, Microsoft.UI.Xaml.Controls.ItemCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24858
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  syntax:
+    content: public static bool operator ==(ItemCollection x, ItemCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+    - id: y
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ItemCollection, y As ItemCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality*
+  nameWithType.vb: ItemCollection.=(ItemCollection, ItemCollection)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.=(Microsoft.UI.Xaml.Controls.ItemCollection, Microsoft.UI.Xaml.Controls.ItemCollection)
+  name.vb: =(ItemCollection, ItemCollection)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  id: op_Inequality(Microsoft.UI.Xaml.Controls.ItemCollection,Microsoft.UI.Xaml.Controls.ItemCollection)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ItemCollection, ItemCollection)
+  nameWithType: ItemCollection.operator !=(ItemCollection, ItemCollection)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.operator !=(Microsoft.UI.Xaml.Controls.ItemCollection, Microsoft.UI.Xaml.Controls.ItemCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24859
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  syntax:
+    content: public static bool operator !=(ItemCollection x, ItemCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+    - id: y
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ItemCollection, y As ItemCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality*
+  nameWithType.vb: ItemCollection.<>(ItemCollection, ItemCollection)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.<>(Microsoft.UI.Xaml.Controls.ItemCollection, Microsoft.UI.Xaml.Controls.ItemCollection)
+  name.vb: <>(ItemCollection, ItemCollection)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  id: Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(ItemCollection)
+  nameWithType: ItemCollection.Equals(ItemCollection)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24860
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ItemCollection other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.Controls.ItemCollection
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ItemCollection) As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ItemCollection.Equals(object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24861
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Equals*
+  nameWithType.vb: ItemCollection.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ItemCollection.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24862
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode*
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.VectorChanged
+  commentId: E:Microsoft.UI.Xaml.Controls.ItemCollection.VectorChanged
+  id: VectorChanged
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: VectorChanged
+  nameWithType: ItemCollection.VectorChanged
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.VectorChanged
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: VectorChanged
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24885
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Occurs when the vector changes.
+  example: []
+  syntax:
+    content: public event VectorChangedEventHandler<object> VectorChanged
+    return:
+      type: Windows.Foundation.Collections.VectorChangedEventHandler{System.Object}
+    content.vb: Public Event VectorChanged As VectorChangedEventHandler(Of Object)
+  implements:
+  - Windows.Foundation.Collections.IObservableVector{System.Object}.VectorChanged
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Count
+  commentId: P:Microsoft.UI.Xaml.Controls.ItemCollection.Count
+  id: Count
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ItemCollection.Count
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Count
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Count
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24892
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Count*
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.Count
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+  commentId: P:Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: ItemCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsReadOnly
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24893
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.IsReadOnly
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.ListItem(System.Int32)
+  commentId: P:Microsoft.UI.Xaml.Controls.ItemCollection.ListItem(System.Int32)
+  id: ListItem(System.Int32)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: ItemCollection.this[int]
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.this[int]
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: this[]
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24894
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Gets or sets the element at the specified index.
+  example: []
+  syntax:
+    content: public object this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+      description: The element at the specified index.
+    content.vb: Public Default Property this[](index As Integer) As Object
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.ListItem*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The property is set and the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{System.Object}.Item(System.Int32)
+  nameWithType.vb: ItemCollection.this[](Integer)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf(System.Object)
+  id: IndexOf(System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(object)
+  nameWithType: ItemCollection.IndexOf(object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IndexOf
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24900
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Determines the index of a specific item in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int IndexOf(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to locate in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int32
+      description: The index of <code class="paramref">item</code> if found in the list; otherwise, -1.
+    content.vb: Public Function IndexOf(item As Object) As Integer
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{System.Object}.IndexOf(System.Object)
+  nameWithType.vb: ItemCollection.IndexOf(Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf(Object)
+  name.vb: IndexOf(Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Insert(System.Int32,System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Insert(System.Int32,System.Object)
+  id: Insert(System.Int32,System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, object)
+  nameWithType: ItemCollection.Insert(int, object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Insert(int, object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Insert
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24901
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Inserts an item to the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void Insert(int index, object item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which <code class="paramref">item</code> should be inserted.
+    - id: item
+      type: System.Object
+      description: The object to insert into the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Insert(index As Integer, item As Object)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{System.Object}.Insert(System.Int32,System.Object)
+  nameWithType.vb: ItemCollection.Insert(Integer, Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.Insert(Integer, Object)
+  name.vb: Insert(Integer, Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt(System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: ItemCollection.RemoveAt(int)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveAt
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24902
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Removes the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to remove.
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{System.Object}.RemoveAt(System.Int32)
+  nameWithType.vb: ItemCollection.RemoveAt(Integer)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Add(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Add(System.Object)
+  id: Add(System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Add(object)
+  nameWithType: ItemCollection.Add(object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Add(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Add
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24903
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As Object)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.Add(System.Object)
+  nameWithType.vb: ItemCollection.Add(Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.Add(Object)
+  name.vb: Add(Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Clear
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Clear
+  id: Clear
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ItemCollection.Clear()
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Clear
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24904
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.Clear
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Contains(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(object)
+  nameWithType: ItemCollection.Contains(object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Contains(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Contains
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24905
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As Object) As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.Contains(System.Object)
+  nameWithType.vb: ItemCollection.Contains(Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.Contains(Object)
+  name.vb: Contains(Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo(System.Object[],System.Int32)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo(System.Object[],System.Int32)
+  id: CopyTo(System.Object[],System.Int32)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(object[], int)
+  nameWithType: ItemCollection.CopyTo(object[], int)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo(object[], int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyTo
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24906
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(object[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: System.Object[]
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As Object(), arrayIndex As Integer)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.CopyTo(System.Object[],System.Int32)
+  nameWithType.vb: ItemCollection.CopyTo(Object(), Integer)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo(Object(), Integer)
+  name.vb: CopyTo(Object(), Integer)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Remove(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(object)
+  nameWithType: ItemCollection.Remove(object)
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Remove(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Remove
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24907
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Removes the first occurrence of a specific object from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(object item)
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to remove from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> was successfully removed from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">item</code> is not found in the original <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Remove(item As Object) As Boolean
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.Remove*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{System.Object}.Remove(System.Object)
+  nameWithType.vb: ItemCollection.Remove(Object)
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.Remove(Object)
+  name.vb: Remove(Object)
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator
+  commentId: M:Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.UI.Xaml.Controls.ItemCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ItemCollection.GetEnumerator()
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Controls.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnumerator
+    path: ../src/Microsoft.UI.Xaml.Controls.cs
+    startLine: 24909
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Controls
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<object> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Object}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Object)
+  overload: Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Object}.GetEnumerator
+references:
+- uid: Microsoft.UI.Xaml.Controls
+  commentId: N:Microsoft.UI.Xaml.Controls
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Controls
+  nameWithType: Microsoft.UI.Xaml.Controls
+  fullName: Microsoft.UI.Xaml.Controls
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Controls
+    name: Controls
+    href: Microsoft.UI.Xaml.Controls.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Controls
+    name: Controls
+    href: Microsoft.UI.Xaml.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Windows.Foundation.Collections.IObservableVector{System.Object}
+  commentId: T:Windows.Foundation.Collections.IObservableVector{System.Object}
+  parent: Windows.Foundation.Collections
+  definition: Windows.Foundation.Collections.IObservableVector`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  name: IObservableVector<object>
+  nameWithType: IObservableVector<object>
+  fullName: Windows.Foundation.Collections.IObservableVector<object>
+  nameWithType.vb: IObservableVector(Of Object)
+  fullName.vb: Windows.Foundation.Collections.IObservableVector(Of Object)
+  name.vb: IObservableVector(Of Object)
+  spec.csharp:
+  - uid: Windows.Foundation.Collections.IObservableVector`1
+    name: IObservableVector
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.Collections.IObservableVector`1
+    name: IObservableVector
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IList{System.Object}
+  commentId: T:System.Collections.Generic.IList{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<object>
+  nameWithType: IList<object>
+  fullName: System.Collections.Generic.IList<object>
+  nameWithType.vb: IList(Of Object)
+  fullName.vb: System.Collections.Generic.IList(Of Object)
+  name.vb: IList(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Object}
+  commentId: T:System.Collections.Generic.ICollection{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<object>
+  nameWithType: ICollection<object>
+  fullName: System.Collections.Generic.ICollection<object>
+  nameWithType.vb: ICollection(Of Object)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object)
+  name.vb: ICollection(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ItemCollection>
+  nameWithType: IEquatable<ItemCollection>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Controls.ItemCollection>
+  nameWithType.vb: IEquatable(Of ItemCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Controls.ItemCollection)
+  name.vb: IEquatable(Of ItemCollection)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection
+    name: ItemCollection
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection
+    name: ItemCollection
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Windows.Foundation.Collections.IObservableVector`1
+  commentId: T:Windows.Foundation.Collections.IObservableVector`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  name: IObservableVector<T>
+  nameWithType: IObservableVector<T>
+  fullName: Windows.Foundation.Collections.IObservableVector<T>
+  nameWithType.vb: IObservableVector(Of T)
+  fullName.vb: Windows.Foundation.Collections.IObservableVector(Of T)
+  name.vb: IObservableVector(Of T)
+  spec.csharp:
+  - uid: Windows.Foundation.Collections.IObservableVector`1
+    name: IObservableVector
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.Collections.IObservableVector`1
+    name: IObservableVector
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Windows.Foundation.Collections
+  commentId: N:Windows.Foundation.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation.Collections
+  nameWithType: Windows.Foundation.Collections
+  fullName: Windows.Foundation.Collections
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  - name: .
+  - uid: Windows.Foundation.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  - name: .
+  - uid: Windows.Foundation.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ItemCollection.FromAbi
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection
+  commentId: T:Microsoft.UI.Xaml.Controls.ItemCollection
+  parent: Microsoft.UI.Xaml.Controls
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html
+  name: ItemCollection
+  nameWithType: ItemCollection
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_op_Equality_Microsoft_UI_Xaml_Controls_ItemCollection_Microsoft_UI_Xaml_Controls_ItemCollection_
+  name: operator ==
+  nameWithType: ItemCollection.operator ==
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.operator ==
+  nameWithType.vb: ItemCollection.=
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_op_Equality_Microsoft_UI_Xaml_Controls_ItemCollection_Microsoft_UI_Xaml_Controls_ItemCollection_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_op_Inequality_Microsoft_UI_Xaml_Controls_ItemCollection_Microsoft_UI_Xaml_Controls_ItemCollection_
+  name: operator !=
+  nameWithType: ItemCollection.operator !=
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.operator !=
+  nameWithType.vb: ItemCollection.<>
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_op_Inequality_Microsoft_UI_Xaml_Controls_ItemCollection_Microsoft_UI_Xaml_Controls_ItemCollection_
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Equals
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Equals_Microsoft_UI_Xaml_Controls_ItemCollection_
+  name: Equals
+  nameWithType: ItemCollection.Equals
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  parent: System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ItemCollection)
+  nameWithType: IEquatable<ItemCollection>.Equals(ItemCollection)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Controls.ItemCollection>.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  nameWithType.vb: IEquatable(Of ItemCollection).Equals(ItemCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Controls.ItemCollection).Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection
+    name: ItemCollection
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Controls.ItemCollection}.Equals(Microsoft.UI.Xaml.Controls.ItemCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Controls.ItemCollection
+    name: ItemCollection
+    href: Microsoft.UI.Xaml.Controls.ItemCollection.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_GetHashCode
+  name: GetHashCode
+  nameWithType: ItemCollection.GetHashCode
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Windows.Foundation.Collections.IObservableVector{System.Object}.VectorChanged
+  commentId: E:Windows.Foundation.Collections.IObservableVector{System.Object}.VectorChanged
+  parent: Windows.Foundation.Collections.IObservableVector{System.Object}
+  definition: Windows.Foundation.Collections.IObservableVector`1.VectorChanged
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1.vectorchanged
+  name: VectorChanged
+  nameWithType: IObservableVector<object>.VectorChanged
+  fullName: Windows.Foundation.Collections.IObservableVector<object>.VectorChanged
+  nameWithType.vb: IObservableVector(Of Object).VectorChanged
+  fullName.vb: Windows.Foundation.Collections.IObservableVector(Of Object).VectorChanged
+- uid: Windows.Foundation.Collections.VectorChangedEventHandler{System.Object}
+  commentId: T:Windows.Foundation.Collections.VectorChangedEventHandler{System.Object}
+  parent: Windows.Foundation.Collections
+  definition: Windows.Foundation.Collections.VectorChangedEventHandler`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  name: VectorChangedEventHandler<object>
+  nameWithType: VectorChangedEventHandler<object>
+  fullName: Windows.Foundation.Collections.VectorChangedEventHandler<object>
+  nameWithType.vb: VectorChangedEventHandler(Of Object)
+  fullName.vb: Windows.Foundation.Collections.VectorChangedEventHandler(Of Object)
+  name.vb: VectorChangedEventHandler(Of Object)
+  spec.csharp:
+  - uid: Windows.Foundation.Collections.VectorChangedEventHandler`1
+    name: VectorChangedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.Collections.VectorChangedEventHandler`1
+    name: VectorChangedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Windows.Foundation.Collections.IObservableVector`1.VectorChanged
+  commentId: E:Windows.Foundation.Collections.IObservableVector`1.VectorChanged
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.iobservablevector-1.vectorchanged
+  name: VectorChanged
+  nameWithType: IObservableVector<T>.VectorChanged
+  fullName: Windows.Foundation.Collections.IObservableVector<T>.VectorChanged
+  nameWithType.vb: IObservableVector(Of T).VectorChanged
+  fullName.vb: Windows.Foundation.Collections.IObservableVector(Of T).VectorChanged
+- uid: Windows.Foundation.Collections.VectorChangedEventHandler`1
+  commentId: T:Windows.Foundation.Collections.VectorChangedEventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  name: VectorChangedEventHandler<T>
+  nameWithType: VectorChangedEventHandler<T>
+  fullName: Windows.Foundation.Collections.VectorChangedEventHandler<T>
+  nameWithType.vb: VectorChangedEventHandler(Of T)
+  fullName.vb: Windows.Foundation.Collections.VectorChangedEventHandler(Of T)
+  name.vb: VectorChangedEventHandler(Of T)
+  spec.csharp:
+  - uid: Windows.Foundation.Collections.VectorChangedEventHandler`1
+    name: VectorChangedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.Collections.VectorChangedEventHandler`1
+    name: VectorChangedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Count*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Count
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Count
+  name: Count
+  nameWithType: ItemCollection.Count
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Count
+- uid: System.Collections.Generic.ICollection{System.Object}.Count
+  commentId: P:System.Collections.Generic.ICollection{System.Object}.Count
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<object>.Count
+  fullName: System.Collections.Generic.ICollection<object>.Count
+  nameWithType.vb: ICollection(Of Object).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_IsReadOnly
+  name: IsReadOnly
+  nameWithType: ItemCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.IsReadOnly
+- uid: System.Collections.Generic.ICollection{System.Object}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{System.Object}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<object>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<object>.IsReadOnly
+  nameWithType.vb: ICollection(Of Object).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.ListItem*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.ListItem
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_ListItem_System_Int32_
+  name: this
+  nameWithType: ItemCollection.this
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.this
+  nameWithType.vb: ItemCollection.this[]
+  fullName.vb: Microsoft.UI.Xaml.Controls.ItemCollection.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IList{System.Object}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{System.Object}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{System.Object}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<object>.this[int]
+  fullName: System.Collections.Generic.IList<object>.this[int]
+  nameWithType.vb: IList(Of Object).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Object).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList{System.Object}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<T>.this[int]
+  fullName: System.Collections.Generic.IList<T>.this[int]
+  nameWithType.vb: IList(Of T).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_IndexOf_System_Object_
+  name: IndexOf
+  nameWithType: ItemCollection.IndexOf
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.IndexOf
+- uid: System.Collections.Generic.IList{System.Object}.IndexOf(System.Object)
+  commentId: M:System.Collections.Generic.IList{System.Object}.IndexOf(System.Object)
+  parent: System.Collections.Generic.IList{System.Object}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(object)
+  nameWithType: IList<object>.IndexOf(object)
+  fullName: System.Collections.Generic.IList<object>.IndexOf(object)
+  nameWithType.vb: IList(Of Object).IndexOf(Object)
+  fullName.vb: System.Collections.Generic.IList(Of Object).IndexOf(Object)
+  name.vb: IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{System.Object}.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{System.Object}.IndexOf(System.Object)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Insert*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Insert
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Insert_System_Int32_System_Object_
+  name: Insert
+  nameWithType: ItemCollection.Insert
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Insert
+- uid: System.Collections.Generic.IList{System.Object}.Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.Generic.IList{System.Object}.Insert(System.Int32,System.Object)
+  parent: System.Collections.Generic.IList{System.Object}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, object)
+  nameWithType: IList<object>.Insert(int, object)
+  fullName: System.Collections.Generic.IList<object>.Insert(int, object)
+  nameWithType.vb: IList(Of Object).Insert(Integer, Object)
+  fullName.vb: System.Collections.Generic.IList(Of Object).Insert(Integer, Object)
+  name.vb: Insert(Integer, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{System.Object}.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{System.Object}.Insert(System.Int32,System.Object)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, T)
+  nameWithType: IList<T>.Insert(int, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(int, T)
+  nameWithType.vb: IList(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: ItemCollection.RemoveAt
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.RemoveAt
+- uid: System.Collections.Generic.IList{System.Object}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{System.Object}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{System.Object}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<object>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<object>.RemoveAt(int)
+  nameWithType.vb: IList(Of Object).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Object).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{System.Object}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{System.Object}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<T>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(int)
+  nameWithType.vb: IList(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Add*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Add
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Add_System_Object_
+  name: Add
+  nameWithType: ItemCollection.Add
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Add
+- uid: System.Collections.Generic.ICollection{System.Object}.Add(System.Object)
+  commentId: M:System.Collections.Generic.ICollection{System.Object}.Add(System.Object)
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(object)
+  nameWithType: ICollection<object>.Add(object)
+  fullName: System.Collections.Generic.ICollection<object>.Add(object)
+  nameWithType.vb: ICollection(Of Object).Add(Object)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).Add(Object)
+  name.vb: Add(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Add(System.Object)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Clear*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Clear
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Clear
+  name: Clear
+  nameWithType: ItemCollection.Clear
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Clear
+- uid: System.Collections.Generic.ICollection{System.Object}.Clear
+  commentId: M:System.Collections.Generic.ICollection{System.Object}.Clear
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<object>.Clear()
+  fullName: System.Collections.Generic.ICollection<object>.Clear()
+  nameWithType.vb: ICollection(Of Object).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Contains*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Contains
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Contains_System_Object_
+  name: Contains
+  nameWithType: ItemCollection.Contains
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Contains
+- uid: System.Collections.Generic.ICollection{System.Object}.Contains(System.Object)
+  commentId: M:System.Collections.Generic.ICollection{System.Object}.Contains(System.Object)
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(object)
+  nameWithType: ICollection<object>.Contains(object)
+  fullName: System.Collections.Generic.ICollection<object>.Contains(object)
+  nameWithType.vb: ICollection(Of Object).Contains(Object)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).Contains(Object)
+  name.vb: Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Contains(System.Object)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_CopyTo_System_Object___System_Int32_
+  name: CopyTo
+  nameWithType: ItemCollection.CopyTo
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.CopyTo
+- uid: System.Collections.Generic.ICollection{System.Object}.CopyTo(System.Object[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{System.Object}.CopyTo(System.Object[],System.Int32)
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(object[], int)
+  nameWithType: ICollection<object>.CopyTo(object[], int)
+  fullName: System.Collections.Generic.ICollection<object>.CopyTo(object[], int)
+  nameWithType.vb: ICollection(Of Object).CopyTo(Object(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).CopyTo(Object(), Integer)
+  name.vb: CopyTo(Object(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Object}.CopyTo(System.Object[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Object}.CopyTo(System.Object[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.Remove*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.Remove
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_Remove_System_Object_
+  name: Remove
+  nameWithType: ItemCollection.Remove
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.Remove
+- uid: System.Collections.Generic.ICollection{System.Object}.Remove(System.Object)
+  commentId: M:System.Collections.Generic.ICollection{System.Object}.Remove(System.Object)
+  parent: System.Collections.Generic.ICollection{System.Object}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(object)
+  nameWithType: ICollection<object>.Remove(object)
+  fullName: System.Collections.Generic.ICollection<object>.Remove(object)
+  nameWithType.vb: ICollection(Of Object).Remove(Object)
+  fullName.vb: System.Collections.Generic.ICollection(Of Object).Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Object}.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator*
+  commentId: Overload:Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator
+  href: Microsoft.UI.Xaml.Controls.ItemCollection.html#Microsoft_UI_Xaml_Controls_ItemCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ItemCollection.GetEnumerator
+  fullName: Microsoft.UI.Xaml.Controls.ItemCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Object}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Object}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Object}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<object>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<object>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Object).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{System.Object}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{System.Object}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<object>
+  nameWithType: IEnumerator<object>
+  fullName: System.Collections.Generic.IEnumerator<object>
+  nameWithType.vb: IEnumerator(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Object)
+  name.vb: IEnumerator(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

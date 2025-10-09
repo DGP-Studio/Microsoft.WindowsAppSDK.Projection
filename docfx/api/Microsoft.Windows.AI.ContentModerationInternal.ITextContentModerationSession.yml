@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession
+  commentId: T:Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession
+  id: ITextContentModerationSession
+  parent: Microsoft.Windows.AI.ContentModerationInternal
+  children:
+  - Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText(System.String,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: ITextContentModerationSession
+  nameWithType: ITextContentModerationSession
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextContentModerationSession
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")]
+
+      [Guid("367F2388-6261-427E-B401-6289ADAB2F7D")]
+
+      [WindowsRuntimeHelperType(typeof(ITextContentModerationSession))]
+
+      [ContractVersion(typeof(ContentModerationSessionContract), 65536)]
+
+      public interface ITextContentModerationSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")>
+
+      <Guid("367F2388-6261-427E-B401-6289ADAB2F7D")>
+
+      <WindowsRuntimeHelperType(GetType(ITextContentModerationSession))>
+
+      <ContractVersion(GetType(ContentModerationSessionContract), 65536)>
+
+      Public Interface ITextContentModerationSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.ContentModerationInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 367F2388-6261-427E-B401-6289ADAB2F7D
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.ContentModerationInternal.ContentModerationSessionContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText(System.String,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText(System.String,System.UInt32,System.UInt32)
+  id: AnalyzeText(System.String,System.UInt32,System.UInt32)
+  parent: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeText(string, uint, uint)
+  nameWithType: ITextContentModerationSession.AnalyzeText(string, uint, uint)
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText(string, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AnalyzeText
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: TextContentAnalysisScores AnalyzeText(string text, uint priority, uint frequency)
+    parameters:
+    - id: text
+      type: System.String
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    return:
+      type: Microsoft.Windows.AI.ContentModerationInternal.TextContentAnalysisScores
+    content.vb: Function AnalyzeText(text As String, priority As UInteger, frequency As UInteger) As TextContentAnalysisScores
+  overload: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText*
+  nameWithType.vb: ITextContentModerationSession.AnalyzeText(String, UInteger, UInteger)
+  fullName.vb: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText(String, UInteger, UInteger)
+  name.vb: AnalyzeText(String, UInteger, UInteger)
+references:
+- uid: Microsoft.Windows.AI.ContentModerationInternal
+  commentId: N:Microsoft.Windows.AI.ContentModerationInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.ContentModerationInternal
+  nameWithType: Microsoft.Windows.AI.ContentModerationInternal
+  fullName: Microsoft.Windows.AI.ContentModerationInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText*
+  commentId: Overload:Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText
+  href: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.html#Microsoft_Windows_AI_ContentModerationInternal_ITextContentModerationSession_AnalyzeText_System_String_System_UInt32_System_UInt32_
+  name: AnalyzeText
+  nameWithType: ITextContentModerationSession.AnalyzeText
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextContentModerationSession.AnalyzeText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.AI.ContentModerationInternal.TextContentAnalysisScores
+  commentId: T:Microsoft.Windows.AI.ContentModerationInternal.TextContentAnalysisScores
+  parent: Microsoft.Windows.AI.ContentModerationInternal
+  href: Microsoft.Windows.AI.ContentModerationInternal.TextContentAnalysisScores.html
+  name: TextContentAnalysisScores
+  nameWithType: TextContentAnalysisScores
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.TextContentAnalysisScores

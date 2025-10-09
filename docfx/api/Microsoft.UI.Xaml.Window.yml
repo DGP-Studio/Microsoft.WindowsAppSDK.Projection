@@ -1,0 +1,2224 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Window
+  commentId: T:Microsoft.UI.Xaml.Window
+  id: Window
+  parent: Microsoft.UI.Xaml
+  children:
+  - Microsoft.UI.Xaml.Window.#ctor
+  - Microsoft.UI.Xaml.Window.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Xaml.Window.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Xaml.Window.Activate
+  - Microsoft.UI.Xaml.Window.Activated
+  - Microsoft.UI.Xaml.Window.AppWindow
+  - Microsoft.UI.Xaml.Window.As``1
+  - Microsoft.UI.Xaml.Window.Bounds
+  - Microsoft.UI.Xaml.Window.Close
+  - Microsoft.UI.Xaml.Window.Closed
+  - Microsoft.UI.Xaml.Window.Compositor
+  - Microsoft.UI.Xaml.Window.Content
+  - Microsoft.UI.Xaml.Window.CoreWindow
+  - Microsoft.UI.Xaml.Window.Current
+  - Microsoft.UI.Xaml.Window.Dispatcher
+  - Microsoft.UI.Xaml.Window.DispatcherQueue
+  - Microsoft.UI.Xaml.Window.Equals(Microsoft.UI.Xaml.Window)
+  - Microsoft.UI.Xaml.Window.Equals(System.Object)
+  - Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+  - Microsoft.UI.Xaml.Window.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.Window.GetHashCode
+  - Microsoft.UI.Xaml.Window.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Xaml.Window.SetTitleBar(Microsoft.UI.Xaml.UIElement)
+  - Microsoft.UI.Xaml.Window.SizeChanged
+  - Microsoft.UI.Xaml.Window.SystemBackdrop
+  - Microsoft.UI.Xaml.Window.Title
+  - Microsoft.UI.Xaml.Window.VisibilityChanged
+  - Microsoft.UI.Xaml.Window.Visible
+  - Microsoft.UI.Xaml.Window.op_Equality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  - Microsoft.UI.Xaml.Window.op_Inequality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: Window
+  fullName: Microsoft.UI.Xaml.Window
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Window
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11186
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(Window))]
+
+      [ProjectedRuntimeClass(typeof(IWindow))]
+
+      [ContentProperty(Name = "Content")]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public class Window : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<Window>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(Window))>
+
+      <ProjectedRuntimeClass(GetType(IWindow))>
+
+      <ContentProperty(Name:="Content")>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Class Window Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of Window)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.Window}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Microsoft.UI.Xaml.Markup.ContentPropertyAttribute
+    ctor: Microsoft.UI.Xaml.Markup.ContentPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Content
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Window.#ctor
+  commentId: M:Microsoft.UI.Xaml.Window.#ctor
+  id: '#ctor'
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Window()
+  nameWithType: Window.Window()
+  fullName: Microsoft.UI.Xaml.Window.Window()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11260
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public Window()
+    content.vb: Public Sub New()
+  overload: Microsoft.UI.Xaml.Window.#ctor*
+  nameWithType.vb: Window.New()
+  fullName.vb: Microsoft.UI.Xaml.Window.New()
+  name.vb: New()
+- uid: Microsoft.UI.Xaml.Window.As``1
+  commentId: M:Microsoft.UI.Xaml.Window.As``1
+  id: As``1
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: Window.As<I>()
+  fullName: Microsoft.UI.Xaml.Window.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11276
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Xaml.Window.As*
+  nameWithType.vb: Window.As(Of I)()
+  fullName.vb: Microsoft.UI.Xaml.Window.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Xaml.Window.Current
+  commentId: P:Microsoft.UI.Xaml.Window.Current
+  id: Current
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Window.Current
+  fullName: Microsoft.UI.Xaml.Window.Current
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Current
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11295
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Window Current { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Window
+    content.vb: Public Shared ReadOnly Property Current As Window
+  overload: Microsoft.UI.Xaml.Window.Current*
+- uid: Microsoft.UI.Xaml.Window.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.Window.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: Window.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.Window.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11297
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static Window FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.Window
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As Window
+  overload: Microsoft.UI.Xaml.Window.FromAbi*
+  nameWithType.vb: Window.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.Window.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.Window.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Xaml.Window.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Window(IObjectReference)
+  nameWithType: Window.Window(IObjectReference)
+  fullName: Microsoft.UI.Xaml.Window.Window(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11303
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: protected Window(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Xaml.Window.#ctor*
+  nameWithType.vb: Window.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Xaml.Window.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Xaml.Window.op_Equality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  commentId: M:Microsoft.UI.Xaml.Window.op_Equality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  id: op_Equality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Window, Window)
+  nameWithType: Window.operator ==(Window, Window)
+  fullName: Microsoft.UI.Xaml.Window.operator ==(Microsoft.UI.Xaml.Window, Microsoft.UI.Xaml.Window)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11310
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator ==(Window x, Window y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Window
+    - id: y
+      type: Microsoft.UI.Xaml.Window
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As Window, y As Window) As Boolean
+  overload: Microsoft.UI.Xaml.Window.op_Equality*
+  nameWithType.vb: Window.=(Window, Window)
+  fullName.vb: Microsoft.UI.Xaml.Window.=(Microsoft.UI.Xaml.Window, Microsoft.UI.Xaml.Window)
+  name.vb: =(Window, Window)
+- uid: Microsoft.UI.Xaml.Window.op_Inequality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  commentId: M:Microsoft.UI.Xaml.Window.op_Inequality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  id: op_Inequality(Microsoft.UI.Xaml.Window,Microsoft.UI.Xaml.Window)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Window, Window)
+  nameWithType: Window.operator !=(Window, Window)
+  fullName: Microsoft.UI.Xaml.Window.operator !=(Microsoft.UI.Xaml.Window, Microsoft.UI.Xaml.Window)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11311
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator !=(Window x, Window y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.Window
+    - id: y
+      type: Microsoft.UI.Xaml.Window
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As Window, y As Window) As Boolean
+  overload: Microsoft.UI.Xaml.Window.op_Inequality*
+  nameWithType.vb: Window.<>(Window, Window)
+  fullName.vb: Microsoft.UI.Xaml.Window.<>(Microsoft.UI.Xaml.Window, Microsoft.UI.Xaml.Window)
+  name.vb: <>(Window, Window)
+- uid: Microsoft.UI.Xaml.Window.Equals(Microsoft.UI.Xaml.Window)
+  commentId: M:Microsoft.UI.Xaml.Window.Equals(Microsoft.UI.Xaml.Window)
+  id: Equals(Microsoft.UI.Xaml.Window)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Equals(Window)
+  nameWithType: Window.Equals(Window)
+  fullName: Microsoft.UI.Xaml.Window.Equals(Microsoft.UI.Xaml.Window)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11312
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Window other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.Window
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Window) As Boolean
+  overload: Microsoft.UI.Xaml.Window.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.Window}.Equals(Microsoft.UI.Xaml.Window)
+- uid: Microsoft.UI.Xaml.Window.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.Window.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Window.Equals(object)
+  fullName: Microsoft.UI.Xaml.Window.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11313
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.Window.Equals*
+  nameWithType.vb: Window.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.Window.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.Window.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.Window.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Window.GetHashCode()
+  fullName: Microsoft.UI.Xaml.Window.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11314
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Xaml.Window.GetHashCode*
+- uid: Microsoft.UI.Xaml.Window.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Xaml.Window.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Window(DerivedComposed)
+  nameWithType: Window.Window(DerivedComposed)
+  fullName: Microsoft.UI.Xaml.Window.Window(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11317
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: protected Window(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Xaml.Window.#ctor*
+  nameWithType.vb: Window.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Xaml.Window.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Xaml.Window.Activate
+  commentId: M:Microsoft.UI.Xaml.Window.Activate
+  id: Activate
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Activate()
+  nameWithType: Window.Activate()
+  fullName: Microsoft.UI.Xaml.Window.Activate()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Activate
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11341
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public void Activate()
+    content.vb: Public Sub Activate()
+  overload: Microsoft.UI.Xaml.Window.Activate*
+- uid: Microsoft.UI.Xaml.Window.Close
+  commentId: M:Microsoft.UI.Xaml.Window.Close
+  id: Close
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: Window.Close()
+  fullName: Microsoft.UI.Xaml.Window.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Close
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11343
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Microsoft.UI.Xaml.Window.Close*
+- uid: Microsoft.UI.Xaml.Window.SetTitleBar(Microsoft.UI.Xaml.UIElement)
+  commentId: M:Microsoft.UI.Xaml.Window.SetTitleBar(Microsoft.UI.Xaml.UIElement)
+  id: SetTitleBar(Microsoft.UI.Xaml.UIElement)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: SetTitleBar(UIElement)
+  nameWithType: Window.SetTitleBar(UIElement)
+  fullName: Microsoft.UI.Xaml.Window.SetTitleBar(Microsoft.UI.Xaml.UIElement)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTitleBar
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11345
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public void SetTitleBar(UIElement titleBar)
+    parameters:
+    - id: titleBar
+      type: Microsoft.UI.Xaml.UIElement
+    content.vb: Public Sub SetTitleBar(titleBar As UIElement)
+  overload: Microsoft.UI.Xaml.Window.SetTitleBar*
+- uid: Microsoft.UI.Xaml.Window.Activated
+  commentId: E:Microsoft.UI.Xaml.Window.Activated
+  id: Activated
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Activated
+  nameWithType: Window.Activated
+  fullName: Microsoft.UI.Xaml.Window.Activated
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Activated
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11347
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public event TypedEventHandler<object, WindowActivatedEventArgs> Activated
+    return:
+      type: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowActivatedEventArgs}
+    content.vb: Public Event Activated As TypedEventHandler(Of Object, WindowActivatedEventArgs)
+- uid: Microsoft.UI.Xaml.Window.Closed
+  commentId: E:Microsoft.UI.Xaml.Window.Closed
+  id: Closed
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: Window.Closed
+  fullName: Microsoft.UI.Xaml.Window.Closed
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Closed
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11353
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public event TypedEventHandler<object, WindowEventArgs> Closed
+    return:
+      type: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowEventArgs}
+    content.vb: Public Event Closed As TypedEventHandler(Of Object, WindowEventArgs)
+- uid: Microsoft.UI.Xaml.Window.SizeChanged
+  commentId: E:Microsoft.UI.Xaml.Window.SizeChanged
+  id: SizeChanged
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: SizeChanged
+  nameWithType: Window.SizeChanged
+  fullName: Microsoft.UI.Xaml.Window.SizeChanged
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SizeChanged
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11359
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public event TypedEventHandler<object, WindowSizeChangedEventArgs> SizeChanged
+    return:
+      type: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowSizeChangedEventArgs}
+    content.vb: Public Event SizeChanged As TypedEventHandler(Of Object, WindowSizeChangedEventArgs)
+- uid: Microsoft.UI.Xaml.Window.VisibilityChanged
+  commentId: E:Microsoft.UI.Xaml.Window.VisibilityChanged
+  id: VisibilityChanged
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: VisibilityChanged
+  nameWithType: Window.VisibilityChanged
+  fullName: Microsoft.UI.Xaml.Window.VisibilityChanged
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: VisibilityChanged
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11365
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public event TypedEventHandler<object, WindowVisibilityChangedEventArgs> VisibilityChanged
+    return:
+      type: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs}
+    content.vb: Public Event VisibilityChanged As TypedEventHandler(Of Object, WindowVisibilityChangedEventArgs)
+- uid: Microsoft.UI.Xaml.Window.AppWindow
+  commentId: P:Microsoft.UI.Xaml.Window.AppWindow
+  id: AppWindow
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: AppWindow
+  nameWithType: Window.AppWindow
+  fullName: Microsoft.UI.Xaml.Window.AppWindow
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppWindow
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11371
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public AppWindow AppWindow { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Windowing.AppWindow
+    content.vb: Public ReadOnly Property AppWindow As AppWindow
+  overload: Microsoft.UI.Xaml.Window.AppWindow*
+- uid: Microsoft.UI.Xaml.Window.Bounds
+  commentId: P:Microsoft.UI.Xaml.Window.Bounds
+  id: Bounds
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Bounds
+  nameWithType: Window.Bounds
+  fullName: Microsoft.UI.Xaml.Window.Bounds
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Bounds
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11373
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public Rect Bounds { get; }
+    parameters: []
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public ReadOnly Property Bounds As Rect
+  overload: Microsoft.UI.Xaml.Window.Bounds*
+- uid: Microsoft.UI.Xaml.Window.Compositor
+  commentId: P:Microsoft.UI.Xaml.Window.Compositor
+  id: Compositor
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Compositor
+  nameWithType: Window.Compositor
+  fullName: Microsoft.UI.Xaml.Window.Compositor
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Compositor
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11375
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public Compositor Compositor { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Composition.Compositor
+    content.vb: Public ReadOnly Property Compositor As Compositor
+  overload: Microsoft.UI.Xaml.Window.Compositor*
+- uid: Microsoft.UI.Xaml.Window.Content
+  commentId: P:Microsoft.UI.Xaml.Window.Content
+  id: Content
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Window.Content
+  fullName: Microsoft.UI.Xaml.Window.Content
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Content
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11377
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public UIElement Content { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.UIElement
+    content.vb: Public Property Content As UIElement
+  overload: Microsoft.UI.Xaml.Window.Content*
+- uid: Microsoft.UI.Xaml.Window.CoreWindow
+  commentId: P:Microsoft.UI.Xaml.Window.CoreWindow
+  id: CoreWindow
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: CoreWindow
+  nameWithType: Window.CoreWindow
+  fullName: Microsoft.UI.Xaml.Window.CoreWindow
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CoreWindow
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11383
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public CoreWindow CoreWindow { get; }
+    parameters: []
+    return:
+      type: Windows.UI.Core.CoreWindow
+    content.vb: Public ReadOnly Property CoreWindow As CoreWindow
+  overload: Microsoft.UI.Xaml.Window.CoreWindow*
+- uid: Microsoft.UI.Xaml.Window.Dispatcher
+  commentId: P:Microsoft.UI.Xaml.Window.Dispatcher
+  id: Dispatcher
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Dispatcher
+  nameWithType: Window.Dispatcher
+  fullName: Microsoft.UI.Xaml.Window.Dispatcher
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispatcher
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11385
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public CoreDispatcher Dispatcher { get; }
+    parameters: []
+    return:
+      type: Windows.UI.Core.CoreDispatcher
+    content.vb: Public ReadOnly Property Dispatcher As CoreDispatcher
+  overload: Microsoft.UI.Xaml.Window.Dispatcher*
+- uid: Microsoft.UI.Xaml.Window.DispatcherQueue
+  commentId: P:Microsoft.UI.Xaml.Window.DispatcherQueue
+  id: DispatcherQueue
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: DispatcherQueue
+  nameWithType: Window.DispatcherQueue
+  fullName: Microsoft.UI.Xaml.Window.DispatcherQueue
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DispatcherQueue
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11387
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public DispatcherQueue DispatcherQueue { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Dispatching.DispatcherQueue
+    content.vb: Public ReadOnly Property DispatcherQueue As DispatcherQueue
+  overload: Microsoft.UI.Xaml.Window.DispatcherQueue*
+- uid: Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+  commentId: P:Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+  id: ExtendsContentIntoTitleBar
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: ExtendsContentIntoTitleBar
+  nameWithType: Window.ExtendsContentIntoTitleBar
+  fullName: Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ExtendsContentIntoTitleBar
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11389
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public bool ExtendsContentIntoTitleBar { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ExtendsContentIntoTitleBar As Boolean
+  overload: Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar*
+- uid: Microsoft.UI.Xaml.Window.SystemBackdrop
+  commentId: P:Microsoft.UI.Xaml.Window.SystemBackdrop
+  id: SystemBackdrop
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: SystemBackdrop
+  nameWithType: Window.SystemBackdrop
+  fullName: Microsoft.UI.Xaml.Window.SystemBackdrop
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SystemBackdrop
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11395
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public SystemBackdrop SystemBackdrop { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Xaml.Media.SystemBackdrop
+    content.vb: Public Property SystemBackdrop As SystemBackdrop
+  overload: Microsoft.UI.Xaml.Window.SystemBackdrop*
+- uid: Microsoft.UI.Xaml.Window.Title
+  commentId: P:Microsoft.UI.Xaml.Window.Title
+  id: Title
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Window.Title
+  fullName: Microsoft.UI.Xaml.Window.Title
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Title
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11401
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Microsoft.UI.Xaml.Window.Title*
+- uid: Microsoft.UI.Xaml.Window.Visible
+  commentId: P:Microsoft.UI.Xaml.Window.Visible
+  id: Visible
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: Window.Visible
+  fullName: Microsoft.UI.Xaml.Window.Visible
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Visible
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11407
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public bool Visible { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Visible As Boolean
+  overload: Microsoft.UI.Xaml.Window.Visible*
+- uid: Microsoft.UI.Xaml.Window.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Xaml.Window.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Xaml.Window
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: Window.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Xaml.Window.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 11409
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: protected virtual bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsOverridableInterface(iid As Guid) As Boolean
+  overload: Microsoft.UI.Xaml.Window.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.Window}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.Window}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Window>
+  nameWithType: IEquatable<Window>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Window>
+  nameWithType.vb: IEquatable(Of Window)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Window)
+  name.vb: IEquatable(Of Window)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Window
+    name: Window
+    href: Microsoft.UI.Xaml.Window.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Window
+    name: Window
+    href: Microsoft.UI.Xaml.Window.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.Window.#ctor*
+  commentId: Overload:Microsoft.UI.Xaml.Window.#ctor
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window__ctor
+  name: Window
+  nameWithType: Window.Window
+  fullName: Microsoft.UI.Xaml.Window.Window
+  nameWithType.vb: Window.New
+  fullName.vb: Microsoft.UI.Xaml.Window.New
+  name.vb: New
+- uid: Microsoft.UI.Xaml.Window.As*
+  commentId: Overload:Microsoft.UI.Xaml.Window.As
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_As__1
+  name: As
+  nameWithType: Window.As
+  fullName: Microsoft.UI.Xaml.Window.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Xaml.Window.Current*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Current
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Current
+  name: Current
+  nameWithType: Window.Current
+  fullName: Microsoft.UI.Xaml.Window.Current
+- uid: Microsoft.UI.Xaml.Window
+  commentId: T:Microsoft.UI.Xaml.Window
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.Window.html
+  name: Window
+  nameWithType: Window
+  fullName: Microsoft.UI.Xaml.Window
+- uid: Microsoft.UI.Xaml.Window.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.Window.FromAbi
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: Window.FromAbi
+  fullName: Microsoft.UI.Xaml.Window.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Xaml.Window.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.Window.op_Equality
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_op_Equality_Microsoft_UI_Xaml_Window_Microsoft_UI_Xaml_Window_
+  name: operator ==
+  nameWithType: Window.operator ==
+  fullName: Microsoft.UI.Xaml.Window.operator ==
+  nameWithType.vb: Window.=
+  fullName.vb: Microsoft.UI.Xaml.Window.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Window.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_op_Equality_Microsoft_UI_Xaml_Window_Microsoft_UI_Xaml_Window_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.Window.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.Window.op_Inequality
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_op_Inequality_Microsoft_UI_Xaml_Window_Microsoft_UI_Xaml_Window_
+  name: operator !=
+  nameWithType: Window.operator !=
+  fullName: Microsoft.UI.Xaml.Window.operator !=
+  nameWithType.vb: Window.<>
+  fullName.vb: Microsoft.UI.Xaml.Window.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Window.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_op_Inequality_Microsoft_UI_Xaml_Window_Microsoft_UI_Xaml_Window_
+- uid: Microsoft.UI.Xaml.Window.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Equals
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Equals_Microsoft_UI_Xaml_Window_
+  name: Equals
+  nameWithType: Window.Equals
+  fullName: Microsoft.UI.Xaml.Window.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.Window}.Equals(Microsoft.UI.Xaml.Window)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.Window}.Equals(Microsoft.UI.Xaml.Window)
+  parent: System.IEquatable{Microsoft.UI.Xaml.Window}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Window)
+  nameWithType: IEquatable<Window>.Equals(Window)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.Window>.Equals(Microsoft.UI.Xaml.Window)
+  nameWithType.vb: IEquatable(Of Window).Equals(Window)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.Window).Equals(Microsoft.UI.Xaml.Window)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Window}.Equals(Microsoft.UI.Xaml.Window)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Window
+    name: Window
+    href: Microsoft.UI.Xaml.Window.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.Window}.Equals(Microsoft.UI.Xaml.Window)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.Window
+    name: Window
+    href: Microsoft.UI.Xaml.Window.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Window.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.Window.GetHashCode
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_GetHashCode
+  name: GetHashCode
+  nameWithType: Window.GetHashCode
+  fullName: Microsoft.UI.Xaml.Window.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Xaml.Window.Activate*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Activate
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Activate
+  name: Activate
+  nameWithType: Window.Activate
+  fullName: Microsoft.UI.Xaml.Window.Activate
+- uid: Microsoft.UI.Xaml.Window.Close*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Close
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Close
+  name: Close
+  nameWithType: Window.Close
+  fullName: Microsoft.UI.Xaml.Window.Close
+- uid: Microsoft.UI.Xaml.Window.SetTitleBar*
+  commentId: Overload:Microsoft.UI.Xaml.Window.SetTitleBar
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_SetTitleBar_Microsoft_UI_Xaml_UIElement_
+  name: SetTitleBar
+  nameWithType: Window.SetTitleBar
+  fullName: Microsoft.UI.Xaml.Window.SetTitleBar
+- uid: Microsoft.UI.Xaml.UIElement
+  commentId: T:Microsoft.UI.Xaml.UIElement
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: Microsoft.UI.Xaml.UIElement
+- uid: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowActivatedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowActivatedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<object, WindowActivatedEventArgs>
+  nameWithType: TypedEventHandler<object, WindowActivatedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<object, Microsoft.UI.Xaml.WindowActivatedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of Object, WindowActivatedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Object, Microsoft.UI.Xaml.WindowActivatedEventArgs)
+  name.vb: TypedEventHandler(Of Object, WindowActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowActivatedEventArgs
+    name: WindowActivatedEventArgs
+    href: Microsoft.UI.Xaml.WindowActivatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowActivatedEventArgs
+    name: WindowActivatedEventArgs
+    href: Microsoft.UI.Xaml.WindowActivatedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<object, WindowEventArgs>
+  nameWithType: TypedEventHandler<object, WindowEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<object, Microsoft.UI.Xaml.WindowEventArgs>
+  nameWithType.vb: TypedEventHandler(Of Object, WindowEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Object, Microsoft.UI.Xaml.WindowEventArgs)
+  name.vb: TypedEventHandler(Of Object, WindowEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowEventArgs
+    name: WindowEventArgs
+    href: Microsoft.UI.Xaml.WindowEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowEventArgs
+    name: WindowEventArgs
+    href: Microsoft.UI.Xaml.WindowEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowSizeChangedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowSizeChangedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<object, WindowSizeChangedEventArgs>
+  nameWithType: TypedEventHandler<object, WindowSizeChangedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<object, Microsoft.UI.Xaml.WindowSizeChangedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of Object, WindowSizeChangedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Object, Microsoft.UI.Xaml.WindowSizeChangedEventArgs)
+  name.vb: TypedEventHandler(Of Object, WindowSizeChangedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowSizeChangedEventArgs
+    name: WindowSizeChangedEventArgs
+    href: Microsoft.UI.Xaml.WindowSizeChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowSizeChangedEventArgs
+    name: WindowSizeChangedEventArgs
+    href: Microsoft.UI.Xaml.WindowSizeChangedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{System.Object,Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<object, WindowVisibilityChangedEventArgs>
+  nameWithType: TypedEventHandler<object, WindowVisibilityChangedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<object, Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of Object, WindowVisibilityChangedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Object, Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs)
+  name.vb: TypedEventHandler(Of Object, WindowVisibilityChangedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs
+    name: WindowVisibilityChangedEventArgs
+    href: Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs
+    name: WindowVisibilityChangedEventArgs
+    href: Microsoft.UI.Xaml.WindowVisibilityChangedEventArgs.html
+  - name: )
+- uid: Microsoft.UI.Xaml.Window.AppWindow*
+  commentId: Overload:Microsoft.UI.Xaml.Window.AppWindow
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_AppWindow
+  name: AppWindow
+  nameWithType: Window.AppWindow
+  fullName: Microsoft.UI.Xaml.Window.AppWindow
+- uid: Microsoft.UI.Windowing.AppWindow
+  commentId: T:Microsoft.UI.Windowing.AppWindow
+  parent: Microsoft.UI.Windowing
+  href: Microsoft.UI.Windowing.AppWindow.html
+  name: AppWindow
+  nameWithType: AppWindow
+  fullName: Microsoft.UI.Windowing.AppWindow
+- uid: Microsoft.UI.Windowing
+  commentId: N:Microsoft.UI.Windowing
+  href: Microsoft.html
+  name: Microsoft.UI.Windowing
+  nameWithType: Microsoft.UI.Windowing
+  fullName: Microsoft.UI.Windowing
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Windowing
+    name: Windowing
+    href: Microsoft.UI.Windowing.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Windowing
+    name: Windowing
+    href: Microsoft.UI.Windowing.html
+- uid: Microsoft.UI.Xaml.Window.Bounds*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Bounds
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Bounds
+  name: Bounds
+  nameWithType: Window.Bounds
+  fullName: Microsoft.UI.Xaml.Window.Bounds
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Microsoft.UI.Xaml.Window.Compositor*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Compositor
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Compositor
+  name: Compositor
+  nameWithType: Window.Compositor
+  fullName: Microsoft.UI.Xaml.Window.Compositor
+- uid: Microsoft.UI.Composition.Compositor
+  commentId: T:Microsoft.UI.Composition.Compositor
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.Compositor.html
+  name: Compositor
+  nameWithType: Compositor
+  fullName: Microsoft.UI.Composition.Compositor
+- uid: Microsoft.UI.Composition
+  commentId: N:Microsoft.UI.Composition
+  href: Microsoft.html
+  name: Microsoft.UI.Composition
+  nameWithType: Microsoft.UI.Composition
+  fullName: Microsoft.UI.Composition
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+- uid: Microsoft.UI.Xaml.Window.Content*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Content
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Content
+  name: Content
+  nameWithType: Window.Content
+  fullName: Microsoft.UI.Xaml.Window.Content
+- uid: Microsoft.UI.Xaml.Window.CoreWindow*
+  commentId: Overload:Microsoft.UI.Xaml.Window.CoreWindow
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_CoreWindow
+  name: CoreWindow
+  nameWithType: Window.CoreWindow
+  fullName: Microsoft.UI.Xaml.Window.CoreWindow
+- uid: Windows.UI.Core.CoreWindow
+  commentId: T:Windows.UI.Core.CoreWindow
+  parent: Windows.UI.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.ui.core.corewindow
+  name: CoreWindow
+  nameWithType: CoreWindow
+  fullName: Windows.UI.Core.CoreWindow
+- uid: Windows.UI.Core
+  commentId: N:Windows.UI.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.UI.Core
+  nameWithType: Windows.UI.Core
+  fullName: Windows.UI.Core
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.core
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.core
+- uid: Microsoft.UI.Xaml.Window.Dispatcher*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Dispatcher
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Dispatcher
+  name: Dispatcher
+  nameWithType: Window.Dispatcher
+  fullName: Microsoft.UI.Xaml.Window.Dispatcher
+- uid: Windows.UI.Core.CoreDispatcher
+  commentId: T:Windows.UI.Core.CoreDispatcher
+  parent: Windows.UI.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.ui.core.coredispatcher
+  name: CoreDispatcher
+  nameWithType: CoreDispatcher
+  fullName: Windows.UI.Core.CoreDispatcher
+- uid: Microsoft.UI.Xaml.Window.DispatcherQueue*
+  commentId: Overload:Microsoft.UI.Xaml.Window.DispatcherQueue
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: Window.DispatcherQueue
+  fullName: Microsoft.UI.Xaml.Window.DispatcherQueue
+- uid: Microsoft.UI.Dispatching.DispatcherQueue
+  commentId: T:Microsoft.UI.Dispatching.DispatcherQueue
+  parent: Microsoft.UI.Dispatching
+  href: Microsoft.UI.Dispatching.DispatcherQueue.html
+  name: DispatcherQueue
+  nameWithType: DispatcherQueue
+  fullName: Microsoft.UI.Dispatching.DispatcherQueue
+- uid: Microsoft.UI.Dispatching
+  commentId: N:Microsoft.UI.Dispatching
+  href: Microsoft.html
+  name: Microsoft.UI.Dispatching
+  nameWithType: Microsoft.UI.Dispatching
+  fullName: Microsoft.UI.Dispatching
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+- uid: Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar*
+  commentId: Overload:Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_ExtendsContentIntoTitleBar
+  name: ExtendsContentIntoTitleBar
+  nameWithType: Window.ExtendsContentIntoTitleBar
+  fullName: Microsoft.UI.Xaml.Window.ExtendsContentIntoTitleBar
+- uid: Microsoft.UI.Xaml.Window.SystemBackdrop*
+  commentId: Overload:Microsoft.UI.Xaml.Window.SystemBackdrop
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_SystemBackdrop
+  name: SystemBackdrop
+  nameWithType: Window.SystemBackdrop
+  fullName: Microsoft.UI.Xaml.Window.SystemBackdrop
+- uid: Microsoft.UI.Xaml.Media.SystemBackdrop
+  commentId: T:Microsoft.UI.Xaml.Media.SystemBackdrop
+  parent: Microsoft.UI.Xaml.Media
+  href: Microsoft.UI.Xaml.Media.SystemBackdrop.html
+  name: SystemBackdrop
+  nameWithType: SystemBackdrop
+  fullName: Microsoft.UI.Xaml.Media.SystemBackdrop
+- uid: Microsoft.UI.Xaml.Media
+  commentId: N:Microsoft.UI.Xaml.Media
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Media
+  nameWithType: Microsoft.UI.Xaml.Media
+  fullName: Microsoft.UI.Xaml.Media
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Media
+    name: Media
+    href: Microsoft.UI.Xaml.Media.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Media
+    name: Media
+    href: Microsoft.UI.Xaml.Media.html
+- uid: Microsoft.UI.Xaml.Window.Title*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Title
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Title
+  name: Title
+  nameWithType: Window.Title
+  fullName: Microsoft.UI.Xaml.Window.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Xaml.Window.Visible*
+  commentId: Overload:Microsoft.UI.Xaml.Window.Visible
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_Visible
+  name: Visible
+  nameWithType: Window.Visible
+  fullName: Microsoft.UI.Xaml.Window.Visible
+- uid: Microsoft.UI.Xaml.Window.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Xaml.Window.IsOverridableInterface
+  href: Microsoft.UI.Xaml.Window.html#Microsoft_UI_Xaml_Window_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: Window.IsOverridableInterface
+  fullName: Microsoft.UI.Xaml.Window.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

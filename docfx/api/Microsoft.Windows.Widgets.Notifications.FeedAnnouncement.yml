@@ -1,0 +1,1384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  commentId: T:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  id: FeedAnnouncement
+  parent: Microsoft.Windows.Widgets.Notifications
+  children:
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor(System.String,System.String,System.String,System.Uri,System.Uri)
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(System.Object)
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi(System.IntPtr)
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  - Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  langs:
+  - csharp
+  - vb
+  name: FeedAnnouncement
+  nameWithType: FeedAnnouncement
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FeedAnnouncement
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Widgets")]
+
+      [WindowsRuntimeHelperType(typeof(FeedAnnouncement))]
+
+      [ProjectedRuntimeClass(typeof(IFeedAnnouncement))]
+
+      [ContractVersion(typeof(WidgetContract), 327680)]
+
+      public sealed class FeedAnnouncement : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<FeedAnnouncement>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Widgets")>
+
+      <WindowsRuntimeHelperType(GetType(FeedAnnouncement))>
+
+      <ProjectedRuntimeClass(GetType(IFeedAnnouncement))>
+
+      <ContractVersion(GetType(WidgetContract), 327680)>
+
+      Public NotInheritable Class FeedAnnouncement Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of FeedAnnouncement)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Widgets
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Widgets.WidgetContract
+    - type: System.UInt32
+      value: "327680"
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor(System.String,System.String,System.String,System.Uri,System.Uri)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor(System.String,System.String,System.String,System.Uri,System.Uri)
+  id: '#ctor(System.String,System.String,System.String,System.Uri,System.Uri)'
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: FeedAnnouncement(string, string, string, Uri, Uri)
+  nameWithType: FeedAnnouncement.FeedAnnouncement(string, string, string, Uri, Uri)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FeedAnnouncement(string, string, string, System.Uri, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 110
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public FeedAnnouncement(string id, string primaryText, string secondaryText, Uri lightModeIcon, Uri darkModeIcon)
+    parameters:
+    - id: id
+      type: System.String
+    - id: primaryText
+      type: System.String
+    - id: secondaryText
+      type: System.String
+    - id: lightModeIcon
+      type: System.Uri
+    - id: darkModeIcon
+      type: System.Uri
+    content.vb: Public Sub New(id As String, primaryText As String, secondaryText As String, lightModeIcon As Uri, darkModeIcon As Uri)
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor*
+  nameWithType.vb: FeedAnnouncement.New(String, String, String, Uri, Uri)
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.New(String, String, String, System.Uri, System.Uri)
+  name.vb: New(String, String, String, Uri, Uri)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: FeedAnnouncement.FromAbi(nint)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 127
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public static FeedAnnouncement FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As FeedAnnouncement
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi*
+  nameWithType.vb: FeedAnnouncement.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  id: op_Equality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: operator ==(FeedAnnouncement, FeedAnnouncement)
+  nameWithType: FeedAnnouncement.operator ==(FeedAnnouncement, FeedAnnouncement)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.operator ==(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement, Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 140
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public static bool operator ==(FeedAnnouncement x, FeedAnnouncement y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    - id: y
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As FeedAnnouncement, y As FeedAnnouncement) As Boolean
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality*
+  nameWithType.vb: FeedAnnouncement.=(FeedAnnouncement, FeedAnnouncement)
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.=(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement, Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  name.vb: =(FeedAnnouncement, FeedAnnouncement)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  id: op_Inequality(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement,Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: operator !=(FeedAnnouncement, FeedAnnouncement)
+  nameWithType: FeedAnnouncement.operator !=(FeedAnnouncement, FeedAnnouncement)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.operator !=(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement, Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 141
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public static bool operator !=(FeedAnnouncement x, FeedAnnouncement y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    - id: y
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As FeedAnnouncement, y As FeedAnnouncement) As Boolean
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality*
+  nameWithType.vb: FeedAnnouncement.<>(FeedAnnouncement, FeedAnnouncement)
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.<>(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement, Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  name.vb: <>(FeedAnnouncement, FeedAnnouncement)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  id: Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: Equals(FeedAnnouncement)
+  nameWithType: FeedAnnouncement.Equals(FeedAnnouncement)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(FeedAnnouncement other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As FeedAnnouncement) As Boolean
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(System.Object)
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: FeedAnnouncement.Equals(object)
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals*
+  nameWithType.vb: FeedAnnouncement.Equals(Object)
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode
+  commentId: M:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: FeedAnnouncement.GetHashCode()
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 144
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+  id: CustomAccessibilityText
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: CustomAccessibilityText
+  nameWithType: FeedAnnouncement.CustomAccessibilityText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CustomAccessibilityText
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 167
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public string CustomAccessibilityText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomAccessibilityText As String
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+  id: DarkModeIconUri
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: DarkModeIconUri
+  nameWithType: FeedAnnouncement.DarkModeIconUri
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DarkModeIconUri
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 173
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public Uri DarkModeIconUri { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property DarkModeIconUri As Uri
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+  id: Duration
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: FeedAnnouncement.Duration
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Duration
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 179
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public TimeSpan Duration { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Duration As TimeSpan
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+  id: ExpirationTime
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: ExpirationTime
+  nameWithType: FeedAnnouncement.ExpirationTime
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ExpirationTime
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 185
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public DateTimeOffset ExpirationTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property ExpirationTime As DateTimeOffset
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+  id: Id
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: FeedAnnouncement.Id
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Id
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 191
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+  id: IsSecondaryTextSubtle
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: IsSecondaryTextSubtle
+  nameWithType: FeedAnnouncement.IsSecondaryTextSubtle
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSecondaryTextSubtle
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 197
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public bool IsSecondaryTextSubtle { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSecondaryTextSubtle As Boolean
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+  id: LightModeIconUri
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: LightModeIconUri
+  nameWithType: FeedAnnouncement.LightModeIconUri
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LightModeIconUri
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 203
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public Uri LightModeIconUri { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property LightModeIconUri As Uri
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+  id: PrimaryText
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: PrimaryText
+  nameWithType: FeedAnnouncement.PrimaryText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PrimaryText
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 209
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public string PrimaryText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PrimaryText As String
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+  id: PrimaryTextColor
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: PrimaryTextColor
+  nameWithType: FeedAnnouncement.PrimaryTextColor
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PrimaryTextColor
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 215
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public AnnouncementTextColor PrimaryTextColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor
+    content.vb: Public Property PrimaryTextColor As AnnouncementTextColor
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+  id: SecondaryText
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: SecondaryText
+  nameWithType: FeedAnnouncement.SecondaryText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SecondaryText
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 221
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public string SecondaryText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecondaryText As String
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+  id: SecondaryTextColor
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: SecondaryTextColor
+  nameWithType: FeedAnnouncement.SecondaryTextColor
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SecondaryTextColor
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 227
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public AnnouncementTextColor SecondaryTextColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor
+    content.vb: Public Property SecondaryTextColor As AnnouncementTextColor
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor*
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  commentId: P:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  id: ShowBadgeIfUserNotEngaged
+  parent: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  langs:
+  - csharp
+  - vb
+  name: ShowBadgeIfUserNotEngaged
+  nameWithType: FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Notifications.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ShowBadgeIfUserNotEngaged
+    path: ../src/Microsoft.Windows.Widgets.Notifications.cs
+    startLine: 233
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Notifications
+  syntax:
+    content: public bool ShowBadgeIfUserNotEngaged { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShowBadgeIfUserNotEngaged As Boolean
+  overload: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged*
+references:
+- uid: Microsoft.Windows.Widgets.Notifications
+  commentId: N:Microsoft.Windows.Widgets.Notifications
+  href: Microsoft.html
+  name: Microsoft.Windows.Widgets.Notifications
+  nameWithType: Microsoft.Windows.Widgets.Notifications
+  fullName: Microsoft.Windows.Widgets.Notifications
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets
+    name: Widgets
+    href: Microsoft.Windows.Widgets.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets.Notifications
+    name: Notifications
+    href: Microsoft.Windows.Widgets.Notifications.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets
+    name: Widgets
+    href: Microsoft.Windows.Widgets.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets.Notifications
+    name: Notifications
+    href: Microsoft.Windows.Widgets.Notifications.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}
+  commentId: T:System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<FeedAnnouncement>
+  nameWithType: IEquatable<FeedAnnouncement>
+  fullName: System.IEquatable<Microsoft.Windows.Widgets.Notifications.FeedAnnouncement>
+  nameWithType.vb: IEquatable(Of FeedAnnouncement)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  name.vb: IEquatable(Of FeedAnnouncement)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    name: FeedAnnouncement
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    name: FeedAnnouncement
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.#ctor
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement__ctor_System_String_System_String_System_String_System_Uri_System_Uri_
+  name: FeedAnnouncement
+  nameWithType: FeedAnnouncement.FeedAnnouncement
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FeedAnnouncement
+  nameWithType.vb: FeedAnnouncement.New
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: FeedAnnouncement.FromAbi
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  commentId: T:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+  parent: Microsoft.Windows.Widgets.Notifications
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html
+  name: FeedAnnouncement
+  nameWithType: FeedAnnouncement
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_op_Equality_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_
+  name: operator ==
+  nameWithType: FeedAnnouncement.operator ==
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.operator ==
+  nameWithType.vb: FeedAnnouncement.=
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Equality*
+    name: ==
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_op_Equality_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_op_Inequality_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_
+  name: operator !=
+  nameWithType: FeedAnnouncement.operator !=
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.operator !=
+  nameWithType.vb: FeedAnnouncement.<>
+  fullName.vb: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_op_Inequality_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Equals_Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_
+  name: Equals
+  nameWithType: FeedAnnouncement.Equals
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Equals
+- uid: System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  commentId: M:System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  parent: System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(FeedAnnouncement)
+  nameWithType: IEquatable<FeedAnnouncement>.Equals(FeedAnnouncement)
+  fullName: System.IEquatable<Microsoft.Windows.Widgets.Notifications.FeedAnnouncement>.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  nameWithType.vb: IEquatable(Of FeedAnnouncement).Equals(FeedAnnouncement)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Widgets.Notifications.FeedAnnouncement).Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    name: FeedAnnouncement
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.Widgets.Notifications.FeedAnnouncement}.Equals(Microsoft.Windows.Widgets.Notifications.FeedAnnouncement)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement
+    name: FeedAnnouncement
+    href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_GetHashCode
+  name: GetHashCode
+  nameWithType: FeedAnnouncement.GetHashCode
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_CustomAccessibilityText
+  name: CustomAccessibilityText
+  nameWithType: FeedAnnouncement.CustomAccessibilityText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.CustomAccessibilityText
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_DarkModeIconUri
+  name: DarkModeIconUri
+  nameWithType: FeedAnnouncement.DarkModeIconUri
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.DarkModeIconUri
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Duration
+  name: Duration
+  nameWithType: FeedAnnouncement.Duration
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Duration
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_ExpirationTime
+  name: ExpirationTime
+  nameWithType: FeedAnnouncement.ExpirationTime
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ExpirationTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_Id
+  name: Id
+  nameWithType: FeedAnnouncement.Id
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.Id
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_IsSecondaryTextSubtle
+  name: IsSecondaryTextSubtle
+  nameWithType: FeedAnnouncement.IsSecondaryTextSubtle
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.IsSecondaryTextSubtle
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_LightModeIconUri
+  name: LightModeIconUri
+  nameWithType: FeedAnnouncement.LightModeIconUri
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.LightModeIconUri
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_PrimaryText
+  name: PrimaryText
+  nameWithType: FeedAnnouncement.PrimaryText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryText
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_PrimaryTextColor
+  name: PrimaryTextColor
+  nameWithType: FeedAnnouncement.PrimaryTextColor
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.PrimaryTextColor
+- uid: Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor
+  commentId: T:Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor
+  parent: Microsoft.Windows.Widgets.Notifications
+  href: Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor.html
+  name: AnnouncementTextColor
+  nameWithType: AnnouncementTextColor
+  fullName: Microsoft.Windows.Widgets.Notifications.AnnouncementTextColor
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_SecondaryText
+  name: SecondaryText
+  nameWithType: FeedAnnouncement.SecondaryText
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryText
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_SecondaryTextColor
+  name: SecondaryTextColor
+  nameWithType: FeedAnnouncement.SecondaryTextColor
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.SecondaryTextColor
+- uid: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged*
+  commentId: Overload:Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  href: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.html#Microsoft_Windows_Widgets_Notifications_FeedAnnouncement_ShowBadgeIfUserNotEngaged
+  name: ShowBadgeIfUserNotEngaged
+  nameWithType: FeedAnnouncement.ShowBadgeIfUserNotEngaged
+  fullName: Microsoft.Windows.Widgets.Notifications.FeedAnnouncement.ShowBadgeIfUserNotEngaged

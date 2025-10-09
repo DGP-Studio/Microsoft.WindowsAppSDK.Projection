@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.WindowId
+  commentId: T:Microsoft.UI.WindowId
+  id: WindowId
+  parent: Microsoft.UI
+  children:
+  - Microsoft.UI.WindowId.#ctor(System.UInt64)
+  - Microsoft.UI.WindowId.Equals(Microsoft.UI.WindowId)
+  - Microsoft.UI.WindowId.Equals(System.Object)
+  - Microsoft.UI.WindowId.GetHashCode
+  - Microsoft.UI.WindowId.Value
+  - Microsoft.UI.WindowId.op_Equality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  - Microsoft.UI.WindowId.op_Inequality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  langs:
+  - csharp
+  - vb
+  name: WindowId
+  nameWithType: WindowId
+  fullName: Microsoft.UI.WindowId
+  type: Struct
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: WindowId
+    path: ../src/Microsoft.UI.cs
+    startLine: 728
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI", "struct(Microsoft.UI.WindowId;u8)")]
+
+      [WindowsRuntimeHelperType]
+
+      [WinRTExposedType(typeof(StructTypeDetails<WindowId, WindowId>))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public struct WindowId : IEquatable<WindowId>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI", "struct(Microsoft.UI.WindowId;u8)")>
+
+      <WindowsRuntimeHelperType>
+
+      <WinRTExposedType(GetType(StructTypeDetails(Of WindowId, WindowId)))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public Structure WindowId Implements IEquatable(Of WindowId)
+  implements:
+  - System.IEquatable{Microsoft.UI.WindowId}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+    - type: System.String
+      value: struct(Microsoft.UI.WindowId;u8)
+  - type: WinRT.WindowsRuntimeHelperTypeAttribute
+    ctor: WinRT.WindowsRuntimeHelperTypeAttribute.#ctor
+    arguments: []
+  - type: WinRT.WinRTExposedTypeAttribute
+    ctor: WinRT.WinRTExposedTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: WinRT.StructTypeDetails{Microsoft.UI.WindowId,Microsoft.UI.WindowId}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.WindowId.Value
+  commentId: F:Microsoft.UI.WindowId.Value
+  id: Value
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: WindowId.Value
+  fullName: Microsoft.UI.WindowId.Value
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Value
+    path: ../src/Microsoft.UI.cs
+    startLine: 731
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: public ulong Value
+    return:
+      type: System.UInt64
+    content.vb: Public Value As ULong
+- uid: Microsoft.UI.WindowId.#ctor(System.UInt64)
+  commentId: M:Microsoft.UI.WindowId.#ctor(System.UInt64)
+  id: '#ctor(System.UInt64)'
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: WindowId(ulong)
+  nameWithType: WindowId.WindowId(ulong)
+  fullName: Microsoft.UI.WindowId.WindowId(ulong)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.cs
+    startLine: 733
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: public WindowId(ulong _Value)
+    parameters:
+    - id: _Value
+      type: System.UInt64
+    content.vb: Public Sub New(_Value As ULong)
+  overload: Microsoft.UI.WindowId.#ctor*
+  nameWithType.vb: WindowId.New(ULong)
+  fullName.vb: Microsoft.UI.WindowId.New(ULong)
+  name.vb: New(ULong)
+- uid: Microsoft.UI.WindowId.op_Equality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  commentId: M:Microsoft.UI.WindowId.op_Equality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  id: op_Equality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: operator ==(WindowId, WindowId)
+  nameWithType: WindowId.operator ==(WindowId, WindowId)
+  fullName: Microsoft.UI.WindowId.operator ==(Microsoft.UI.WindowId, Microsoft.UI.WindowId)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.cs
+    startLine: 738
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: public static bool operator ==(WindowId x, WindowId y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.WindowId
+    - id: y
+      type: Microsoft.UI.WindowId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As WindowId, y As WindowId) As Boolean
+  overload: Microsoft.UI.WindowId.op_Equality*
+  nameWithType.vb: WindowId.=(WindowId, WindowId)
+  fullName.vb: Microsoft.UI.WindowId.=(Microsoft.UI.WindowId, Microsoft.UI.WindowId)
+  name.vb: =(WindowId, WindowId)
+- uid: Microsoft.UI.WindowId.op_Inequality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  commentId: M:Microsoft.UI.WindowId.op_Inequality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  id: op_Inequality(Microsoft.UI.WindowId,Microsoft.UI.WindowId)
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: operator !=(WindowId, WindowId)
+  nameWithType: WindowId.operator !=(WindowId, WindowId)
+  fullName: Microsoft.UI.WindowId.operator !=(Microsoft.UI.WindowId, Microsoft.UI.WindowId)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.cs
+    startLine: 739
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  syntax:
+    content: public static bool operator !=(WindowId x, WindowId y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.WindowId
+    - id: y
+      type: Microsoft.UI.WindowId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As WindowId, y As WindowId) As Boolean
+  overload: Microsoft.UI.WindowId.op_Inequality*
+  nameWithType.vb: WindowId.<>(WindowId, WindowId)
+  fullName.vb: Microsoft.UI.WindowId.<>(Microsoft.UI.WindowId, Microsoft.UI.WindowId)
+  name.vb: <>(WindowId, WindowId)
+- uid: Microsoft.UI.WindowId.Equals(Microsoft.UI.WindowId)
+  commentId: M:Microsoft.UI.WindowId.Equals(Microsoft.UI.WindowId)
+  id: Equals(Microsoft.UI.WindowId)
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: Equals(WindowId)
+  nameWithType: WindowId.Equals(WindowId)
+  fullName: Microsoft.UI.WindowId.Equals(Microsoft.UI.WindowId)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.cs
+    startLine: 740
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(WindowId other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.WindowId
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As WindowId) As Boolean
+  overload: Microsoft.UI.WindowId.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.WindowId}.Equals(Microsoft.UI.WindowId)
+- uid: Microsoft.UI.WindowId.Equals(System.Object)
+  commentId: M:Microsoft.UI.WindowId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: WindowId.Equals(object)
+  fullName: Microsoft.UI.WindowId.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.cs
+    startLine: 741
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.UI.WindowId.Equals*
+  nameWithType.vb: WindowId.Equals(Object)
+  fullName.vb: Microsoft.UI.WindowId.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.WindowId.GetHashCode
+  commentId: M:Microsoft.UI.WindowId.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.WindowId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: WindowId.GetHashCode()
+  fullName: Microsoft.UI.WindowId.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.cs
+    startLine: 742
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.UI.WindowId.GetHashCode*
+references:
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+- uid: System.IEquatable{Microsoft.UI.WindowId}
+  commentId: T:System.IEquatable{Microsoft.UI.WindowId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<WindowId>
+  nameWithType: IEquatable<WindowId>
+  fullName: System.IEquatable<Microsoft.UI.WindowId>
+  nameWithType.vb: IEquatable(Of WindowId)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.WindowId)
+  name.vb: IEquatable(Of WindowId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.WindowId
+    name: WindowId
+    href: Microsoft.UI.WindowId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.WindowId
+    name: WindowId
+    href: Microsoft.UI.WindowId.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Microsoft.UI.WindowId.#ctor*
+  commentId: Overload:Microsoft.UI.WindowId.#ctor
+  href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId__ctor_System_UInt64_
+  name: WindowId
+  nameWithType: WindowId.WindowId
+  fullName: Microsoft.UI.WindowId.WindowId
+  nameWithType.vb: WindowId.New
+  fullName.vb: Microsoft.UI.WindowId.New
+  name.vb: New
+- uid: Microsoft.UI.WindowId.op_Equality*
+  commentId: Overload:Microsoft.UI.WindowId.op_Equality
+  href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_op_Equality_Microsoft_UI_WindowId_Microsoft_UI_WindowId_
+  name: operator ==
+  nameWithType: WindowId.operator ==
+  fullName: Microsoft.UI.WindowId.operator ==
+  nameWithType.vb: WindowId.=
+  fullName.vb: Microsoft.UI.WindowId.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.WindowId.op_Equality*
+    name: ==
+    href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_op_Equality_Microsoft_UI_WindowId_Microsoft_UI_WindowId_
+- uid: Microsoft.UI.WindowId
+  commentId: T:Microsoft.UI.WindowId
+  parent: Microsoft.UI
+  href: Microsoft.UI.WindowId.html
+  name: WindowId
+  nameWithType: WindowId
+  fullName: Microsoft.UI.WindowId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.WindowId.op_Inequality*
+  commentId: Overload:Microsoft.UI.WindowId.op_Inequality
+  href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_op_Inequality_Microsoft_UI_WindowId_Microsoft_UI_WindowId_
+  name: operator !=
+  nameWithType: WindowId.operator !=
+  fullName: Microsoft.UI.WindowId.operator !=
+  nameWithType.vb: WindowId.<>
+  fullName.vb: Microsoft.UI.WindowId.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.WindowId.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_op_Inequality_Microsoft_UI_WindowId_Microsoft_UI_WindowId_
+- uid: Microsoft.UI.WindowId.Equals*
+  commentId: Overload:Microsoft.UI.WindowId.Equals
+  href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_Equals_Microsoft_UI_WindowId_
+  name: Equals
+  nameWithType: WindowId.Equals
+  fullName: Microsoft.UI.WindowId.Equals
+- uid: System.IEquatable{Microsoft.UI.WindowId}.Equals(Microsoft.UI.WindowId)
+  commentId: M:System.IEquatable{Microsoft.UI.WindowId}.Equals(Microsoft.UI.WindowId)
+  parent: System.IEquatable{Microsoft.UI.WindowId}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(WindowId)
+  nameWithType: IEquatable<WindowId>.Equals(WindowId)
+  fullName: System.IEquatable<Microsoft.UI.WindowId>.Equals(Microsoft.UI.WindowId)
+  nameWithType.vb: IEquatable(Of WindowId).Equals(WindowId)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.WindowId).Equals(Microsoft.UI.WindowId)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.WindowId}.Equals(Microsoft.UI.WindowId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.WindowId
+    name: WindowId
+    href: Microsoft.UI.WindowId.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.WindowId}.Equals(Microsoft.UI.WindowId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.WindowId
+    name: WindowId
+    href: Microsoft.UI.WindowId.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.WindowId.GetHashCode*
+  commentId: Overload:Microsoft.UI.WindowId.GetHashCode
+  href: Microsoft.UI.WindowId.html#Microsoft_UI_WindowId_GetHashCode
+  name: GetHashCode
+  nameWithType: WindowId.GetHashCode
+  fullName: Microsoft.UI.WindowId.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

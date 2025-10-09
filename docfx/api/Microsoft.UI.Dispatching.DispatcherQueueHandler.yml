@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Dispatching.DispatcherQueueHandler
+  commentId: T:Microsoft.UI.Dispatching.DispatcherQueueHandler
+  id: DispatcherQueueHandler
+  parent: Microsoft.UI.Dispatching
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DispatcherQueueHandler
+  nameWithType: DispatcherQueueHandler
+  fullName: Microsoft.UI.Dispatching.DispatcherQueueHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/Microsoft.UI.Dispatching.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DispatcherQueueHandler
+    path: ../src/Microsoft.UI.Dispatching.cs
+    startLine: 392
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Dispatching
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(DispatcherQueueHandler))]
+
+      [WinRTExposedType(typeof(DispatcherQueueHandlerWinRTTypeDetails))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public delegate void DispatcherQueueHandler()
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(DispatcherQueueHandler))>
+
+      <WinRTExposedType(GetType(DispatcherQueueHandlerWinRTTypeDetails))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public Delegate Sub DispatcherQueueHandler()
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+references:
+- uid: Microsoft.UI.Dispatching
+  commentId: N:Microsoft.UI.Dispatching
+  href: Microsoft.html
+  name: Microsoft.UI.Dispatching
+  nameWithType: Microsoft.UI.Dispatching
+  fullName: Microsoft.UI.Dispatching
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html

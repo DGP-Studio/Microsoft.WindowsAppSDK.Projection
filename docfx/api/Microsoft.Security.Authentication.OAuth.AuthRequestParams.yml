@@ -1,0 +1,1501 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  commentId: T:Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  id: AuthRequestParams
+  parent: Microsoft.Security.Authentication.OAuth
+  children:
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String,System.Uri)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.As``1
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String,System.Uri)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(System.Object)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi(System.IntPtr)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.State
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  - Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  langs:
+  - csharp
+  - vb
+  name: AuthRequestParams
+  nameWithType: AuthRequestParams
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AuthRequestParams
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 113
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Security.Authentication.OAuth")]
+
+      [WindowsRuntimeHelperType(typeof(AuthRequestParams))]
+
+      [ProjectedRuntimeClass(typeof(IAuthRequestParams))]
+
+      [ContractVersion(typeof(OAuthContract), 65536)]
+
+      public sealed class AuthRequestParams : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<AuthRequestParams>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Security.Authentication.OAuth")>
+
+      <WindowsRuntimeHelperType(GetType(AuthRequestParams))>
+
+      <ProjectedRuntimeClass(GetType(IAuthRequestParams))>
+
+      <ContractVersion(GetType(OAuthContract), 65536)>
+
+      Public NotInheritable Class AuthRequestParams Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of AuthRequestParams)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Security.Authentication.OAuth
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Security.Authentication.OAuth.OAuthContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: AuthRequestParams(string, string)
+  nameWithType: AuthRequestParams.AuthRequestParams(string, string)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AuthRequestParams(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public AuthRequestParams(string responseType, string clientId)
+    parameters:
+    - id: responseType
+      type: System.String
+    - id: clientId
+      type: System.String
+    content.vb: Public Sub New(responseType As String, clientId As String)
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor*
+  nameWithType.vb: AuthRequestParams.New(String, String)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.New(String, String)
+  name.vb: New(String, String)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String,System.Uri)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor(System.String,System.String,System.Uri)
+  id: '#ctor(System.String,System.String,System.Uri)'
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: AuthRequestParams(string, string, Uri)
+  nameWithType: AuthRequestParams.AuthRequestParams(string, string, Uri)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AuthRequestParams(string, string, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 205
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public AuthRequestParams(string responseType, string clientId, Uri redirectUri)
+    parameters:
+    - id: responseType
+      type: System.String
+    - id: clientId
+      type: System.String
+    - id: redirectUri
+      type: System.Uri
+    content.vb: Public Sub New(responseType As String, clientId As String, redirectUri As Uri)
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor*
+  nameWithType.vb: AuthRequestParams.New(String, String, Uri)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.New(String, String, System.Uri)
+  name.vb: New(String, String, Uri)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As``1
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.As``1
+  id: As``1
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: AuthRequestParams.As<I>()
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 222
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As*
+  nameWithType.vb: AuthRequestParams.As(Of I)()
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String)
+  id: CreateForAuthorizationCodeRequest(System.String)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: CreateForAuthorizationCodeRequest(string)
+  nameWithType: AuthRequestParams.CreateForAuthorizationCodeRequest(string)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateForAuthorizationCodeRequest
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 241
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static AuthRequestParams CreateForAuthorizationCodeRequest(string clientId)
+    parameters:
+    - id: clientId
+      type: System.String
+    return:
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    content.vb: Public Shared Function CreateForAuthorizationCodeRequest(clientId As String) As AuthRequestParams
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest*
+  nameWithType.vb: AuthRequestParams.CreateForAuthorizationCodeRequest(String)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(String)
+  name.vb: CreateForAuthorizationCodeRequest(String)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String,System.Uri)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(System.String,System.Uri)
+  id: CreateForAuthorizationCodeRequest(System.String,System.Uri)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: CreateForAuthorizationCodeRequest(string, Uri)
+  nameWithType: AuthRequestParams.CreateForAuthorizationCodeRequest(string, Uri)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(string, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateForAuthorizationCodeRequest
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 243
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static AuthRequestParams CreateForAuthorizationCodeRequest(string clientId, Uri redirectUri)
+    parameters:
+    - id: clientId
+      type: System.String
+    - id: redirectUri
+      type: System.Uri
+    return:
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    content.vb: Public Shared Function CreateForAuthorizationCodeRequest(clientId As String, redirectUri As Uri) As AuthRequestParams
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest*
+  nameWithType.vb: AuthRequestParams.CreateForAuthorizationCodeRequest(String, Uri)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest(String, System.Uri)
+  name.vb: CreateForAuthorizationCodeRequest(String, Uri)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: AuthRequestParams.FromAbi(nint)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 245
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static AuthRequestParams FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As AuthRequestParams
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi*
+  nameWithType.vb: AuthRequestParams.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  id: op_Equality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AuthRequestParams, AuthRequestParams)
+  nameWithType: AuthRequestParams.operator ==(AuthRequestParams, AuthRequestParams)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.operator ==(Microsoft.Security.Authentication.OAuth.AuthRequestParams, Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 258
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static bool operator ==(AuthRequestParams x, AuthRequestParams y)
+    parameters:
+    - id: x
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    - id: y
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As AuthRequestParams, y As AuthRequestParams) As Boolean
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality*
+  nameWithType.vb: AuthRequestParams.=(AuthRequestParams, AuthRequestParams)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.=(Microsoft.Security.Authentication.OAuth.AuthRequestParams, Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  name.vb: =(AuthRequestParams, AuthRequestParams)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  id: op_Inequality(Microsoft.Security.Authentication.OAuth.AuthRequestParams,Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AuthRequestParams, AuthRequestParams)
+  nameWithType: AuthRequestParams.operator !=(AuthRequestParams, AuthRequestParams)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.operator !=(Microsoft.Security.Authentication.OAuth.AuthRequestParams, Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 259
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public static bool operator !=(AuthRequestParams x, AuthRequestParams y)
+    parameters:
+    - id: x
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    - id: y
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As AuthRequestParams, y As AuthRequestParams) As Boolean
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality*
+  nameWithType.vb: AuthRequestParams.<>(AuthRequestParams, AuthRequestParams)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.<>(Microsoft.Security.Authentication.OAuth.AuthRequestParams, Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  name.vb: <>(AuthRequestParams, AuthRequestParams)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  id: Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: Equals(AuthRequestParams)
+  nameWithType: AuthRequestParams.Equals(AuthRequestParams)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 260
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(AuthRequestParams other)
+    parameters:
+    - id: other
+      type: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As AuthRequestParams) As Boolean
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(System.Object)
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AuthRequestParams.Equals(object)
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals*
+  nameWithType.vb: AuthRequestParams.Equals(Object)
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode
+  commentId: M:Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AuthRequestParams.GetHashCode()
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 262
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+  id: AdditionalParams
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: AdditionalParams
+  nameWithType: AuthRequestParams.AdditionalParams
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AdditionalParams
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 285
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public IDictionary<string, string> AdditionalParams { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property AdditionalParams As IDictionary(Of String, String)
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+  id: ClientId
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: AuthRequestParams.ClientId
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClientId
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 287
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public string ClientId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClientId As String
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+  id: CodeChallenge
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: CodeChallenge
+  nameWithType: AuthRequestParams.CodeChallenge
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CodeChallenge
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 293
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public string CodeChallenge { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CodeChallenge As String
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+  id: CodeChallengeMethod
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: CodeChallengeMethod
+  nameWithType: AuthRequestParams.CodeChallengeMethod
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CodeChallengeMethod
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 299
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public CodeChallengeMethodKind CodeChallengeMethod { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Security.Authentication.OAuth.CodeChallengeMethodKind
+    content.vb: Public Property CodeChallengeMethod As CodeChallengeMethodKind
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+  id: RedirectUri
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: RedirectUri
+  nameWithType: AuthRequestParams.RedirectUri
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RedirectUri
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public Uri RedirectUri { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property RedirectUri As Uri
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+  id: ResponseType
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: ResponseType
+  nameWithType: AuthRequestParams.ResponseType
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ResponseType
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 311
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public string ResponseType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ResponseType As String
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+  id: Scope
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: AuthRequestParams.Scope
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Scope
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 317
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public string Scope { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scope As String
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope*
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.State
+  commentId: P:Microsoft.Security.Authentication.OAuth.AuthRequestParams.State
+  id: State
+  parent: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: AuthRequestParams.State
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.State
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Security.Authentication.OAuth.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: State
+    path: ../src/Microsoft.Security.Authentication.OAuth.cs
+    startLine: 323
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Security.Authentication.OAuth
+  syntax:
+    content: public string State { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property State As String
+  overload: Microsoft.Security.Authentication.OAuth.AuthRequestParams.State*
+references:
+- uid: Microsoft.Security.Authentication.OAuth
+  commentId: N:Microsoft.Security.Authentication.OAuth
+  href: Microsoft.html
+  name: Microsoft.Security.Authentication.OAuth
+  nameWithType: Microsoft.Security.Authentication.OAuth
+  fullName: Microsoft.Security.Authentication.OAuth
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Security
+    name: Security
+    href: Microsoft.Security.html
+  - name: .
+  - uid: Microsoft.Security.Authentication
+    name: Authentication
+    href: Microsoft.Security.Authentication.html
+  - name: .
+  - uid: Microsoft.Security.Authentication.OAuth
+    name: OAuth
+    href: Microsoft.Security.Authentication.OAuth.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Security
+    name: Security
+    href: Microsoft.Security.html
+  - name: .
+  - uid: Microsoft.Security.Authentication
+    name: Authentication
+    href: Microsoft.Security.Authentication.html
+  - name: .
+  - uid: Microsoft.Security.Authentication.OAuth
+    name: OAuth
+    href: Microsoft.Security.Authentication.OAuth.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}
+  commentId: T:System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AuthRequestParams>
+  nameWithType: IEquatable<AuthRequestParams>
+  fullName: System.IEquatable<Microsoft.Security.Authentication.OAuth.AuthRequestParams>
+  nameWithType.vb: IEquatable(Of AuthRequestParams)
+  fullName.vb: System.IEquatable(Of Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  name.vb: IEquatable(Of AuthRequestParams)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    name: AuthRequestParams
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    name: AuthRequestParams
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.#ctor
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams__ctor_System_String_System_String_
+  name: AuthRequestParams
+  nameWithType: AuthRequestParams.AuthRequestParams
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AuthRequestParams
+  nameWithType.vb: AuthRequestParams.New
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.As
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_As__1
+  name: As
+  nameWithType: AuthRequestParams.As
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_CreateForAuthorizationCodeRequest_System_String_
+  name: CreateForAuthorizationCodeRequest
+  nameWithType: AuthRequestParams.CreateForAuthorizationCodeRequest
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CreateForAuthorizationCodeRequest
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  commentId: T:Microsoft.Security.Authentication.OAuth.AuthRequestParams
+  parent: Microsoft.Security.Authentication.OAuth
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html
+  name: AuthRequestParams
+  nameWithType: AuthRequestParams
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: AuthRequestParams.FromAbi
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_op_Equality_Microsoft_Security_Authentication_OAuth_AuthRequestParams_Microsoft_Security_Authentication_OAuth_AuthRequestParams_
+  name: operator ==
+  nameWithType: AuthRequestParams.operator ==
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.operator ==
+  nameWithType.vb: AuthRequestParams.=
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Equality*
+    name: ==
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_op_Equality_Microsoft_Security_Authentication_OAuth_AuthRequestParams_Microsoft_Security_Authentication_OAuth_AuthRequestParams_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_op_Inequality_Microsoft_Security_Authentication_OAuth_AuthRequestParams_Microsoft_Security_Authentication_OAuth_AuthRequestParams_
+  name: operator !=
+  nameWithType: AuthRequestParams.operator !=
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.operator !=
+  nameWithType.vb: AuthRequestParams.<>
+  fullName.vb: Microsoft.Security.Authentication.OAuth.AuthRequestParams.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.op_Inequality*
+    name: '!='
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_op_Inequality_Microsoft_Security_Authentication_OAuth_AuthRequestParams_Microsoft_Security_Authentication_OAuth_AuthRequestParams_
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_Equals_Microsoft_Security_Authentication_OAuth_AuthRequestParams_
+  name: Equals
+  nameWithType: AuthRequestParams.Equals
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Equals
+- uid: System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  commentId: M:System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  parent: System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AuthRequestParams)
+  nameWithType: IEquatable<AuthRequestParams>.Equals(AuthRequestParams)
+  fullName: System.IEquatable<Microsoft.Security.Authentication.OAuth.AuthRequestParams>.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  nameWithType.vb: IEquatable(Of AuthRequestParams).Equals(AuthRequestParams)
+  fullName.vb: System.IEquatable(Of Microsoft.Security.Authentication.OAuth.AuthRequestParams).Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    name: AuthRequestParams
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Security.Authentication.OAuth.AuthRequestParams}.Equals(Microsoft.Security.Authentication.OAuth.AuthRequestParams)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams
+    name: AuthRequestParams
+    href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_GetHashCode
+  name: GetHashCode
+  nameWithType: AuthRequestParams.GetHashCode
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_AdditionalParams
+  name: AdditionalParams
+  nameWithType: AuthRequestParams.AdditionalParams
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.AdditionalParams
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_ClientId
+  name: ClientId
+  nameWithType: AuthRequestParams.ClientId
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ClientId
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_CodeChallenge
+  name: CodeChallenge
+  nameWithType: AuthRequestParams.CodeChallenge
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallenge
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_CodeChallengeMethod
+  name: CodeChallengeMethod
+  nameWithType: AuthRequestParams.CodeChallengeMethod
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.CodeChallengeMethod
+- uid: Microsoft.Security.Authentication.OAuth.CodeChallengeMethodKind
+  commentId: T:Microsoft.Security.Authentication.OAuth.CodeChallengeMethodKind
+  parent: Microsoft.Security.Authentication.OAuth
+  href: Microsoft.Security.Authentication.OAuth.CodeChallengeMethodKind.html
+  name: CodeChallengeMethodKind
+  nameWithType: CodeChallengeMethodKind
+  fullName: Microsoft.Security.Authentication.OAuth.CodeChallengeMethodKind
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_RedirectUri
+  name: RedirectUri
+  nameWithType: AuthRequestParams.RedirectUri
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.RedirectUri
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_ResponseType
+  name: ResponseType
+  nameWithType: AuthRequestParams.ResponseType
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.ResponseType
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_Scope
+  name: Scope
+  nameWithType: AuthRequestParams.Scope
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.Scope
+- uid: Microsoft.Security.Authentication.OAuth.AuthRequestParams.State*
+  commentId: Overload:Microsoft.Security.Authentication.OAuth.AuthRequestParams.State
+  href: Microsoft.Security.Authentication.OAuth.AuthRequestParams.html#Microsoft_Security_Authentication_OAuth_AuthRequestParams_State
+  name: State
+  nameWithType: AuthRequestParams.State
+  fullName: Microsoft.Security.Authentication.OAuth.AuthRequestParams.State

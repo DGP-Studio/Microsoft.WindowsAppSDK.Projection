@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession
+  commentId: T:Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession
+  id: ITextBlockListSession
+  parent: Microsoft.Windows.AI.ContentModerationInternal
+  children:
+  - Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITextBlockListSession
+  nameWithType: ITextBlockListSession
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextBlockListSession
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")]
+
+      [Guid("E82A4CB1-A91E-5841-AB2F-8BA8FE241B5A")]
+
+      [WindowsRuntimeHelperType(typeof(ITextBlockListSession))]
+
+      [ContractVersion(typeof(TextBlockListContract), 65536)]
+
+      public interface ITextBlockListSession : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.ContentModerationInternal")>
+
+      <Guid("E82A4CB1-A91E-5841-AB2F-8BA8FE241B5A")>
+
+      <WindowsRuntimeHelperType(GetType(ITextBlockListSession))>
+
+      <ContractVersion(GetType(TextBlockListContract), 65536)>
+
+      Public Interface ITextBlockListSession Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.ContentModerationInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E82A4CB1-A91E-5841-AB2F-8BA8FE241B5A
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.ContentModerationInternal.TextBlockListContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked(System.String,System.String)
+  commentId: M:Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked(System.String,System.String)
+  id: IsTextBlocked(System.String,System.String)
+  parent: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession
+  langs:
+  - csharp
+  - vb
+  name: IsTextBlocked(string, string)
+  nameWithType: ITextBlockListSession.IsTextBlocked(string, string)
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.ContentModerationInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsTextBlocked
+    path: ../src/Microsoft.Windows.AI.ContentModerationInternal.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.ContentModerationInternal
+  syntax:
+    content: bool IsTextBlocked(string query, string inputLanguage)
+    parameters:
+    - id: query
+      type: System.String
+    - id: inputLanguage
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsTextBlocked(query As String, inputLanguage As String) As Boolean
+  overload: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked*
+  nameWithType.vb: ITextBlockListSession.IsTextBlocked(String, String)
+  fullName.vb: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked(String, String)
+  name.vb: IsTextBlocked(String, String)
+references:
+- uid: Microsoft.Windows.AI.ContentModerationInternal
+  commentId: N:Microsoft.Windows.AI.ContentModerationInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.ContentModerationInternal
+  nameWithType: Microsoft.Windows.AI.ContentModerationInternal
+  fullName: Microsoft.Windows.AI.ContentModerationInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentModerationInternal
+    name: ContentModerationInternal
+    href: Microsoft.Windows.AI.ContentModerationInternal.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked*
+  commentId: Overload:Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked
+  href: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.html#Microsoft_Windows_AI_ContentModerationInternal_ITextBlockListSession_IsTextBlocked_System_String_System_String_
+  name: IsTextBlocked
+  nameWithType: ITextBlockListSession.IsTextBlocked
+  fullName: Microsoft.Windows.AI.ContentModerationInternal.ITextBlockListSession.IsTextBlocked
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

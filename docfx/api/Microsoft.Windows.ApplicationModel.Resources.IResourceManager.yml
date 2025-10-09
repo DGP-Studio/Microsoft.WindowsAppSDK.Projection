@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  id: IResourceManager
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  children:
+  - Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext
+  - Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+  - Microsoft.Windows.ApplicationModel.Resources.IResourceManager.ResourceNotFound
+  langs:
+  - csharp
+  - vb
+  name: IResourceManager
+  nameWithType: IResourceManager
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IResourceManager
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 90
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Resources")]
+
+      [Guid("AC2291EF-81BE-5C99-A0AE-BCEE0180B8A8")]
+
+      [WindowsRuntimeHelperType(typeof(IResourceManager))]
+
+      [ContractVersion(typeof(MrtCoreContract), 65536)]
+
+      public interface IResourceManager
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Resources")>
+
+      <Guid("AC2291EF-81BE-5C99-A0AE-BCEE0180B8A8")>
+
+      <WindowsRuntimeHelperType(GetType(IResourceManager))>
+
+      <ContractVersion(GetType(MrtCoreContract), 65536)>
+
+      Public Interface IResourceManager
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.ApplicationModel.Resources
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AC2291EF-81BE-5C99-A0AE-BCEE0180B8A8
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.ApplicationModel.Resources.MrtCoreContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext
+  id: CreateResourceContext
+  parent: Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  langs:
+  - csharp
+  - vb
+  name: CreateResourceContext()
+  nameWithType: IResourceManager.CreateResourceContext()
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateResourceContext
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: ResourceContext CreateResourceContext()
+    return:
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceContext
+    content.vb: Function CreateResourceContext() As ResourceContext
+  overload: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext*
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+  commentId: P:Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+  id: MainResourceMap
+  parent: Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  langs:
+  - csharp
+  - vb
+  name: MainResourceMap
+  nameWithType: IResourceManager.MainResourceMap
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MainResourceMap
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: ResourceMap MainResourceMap { get; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceMap
+    content.vb: ReadOnly Property MainResourceMap As ResourceMap
+  overload: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap*
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.ResourceNotFound
+  commentId: E:Microsoft.Windows.ApplicationModel.Resources.IResourceManager.ResourceNotFound
+  id: ResourceNotFound
+  parent: Microsoft.Windows.ApplicationModel.Resources.IResourceManager
+  langs:
+  - csharp
+  - vb
+  name: ResourceNotFound
+  nameWithType: IResourceManager.ResourceNotFound
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.ResourceNotFound
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ResourceNotFound
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: event TypedEventHandler<ResourceManager, ResourceNotFoundEventArgs> ResourceNotFound
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.Windows.ApplicationModel.Resources.ResourceManager,Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs}
+    content.vb: Event ResourceNotFound As TypedEventHandler(Of ResourceManager, ResourceNotFoundEventArgs)
+references:
+- uid: Microsoft.Windows.ApplicationModel.Resources
+  commentId: N:Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.html
+  name: Microsoft.Windows.ApplicationModel.Resources
+  nameWithType: Microsoft.Windows.ApplicationModel.Resources
+  fullName: Microsoft.Windows.ApplicationModel.Resources
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Resources
+    name: Resources
+    href: Microsoft.Windows.ApplicationModel.Resources.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Resources
+    name: Resources
+    href: Microsoft.Windows.ApplicationModel.Resources.html
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext
+  href: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.html#Microsoft_Windows_ApplicationModel_Resources_IResourceManager_CreateResourceContext
+  name: CreateResourceContext
+  nameWithType: IResourceManager.CreateResourceContext
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.CreateResourceContext
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceContext
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.ResourceContext
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceContext.html
+  name: ResourceContext
+  nameWithType: ResourceContext
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceContext
+- uid: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+  href: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.html#Microsoft_Windows_ApplicationModel_Resources_IResourceManager_MainResourceMap
+  name: MainResourceMap
+  nameWithType: IResourceManager.MainResourceMap
+  fullName: Microsoft.Windows.ApplicationModel.Resources.IResourceManager.MainResourceMap
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceMap
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.ResourceMap
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceMap.html
+  name: ResourceMap
+  nameWithType: ResourceMap
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceMap
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.Windows.ApplicationModel.Resources.ResourceManager,Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.Windows.ApplicationModel.Resources.ResourceManager,Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<ResourceManager, ResourceNotFoundEventArgs>
+  nameWithType: TypedEventHandler<ResourceManager, ResourceNotFoundEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.Windows.ApplicationModel.Resources.ResourceManager, Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs>
+  nameWithType.vb: TypedEventHandler(Of ResourceManager, ResourceNotFoundEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.Windows.ApplicationModel.Resources.ResourceManager, Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs)
+  name.vb: TypedEventHandler(Of ResourceManager, ResourceNotFoundEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceManager
+    name: ResourceManager
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs
+    name: ResourceNotFoundEventArgs
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceManager
+    name: ResourceManager
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs
+    name: ResourceNotFoundEventArgs
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceNotFoundEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

@@ -1,0 +1,1807 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Storage.ApplicationData
+  commentId: T:Microsoft.Windows.Storage.ApplicationData
+  id: ApplicationData
+  parent: Microsoft.Windows.Storage
+  children:
+  - Microsoft.Windows.Storage.ApplicationData.As``1
+  - Microsoft.Windows.Storage.ApplicationData.ClearAsync(Microsoft.Windows.Storage.ApplicationDataLocality)
+  - Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync(System.String)
+  - Microsoft.Windows.Storage.ApplicationData.Dispose
+  - Microsoft.Windows.Storage.ApplicationData.Equals(Microsoft.Windows.Storage.ApplicationData)
+  - Microsoft.Windows.Storage.ApplicationData.Equals(System.Object)
+  - Microsoft.Windows.Storage.ApplicationData.FromAbi(System.IntPtr)
+  - Microsoft.Windows.Storage.ApplicationData.GetDefault
+  - Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily(System.String)
+  - Microsoft.Windows.Storage.ApplicationData.GetForUser(Windows.System.User)
+  - Microsoft.Windows.Storage.ApplicationData.GetHashCode
+  - Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder(System.String)
+  - Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath(System.String)
+  - Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+  - Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+  - Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+  - Microsoft.Windows.Storage.ApplicationData.LocalFolder
+  - Microsoft.Windows.Storage.ApplicationData.LocalPath
+  - Microsoft.Windows.Storage.ApplicationData.LocalSettings
+  - Microsoft.Windows.Storage.ApplicationData.MachineFolder
+  - Microsoft.Windows.Storage.ApplicationData.MachinePath
+  - Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+  - Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+  - Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+  - Microsoft.Windows.Storage.ApplicationData.TemporaryPath
+  - Microsoft.Windows.Storage.ApplicationData.op_Equality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  - Microsoft.Windows.Storage.ApplicationData.op_Inequality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  langs:
+  - csharp
+  - vb
+  name: ApplicationData
+  nameWithType: ApplicationData
+  fullName: Microsoft.Windows.Storage.ApplicationData
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ApplicationData
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Storage")]
+
+      [WindowsRuntimeHelperType(typeof(ApplicationData))]
+
+      [ProjectedRuntimeClass(typeof(IApplicationData))]
+
+      [ContractVersion(typeof(ApplicationDataContract), 65536)]
+
+      public sealed class ApplicationData : IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ApplicationData>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Storage")>
+
+      <WindowsRuntimeHelperType(GetType(ApplicationData))>
+
+      <ProjectedRuntimeClass(GetType(IApplicationData))>
+
+      <ContractVersion(GetType(ApplicationDataContract), 65536)>
+
+      Public NotInheritable Class ApplicationData Implements IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ApplicationData)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.Storage.ApplicationData}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Storage
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Storage.ApplicationDataContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.Storage.ApplicationData.As``1
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.As``1
+  id: As``1
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: ApplicationData.As<I>()
+  fullName: Microsoft.Windows.Storage.ApplicationData.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.Storage.ApplicationData.As*
+  nameWithType.vb: ApplicationData.As(Of I)()
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.Storage.ApplicationData.GetDefault
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetDefault
+  id: GetDefault
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetDefault()
+  nameWithType: ApplicationData.GetDefault()
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetDefault()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetDefault
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static ApplicationData GetDefault()
+    return:
+      type: Microsoft.Windows.Storage.ApplicationData
+    content.vb: Public Shared Function GetDefault() As ApplicationData
+  overload: Microsoft.Windows.Storage.ApplicationData.GetDefault*
+- uid: Microsoft.Windows.Storage.ApplicationData.GetForUser(Windows.System.User)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetForUser(Windows.System.User)
+  id: GetForUser(Windows.System.User)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetForUser(User)
+  nameWithType: ApplicationData.GetForUser(User)
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetForUser(Windows.System.User)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForUser
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static ApplicationData GetForUser(User user)
+    parameters:
+    - id: user
+      type: Windows.System.User
+    return:
+      type: Microsoft.Windows.Storage.ApplicationData
+    content.vb: Public Shared Function GetForUser(user As User) As ApplicationData
+  overload: Microsoft.Windows.Storage.ApplicationData.GetForUser*
+- uid: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily(System.String)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily(System.String)
+  id: GetForPackageFamily(System.String)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetForPackageFamily(string)
+  nameWithType: ApplicationData.GetForPackageFamily(string)
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForPackageFamily
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static ApplicationData GetForPackageFamily(string packageFamilyName)
+    parameters:
+    - id: packageFamilyName
+      type: System.String
+    return:
+      type: Microsoft.Windows.Storage.ApplicationData
+    content.vb: Public Shared Function GetForPackageFamily(packageFamilyName As String) As ApplicationData
+  overload: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily*
+  nameWithType.vb: ApplicationData.GetForPackageFamily(String)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily(String)
+  name.vb: GetForPackageFamily(String)
+- uid: Microsoft.Windows.Storage.ApplicationData.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ApplicationData.FromAbi(nint)
+  fullName: Microsoft.Windows.Storage.ApplicationData.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static ApplicationData FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.Storage.ApplicationData
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ApplicationData
+  overload: Microsoft.Windows.Storage.ApplicationData.FromAbi*
+  nameWithType.vb: ApplicationData.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.Storage.ApplicationData.op_Equality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.op_Equality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  id: op_Equality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ApplicationData, ApplicationData)
+  nameWithType: ApplicationData.operator ==(ApplicationData, ApplicationData)
+  fullName: Microsoft.Windows.Storage.ApplicationData.operator ==(Microsoft.Windows.Storage.ApplicationData, Microsoft.Windows.Storage.ApplicationData)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static bool operator ==(ApplicationData x, ApplicationData y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Storage.ApplicationData
+    - id: y
+      type: Microsoft.Windows.Storage.ApplicationData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ApplicationData, y As ApplicationData) As Boolean
+  overload: Microsoft.Windows.Storage.ApplicationData.op_Equality*
+  nameWithType.vb: ApplicationData.=(ApplicationData, ApplicationData)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.=(Microsoft.Windows.Storage.ApplicationData, Microsoft.Windows.Storage.ApplicationData)
+  name.vb: =(ApplicationData, ApplicationData)
+- uid: Microsoft.Windows.Storage.ApplicationData.op_Inequality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.op_Inequality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  id: op_Inequality(Microsoft.Windows.Storage.ApplicationData,Microsoft.Windows.Storage.ApplicationData)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ApplicationData, ApplicationData)
+  nameWithType: ApplicationData.operator !=(ApplicationData, ApplicationData)
+  fullName: Microsoft.Windows.Storage.ApplicationData.operator !=(Microsoft.Windows.Storage.ApplicationData, Microsoft.Windows.Storage.ApplicationData)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public static bool operator !=(ApplicationData x, ApplicationData y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Storage.ApplicationData
+    - id: y
+      type: Microsoft.Windows.Storage.ApplicationData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ApplicationData, y As ApplicationData) As Boolean
+  overload: Microsoft.Windows.Storage.ApplicationData.op_Inequality*
+  nameWithType.vb: ApplicationData.<>(ApplicationData, ApplicationData)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.<>(Microsoft.Windows.Storage.ApplicationData, Microsoft.Windows.Storage.ApplicationData)
+  name.vb: <>(ApplicationData, ApplicationData)
+- uid: Microsoft.Windows.Storage.ApplicationData.Equals(Microsoft.Windows.Storage.ApplicationData)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.Equals(Microsoft.Windows.Storage.ApplicationData)
+  id: Equals(Microsoft.Windows.Storage.ApplicationData)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: Equals(ApplicationData)
+  nameWithType: ApplicationData.Equals(ApplicationData)
+  fullName: Microsoft.Windows.Storage.ApplicationData.Equals(Microsoft.Windows.Storage.ApplicationData)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ApplicationData other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.Storage.ApplicationData
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ApplicationData) As Boolean
+  overload: Microsoft.Windows.Storage.ApplicationData.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.Storage.ApplicationData}.Equals(Microsoft.Windows.Storage.ApplicationData)
+- uid: Microsoft.Windows.Storage.ApplicationData.Equals(System.Object)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ApplicationData.Equals(object)
+  fullName: Microsoft.Windows.Storage.ApplicationData.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.Storage.ApplicationData.Equals*
+  nameWithType.vb: ApplicationData.Equals(Object)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.Storage.ApplicationData.GetHashCode
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ApplicationData.GetHashCode()
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.Storage.ApplicationData.GetHashCode*
+- uid: Microsoft.Windows.Storage.ApplicationData.ClearAsync(Microsoft.Windows.Storage.ApplicationDataLocality)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.ClearAsync(Microsoft.Windows.Storage.ApplicationDataLocality)
+  id: ClearAsync(Microsoft.Windows.Storage.ApplicationDataLocality)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: ClearAsync(ApplicationDataLocality)
+  nameWithType: ApplicationData.ClearAsync(ApplicationDataLocality)
+  fullName: Microsoft.Windows.Storage.ApplicationData.ClearAsync(Microsoft.Windows.Storage.ApplicationDataLocality)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearAsync
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public IAsyncAction ClearAsync(ApplicationDataLocality locality)
+    parameters:
+    - id: locality
+      type: Microsoft.Windows.Storage.ApplicationDataLocality
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function ClearAsync(locality As ApplicationDataLocality) As IAsyncAction
+  overload: Microsoft.Windows.Storage.ApplicationData.ClearAsync*
+- uid: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync(System.String)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync(System.String)
+  id: ClearPublisherCacheFolderAsync(System.String)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: ClearPublisherCacheFolderAsync(string)
+  nameWithType: ApplicationData.ClearPublisherCacheFolderAsync(string)
+  fullName: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearPublisherCacheFolderAsync
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 120
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public IAsyncAction ClearPublisherCacheFolderAsync(string folderName)
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function ClearPublisherCacheFolderAsync(folderName As String) As IAsyncAction
+  overload: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync*
+  nameWithType.vb: ApplicationData.ClearPublisherCacheFolderAsync(String)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync(String)
+  name.vb: ClearPublisherCacheFolderAsync(String)
+- uid: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath(System.String)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath(System.String)
+  id: GetPublisherCachePath(System.String)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetPublisherCachePath(string)
+  nameWithType: ApplicationData.GetPublisherCachePath(string)
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetPublisherCachePath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string GetPublisherCachePath(string folderName)
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetPublisherCachePath(folderName As String) As String
+  overload: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath*
+  nameWithType.vb: ApplicationData.GetPublisherCachePath(String)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath(String)
+  name.vb: GetPublisherCachePath(String)
+- uid: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder(System.String)
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder(System.String)
+  id: GetPublisherCacheFolder(System.String)
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: GetPublisherCacheFolder(string)
+  nameWithType: ApplicationData.GetPublisherCacheFolder(string)
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetPublisherCacheFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder GetPublisherCacheFolder(string folderName)
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public Function GetPublisherCacheFolder(folderName As String) As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder*
+  nameWithType.vb: ApplicationData.GetPublisherCacheFolder(String)
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder(String)
+  name.vb: GetPublisherCacheFolder(String)
+- uid: Microsoft.Windows.Storage.ApplicationData.Dispose
+  commentId: M:Microsoft.Windows.Storage.ApplicationData.Dispose
+  id: Dispose
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ApplicationData.Dispose()
+  fullName: Microsoft.Windows.Storage.ApplicationData.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispose
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 126
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.Windows.Storage.ApplicationData.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+  id: IsMachinePathSupported
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: IsMachinePathSupported
+  nameWithType: ApplicationData.IsMachinePathSupported
+  fullName: Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsMachinePathSupported
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 128
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public bool IsMachinePathSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsMachinePathSupported As Boolean
+  overload: Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported*
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+  id: LocalCacheFolder
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: LocalCacheFolder
+  nameWithType: ApplicationData.LocalCacheFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalCacheFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder LocalCacheFolder { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public ReadOnly Property LocalCacheFolder As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder*
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+  id: LocalCachePath
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: LocalCachePath
+  nameWithType: ApplicationData.LocalCachePath
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalCachePath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string LocalCachePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LocalCachePath As String
+  overload: Microsoft.Windows.Storage.ApplicationData.LocalCachePath*
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalFolder
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.LocalFolder
+  id: LocalFolder
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: LocalFolder
+  nameWithType: ApplicationData.LocalFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalFolder
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder LocalFolder { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public ReadOnly Property LocalFolder As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.LocalFolder*
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalPath
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.LocalPath
+  id: LocalPath
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: LocalPath
+  nameWithType: ApplicationData.LocalPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalPath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalPath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 136
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string LocalPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LocalPath As String
+  overload: Microsoft.Windows.Storage.ApplicationData.LocalPath*
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalSettings
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.LocalSettings
+  id: LocalSettings
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: LocalSettings
+  nameWithType: ApplicationData.LocalSettings
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalSettings
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalSettings
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 138
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public ApplicationDataContainer LocalSettings { get; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.Storage.ApplicationDataContainer
+    content.vb: Public ReadOnly Property LocalSettings As ApplicationDataContainer
+  overload: Microsoft.Windows.Storage.ApplicationData.LocalSettings*
+- uid: Microsoft.Windows.Storage.ApplicationData.MachineFolder
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.MachineFolder
+  id: MachineFolder
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: MachineFolder
+  nameWithType: ApplicationData.MachineFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.MachineFolder
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MachineFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 140
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder MachineFolder { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public ReadOnly Property MachineFolder As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.MachineFolder*
+- uid: Microsoft.Windows.Storage.ApplicationData.MachinePath
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.MachinePath
+  id: MachinePath
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: MachinePath
+  nameWithType: ApplicationData.MachinePath
+  fullName: Microsoft.Windows.Storage.ApplicationData.MachinePath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MachinePath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string MachinePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MachinePath As String
+  overload: Microsoft.Windows.Storage.ApplicationData.MachinePath*
+- uid: Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+  id: SharedLocalFolder
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: SharedLocalFolder
+  nameWithType: ApplicationData.SharedLocalFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SharedLocalFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 144
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder SharedLocalFolder { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public ReadOnly Property SharedLocalFolder As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder*
+- uid: Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+  id: SharedLocalPath
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: SharedLocalPath
+  nameWithType: ApplicationData.SharedLocalPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SharedLocalPath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 146
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string SharedLocalPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SharedLocalPath As String
+  overload: Microsoft.Windows.Storage.ApplicationData.SharedLocalPath*
+- uid: Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+  id: TemporaryFolder
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: TemporaryFolder
+  nameWithType: ApplicationData.TemporaryFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TemporaryFolder
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 148
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public StorageFolder TemporaryFolder { get; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Public ReadOnly Property TemporaryFolder As StorageFolder
+  overload: Microsoft.Windows.Storage.ApplicationData.TemporaryFolder*
+- uid: Microsoft.Windows.Storage.ApplicationData.TemporaryPath
+  commentId: P:Microsoft.Windows.Storage.ApplicationData.TemporaryPath
+  id: TemporaryPath
+  parent: Microsoft.Windows.Storage.ApplicationData
+  langs:
+  - csharp
+  - vb
+  name: TemporaryPath
+  nameWithType: ApplicationData.TemporaryPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.TemporaryPath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Storage.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TemporaryPath
+    path: ../src/Microsoft.Windows.Storage.cs
+    startLine: 150
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Storage
+  syntax:
+    content: public string TemporaryPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TemporaryPath As String
+  overload: Microsoft.Windows.Storage.ApplicationData.TemporaryPath*
+references:
+- uid: Microsoft.Windows.Storage
+  commentId: N:Microsoft.Windows.Storage
+  href: Microsoft.html
+  name: Microsoft.Windows.Storage
+  nameWithType: Microsoft.Windows.Storage
+  fullName: Microsoft.Windows.Storage
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Storage
+    name: Storage
+    href: Microsoft.Windows.Storage.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Storage
+    name: Storage
+    href: Microsoft.Windows.Storage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.Storage.ApplicationData}
+  commentId: T:System.IEquatable{Microsoft.Windows.Storage.ApplicationData}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ApplicationData>
+  nameWithType: IEquatable<ApplicationData>
+  fullName: System.IEquatable<Microsoft.Windows.Storage.ApplicationData>
+  nameWithType.vb: IEquatable(Of ApplicationData)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Storage.ApplicationData)
+  name.vb: IEquatable(Of ApplicationData)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.Storage.ApplicationData
+    name: ApplicationData
+    href: Microsoft.Windows.Storage.ApplicationData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Storage.ApplicationData
+    name: ApplicationData
+    href: Microsoft.Windows.Storage.ApplicationData.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.Storage.ApplicationData.As*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.As
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_As__1
+  name: As
+  nameWithType: ApplicationData.As
+  fullName: Microsoft.Windows.Storage.ApplicationData.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.Storage.ApplicationData.GetDefault*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetDefault
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetDefault
+  name: GetDefault
+  nameWithType: ApplicationData.GetDefault
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetDefault
+- uid: Microsoft.Windows.Storage.ApplicationData
+  commentId: T:Microsoft.Windows.Storage.ApplicationData
+  parent: Microsoft.Windows.Storage
+  href: Microsoft.Windows.Storage.ApplicationData.html
+  name: ApplicationData
+  nameWithType: ApplicationData
+  fullName: Microsoft.Windows.Storage.ApplicationData
+- uid: Microsoft.Windows.Storage.ApplicationData.GetForUser*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetForUser
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetForUser_Windows_System_User_
+  name: GetForUser
+  nameWithType: ApplicationData.GetForUser
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetForUser
+- uid: Windows.System.User
+  commentId: T:Windows.System.User
+  parent: Windows.System
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.system.user
+  name: User
+  nameWithType: User
+  fullName: Windows.System.User
+- uid: Windows.System
+  commentId: N:Windows.System
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.System
+  nameWithType: Windows.System
+  fullName: Windows.System
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.system
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.system
+- uid: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetForPackageFamily_System_String_
+  name: GetForPackageFamily
+  nameWithType: ApplicationData.GetForPackageFamily
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetForPackageFamily
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.Storage.ApplicationData.FromAbi*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.FromAbi
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ApplicationData.FromAbi
+  fullName: Microsoft.Windows.Storage.ApplicationData.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.Storage.ApplicationData.op_Equality*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.op_Equality
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_op_Equality_Microsoft_Windows_Storage_ApplicationData_Microsoft_Windows_Storage_ApplicationData_
+  name: operator ==
+  nameWithType: ApplicationData.operator ==
+  fullName: Microsoft.Windows.Storage.ApplicationData.operator ==
+  nameWithType.vb: ApplicationData.=
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Storage.ApplicationData.op_Equality*
+    name: ==
+    href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_op_Equality_Microsoft_Windows_Storage_ApplicationData_Microsoft_Windows_Storage_ApplicationData_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.Storage.ApplicationData.op_Inequality*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.op_Inequality
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_op_Inequality_Microsoft_Windows_Storage_ApplicationData_Microsoft_Windows_Storage_ApplicationData_
+  name: operator !=
+  nameWithType: ApplicationData.operator !=
+  fullName: Microsoft.Windows.Storage.ApplicationData.operator !=
+  nameWithType.vb: ApplicationData.<>
+  fullName.vb: Microsoft.Windows.Storage.ApplicationData.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Storage.ApplicationData.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_op_Inequality_Microsoft_Windows_Storage_ApplicationData_Microsoft_Windows_Storage_ApplicationData_
+- uid: Microsoft.Windows.Storage.ApplicationData.Equals*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.Equals
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_Equals_Microsoft_Windows_Storage_ApplicationData_
+  name: Equals
+  nameWithType: ApplicationData.Equals
+  fullName: Microsoft.Windows.Storage.ApplicationData.Equals
+- uid: System.IEquatable{Microsoft.Windows.Storage.ApplicationData}.Equals(Microsoft.Windows.Storage.ApplicationData)
+  commentId: M:System.IEquatable{Microsoft.Windows.Storage.ApplicationData}.Equals(Microsoft.Windows.Storage.ApplicationData)
+  parent: System.IEquatable{Microsoft.Windows.Storage.ApplicationData}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ApplicationData)
+  nameWithType: IEquatable<ApplicationData>.Equals(ApplicationData)
+  fullName: System.IEquatable<Microsoft.Windows.Storage.ApplicationData>.Equals(Microsoft.Windows.Storage.ApplicationData)
+  nameWithType.vb: IEquatable(Of ApplicationData).Equals(ApplicationData)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Storage.ApplicationData).Equals(Microsoft.Windows.Storage.ApplicationData)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.Storage.ApplicationData}.Equals(Microsoft.Windows.Storage.ApplicationData)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Storage.ApplicationData
+    name: ApplicationData
+    href: Microsoft.Windows.Storage.ApplicationData.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.Storage.ApplicationData}.Equals(Microsoft.Windows.Storage.ApplicationData)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Storage.ApplicationData
+    name: ApplicationData
+    href: Microsoft.Windows.Storage.ApplicationData.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Storage.ApplicationData.GetHashCode*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetHashCode
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetHashCode
+  name: GetHashCode
+  nameWithType: ApplicationData.GetHashCode
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.Storage.ApplicationData.ClearAsync*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.ClearAsync
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_ClearAsync_Microsoft_Windows_Storage_ApplicationDataLocality_
+  name: ClearAsync
+  nameWithType: ApplicationData.ClearAsync
+  fullName: Microsoft.Windows.Storage.ApplicationData.ClearAsync
+- uid: Microsoft.Windows.Storage.ApplicationDataLocality
+  commentId: T:Microsoft.Windows.Storage.ApplicationDataLocality
+  parent: Microsoft.Windows.Storage
+  href: Microsoft.Windows.Storage.ApplicationDataLocality.html
+  name: ApplicationDataLocality
+  nameWithType: ApplicationDataLocality
+  fullName: Microsoft.Windows.Storage.ApplicationDataLocality
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_ClearPublisherCacheFolderAsync_System_String_
+  name: ClearPublisherCacheFolderAsync
+  nameWithType: ApplicationData.ClearPublisherCacheFolderAsync
+  fullName: Microsoft.Windows.Storage.ApplicationData.ClearPublisherCacheFolderAsync
+- uid: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetPublisherCachePath_System_String_
+  name: GetPublisherCachePath
+  nameWithType: ApplicationData.GetPublisherCachePath
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetPublisherCachePath
+- uid: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_GetPublisherCacheFolder_System_String_
+  name: GetPublisherCacheFolder
+  nameWithType: ApplicationData.GetPublisherCacheFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.GetPublisherCacheFolder
+- uid: Windows.Storage.StorageFolder
+  commentId: T:Windows.Storage.StorageFolder
+  parent: Windows.Storage
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.storage.storagefolder
+  name: StorageFolder
+  nameWithType: StorageFolder
+  fullName: Windows.Storage.StorageFolder
+- uid: Windows.Storage
+  commentId: N:Windows.Storage
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Storage
+  nameWithType: Windows.Storage
+  fullName: Windows.Storage
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+- uid: Microsoft.Windows.Storage.ApplicationData.Dispose*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.Dispose
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_Dispose
+  name: Dispose
+  nameWithType: ApplicationData.Dispose
+  fullName: Microsoft.Windows.Storage.ApplicationData.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_IsMachinePathSupported
+  name: IsMachinePathSupported
+  nameWithType: ApplicationData.IsMachinePathSupported
+  fullName: Microsoft.Windows.Storage.ApplicationData.IsMachinePathSupported
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_LocalCacheFolder
+  name: LocalCacheFolder
+  nameWithType: ApplicationData.LocalCacheFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalCacheFolder
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalCachePath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_LocalCachePath
+  name: LocalCachePath
+  nameWithType: ApplicationData.LocalCachePath
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalCachePath
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.LocalFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_LocalFolder
+  name: LocalFolder
+  nameWithType: ApplicationData.LocalFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalFolder
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalPath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.LocalPath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_LocalPath
+  name: LocalPath
+  nameWithType: ApplicationData.LocalPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalPath
+- uid: Microsoft.Windows.Storage.ApplicationData.LocalSettings*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.LocalSettings
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_LocalSettings
+  name: LocalSettings
+  nameWithType: ApplicationData.LocalSettings
+  fullName: Microsoft.Windows.Storage.ApplicationData.LocalSettings
+- uid: Microsoft.Windows.Storage.ApplicationDataContainer
+  commentId: T:Microsoft.Windows.Storage.ApplicationDataContainer
+  parent: Microsoft.Windows.Storage
+  href: Microsoft.Windows.Storage.ApplicationDataContainer.html
+  name: ApplicationDataContainer
+  nameWithType: ApplicationDataContainer
+  fullName: Microsoft.Windows.Storage.ApplicationDataContainer
+- uid: Microsoft.Windows.Storage.ApplicationData.MachineFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.MachineFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_MachineFolder
+  name: MachineFolder
+  nameWithType: ApplicationData.MachineFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.MachineFolder
+- uid: Microsoft.Windows.Storage.ApplicationData.MachinePath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.MachinePath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_MachinePath
+  name: MachinePath
+  nameWithType: ApplicationData.MachinePath
+  fullName: Microsoft.Windows.Storage.ApplicationData.MachinePath
+- uid: Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_SharedLocalFolder
+  name: SharedLocalFolder
+  nameWithType: ApplicationData.SharedLocalFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.SharedLocalFolder
+- uid: Microsoft.Windows.Storage.ApplicationData.SharedLocalPath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_SharedLocalPath
+  name: SharedLocalPath
+  nameWithType: ApplicationData.SharedLocalPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.SharedLocalPath
+- uid: Microsoft.Windows.Storage.ApplicationData.TemporaryFolder*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_TemporaryFolder
+  name: TemporaryFolder
+  nameWithType: ApplicationData.TemporaryFolder
+  fullName: Microsoft.Windows.Storage.ApplicationData.TemporaryFolder
+- uid: Microsoft.Windows.Storage.ApplicationData.TemporaryPath*
+  commentId: Overload:Microsoft.Windows.Storage.ApplicationData.TemporaryPath
+  href: Microsoft.Windows.Storage.ApplicationData.html#Microsoft_Windows_Storage_ApplicationData_TemporaryPath
+  name: TemporaryPath
+  nameWithType: ApplicationData.TemporaryPath
+  fullName: Microsoft.Windows.Storage.ApplicationData.TemporaryPath

@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  commentId: T:Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  id: IImageBufferPrivate
+  parent: Microsoft.Windows.PrivateCommon
+  children:
+  - Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource(System.Object)
+  - Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView
+  - Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData(System.UInt32)
+  - Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue
+  langs:
+  - csharp
+  - vb
+  name: IImageBufferPrivate
+  nameWithType: IImageBufferPrivate
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IImageBufferPrivate
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.PrivateCommon")]
+
+      [Guid("FA333FED-4E3C-53B4-BFAB-2F8A112D348C")]
+
+      [WindowsRuntimeHelperType(typeof(IImageBufferPrivate))]
+
+      [ContractVersion(typeof(SessionHostingSharedContract), 65536)]
+
+      public interface IImageBufferPrivate
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.PrivateCommon")>
+
+      <Guid("FA333FED-4E3C-53B4-BFAB-2F8A112D348C")>
+
+      <WindowsRuntimeHelperType(GetType(IImageBufferPrivate))>
+
+      <ContractVersion(GetType(SessionHostingSharedContract), 65536)>
+
+      Public Interface IImageBufferPrivate
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.PrivateCommon
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FA333FED-4E3C-53B4-BFAB-2F8A112D348C
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.PrivateCommon.SessionHostingSharedContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView
+  commentId: M:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView
+  id: GetImageBufferView
+  parent: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  langs:
+  - csharp
+  - vb
+  name: GetImageBufferView()
+  nameWithType: IImageBufferPrivate.GetImageBufferView()
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetImageBufferView
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: ImageBufferView GetImageBufferView()
+    return:
+      type: Microsoft.Windows.PrivateCommon.ImageBufferView
+    content.vb: Function GetImageBufferView() As ImageBufferView
+  overload: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView*
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData(System.UInt32)
+  commentId: M:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData(System.UInt32)
+  id: GetImageBufferViewData(System.UInt32)
+  parent: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  langs:
+  - csharp
+  - vb
+  name: GetImageBufferViewData(uint)
+  nameWithType: IImageBufferPrivate.GetImageBufferViewData(uint)
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetImageBufferViewData
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: ImageBufferViewData GetImageBufferViewData(uint targetProcessId)
+    parameters:
+    - id: targetProcessId
+      type: System.UInt32
+    return:
+      type: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    content.vb: Function GetImageBufferViewData(targetProcessId As UInteger) As ImageBufferViewData
+  overload: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData*
+  nameWithType.vb: IImageBufferPrivate.GetImageBufferViewData(UInteger)
+  fullName.vb: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData(UInteger)
+  name.vb: GetImageBufferViewData(UInteger)
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue
+  commentId: M:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue
+  id: SyncBufferWithOutValue
+  parent: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  langs:
+  - csharp
+  - vb
+  name: SyncBufferWithOutValue()
+  nameWithType: IImageBufferPrivate.SyncBufferWithOutValue()
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SyncBufferWithOutValue
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: void SyncBufferWithOutValue()
+    content.vb: Sub SyncBufferWithOutValue()
+  overload: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue*
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource(System.Object)
+  commentId: M:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource(System.Object)
+  id: GetImageBufferResource(System.Object)
+  parent: Microsoft.Windows.PrivateCommon.IImageBufferPrivate
+  langs:
+  - csharp
+  - vb
+  name: GetImageBufferResource(object)
+  nameWithType: IImageBufferPrivate.GetImageBufferResource(object)
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.PrivateCommon.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetImageBufferResource
+    path: ../src/Microsoft.Windows.PrivateCommon.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.PrivateCommon
+  syntax:
+    content: ImageBufferResource GetImageBufferResource(object sessionAsInspectable)
+    parameters:
+    - id: sessionAsInspectable
+      type: System.Object
+    return:
+      type: Microsoft.Windows.PrivateCommon.ImageBufferResource
+    content.vb: Function GetImageBufferResource(sessionAsInspectable As Object) As ImageBufferResource
+  overload: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource*
+  nameWithType.vb: IImageBufferPrivate.GetImageBufferResource(Object)
+  fullName.vb: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource(Object)
+  name.vb: GetImageBufferResource(Object)
+references:
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView*
+  commentId: Overload:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView
+  href: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.html#Microsoft_Windows_PrivateCommon_IImageBufferPrivate_GetImageBufferView
+  name: GetImageBufferView
+  nameWithType: IImageBufferPrivate.GetImageBufferView
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferView
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferView
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  name: ImageBufferView
+  nameWithType: ImageBufferView
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferView
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData*
+  commentId: Overload:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData
+  href: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.html#Microsoft_Windows_PrivateCommon_IImageBufferPrivate_GetImageBufferViewData_System_UInt32_
+  name: GetImageBufferViewData
+  nameWithType: IImageBufferPrivate.GetImageBufferViewData
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferViewData
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  name: ImageBufferViewData
+  nameWithType: ImageBufferViewData
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue*
+  commentId: Overload:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue
+  href: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.html#Microsoft_Windows_PrivateCommon_IImageBufferPrivate_SyncBufferWithOutValue
+  name: SyncBufferWithOutValue
+  nameWithType: IImageBufferPrivate.SyncBufferWithOutValue
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.SyncBufferWithOutValue
+- uid: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource*
+  commentId: Overload:Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource
+  href: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.html#Microsoft_Windows_PrivateCommon_IImageBufferPrivate_GetImageBufferResource_System_Object_
+  name: GetImageBufferResource
+  nameWithType: IImageBufferPrivate.GetImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.IImageBufferPrivate.GetImageBufferResource
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferResource
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferResource
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferResource.html
+  name: ImageBufferResource
+  nameWithType: ImageBufferResource
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferResource

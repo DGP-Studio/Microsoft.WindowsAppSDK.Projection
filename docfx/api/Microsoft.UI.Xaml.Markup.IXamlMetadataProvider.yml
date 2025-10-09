@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  commentId: T:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  id: IXamlMetadataProvider
+  parent: Microsoft.UI.Xaml.Markup
+  children:
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  - Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  langs:
+  - csharp
+  - vb
+  name: IXamlMetadataProvider
+  nameWithType: IXamlMetadataProvider
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Markup.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IXamlMetadataProvider
+    path: ../src/Microsoft.UI.Xaml.Markup.cs
+    startLine: 177
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Markup
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("A96251F0-2214-5D53-8746-CE99A2593CD7")]
+
+      [WindowsRuntimeHelperType(typeof(IXamlMetadataProvider))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface IXamlMetadataProvider
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("A96251F0-2214-5D53-8746-CE99A2593CD7")>
+
+      <WindowsRuntimeHelperType(GetType(IXamlMetadataProvider))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface IXamlMetadataProvider
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A96251F0-2214-5D53-8746-CE99A2593CD7
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  id: GetXamlType(System.Type)
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXamlType(Type)
+  nameWithType: IXamlMetadataProvider.GetXamlType(Type)
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Markup.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetXamlType
+    path: ../src/Microsoft.UI.Xaml.Markup.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Markup
+  syntax:
+    content: >-
+      [DefaultOverload]
+
+      [Overload("GetXamlType")]
+
+      IXamlType GetXamlType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: Microsoft.UI.Xaml.Markup.IXamlType
+    content.vb: >-
+      <DefaultOverload>
+
+      <Overload("GetXamlType")>
+
+      Function GetXamlType(type As Type) As IXamlType
+  overload: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType*
+  attributes:
+  - type: Windows.Foundation.Metadata.DefaultOverloadAttribute
+    ctor: Windows.Foundation.Metadata.DefaultOverloadAttribute.#ctor
+    arguments: []
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetXamlType
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(System.String)
+  id: GetXamlType(System.String)
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXamlType(string)
+  nameWithType: IXamlMetadataProvider.GetXamlType(string)
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Markup.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetXamlType
+    path: ../src/Microsoft.UI.Xaml.Markup.cs
+    startLine: 184
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Markup
+  syntax:
+    content: >-
+      [Overload("GetXamlTypeByFullName")]
+
+      IXamlType GetXamlType(string fullName)
+    parameters:
+    - id: fullName
+      type: System.String
+    return:
+      type: Microsoft.UI.Xaml.Markup.IXamlType
+    content.vb: >-
+      <Overload("GetXamlTypeByFullName")>
+
+      Function GetXamlType(fullName As String) As IXamlType
+  overload: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType*
+  attributes:
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetXamlTypeByFullName
+  nameWithType.vb: IXamlMetadataProvider.GetXamlType(String)
+  fullName.vb: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType(String)
+  name.vb: GetXamlType(String)
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  commentId: M:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  id: GetXmlnsDefinitions
+  parent: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetXmlnsDefinitions()
+  nameWithType: IXamlMetadataProvider.GetXmlnsDefinitions()
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Markup.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetXmlnsDefinitions
+    path: ../src/Microsoft.UI.Xaml.Markup.cs
+    startLine: 186
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Markup
+  syntax:
+    content: XmlnsDefinition[] GetXmlnsDefinitions()
+    return:
+      type: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+    content.vb: Function GetXmlnsDefinitions() As XmlnsDefinition()
+  overload: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions*
+references:
+- uid: Microsoft.UI.Xaml.Markup
+  commentId: N:Microsoft.UI.Xaml.Markup
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Markup
+  nameWithType: Microsoft.UI.Xaml.Markup
+  fullName: Microsoft.UI.Xaml.Markup
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Markup
+    name: Markup
+    href: Microsoft.UI.Xaml.Markup.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Markup
+    name: Markup
+    href: Microsoft.UI.Xaml.Markup.html
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType*
+  commentId: Overload:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+  href: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.html#Microsoft_UI_Xaml_Markup_IXamlMetadataProvider_GetXamlType_System_Type_
+  name: GetXamlType
+  nameWithType: IXamlMetadataProvider.GetXamlType
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXamlType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.UI.Xaml.Markup.IXamlType
+  commentId: T:Microsoft.UI.Xaml.Markup.IXamlType
+  parent: Microsoft.UI.Xaml.Markup
+  href: Microsoft.UI.Xaml.Markup.IXamlType.html
+  name: IXamlType
+  nameWithType: IXamlType
+  fullName: Microsoft.UI.Xaml.Markup.IXamlType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions*
+  commentId: Overload:Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+  href: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.html#Microsoft_UI_Xaml_Markup_IXamlMetadataProvider_GetXmlnsDefinitions
+  name: GetXmlnsDefinitions
+  nameWithType: IXamlMetadataProvider.GetXmlnsDefinitions
+  fullName: Microsoft.UI.Xaml.Markup.IXamlMetadataProvider.GetXmlnsDefinitions
+- uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+  isExternal: true
+  href: Microsoft.UI.Xaml.Markup.XmlnsDefinition.html
+  name: XmlnsDefinition[]
+  nameWithType: XmlnsDefinition[]
+  fullName: Microsoft.UI.Xaml.Markup.XmlnsDefinition[]
+  nameWithType.vb: XmlnsDefinition()
+  fullName.vb: Microsoft.UI.Xaml.Markup.XmlnsDefinition()
+  name.vb: XmlnsDefinition()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    name: XmlnsDefinition
+    href: Microsoft.UI.Xaml.Markup.XmlnsDefinition.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Markup.XmlnsDefinition
+    name: XmlnsDefinition
+    href: Microsoft.UI.Xaml.Markup.XmlnsDefinition.html
+  - name: (
+  - name: )

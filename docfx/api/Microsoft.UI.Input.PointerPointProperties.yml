@@ -1,0 +1,1660 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Input.PointerPointProperties
+  commentId: T:Microsoft.UI.Input.PointerPointProperties
+  id: PointerPointProperties
+  parent: Microsoft.UI.Input
+  children:
+  - Microsoft.UI.Input.PointerPointProperties.ContactRect
+  - Microsoft.UI.Input.PointerPointProperties.Equals(Microsoft.UI.Input.PointerPointProperties)
+  - Microsoft.UI.Input.PointerPointProperties.Equals(System.Object)
+  - Microsoft.UI.Input.PointerPointProperties.FromAbi(System.IntPtr)
+  - Microsoft.UI.Input.PointerPointProperties.GetHashCode
+  - Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+  - Microsoft.UI.Input.PointerPointProperties.IsCanceled
+  - Microsoft.UI.Input.PointerPointProperties.IsEraser
+  - Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+  - Microsoft.UI.Input.PointerPointProperties.IsInRange
+  - Microsoft.UI.Input.PointerPointProperties.IsInverted
+  - Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+  - Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+  - Microsoft.UI.Input.PointerPointProperties.IsPrimary
+  - Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+  - Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+  - Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+  - Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+  - Microsoft.UI.Input.PointerPointProperties.Orientation
+  - Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+  - Microsoft.UI.Input.PointerPointProperties.Pressure
+  - Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+  - Microsoft.UI.Input.PointerPointProperties.Twist
+  - Microsoft.UI.Input.PointerPointProperties.XTilt
+  - Microsoft.UI.Input.PointerPointProperties.YTilt
+  - Microsoft.UI.Input.PointerPointProperties.op_Equality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  - Microsoft.UI.Input.PointerPointProperties.op_Inequality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  langs:
+  - csharp
+  - vb
+  name: PointerPointProperties
+  nameWithType: PointerPointProperties
+  fullName: Microsoft.UI.Input.PointerPointProperties
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PointerPointProperties
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4957
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(PointerPointProperties))]
+
+      [ProjectedRuntimeClass(typeof(IPointerPointProperties))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public sealed class PointerPointProperties : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<PointerPointProperties>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(PointerPointProperties))>
+
+      <ProjectedRuntimeClass(GetType(IPointerPointProperties))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public NotInheritable Class PointerPointProperties Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of PointerPointProperties)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Input.PointerPointProperties}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Input.PointerPointProperties.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: PointerPointProperties.FromAbi(nint)
+  fullName: Microsoft.UI.Input.PointerPointProperties.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4973
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static PointerPointProperties FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Input.PointerPointProperties
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As PointerPointProperties
+  overload: Microsoft.UI.Input.PointerPointProperties.FromAbi*
+  nameWithType.vb: PointerPointProperties.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Input.PointerPointProperties.op_Equality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.op_Equality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  id: op_Equality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: operator ==(PointerPointProperties, PointerPointProperties)
+  nameWithType: PointerPointProperties.operator ==(PointerPointProperties, PointerPointProperties)
+  fullName: Microsoft.UI.Input.PointerPointProperties.operator ==(Microsoft.UI.Input.PointerPointProperties, Microsoft.UI.Input.PointerPointProperties)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4986
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator ==(PointerPointProperties x, PointerPointProperties y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.PointerPointProperties
+    - id: y
+      type: Microsoft.UI.Input.PointerPointProperties
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As PointerPointProperties, y As PointerPointProperties) As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.op_Equality*
+  nameWithType.vb: PointerPointProperties.=(PointerPointProperties, PointerPointProperties)
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.=(Microsoft.UI.Input.PointerPointProperties, Microsoft.UI.Input.PointerPointProperties)
+  name.vb: =(PointerPointProperties, PointerPointProperties)
+- uid: Microsoft.UI.Input.PointerPointProperties.op_Inequality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.op_Inequality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  id: op_Inequality(Microsoft.UI.Input.PointerPointProperties,Microsoft.UI.Input.PointerPointProperties)
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: operator !=(PointerPointProperties, PointerPointProperties)
+  nameWithType: PointerPointProperties.operator !=(PointerPointProperties, PointerPointProperties)
+  fullName: Microsoft.UI.Input.PointerPointProperties.operator !=(Microsoft.UI.Input.PointerPointProperties, Microsoft.UI.Input.PointerPointProperties)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4987
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator !=(PointerPointProperties x, PointerPointProperties y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.PointerPointProperties
+    - id: y
+      type: Microsoft.UI.Input.PointerPointProperties
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As PointerPointProperties, y As PointerPointProperties) As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.op_Inequality*
+  nameWithType.vb: PointerPointProperties.<>(PointerPointProperties, PointerPointProperties)
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.<>(Microsoft.UI.Input.PointerPointProperties, Microsoft.UI.Input.PointerPointProperties)
+  name.vb: <>(PointerPointProperties, PointerPointProperties)
+- uid: Microsoft.UI.Input.PointerPointProperties.Equals(Microsoft.UI.Input.PointerPointProperties)
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.Equals(Microsoft.UI.Input.PointerPointProperties)
+  id: Equals(Microsoft.UI.Input.PointerPointProperties)
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: Equals(PointerPointProperties)
+  nameWithType: PointerPointProperties.Equals(PointerPointProperties)
+  fullName: Microsoft.UI.Input.PointerPointProperties.Equals(Microsoft.UI.Input.PointerPointProperties)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4988
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(PointerPointProperties other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Input.PointerPointProperties
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As PointerPointProperties) As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Input.PointerPointProperties}.Equals(Microsoft.UI.Input.PointerPointProperties)
+- uid: Microsoft.UI.Input.PointerPointProperties.Equals(System.Object)
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: PointerPointProperties.Equals(object)
+  fullName: Microsoft.UI.Input.PointerPointProperties.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4989
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Input.PointerPointProperties.Equals*
+  nameWithType.vb: PointerPointProperties.Equals(Object)
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Input.PointerPointProperties.GetHashCode
+  commentId: M:Microsoft.UI.Input.PointerPointProperties.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: PointerPointProperties.GetHashCode()
+  fullName: Microsoft.UI.Input.PointerPointProperties.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 4990
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Input.PointerPointProperties.GetHashCode*
+- uid: Microsoft.UI.Input.PointerPointProperties.ContactRect
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.ContactRect
+  id: ContactRect
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: ContactRect
+  nameWithType: PointerPointProperties.ContactRect
+  fullName: Microsoft.UI.Input.PointerPointProperties.ContactRect
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ContactRect
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5013
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public Rect ContactRect { get; }
+    parameters: []
+    return:
+      type: Windows.Foundation.Rect
+    content.vb: Public ReadOnly Property ContactRect As Rect
+  overload: Microsoft.UI.Input.PointerPointProperties.ContactRect*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+  id: IsBarrelButtonPressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsBarrelButtonPressed
+  nameWithType: PointerPointProperties.IsBarrelButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsBarrelButtonPressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5015
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsBarrelButtonPressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsBarrelButtonPressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsCanceled
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsCanceled
+  id: IsCanceled
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsCanceled
+  nameWithType: PointerPointProperties.IsCanceled
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsCanceled
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsCanceled
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5017
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsCanceled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCanceled As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsCanceled*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsEraser
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsEraser
+  id: IsEraser
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsEraser
+  nameWithType: PointerPointProperties.IsEraser
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsEraser
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsEraser
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5019
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsEraser { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEraser As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsEraser*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+  id: IsHorizontalMouseWheel
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsHorizontalMouseWheel
+  nameWithType: PointerPointProperties.IsHorizontalMouseWheel
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsHorizontalMouseWheel
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5021
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsHorizontalMouseWheel { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsHorizontalMouseWheel As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsInRange
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsInRange
+  id: IsInRange
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsInRange
+  nameWithType: PointerPointProperties.IsInRange
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsInRange
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsInRange
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5023
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsInRange { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInRange As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsInRange*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsInverted
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsInverted
+  id: IsInverted
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsInverted
+  nameWithType: PointerPointProperties.IsInverted
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsInverted
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsInverted
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5025
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsInverted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInverted As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsInverted*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+  id: IsLeftButtonPressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsLeftButtonPressed
+  nameWithType: PointerPointProperties.IsLeftButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsLeftButtonPressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5027
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsLeftButtonPressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsLeftButtonPressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+  id: IsMiddleButtonPressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsMiddleButtonPressed
+  nameWithType: PointerPointProperties.IsMiddleButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsMiddleButtonPressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5029
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsMiddleButtonPressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsMiddleButtonPressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsPrimary
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsPrimary
+  id: IsPrimary
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsPrimary
+  nameWithType: PointerPointProperties.IsPrimary
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsPrimary
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsPrimary
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5031
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsPrimary { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPrimary As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsPrimary*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+  id: IsRightButtonPressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsRightButtonPressed
+  nameWithType: PointerPointProperties.IsRightButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsRightButtonPressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5033
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsRightButtonPressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRightButtonPressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+  id: IsXButton1Pressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsXButton1Pressed
+  nameWithType: PointerPointProperties.IsXButton1Pressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsXButton1Pressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5035
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsXButton1Pressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsXButton1Pressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+  id: IsXButton2Pressed
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: IsXButton2Pressed
+  nameWithType: PointerPointProperties.IsXButton2Pressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsXButton2Pressed
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5037
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsXButton2Pressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsXButton2Pressed As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed*
+- uid: Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+  id: MouseWheelDelta
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelDelta
+  nameWithType: PointerPointProperties.MouseWheelDelta
+  fullName: Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MouseWheelDelta
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5039
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public int MouseWheelDelta { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MouseWheelDelta As Integer
+  overload: Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta*
+- uid: Microsoft.UI.Input.PointerPointProperties.Orientation
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.Orientation
+  id: Orientation
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: PointerPointProperties.Orientation
+  fullName: Microsoft.UI.Input.PointerPointProperties.Orientation
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Orientation
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5041
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float Orientation { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Orientation As Single
+  overload: Microsoft.UI.Input.PointerPointProperties.Orientation*
+- uid: Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+  id: PointerUpdateKind
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: PointerUpdateKind
+  nameWithType: PointerPointProperties.PointerUpdateKind
+  fullName: Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PointerUpdateKind
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5043
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public PointerUpdateKind PointerUpdateKind { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.PointerUpdateKind
+    content.vb: Public ReadOnly Property PointerUpdateKind As PointerUpdateKind
+  overload: Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind*
+- uid: Microsoft.UI.Input.PointerPointProperties.Pressure
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.Pressure
+  id: Pressure
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: Pressure
+  nameWithType: PointerPointProperties.Pressure
+  fullName: Microsoft.UI.Input.PointerPointProperties.Pressure
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Pressure
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5045
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float Pressure { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Pressure As Single
+  overload: Microsoft.UI.Input.PointerPointProperties.Pressure*
+- uid: Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+  id: TouchConfidence
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: TouchConfidence
+  nameWithType: PointerPointProperties.TouchConfidence
+  fullName: Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TouchConfidence
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5047
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool TouchConfidence { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property TouchConfidence As Boolean
+  overload: Microsoft.UI.Input.PointerPointProperties.TouchConfidence*
+- uid: Microsoft.UI.Input.PointerPointProperties.Twist
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.Twist
+  id: Twist
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: Twist
+  nameWithType: PointerPointProperties.Twist
+  fullName: Microsoft.UI.Input.PointerPointProperties.Twist
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Twist
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5049
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float Twist { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Twist As Single
+  overload: Microsoft.UI.Input.PointerPointProperties.Twist*
+- uid: Microsoft.UI.Input.PointerPointProperties.XTilt
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.XTilt
+  id: XTilt
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: XTilt
+  nameWithType: PointerPointProperties.XTilt
+  fullName: Microsoft.UI.Input.PointerPointProperties.XTilt
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: XTilt
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5051
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float XTilt { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property XTilt As Single
+  overload: Microsoft.UI.Input.PointerPointProperties.XTilt*
+- uid: Microsoft.UI.Input.PointerPointProperties.YTilt
+  commentId: P:Microsoft.UI.Input.PointerPointProperties.YTilt
+  id: YTilt
+  parent: Microsoft.UI.Input.PointerPointProperties
+  langs:
+  - csharp
+  - vb
+  name: YTilt
+  nameWithType: PointerPointProperties.YTilt
+  fullName: Microsoft.UI.Input.PointerPointProperties.YTilt
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: YTilt
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 5053
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float YTilt { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property YTilt As Single
+  overload: Microsoft.UI.Input.PointerPointProperties.YTilt*
+references:
+- uid: Microsoft.UI.Input
+  commentId: N:Microsoft.UI.Input
+  href: Microsoft.html
+  name: Microsoft.UI.Input
+  nameWithType: Microsoft.UI.Input
+  fullName: Microsoft.UI.Input
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Input.PointerPointProperties}
+  commentId: T:System.IEquatable{Microsoft.UI.Input.PointerPointProperties}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PointerPointProperties>
+  nameWithType: IEquatable<PointerPointProperties>
+  fullName: System.IEquatable<Microsoft.UI.Input.PointerPointProperties>
+  nameWithType.vb: IEquatable(Of PointerPointProperties)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.PointerPointProperties)
+  name.vb: IEquatable(Of PointerPointProperties)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Input.PointerPointProperties
+    name: PointerPointProperties
+    href: Microsoft.UI.Input.PointerPointProperties.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.PointerPointProperties
+    name: PointerPointProperties
+    href: Microsoft.UI.Input.PointerPointProperties.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Input.PointerPointProperties.FromAbi*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.FromAbi
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: PointerPointProperties.FromAbi
+  fullName: Microsoft.UI.Input.PointerPointProperties.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Input.PointerPointProperties
+  commentId: T:Microsoft.UI.Input.PointerPointProperties
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.PointerPointProperties.html
+  name: PointerPointProperties
+  nameWithType: PointerPointProperties
+  fullName: Microsoft.UI.Input.PointerPointProperties
+- uid: Microsoft.UI.Input.PointerPointProperties.op_Equality*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.op_Equality
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_op_Equality_Microsoft_UI_Input_PointerPointProperties_Microsoft_UI_Input_PointerPointProperties_
+  name: operator ==
+  nameWithType: PointerPointProperties.operator ==
+  fullName: Microsoft.UI.Input.PointerPointProperties.operator ==
+  nameWithType.vb: PointerPointProperties.=
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.PointerPointProperties.op_Equality*
+    name: ==
+    href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_op_Equality_Microsoft_UI_Input_PointerPointProperties_Microsoft_UI_Input_PointerPointProperties_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Input.PointerPointProperties.op_Inequality*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.op_Inequality
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_op_Inequality_Microsoft_UI_Input_PointerPointProperties_Microsoft_UI_Input_PointerPointProperties_
+  name: operator !=
+  nameWithType: PointerPointProperties.operator !=
+  fullName: Microsoft.UI.Input.PointerPointProperties.operator !=
+  nameWithType.vb: PointerPointProperties.<>
+  fullName.vb: Microsoft.UI.Input.PointerPointProperties.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.PointerPointProperties.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_op_Inequality_Microsoft_UI_Input_PointerPointProperties_Microsoft_UI_Input_PointerPointProperties_
+- uid: Microsoft.UI.Input.PointerPointProperties.Equals*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.Equals
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_Equals_Microsoft_UI_Input_PointerPointProperties_
+  name: Equals
+  nameWithType: PointerPointProperties.Equals
+  fullName: Microsoft.UI.Input.PointerPointProperties.Equals
+- uid: System.IEquatable{Microsoft.UI.Input.PointerPointProperties}.Equals(Microsoft.UI.Input.PointerPointProperties)
+  commentId: M:System.IEquatable{Microsoft.UI.Input.PointerPointProperties}.Equals(Microsoft.UI.Input.PointerPointProperties)
+  parent: System.IEquatable{Microsoft.UI.Input.PointerPointProperties}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(PointerPointProperties)
+  nameWithType: IEquatable<PointerPointProperties>.Equals(PointerPointProperties)
+  fullName: System.IEquatable<Microsoft.UI.Input.PointerPointProperties>.Equals(Microsoft.UI.Input.PointerPointProperties)
+  nameWithType.vb: IEquatable(Of PointerPointProperties).Equals(PointerPointProperties)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.PointerPointProperties).Equals(Microsoft.UI.Input.PointerPointProperties)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Input.PointerPointProperties}.Equals(Microsoft.UI.Input.PointerPointProperties)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.PointerPointProperties
+    name: PointerPointProperties
+    href: Microsoft.UI.Input.PointerPointProperties.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Input.PointerPointProperties}.Equals(Microsoft.UI.Input.PointerPointProperties)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.PointerPointProperties
+    name: PointerPointProperties
+    href: Microsoft.UI.Input.PointerPointProperties.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Input.PointerPointProperties.GetHashCode*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.GetHashCode
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_GetHashCode
+  name: GetHashCode
+  nameWithType: PointerPointProperties.GetHashCode
+  fullName: Microsoft.UI.Input.PointerPointProperties.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Input.PointerPointProperties.ContactRect*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.ContactRect
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_ContactRect
+  name: ContactRect
+  nameWithType: PointerPointProperties.ContactRect
+  fullName: Microsoft.UI.Input.PointerPointProperties.ContactRect
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsBarrelButtonPressed
+  name: IsBarrelButtonPressed
+  nameWithType: PointerPointProperties.IsBarrelButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsBarrelButtonPressed
+- uid: Microsoft.UI.Input.PointerPointProperties.IsCanceled*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsCanceled
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsCanceled
+  name: IsCanceled
+  nameWithType: PointerPointProperties.IsCanceled
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsCanceled
+- uid: Microsoft.UI.Input.PointerPointProperties.IsEraser*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsEraser
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsEraser
+  name: IsEraser
+  nameWithType: PointerPointProperties.IsEraser
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsEraser
+- uid: Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsHorizontalMouseWheel
+  name: IsHorizontalMouseWheel
+  nameWithType: PointerPointProperties.IsHorizontalMouseWheel
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsHorizontalMouseWheel
+- uid: Microsoft.UI.Input.PointerPointProperties.IsInRange*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsInRange
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsInRange
+  name: IsInRange
+  nameWithType: PointerPointProperties.IsInRange
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsInRange
+- uid: Microsoft.UI.Input.PointerPointProperties.IsInverted*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsInverted
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsInverted
+  name: IsInverted
+  nameWithType: PointerPointProperties.IsInverted
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsInverted
+- uid: Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsLeftButtonPressed
+  name: IsLeftButtonPressed
+  nameWithType: PointerPointProperties.IsLeftButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsLeftButtonPressed
+- uid: Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsMiddleButtonPressed
+  name: IsMiddleButtonPressed
+  nameWithType: PointerPointProperties.IsMiddleButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsMiddleButtonPressed
+- uid: Microsoft.UI.Input.PointerPointProperties.IsPrimary*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsPrimary
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsPrimary
+  name: IsPrimary
+  nameWithType: PointerPointProperties.IsPrimary
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsPrimary
+- uid: Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsRightButtonPressed
+  name: IsRightButtonPressed
+  nameWithType: PointerPointProperties.IsRightButtonPressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsRightButtonPressed
+- uid: Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsXButton1Pressed
+  name: IsXButton1Pressed
+  nameWithType: PointerPointProperties.IsXButton1Pressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsXButton1Pressed
+- uid: Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_IsXButton2Pressed
+  name: IsXButton2Pressed
+  nameWithType: PointerPointProperties.IsXButton2Pressed
+  fullName: Microsoft.UI.Input.PointerPointProperties.IsXButton2Pressed
+- uid: Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_MouseWheelDelta
+  name: MouseWheelDelta
+  nameWithType: PointerPointProperties.MouseWheelDelta
+  fullName: Microsoft.UI.Input.PointerPointProperties.MouseWheelDelta
+- uid: Microsoft.UI.Input.PointerPointProperties.Orientation*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.Orientation
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_Orientation
+  name: Orientation
+  nameWithType: PointerPointProperties.Orientation
+  fullName: Microsoft.UI.Input.PointerPointProperties.Orientation
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_PointerUpdateKind
+  name: PointerUpdateKind
+  nameWithType: PointerPointProperties.PointerUpdateKind
+  fullName: Microsoft.UI.Input.PointerPointProperties.PointerUpdateKind
+- uid: Microsoft.UI.Input.PointerUpdateKind
+  commentId: T:Microsoft.UI.Input.PointerUpdateKind
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.PointerUpdateKind.html
+  name: PointerUpdateKind
+  nameWithType: PointerUpdateKind
+  fullName: Microsoft.UI.Input.PointerUpdateKind
+- uid: Microsoft.UI.Input.PointerPointProperties.Pressure*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.Pressure
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_Pressure
+  name: Pressure
+  nameWithType: PointerPointProperties.Pressure
+  fullName: Microsoft.UI.Input.PointerPointProperties.Pressure
+- uid: Microsoft.UI.Input.PointerPointProperties.TouchConfidence*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_TouchConfidence
+  name: TouchConfidence
+  nameWithType: PointerPointProperties.TouchConfidence
+  fullName: Microsoft.UI.Input.PointerPointProperties.TouchConfidence
+- uid: Microsoft.UI.Input.PointerPointProperties.Twist*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.Twist
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_Twist
+  name: Twist
+  nameWithType: PointerPointProperties.Twist
+  fullName: Microsoft.UI.Input.PointerPointProperties.Twist
+- uid: Microsoft.UI.Input.PointerPointProperties.XTilt*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.XTilt
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_XTilt
+  name: XTilt
+  nameWithType: PointerPointProperties.XTilt
+  fullName: Microsoft.UI.Input.PointerPointProperties.XTilt
+- uid: Microsoft.UI.Input.PointerPointProperties.YTilt*
+  commentId: Overload:Microsoft.UI.Input.PointerPointProperties.YTilt
+  href: Microsoft.UI.Input.PointerPointProperties.html#Microsoft_UI_Input_PointerPointProperties_YTilt
+  name: YTilt
+  nameWithType: PointerPointProperties.YTilt
+  fullName: Microsoft.UI.Input.PointerPointProperties.YTilt

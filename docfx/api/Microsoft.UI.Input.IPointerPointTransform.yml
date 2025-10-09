@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Input.IPointerPointTransform
+  commentId: T:Microsoft.UI.Input.IPointerPointTransform
+  id: IPointerPointTransform
+  parent: Microsoft.UI.Input
+  children:
+  - Microsoft.UI.Input.IPointerPointTransform.Inverse
+  - Microsoft.UI.Input.IPointerPointTransform.TryTransform(Windows.Foundation.Point,Windows.Foundation.Point@)
+  - Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds(Windows.Foundation.Rect,Windows.Foundation.Rect@)
+  langs:
+  - csharp
+  - vb
+  name: IPointerPointTransform
+  nameWithType: IPointerPointTransform
+  fullName: Microsoft.UI.Input.IPointerPointTransform
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IPointerPointTransform
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1859
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [Guid("DB4791BC-994D-54C7-92EF-66EA1DE9B43C")]
+
+      [WindowsRuntimeHelperType(typeof(IPointerPointTransform))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public interface IPointerPointTransform
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <Guid("DB4791BC-994D-54C7-92EF-66EA1DE9B43C")>
+
+      <WindowsRuntimeHelperType(GetType(IPointerPointTransform))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public Interface IPointerPointTransform
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DB4791BC-994D-54C7-92EF-66EA1DE9B43C
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Input.IPointerPointTransform.TryTransform(Windows.Foundation.Point,Windows.Foundation.Point@)
+  commentId: M:Microsoft.UI.Input.IPointerPointTransform.TryTransform(Windows.Foundation.Point,Windows.Foundation.Point@)
+  id: TryTransform(Windows.Foundation.Point,Windows.Foundation.Point@)
+  parent: Microsoft.UI.Input.IPointerPointTransform
+  langs:
+  - csharp
+  - vb
+  name: TryTransform(Point, out Point)
+  nameWithType: IPointerPointTransform.TryTransform(Point, out Point)
+  fullName: Microsoft.UI.Input.IPointerPointTransform.TryTransform(Windows.Foundation.Point, out Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TryTransform
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1863
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: bool TryTransform(Point inPoint, out Point outPoint)
+    parameters:
+    - id: inPoint
+      type: Windows.Foundation.Point
+    - id: outPoint
+      type: Windows.Foundation.Point
+    return:
+      type: System.Boolean
+    content.vb: Function TryTransform(inPoint As Point, outPoint As Point) As Boolean
+  overload: Microsoft.UI.Input.IPointerPointTransform.TryTransform*
+  nameWithType.vb: IPointerPointTransform.TryTransform(Point, Point)
+  fullName.vb: Microsoft.UI.Input.IPointerPointTransform.TryTransform(Windows.Foundation.Point, Windows.Foundation.Point)
+  name.vb: TryTransform(Point, Point)
+- uid: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds(Windows.Foundation.Rect,Windows.Foundation.Rect@)
+  commentId: M:Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds(Windows.Foundation.Rect,Windows.Foundation.Rect@)
+  id: TryTransformBounds(Windows.Foundation.Rect,Windows.Foundation.Rect@)
+  parent: Microsoft.UI.Input.IPointerPointTransform
+  langs:
+  - csharp
+  - vb
+  name: TryTransformBounds(Rect, out Rect)
+  nameWithType: IPointerPointTransform.TryTransformBounds(Rect, out Rect)
+  fullName: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds(Windows.Foundation.Rect, out Windows.Foundation.Rect)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TryTransformBounds
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1864
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: bool TryTransformBounds(Rect inRect, out Rect outRect)
+    parameters:
+    - id: inRect
+      type: Windows.Foundation.Rect
+    - id: outRect
+      type: Windows.Foundation.Rect
+    return:
+      type: System.Boolean
+    content.vb: Function TryTransformBounds(inRect As Rect, outRect As Rect) As Boolean
+  overload: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds*
+  nameWithType.vb: IPointerPointTransform.TryTransformBounds(Rect, Rect)
+  fullName.vb: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds(Windows.Foundation.Rect, Windows.Foundation.Rect)
+  name.vb: TryTransformBounds(Rect, Rect)
+- uid: Microsoft.UI.Input.IPointerPointTransform.Inverse
+  commentId: P:Microsoft.UI.Input.IPointerPointTransform.Inverse
+  id: Inverse
+  parent: Microsoft.UI.Input.IPointerPointTransform
+  langs:
+  - csharp
+  - vb
+  name: Inverse
+  nameWithType: IPointerPointTransform.Inverse
+  fullName: Microsoft.UI.Input.IPointerPointTransform.Inverse
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Inverse
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1865
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: IPointerPointTransform Inverse { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.IPointerPointTransform
+    content.vb: ReadOnly Property Inverse As IPointerPointTransform
+  overload: Microsoft.UI.Input.IPointerPointTransform.Inverse*
+references:
+- uid: Microsoft.UI.Input
+  commentId: N:Microsoft.UI.Input
+  href: Microsoft.html
+  name: Microsoft.UI.Input
+  nameWithType: Microsoft.UI.Input
+  fullName: Microsoft.UI.Input
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+- uid: Microsoft.UI.Input.IPointerPointTransform.TryTransform*
+  commentId: Overload:Microsoft.UI.Input.IPointerPointTransform.TryTransform
+  href: Microsoft.UI.Input.IPointerPointTransform.html#Microsoft_UI_Input_IPointerPointTransform_TryTransform_Windows_Foundation_Point_Windows_Foundation_Point__
+  name: TryTransform
+  nameWithType: IPointerPointTransform.TryTransform
+  fullName: Microsoft.UI.Input.IPointerPointTransform.TryTransform
+- uid: Windows.Foundation.Point
+  commentId: T:Windows.Foundation.Point
+  parent: Windows.Foundation
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Windows.Foundation.Point
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds*
+  commentId: Overload:Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds
+  href: Microsoft.UI.Input.IPointerPointTransform.html#Microsoft_UI_Input_IPointerPointTransform_TryTransformBounds_Windows_Foundation_Rect_Windows_Foundation_Rect__
+  name: TryTransformBounds
+  nameWithType: IPointerPointTransform.TryTransformBounds
+  fullName: Microsoft.UI.Input.IPointerPointTransform.TryTransformBounds
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Microsoft.UI.Input.IPointerPointTransform.Inverse*
+  commentId: Overload:Microsoft.UI.Input.IPointerPointTransform.Inverse
+  href: Microsoft.UI.Input.IPointerPointTransform.html#Microsoft_UI_Input_IPointerPointTransform_Inverse
+  name: Inverse
+  nameWithType: IPointerPointTransform.Inverse
+  fullName: Microsoft.UI.Input.IPointerPointTransform.Inverse
+- uid: Microsoft.UI.Input.IPointerPointTransform
+  commentId: T:Microsoft.UI.Input.IPointerPointTransform
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.IPointerPointTransform.html
+  name: IPointerPointTransform
+  nameWithType: IPointerPointTransform
+  fullName: Microsoft.UI.Input.IPointerPointTransform

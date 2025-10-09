@@ -1,0 +1,386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession2
+  commentId: T:Microsoft.Windows.VisionInternal.ITextRecognizerSession2
+  id: ITextRecognizerSession2
+  parent: Microsoft.Windows.VisionInternal
+  children:
+  - Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: ITextRecognizerSession2
+  nameWithType: ITextRecognizerSession2
+  fullName: Microsoft.Windows.VisionInternal.ITextRecognizerSession2
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.VisionInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextRecognizerSession2
+    path: ../src/Microsoft.Windows.VisionInternal.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.VisionInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.VisionInternal")]
+
+      [Guid("2C94B208-5641-4240-B81D-13957FC41CB8")]
+
+      [WindowsRuntimeHelperType(typeof(ITextRecognizerSession2))]
+
+      [ContractVersion(typeof(TextRecognitionSessionContract), 131072)]
+
+      public interface ITextRecognizerSession2 : ITextRecognizerSession, IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.VisionInternal")>
+
+      <Guid("2C94B208-5641-4240-B81D-13957FC41CB8")>
+
+      <WindowsRuntimeHelperType(GetType(ITextRecognizerSession2))>
+
+      <ContractVersion(GetType(TextRecognitionSessionContract), 131072)>
+
+      Public Interface ITextRecognizerSession2 Inherits ITextRecognizerSession, IDisposable
+  inheritedMembers:
+  - Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.VisionInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2C94B208-5641-4240-B81D-13957FC41CB8
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.VisionInternal.TextRecognitionSessionContract
+    - type: System.UInt32
+      value: "131072"
+- uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal,System.UInt32,System.UInt32)
+  id: RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal,System.UInt32,System.UInt32)
+  parent: Microsoft.Windows.VisionInternal.ITextRecognizerSession2
+  langs:
+  - csharp
+  - vb
+  name: RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal, uint, uint)
+  nameWithType: ITextRecognizerSession2.RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal, uint, uint)
+  fullName: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.VisionInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RecognizeTextFromImageAsync
+    path: ../src/Microsoft.Windows.VisionInternal.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.VisionInternal
+  syntax:
+    content: IAsyncOperation<IRecognizedTextInternal> RecognizeTextFromImageAsync(ImageBufferView imageBufferView, ImageBufferViewData imageBufferViewData, TextRecognizerOptionsInternal options, uint priority, uint frequency)
+    parameters:
+    - id: imageBufferView
+      type: Microsoft.Windows.PrivateCommon.ImageBufferView
+    - id: imageBufferViewData
+      type: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    - id: options
+      type: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.Windows.VisionInternal.IRecognizedTextInternal}
+    content.vb: Function RecognizeTextFromImageAsync(imageBufferView As ImageBufferView, imageBufferViewData As ImageBufferViewData, options As TextRecognizerOptionsInternal, priority As UInteger, frequency As UInteger) As IAsyncOperation(Of IRecognizedTextInternal)
+  overload: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync*
+  nameWithType.vb: ITextRecognizerSession2.RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal, UInteger, UInteger)
+  fullName.vb: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal, UInteger, UInteger)
+  name.vb: RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal, UInteger, UInteger)
+references:
+- uid: Microsoft.Windows.VisionInternal
+  commentId: N:Microsoft.Windows.VisionInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.VisionInternal
+  nameWithType: Microsoft.Windows.VisionInternal
+  fullName: Microsoft.Windows.VisionInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.VisionInternal
+    name: VisionInternal
+    href: Microsoft.Windows.VisionInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.VisionInternal
+    name: VisionInternal
+    href: Microsoft.Windows.VisionInternal.html
+- uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+  commentId: M:Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+  parent: Microsoft.Windows.VisionInternal.ITextRecognizerSession
+  href: Microsoft.Windows.VisionInternal.ITextRecognizerSession.html#Microsoft_Windows_VisionInternal_ITextRecognizerSession_RecognizeTextFromImageAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_Microsoft_Windows_VisionInternal_TextRecognizerOptionsInternal_
+  name: RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal)
+  nameWithType: ITextRecognizerSession.RecognizeTextFromImageAsync(ImageBufferView, ImageBufferViewData, TextRecognizerOptionsInternal)
+  fullName: Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+  spec.csharp:
+  - uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+    name: RecognizeTextFromImageAsync
+    href: Microsoft.Windows.VisionInternal.ITextRecognizerSession.html#Microsoft_Windows_VisionInternal_ITextRecognizerSession_RecognizeTextFromImageAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_Microsoft_Windows_VisionInternal_TextRecognizerOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+    name: TextRecognizerOptionsInternal
+    href: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession.RecognizeTextFromImageAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal)
+    name: RecognizeTextFromImageAsync
+    href: Microsoft.Windows.VisionInternal.ITextRecognizerSession.html#Microsoft_Windows_VisionInternal_ITextRecognizerSession_RecognizeTextFromImageAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_Microsoft_Windows_VisionInternal_TextRecognizerOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+    name: TextRecognizerOptionsInternal
+    href: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal.html
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession
+  commentId: T:Microsoft.Windows.VisionInternal.ITextRecognizerSession
+  parent: Microsoft.Windows.VisionInternal
+  href: Microsoft.Windows.VisionInternal.ITextRecognizerSession.html
+  name: ITextRecognizerSession
+  nameWithType: ITextRecognizerSession
+  fullName: Microsoft.Windows.VisionInternal.ITextRecognizerSession
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync*
+  commentId: Overload:Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync
+  href: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.html#Microsoft_Windows_VisionInternal_ITextRecognizerSession2_RecognizeTextFromImageAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_Microsoft_Windows_VisionInternal_TextRecognizerOptionsInternal_System_UInt32_System_UInt32_
+  name: RecognizeTextFromImageAsync
+  nameWithType: ITextRecognizerSession2.RecognizeTextFromImageAsync
+  fullName: Microsoft.Windows.VisionInternal.ITextRecognizerSession2.RecognizeTextFromImageAsync
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferView
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  name: ImageBufferView
+  nameWithType: ImageBufferView
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferView
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  name: ImageBufferViewData
+  nameWithType: ImageBufferViewData
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+- uid: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+  commentId: T:Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+  parent: Microsoft.Windows.VisionInternal
+  href: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal.html
+  name: TextRecognizerOptionsInternal
+  nameWithType: TextRecognizerOptionsInternal
+  fullName: Microsoft.Windows.VisionInternal.TextRecognizerOptionsInternal
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.Windows.VisionInternal.IRecognizedTextInternal}
+  commentId: T:Windows.Foundation.IAsyncOperation{Microsoft.Windows.VisionInternal.IRecognizedTextInternal}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<IRecognizedTextInternal>
+  nameWithType: IAsyncOperation<IRecognizedTextInternal>
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.Windows.VisionInternal.IRecognizedTextInternal>
+  nameWithType.vb: IAsyncOperation(Of IRecognizedTextInternal)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.Windows.VisionInternal.IRecognizedTextInternal)
+  name.vb: IAsyncOperation(Of IRecognizedTextInternal)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Microsoft.Windows.VisionInternal.IRecognizedTextInternal
+    name: IRecognizedTextInternal
+    href: Microsoft.Windows.VisionInternal.IRecognizedTextInternal.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.VisionInternal.IRecognizedTextInternal
+    name: IRecognizedTextInternal
+    href: Microsoft.Windows.VisionInternal.IRecognizedTextInternal.html
+  - name: )
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

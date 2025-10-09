@@ -1,0 +1,1350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Text.ITextParagraphFormat
+  commentId: T:Microsoft.UI.Text.ITextParagraphFormat
+  id: ITextParagraphFormat
+  parent: Microsoft.UI.Text
+  children:
+  - Microsoft.UI.Text.ITextParagraphFormat.AddTab(System.Single,Microsoft.UI.Text.TabAlignment,Microsoft.UI.Text.TabLeader)
+  - Microsoft.UI.Text.ITextParagraphFormat.Alignment
+  - Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs
+  - Microsoft.UI.Text.ITextParagraphFormat.DeleteTab(System.Single)
+  - Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+  - Microsoft.UI.Text.ITextParagraphFormat.GetClone
+  - Microsoft.UI.Text.ITextParagraphFormat.GetTab(System.Int32,System.Single@,Microsoft.UI.Text.TabAlignment@,Microsoft.UI.Text.TabLeader@)
+  - Microsoft.UI.Text.ITextParagraphFormat.IsEqual(Microsoft.UI.Text.ITextParagraphFormat)
+  - Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+  - Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+  - Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+  - Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+  - Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+  - Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+  - Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+  - Microsoft.UI.Text.ITextParagraphFormat.ListStart
+  - Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+  - Microsoft.UI.Text.ITextParagraphFormat.ListTab
+  - Microsoft.UI.Text.ITextParagraphFormat.ListType
+  - Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+  - Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+  - Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+  - Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+  - Microsoft.UI.Text.ITextParagraphFormat.SetClone(Microsoft.UI.Text.ITextParagraphFormat)
+  - Microsoft.UI.Text.ITextParagraphFormat.SetIndents(System.Single,System.Single,System.Single)
+  - Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing(Microsoft.UI.Text.LineSpacingRule,System.Single)
+  - Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+  - Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+  - Microsoft.UI.Text.ITextParagraphFormat.Style
+  - Microsoft.UI.Text.ITextParagraphFormat.TabCount
+  - Microsoft.UI.Text.ITextParagraphFormat.WidowControl
+  langs:
+  - csharp
+  - vb
+  name: ITextParagraphFormat
+  nameWithType: ITextParagraphFormat
+  fullName: Microsoft.UI.Text.ITextParagraphFormat
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextParagraphFormat
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 276
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Text")]
+
+      [Guid("219B6CDF-0D0B-5701-B8A1-6C906B3EBBE1")]
+
+      [WindowsRuntimeHelperType(typeof(ITextParagraphFormat))]
+
+      [ContractVersion(typeof(TextApiContract), 65536)]
+
+      public interface ITextParagraphFormat
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Text")>
+
+      <Guid("219B6CDF-0D0B-5701-B8A1-6C906B3EBBE1")>
+
+      <WindowsRuntimeHelperType(GetType(ITextParagraphFormat))>
+
+      <ContractVersion(GetType(TextApiContract), 65536)>
+
+      Public Interface ITextParagraphFormat
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Text
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 219B6CDF-0D0B-5701-B8A1-6C906B3EBBE1
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Text.TextApiContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Text.ITextParagraphFormat.AddTab(System.Single,Microsoft.UI.Text.TabAlignment,Microsoft.UI.Text.TabLeader)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.AddTab(System.Single,Microsoft.UI.Text.TabAlignment,Microsoft.UI.Text.TabLeader)
+  id: AddTab(System.Single,Microsoft.UI.Text.TabAlignment,Microsoft.UI.Text.TabLeader)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: AddTab(float, TabAlignment, TabLeader)
+  nameWithType: ITextParagraphFormat.AddTab(float, TabAlignment, TabLeader)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.AddTab(float, Microsoft.UI.Text.TabAlignment, Microsoft.UI.Text.TabLeader)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AddTab
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 280
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void AddTab(float position, TabAlignment align, TabLeader leader)
+    parameters:
+    - id: position
+      type: System.Single
+    - id: align
+      type: Microsoft.UI.Text.TabAlignment
+    - id: leader
+      type: Microsoft.UI.Text.TabLeader
+    content.vb: Sub AddTab(position As Single, align As TabAlignment, leader As TabLeader)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.AddTab*
+  nameWithType.vb: ITextParagraphFormat.AddTab(Single, TabAlignment, TabLeader)
+  fullName.vb: Microsoft.UI.Text.ITextParagraphFormat.AddTab(Single, Microsoft.UI.Text.TabAlignment, Microsoft.UI.Text.TabLeader)
+  name.vb: AddTab(Single, TabAlignment, TabLeader)
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs
+  id: ClearAllTabs
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ClearAllTabs()
+  nameWithType: ITextParagraphFormat.ClearAllTabs()
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClearAllTabs
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 281
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void ClearAllTabs()
+    content.vb: Sub ClearAllTabs()
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab(System.Single)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.DeleteTab(System.Single)
+  id: DeleteTab(System.Single)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: DeleteTab(float)
+  nameWithType: ITextParagraphFormat.DeleteTab(float)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab(float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DeleteTab
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 282
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void DeleteTab(float position)
+    parameters:
+    - id: position
+      type: System.Single
+    content.vb: Sub DeleteTab(position As Single)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab*
+  nameWithType.vb: ITextParagraphFormat.DeleteTab(Single)
+  fullName.vb: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab(Single)
+  name.vb: DeleteTab(Single)
+- uid: Microsoft.UI.Text.ITextParagraphFormat.GetClone
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.GetClone
+  id: GetClone
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: GetClone()
+  nameWithType: ITextParagraphFormat.GetClone()
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.GetClone()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetClone
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 283
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ITextParagraphFormat GetClone()
+    return:
+      type: Microsoft.UI.Text.ITextParagraphFormat
+    content.vb: Function GetClone() As ITextParagraphFormat
+  overload: Microsoft.UI.Text.ITextParagraphFormat.GetClone*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.GetTab(System.Int32,System.Single@,Microsoft.UI.Text.TabAlignment@,Microsoft.UI.Text.TabLeader@)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.GetTab(System.Int32,System.Single@,Microsoft.UI.Text.TabAlignment@,Microsoft.UI.Text.TabLeader@)
+  id: GetTab(System.Int32,System.Single@,Microsoft.UI.Text.TabAlignment@,Microsoft.UI.Text.TabLeader@)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: GetTab(int, out float, out TabAlignment, out TabLeader)
+  nameWithType: ITextParagraphFormat.GetTab(int, out float, out TabAlignment, out TabLeader)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.GetTab(int, out float, out Microsoft.UI.Text.TabAlignment, out Microsoft.UI.Text.TabLeader)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetTab
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 284
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void GetTab(int index, out float position, out TabAlignment align, out TabLeader leader)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: position
+      type: System.Single
+    - id: align
+      type: Microsoft.UI.Text.TabAlignment
+    - id: leader
+      type: Microsoft.UI.Text.TabLeader
+    content.vb: Sub GetTab(index As Integer, position As Single, align As TabAlignment, leader As TabLeader)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.GetTab*
+  nameWithType.vb: ITextParagraphFormat.GetTab(Integer, Single, TabAlignment, TabLeader)
+  fullName.vb: Microsoft.UI.Text.ITextParagraphFormat.GetTab(Integer, Single, Microsoft.UI.Text.TabAlignment, Microsoft.UI.Text.TabLeader)
+  name.vb: GetTab(Integer, Single, TabAlignment, TabLeader)
+- uid: Microsoft.UI.Text.ITextParagraphFormat.IsEqual(Microsoft.UI.Text.ITextParagraphFormat)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.IsEqual(Microsoft.UI.Text.ITextParagraphFormat)
+  id: IsEqual(Microsoft.UI.Text.ITextParagraphFormat)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: IsEqual(ITextParagraphFormat)
+  nameWithType: ITextParagraphFormat.IsEqual(ITextParagraphFormat)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.IsEqual(Microsoft.UI.Text.ITextParagraphFormat)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsEqual
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 285
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: bool IsEqual(ITextParagraphFormat format)
+    parameters:
+    - id: format
+      type: Microsoft.UI.Text.ITextParagraphFormat
+    return:
+      type: System.Boolean
+    content.vb: Function IsEqual(format As ITextParagraphFormat) As Boolean
+  overload: Microsoft.UI.Text.ITextParagraphFormat.IsEqual*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetClone(Microsoft.UI.Text.ITextParagraphFormat)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.SetClone(Microsoft.UI.Text.ITextParagraphFormat)
+  id: SetClone(Microsoft.UI.Text.ITextParagraphFormat)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: SetClone(ITextParagraphFormat)
+  nameWithType: ITextParagraphFormat.SetClone(ITextParagraphFormat)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetClone(Microsoft.UI.Text.ITextParagraphFormat)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetClone
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 286
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetClone(ITextParagraphFormat format)
+    parameters:
+    - id: format
+      type: Microsoft.UI.Text.ITextParagraphFormat
+    content.vb: Sub SetClone(format As ITextParagraphFormat)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.SetClone*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetIndents(System.Single,System.Single,System.Single)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.SetIndents(System.Single,System.Single,System.Single)
+  id: SetIndents(System.Single,System.Single,System.Single)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: SetIndents(float, float, float)
+  nameWithType: ITextParagraphFormat.SetIndents(float, float, float)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetIndents(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetIndents
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 287
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetIndents(float start, float left, float right)
+    parameters:
+    - id: start
+      type: System.Single
+    - id: left
+      type: System.Single
+    - id: right
+      type: System.Single
+    content.vb: Sub SetIndents(start As Single, left As Single, right As Single)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.SetIndents*
+  nameWithType.vb: ITextParagraphFormat.SetIndents(Single, Single, Single)
+  fullName.vb: Microsoft.UI.Text.ITextParagraphFormat.SetIndents(Single, Single, Single)
+  name.vb: SetIndents(Single, Single, Single)
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing(Microsoft.UI.Text.LineSpacingRule,System.Single)
+  commentId: M:Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing(Microsoft.UI.Text.LineSpacingRule,System.Single)
+  id: SetLineSpacing(Microsoft.UI.Text.LineSpacingRule,System.Single)
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: SetLineSpacing(LineSpacingRule, float)
+  nameWithType: ITextParagraphFormat.SetLineSpacing(LineSpacingRule, float)
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing(Microsoft.UI.Text.LineSpacingRule, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetLineSpacing
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 288
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: void SetLineSpacing(LineSpacingRule rule, float spacing)
+    parameters:
+    - id: rule
+      type: Microsoft.UI.Text.LineSpacingRule
+    - id: spacing
+      type: System.Single
+    content.vb: Sub SetLineSpacing(rule As LineSpacingRule, spacing As Single)
+  overload: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing*
+  nameWithType.vb: ITextParagraphFormat.SetLineSpacing(LineSpacingRule, Single)
+  fullName.vb: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing(Microsoft.UI.Text.LineSpacingRule, Single)
+  name.vb: SetLineSpacing(LineSpacingRule, Single)
+- uid: Microsoft.UI.Text.ITextParagraphFormat.Alignment
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.Alignment
+  id: Alignment
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: Alignment
+  nameWithType: ITextParagraphFormat.Alignment
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.Alignment
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Alignment
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 289
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ParagraphAlignment Alignment { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ParagraphAlignment
+    content.vb: Property Alignment As ParagraphAlignment
+  overload: Microsoft.UI.Text.ITextParagraphFormat.Alignment*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+  id: FirstLineIndent
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: FirstLineIndent
+  nameWithType: ITextParagraphFormat.FirstLineIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FirstLineIndent
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 290
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float FirstLineIndent { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property FirstLineIndent As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+  id: KeepTogether
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: KeepTogether
+  nameWithType: ITextParagraphFormat.KeepTogether
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: KeepTogether
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 291
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect KeepTogether { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property KeepTogether As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.KeepTogether*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+  id: KeepWithNext
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: KeepWithNext
+  nameWithType: ITextParagraphFormat.KeepWithNext
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: KeepWithNext
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 292
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect KeepWithNext { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property KeepWithNext As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+  id: LeftIndent
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: LeftIndent
+  nameWithType: ITextParagraphFormat.LeftIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LeftIndent
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 293
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float LeftIndent { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property LeftIndent As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.LeftIndent*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+  id: LineSpacing
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: LineSpacing
+  nameWithType: ITextParagraphFormat.LineSpacing
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LineSpacing
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 294
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float LineSpacing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property LineSpacing As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.LineSpacing*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+  id: LineSpacingRule
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: LineSpacingRule
+  nameWithType: ITextParagraphFormat.LineSpacingRule
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LineSpacingRule
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 295
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: LineSpacingRule LineSpacingRule { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.LineSpacingRule
+    content.vb: ReadOnly Property LineSpacingRule As LineSpacingRule
+  overload: Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+  id: ListAlignment
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListAlignment
+  nameWithType: ITextParagraphFormat.ListAlignment
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListAlignment
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 296
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: MarkerAlignment ListAlignment { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.MarkerAlignment
+    content.vb: Property ListAlignment As MarkerAlignment
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListAlignment*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+  id: ListLevelIndex
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListLevelIndex
+  nameWithType: ITextParagraphFormat.ListLevelIndex
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListLevelIndex
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 297
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int ListLevelIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property ListLevelIndex As Integer
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListStart
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListStart
+  id: ListStart
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListStart
+  nameWithType: ITextParagraphFormat.ListStart
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListStart
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListStart
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 298
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int ListStart { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property ListStart As Integer
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListStart*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+  id: ListStyle
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListStyle
+  nameWithType: ITextParagraphFormat.ListStyle
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListStyle
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 299
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: MarkerStyle ListStyle { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.MarkerStyle
+    content.vb: Property ListStyle As MarkerStyle
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListStyle*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListTab
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListTab
+  id: ListTab
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListTab
+  nameWithType: ITextParagraphFormat.ListTab
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListTab
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListTab
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 300
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float ListTab { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property ListTab As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListTab*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListType
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.ListType
+  id: ListType
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: ListType
+  nameWithType: ITextParagraphFormat.ListType
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListType
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ListType
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 301
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: MarkerType ListType { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.MarkerType
+    content.vb: Property ListType As MarkerType
+  overload: Microsoft.UI.Text.ITextParagraphFormat.ListType*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+  id: NoLineNumber
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: NoLineNumber
+  nameWithType: ITextParagraphFormat.NoLineNumber
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: NoLineNumber
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 302
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect NoLineNumber { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property NoLineNumber As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+  id: PageBreakBefore
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: PageBreakBefore
+  nameWithType: ITextParagraphFormat.PageBreakBefore
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PageBreakBefore
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect PageBreakBefore { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property PageBreakBefore As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+  id: RightIndent
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: RightIndent
+  nameWithType: ITextParagraphFormat.RightIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RightIndent
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 304
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float RightIndent { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property RightIndent As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.RightIndent*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+  id: RightToLeft
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: RightToLeft
+  nameWithType: ITextParagraphFormat.RightToLeft
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RightToLeft
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect RightToLeft { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property RightToLeft As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.RightToLeft*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+  id: SpaceAfter
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: SpaceAfter
+  nameWithType: ITextParagraphFormat.SpaceAfter
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SpaceAfter
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 306
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float SpaceAfter { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property SpaceAfter As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+  id: SpaceBefore
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: SpaceBefore
+  nameWithType: ITextParagraphFormat.SpaceBefore
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SpaceBefore
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 307
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: float SpaceBefore { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property SpaceBefore As Single
+  overload: Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.Style
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.Style
+  id: Style
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: Style
+  nameWithType: ITextParagraphFormat.Style
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.Style
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Style
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 308
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: ParagraphStyle Style { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ParagraphStyle
+    content.vb: Property Style As ParagraphStyle
+  overload: Microsoft.UI.Text.ITextParagraphFormat.Style*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.TabCount
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.TabCount
+  id: TabCount
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: TabCount
+  nameWithType: ITextParagraphFormat.TabCount
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.TabCount
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TabCount
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 309
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: int TabCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TabCount As Integer
+  overload: Microsoft.UI.Text.ITextParagraphFormat.TabCount*
+- uid: Microsoft.UI.Text.ITextParagraphFormat.WidowControl
+  commentId: P:Microsoft.UI.Text.ITextParagraphFormat.WidowControl
+  id: WidowControl
+  parent: Microsoft.UI.Text.ITextParagraphFormat
+  langs:
+  - csharp
+  - vb
+  name: WidowControl
+  nameWithType: ITextParagraphFormat.WidowControl
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.WidowControl
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: WidowControl
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 310
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: FormatEffect WidowControl { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.FormatEffect
+    content.vb: Property WidowControl As FormatEffect
+  overload: Microsoft.UI.Text.ITextParagraphFormat.WidowControl*
+references:
+- uid: Microsoft.UI.Text
+  commentId: N:Microsoft.UI.Text
+  href: Microsoft.html
+  name: Microsoft.UI.Text
+  nameWithType: Microsoft.UI.Text
+  fullName: Microsoft.UI.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+- uid: Microsoft.UI.Text.ITextParagraphFormat.AddTab*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.AddTab
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_AddTab_System_Single_Microsoft_UI_Text_TabAlignment_Microsoft_UI_Text_TabLeader_
+  name: AddTab
+  nameWithType: ITextParagraphFormat.AddTab
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.AddTab
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Text.TabAlignment
+  commentId: T:Microsoft.UI.Text.TabAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TabAlignment.html
+  name: TabAlignment
+  nameWithType: TabAlignment
+  fullName: Microsoft.UI.Text.TabAlignment
+- uid: Microsoft.UI.Text.TabLeader
+  commentId: T:Microsoft.UI.Text.TabLeader
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TabLeader.html
+  name: TabLeader
+  nameWithType: TabLeader
+  fullName: Microsoft.UI.Text.TabLeader
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ClearAllTabs
+  name: ClearAllTabs
+  nameWithType: ITextParagraphFormat.ClearAllTabs
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ClearAllTabs
+- uid: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.DeleteTab
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_DeleteTab_System_Single_
+  name: DeleteTab
+  nameWithType: ITextParagraphFormat.DeleteTab
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.DeleteTab
+- uid: Microsoft.UI.Text.ITextParagraphFormat.GetClone*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.GetClone
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_GetClone
+  name: GetClone
+  nameWithType: ITextParagraphFormat.GetClone
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.GetClone
+- uid: Microsoft.UI.Text.ITextParagraphFormat
+  commentId: T:Microsoft.UI.Text.ITextParagraphFormat
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextParagraphFormat.html
+  name: ITextParagraphFormat
+  nameWithType: ITextParagraphFormat
+  fullName: Microsoft.UI.Text.ITextParagraphFormat
+- uid: Microsoft.UI.Text.ITextParagraphFormat.GetTab*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.GetTab
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_GetTab_System_Int32_System_Single__Microsoft_UI_Text_TabAlignment__Microsoft_UI_Text_TabLeader__
+  name: GetTab
+  nameWithType: ITextParagraphFormat.GetTab
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.GetTab
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Text.ITextParagraphFormat.IsEqual*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.IsEqual
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_IsEqual_Microsoft_UI_Text_ITextParagraphFormat_
+  name: IsEqual
+  nameWithType: ITextParagraphFormat.IsEqual
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.IsEqual
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetClone*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.SetClone
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_SetClone_Microsoft_UI_Text_ITextParagraphFormat_
+  name: SetClone
+  nameWithType: ITextParagraphFormat.SetClone
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetClone
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetIndents*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.SetIndents
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_SetIndents_System_Single_System_Single_System_Single_
+  name: SetIndents
+  nameWithType: ITextParagraphFormat.SetIndents
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetIndents
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_SetLineSpacing_Microsoft_UI_Text_LineSpacingRule_System_Single_
+  name: SetLineSpacing
+  nameWithType: ITextParagraphFormat.SetLineSpacing
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SetLineSpacing
+- uid: Microsoft.UI.Text.LineSpacingRule
+  commentId: T:Microsoft.UI.Text.LineSpacingRule
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.LineSpacingRule.html
+  name: LineSpacingRule
+  nameWithType: LineSpacingRule
+  fullName: Microsoft.UI.Text.LineSpacingRule
+- uid: Microsoft.UI.Text.ITextParagraphFormat.Alignment*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.Alignment
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_Alignment
+  name: Alignment
+  nameWithType: ITextParagraphFormat.Alignment
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.Alignment
+- uid: Microsoft.UI.Text.ParagraphAlignment
+  commentId: T:Microsoft.UI.Text.ParagraphAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ParagraphAlignment.html
+  name: ParagraphAlignment
+  nameWithType: ParagraphAlignment
+  fullName: Microsoft.UI.Text.ParagraphAlignment
+- uid: Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_FirstLineIndent
+  name: FirstLineIndent
+  nameWithType: ITextParagraphFormat.FirstLineIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.FirstLineIndent
+- uid: Microsoft.UI.Text.ITextParagraphFormat.KeepTogether*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_KeepTogether
+  name: KeepTogether
+  nameWithType: ITextParagraphFormat.KeepTogether
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.KeepTogether
+- uid: Microsoft.UI.Text.FormatEffect
+  commentId: T:Microsoft.UI.Text.FormatEffect
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.FormatEffect.html
+  name: FormatEffect
+  nameWithType: FormatEffect
+  fullName: Microsoft.UI.Text.FormatEffect
+- uid: Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_KeepWithNext
+  name: KeepWithNext
+  nameWithType: ITextParagraphFormat.KeepWithNext
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.KeepWithNext
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LeftIndent*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_LeftIndent
+  name: LeftIndent
+  nameWithType: ITextParagraphFormat.LeftIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LeftIndent
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LineSpacing*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_LineSpacing
+  name: LineSpacing
+  nameWithType: ITextParagraphFormat.LineSpacing
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LineSpacing
+- uid: Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_LineSpacingRule
+  name: LineSpacingRule
+  nameWithType: ITextParagraphFormat.LineSpacingRule
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.LineSpacingRule
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListAlignment*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListAlignment
+  name: ListAlignment
+  nameWithType: ITextParagraphFormat.ListAlignment
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListAlignment
+- uid: Microsoft.UI.Text.MarkerAlignment
+  commentId: T:Microsoft.UI.Text.MarkerAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.MarkerAlignment.html
+  name: MarkerAlignment
+  nameWithType: MarkerAlignment
+  fullName: Microsoft.UI.Text.MarkerAlignment
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListLevelIndex
+  name: ListLevelIndex
+  nameWithType: ITextParagraphFormat.ListLevelIndex
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListLevelIndex
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListStart*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListStart
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListStart
+  name: ListStart
+  nameWithType: ITextParagraphFormat.ListStart
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListStart
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListStyle*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListStyle
+  name: ListStyle
+  nameWithType: ITextParagraphFormat.ListStyle
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListStyle
+- uid: Microsoft.UI.Text.MarkerStyle
+  commentId: T:Microsoft.UI.Text.MarkerStyle
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.MarkerStyle.html
+  name: MarkerStyle
+  nameWithType: MarkerStyle
+  fullName: Microsoft.UI.Text.MarkerStyle
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListTab*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListTab
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListTab
+  name: ListTab
+  nameWithType: ITextParagraphFormat.ListTab
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListTab
+- uid: Microsoft.UI.Text.ITextParagraphFormat.ListType*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.ListType
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_ListType
+  name: ListType
+  nameWithType: ITextParagraphFormat.ListType
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.ListType
+- uid: Microsoft.UI.Text.MarkerType
+  commentId: T:Microsoft.UI.Text.MarkerType
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.MarkerType.html
+  name: MarkerType
+  nameWithType: MarkerType
+  fullName: Microsoft.UI.Text.MarkerType
+- uid: Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_NoLineNumber
+  name: NoLineNumber
+  nameWithType: ITextParagraphFormat.NoLineNumber
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.NoLineNumber
+- uid: Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_PageBreakBefore
+  name: PageBreakBefore
+  nameWithType: ITextParagraphFormat.PageBreakBefore
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.PageBreakBefore
+- uid: Microsoft.UI.Text.ITextParagraphFormat.RightIndent*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_RightIndent
+  name: RightIndent
+  nameWithType: ITextParagraphFormat.RightIndent
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.RightIndent
+- uid: Microsoft.UI.Text.ITextParagraphFormat.RightToLeft*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_RightToLeft
+  name: RightToLeft
+  nameWithType: ITextParagraphFormat.RightToLeft
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.RightToLeft
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_SpaceAfter
+  name: SpaceAfter
+  nameWithType: ITextParagraphFormat.SpaceAfter
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SpaceAfter
+- uid: Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_SpaceBefore
+  name: SpaceBefore
+  nameWithType: ITextParagraphFormat.SpaceBefore
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.SpaceBefore
+- uid: Microsoft.UI.Text.ITextParagraphFormat.Style*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.Style
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_Style
+  name: Style
+  nameWithType: ITextParagraphFormat.Style
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.Style
+- uid: Microsoft.UI.Text.ParagraphStyle
+  commentId: T:Microsoft.UI.Text.ParagraphStyle
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ParagraphStyle.html
+  name: ParagraphStyle
+  nameWithType: ParagraphStyle
+  fullName: Microsoft.UI.Text.ParagraphStyle
+- uid: Microsoft.UI.Text.ITextParagraphFormat.TabCount*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.TabCount
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_TabCount
+  name: TabCount
+  nameWithType: ITextParagraphFormat.TabCount
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.TabCount
+- uid: Microsoft.UI.Text.ITextParagraphFormat.WidowControl*
+  commentId: Overload:Microsoft.UI.Text.ITextParagraphFormat.WidowControl
+  href: Microsoft.UI.Text.ITextParagraphFormat.html#Microsoft_UI_Text_ITextParagraphFormat_WidowControl
+  name: WidowControl
+  nameWithType: ITextParagraphFormat.WidowControl
+  fullName: Microsoft.UI.Text.ITextParagraphFormat.WidowControl

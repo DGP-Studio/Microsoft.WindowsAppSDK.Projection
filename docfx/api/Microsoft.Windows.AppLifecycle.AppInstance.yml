@@ -1,0 +1,1564 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AppLifecycle.AppInstance
+  commentId: T:Microsoft.Windows.AppLifecycle.AppInstance
+  id: AppInstance
+  parent: Microsoft.Windows.AppLifecycle
+  children:
+  - Microsoft.Windows.AppLifecycle.AppInstance.Activated
+  - Microsoft.Windows.AppLifecycle.AppInstance.As``1
+  - Microsoft.Windows.AppLifecycle.AppInstance.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  - Microsoft.Windows.AppLifecycle.AppInstance.Equals(System.Object)
+  - Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey(System.String)
+  - Microsoft.Windows.AppLifecycle.AppInstance.FromAbi(System.IntPtr)
+  - Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs
+  - Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent
+  - Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode
+  - Microsoft.Windows.AppLifecycle.AppInstance.GetInstances
+  - Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+  - Microsoft.Windows.AppLifecycle.AppInstance.Key
+  - Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+  - Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync(Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  - Microsoft.Windows.AppLifecycle.AppInstance.Restart(System.String)
+  - Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey
+  - Microsoft.Windows.AppLifecycle.AppInstance.op_Equality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  - Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  langs:
+  - csharp
+  - vb
+  name: AppInstance
+  nameWithType: AppInstance
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppInstance
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 142
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AppLifecycle")]
+
+      [WindowsRuntimeHelperType(typeof(AppInstance))]
+
+      [ProjectedRuntimeClass(typeof(IAppInstance))]
+
+      [ContractVersion(typeof(AppLifecycleContract), 65536)]
+
+      public sealed class AppInstance : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<AppInstance>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AppLifecycle")>
+
+      <WindowsRuntimeHelperType(GetType(AppInstance))>
+
+      <ProjectedRuntimeClass(GetType(IAppInstance))>
+
+      <ContractVersion(GetType(AppLifecycleContract), 65536)>
+
+      Public NotInheritable Class AppInstance Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of AppInstance)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AppLifecycle
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AppLifecycle.AppLifecycleContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.As``1
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.As``1
+  id: As``1
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: AppInstance.As<I>()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 158
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.As*
+  nameWithType.vb: AppInstance.As(Of I)()
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent
+  id: GetCurrent
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: GetCurrent()
+  nameWithType: AppInstance.GetCurrent()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetCurrent
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 177
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static AppInstance GetCurrent()
+    return:
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    content.vb: Public Shared Function GetCurrent() As AppInstance
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetInstances
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.GetInstances
+  id: GetInstances
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: GetInstances()
+  nameWithType: AppInstance.GetInstances()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetInstances()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetInstances
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 179
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static IList<AppInstance> GetInstances()
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Windows.AppLifecycle.AppInstance}
+    content.vb: Public Shared Function GetInstances() As IList(Of AppInstance)
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.GetInstances*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey(System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey(System.String)
+  id: FindOrRegisterForKey(System.String)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: FindOrRegisterForKey(string)
+  nameWithType: AppInstance.FindOrRegisterForKey(string)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindOrRegisterForKey
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 181
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static AppInstance FindOrRegisterForKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    content.vb: Public Shared Function FindOrRegisterForKey(key As String) As AppInstance
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey*
+  nameWithType.vb: AppInstance.FindOrRegisterForKey(String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey(String)
+  name.vb: FindOrRegisterForKey(String)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Restart(System.String)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.Restart(System.String)
+  id: Restart(System.String)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: Restart(string)
+  nameWithType: AppInstance.Restart(string)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Restart(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Restart
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 200
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static AppRestartFailureReason Restart(string arguments)
+    parameters:
+    - id: arguments
+      type: System.String
+    return:
+      type: Windows.ApplicationModel.Core.AppRestartFailureReason
+    content.vb: Public Shared Function Restart(arguments As String) As AppRestartFailureReason
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.Restart*
+  nameWithType.vb: AppInstance.Restart(String)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.Restart(String)
+  name.vb: Restart(String)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: AppInstance.FromAbi(nint)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 202
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static AppInstance FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As AppInstance
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi*
+  nameWithType.vb: AppInstance.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Equality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.op_Equality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  id: op_Equality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AppInstance, AppInstance)
+  nameWithType: AppInstance.operator ==(AppInstance, AppInstance)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.operator ==(Microsoft.Windows.AppLifecycle.AppInstance, Microsoft.Windows.AppLifecycle.AppInstance)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 215
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static bool operator ==(AppInstance x, AppInstance y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    - id: y
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As AppInstance, y As AppInstance) As Boolean
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.op_Equality*
+  nameWithType.vb: AppInstance.=(AppInstance, AppInstance)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.=(Microsoft.Windows.AppLifecycle.AppInstance, Microsoft.Windows.AppLifecycle.AppInstance)
+  name.vb: =(AppInstance, AppInstance)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  id: op_Inequality(Microsoft.Windows.AppLifecycle.AppInstance,Microsoft.Windows.AppLifecycle.AppInstance)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AppInstance, AppInstance)
+  nameWithType: AppInstance.operator !=(AppInstance, AppInstance)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.operator !=(Microsoft.Windows.AppLifecycle.AppInstance, Microsoft.Windows.AppLifecycle.AppInstance)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 216
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public static bool operator !=(AppInstance x, AppInstance y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    - id: y
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As AppInstance, y As AppInstance) As Boolean
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality*
+  nameWithType.vb: AppInstance.<>(AppInstance, AppInstance)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.<>(Microsoft.Windows.AppLifecycle.AppInstance, Microsoft.Windows.AppLifecycle.AppInstance)
+  name.vb: <>(AppInstance, AppInstance)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  id: Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: Equals(AppInstance)
+  nameWithType: AppInstance.Equals(AppInstance)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 217
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(AppInstance other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.AppLifecycle.AppInstance
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As AppInstance) As Boolean
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Equals(System.Object)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AppInstance.Equals(object)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 218
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.Equals*
+  nameWithType.vb: AppInstance.Equals(Object)
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AppInstance.GetHashCode()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 219
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey
+  id: UnregisterKey
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: UnregisterKey()
+  nameWithType: AppInstance.UnregisterKey()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: UnregisterKey
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 242
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public void UnregisterKey()
+    content.vb: Public Sub UnregisterKey()
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync(Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync(Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  id: RedirectActivationToAsync(Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: RedirectActivationToAsync(AppActivationArguments)
+  nameWithType: AppInstance.RedirectActivationToAsync(AppActivationArguments)
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync(Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RedirectActivationToAsync
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 244
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public IAsyncAction RedirectActivationToAsync(AppActivationArguments args)
+    parameters:
+    - id: args
+      type: Microsoft.Windows.AppLifecycle.AppActivationArguments
+    return:
+      type: Windows.Foundation.IAsyncAction
+    content.vb: Public Function RedirectActivationToAsync(args As AppActivationArguments) As IAsyncAction
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs
+  commentId: M:Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs
+  id: GetActivatedEventArgs
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: GetActivatedEventArgs()
+  nameWithType: AppInstance.GetActivatedEventArgs()
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetActivatedEventArgs
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 246
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public AppActivationArguments GetActivatedEventArgs()
+    return:
+      type: Microsoft.Windows.AppLifecycle.AppActivationArguments
+    content.vb: Public Function GetActivatedEventArgs() As AppActivationArguments
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Activated
+  commentId: E:Microsoft.Windows.AppLifecycle.AppInstance.Activated
+  id: Activated
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: Activated
+  nameWithType: AppInstance.Activated
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Activated
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Activated
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 248
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public event EventHandler<AppActivationArguments> Activated
+    return:
+      type: System.EventHandler{Microsoft.Windows.AppLifecycle.AppActivationArguments}
+    content.vb: Public Event Activated As EventHandler(Of AppActivationArguments)
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+  commentId: P:Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+  id: IsCurrent
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: IsCurrent
+  nameWithType: AppInstance.IsCurrent
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsCurrent
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 254
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public bool IsCurrent { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCurrent As Boolean
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Key
+  commentId: P:Microsoft.Windows.AppLifecycle.AppInstance.Key
+  id: Key
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: AppInstance.Key
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Key
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Key
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 256
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public string Key { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Key As String
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.Key*
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+  commentId: P:Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+  id: ProcessId
+  parent: Microsoft.Windows.AppLifecycle.AppInstance
+  langs:
+  - csharp
+  - vb
+  name: ProcessId
+  nameWithType: AppInstance.ProcessId
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AppLifecycle.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessId
+    path: ../src/Microsoft.Windows.AppLifecycle.cs
+    startLine: 258
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AppLifecycle
+  syntax:
+    content: public uint ProcessId { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public ReadOnly Property ProcessId As UInteger
+  overload: Microsoft.Windows.AppLifecycle.AppInstance.ProcessId*
+references:
+- uid: Microsoft.Windows.AppLifecycle
+  commentId: N:Microsoft.Windows.AppLifecycle
+  href: Microsoft.html
+  name: Microsoft.Windows.AppLifecycle
+  nameWithType: Microsoft.Windows.AppLifecycle
+  fullName: Microsoft.Windows.AppLifecycle
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppLifecycle
+    name: AppLifecycle
+    href: Microsoft.Windows.AppLifecycle.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AppLifecycle
+    name: AppLifecycle
+    href: Microsoft.Windows.AppLifecycle.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}
+  commentId: T:System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AppInstance>
+  nameWithType: IEquatable<AppInstance>
+  fullName: System.IEquatable<Microsoft.Windows.AppLifecycle.AppInstance>
+  nameWithType.vb: IEquatable(Of AppInstance)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppLifecycle.AppInstance)
+  name.vb: IEquatable(Of AppInstance)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.As*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.As
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_As__1
+  name: As
+  nameWithType: AppInstance.As
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_GetCurrent
+  name: GetCurrent
+  nameWithType: AppInstance.GetCurrent
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetCurrent
+- uid: Microsoft.Windows.AppLifecycle.AppInstance
+  commentId: T:Microsoft.Windows.AppLifecycle.AppInstance
+  parent: Microsoft.Windows.AppLifecycle
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  name: AppInstance
+  nameWithType: AppInstance
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetInstances*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.GetInstances
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_GetInstances
+  name: GetInstances
+  nameWithType: AppInstance.GetInstances
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetInstances
+- uid: System.Collections.Generic.IList{Microsoft.Windows.AppLifecycle.AppInstance}
+  commentId: T:System.Collections.Generic.IList{Microsoft.Windows.AppLifecycle.AppInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<AppInstance>
+  nameWithType: IList<AppInstance>
+  fullName: System.Collections.Generic.IList<Microsoft.Windows.AppLifecycle.AppInstance>
+  nameWithType.vb: IList(Of AppInstance)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.Windows.AppLifecycle.AppInstance)
+  name.vb: IList(Of AppInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_FindOrRegisterForKey_System_String_
+  name: FindOrRegisterForKey
+  nameWithType: AppInstance.FindOrRegisterForKey
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.FindOrRegisterForKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Restart*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.Restart
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_Restart_System_String_
+  name: Restart
+  nameWithType: AppInstance.Restart
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Restart
+- uid: Windows.ApplicationModel.Core.AppRestartFailureReason
+  commentId: T:Windows.ApplicationModel.Core.AppRestartFailureReason
+  parent: Windows.ApplicationModel.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.core.apprestartfailurereason
+  name: AppRestartFailureReason
+  nameWithType: AppRestartFailureReason
+  fullName: Windows.ApplicationModel.Core.AppRestartFailureReason
+- uid: Windows.ApplicationModel.Core
+  commentId: N:Windows.ApplicationModel.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.ApplicationModel.Core
+  nameWithType: Windows.ApplicationModel.Core
+  fullName: Windows.ApplicationModel.Core
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.ApplicationModel
+    name: ApplicationModel
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel
+  - name: .
+  - uid: Windows.ApplicationModel.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.core
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.ApplicationModel
+    name: ApplicationModel
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel
+  - name: .
+  - uid: Windows.ApplicationModel.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.applicationmodel.core
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.FromAbi
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: AppInstance.FromAbi
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Equality*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.op_Equality
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_op_Equality_Microsoft_Windows_AppLifecycle_AppInstance_Microsoft_Windows_AppLifecycle_AppInstance_
+  name: operator ==
+  nameWithType: AppInstance.operator ==
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.operator ==
+  nameWithType.vb: AppInstance.=
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Equality*
+    name: ==
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_op_Equality_Microsoft_Windows_AppLifecycle_AppInstance_Microsoft_Windows_AppLifecycle_AppInstance_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_op_Inequality_Microsoft_Windows_AppLifecycle_AppInstance_Microsoft_Windows_AppLifecycle_AppInstance_
+  name: operator !=
+  nameWithType: AppInstance.operator !=
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.operator !=
+  nameWithType.vb: AppInstance.<>
+  fullName.vb: Microsoft.Windows.AppLifecycle.AppInstance.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_op_Inequality_Microsoft_Windows_AppLifecycle_AppInstance_Microsoft_Windows_AppLifecycle_AppInstance_
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Equals*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.Equals
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_Equals_Microsoft_Windows_AppLifecycle_AppInstance_
+  name: Equals
+  nameWithType: AppInstance.Equals
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Equals
+- uid: System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  commentId: M:System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  parent: System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AppInstance)
+  nameWithType: IEquatable<AppInstance>.Equals(AppInstance)
+  fullName: System.IEquatable<Microsoft.Windows.AppLifecycle.AppInstance>.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  nameWithType.vb: IEquatable(Of AppInstance).Equals(AppInstance)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AppLifecycle.AppInstance).Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.AppLifecycle.AppInstance}.Equals(Microsoft.Windows.AppLifecycle.AppInstance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AppLifecycle.AppInstance
+    name: AppInstance
+    href: Microsoft.Windows.AppLifecycle.AppInstance.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_GetHashCode
+  name: GetHashCode
+  nameWithType: AppInstance.GetHashCode
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_UnregisterKey
+  name: UnregisterKey
+  nameWithType: AppInstance.UnregisterKey
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.UnregisterKey
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_RedirectActivationToAsync_Microsoft_Windows_AppLifecycle_AppActivationArguments_
+  name: RedirectActivationToAsync
+  nameWithType: AppInstance.RedirectActivationToAsync
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.RedirectActivationToAsync
+- uid: Microsoft.Windows.AppLifecycle.AppActivationArguments
+  commentId: T:Microsoft.Windows.AppLifecycle.AppActivationArguments
+  parent: Microsoft.Windows.AppLifecycle
+  href: Microsoft.Windows.AppLifecycle.AppActivationArguments.html
+  name: AppActivationArguments
+  nameWithType: AppActivationArguments
+  fullName: Microsoft.Windows.AppLifecycle.AppActivationArguments
+- uid: Windows.Foundation.IAsyncAction
+  commentId: T:Windows.Foundation.IAsyncAction
+  parent: Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction
+  name: IAsyncAction
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_GetActivatedEventArgs
+  name: GetActivatedEventArgs
+  nameWithType: AppInstance.GetActivatedEventArgs
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.GetActivatedEventArgs
+- uid: System.EventHandler{Microsoft.Windows.AppLifecycle.AppActivationArguments}
+  commentId: T:System.EventHandler{Microsoft.Windows.AppLifecycle.AppActivationArguments}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<AppActivationArguments>
+  nameWithType: EventHandler<AppActivationArguments>
+  fullName: System.EventHandler<Microsoft.Windows.AppLifecycle.AppActivationArguments>
+  nameWithType.vb: EventHandler(Of AppActivationArguments)
+  fullName.vb: System.EventHandler(Of Microsoft.Windows.AppLifecycle.AppActivationArguments)
+  name.vb: EventHandler(Of AppActivationArguments)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.Windows.AppLifecycle.AppActivationArguments
+    name: AppActivationArguments
+    href: Microsoft.Windows.AppLifecycle.AppActivationArguments.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AppLifecycle.AppActivationArguments
+    name: AppActivationArguments
+    href: Microsoft.Windows.AppLifecycle.AppActivationArguments.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_IsCurrent
+  name: IsCurrent
+  nameWithType: AppInstance.IsCurrent
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.IsCurrent
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.Key*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.Key
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_Key
+  name: Key
+  nameWithType: AppInstance.Key
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.Key
+- uid: Microsoft.Windows.AppLifecycle.AppInstance.ProcessId*
+  commentId: Overload:Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+  href: Microsoft.Windows.AppLifecycle.AppInstance.html#Microsoft_Windows_AppLifecycle_AppInstance_ProcessId
+  name: ProcessId
+  nameWithType: AppInstance.ProcessId
+  fullName: Microsoft.Windows.AppLifecycle.AppInstance.ProcessId
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger

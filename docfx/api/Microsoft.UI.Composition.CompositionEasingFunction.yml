@@ -1,0 +1,2175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Composition.CompositionEasingFunction
+  commentId: T:Microsoft.UI.Composition.CompositionEasingFunction
+  id: CompositionEasingFunction
+  parent: Microsoft.UI.Composition
+  children:
+  - Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Composition.CompositionEasingFunction.As``1
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction(Microsoft.UI.Composition.Compositor,System.Numerics.Vector2,System.Numerics.Vector2)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction(Microsoft.UI.Composition.Compositor)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor)
+  - Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor,System.Int32)
+  - Microsoft.UI.Composition.CompositionEasingFunction.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  - Microsoft.UI.Composition.CompositionEasingFunction.Equals(System.Object)
+  - Microsoft.UI.Composition.CompositionEasingFunction.FromAbi(System.IntPtr)
+  - Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode
+  - Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Composition.CompositionEasingFunction.op_Equality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  - Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  langs:
+  - csharp
+  - vb
+  name: CompositionEasingFunction
+  nameWithType: CompositionEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CompositionEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2222
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(CompositionEasingFunction))]
+
+      [ProjectedRuntimeClass(typeof(ICompositionEasingFunction))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public class CompositionEasingFunction : CompositionObject, IDisposable, IAnimationObject, IEquatable<CompositionObject>, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<CompositionEasingFunction>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(CompositionEasingFunction))>
+
+      <ProjectedRuntimeClass(GetType(ICompositionEasingFunction))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public Class CompositionEasingFunction Inherits CompositionObject Implements IDisposable, IAnimationObject, IEquatable(Of CompositionObject), IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of CompositionEasingFunction)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Composition.CompositionObject
+  derivedClasses:
+  - Microsoft.UI.Composition.BackEasingFunction
+  - Microsoft.UI.Composition.BounceEasingFunction
+  - Microsoft.UI.Composition.CircleEasingFunction
+  - Microsoft.UI.Composition.CubicBezierEasingFunction
+  - Microsoft.UI.Composition.ElasticEasingFunction
+  - Microsoft.UI.Composition.ExponentialEasingFunction
+  - Microsoft.UI.Composition.LinearEasingFunction
+  - Microsoft.UI.Composition.PowerEasingFunction
+  - Microsoft.UI.Composition.SineEasingFunction
+  - Microsoft.UI.Composition.StepEasingFunction
+  implements:
+  - System.IDisposable
+  - Microsoft.UI.Composition.IAnimationObject
+  - System.IEquatable{Microsoft.UI.Composition.CompositionObject}
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}
+  inheritedMembers:
+  - Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,System.String,Microsoft.UI.Composition.CompositionAnimation)
+  - Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,Microsoft.UI.Composition.ICompositionAnimationBase)
+  - Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+  - Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation)
+  - Microsoft.UI.Composition.CompositionObject.StopAnimation(System.String)
+  - Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  - Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  - Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(System.String)
+  - Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.AnimationController)
+  - Microsoft.UI.Composition.CompositionObject.Dispose
+  - Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  - Microsoft.UI.Composition.CompositionObject.Comment
+  - Microsoft.UI.Composition.CompositionObject.Compositor
+  - Microsoft.UI.Composition.CompositionObject.DispatcherQueue
+  - Microsoft.UI.Composition.CompositionObject.ImplicitAnimations
+  - Microsoft.UI.Composition.CompositionObject.Properties
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.As``1
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.As``1
+  id: As``1
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: CompositionEasingFunction.As<I>()
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2266
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.As*
+  nameWithType.vb: CompositionEasingFunction.As(Of I)()
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction(Microsoft.UI.Composition.Compositor,System.Numerics.Vector2,System.Numerics.Vector2)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction(Microsoft.UI.Composition.Compositor,System.Numerics.Vector2,System.Numerics.Vector2)
+  id: CreateCubicBezierEasingFunction(Microsoft.UI.Composition.Compositor,System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateCubicBezierEasingFunction(Compositor, Vector2, Vector2)
+  nameWithType: CompositionEasingFunction.CreateCubicBezierEasingFunction(Compositor, Vector2, Vector2)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction(Microsoft.UI.Composition.Compositor, System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateCubicBezierEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2285
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static CubicBezierEasingFunction CreateCubicBezierEasingFunction(Compositor owner, Vector2 controlPoint1, Vector2 controlPoint2)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: controlPoint1
+      type: System.Numerics.Vector2
+    - id: controlPoint2
+      type: System.Numerics.Vector2
+    return:
+      type: Microsoft.UI.Composition.CubicBezierEasingFunction
+    content.vb: Public Shared Function CreateCubicBezierEasingFunction(owner As Compositor, controlPoint1 As Vector2, controlPoint2 As Vector2) As CubicBezierEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction(Microsoft.UI.Composition.Compositor)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction(Microsoft.UI.Composition.Compositor)
+  id: CreateLinearEasingFunction(Microsoft.UI.Composition.Compositor)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateLinearEasingFunction(Compositor)
+  nameWithType: CompositionEasingFunction.CreateLinearEasingFunction(Compositor)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction(Microsoft.UI.Composition.Compositor)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateLinearEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2287
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static LinearEasingFunction CreateLinearEasingFunction(Compositor owner)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    return:
+      type: Microsoft.UI.Composition.LinearEasingFunction
+    content.vb: Public Shared Function CreateLinearEasingFunction(owner As Compositor) As LinearEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor)
+  id: CreateStepEasingFunction(Microsoft.UI.Composition.Compositor)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateStepEasingFunction(Compositor)
+  nameWithType: CompositionEasingFunction.CreateStepEasingFunction(Compositor)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateStepEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2289
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static StepEasingFunction CreateStepEasingFunction(Compositor owner)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    return:
+      type: Microsoft.UI.Composition.StepEasingFunction
+    content.vb: Public Shared Function CreateStepEasingFunction(owner As Compositor) As StepEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor,System.Int32)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor,System.Int32)
+  id: CreateStepEasingFunction(Microsoft.UI.Composition.Compositor,System.Int32)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateStepEasingFunction(Compositor, int)
+  nameWithType: CompositionEasingFunction.CreateStepEasingFunction(Compositor, int)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateStepEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2291
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static StepEasingFunction CreateStepEasingFunction(Compositor owner, int stepCount)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: stepCount
+      type: System.Int32
+    return:
+      type: Microsoft.UI.Composition.StepEasingFunction
+    content.vb: Public Shared Function CreateStepEasingFunction(owner As Compositor, stepCount As Integer) As StepEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreateStepEasingFunction(Compositor, Integer)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction(Microsoft.UI.Composition.Compositor, Integer)
+  name.vb: CreateStepEasingFunction(Compositor, Integer)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  id: CreateBackEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateBackEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  nameWithType: CompositionEasingFunction.CreateBackEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateBackEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2293
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static BackEasingFunction CreateBackEasingFunction(Compositor owner, CompositionEasingFunctionMode mode, float amplitude)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    - id: amplitude
+      type: System.Single
+    return:
+      type: Microsoft.UI.Composition.BackEasingFunction
+    content.vb: Public Shared Function CreateBackEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode, amplitude As Single) As BackEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreateBackEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, Single)
+  name.vb: CreateBackEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  id: CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateBounceEasingFunction(Compositor, CompositionEasingFunctionMode, int, float)
+  nameWithType: CompositionEasingFunction.CreateBounceEasingFunction(Compositor, CompositionEasingFunctionMode, int, float)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, int, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateBounceEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2295
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static BounceEasingFunction CreateBounceEasingFunction(Compositor owner, CompositionEasingFunctionMode mode, int bounces, float bounciness)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    - id: bounces
+      type: System.Int32
+    - id: bounciness
+      type: System.Single
+    return:
+      type: Microsoft.UI.Composition.BounceEasingFunction
+    content.vb: Public Shared Function CreateBounceEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode, bounces As Integer, bounciness As Single) As BounceEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreateBounceEasingFunction(Compositor, CompositionEasingFunctionMode, Integer, Single)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, Integer, Single)
+  name.vb: CreateBounceEasingFunction(Compositor, CompositionEasingFunctionMode, Integer, Single)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  id: CreateCircleEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateCircleEasingFunction(Compositor, CompositionEasingFunctionMode)
+  nameWithType: CompositionEasingFunction.CreateCircleEasingFunction(Compositor, CompositionEasingFunctionMode)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateCircleEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2297
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static CircleEasingFunction CreateCircleEasingFunction(Compositor owner, CompositionEasingFunctionMode mode)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    return:
+      type: Microsoft.UI.Composition.CircleEasingFunction
+    content.vb: Public Shared Function CreateCircleEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode) As CircleEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  id: CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Int32,System.Single)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateElasticEasingFunction(Compositor, CompositionEasingFunctionMode, int, float)
+  nameWithType: CompositionEasingFunction.CreateElasticEasingFunction(Compositor, CompositionEasingFunctionMode, int, float)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, int, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateElasticEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2299
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static ElasticEasingFunction CreateElasticEasingFunction(Compositor owner, CompositionEasingFunctionMode mode, int oscillations, float springiness)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    - id: oscillations
+      type: System.Int32
+    - id: springiness
+      type: System.Single
+    return:
+      type: Microsoft.UI.Composition.ElasticEasingFunction
+    content.vb: Public Shared Function CreateElasticEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode, oscillations As Integer, springiness As Single) As ElasticEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreateElasticEasingFunction(Compositor, CompositionEasingFunctionMode, Integer, Single)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, Integer, Single)
+  name.vb: CreateElasticEasingFunction(Compositor, CompositionEasingFunctionMode, Integer, Single)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  id: CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateExponentialEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  nameWithType: CompositionEasingFunction.CreateExponentialEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateExponentialEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2301
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static ExponentialEasingFunction CreateExponentialEasingFunction(Compositor owner, CompositionEasingFunctionMode mode, float exponent)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    - id: exponent
+      type: System.Single
+    return:
+      type: Microsoft.UI.Composition.ExponentialEasingFunction
+    content.vb: Public Shared Function CreateExponentialEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode, exponent As Single) As ExponentialEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreateExponentialEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, Single)
+  name.vb: CreateExponentialEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  id: CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode,System.Single)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreatePowerEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  nameWithType: CompositionEasingFunction.CreatePowerEasingFunction(Compositor, CompositionEasingFunctionMode, float)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, float)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreatePowerEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2303
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static PowerEasingFunction CreatePowerEasingFunction(Compositor owner, CompositionEasingFunctionMode mode, float power)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    - id: power
+      type: System.Single
+    return:
+      type: Microsoft.UI.Composition.PowerEasingFunction
+    content.vb: Public Shared Function CreatePowerEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode, power As Single) As PowerEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction*
+  nameWithType.vb: CompositionEasingFunction.CreatePowerEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode, Single)
+  name.vb: CreatePowerEasingFunction(Compositor, CompositionEasingFunctionMode, Single)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  id: CreateSineEasingFunction(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CreateSineEasingFunction(Compositor, CompositionEasingFunctionMode)
+  nameWithType: CompositionEasingFunction.CreateSineEasingFunction(Compositor, CompositionEasingFunctionMode)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction(Microsoft.UI.Composition.Compositor, Microsoft.UI.Composition.CompositionEasingFunctionMode)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateSineEasingFunction
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2305
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static SineEasingFunction CreateSineEasingFunction(Compositor owner, CompositionEasingFunctionMode mode)
+    parameters:
+    - id: owner
+      type: Microsoft.UI.Composition.Compositor
+    - id: mode
+      type: Microsoft.UI.Composition.CompositionEasingFunctionMode
+    return:
+      type: Microsoft.UI.Composition.SineEasingFunction
+    content.vb: Public Shared Function CreateSineEasingFunction(owner As Compositor, mode As CompositionEasingFunctionMode) As SineEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: CompositionEasingFunction.FromAbi(nint)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2307
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static CompositionEasingFunction FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As CompositionEasingFunction
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi*
+  nameWithType.vb: CompositionEasingFunction.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CompositionEasingFunction(IObjectReference)
+  nameWithType: CompositionEasingFunction.CompositionEasingFunction(IObjectReference)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CompositionEasingFunction(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2313
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: protected CompositionEasingFunction(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.#ctor*
+  nameWithType.vb: CompositionEasingFunction.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Equality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.op_Equality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  id: op_Equality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: operator ==(CompositionEasingFunction, CompositionEasingFunction)
+  nameWithType: CompositionEasingFunction.operator ==(CompositionEasingFunction, CompositionEasingFunction)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.operator ==(Microsoft.UI.Composition.CompositionEasingFunction, Microsoft.UI.Composition.CompositionEasingFunction)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2322
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static bool operator ==(CompositionEasingFunction x, CompositionEasingFunction y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+    - id: y
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As CompositionEasingFunction, y As CompositionEasingFunction) As Boolean
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.op_Equality*
+  nameWithType.vb: CompositionEasingFunction.=(CompositionEasingFunction, CompositionEasingFunction)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.=(Microsoft.UI.Composition.CompositionEasingFunction, Microsoft.UI.Composition.CompositionEasingFunction)
+  name.vb: =(CompositionEasingFunction, CompositionEasingFunction)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  id: op_Inequality(Microsoft.UI.Composition.CompositionEasingFunction,Microsoft.UI.Composition.CompositionEasingFunction)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: operator !=(CompositionEasingFunction, CompositionEasingFunction)
+  nameWithType: CompositionEasingFunction.operator !=(CompositionEasingFunction, CompositionEasingFunction)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.operator !=(Microsoft.UI.Composition.CompositionEasingFunction, Microsoft.UI.Composition.CompositionEasingFunction)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2323
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: public static bool operator !=(CompositionEasingFunction x, CompositionEasingFunction y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+    - id: y
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As CompositionEasingFunction, y As CompositionEasingFunction) As Boolean
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality*
+  nameWithType.vb: CompositionEasingFunction.<>(CompositionEasingFunction, CompositionEasingFunction)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.<>(Microsoft.UI.Composition.CompositionEasingFunction, Microsoft.UI.Composition.CompositionEasingFunction)
+  name.vb: <>(CompositionEasingFunction, CompositionEasingFunction)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  id: Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Equals(CompositionEasingFunction)
+  nameWithType: CompositionEasingFunction.Equals(CompositionEasingFunction)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2324
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(CompositionEasingFunction other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Composition.CompositionEasingFunction
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As CompositionEasingFunction) As Boolean
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.Equals(System.Object)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: CompositionEasingFunction.Equals(object)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2325
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.UI.Composition.CompositionObject.Equals(System.Object)
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.Equals*
+  nameWithType.vb: CompositionEasingFunction.Equals(Object)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CompositionEasingFunction.GetHashCode()
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2326
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.UI.Composition.CompositionObject.GetHashCode
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode*
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: CompositionEasingFunction(DerivedComposed)
+  nameWithType: CompositionEasingFunction.CompositionEasingFunction(DerivedComposed)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CompositionEasingFunction(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2329
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  syntax:
+    content: protected CompositionEasingFunction(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.#ctor*
+  nameWithType.vb: CompositionEasingFunction.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Composition.CompositionEasingFunction
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: CompositionEasingFunction.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Composition.cs
+    startLine: 2339
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition
+  example: []
+  syntax:
+    content: protected override bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsOverridableInterface(iid As Guid) As Boolean
+  overridden: Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+  overload: Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Composition
+  commentId: N:Microsoft.UI.Composition
+  href: Microsoft.html
+  name: Microsoft.UI.Composition
+  nameWithType: Microsoft.UI.Composition
+  fullName: Microsoft.UI.Composition
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Composition.CompositionObject
+  commentId: T:Microsoft.UI.Composition.CompositionObject
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.CompositionObject.html
+  name: CompositionObject
+  nameWithType: CompositionObject
+  fullName: Microsoft.UI.Composition.CompositionObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.UI.Composition.IAnimationObject
+  commentId: T:Microsoft.UI.Composition.IAnimationObject
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.IAnimationObject.html
+  name: IAnimationObject
+  nameWithType: IAnimationObject
+  fullName: Microsoft.UI.Composition.IAnimationObject
+- uid: System.IEquatable{Microsoft.UI.Composition.CompositionObject}
+  commentId: T:System.IEquatable{Microsoft.UI.Composition.CompositionObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CompositionObject>
+  nameWithType: IEquatable<CompositionObject>
+  fullName: System.IEquatable<Microsoft.UI.Composition.CompositionObject>
+  nameWithType.vb: IEquatable(Of CompositionObject)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Composition.CompositionObject)
+  name.vb: IEquatable(Of CompositionObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Composition.CompositionObject
+    name: CompositionObject
+    href: Microsoft.UI.Composition.CompositionObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionObject
+    name: CompositionObject
+    href: Microsoft.UI.Composition.CompositionObject.html
+  - name: )
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}
+  commentId: T:System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CompositionEasingFunction>
+  nameWithType: IEquatable<CompositionEasingFunction>
+  fullName: System.IEquatable<Microsoft.UI.Composition.CompositionEasingFunction>
+  nameWithType.vb: IEquatable(Of CompositionEasingFunction)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Composition.CompositionEasingFunction)
+  name.vb: IEquatable(Of CompositionEasingFunction)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction
+    name: CompositionEasingFunction
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction
+    name: CompositionEasingFunction
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,System.String,Microsoft.UI.Composition.CompositionAnimation)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,System.String,Microsoft.UI.Composition.CompositionAnimation)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  name: StartAnimationWithIAnimationObject(IAnimationObject, string, CompositionAnimation)
+  nameWithType: CompositionObject.StartAnimationWithIAnimationObject(IAnimationObject, string, CompositionAnimation)
+  fullName: Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject, string, Microsoft.UI.Composition.CompositionAnimation)
+  nameWithType.vb: CompositionObject.StartAnimationWithIAnimationObject(IAnimationObject, String, CompositionAnimation)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject, String, Microsoft.UI.Composition.CompositionAnimation)
+  name.vb: StartAnimationWithIAnimationObject(IAnimationObject, String, CompositionAnimation)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,System.String,Microsoft.UI.Composition.CompositionAnimation)
+    name: StartAnimationWithIAnimationObject
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  - name: (
+  - uid: Microsoft.UI.Composition.IAnimationObject
+    name: IAnimationObject
+    href: Microsoft.UI.Composition.IAnimationObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,System.String,Microsoft.UI.Composition.CompositionAnimation)
+    name: StartAnimationWithIAnimationObject
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  - name: (
+  - uid: Microsoft.UI.Composition.IAnimationObject
+    name: IAnimationObject
+    href: Microsoft.UI.Composition.IAnimationObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,Microsoft.UI.Composition.ICompositionAnimationBase)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,Microsoft.UI.Composition.ICompositionAnimationBase)
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_
+  name: StartAnimationGroupWithIAnimationObject(IAnimationObject, ICompositionAnimationBase)
+  nameWithType: CompositionObject.StartAnimationGroupWithIAnimationObject(IAnimationObject, ICompositionAnimationBase)
+  fullName: Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject, Microsoft.UI.Composition.ICompositionAnimationBase)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StartAnimationGroupWithIAnimationObject
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.IAnimationObject
+    name: IAnimationObject
+    href: Microsoft.UI.Composition.IAnimationObject.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroupWithIAnimationObject(Microsoft.UI.Composition.IAnimationObject,Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StartAnimationGroupWithIAnimationObject
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.IAnimationObject
+    name: IAnimationObject
+    href: Microsoft.UI.Composition.IAnimationObject.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_
+  name: Equals(CompositionObject)
+  nameWithType: CompositionObject.Equals(CompositionObject)
+  fullName: Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+    name: Equals
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_
+  - name: (
+  - uid: Microsoft.UI.Composition.CompositionObject
+    name: CompositionObject
+    href: Microsoft.UI.Composition.CompositionObject.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.Equals(Microsoft.UI.Composition.CompositionObject)
+    name: Equals
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_
+  - name: (
+  - uid: Microsoft.UI.Composition.CompositionObject
+    name: CompositionObject
+    href: Microsoft.UI.Composition.CompositionObject.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  name: StartAnimation(string, CompositionAnimation)
+  nameWithType: CompositionObject.StartAnimation(string, CompositionAnimation)
+  fullName: Microsoft.UI.Composition.CompositionObject.StartAnimation(string, Microsoft.UI.Composition.CompositionAnimation)
+  nameWithType.vb: CompositionObject.StartAnimation(String, CompositionAnimation)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.StartAnimation(String, Microsoft.UI.Composition.CompositionAnimation)
+  name.vb: StartAnimation(String, CompositionAnimation)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation)
+    name: StartAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation)
+    name: StartAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StopAnimation(System.String)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StopAnimation(System.String)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_
+  name: StopAnimation(string)
+  nameWithType: CompositionObject.StopAnimation(string)
+  fullName: Microsoft.UI.Composition.CompositionObject.StopAnimation(string)
+  nameWithType.vb: CompositionObject.StopAnimation(String)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.StopAnimation(String)
+  name.vb: StopAnimation(String)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StopAnimation(System.String)
+    name: StopAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StopAnimation(System.String)
+    name: StopAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  name: StartAnimationGroup(ICompositionAnimationBase)
+  nameWithType: CompositionObject.StartAnimationGroup(ICompositionAnimationBase)
+  fullName: Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StartAnimationGroup
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StartAnimationGroup
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  name: StopAnimationGroup(ICompositionAnimationBase)
+  nameWithType: CompositionObject.StopAnimationGroup(ICompositionAnimationBase)
+  fullName: Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StopAnimationGroup
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StopAnimationGroup(Microsoft.UI.Composition.ICompositionAnimationBase)
+    name: StopAnimationGroup
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_
+  - name: (
+  - uid: Microsoft.UI.Composition.ICompositionAnimationBase
+    name: ICompositionAnimationBase
+    href: Microsoft.UI.Composition.ICompositionAnimationBase.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(System.String)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(System.String)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_
+  name: TryGetAnimationController(string)
+  nameWithType: CompositionObject.TryGetAnimationController(string)
+  fullName: Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(string)
+  nameWithType.vb: CompositionObject.TryGetAnimationController(String)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(String)
+  name.vb: TryGetAnimationController(String)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(System.String)
+    name: TryGetAnimationController
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.TryGetAnimationController(System.String)
+    name: TryGetAnimationController
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.AnimationController)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.AnimationController)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_
+  name: StartAnimation(string, CompositionAnimation, AnimationController)
+  nameWithType: CompositionObject.StartAnimation(string, CompositionAnimation, AnimationController)
+  fullName: Microsoft.UI.Composition.CompositionObject.StartAnimation(string, Microsoft.UI.Composition.CompositionAnimation, Microsoft.UI.Composition.AnimationController)
+  nameWithType.vb: CompositionObject.StartAnimation(String, CompositionAnimation, AnimationController)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.StartAnimation(String, Microsoft.UI.Composition.CompositionAnimation, Microsoft.UI.Composition.AnimationController)
+  name.vb: StartAnimation(String, CompositionAnimation, AnimationController)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.AnimationController)
+    name: StartAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationController
+    name: AnimationController
+    href: Microsoft.UI.Composition.AnimationController.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.StartAnimation(System.String,Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.AnimationController)
+    name: StartAnimation
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionAnimation
+    name: CompositionAnimation
+    href: Microsoft.UI.Composition.CompositionAnimation.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationController
+    name: AnimationController
+    href: Microsoft.UI.Composition.AnimationController.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.Dispose
+  commentId: M:Microsoft.UI.Composition.CompositionObject.Dispose
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose
+  name: Dispose()
+  nameWithType: CompositionObject.Dispose()
+  fullName: Microsoft.UI.Composition.CompositionObject.Dispose()
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.Dispose
+    name: Dispose
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.Dispose
+    name: Dispose
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  name: PopulatePropertyInfo(string, AnimationPropertyInfo)
+  nameWithType: CompositionObject.PopulatePropertyInfo(string, AnimationPropertyInfo)
+  fullName: Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(string, Microsoft.UI.Composition.AnimationPropertyInfo)
+  nameWithType.vb: CompositionObject.PopulatePropertyInfo(String, AnimationPropertyInfo)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(String, Microsoft.UI.Composition.AnimationPropertyInfo)
+  name.vb: PopulatePropertyInfo(String, AnimationPropertyInfo)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+    name: PopulatePropertyInfo
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationPropertyInfo
+    name: AnimationPropertyInfo
+    href: Microsoft.UI.Composition.AnimationPropertyInfo.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.PopulatePropertyInfo(System.String,Microsoft.UI.Composition.AnimationPropertyInfo)
+    name: PopulatePropertyInfo
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Composition.AnimationPropertyInfo
+    name: AnimationPropertyInfo
+    href: Microsoft.UI.Composition.AnimationPropertyInfo.html
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.Comment
+  commentId: P:Microsoft.UI.Composition.CompositionObject.Comment
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Comment
+  name: Comment
+  nameWithType: CompositionObject.Comment
+  fullName: Microsoft.UI.Composition.CompositionObject.Comment
+- uid: Microsoft.UI.Composition.CompositionObject.Compositor
+  commentId: P:Microsoft.UI.Composition.CompositionObject.Compositor
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Compositor
+  name: Compositor
+  nameWithType: CompositionObject.Compositor
+  fullName: Microsoft.UI.Composition.CompositionObject.Compositor
+- uid: Microsoft.UI.Composition.CompositionObject.DispatcherQueue
+  commentId: P:Microsoft.UI.Composition.CompositionObject.DispatcherQueue
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: CompositionObject.DispatcherQueue
+  fullName: Microsoft.UI.Composition.CompositionObject.DispatcherQueue
+- uid: Microsoft.UI.Composition.CompositionObject.ImplicitAnimations
+  commentId: P:Microsoft.UI.Composition.CompositionObject.ImplicitAnimations
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_ImplicitAnimations
+  name: ImplicitAnimations
+  nameWithType: CompositionObject.ImplicitAnimations
+  fullName: Microsoft.UI.Composition.CompositionObject.ImplicitAnimations
+- uid: Microsoft.UI.Composition.CompositionObject.Properties
+  commentId: P:Microsoft.UI.Composition.CompositionObject.Properties
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Properties
+  name: Properties
+  nameWithType: CompositionObject.Properties
+  fullName: Microsoft.UI.Composition.CompositionObject.Properties
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.As*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.As
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_As__1
+  name: As
+  nameWithType: CompositionEasingFunction.As
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateCubicBezierEasingFunction_Microsoft_UI_Composition_Compositor_System_Numerics_Vector2_System_Numerics_Vector2_
+  name: CreateCubicBezierEasingFunction
+  nameWithType: CompositionEasingFunction.CreateCubicBezierEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateCubicBezierEasingFunction
+- uid: Microsoft.UI.Composition.Compositor
+  commentId: T:Microsoft.UI.Composition.Compositor
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.Compositor.html
+  name: Compositor
+  nameWithType: Compositor
+  fullName: Microsoft.UI.Composition.Compositor
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector2
+  name: Vector2
+  nameWithType: Vector2
+  fullName: System.Numerics.Vector2
+- uid: Microsoft.UI.Composition.CubicBezierEasingFunction
+  commentId: T:Microsoft.UI.Composition.CubicBezierEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.CubicBezierEasingFunction.html
+  name: CubicBezierEasingFunction
+  nameWithType: CubicBezierEasingFunction
+  fullName: Microsoft.UI.Composition.CubicBezierEasingFunction
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateLinearEasingFunction_Microsoft_UI_Composition_Compositor_
+  name: CreateLinearEasingFunction
+  nameWithType: CompositionEasingFunction.CreateLinearEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateLinearEasingFunction
+- uid: Microsoft.UI.Composition.LinearEasingFunction
+  commentId: T:Microsoft.UI.Composition.LinearEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.LinearEasingFunction.html
+  name: LinearEasingFunction
+  nameWithType: LinearEasingFunction
+  fullName: Microsoft.UI.Composition.LinearEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateStepEasingFunction_Microsoft_UI_Composition_Compositor_
+  name: CreateStepEasingFunction
+  nameWithType: CompositionEasingFunction.CreateStepEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateStepEasingFunction
+- uid: Microsoft.UI.Composition.StepEasingFunction
+  commentId: T:Microsoft.UI.Composition.StepEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.StepEasingFunction.html
+  name: StepEasingFunction
+  nameWithType: StepEasingFunction
+  fullName: Microsoft.UI.Composition.StepEasingFunction
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateBackEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_System_Single_
+  name: CreateBackEasingFunction
+  nameWithType: CompositionEasingFunction.CreateBackEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateBackEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunctionMode
+  commentId: T:Microsoft.UI.Composition.CompositionEasingFunctionMode
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.CompositionEasingFunctionMode.html
+  name: CompositionEasingFunctionMode
+  nameWithType: CompositionEasingFunctionMode
+  fullName: Microsoft.UI.Composition.CompositionEasingFunctionMode
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Composition.BackEasingFunction
+  commentId: T:Microsoft.UI.Composition.BackEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.BackEasingFunction.html
+  name: BackEasingFunction
+  nameWithType: BackEasingFunction
+  fullName: Microsoft.UI.Composition.BackEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateBounceEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_System_Int32_System_Single_
+  name: CreateBounceEasingFunction
+  nameWithType: CompositionEasingFunction.CreateBounceEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateBounceEasingFunction
+- uid: Microsoft.UI.Composition.BounceEasingFunction
+  commentId: T:Microsoft.UI.Composition.BounceEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.BounceEasingFunction.html
+  name: BounceEasingFunction
+  nameWithType: BounceEasingFunction
+  fullName: Microsoft.UI.Composition.BounceEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateCircleEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_
+  name: CreateCircleEasingFunction
+  nameWithType: CompositionEasingFunction.CreateCircleEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateCircleEasingFunction
+- uid: Microsoft.UI.Composition.CircleEasingFunction
+  commentId: T:Microsoft.UI.Composition.CircleEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.CircleEasingFunction.html
+  name: CircleEasingFunction
+  nameWithType: CircleEasingFunction
+  fullName: Microsoft.UI.Composition.CircleEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateElasticEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_System_Int32_System_Single_
+  name: CreateElasticEasingFunction
+  nameWithType: CompositionEasingFunction.CreateElasticEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateElasticEasingFunction
+- uid: Microsoft.UI.Composition.ElasticEasingFunction
+  commentId: T:Microsoft.UI.Composition.ElasticEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.ElasticEasingFunction.html
+  name: ElasticEasingFunction
+  nameWithType: ElasticEasingFunction
+  fullName: Microsoft.UI.Composition.ElasticEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateExponentialEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_System_Single_
+  name: CreateExponentialEasingFunction
+  nameWithType: CompositionEasingFunction.CreateExponentialEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateExponentialEasingFunction
+- uid: Microsoft.UI.Composition.ExponentialEasingFunction
+  commentId: T:Microsoft.UI.Composition.ExponentialEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.ExponentialEasingFunction.html
+  name: ExponentialEasingFunction
+  nameWithType: ExponentialEasingFunction
+  fullName: Microsoft.UI.Composition.ExponentialEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreatePowerEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_System_Single_
+  name: CreatePowerEasingFunction
+  nameWithType: CompositionEasingFunction.CreatePowerEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreatePowerEasingFunction
+- uid: Microsoft.UI.Composition.PowerEasingFunction
+  commentId: T:Microsoft.UI.Composition.PowerEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.PowerEasingFunction.html
+  name: PowerEasingFunction
+  nameWithType: PowerEasingFunction
+  fullName: Microsoft.UI.Composition.PowerEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_CreateSineEasingFunction_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_CompositionEasingFunctionMode_
+  name: CreateSineEasingFunction
+  nameWithType: CompositionEasingFunction.CreateSineEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CreateSineEasingFunction
+- uid: Microsoft.UI.Composition.SineEasingFunction
+  commentId: T:Microsoft.UI.Composition.SineEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.SineEasingFunction.html
+  name: SineEasingFunction
+  nameWithType: SineEasingFunction
+  fullName: Microsoft.UI.Composition.SineEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.FromAbi
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: CompositionEasingFunction.FromAbi
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Composition.CompositionEasingFunction
+  commentId: T:Microsoft.UI.Composition.CompositionEasingFunction
+  parent: Microsoft.UI.Composition
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html
+  name: CompositionEasingFunction
+  nameWithType: CompositionEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.#ctor*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.#ctor
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction__ctor_WinRT_IObjectReference_
+  name: CompositionEasingFunction
+  nameWithType: CompositionEasingFunction.CompositionEasingFunction
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.CompositionEasingFunction
+  nameWithType.vb: CompositionEasingFunction.New
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.New
+  name.vb: New
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Equality*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.op_Equality
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_op_Equality_Microsoft_UI_Composition_CompositionEasingFunction_Microsoft_UI_Composition_CompositionEasingFunction_
+  name: operator ==
+  nameWithType: CompositionEasingFunction.operator ==
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.operator ==
+  nameWithType.vb: CompositionEasingFunction.=
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Equality*
+    name: ==
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_op_Equality_Microsoft_UI_Composition_CompositionEasingFunction_Microsoft_UI_Composition_CompositionEasingFunction_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_op_Inequality_Microsoft_UI_Composition_CompositionEasingFunction_Microsoft_UI_Composition_CompositionEasingFunction_
+  name: operator !=
+  nameWithType: CompositionEasingFunction.operator !=
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.operator !=
+  nameWithType.vb: CompositionEasingFunction.<>
+  fullName.vb: Microsoft.UI.Composition.CompositionEasingFunction.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_op_Inequality_Microsoft_UI_Composition_CompositionEasingFunction_Microsoft_UI_Composition_CompositionEasingFunction_
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.Equals*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.Equals
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_Equals_Microsoft_UI_Composition_CompositionEasingFunction_
+  name: Equals
+  nameWithType: CompositionEasingFunction.Equals
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.Equals
+- uid: System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  commentId: M:System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  parent: System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(CompositionEasingFunction)
+  nameWithType: IEquatable<CompositionEasingFunction>.Equals(CompositionEasingFunction)
+  fullName: System.IEquatable<Microsoft.UI.Composition.CompositionEasingFunction>.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  nameWithType.vb: IEquatable(Of CompositionEasingFunction).Equals(CompositionEasingFunction)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Composition.CompositionEasingFunction).Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction
+    name: CompositionEasingFunction
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Composition.CompositionEasingFunction}.Equals(Microsoft.UI.Composition.CompositionEasingFunction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Composition.CompositionEasingFunction
+    name: CompositionEasingFunction
+    href: Microsoft.UI.Composition.CompositionEasingFunction.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.Equals(System.Object)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.Equals(System.Object)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: CompositionObject.Equals(object)
+  fullName: Microsoft.UI.Composition.CompositionObject.Equals(object)
+  nameWithType.vb: CompositionObject.Equals(Object)
+  fullName.vb: Microsoft.UI.Composition.CompositionObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionObject.GetHashCode
+  commentId: M:Microsoft.UI.Composition.CompositionObject.GetHashCode
+  parent: Microsoft.UI.Composition.CompositionObject
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: CompositionObject.GetHashCode()
+  fullName: Microsoft.UI.Composition.CompositionObject.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_GetHashCode
+  name: GetHashCode
+  nameWithType: CompositionEasingFunction.GetHashCode
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.GetHashCode
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Composition.CompositionObject
+  isExternal: true
+  href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface(Guid)
+  nameWithType: CompositionObject.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Composition.CompositionObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface
+  href: Microsoft.UI.Composition.CompositionEasingFunction.html#Microsoft_UI_Composition_CompositionEasingFunction_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: CompositionEasingFunction.IsOverridableInterface
+  fullName: Microsoft.UI.Composition.CompositionEasingFunction.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

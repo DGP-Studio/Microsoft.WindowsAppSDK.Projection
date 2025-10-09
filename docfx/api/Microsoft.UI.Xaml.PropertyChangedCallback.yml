@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.PropertyChangedCallback
+  commentId: T:Microsoft.UI.Xaml.PropertyChangedCallback
+  id: PropertyChangedCallback
+  parent: Microsoft.UI.Xaml
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PropertyChangedCallback
+  nameWithType: PropertyChangedCallback
+  fullName: Microsoft.UI.Xaml.PropertyChangedCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PropertyChangedCallback
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 6336
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(PropertyChangedCallback))]
+
+      [WinRTExposedType(typeof(PropertyChangedCallbackWinRTTypeDetails))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public delegate void PropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    parameters:
+    - id: d
+      type: Microsoft.UI.Xaml.DependencyObject
+    - id: e
+      type: Microsoft.UI.Xaml.DependencyPropertyChangedEventArgs
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(PropertyChangedCallback))>
+
+      <WinRTExposedType(GetType(PropertyChangedCallbackWinRTTypeDetails))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Delegate Sub PropertyChangedCallback(d As DependencyObject, e As DependencyPropertyChangedEventArgs)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: Microsoft.UI.Xaml.DependencyObject
+  commentId: T:Microsoft.UI.Xaml.DependencyObject
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyObject.html
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: Microsoft.UI.Xaml.DependencyObject
+- uid: Microsoft.UI.Xaml.DependencyPropertyChangedEventArgs
+  commentId: T:Microsoft.UI.Xaml.DependencyPropertyChangedEventArgs
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.DependencyPropertyChangedEventArgs.html
+  name: DependencyPropertyChangedEventArgs
+  nameWithType: DependencyPropertyChangedEventArgs
+  fullName: Microsoft.UI.Xaml.DependencyPropertyChangedEventArgs

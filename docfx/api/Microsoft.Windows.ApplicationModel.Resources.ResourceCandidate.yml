@@ -1,0 +1,1240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  id: ResourceCandidate
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  children:
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind,System.String)
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(System.Byte[])
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(System.Object)
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi(System.IntPtr)
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  - Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  langs:
+  - csharp
+  - vb
+  name: ResourceCandidate
+  nameWithType: ResourceCandidate
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ResourceCandidate
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 182
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Resources")]
+
+      [WindowsRuntimeHelperType(typeof(ResourceCandidate))]
+
+      [ProjectedRuntimeClass(typeof(IResourceCandidate))]
+
+      [ContractVersion(typeof(MrtCoreContract), 65536)]
+
+      public sealed class ResourceCandidate : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ResourceCandidate>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.ApplicationModel.Resources")>
+
+      <WindowsRuntimeHelperType(GetType(ResourceCandidate))>
+
+      <ProjectedRuntimeClass(GetType(IResourceCandidate))>
+
+      <ContractVersion(GetType(MrtCoreContract), 65536)>
+
+      Public NotInheritable Class ResourceCandidate Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ResourceCandidate)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.ApplicationModel.Resources
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.ApplicationModel.Resources.MrtCoreContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind,System.String)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind,System.String)
+  id: '#ctor(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind,System.String)'
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: ResourceCandidate(ResourceCandidateKind, string)
+  nameWithType: ResourceCandidate.ResourceCandidate(ResourceCandidateKind, string)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ResourceCandidate(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 254
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public ResourceCandidate(ResourceCandidateKind kind, string data)
+    parameters:
+    - id: kind
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind
+    - id: data
+      type: System.String
+    content.vb: Public Sub New(kind As ResourceCandidateKind, data As String)
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor*
+  nameWithType.vb: ResourceCandidate.New(ResourceCandidateKind, String)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.New(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind, String)
+  name.vb: New(ResourceCandidateKind, String)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(System.Byte[])
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: ResourceCandidate(byte[])
+  nameWithType: ResourceCandidate.ResourceCandidate(byte[])
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ResourceCandidate(byte[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 271
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public ResourceCandidate(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+    content.vb: Public Sub New(data As Byte())
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor*
+  nameWithType.vb: ResourceCandidate.New(Byte())
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.New(Byte())
+  name.vb: New(Byte())
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ResourceCandidate.FromAbi(nint)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 288
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public static ResourceCandidate FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ResourceCandidate
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi*
+  nameWithType.vb: ResourceCandidate.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  id: op_Equality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ResourceCandidate, ResourceCandidate)
+  nameWithType: ResourceCandidate.operator ==(ResourceCandidate, ResourceCandidate)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.operator ==(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate, Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 301
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public static bool operator ==(ResourceCandidate x, ResourceCandidate y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    - id: y
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ResourceCandidate, y As ResourceCandidate) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality*
+  nameWithType.vb: ResourceCandidate.=(ResourceCandidate, ResourceCandidate)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.=(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate, Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  name.vb: =(ResourceCandidate, ResourceCandidate)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  id: op_Inequality(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate,Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ResourceCandidate, ResourceCandidate)
+  nameWithType: ResourceCandidate.operator !=(ResourceCandidate, ResourceCandidate)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.operator !=(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate, Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 302
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public static bool operator !=(ResourceCandidate x, ResourceCandidate y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    - id: y
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ResourceCandidate, y As ResourceCandidate) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality*
+  nameWithType.vb: ResourceCandidate.<>(ResourceCandidate, ResourceCandidate)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.<>(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate, Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  name.vb: <>(ResourceCandidate, ResourceCandidate)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  id: Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: Equals(ResourceCandidate)
+  nameWithType: ResourceCandidate.Equals(ResourceCandidate)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 303
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ResourceCandidate other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ResourceCandidate) As Boolean
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(System.Object)
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ResourceCandidate.Equals(object)
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 304
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals*
+  nameWithType.vb: ResourceCandidate.Equals(Object)
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode
+  commentId: M:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ResourceCandidate.GetHashCode()
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode*
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+  commentId: P:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+  id: Kind
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: ResourceCandidate.Kind
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Kind
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public ResourceCandidateKind Kind { get; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind
+    content.vb: Public ReadOnly Property Kind As ResourceCandidateKind
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind*
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+  commentId: P:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+  id: QualifierValues
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: QualifierValues
+  nameWithType: ResourceCandidate.QualifierValues
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: QualifierValues
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 330
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public IReadOnlyDictionary<string, string> QualifierValues { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property QualifierValues As IReadOnlyDictionary(Of String, String)
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues*
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+  commentId: P:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+  id: ValueAsBytes
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: ValueAsBytes
+  nameWithType: ResourceCandidate.ValueAsBytes
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ValueAsBytes
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 332
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public byte[] ValueAsBytes { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property ValueAsBytes As Byte()
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes*
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString
+  commentId: P:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString
+  id: ValueAsString
+  parent: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  langs:
+  - csharp
+  - vb
+  name: ValueAsString
+  nameWithType: ResourceCandidate.ValueAsString
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.ApplicationModel.Resources.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ValueAsString
+    path: ../src/Microsoft.Windows.ApplicationModel.Resources.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.ApplicationModel.Resources
+  syntax:
+    content: public string ValueAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ValueAsString As String
+  overload: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString*
+references:
+- uid: Microsoft.Windows.ApplicationModel.Resources
+  commentId: N:Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.html
+  name: Microsoft.Windows.ApplicationModel.Resources
+  nameWithType: Microsoft.Windows.ApplicationModel.Resources
+  fullName: Microsoft.Windows.ApplicationModel.Resources
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Resources
+    name: Resources
+    href: Microsoft.Windows.ApplicationModel.Resources.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel
+    name: ApplicationModel
+    href: Microsoft.Windows.ApplicationModel.html
+  - name: .
+  - uid: Microsoft.Windows.ApplicationModel.Resources
+    name: Resources
+    href: Microsoft.Windows.ApplicationModel.Resources.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}
+  commentId: T:System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ResourceCandidate>
+  nameWithType: IEquatable<ResourceCandidate>
+  fullName: System.IEquatable<Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate>
+  nameWithType.vb: IEquatable(Of ResourceCandidate)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  name.vb: IEquatable(Of ResourceCandidate)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    name: ResourceCandidate
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    name: ResourceCandidate
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.#ctor
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate__ctor_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidateKind_System_String_
+  name: ResourceCandidate
+  nameWithType: ResourceCandidate.ResourceCandidate
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ResourceCandidate
+  nameWithType.vb: ResourceCandidate.New
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.New
+  name.vb: New
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind.html
+  name: ResourceCandidateKind
+  nameWithType: ResourceCandidateKind
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidateKind
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ResourceCandidate.FromAbi
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  commentId: T:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+  parent: Microsoft.Windows.ApplicationModel.Resources
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html
+  name: ResourceCandidate
+  nameWithType: ResourceCandidate
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_op_Equality_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_
+  name: operator ==
+  nameWithType: ResourceCandidate.operator ==
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.operator ==
+  nameWithType.vb: ResourceCandidate.=
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Equality*
+    name: ==
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_op_Equality_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_op_Inequality_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_
+  name: operator !=
+  nameWithType: ResourceCandidate.operator !=
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.operator !=
+  nameWithType.vb: ResourceCandidate.<>
+  fullName.vb: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_op_Inequality_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Equals_Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_
+  name: Equals
+  nameWithType: ResourceCandidate.Equals
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Equals
+- uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  commentId: M:System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  parent: System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ResourceCandidate)
+  nameWithType: IEquatable<ResourceCandidate>.Equals(ResourceCandidate)
+  fullName: System.IEquatable<Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate>.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  nameWithType.vb: IEquatable(Of ResourceCandidate).Equals(ResourceCandidate)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate).Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    name: ResourceCandidate
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate}.Equals(Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate
+    name: ResourceCandidate
+    href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_GetHashCode
+  name: GetHashCode
+  nameWithType: ResourceCandidate.GetHashCode
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_Kind
+  name: Kind
+  nameWithType: ResourceCandidate.Kind
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.Kind
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_QualifierValues
+  name: QualifierValues
+  nameWithType: ResourceCandidate.QualifierValues
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.QualifierValues
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_ValueAsBytes
+  name: ValueAsBytes
+  nameWithType: ResourceCandidate.ValueAsBytes
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsBytes
+- uid: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString*
+  commentId: Overload:Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString
+  href: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.html#Microsoft_Windows_ApplicationModel_Resources_ResourceCandidate_ValueAsString
+  name: ValueAsString
+  nameWithType: ResourceCandidate.ValueAsString
+  fullName: Microsoft.Windows.ApplicationModel.Resources.ResourceCandidate.ValueAsString

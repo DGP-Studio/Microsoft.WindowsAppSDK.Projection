@@ -1,0 +1,381 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2
+  commentId: T:Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2
+  id: IScreenRegionDetectorSession2
+  parent: Microsoft.Windows.VisionInternal
+  children:
+  - Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.UInt32,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IScreenRegionDetectorSession2
+  nameWithType: IScreenRegionDetectorSession2
+  fullName: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.VisionInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IScreenRegionDetectorSession2
+    path: ../src/Microsoft.Windows.VisionInternal.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.VisionInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.VisionInternal")]
+
+      [Guid("5131DE05-6A19-41F4-8DDE-E76773ADE187")]
+
+      [WindowsRuntimeHelperType(typeof(IScreenRegionDetectorSession2))]
+
+      [ContractVersion(typeof(ScreenRegionDetectorSessionContract), 131072)]
+
+      public interface IScreenRegionDetectorSession2 : IScreenRegionDetectorSession, IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.VisionInternal")>
+
+      <Guid("5131DE05-6A19-41F4-8DDE-E76773ADE187")>
+
+      <WindowsRuntimeHelperType(GetType(IScreenRegionDetectorSession2))>
+
+      <ContractVersion(GetType(ScreenRegionDetectorSessionContract), 131072)>
+
+      Public Interface IScreenRegionDetectorSession2 Inherits IScreenRegionDetectorSession, IDisposable
+  inheritedMembers:
+  - Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.VisionInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5131DE05-6A19-41F4-8DDE-E76773ADE187
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.VisionInternal.ScreenRegionDetectorSessionContract
+    - type: System.UInt32
+      value: "131072"
+- uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.UInt32,System.UInt32)
+  id: GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData,System.UInt32,System.UInt32)
+  parent: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2
+  langs:
+  - csharp
+  - vb
+  name: GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData, uint, uint)
+  nameWithType: IScreenRegionDetectorSession2.GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData, uint, uint)
+  fullName: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, uint, uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.VisionInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetScreenRegionsAsync
+    path: ../src/Microsoft.Windows.VisionInternal.cs
+    startLine: 71
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.VisionInternal
+  syntax:
+    content: IAsyncOperation<IReadOnlyList<ScreenRegionInternal>> GetScreenRegionsAsync(ImageBufferView inputImageBufferView, ImageBufferViewData inputImageBufferViewData, uint priority, uint frequency)
+    parameters:
+    - id: inputImageBufferView
+      type: Microsoft.Windows.PrivateCommon.ImageBufferView
+    - id: inputImageBufferViewData
+      type: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    return:
+      type: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Windows.VisionInternal.ScreenRegionInternal}}
+    content.vb: Function GetScreenRegionsAsync(inputImageBufferView As ImageBufferView, inputImageBufferViewData As ImageBufferViewData, priority As UInteger, frequency As UInteger) As IAsyncOperation(Of IReadOnlyList(Of ScreenRegionInternal))
+  overload: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync*
+  nameWithType.vb: IScreenRegionDetectorSession2.GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData, UInteger, UInteger)
+  fullName.vb: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData, UInteger, UInteger)
+  name.vb: GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData, UInteger, UInteger)
+references:
+- uid: Microsoft.Windows.VisionInternal
+  commentId: N:Microsoft.Windows.VisionInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.VisionInternal
+  nameWithType: Microsoft.Windows.VisionInternal
+  fullName: Microsoft.Windows.VisionInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.VisionInternal
+    name: VisionInternal
+    href: Microsoft.Windows.VisionInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.VisionInternal
+    name: VisionInternal
+    href: Microsoft.Windows.VisionInternal.html
+- uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  commentId: M:Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  parent: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession
+  href: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.html#Microsoft_Windows_VisionInternal_IScreenRegionDetectorSession_GetScreenRegionsAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_
+  name: GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData)
+  nameWithType: IScreenRegionDetectorSession.GetScreenRegionsAsync(ImageBufferView, ImageBufferViewData)
+  fullName: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView, Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+  spec.csharp:
+  - uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+    name: GetScreenRegionsAsync
+    href: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.html#Microsoft_Windows_VisionInternal_IScreenRegionDetectorSession_GetScreenRegionsAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.GetScreenRegionsAsync(Microsoft.Windows.PrivateCommon.ImageBufferView,Microsoft.Windows.PrivateCommon.ImageBufferViewData)
+    name: GetScreenRegionsAsync
+    href: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.html#Microsoft_Windows_VisionInternal_IScreenRegionDetectorSession_GetScreenRegionsAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_
+  - name: (
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+    name: ImageBufferView
+    href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+    name: ImageBufferViewData
+    href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession
+  commentId: T:Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession
+  parent: Microsoft.Windows.VisionInternal
+  href: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession.html
+  name: IScreenRegionDetectorSession
+  nameWithType: IScreenRegionDetectorSession
+  fullName: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync*
+  commentId: Overload:Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync
+  href: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.html#Microsoft_Windows_VisionInternal_IScreenRegionDetectorSession2_GetScreenRegionsAsync_Microsoft_Windows_PrivateCommon_ImageBufferView_Microsoft_Windows_PrivateCommon_ImageBufferViewData_System_UInt32_System_UInt32_
+  name: GetScreenRegionsAsync
+  nameWithType: IScreenRegionDetectorSession2.GetScreenRegionsAsync
+  fullName: Microsoft.Windows.VisionInternal.IScreenRegionDetectorSession2.GetScreenRegionsAsync
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferView
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferView
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferView.html
+  name: ImageBufferView
+  nameWithType: ImageBufferView
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferView
+- uid: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  commentId: T:Microsoft.Windows.PrivateCommon.ImageBufferViewData
+  parent: Microsoft.Windows.PrivateCommon
+  href: Microsoft.Windows.PrivateCommon.ImageBufferViewData.html
+  name: ImageBufferViewData
+  nameWithType: ImageBufferViewData
+  fullName: Microsoft.Windows.PrivateCommon.ImageBufferViewData
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Windows.VisionInternal.ScreenRegionInternal}}
+  commentId: T:Windows.Foundation.IAsyncOperation{System.Collections.Generic.IReadOnlyList{Microsoft.Windows.VisionInternal.ScreenRegionInternal}}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<IReadOnlyList<ScreenRegionInternal>>
+  nameWithType: IAsyncOperation<IReadOnlyList<ScreenRegionInternal>>
+  fullName: Windows.Foundation.IAsyncOperation<System.Collections.Generic.IReadOnlyList<Microsoft.Windows.VisionInternal.ScreenRegionInternal>>
+  nameWithType.vb: IAsyncOperation(Of IReadOnlyList(Of ScreenRegionInternal))
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of System.Collections.Generic.IReadOnlyList(Of Microsoft.Windows.VisionInternal.ScreenRegionInternal))
+  name.vb: IAsyncOperation(Of IReadOnlyList(Of ScreenRegionInternal))
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.Windows.VisionInternal.ScreenRegionInternal
+    name: ScreenRegionInternal
+    href: Microsoft.Windows.VisionInternal.ScreenRegionInternal.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.VisionInternal.ScreenRegionInternal
+    name: ScreenRegionInternal
+    href: Microsoft.Windows.VisionInternal.ScreenRegionInternal.html
+  - name: )
+  - name: )
+- uid: Microsoft.Windows.PrivateCommon
+  commentId: N:Microsoft.Windows.PrivateCommon
+  href: Microsoft.html
+  name: Microsoft.Windows.PrivateCommon
+  nameWithType: Microsoft.Windows.PrivateCommon
+  fullName: Microsoft.Windows.PrivateCommon
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.PrivateCommon
+    name: PrivateCommon
+    href: Microsoft.Windows.PrivateCommon.html
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation

@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  commentId: T:Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  id: IWidgetProvider
+  parent: Microsoft.Windows.Widgets.Providers
+  children:
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate(System.String)
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget(System.String,System.String)
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked(Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs)
+  - Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged(Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs)
+  langs:
+  - csharp
+  - vb
+  name: IWidgetProvider
+  nameWithType: IWidgetProvider
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IWidgetProvider
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Widgets")]
+
+      [Guid("5C5774CC-72A0-452D-B9ED-075C0DD25EED")]
+
+      [WindowsRuntimeHelperType(typeof(IWidgetProvider))]
+
+      [ContractVersion(typeof(WidgetContract), 65536)]
+
+      public interface IWidgetProvider
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Widgets")>
+
+      <Guid("5C5774CC-72A0-452D-B9ED-075C0DD25EED")>
+
+      <WindowsRuntimeHelperType(GetType(IWidgetProvider))>
+
+      <ContractVersion(GetType(WidgetContract), 65536)>
+
+      Public Interface IWidgetProvider
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Widgets
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5C5774CC-72A0-452D-B9ED-075C0DD25EED
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Widgets.WidgetContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  id: CreateWidget(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateWidget(WidgetContext)
+  nameWithType: IWidgetProvider.CreateWidget(WidgetContext)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CreateWidget
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 129
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void CreateWidget(WidgetContext widgetContext)
+    parameters:
+    - id: widgetContext
+      type: Microsoft.Windows.Widgets.Providers.WidgetContext
+    content.vb: Sub CreateWidget(widgetContext As WidgetContext)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget*
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget(System.String,System.String)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget(System.String,System.String)
+  id: DeleteWidget(System.String,System.String)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: DeleteWidget(string, string)
+  nameWithType: IWidgetProvider.DeleteWidget(string, string)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DeleteWidget
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void DeleteWidget(string widgetId, string customState)
+    parameters:
+    - id: widgetId
+      type: System.String
+    - id: customState
+      type: System.String
+    content.vb: Sub DeleteWidget(widgetId As String, customState As String)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget*
+  nameWithType.vb: IWidgetProvider.DeleteWidget(String, String)
+  fullName.vb: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget(String, String)
+  name.vb: DeleteWidget(String, String)
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked(Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked(Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs)
+  id: OnActionInvoked(Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: OnActionInvoked(WidgetActionInvokedArgs)
+  nameWithType: IWidgetProvider.OnActionInvoked(WidgetActionInvokedArgs)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked(Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OnActionInvoked
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 131
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void OnActionInvoked(WidgetActionInvokedArgs actionInvokedArgs)
+    parameters:
+    - id: actionInvokedArgs
+      type: Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs
+    content.vb: Sub OnActionInvoked(actionInvokedArgs As WidgetActionInvokedArgs)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked*
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged(Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged(Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs)
+  id: OnWidgetContextChanged(Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: OnWidgetContextChanged(WidgetContextChangedArgs)
+  nameWithType: IWidgetProvider.OnWidgetContextChanged(WidgetContextChangedArgs)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged(Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OnWidgetContextChanged
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void OnWidgetContextChanged(WidgetContextChangedArgs contextChangedArgs)
+    parameters:
+    - id: contextChangedArgs
+      type: Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs
+    content.vb: Sub OnWidgetContextChanged(contextChangedArgs As WidgetContextChangedArgs)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged*
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  id: Activate(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: Activate(WidgetContext)
+  nameWithType: IWidgetProvider.Activate(WidgetContext)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate(Microsoft.Windows.Widgets.Providers.WidgetContext)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Activate
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 133
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void Activate(WidgetContext widgetContext)
+    parameters:
+    - id: widgetContext
+      type: Microsoft.Windows.Widgets.Providers.WidgetContext
+    content.vb: Sub Activate(widgetContext As WidgetContext)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate*
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate(System.String)
+  commentId: M:Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate(System.String)
+  id: Deactivate(System.String)
+  parent: Microsoft.Windows.Widgets.Providers.IWidgetProvider
+  langs:
+  - csharp
+  - vb
+  name: Deactivate(string)
+  nameWithType: IWidgetProvider.Deactivate(string)
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Widgets.Providers.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Deactivate
+    path: ../src/Microsoft.Windows.Widgets.Providers.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Widgets.Providers
+  syntax:
+    content: void Deactivate(string widgetId)
+    parameters:
+    - id: widgetId
+      type: System.String
+    content.vb: Sub Deactivate(widgetId As String)
+  overload: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate*
+  nameWithType.vb: IWidgetProvider.Deactivate(String)
+  fullName.vb: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate(String)
+  name.vb: Deactivate(String)
+references:
+- uid: Microsoft.Windows.Widgets.Providers
+  commentId: N:Microsoft.Windows.Widgets.Providers
+  href: Microsoft.html
+  name: Microsoft.Windows.Widgets.Providers
+  nameWithType: Microsoft.Windows.Widgets.Providers
+  fullName: Microsoft.Windows.Widgets.Providers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets
+    name: Widgets
+    href: Microsoft.Windows.Widgets.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets.Providers
+    name: Providers
+    href: Microsoft.Windows.Widgets.Providers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets
+    name: Widgets
+    href: Microsoft.Windows.Widgets.html
+  - name: .
+  - uid: Microsoft.Windows.Widgets.Providers
+    name: Providers
+    href: Microsoft.Windows.Widgets.Providers.html
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_CreateWidget_Microsoft_Windows_Widgets_Providers_WidgetContext_
+  name: CreateWidget
+  nameWithType: IWidgetProvider.CreateWidget
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.CreateWidget
+- uid: Microsoft.Windows.Widgets.Providers.WidgetContext
+  commentId: T:Microsoft.Windows.Widgets.Providers.WidgetContext
+  parent: Microsoft.Windows.Widgets.Providers
+  href: Microsoft.Windows.Widgets.Providers.WidgetContext.html
+  name: WidgetContext
+  nameWithType: WidgetContext
+  fullName: Microsoft.Windows.Widgets.Providers.WidgetContext
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_DeleteWidget_System_String_System_String_
+  name: DeleteWidget
+  nameWithType: IWidgetProvider.DeleteWidget
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.DeleteWidget
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_OnActionInvoked_Microsoft_Windows_Widgets_Providers_WidgetActionInvokedArgs_
+  name: OnActionInvoked
+  nameWithType: IWidgetProvider.OnActionInvoked
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnActionInvoked
+- uid: Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs
+  commentId: T:Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs
+  parent: Microsoft.Windows.Widgets.Providers
+  href: Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs.html
+  name: WidgetActionInvokedArgs
+  nameWithType: WidgetActionInvokedArgs
+  fullName: Microsoft.Windows.Widgets.Providers.WidgetActionInvokedArgs
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_OnWidgetContextChanged_Microsoft_Windows_Widgets_Providers_WidgetContextChangedArgs_
+  name: OnWidgetContextChanged
+  nameWithType: IWidgetProvider.OnWidgetContextChanged
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.OnWidgetContextChanged
+- uid: Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs
+  commentId: T:Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs
+  parent: Microsoft.Windows.Widgets.Providers
+  href: Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs.html
+  name: WidgetContextChangedArgs
+  nameWithType: WidgetContextChangedArgs
+  fullName: Microsoft.Windows.Widgets.Providers.WidgetContextChangedArgs
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_Activate_Microsoft_Windows_Widgets_Providers_WidgetContext_
+  name: Activate
+  nameWithType: IWidgetProvider.Activate
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Activate
+- uid: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate*
+  commentId: Overload:Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate
+  href: Microsoft.Windows.Widgets.Providers.IWidgetProvider.html#Microsoft_Windows_Widgets_Providers_IWidgetProvider_Deactivate_System_String_
+  name: Deactivate
+  nameWithType: IWidgetProvider.Deactivate
+  fullName: Microsoft.Windows.Widgets.Providers.IWidgetProvider.Deactivate

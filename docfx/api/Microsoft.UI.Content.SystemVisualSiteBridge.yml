@@ -1,0 +1,1556 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge
+  commentId: T:Microsoft.UI.Content.SystemVisualSiteBridge
+  id: SystemVisualSiteBridge
+  parent: Microsoft.UI.Content
+  children:
+  - Microsoft.UI.Content.SystemVisualSiteBridge.As``1
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Closed
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Connect(Microsoft.UI.Content.ContentIsland)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Create(Microsoft.UI.Dispatching.DispatcherQueue,Windows.UI.Composition.ContainerVisual,Microsoft.UI.WindowId)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Dispose
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Equals(System.Object)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.FrameworkClosed
+  - Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(System.IntPtr)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode
+  - Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+  - Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+  - Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+  - Microsoft.UI.Content.SystemVisualSiteBridge.Site
+  - Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  - Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  langs:
+  - csharp
+  - vb
+  name: SystemVisualSiteBridge
+  nameWithType: SystemVisualSiteBridge
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SystemVisualSiteBridge
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4521
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(SystemVisualSiteBridge))]
+
+      [ProjectedRuntimeClass(typeof(ISystemVisualSiteBridge))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65544)]
+
+      [Experimental]
+
+      public sealed class SystemVisualSiteBridge : IClosableNotifier, IContentSiteBridge, IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<SystemVisualSiteBridge>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(SystemVisualSiteBridge))>
+
+      <ProjectedRuntimeClass(GetType(ISystemVisualSiteBridge))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65544)>
+
+      <Experimental>
+
+      Public NotInheritable Class SystemVisualSiteBridge Implements IClosableNotifier, IContentSiteBridge, IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of SystemVisualSiteBridge)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.UI.IClosableNotifier
+  - Microsoft.UI.Content.IContentSiteBridge
+  - System.IDisposable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65544"
+  - type: Windows.Foundation.Metadata.ExperimentalAttribute
+    ctor: Windows.Foundation.Metadata.ExperimentalAttribute.#ctor
+    arguments: []
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.As``1
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.As``1
+  id: As``1
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: SystemVisualSiteBridge.As<I>()
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4562
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.As*
+  nameWithType.vb: SystemVisualSiteBridge.As(Of I)()
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Create(Microsoft.UI.Dispatching.DispatcherQueue,Windows.UI.Composition.ContainerVisual,Microsoft.UI.WindowId)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.Create(Microsoft.UI.Dispatching.DispatcherQueue,Windows.UI.Composition.ContainerVisual,Microsoft.UI.WindowId)
+  id: Create(Microsoft.UI.Dispatching.DispatcherQueue,Windows.UI.Composition.ContainerVisual,Microsoft.UI.WindowId)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Create(DispatcherQueue, ContainerVisual, WindowId)
+  nameWithType: SystemVisualSiteBridge.Create(DispatcherQueue, ContainerVisual, WindowId)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Create(Microsoft.UI.Dispatching.DispatcherQueue, Windows.UI.Composition.ContainerVisual, Microsoft.UI.WindowId)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Create
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4581
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static SystemVisualSiteBridge Create(DispatcherQueue queue, ContainerVisual hostVisual, WindowId parentForInputWindowId)
+    parameters:
+    - id: queue
+      type: Microsoft.UI.Dispatching.DispatcherQueue
+    - id: hostVisual
+      type: Windows.UI.Composition.ContainerVisual
+    - id: parentForInputWindowId
+      type: Microsoft.UI.WindowId
+    return:
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    content.vb: Public Shared Function Create(queue As DispatcherQueue, hostVisual As ContainerVisual, parentForInputWindowId As WindowId) As SystemVisualSiteBridge
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Create*
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: SystemVisualSiteBridge.FromAbi(nint)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4583
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static SystemVisualSiteBridge FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As SystemVisualSiteBridge
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi*
+  nameWithType.vb: SystemVisualSiteBridge.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  id: op_Equality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: operator ==(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  nameWithType: SystemVisualSiteBridge.operator ==(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.operator ==(Microsoft.UI.Content.SystemVisualSiteBridge, Microsoft.UI.Content.SystemVisualSiteBridge)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4596
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static bool operator ==(SystemVisualSiteBridge x, SystemVisualSiteBridge y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    - id: y
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As SystemVisualSiteBridge, y As SystemVisualSiteBridge) As Boolean
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality*
+  nameWithType.vb: SystemVisualSiteBridge.=(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.=(Microsoft.UI.Content.SystemVisualSiteBridge, Microsoft.UI.Content.SystemVisualSiteBridge)
+  name.vb: =(SystemVisualSiteBridge, SystemVisualSiteBridge)
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  id: op_Inequality(Microsoft.UI.Content.SystemVisualSiteBridge,Microsoft.UI.Content.SystemVisualSiteBridge)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: operator !=(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  nameWithType: SystemVisualSiteBridge.operator !=(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.operator !=(Microsoft.UI.Content.SystemVisualSiteBridge, Microsoft.UI.Content.SystemVisualSiteBridge)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4597
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static bool operator !=(SystemVisualSiteBridge x, SystemVisualSiteBridge y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    - id: y
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As SystemVisualSiteBridge, y As SystemVisualSiteBridge) As Boolean
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality*
+  nameWithType.vb: SystemVisualSiteBridge.<>(SystemVisualSiteBridge, SystemVisualSiteBridge)
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.<>(Microsoft.UI.Content.SystemVisualSiteBridge, Microsoft.UI.Content.SystemVisualSiteBridge)
+  name.vb: <>(SystemVisualSiteBridge, SystemVisualSiteBridge)
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  id: Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Equals(SystemVisualSiteBridge)
+  nameWithType: SystemVisualSiteBridge.Equals(SystemVisualSiteBridge)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4598
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(SystemVisualSiteBridge other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Content.SystemVisualSiteBridge
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As SystemVisualSiteBridge) As Boolean
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Equals(System.Object)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: SystemVisualSiteBridge.Equals(object)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4599
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Equals*
+  nameWithType.vb: SystemVisualSiteBridge.Equals(Object)
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SystemVisualSiteBridge.GetHashCode()
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4600
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode*
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Connect(Microsoft.UI.Content.ContentIsland)
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.Connect(Microsoft.UI.Content.ContentIsland)
+  id: Connect(Microsoft.UI.Content.ContentIsland)
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Connect(ContentIsland)
+  nameWithType: SystemVisualSiteBridge.Connect(ContentIsland)
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Connect(Microsoft.UI.Content.ContentIsland)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Connect
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4623
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public void Connect(ContentIsland content)
+    parameters:
+    - id: content
+      type: Microsoft.UI.Content.ContentIsland
+    content.vb: Public Sub Connect(content As ContentIsland)
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Connect*
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Closed
+  commentId: E:Microsoft.UI.Content.SystemVisualSiteBridge.Closed
+  id: Closed
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: SystemVisualSiteBridge.Closed
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Closed
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Closed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4625
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public event ClosableNotifierHandler Closed
+    return:
+      type: Microsoft.UI.ClosableNotifierHandler
+    content.vb: Public Event Closed As ClosableNotifierHandler
+  implements:
+  - Microsoft.UI.IClosableNotifier.Closed
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.FrameworkClosed
+  commentId: E:Microsoft.UI.Content.SystemVisualSiteBridge.FrameworkClosed
+  id: FrameworkClosed
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: FrameworkClosed
+  nameWithType: SystemVisualSiteBridge.FrameworkClosed
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.FrameworkClosed
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FrameworkClosed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4631
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public event ClosableNotifierHandler FrameworkClosed
+    return:
+      type: Microsoft.UI.ClosableNotifierHandler
+    content.vb: Public Event FrameworkClosed As ClosableNotifierHandler
+  implements:
+  - Microsoft.UI.IClosableNotifier.FrameworkClosed
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Dispose
+  commentId: M:Microsoft.UI.Content.SystemVisualSiteBridge.Dispose
+  id: Dispose
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SystemVisualSiteBridge.Dispose()
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispose
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4637
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+  commentId: P:Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+  id: DispatcherQueue
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: DispatcherQueue
+  nameWithType: SystemVisualSiteBridge.DispatcherQueue
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DispatcherQueue
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4639
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public DispatcherQueue DispatcherQueue { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Dispatching.DispatcherQueue
+    content.vb: Public ReadOnly Property DispatcherQueue As DispatcherQueue
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue*
+  implements:
+  - Microsoft.UI.Content.IContentSiteBridge.DispatcherQueue
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+  commentId: P:Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+  id: IsClosed
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: IsClosed
+  nameWithType: SystemVisualSiteBridge.IsClosed
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsClosed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4641
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public bool IsClosed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsClosed As Boolean
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed*
+  implements:
+  - Microsoft.UI.IClosableNotifier.IsClosed
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+  commentId: P:Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+  id: LayoutDirectionOverride
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: LayoutDirectionOverride
+  nameWithType: SystemVisualSiteBridge.LayoutDirectionOverride
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LayoutDirectionOverride
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4643
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public ContentLayoutDirection? LayoutDirectionOverride { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.UI.Content.ContentLayoutDirection}
+    content.vb: Public Property LayoutDirectionOverride As ContentLayoutDirection?
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride*
+  implements:
+  - Microsoft.UI.Content.IContentSiteBridge.LayoutDirectionOverride
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+  commentId: P:Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+  id: OverrideScale
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: OverrideScale
+  nameWithType: SystemVisualSiteBridge.OverrideScale
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OverrideScale
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4649
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public float OverrideScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property OverrideScale As Single
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale*
+  implements:
+  - Microsoft.UI.Content.IContentSiteBridge.OverrideScale
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Site
+  commentId: P:Microsoft.UI.Content.SystemVisualSiteBridge.Site
+  id: Site
+  parent: Microsoft.UI.Content.SystemVisualSiteBridge
+  langs:
+  - csharp
+  - vb
+  name: Site
+  nameWithType: SystemVisualSiteBridge.Site
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Site
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Site
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 4655
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentSite Site { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentSite
+    content.vb: Public ReadOnly Property Site As ContentSite
+  overload: Microsoft.UI.Content.SystemVisualSiteBridge.Site*
+references:
+- uid: Microsoft.UI.Content
+  commentId: N:Microsoft.UI.Content
+  href: Microsoft.html
+  name: Microsoft.UI.Content
+  nameWithType: Microsoft.UI.Content
+  fullName: Microsoft.UI.Content
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.IClosableNotifier
+  commentId: T:Microsoft.UI.IClosableNotifier
+  parent: Microsoft.UI
+  href: Microsoft.UI.IClosableNotifier.html
+  name: IClosableNotifier
+  nameWithType: IClosableNotifier
+  fullName: Microsoft.UI.IClosableNotifier
+- uid: Microsoft.UI.Content.IContentSiteBridge
+  commentId: T:Microsoft.UI.Content.IContentSiteBridge
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.IContentSiteBridge.html
+  name: IContentSiteBridge
+  nameWithType: IContentSiteBridge
+  fullName: Microsoft.UI.Content.IContentSiteBridge
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}
+  commentId: T:System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SystemVisualSiteBridge>
+  nameWithType: IEquatable<SystemVisualSiteBridge>
+  fullName: System.IEquatable<Microsoft.UI.Content.SystemVisualSiteBridge>
+  nameWithType.vb: IEquatable(Of SystemVisualSiteBridge)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Content.SystemVisualSiteBridge)
+  name.vb: IEquatable(Of SystemVisualSiteBridge)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge
+    name: SystemVisualSiteBridge
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge
+    name: SystemVisualSiteBridge
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.As*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.As
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_As__1
+  name: As
+  nameWithType: SystemVisualSiteBridge.As
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Create*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.Create
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_Create_Microsoft_UI_Dispatching_DispatcherQueue_Windows_UI_Composition_ContainerVisual_Microsoft_UI_WindowId_
+  name: Create
+  nameWithType: SystemVisualSiteBridge.Create
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Create
+- uid: Microsoft.UI.Dispatching.DispatcherQueue
+  commentId: T:Microsoft.UI.Dispatching.DispatcherQueue
+  parent: Microsoft.UI.Dispatching
+  href: Microsoft.UI.Dispatching.DispatcherQueue.html
+  name: DispatcherQueue
+  nameWithType: DispatcherQueue
+  fullName: Microsoft.UI.Dispatching.DispatcherQueue
+- uid: Windows.UI.Composition.ContainerVisual
+  commentId: T:Windows.UI.Composition.ContainerVisual
+  parent: Windows.UI.Composition
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.ui.composition.containervisual
+  name: ContainerVisual
+  nameWithType: ContainerVisual
+  fullName: Windows.UI.Composition.ContainerVisual
+- uid: Microsoft.UI.WindowId
+  commentId: T:Microsoft.UI.WindowId
+  parent: Microsoft.UI
+  href: Microsoft.UI.WindowId.html
+  name: WindowId
+  nameWithType: WindowId
+  fullName: Microsoft.UI.WindowId
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge
+  commentId: T:Microsoft.UI.Content.SystemVisualSiteBridge
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html
+  name: SystemVisualSiteBridge
+  nameWithType: SystemVisualSiteBridge
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge
+- uid: Microsoft.UI.Dispatching
+  commentId: N:Microsoft.UI.Dispatching
+  href: Microsoft.html
+  name: Microsoft.UI.Dispatching
+  nameWithType: Microsoft.UI.Dispatching
+  fullName: Microsoft.UI.Dispatching
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+- uid: Windows.UI.Composition
+  commentId: N:Windows.UI.Composition
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.UI.Composition
+  nameWithType: Windows.UI.Composition
+  fullName: Windows.UI.Composition
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Composition
+    name: Composition
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.composition
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Composition
+    name: Composition
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.composition
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: SystemVisualSiteBridge.FromAbi
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_op_Equality_Microsoft_UI_Content_SystemVisualSiteBridge_Microsoft_UI_Content_SystemVisualSiteBridge_
+  name: operator ==
+  nameWithType: SystemVisualSiteBridge.operator ==
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.operator ==
+  nameWithType.vb: SystemVisualSiteBridge.=
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Equality*
+    name: ==
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_op_Equality_Microsoft_UI_Content_SystemVisualSiteBridge_Microsoft_UI_Content_SystemVisualSiteBridge_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_op_Inequality_Microsoft_UI_Content_SystemVisualSiteBridge_Microsoft_UI_Content_SystemVisualSiteBridge_
+  name: operator !=
+  nameWithType: SystemVisualSiteBridge.operator !=
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.operator !=
+  nameWithType.vb: SystemVisualSiteBridge.<>
+  fullName.vb: Microsoft.UI.Content.SystemVisualSiteBridge.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_op_Inequality_Microsoft_UI_Content_SystemVisualSiteBridge_Microsoft_UI_Content_SystemVisualSiteBridge_
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Equals*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.Equals
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_Equals_Microsoft_UI_Content_SystemVisualSiteBridge_
+  name: Equals
+  nameWithType: SystemVisualSiteBridge.Equals
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Equals
+- uid: System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  commentId: M:System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  parent: System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(SystemVisualSiteBridge)
+  nameWithType: IEquatable<SystemVisualSiteBridge>.Equals(SystemVisualSiteBridge)
+  fullName: System.IEquatable<Microsoft.UI.Content.SystemVisualSiteBridge>.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  nameWithType.vb: IEquatable(Of SystemVisualSiteBridge).Equals(SystemVisualSiteBridge)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Content.SystemVisualSiteBridge).Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge
+    name: SystemVisualSiteBridge
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Content.SystemVisualSiteBridge}.Equals(Microsoft.UI.Content.SystemVisualSiteBridge)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Content.SystemVisualSiteBridge
+    name: SystemVisualSiteBridge
+    href: Microsoft.UI.Content.SystemVisualSiteBridge.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_GetHashCode
+  name: GetHashCode
+  nameWithType: SystemVisualSiteBridge.GetHashCode
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Connect*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.Connect
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_Connect_Microsoft_UI_Content_ContentIsland_
+  name: Connect
+  nameWithType: SystemVisualSiteBridge.Connect
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Connect
+- uid: Microsoft.UI.Content.ContentIsland
+  commentId: T:Microsoft.UI.Content.ContentIsland
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentIsland.html
+  name: ContentIsland
+  nameWithType: ContentIsland
+  fullName: Microsoft.UI.Content.ContentIsland
+- uid: Microsoft.UI.IClosableNotifier.Closed
+  commentId: E:Microsoft.UI.IClosableNotifier.Closed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_Closed
+  name: Closed
+  nameWithType: IClosableNotifier.Closed
+  fullName: Microsoft.UI.IClosableNotifier.Closed
+- uid: Microsoft.UI.ClosableNotifierHandler
+  commentId: T:Microsoft.UI.ClosableNotifierHandler
+  parent: Microsoft.UI
+  href: Microsoft.UI.ClosableNotifierHandler.html
+  name: ClosableNotifierHandler
+  nameWithType: ClosableNotifierHandler
+  fullName: Microsoft.UI.ClosableNotifierHandler
+- uid: Microsoft.UI.IClosableNotifier.FrameworkClosed
+  commentId: E:Microsoft.UI.IClosableNotifier.FrameworkClosed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_FrameworkClosed
+  name: FrameworkClosed
+  nameWithType: IClosableNotifier.FrameworkClosed
+  fullName: Microsoft.UI.IClosableNotifier.FrameworkClosed
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Dispose*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.Dispose
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_Dispose
+  name: Dispose
+  nameWithType: SystemVisualSiteBridge.Dispose
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: SystemVisualSiteBridge.DispatcherQueue
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.DispatcherQueue
+- uid: Microsoft.UI.Content.IContentSiteBridge.DispatcherQueue
+  commentId: P:Microsoft.UI.Content.IContentSiteBridge.DispatcherQueue
+  parent: Microsoft.UI.Content.IContentSiteBridge
+  href: Microsoft.UI.Content.IContentSiteBridge.html#Microsoft_UI_Content_IContentSiteBridge_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: IContentSiteBridge.DispatcherQueue
+  fullName: Microsoft.UI.Content.IContentSiteBridge.DispatcherQueue
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_IsClosed
+  name: IsClosed
+  nameWithType: SystemVisualSiteBridge.IsClosed
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.IsClosed
+- uid: Microsoft.UI.IClosableNotifier.IsClosed
+  commentId: P:Microsoft.UI.IClosableNotifier.IsClosed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_IsClosed
+  name: IsClosed
+  nameWithType: IClosableNotifier.IsClosed
+  fullName: Microsoft.UI.IClosableNotifier.IsClosed
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_LayoutDirectionOverride
+  name: LayoutDirectionOverride
+  nameWithType: SystemVisualSiteBridge.LayoutDirectionOverride
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.LayoutDirectionOverride
+- uid: Microsoft.UI.Content.IContentSiteBridge.LayoutDirectionOverride
+  commentId: P:Microsoft.UI.Content.IContentSiteBridge.LayoutDirectionOverride
+  parent: Microsoft.UI.Content.IContentSiteBridge
+  href: Microsoft.UI.Content.IContentSiteBridge.html#Microsoft_UI_Content_IContentSiteBridge_LayoutDirectionOverride
+  name: LayoutDirectionOverride
+  nameWithType: IContentSiteBridge.LayoutDirectionOverride
+  fullName: Microsoft.UI.Content.IContentSiteBridge.LayoutDirectionOverride
+- uid: System.Nullable{Microsoft.UI.Content.ContentLayoutDirection}
+  commentId: T:System.Nullable{Microsoft.UI.Content.ContentLayoutDirection}
+  parent: System
+  definition: System.Nullable`1
+  href: Microsoft.UI.Content.ContentLayoutDirection.html
+  name: ContentLayoutDirection?
+  nameWithType: ContentLayoutDirection?
+  fullName: Microsoft.UI.Content.ContentLayoutDirection?
+  spec.csharp:
+  - uid: Microsoft.UI.Content.ContentLayoutDirection
+    name: ContentLayoutDirection
+    href: Microsoft.UI.Content.ContentLayoutDirection.html
+  - name: '?'
+  spec.vb:
+  - uid: Microsoft.UI.Content.ContentLayoutDirection
+    name: ContentLayoutDirection
+    href: Microsoft.UI.Content.ContentLayoutDirection.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_OverrideScale
+  name: OverrideScale
+  nameWithType: SystemVisualSiteBridge.OverrideScale
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.OverrideScale
+- uid: Microsoft.UI.Content.IContentSiteBridge.OverrideScale
+  commentId: P:Microsoft.UI.Content.IContentSiteBridge.OverrideScale
+  parent: Microsoft.UI.Content.IContentSiteBridge
+  href: Microsoft.UI.Content.IContentSiteBridge.html#Microsoft_UI_Content_IContentSiteBridge_OverrideScale
+  name: OverrideScale
+  nameWithType: IContentSiteBridge.OverrideScale
+  fullName: Microsoft.UI.Content.IContentSiteBridge.OverrideScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Content.SystemVisualSiteBridge.Site*
+  commentId: Overload:Microsoft.UI.Content.SystemVisualSiteBridge.Site
+  href: Microsoft.UI.Content.SystemVisualSiteBridge.html#Microsoft_UI_Content_SystemVisualSiteBridge_Site
+  name: Site
+  nameWithType: SystemVisualSiteBridge.Site
+  fullName: Microsoft.UI.Content.SystemVisualSiteBridge.Site
+- uid: Microsoft.UI.Content.ContentSite
+  commentId: T:Microsoft.UI.Content.ContentSite
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentSite.html
+  name: ContentSite
+  nameWithType: ContentSite
+  fullName: Microsoft.UI.Content.ContentSite

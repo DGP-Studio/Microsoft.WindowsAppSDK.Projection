@@ -1,0 +1,2641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Input.GestureRecognizer
+  commentId: T:Microsoft.UI.Input.GestureRecognizer
+  id: GestureRecognizer
+  parent: Microsoft.UI.Input
+  children:
+  - Microsoft.UI.Input.GestureRecognizer.#ctor
+  - Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+  - Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap(Microsoft.UI.Input.PointerPoint)
+  - Microsoft.UI.Input.GestureRecognizer.CompleteGesture
+  - Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+  - Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+  - Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+  - Microsoft.UI.Input.GestureRecognizer.CrossSliding
+  - Microsoft.UI.Input.GestureRecognizer.Dragging
+  - Microsoft.UI.Input.GestureRecognizer.Equals(Microsoft.UI.Input.GestureRecognizer)
+  - Microsoft.UI.Input.GestureRecognizer.Equals(System.Object)
+  - Microsoft.UI.Input.GestureRecognizer.FromAbi(System.IntPtr)
+  - Microsoft.UI.Input.GestureRecognizer.GestureSettings
+  - Microsoft.UI.Input.GestureRecognizer.GetHashCode
+  - Microsoft.UI.Input.GestureRecognizer.Holding
+  - Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+  - Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+  - Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+  - Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+  - Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+  - Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+  - Microsoft.UI.Input.GestureRecognizer.IsActive
+  - Microsoft.UI.Input.GestureRecognizer.IsInertial
+  - Microsoft.UI.Input.GestureRecognizer.ManipulationCompleted
+  - Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+  - Microsoft.UI.Input.GestureRecognizer.ManipulationInertiaStarting
+  - Microsoft.UI.Input.GestureRecognizer.ManipulationStarted
+  - Microsoft.UI.Input.GestureRecognizer.ManipulationUpdated
+  - Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+  - Microsoft.UI.Input.GestureRecognizer.PivotCenter
+  - Microsoft.UI.Input.GestureRecognizer.PivotRadius
+  - Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent(Microsoft.UI.Input.PointerPoint)
+  - Microsoft.UI.Input.GestureRecognizer.ProcessInertia
+  - Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint,System.Boolean,System.Boolean)
+  - Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents(System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint})
+  - Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent(Microsoft.UI.Input.PointerPoint)
+  - Microsoft.UI.Input.GestureRecognizer.RightTapped
+  - Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback
+  - Microsoft.UI.Input.GestureRecognizer.Tapped
+  - Microsoft.UI.Input.GestureRecognizer.op_Equality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  - Microsoft.UI.Input.GestureRecognizer.op_Inequality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  langs:
+  - csharp
+  - vb
+  name: GestureRecognizer
+  nameWithType: GestureRecognizer
+  fullName: Microsoft.UI.Input.GestureRecognizer
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GestureRecognizer
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 916
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(GestureRecognizer))]
+
+      [ProjectedRuntimeClass(typeof(IGestureRecognizer))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public sealed class GestureRecognizer : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<GestureRecognizer>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(GestureRecognizer))>
+
+      <ProjectedRuntimeClass(GetType(IGestureRecognizer))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public NotInheritable Class GestureRecognizer Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of GestureRecognizer)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Input.GestureRecognizer}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Input.GestureRecognizer.#ctor
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.#ctor
+  id: '#ctor'
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: GestureRecognizer()
+  nameWithType: GestureRecognizer.GestureRecognizer()
+  fullName: Microsoft.UI.Input.GestureRecognizer.GestureRecognizer()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 949
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public GestureRecognizer()
+    content.vb: Public Sub New()
+  overload: Microsoft.UI.Input.GestureRecognizer.#ctor*
+  nameWithType.vb: GestureRecognizer.New()
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.New()
+  name.vb: New()
+- uid: Microsoft.UI.Input.GestureRecognizer.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: GestureRecognizer.FromAbi(nint)
+  fullName: Microsoft.UI.Input.GestureRecognizer.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 957
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static GestureRecognizer FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Input.GestureRecognizer
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As GestureRecognizer
+  overload: Microsoft.UI.Input.GestureRecognizer.FromAbi*
+  nameWithType.vb: GestureRecognizer.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Input.GestureRecognizer.op_Equality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.op_Equality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  id: op_Equality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: operator ==(GestureRecognizer, GestureRecognizer)
+  nameWithType: GestureRecognizer.operator ==(GestureRecognizer, GestureRecognizer)
+  fullName: Microsoft.UI.Input.GestureRecognizer.operator ==(Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.GestureRecognizer)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 970
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator ==(GestureRecognizer x, GestureRecognizer y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.GestureRecognizer
+    - id: y
+      type: Microsoft.UI.Input.GestureRecognizer
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As GestureRecognizer, y As GestureRecognizer) As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.op_Equality*
+  nameWithType.vb: GestureRecognizer.=(GestureRecognizer, GestureRecognizer)
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.=(Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.GestureRecognizer)
+  name.vb: =(GestureRecognizer, GestureRecognizer)
+- uid: Microsoft.UI.Input.GestureRecognizer.op_Inequality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.op_Inequality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  id: op_Inequality(Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.GestureRecognizer)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: operator !=(GestureRecognizer, GestureRecognizer)
+  nameWithType: GestureRecognizer.operator !=(GestureRecognizer, GestureRecognizer)
+  fullName: Microsoft.UI.Input.GestureRecognizer.operator !=(Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.GestureRecognizer)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 971
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator !=(GestureRecognizer x, GestureRecognizer y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.GestureRecognizer
+    - id: y
+      type: Microsoft.UI.Input.GestureRecognizer
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As GestureRecognizer, y As GestureRecognizer) As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.op_Inequality*
+  nameWithType.vb: GestureRecognizer.<>(GestureRecognizer, GestureRecognizer)
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.<>(Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.GestureRecognizer)
+  name.vb: <>(GestureRecognizer, GestureRecognizer)
+- uid: Microsoft.UI.Input.GestureRecognizer.Equals(Microsoft.UI.Input.GestureRecognizer)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.Equals(Microsoft.UI.Input.GestureRecognizer)
+  id: Equals(Microsoft.UI.Input.GestureRecognizer)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Equals(GestureRecognizer)
+  nameWithType: GestureRecognizer.Equals(GestureRecognizer)
+  fullName: Microsoft.UI.Input.GestureRecognizer.Equals(Microsoft.UI.Input.GestureRecognizer)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 972
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(GestureRecognizer other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Input.GestureRecognizer
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As GestureRecognizer) As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Input.GestureRecognizer}.Equals(Microsoft.UI.Input.GestureRecognizer)
+- uid: Microsoft.UI.Input.GestureRecognizer.Equals(System.Object)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: GestureRecognizer.Equals(object)
+  fullName: Microsoft.UI.Input.GestureRecognizer.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 973
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Input.GestureRecognizer.Equals*
+  nameWithType.vb: GestureRecognizer.Equals(Object)
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Input.GestureRecognizer.GetHashCode
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: GestureRecognizer.GetHashCode()
+  fullName: Microsoft.UI.Input.GestureRecognizer.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 974
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Input.GestureRecognizer.GetHashCode*
+- uid: Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap(Microsoft.UI.Input.PointerPoint)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap(Microsoft.UI.Input.PointerPoint)
+  id: CanBeDoubleTap(Microsoft.UI.Input.PointerPoint)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CanBeDoubleTap(PointerPoint)
+  nameWithType: GestureRecognizer.CanBeDoubleTap(PointerPoint)
+  fullName: Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap(Microsoft.UI.Input.PointerPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CanBeDoubleTap
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 997
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool CanBeDoubleTap(PointerPoint value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Input.PointerPoint
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanBeDoubleTap(value As PointerPoint) As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap*
+- uid: Microsoft.UI.Input.GestureRecognizer.CompleteGesture
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.CompleteGesture
+  id: CompleteGesture
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CompleteGesture()
+  nameWithType: GestureRecognizer.CompleteGesture()
+  fullName: Microsoft.UI.Input.GestureRecognizer.CompleteGesture()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CompleteGesture
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 999
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void CompleteGesture()
+    content.vb: Public Sub CompleteGesture()
+  overload: Microsoft.UI.Input.GestureRecognizer.CompleteGesture*
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent(Microsoft.UI.Input.PointerPoint)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent(Microsoft.UI.Input.PointerPoint)
+  id: ProcessDownEvent(Microsoft.UI.Input.PointerPoint)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ProcessDownEvent(PointerPoint)
+  nameWithType: GestureRecognizer.ProcessDownEvent(PointerPoint)
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent(Microsoft.UI.Input.PointerPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessDownEvent
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1001
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void ProcessDownEvent(PointerPoint value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Input.PointerPoint
+    content.vb: Public Sub ProcessDownEvent(value As PointerPoint)
+  overload: Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent*
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents(System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint})
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents(System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint})
+  id: ProcessMoveEvents(System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint})
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ProcessMoveEvents(IList<PointerPoint>)
+  nameWithType: GestureRecognizer.ProcessMoveEvents(IList<PointerPoint>)
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents(System.Collections.Generic.IList<Microsoft.UI.Input.PointerPoint>)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessMoveEvents
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1003
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void ProcessMoveEvents(IList<PointerPoint> value)
+    parameters:
+    - id: value
+      type: System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint}
+    content.vb: Public Sub ProcessMoveEvents(value As IList(Of PointerPoint))
+  overload: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents*
+  nameWithType.vb: GestureRecognizer.ProcessMoveEvents(IList(Of PointerPoint))
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents(System.Collections.Generic.IList(Of Microsoft.UI.Input.PointerPoint))
+  name.vb: ProcessMoveEvents(IList(Of PointerPoint))
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint,System.Boolean,System.Boolean)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint,System.Boolean,System.Boolean)
+  id: ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint,System.Boolean,System.Boolean)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ProcessMouseWheelEvent(PointerPoint, bool, bool)
+  nameWithType: GestureRecognizer.ProcessMouseWheelEvent(PointerPoint, bool, bool)
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessMouseWheelEvent
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1005
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void ProcessMouseWheelEvent(PointerPoint value, bool isShiftKeyDown, bool isControlKeyDown)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Input.PointerPoint
+    - id: isShiftKeyDown
+      type: System.Boolean
+    - id: isControlKeyDown
+      type: System.Boolean
+    content.vb: Public Sub ProcessMouseWheelEvent(value As PointerPoint, isShiftKeyDown As Boolean, isControlKeyDown As Boolean)
+  overload: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent*
+  nameWithType.vb: GestureRecognizer.ProcessMouseWheelEvent(PointerPoint, Boolean, Boolean)
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent(Microsoft.UI.Input.PointerPoint, Boolean, Boolean)
+  name.vb: ProcessMouseWheelEvent(PointerPoint, Boolean, Boolean)
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessInertia
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.ProcessInertia
+  id: ProcessInertia
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ProcessInertia()
+  nameWithType: GestureRecognizer.ProcessInertia()
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessInertia()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessInertia
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1007
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void ProcessInertia()
+    content.vb: Public Sub ProcessInertia()
+  overload: Microsoft.UI.Input.GestureRecognizer.ProcessInertia*
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent(Microsoft.UI.Input.PointerPoint)
+  commentId: M:Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent(Microsoft.UI.Input.PointerPoint)
+  id: ProcessUpEvent(Microsoft.UI.Input.PointerPoint)
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ProcessUpEvent(PointerPoint)
+  nameWithType: GestureRecognizer.ProcessUpEvent(PointerPoint)
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent(Microsoft.UI.Input.PointerPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessUpEvent
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1009
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public void ProcessUpEvent(PointerPoint value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Input.PointerPoint
+    content.vb: Public Sub ProcessUpEvent(value As PointerPoint)
+  overload: Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent*
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSliding
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.CrossSliding
+  id: CrossSliding
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CrossSliding
+  nameWithType: GestureRecognizer.CrossSliding
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSliding
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CrossSliding
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1011
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, CrossSlidingEventArgs> CrossSliding
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.CrossSlidingEventArgs}
+    content.vb: Public Event CrossSliding As TypedEventHandler(Of GestureRecognizer, CrossSlidingEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.Dragging
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.Dragging
+  id: Dragging
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Dragging
+  nameWithType: GestureRecognizer.Dragging
+  fullName: Microsoft.UI.Input.GestureRecognizer.Dragging
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dragging
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1017
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, DraggingEventArgs> Dragging
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.DraggingEventArgs}
+    content.vb: Public Event Dragging As TypedEventHandler(Of GestureRecognizer, DraggingEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.Holding
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.Holding
+  id: Holding
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Holding
+  nameWithType: GestureRecognizer.Holding
+  fullName: Microsoft.UI.Input.GestureRecognizer.Holding
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Holding
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1023
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, HoldingEventArgs> Holding
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.HoldingEventArgs}
+    content.vb: Public Event Holding As TypedEventHandler(Of GestureRecognizer, HoldingEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationCompleted
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.ManipulationCompleted
+  id: ManipulationCompleted
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ManipulationCompleted
+  nameWithType: GestureRecognizer.ManipulationCompleted
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationCompleted
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ManipulationCompleted
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1029
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, ManipulationCompletedEventArgs> ManipulationCompleted
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationCompletedEventArgs}
+    content.vb: Public Event ManipulationCompleted As TypedEventHandler(Of GestureRecognizer, ManipulationCompletedEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationInertiaStarting
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.ManipulationInertiaStarting
+  id: ManipulationInertiaStarting
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ManipulationInertiaStarting
+  nameWithType: GestureRecognizer.ManipulationInertiaStarting
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationInertiaStarting
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ManipulationInertiaStarting
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1035
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, ManipulationInertiaStartingEventArgs> ManipulationInertiaStarting
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationInertiaStartingEventArgs}
+    content.vb: Public Event ManipulationInertiaStarting As TypedEventHandler(Of GestureRecognizer, ManipulationInertiaStartingEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationStarted
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.ManipulationStarted
+  id: ManipulationStarted
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ManipulationStarted
+  nameWithType: GestureRecognizer.ManipulationStarted
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationStarted
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ManipulationStarted
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1041
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, ManipulationStartedEventArgs> ManipulationStarted
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationStartedEventArgs}
+    content.vb: Public Event ManipulationStarted As TypedEventHandler(Of GestureRecognizer, ManipulationStartedEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationUpdated
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.ManipulationUpdated
+  id: ManipulationUpdated
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ManipulationUpdated
+  nameWithType: GestureRecognizer.ManipulationUpdated
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationUpdated
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ManipulationUpdated
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1047
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, ManipulationUpdatedEventArgs> ManipulationUpdated
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationUpdatedEventArgs}
+    content.vb: Public Event ManipulationUpdated As TypedEventHandler(Of GestureRecognizer, ManipulationUpdatedEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.RightTapped
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.RightTapped
+  id: RightTapped
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: RightTapped
+  nameWithType: GestureRecognizer.RightTapped
+  fullName: Microsoft.UI.Input.GestureRecognizer.RightTapped
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RightTapped
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1053
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, RightTappedEventArgs> RightTapped
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.RightTappedEventArgs}
+    content.vb: Public Event RightTapped As TypedEventHandler(Of GestureRecognizer, RightTappedEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.Tapped
+  commentId: E:Microsoft.UI.Input.GestureRecognizer.Tapped
+  id: Tapped
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: Tapped
+  nameWithType: GestureRecognizer.Tapped
+  fullName: Microsoft.UI.Input.GestureRecognizer.Tapped
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Tapped
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1059
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<GestureRecognizer, TappedEventArgs> Tapped
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.TappedEventArgs}
+    content.vb: Public Event Tapped As TypedEventHandler(Of GestureRecognizer, TappedEventArgs)
+- uid: Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+  id: AutoProcessInertia
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: AutoProcessInertia
+  nameWithType: GestureRecognizer.AutoProcessInertia
+  fullName: Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AutoProcessInertia
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1065
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool AutoProcessInertia { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoProcessInertia As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia*
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+  id: CrossSlideExact
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CrossSlideExact
+  nameWithType: GestureRecognizer.CrossSlideExact
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CrossSlideExact
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1071
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool CrossSlideExact { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CrossSlideExact As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.CrossSlideExact*
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+  id: CrossSlideHorizontally
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CrossSlideHorizontally
+  nameWithType: GestureRecognizer.CrossSlideHorizontally
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CrossSlideHorizontally
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1077
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool CrossSlideHorizontally { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CrossSlideHorizontally As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally*
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+  id: CrossSlideThresholds
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: CrossSlideThresholds
+  nameWithType: GestureRecognizer.CrossSlideThresholds
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CrossSlideThresholds
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1083
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public CrossSlideThresholds CrossSlideThresholds { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.CrossSlideThresholds
+    content.vb: Public Property CrossSlideThresholds As CrossSlideThresholds
+  overload: Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds*
+- uid: Microsoft.UI.Input.GestureRecognizer.GestureSettings
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.GestureSettings
+  id: GestureSettings
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: GestureSettings
+  nameWithType: GestureRecognizer.GestureSettings
+  fullName: Microsoft.UI.Input.GestureRecognizer.GestureSettings
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GestureSettings
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1089
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public GestureSettings GestureSettings { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.GestureSettings
+    content.vb: Public Property GestureSettings As GestureSettings
+  overload: Microsoft.UI.Input.GestureRecognizer.GestureSettings*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+  id: InertiaExpansion
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaExpansion
+  nameWithType: GestureRecognizer.InertiaExpansion
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaExpansion
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1095
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaExpansion { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaExpansion As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaExpansion*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+  id: InertiaExpansionDeceleration
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaExpansionDeceleration
+  nameWithType: GestureRecognizer.InertiaExpansionDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaExpansionDeceleration
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1101
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaExpansionDeceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaExpansionDeceleration As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+  id: InertiaRotationAngle
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaRotationAngle
+  nameWithType: GestureRecognizer.InertiaRotationAngle
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaRotationAngle
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1107
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaRotationAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaRotationAngle As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+  id: InertiaRotationDeceleration
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaRotationDeceleration
+  nameWithType: GestureRecognizer.InertiaRotationDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaRotationDeceleration
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1113
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaRotationDeceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaRotationDeceleration As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+  id: InertiaTranslationDeceleration
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaTranslationDeceleration
+  nameWithType: GestureRecognizer.InertiaTranslationDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaTranslationDeceleration
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1119
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaTranslationDeceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaTranslationDeceleration As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration*
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+  id: InertiaTranslationDisplacement
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: InertiaTranslationDisplacement
+  nameWithType: GestureRecognizer.InertiaTranslationDisplacement
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InertiaTranslationDisplacement
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1125
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float InertiaTranslationDisplacement { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InertiaTranslationDisplacement As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement*
+- uid: Microsoft.UI.Input.GestureRecognizer.IsActive
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.IsActive
+  id: IsActive
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: GestureRecognizer.IsActive
+  fullName: Microsoft.UI.Input.GestureRecognizer.IsActive
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsActive
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1131
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsActive As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.IsActive*
+- uid: Microsoft.UI.Input.GestureRecognizer.IsInertial
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.IsInertial
+  id: IsInertial
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: IsInertial
+  nameWithType: GestureRecognizer.IsInertial
+  fullName: Microsoft.UI.Input.GestureRecognizer.IsInertial
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsInertial
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1133
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool IsInertial { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInertial As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.IsInertial*
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+  id: ManipulationExact
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ManipulationExact
+  nameWithType: GestureRecognizer.ManipulationExact
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ManipulationExact
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1135
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool ManipulationExact { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ManipulationExact As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.ManipulationExact*
+- uid: Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+  id: MouseWheelParameters
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: MouseWheelParameters
+  nameWithType: GestureRecognizer.MouseWheelParameters
+  fullName: Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MouseWheelParameters
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1141
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public MouseWheelParameters MouseWheelParameters { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.MouseWheelParameters
+    content.vb: Public ReadOnly Property MouseWheelParameters As MouseWheelParameters
+  overload: Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters*
+- uid: Microsoft.UI.Input.GestureRecognizer.PivotCenter
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.PivotCenter
+  id: PivotCenter
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: PivotCenter
+  nameWithType: GestureRecognizer.PivotCenter
+  fullName: Microsoft.UI.Input.GestureRecognizer.PivotCenter
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PivotCenter
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1143
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public Point PivotCenter { get; set; }
+    parameters: []
+    return:
+      type: Windows.Foundation.Point
+    content.vb: Public Property PivotCenter As Point
+  overload: Microsoft.UI.Input.GestureRecognizer.PivotCenter*
+- uid: Microsoft.UI.Input.GestureRecognizer.PivotRadius
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.PivotRadius
+  id: PivotRadius
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: PivotRadius
+  nameWithType: GestureRecognizer.PivotRadius
+  fullName: Microsoft.UI.Input.GestureRecognizer.PivotRadius
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PivotRadius
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1149
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public float PivotRadius { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PivotRadius As Single
+  overload: Microsoft.UI.Input.GestureRecognizer.PivotRadius*
+- uid: Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback
+  commentId: P:Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback
+  id: ShowGestureFeedback
+  parent: Microsoft.UI.Input.GestureRecognizer
+  langs:
+  - csharp
+  - vb
+  name: ShowGestureFeedback
+  nameWithType: GestureRecognizer.ShowGestureFeedback
+  fullName: Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ShowGestureFeedback
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1155
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public bool ShowGestureFeedback { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShowGestureFeedback As Boolean
+  overload: Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback*
+references:
+- uid: Microsoft.UI.Input
+  commentId: N:Microsoft.UI.Input
+  href: Microsoft.html
+  name: Microsoft.UI.Input
+  nameWithType: Microsoft.UI.Input
+  fullName: Microsoft.UI.Input
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Input.GestureRecognizer}
+  commentId: T:System.IEquatable{Microsoft.UI.Input.GestureRecognizer}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<GestureRecognizer>
+  nameWithType: IEquatable<GestureRecognizer>
+  fullName: System.IEquatable<Microsoft.UI.Input.GestureRecognizer>
+  nameWithType.vb: IEquatable(Of GestureRecognizer)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.GestureRecognizer)
+  name.vb: IEquatable(Of GestureRecognizer)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Input.GestureRecognizer.#ctor*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.#ctor
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer__ctor
+  name: GestureRecognizer
+  nameWithType: GestureRecognizer.GestureRecognizer
+  fullName: Microsoft.UI.Input.GestureRecognizer.GestureRecognizer
+  nameWithType.vb: GestureRecognizer.New
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.New
+  name.vb: New
+- uid: Microsoft.UI.Input.GestureRecognizer.FromAbi*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.FromAbi
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: GestureRecognizer.FromAbi
+  fullName: Microsoft.UI.Input.GestureRecognizer.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Input.GestureRecognizer
+  commentId: T:Microsoft.UI.Input.GestureRecognizer
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.GestureRecognizer.html
+  name: GestureRecognizer
+  nameWithType: GestureRecognizer
+  fullName: Microsoft.UI.Input.GestureRecognizer
+- uid: Microsoft.UI.Input.GestureRecognizer.op_Equality*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.op_Equality
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_op_Equality_Microsoft_UI_Input_GestureRecognizer_Microsoft_UI_Input_GestureRecognizer_
+  name: operator ==
+  nameWithType: GestureRecognizer.operator ==
+  fullName: Microsoft.UI.Input.GestureRecognizer.operator ==
+  nameWithType.vb: GestureRecognizer.=
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer.op_Equality*
+    name: ==
+    href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_op_Equality_Microsoft_UI_Input_GestureRecognizer_Microsoft_UI_Input_GestureRecognizer_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Input.GestureRecognizer.op_Inequality*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.op_Inequality
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_op_Inequality_Microsoft_UI_Input_GestureRecognizer_Microsoft_UI_Input_GestureRecognizer_
+  name: operator !=
+  nameWithType: GestureRecognizer.operator !=
+  fullName: Microsoft.UI.Input.GestureRecognizer.operator !=
+  nameWithType.vb: GestureRecognizer.<>
+  fullName.vb: Microsoft.UI.Input.GestureRecognizer.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_op_Inequality_Microsoft_UI_Input_GestureRecognizer_Microsoft_UI_Input_GestureRecognizer_
+- uid: Microsoft.UI.Input.GestureRecognizer.Equals*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.Equals
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_Equals_Microsoft_UI_Input_GestureRecognizer_
+  name: Equals
+  nameWithType: GestureRecognizer.Equals
+  fullName: Microsoft.UI.Input.GestureRecognizer.Equals
+- uid: System.IEquatable{Microsoft.UI.Input.GestureRecognizer}.Equals(Microsoft.UI.Input.GestureRecognizer)
+  commentId: M:System.IEquatable{Microsoft.UI.Input.GestureRecognizer}.Equals(Microsoft.UI.Input.GestureRecognizer)
+  parent: System.IEquatable{Microsoft.UI.Input.GestureRecognizer}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(GestureRecognizer)
+  nameWithType: IEquatable<GestureRecognizer>.Equals(GestureRecognizer)
+  fullName: System.IEquatable<Microsoft.UI.Input.GestureRecognizer>.Equals(Microsoft.UI.Input.GestureRecognizer)
+  nameWithType.vb: IEquatable(Of GestureRecognizer).Equals(GestureRecognizer)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.GestureRecognizer).Equals(Microsoft.UI.Input.GestureRecognizer)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Input.GestureRecognizer}.Equals(Microsoft.UI.Input.GestureRecognizer)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Input.GestureRecognizer}.Equals(Microsoft.UI.Input.GestureRecognizer)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Input.GestureRecognizer.GetHashCode*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.GetHashCode
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_GetHashCode
+  name: GetHashCode
+  nameWithType: GestureRecognizer.GetHashCode
+  fullName: Microsoft.UI.Input.GestureRecognizer.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_CanBeDoubleTap_Microsoft_UI_Input_PointerPoint_
+  name: CanBeDoubleTap
+  nameWithType: GestureRecognizer.CanBeDoubleTap
+  fullName: Microsoft.UI.Input.GestureRecognizer.CanBeDoubleTap
+- uid: Microsoft.UI.Input.PointerPoint
+  commentId: T:Microsoft.UI.Input.PointerPoint
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.PointerPoint.html
+  name: PointerPoint
+  nameWithType: PointerPoint
+  fullName: Microsoft.UI.Input.PointerPoint
+- uid: Microsoft.UI.Input.GestureRecognizer.CompleteGesture*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.CompleteGesture
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_CompleteGesture
+  name: CompleteGesture
+  nameWithType: GestureRecognizer.CompleteGesture
+  fullName: Microsoft.UI.Input.GestureRecognizer.CompleteGesture
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ProcessDownEvent_Microsoft_UI_Input_PointerPoint_
+  name: ProcessDownEvent
+  nameWithType: GestureRecognizer.ProcessDownEvent
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessDownEvent
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ProcessMoveEvents_System_Collections_Generic_IList_Microsoft_UI_Input_PointerPoint__
+  name: ProcessMoveEvents
+  nameWithType: GestureRecognizer.ProcessMoveEvents
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessMoveEvents
+- uid: System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint}
+  commentId: T:System.Collections.Generic.IList{Microsoft.UI.Input.PointerPoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<PointerPoint>
+  nameWithType: IList<PointerPoint>
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Input.PointerPoint>
+  nameWithType.vb: IList(Of PointerPoint)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Input.PointerPoint)
+  name.vb: IList(Of PointerPoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.UI.Input.PointerPoint
+    name: PointerPoint
+    href: Microsoft.UI.Input.PointerPoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.PointerPoint
+    name: PointerPoint
+    href: Microsoft.UI.Input.PointerPoint.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ProcessMouseWheelEvent_Microsoft_UI_Input_PointerPoint_System_Boolean_System_Boolean_
+  name: ProcessMouseWheelEvent
+  nameWithType: GestureRecognizer.ProcessMouseWheelEvent
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessMouseWheelEvent
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessInertia*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ProcessInertia
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ProcessInertia
+  name: ProcessInertia
+  nameWithType: GestureRecognizer.ProcessInertia
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessInertia
+- uid: Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ProcessUpEvent_Microsoft_UI_Input_PointerPoint_
+  name: ProcessUpEvent
+  nameWithType: GestureRecognizer.ProcessUpEvent
+  fullName: Microsoft.UI.Input.GestureRecognizer.ProcessUpEvent
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.CrossSlidingEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.CrossSlidingEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, CrossSlidingEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, CrossSlidingEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.CrossSlidingEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, CrossSlidingEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.CrossSlidingEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, CrossSlidingEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.CrossSlidingEventArgs
+    name: CrossSlidingEventArgs
+    href: Microsoft.UI.Input.CrossSlidingEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.CrossSlidingEventArgs
+    name: CrossSlidingEventArgs
+    href: Microsoft.UI.Input.CrossSlidingEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.DraggingEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.DraggingEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, DraggingEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, DraggingEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.DraggingEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, DraggingEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.DraggingEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, DraggingEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.DraggingEventArgs
+    name: DraggingEventArgs
+    href: Microsoft.UI.Input.DraggingEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.DraggingEventArgs
+    name: DraggingEventArgs
+    href: Microsoft.UI.Input.DraggingEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.HoldingEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.HoldingEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, HoldingEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, HoldingEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.HoldingEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, HoldingEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.HoldingEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, HoldingEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.HoldingEventArgs
+    name: HoldingEventArgs
+    href: Microsoft.UI.Input.HoldingEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.HoldingEventArgs
+    name: HoldingEventArgs
+    href: Microsoft.UI.Input.HoldingEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationCompletedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationCompletedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, ManipulationCompletedEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, ManipulationCompletedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationCompletedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, ManipulationCompletedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationCompletedEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, ManipulationCompletedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationCompletedEventArgs
+    name: ManipulationCompletedEventArgs
+    href: Microsoft.UI.Input.ManipulationCompletedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationCompletedEventArgs
+    name: ManipulationCompletedEventArgs
+    href: Microsoft.UI.Input.ManipulationCompletedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationInertiaStartingEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationInertiaStartingEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, ManipulationInertiaStartingEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, ManipulationInertiaStartingEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationInertiaStartingEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, ManipulationInertiaStartingEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationInertiaStartingEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, ManipulationInertiaStartingEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationInertiaStartingEventArgs
+    name: ManipulationInertiaStartingEventArgs
+    href: Microsoft.UI.Input.ManipulationInertiaStartingEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationInertiaStartingEventArgs
+    name: ManipulationInertiaStartingEventArgs
+    href: Microsoft.UI.Input.ManipulationInertiaStartingEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationStartedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationStartedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, ManipulationStartedEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, ManipulationStartedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationStartedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, ManipulationStartedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationStartedEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, ManipulationStartedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationStartedEventArgs
+    name: ManipulationStartedEventArgs
+    href: Microsoft.UI.Input.ManipulationStartedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationStartedEventArgs
+    name: ManipulationStartedEventArgs
+    href: Microsoft.UI.Input.ManipulationStartedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationUpdatedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.ManipulationUpdatedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, ManipulationUpdatedEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, ManipulationUpdatedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationUpdatedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, ManipulationUpdatedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.ManipulationUpdatedEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, ManipulationUpdatedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationUpdatedEventArgs
+    name: ManipulationUpdatedEventArgs
+    href: Microsoft.UI.Input.ManipulationUpdatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.ManipulationUpdatedEventArgs
+    name: ManipulationUpdatedEventArgs
+    href: Microsoft.UI.Input.ManipulationUpdatedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.RightTappedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.RightTappedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, RightTappedEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, RightTappedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.RightTappedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, RightTappedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.RightTappedEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, RightTappedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.RightTappedEventArgs
+    name: RightTappedEventArgs
+    href: Microsoft.UI.Input.RightTappedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.RightTappedEventArgs
+    name: RightTappedEventArgs
+    href: Microsoft.UI.Input.RightTappedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.TappedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.GestureRecognizer,Microsoft.UI.Input.TappedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<GestureRecognizer, TappedEventArgs>
+  nameWithType: TypedEventHandler<GestureRecognizer, TappedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.TappedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of GestureRecognizer, TappedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.GestureRecognizer, Microsoft.UI.Input.TappedEventArgs)
+  name.vb: TypedEventHandler(Of GestureRecognizer, TappedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.TappedEventArgs
+    name: TappedEventArgs
+    href: Microsoft.UI.Input.TappedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.GestureRecognizer
+    name: GestureRecognizer
+    href: Microsoft.UI.Input.GestureRecognizer.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.TappedEventArgs
+    name: TappedEventArgs
+    href: Microsoft.UI.Input.TappedEventArgs.html
+  - name: )
+- uid: Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_AutoProcessInertia
+  name: AutoProcessInertia
+  nameWithType: GestureRecognizer.AutoProcessInertia
+  fullName: Microsoft.UI.Input.GestureRecognizer.AutoProcessInertia
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideExact*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_CrossSlideExact
+  name: CrossSlideExact
+  nameWithType: GestureRecognizer.CrossSlideExact
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideExact
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_CrossSlideHorizontally
+  name: CrossSlideHorizontally
+  nameWithType: GestureRecognizer.CrossSlideHorizontally
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideHorizontally
+- uid: Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_CrossSlideThresholds
+  name: CrossSlideThresholds
+  nameWithType: GestureRecognizer.CrossSlideThresholds
+  fullName: Microsoft.UI.Input.GestureRecognizer.CrossSlideThresholds
+- uid: Microsoft.UI.Input.CrossSlideThresholds
+  commentId: T:Microsoft.UI.Input.CrossSlideThresholds
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.CrossSlideThresholds.html
+  name: CrossSlideThresholds
+  nameWithType: CrossSlideThresholds
+  fullName: Microsoft.UI.Input.CrossSlideThresholds
+- uid: Microsoft.UI.Input.GestureRecognizer.GestureSettings*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.GestureSettings
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_GestureSettings
+  name: GestureSettings
+  nameWithType: GestureRecognizer.GestureSettings
+  fullName: Microsoft.UI.Input.GestureRecognizer.GestureSettings
+- uid: Microsoft.UI.Input.GestureSettings
+  commentId: T:Microsoft.UI.Input.GestureSettings
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.GestureSettings.html
+  name: GestureSettings
+  nameWithType: GestureSettings
+  fullName: Microsoft.UI.Input.GestureSettings
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaExpansion*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaExpansion
+  name: InertiaExpansion
+  nameWithType: GestureRecognizer.InertiaExpansion
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaExpansion
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaExpansionDeceleration
+  name: InertiaExpansionDeceleration
+  nameWithType: GestureRecognizer.InertiaExpansionDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaExpansionDeceleration
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaRotationAngle
+  name: InertiaRotationAngle
+  nameWithType: GestureRecognizer.InertiaRotationAngle
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaRotationAngle
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaRotationDeceleration
+  name: InertiaRotationDeceleration
+  nameWithType: GestureRecognizer.InertiaRotationDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaRotationDeceleration
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaTranslationDeceleration
+  name: InertiaTranslationDeceleration
+  nameWithType: GestureRecognizer.InertiaTranslationDeceleration
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDeceleration
+- uid: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_InertiaTranslationDisplacement
+  name: InertiaTranslationDisplacement
+  nameWithType: GestureRecognizer.InertiaTranslationDisplacement
+  fullName: Microsoft.UI.Input.GestureRecognizer.InertiaTranslationDisplacement
+- uid: Microsoft.UI.Input.GestureRecognizer.IsActive*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.IsActive
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_IsActive
+  name: IsActive
+  nameWithType: GestureRecognizer.IsActive
+  fullName: Microsoft.UI.Input.GestureRecognizer.IsActive
+- uid: Microsoft.UI.Input.GestureRecognizer.IsInertial*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.IsInertial
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_IsInertial
+  name: IsInertial
+  nameWithType: GestureRecognizer.IsInertial
+  fullName: Microsoft.UI.Input.GestureRecognizer.IsInertial
+- uid: Microsoft.UI.Input.GestureRecognizer.ManipulationExact*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ManipulationExact
+  name: ManipulationExact
+  nameWithType: GestureRecognizer.ManipulationExact
+  fullName: Microsoft.UI.Input.GestureRecognizer.ManipulationExact
+- uid: Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_MouseWheelParameters
+  name: MouseWheelParameters
+  nameWithType: GestureRecognizer.MouseWheelParameters
+  fullName: Microsoft.UI.Input.GestureRecognizer.MouseWheelParameters
+- uid: Microsoft.UI.Input.MouseWheelParameters
+  commentId: T:Microsoft.UI.Input.MouseWheelParameters
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.MouseWheelParameters.html
+  name: MouseWheelParameters
+  nameWithType: MouseWheelParameters
+  fullName: Microsoft.UI.Input.MouseWheelParameters
+- uid: Microsoft.UI.Input.GestureRecognizer.PivotCenter*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.PivotCenter
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_PivotCenter
+  name: PivotCenter
+  nameWithType: GestureRecognizer.PivotCenter
+  fullName: Microsoft.UI.Input.GestureRecognizer.PivotCenter
+- uid: Windows.Foundation.Point
+  commentId: T:Windows.Foundation.Point
+  parent: Windows.Foundation
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Windows.Foundation.Point
+- uid: Microsoft.UI.Input.GestureRecognizer.PivotRadius*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.PivotRadius
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_PivotRadius
+  name: PivotRadius
+  nameWithType: GestureRecognizer.PivotRadius
+  fullName: Microsoft.UI.Input.GestureRecognizer.PivotRadius
+- uid: Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback*
+  commentId: Overload:Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback
+  href: Microsoft.UI.Input.GestureRecognizer.html#Microsoft_UI_Input_GestureRecognizer_ShowGestureFeedback
+  name: ShowGestureFeedback
+  nameWithType: GestureRecognizer.ShowGestureFeedback
+  fullName: Microsoft.UI.Input.GestureRecognizer.ShowGestureFeedback

@@ -1,0 +1,1456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume
+  commentId: T:Microsoft.Windows.Management.Deployment.PackageVolume
+  id: PackageVolume
+  parent: Microsoft.Windows.Management.Deployment
+  children:
+  - Microsoft.Windows.Management.Deployment.PackageVolume.As``1
+  - Microsoft.Windows.Management.Deployment.PackageVolume.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.Equals(System.Object)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName(System.String)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath(System.String)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes
+  - Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi(System.IntPtr)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode
+  - Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+  - Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+  - Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded
+  - Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+  - Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+  - Microsoft.Windows.Management.Deployment.PackageVolume.Name
+  - Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+  - Microsoft.Windows.Management.Deployment.PackageVolume.Repair
+  - Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks
+  - Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  - Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  langs:
+  - csharp
+  - vb
+  name: PackageVolume
+  nameWithType: PackageVolume
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PackageVolume
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1477
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Management.Deployment")]
+
+      [WindowsRuntimeHelperType(typeof(PackageVolume))]
+
+      [ProjectedRuntimeClass(typeof(IPackageVolume))]
+
+      [ContractVersion(typeof(PackageDeploymentContract), 65536)]
+
+      public sealed class PackageVolume : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<PackageVolume>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Management.Deployment")>
+
+      <WindowsRuntimeHelperType(GetType(PackageVolume))>
+
+      <ProjectedRuntimeClass(GetType(IPackageVolume))>
+
+      <ContractVersion(GetType(PackageDeploymentContract), 65536)>
+
+      Public NotInheritable Class PackageVolume Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of PackageVolume)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Management.Deployment
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Management.Deployment.PackageDeploymentContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.As``1
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.As``1
+  id: As``1
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: PackageVolume.As<I>()
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1493
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.As*
+  nameWithType.vb: PackageVolume.As(Of I)()
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes
+  id: FindPackageVolumes
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: FindPackageVolumes()
+  nameWithType: PackageVolume.FindPackageVolumes()
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindPackageVolumes
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1512
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static IList<PackageVolume> FindPackageVolumes()
+    return:
+      type: System.Collections.Generic.IList{Microsoft.Windows.Management.Deployment.PackageVolume}
+    content.vb: Public Shared Function FindPackageVolumes() As IList(Of PackageVolume)
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath(System.String)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath(System.String)
+  id: FindPackageVolumeByPath(System.String)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: FindPackageVolumeByPath(string)
+  nameWithType: PackageVolume.FindPackageVolumeByPath(string)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindPackageVolumeByPath
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1514
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static PackageVolume FindPackageVolumeByPath(string packageStorePath)
+    parameters:
+    - id: packageStorePath
+      type: System.String
+    return:
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    content.vb: Public Shared Function FindPackageVolumeByPath(packageStorePath As String) As PackageVolume
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath*
+  nameWithType.vb: PackageVolume.FindPackageVolumeByPath(String)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath(String)
+  name.vb: FindPackageVolumeByPath(String)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName(System.String)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName(System.String)
+  id: FindPackageVolumeByName(System.String)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: FindPackageVolumeByName(string)
+  nameWithType: PackageVolume.FindPackageVolumeByName(string)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindPackageVolumeByName
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1516
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static PackageVolume FindPackageVolumeByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    content.vb: Public Shared Function FindPackageVolumeByName(name As String) As PackageVolume
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName*
+  nameWithType.vb: PackageVolume.FindPackageVolumeByName(String)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName(String)
+  name.vb: FindPackageVolumeByName(String)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: PackageVolume.FromAbi(nint)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1518
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static PackageVolume FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As PackageVolume
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi*
+  nameWithType.vb: PackageVolume.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  id: op_Equality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: operator ==(PackageVolume, PackageVolume)
+  nameWithType: PackageVolume.operator ==(PackageVolume, PackageVolume)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.operator ==(Microsoft.Windows.Management.Deployment.PackageVolume, Microsoft.Windows.Management.Deployment.PackageVolume)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1531
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static bool operator ==(PackageVolume x, PackageVolume y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    - id: y
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As PackageVolume, y As PackageVolume) As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality*
+  nameWithType.vb: PackageVolume.=(PackageVolume, PackageVolume)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.=(Microsoft.Windows.Management.Deployment.PackageVolume, Microsoft.Windows.Management.Deployment.PackageVolume)
+  name.vb: =(PackageVolume, PackageVolume)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  id: op_Inequality(Microsoft.Windows.Management.Deployment.PackageVolume,Microsoft.Windows.Management.Deployment.PackageVolume)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: operator !=(PackageVolume, PackageVolume)
+  nameWithType: PackageVolume.operator !=(PackageVolume, PackageVolume)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.operator !=(Microsoft.Windows.Management.Deployment.PackageVolume, Microsoft.Windows.Management.Deployment.PackageVolume)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1532
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public static bool operator !=(PackageVolume x, PackageVolume y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    - id: y
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As PackageVolume, y As PackageVolume) As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality*
+  nameWithType.vb: PackageVolume.<>(PackageVolume, PackageVolume)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.<>(Microsoft.Windows.Management.Deployment.PackageVolume, Microsoft.Windows.Management.Deployment.PackageVolume)
+  name.vb: <>(PackageVolume, PackageVolume)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  id: Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: Equals(PackageVolume)
+  nameWithType: PackageVolume.Equals(PackageVolume)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1533
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(PackageVolume other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.Management.Deployment.PackageVolume
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As PackageVolume) As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Equals(System.Object)
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: PackageVolume.Equals(object)
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1534
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.Equals*
+  nameWithType.vb: PackageVolume.Equals(Object)
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: PackageVolume.GetHashCode()
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1535
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded
+  id: IsRepairNeeded
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: IsRepairNeeded()
+  nameWithType: PackageVolume.IsRepairNeeded()
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsRepairNeeded
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1558
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public bool IsRepairNeeded()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsRepairNeeded() As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Repair
+  commentId: M:Microsoft.Windows.Management.Deployment.PackageVolume.Repair
+  id: Repair
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: Repair()
+  nameWithType: PackageVolume.Repair()
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Repair()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Repair
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1560
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public void Repair()
+    content.vb: Public Sub Repair()
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.Repair*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+  id: IsAppxInstallSupported
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: IsAppxInstallSupported
+  nameWithType: PackageVolume.IsAppxInstallSupported
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsAppxInstallSupported
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1562
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public bool IsAppxInstallSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAppxInstallSupported As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+  id: IsFullTrustPackageSupported
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: IsFullTrustPackageSupported
+  nameWithType: PackageVolume.IsFullTrustPackageSupported
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsFullTrustPackageSupported
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1564
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public bool IsFullTrustPackageSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFullTrustPackageSupported As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+  id: IsSystemVolume
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: IsSystemVolume
+  nameWithType: PackageVolume.IsSystemVolume
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSystemVolume
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1566
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public bool IsSystemVolume { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSystemVolume As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+  id: MountPoint
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: MountPoint
+  nameWithType: PackageVolume.MountPoint
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MountPoint
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1568
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public string MountPoint { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MountPoint As String
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Name
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.Name
+  id: Name
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PackageVolume.Name
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Name
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Name
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1570
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.Name*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+  id: PackageStorePath
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: PackageStorePath
+  nameWithType: PackageVolume.PackageStorePath
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: PackageStorePath
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1572
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public string PackageStorePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PackageStorePath As String
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath*
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks
+  commentId: P:Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks
+  id: SupportsHardLinks
+  parent: Microsoft.Windows.Management.Deployment.PackageVolume
+  langs:
+  - csharp
+  - vb
+  name: SupportsHardLinks
+  nameWithType: PackageVolume.SupportsHardLinks
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.Management.Deployment.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SupportsHardLinks
+    path: ../src/Microsoft.Windows.Management.Deployment.cs
+    startLine: 1574
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Management.Deployment
+  syntax:
+    content: public bool SupportsHardLinks { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SupportsHardLinks As Boolean
+  overload: Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks*
+references:
+- uid: Microsoft.Windows.Management.Deployment
+  commentId: N:Microsoft.Windows.Management.Deployment
+  href: Microsoft.html
+  name: Microsoft.Windows.Management.Deployment
+  nameWithType: Microsoft.Windows.Management.Deployment
+  fullName: Microsoft.Windows.Management.Deployment
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Management
+    name: Management
+    href: Microsoft.Windows.Management.html
+  - name: .
+  - uid: Microsoft.Windows.Management.Deployment
+    name: Deployment
+    href: Microsoft.Windows.Management.Deployment.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Management
+    name: Management
+    href: Microsoft.Windows.Management.html
+  - name: .
+  - uid: Microsoft.Windows.Management.Deployment
+    name: Deployment
+    href: Microsoft.Windows.Management.Deployment.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}
+  commentId: T:System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PackageVolume>
+  nameWithType: IEquatable<PackageVolume>
+  fullName: System.IEquatable<Microsoft.Windows.Management.Deployment.PackageVolume>
+  nameWithType.vb: IEquatable(Of PackageVolume)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Management.Deployment.PackageVolume)
+  name.vb: IEquatable(Of PackageVolume)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.As*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.As
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_As__1
+  name: As
+  nameWithType: PackageVolume.As
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_FindPackageVolumes
+  name: FindPackageVolumes
+  nameWithType: PackageVolume.FindPackageVolumes
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumes
+- uid: System.Collections.Generic.IList{Microsoft.Windows.Management.Deployment.PackageVolume}
+  commentId: T:System.Collections.Generic.IList{Microsoft.Windows.Management.Deployment.PackageVolume}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<PackageVolume>
+  nameWithType: IList<PackageVolume>
+  fullName: System.Collections.Generic.IList<Microsoft.Windows.Management.Deployment.PackageVolume>
+  nameWithType.vb: IList(Of PackageVolume)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.Windows.Management.Deployment.PackageVolume)
+  name.vb: IList(Of PackageVolume)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_FindPackageVolumeByPath_System_String_
+  name: FindPackageVolumeByPath
+  nameWithType: PackageVolume.FindPackageVolumeByPath
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume
+  commentId: T:Microsoft.Windows.Management.Deployment.PackageVolume
+  parent: Microsoft.Windows.Management.Deployment
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  name: PackageVolume
+  nameWithType: PackageVolume
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_FindPackageVolumeByName_System_String_
+  name: FindPackageVolumeByName
+  nameWithType: PackageVolume.FindPackageVolumeByName
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FindPackageVolumeByName
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: PackageVolume.FromAbi
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_op_Equality_Microsoft_Windows_Management_Deployment_PackageVolume_Microsoft_Windows_Management_Deployment_PackageVolume_
+  name: operator ==
+  nameWithType: PackageVolume.operator ==
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.operator ==
+  nameWithType.vb: PackageVolume.=
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Equality*
+    name: ==
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_op_Equality_Microsoft_Windows_Management_Deployment_PackageVolume_Microsoft_Windows_Management_Deployment_PackageVolume_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_op_Inequality_Microsoft_Windows_Management_Deployment_PackageVolume_Microsoft_Windows_Management_Deployment_PackageVolume_
+  name: operator !=
+  nameWithType: PackageVolume.operator !=
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.operator !=
+  nameWithType.vb: PackageVolume.<>
+  fullName.vb: Microsoft.Windows.Management.Deployment.PackageVolume.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_op_Inequality_Microsoft_Windows_Management_Deployment_PackageVolume_Microsoft_Windows_Management_Deployment_PackageVolume_
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Equals*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.Equals
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_Equals_Microsoft_Windows_Management_Deployment_PackageVolume_
+  name: Equals
+  nameWithType: PackageVolume.Equals
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Equals
+- uid: System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  commentId: M:System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  parent: System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(PackageVolume)
+  nameWithType: IEquatable<PackageVolume>.Equals(PackageVolume)
+  fullName: System.IEquatable<Microsoft.Windows.Management.Deployment.PackageVolume>.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  nameWithType.vb: IEquatable(Of PackageVolume).Equals(PackageVolume)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Management.Deployment.PackageVolume).Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.Management.Deployment.PackageVolume}.Equals(Microsoft.Windows.Management.Deployment.PackageVolume)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Management.Deployment.PackageVolume
+    name: PackageVolume
+    href: Microsoft.Windows.Management.Deployment.PackageVolume.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_GetHashCode
+  name: GetHashCode
+  nameWithType: PackageVolume.GetHashCode
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_IsRepairNeeded
+  name: IsRepairNeeded
+  nameWithType: PackageVolume.IsRepairNeeded
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsRepairNeeded
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Repair*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.Repair
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_Repair
+  name: Repair
+  nameWithType: PackageVolume.Repair
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Repair
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_IsAppxInstallSupported
+  name: IsAppxInstallSupported
+  nameWithType: PackageVolume.IsAppxInstallSupported
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsAppxInstallSupported
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_IsFullTrustPackageSupported
+  name: IsFullTrustPackageSupported
+  nameWithType: PackageVolume.IsFullTrustPackageSupported
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsFullTrustPackageSupported
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_IsSystemVolume
+  name: IsSystemVolume
+  nameWithType: PackageVolume.IsSystemVolume
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.IsSystemVolume
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_MountPoint
+  name: MountPoint
+  nameWithType: PackageVolume.MountPoint
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.MountPoint
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.Name*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.Name
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_Name
+  name: Name
+  nameWithType: PackageVolume.Name
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.Name
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_PackageStorePath
+  name: PackageStorePath
+  nameWithType: PackageVolume.PackageStorePath
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.PackageStorePath
+- uid: Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks*
+  commentId: Overload:Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks
+  href: Microsoft.Windows.Management.Deployment.PackageVolume.html#Microsoft_Windows_Management_Deployment_PackageVolume_SupportsHardLinks
+  name: SupportsHardLinks
+  nameWithType: PackageVolume.SupportsHardLinks
+  fullName: Microsoft.Windows.Management.Deployment.PackageVolume.SupportsHardLinks

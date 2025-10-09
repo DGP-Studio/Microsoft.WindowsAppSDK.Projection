@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.ApplicationInitializationCallback
+  commentId: T:Microsoft.UI.Xaml.ApplicationInitializationCallback
+  id: ApplicationInitializationCallback
+  parent: Microsoft.UI.Xaml
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ApplicationInitializationCallback
+  nameWithType: ApplicationInitializationCallback
+  fullName: Microsoft.UI.Xaml.ApplicationInitializationCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ApplicationInitializationCallback
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 445
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(ApplicationInitializationCallback))]
+
+      [WinRTExposedType(typeof(ApplicationInitializationCallbackWinRTTypeDetails))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public delegate void ApplicationInitializationCallback(ApplicationInitializationCallbackParams p)
+    parameters:
+    - id: p
+      type: Microsoft.UI.Xaml.ApplicationInitializationCallbackParams
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(ApplicationInitializationCallback))>
+
+      <WinRTExposedType(GetType(ApplicationInitializationCallbackWinRTTypeDetails))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Delegate Sub ApplicationInitializationCallback(p As ApplicationInitializationCallbackParams)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: Microsoft.UI.Xaml.ApplicationInitializationCallbackParams
+  commentId: T:Microsoft.UI.Xaml.ApplicationInitializationCallbackParams
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.ApplicationInitializationCallbackParams.html
+  name: ApplicationInitializationCallbackParams
+  nameWithType: ApplicationInitializationCallbackParams
+  fullName: Microsoft.UI.Xaml.ApplicationInitializationCallbackParams

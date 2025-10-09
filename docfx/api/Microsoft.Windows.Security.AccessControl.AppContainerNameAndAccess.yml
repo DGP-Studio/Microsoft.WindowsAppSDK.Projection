@@ -1,0 +1,823 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  commentId: T:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  id: AppContainerNameAndAccess
+  parent: Microsoft.Windows.Security.AccessControl
+  children:
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor(System.String,System.UInt32)
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(System.Object)
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.accessMask
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.appContainerName
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  - Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  langs:
+  - csharp
+  - vb
+  name: AppContainerNameAndAccess
+  nameWithType: AppContainerNameAndAccess
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  type: Struct
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppContainerNameAndAccess
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Security.AccessControl", "struct(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess;string;u4)")]
+
+      [WindowsRuntimeHelperType(typeof(AppContainerNameAndAccess))]
+
+      [WinRTExposedType(typeof(StructTypeDetails<AppContainerNameAndAccess, AppContainerNameAndAccess>))]
+
+      [ContractVersion(typeof(AccessControlContract), 65536)]
+
+      public struct AppContainerNameAndAccess : IEquatable<AppContainerNameAndAccess>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Security.AccessControl", "struct(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess;string;u4)")>
+
+      <WindowsRuntimeHelperType(GetType(AppContainerNameAndAccess))>
+
+      <WinRTExposedType(GetType(StructTypeDetails(Of AppContainerNameAndAccess, AppContainerNameAndAccess)))>
+
+      <ContractVersion(GetType(AccessControlContract), 65536)>
+
+      Public Structure AppContainerNameAndAccess Implements IEquatable(Of AppContainerNameAndAccess)
+  implements:
+  - System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Security.AccessControl
+    - type: System.String
+      value: struct(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess;string;u4)
+  - type: WinRT.WinRTExposedTypeAttribute
+    ctor: WinRT.WinRTExposedTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: WinRT.StructTypeDetails{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,ABI.Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Security.AccessControl.AccessControlContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.appContainerName
+  commentId: F:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.appContainerName
+  id: appContainerName
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: appContainerName
+  nameWithType: AppContainerNameAndAccess.appContainerName
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.appContainerName
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: appContainerName
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 36
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: public string appContainerName
+    return:
+      type: System.String
+    content.vb: Public appContainerName As String
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.accessMask
+  commentId: F:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.accessMask
+  id: accessMask
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: accessMask
+  nameWithType: AppContainerNameAndAccess.accessMask
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.accessMask
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: accessMask
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: public uint accessMask
+    return:
+      type: System.UInt32
+    content.vb: Public accessMask As UInteger
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor(System.String,System.UInt32)
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor(System.String,System.UInt32)
+  id: '#ctor(System.String,System.UInt32)'
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: AppContainerNameAndAccess(string, uint)
+  nameWithType: AppContainerNameAndAccess.AppContainerNameAndAccess(string, uint)
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.AppContainerNameAndAccess(string, uint)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 39
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: public AppContainerNameAndAccess(string _appContainerName, uint _accessMask)
+    parameters:
+    - id: _appContainerName
+      type: System.String
+    - id: _accessMask
+      type: System.UInt32
+    content.vb: Public Sub New(_appContainerName As String, _accessMask As UInteger)
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor*
+  nameWithType.vb: AppContainerNameAndAccess.New(String, UInteger)
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.New(String, UInteger)
+  name.vb: New(String, UInteger)
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  id: op_Equality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: operator ==(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  nameWithType: AppContainerNameAndAccess.operator ==(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.operator ==(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess, Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: public static bool operator ==(AppContainerNameAndAccess x, AppContainerNameAndAccess y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    - id: y
+      type: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As AppContainerNameAndAccess, y As AppContainerNameAndAccess) As Boolean
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality*
+  nameWithType.vb: AppContainerNameAndAccess.=(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.=(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess, Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  name.vb: =(AppContainerNameAndAccess, AppContainerNameAndAccess)
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  id: op_Inequality(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess,Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: operator !=(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  nameWithType: AppContainerNameAndAccess.operator !=(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.operator !=(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess, Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  syntax:
+    content: public static bool operator !=(AppContainerNameAndAccess x, AppContainerNameAndAccess y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    - id: y
+      type: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As AppContainerNameAndAccess, y As AppContainerNameAndAccess) As Boolean
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality*
+  nameWithType.vb: AppContainerNameAndAccess.<>(AppContainerNameAndAccess, AppContainerNameAndAccess)
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.<>(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess, Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  name.vb: <>(AppContainerNameAndAccess, AppContainerNameAndAccess)
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  id: Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: Equals(AppContainerNameAndAccess)
+  nameWithType: AppContainerNameAndAccess.Equals(AppContainerNameAndAccess)
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(AppContainerNameAndAccess other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As AppContainerNameAndAccess) As Boolean
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(System.Object)
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: AppContainerNameAndAccess.Equals(object)
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals*
+  nameWithType.vb: AppContainerNameAndAccess.Equals(Object)
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode
+  commentId: M:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: AppContainerNameAndAccess.GetHashCode()
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Security.AccessControl.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.Security.AccessControl.cs
+    startLine: 48
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Security.AccessControl
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode*
+references:
+- uid: Microsoft.Windows.Security.AccessControl
+  commentId: N:Microsoft.Windows.Security.AccessControl
+  href: Microsoft.html
+  name: Microsoft.Windows.Security.AccessControl
+  nameWithType: Microsoft.Windows.Security.AccessControl
+  fullName: Microsoft.Windows.Security.AccessControl
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Security
+    name: Security
+    href: Microsoft.Windows.Security.html
+  - name: .
+  - uid: Microsoft.Windows.Security.AccessControl
+    name: AccessControl
+    href: Microsoft.Windows.Security.AccessControl.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Security
+    name: Security
+    href: Microsoft.Windows.Security.html
+  - name: .
+  - uid: Microsoft.Windows.Security.AccessControl
+    name: AccessControl
+    href: Microsoft.Windows.Security.AccessControl.html
+- uid: System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}
+  commentId: T:System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AppContainerNameAndAccess>
+  nameWithType: IEquatable<AppContainerNameAndAccess>
+  fullName: System.IEquatable<Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess>
+  nameWithType.vb: IEquatable(Of AppContainerNameAndAccess)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  name.vb: IEquatable(Of AppContainerNameAndAccess)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    name: AppContainerNameAndAccess
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    name: AppContainerNameAndAccess
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor*
+  commentId: Overload:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.#ctor
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess__ctor_System_String_System_UInt32_
+  name: AppContainerNameAndAccess
+  nameWithType: AppContainerNameAndAccess.AppContainerNameAndAccess
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.AppContainerNameAndAccess
+  nameWithType.vb: AppContainerNameAndAccess.New
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.New
+  name.vb: New
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality*
+  commentId: Overload:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_op_Equality_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_
+  name: operator ==
+  nameWithType: AppContainerNameAndAccess.operator ==
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.operator ==
+  nameWithType.vb: AppContainerNameAndAccess.=
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Equality*
+    name: ==
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_op_Equality_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  commentId: T:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+  parent: Microsoft.Windows.Security.AccessControl
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html
+  name: AppContainerNameAndAccess
+  nameWithType: AppContainerNameAndAccess
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality*
+  commentId: Overload:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_op_Inequality_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_
+  name: operator !=
+  nameWithType: AppContainerNameAndAccess.operator !=
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.operator !=
+  nameWithType.vb: AppContainerNameAndAccess.<>
+  fullName.vb: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_op_Inequality_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals*
+  commentId: Overload:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_Equals_Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_
+  name: Equals
+  nameWithType: AppContainerNameAndAccess.Equals
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.Equals
+- uid: System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  commentId: M:System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  parent: System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(AppContainerNameAndAccess)
+  nameWithType: IEquatable<AppContainerNameAndAccess>.Equals(AppContainerNameAndAccess)
+  fullName: System.IEquatable<Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess>.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  nameWithType.vb: IEquatable(Of AppContainerNameAndAccess).Equals(AppContainerNameAndAccess)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess).Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    name: AppContainerNameAndAccess
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess}.Equals(Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess
+    name: AppContainerNameAndAccess
+    href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode*
+  commentId: Overload:Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode
+  href: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.html#Microsoft_Windows_Security_AccessControl_AppContainerNameAndAccess_GetHashCode
+  name: GetHashCode
+  nameWithType: AppContainerNameAndAccess.GetHashCode
+  fullName: Microsoft.Windows.Security.AccessControl.AppContainerNameAndAccess.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

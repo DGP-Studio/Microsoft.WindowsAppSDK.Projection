@@ -1,0 +1,1110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModelOptions
+  id: LanguageModelOptions
+  parent: Microsoft.Windows.AI.Text
+  children:
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(System.Object)
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi(System.IntPtr)
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.TopP
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  - Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  langs:
+  - csharp
+  - vb
+  name: LanguageModelOptions
+  nameWithType: LanguageModelOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LanguageModelOptions
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 755
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.Text")]
+
+      [WindowsRuntimeHelperType(typeof(LanguageModelOptions))]
+
+      [ProjectedRuntimeClass(typeof(ILanguageModelOptions))]
+
+      [ContractVersion(typeof(LanguageModelContract), 65536)]
+
+      public sealed class LanguageModelOptions : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<LanguageModelOptions>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.Text")>
+
+      <WindowsRuntimeHelperType(GetType(LanguageModelOptions))>
+
+      <ProjectedRuntimeClass(GetType(ILanguageModelOptions))>
+
+      <ContractVersion(GetType(LanguageModelContract), 65536)>
+
+      Public NotInheritable Class LanguageModelOptions Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of LanguageModelOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.Text
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.Text.LanguageModelContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor
+  id: '#ctor'
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: LanguageModelOptions()
+  nameWithType: LanguageModelOptions.LanguageModelOptions()
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.LanguageModelOptions()
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 788
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public LanguageModelOptions()
+    content.vb: Public Sub New()
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor*
+  nameWithType.vb: LanguageModelOptions.New()
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.New()
+  name.vb: New()
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: LanguageModelOptions.FromAbi(nint)
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 796
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static LanguageModelOptions FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As LanguageModelOptions
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi*
+  nameWithType.vb: LanguageModelOptions.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: op_Equality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LanguageModelOptions, LanguageModelOptions)
+  nameWithType: LanguageModelOptions.operator ==(LanguageModelOptions, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.operator ==(Microsoft.Windows.AI.Text.LanguageModelOptions, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 809
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static bool operator ==(LanguageModelOptions x, LanguageModelOptions y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    - id: y
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As LanguageModelOptions, y As LanguageModelOptions) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality*
+  nameWithType.vb: LanguageModelOptions.=(LanguageModelOptions, LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.=(Microsoft.Windows.AI.Text.LanguageModelOptions, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: =(LanguageModelOptions, LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: op_Inequality(Microsoft.Windows.AI.Text.LanguageModelOptions,Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LanguageModelOptions, LanguageModelOptions)
+  nameWithType: LanguageModelOptions.operator !=(LanguageModelOptions, LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.operator !=(Microsoft.Windows.AI.Text.LanguageModelOptions, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 810
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public static bool operator !=(LanguageModelOptions x, LanguageModelOptions y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    - id: y
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As LanguageModelOptions, y As LanguageModelOptions) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality*
+  nameWithType.vb: LanguageModelOptions.<>(LanguageModelOptions, LanguageModelOptions)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.<>(Microsoft.Windows.AI.Text.LanguageModelOptions, Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: <>(LanguageModelOptions, LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  id: Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(LanguageModelOptions)
+  nameWithType: LanguageModelOptions.Equals(LanguageModelOptions)
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 811
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(LanguageModelOptions other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.AI.Text.LanguageModelOptions
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As LanguageModelOptions) As Boolean
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(System.Object)
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LanguageModelOptions.Equals(object)
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 812
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals*
+  nameWithType.vb: LanguageModelOptions.Equals(Object)
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode
+  commentId: M:Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LanguageModelOptions.GetHashCode()
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 813
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode*
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+  commentId: P:Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+  id: ContentFilterOptions
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: ContentFilterOptions
+  nameWithType: LanguageModelOptions.ContentFilterOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ContentFilterOptions
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 836
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public ContentFilterOptions ContentFilterOptions { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+    content.vb: Public Property ContentFilterOptions As ContentFilterOptions
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions*
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+  commentId: P:Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+  id: Temperature
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: LanguageModelOptions.Temperature
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Temperature
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 842
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public float Temperature { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Temperature As Single
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature*
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+  commentId: P:Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+  id: TopK
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: TopK
+  nameWithType: LanguageModelOptions.TopK
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TopK
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 848
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public uint TopK { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property TopK As UInteger
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.TopK*
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.TopP
+  commentId: P:Microsoft.Windows.AI.Text.LanguageModelOptions.TopP
+  id: TopP
+  parent: Microsoft.Windows.AI.Text.LanguageModelOptions
+  langs:
+  - csharp
+  - vb
+  name: TopP
+  nameWithType: LanguageModelOptions.TopP
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.TopP
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TopP
+    path: ../src/Microsoft.Windows.AI.Text.cs
+    startLine: 854
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.Text
+  syntax:
+    content: public float TopP { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TopP As Single
+  overload: Microsoft.Windows.AI.Text.LanguageModelOptions.TopP*
+references:
+- uid: Microsoft.Windows.AI.Text
+  commentId: N:Microsoft.Windows.AI.Text
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.Text
+  nameWithType: Microsoft.Windows.AI.Text
+  fullName: Microsoft.Windows.AI.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.Text
+    name: Text
+    href: Microsoft.Windows.AI.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.Text
+    name: Text
+    href: Microsoft.Windows.AI.Text.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}
+  commentId: T:System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LanguageModelOptions>
+  nameWithType: IEquatable<LanguageModelOptions>
+  fullName: System.IEquatable<Microsoft.Windows.AI.Text.LanguageModelOptions>
+  nameWithType.vb: IEquatable(Of LanguageModelOptions)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AI.Text.LanguageModelOptions)
+  name.vb: IEquatable(Of LanguageModelOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+    name: LanguageModelOptions
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+    name: LanguageModelOptions
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.#ctor
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions__ctor
+  name: LanguageModelOptions
+  nameWithType: LanguageModelOptions.LanguageModelOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.LanguageModelOptions
+  nameWithType.vb: LanguageModelOptions.New
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.New
+  name.vb: New
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: LanguageModelOptions.FromAbi
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+  commentId: T:Microsoft.Windows.AI.Text.LanguageModelOptions
+  parent: Microsoft.Windows.AI.Text
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  name: LanguageModelOptions
+  nameWithType: LanguageModelOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_op_Equality_Microsoft_Windows_AI_Text_LanguageModelOptions_Microsoft_Windows_AI_Text_LanguageModelOptions_
+  name: operator ==
+  nameWithType: LanguageModelOptions.operator ==
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.operator ==
+  nameWithType.vb: LanguageModelOptions.=
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Equality*
+    name: ==
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_op_Equality_Microsoft_Windows_AI_Text_LanguageModelOptions_Microsoft_Windows_AI_Text_LanguageModelOptions_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_op_Inequality_Microsoft_Windows_AI_Text_LanguageModelOptions_Microsoft_Windows_AI_Text_LanguageModelOptions_
+  name: operator !=
+  nameWithType: LanguageModelOptions.operator !=
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.operator !=
+  nameWithType.vb: LanguageModelOptions.<>
+  fullName.vb: Microsoft.Windows.AI.Text.LanguageModelOptions.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_op_Inequality_Microsoft_Windows_AI_Text_LanguageModelOptions_Microsoft_Windows_AI_Text_LanguageModelOptions_
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.Equals
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_Equals_Microsoft_Windows_AI_Text_LanguageModelOptions_
+  name: Equals
+  nameWithType: LanguageModelOptions.Equals
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.Equals
+- uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  commentId: M:System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  parent: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(LanguageModelOptions)
+  nameWithType: IEquatable<LanguageModelOptions>.Equals(LanguageModelOptions)
+  fullName: System.IEquatable<Microsoft.Windows.AI.Text.LanguageModelOptions>.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  nameWithType.vb: IEquatable(Of LanguageModelOptions).Equals(LanguageModelOptions)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.AI.Text.LanguageModelOptions).Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+    name: LanguageModelOptions
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.AI.Text.LanguageModelOptions}.Equals(Microsoft.Windows.AI.Text.LanguageModelOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.AI.Text.LanguageModelOptions
+    name: LanguageModelOptions
+    href: Microsoft.Windows.AI.Text.LanguageModelOptions.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_GetHashCode
+  name: GetHashCode
+  nameWithType: LanguageModelOptions.GetHashCode
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_ContentFilterOptions
+  name: ContentFilterOptions
+  nameWithType: LanguageModelOptions.ContentFilterOptions
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.ContentFilterOptions
+- uid: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+  commentId: T:Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+  parent: Microsoft.Windows.AI.ContentSafety
+  href: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions.html
+  name: ContentFilterOptions
+  nameWithType: ContentFilterOptions
+  fullName: Microsoft.Windows.AI.ContentSafety.ContentFilterOptions
+- uid: Microsoft.Windows.AI.ContentSafety
+  commentId: N:Microsoft.Windows.AI.ContentSafety
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.ContentSafety
+  nameWithType: Microsoft.Windows.AI.ContentSafety
+  fullName: Microsoft.Windows.AI.ContentSafety
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentSafety
+    name: ContentSafety
+    href: Microsoft.Windows.AI.ContentSafety.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.ContentSafety
+    name: ContentSafety
+    href: Microsoft.Windows.AI.ContentSafety.html
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_Temperature
+  name: Temperature
+  nameWithType: LanguageModelOptions.Temperature
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.Temperature
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.TopK*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_TopK
+  name: TopK
+  nameWithType: LanguageModelOptions.TopK
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.TopK
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.AI.Text.LanguageModelOptions.TopP*
+  commentId: Overload:Microsoft.Windows.AI.Text.LanguageModelOptions.TopP
+  href: Microsoft.Windows.AI.Text.LanguageModelOptions.html#Microsoft_Windows_AI_Text_LanguageModelOptions_TopP
+  name: TopP
+  nameWithType: LanguageModelOptions.TopP
+  fullName: Microsoft.Windows.AI.Text.LanguageModelOptions.TopP

@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextProvider2
+  id: ITextProvider2
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  children:
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange(System.Boolean@)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  langs:
+  - csharp
+  - vb
+  name: ITextProvider2
+  nameWithType: ITextProvider2
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ITextProvider2
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 310
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("6844F012-C7E6-5763-BA04-5B6DB910CD34")]
+
+      [WindowsRuntimeHelperType(typeof(ITextProvider2))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface ITextProvider2 : ITextProvider
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("6844F012-C7E6-5763-BA04-5B6DB910CD34")>
+
+      <WindowsRuntimeHelperType(GetType(ITextProvider2))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface ITextProvider2 Inherits ITextProvider
+  inheritedMembers:
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  - Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6844F012-C7E6-5763-BA04-5B6DB910CD34
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  id: RangeFromAnnotation(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2
+  langs:
+  - csharp
+  - vb
+  name: RangeFromAnnotation(IRawElementProviderSimple)
+  nameWithType: ITextProvider2.RangeFromAnnotation(IRawElementProviderSimple)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RangeFromAnnotation
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 314
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider RangeFromAnnotation(IRawElementProviderSimple annotationElement)
+    parameters:
+    - id: annotationElement
+      type: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function RangeFromAnnotation(annotationElement As IRawElementProviderSimple) As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation*
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange(System.Boolean@)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange(System.Boolean@)
+  id: GetCaretRange(System.Boolean@)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2
+  langs:
+  - csharp
+  - vb
+  name: GetCaretRange(out bool)
+  nameWithType: ITextProvider2.GetCaretRange(out bool)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange(out bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Automation.Provider.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetCaretRange
+    path: ../src/Microsoft.UI.Xaml.Automation.Provider.cs
+    startLine: 315
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Automation.Provider
+  syntax:
+    content: ITextRangeProvider GetCaretRange(out bool isActive)
+    parameters:
+    - id: isActive
+      type: System.Boolean
+    return:
+      type: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+    content.vb: Function GetCaretRange(isActive As Boolean) As ITextRangeProvider
+  overload: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange*
+  nameWithType.vb: ITextProvider2.GetCaretRange(Boolean)
+  fullName.vb: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange(Boolean)
+  name.vb: GetCaretRange(Boolean)
+references:
+- uid: Microsoft.UI.Xaml.Automation.Provider
+  commentId: N:Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Automation.Provider
+  nameWithType: Microsoft.UI.Xaml.Automation.Provider
+  fullName: Microsoft.UI.Xaml.Automation.Provider
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation
+    name: Automation
+    href: Microsoft.UI.Xaml.Automation.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Automation.Provider
+    name: Provider
+    href: Microsoft.UI.Xaml.Automation.Provider.html
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  name: GetSelection()
+  nameWithType: ITextProvider.GetSelection()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+    name: GetSelection
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetSelection
+    name: GetSelection
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetSelection
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  name: GetVisibleRanges()
+  nameWithType: ITextProvider.GetVisibleRanges()
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+    name: GetVisibleRanges
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.GetVisibleRanges
+    name: GetVisibleRanges
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_GetVisibleRanges
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  name: RangeFromChild(IRawElementProviderSimple)
+  nameWithType: ITextProvider.RangeFromChild(IRawElementProviderSimple)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+    name: RangeFromChild
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromChild(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)
+    name: RangeFromChild
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromChild_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  - name: (
+  - uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+    name: IRawElementProviderSimple
+    href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  commentId: M:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  isExternal: true
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  name: RangeFromPoint(Point)
+  nameWithType: ITextProvider.RangeFromPoint(Point)
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+    name: RangeFromPoint
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.RangeFromPoint(Windows.Foundation.Point)
+    name: RangeFromPoint
+    href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_RangeFromPoint_Windows_Foundation_Point_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  commentId: P:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_DocumentRange
+  name: DocumentRange
+  nameWithType: ITextProvider.DocumentRange
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.DocumentRange
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  commentId: P:Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+  parent: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider_SupportedTextSelection
+  name: SupportedTextSelection
+  nameWithType: ITextProvider.SupportedTextSelection
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.SupportedTextSelection
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider.html
+  name: ITextProvider
+  nameWithType: ITextProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider2_RangeFromAnnotation_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_
+  name: RangeFromAnnotation
+  nameWithType: ITextProvider2.RangeFromAnnotation
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.RangeFromAnnotation
+- uid: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html
+  name: IRawElementProviderSimple
+  nameWithType: IRawElementProviderSimple
+  fullName: Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  commentId: T:Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+  parent: Microsoft.UI.Xaml.Automation.Provider
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider.html
+  name: ITextRangeProvider
+  nameWithType: ITextRangeProvider
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextRangeProvider
+- uid: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange*
+  commentId: Overload:Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange
+  href: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.html#Microsoft_UI_Xaml_Automation_Provider_ITextProvider2_GetCaretRange_System_Boolean__
+  name: GetCaretRange
+  nameWithType: ITextProvider2.GetCaretRange
+  fullName: Microsoft.UI.Xaml.Automation.Provider.ITextProvider2.GetCaretRange
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

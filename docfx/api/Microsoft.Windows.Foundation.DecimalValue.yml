@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.Foundation.DecimalValue
+  commentId: T:Microsoft.Windows.Foundation.DecimalValue
+  id: DecimalValue
+  parent: Microsoft.Windows.Foundation
+  children:
+  - Microsoft.Windows.Foundation.DecimalValue.#ctor(System.UInt16,System.Byte,System.Byte,System.UInt32,System.UInt64)
+  - Microsoft.Windows.Foundation.DecimalValue.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  - Microsoft.Windows.Foundation.DecimalValue.Equals(System.Object)
+  - Microsoft.Windows.Foundation.DecimalValue.GetHashCode
+  - Microsoft.Windows.Foundation.DecimalValue.Hi32
+  - Microsoft.Windows.Foundation.DecimalValue.Lo64
+  - Microsoft.Windows.Foundation.DecimalValue.Reserved
+  - Microsoft.Windows.Foundation.DecimalValue.Scale
+  - Microsoft.Windows.Foundation.DecimalValue.Sign
+  - Microsoft.Windows.Foundation.DecimalValue.op_Equality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  - Microsoft.Windows.Foundation.DecimalValue.op_Inequality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  langs:
+  - csharp
+  - vb
+  name: DecimalValue
+  nameWithType: DecimalValue
+  fullName: Microsoft.Windows.Foundation.DecimalValue
+  type: Struct
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DecimalValue
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 156
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.Foundation", "struct(Microsoft.Windows.Foundation.DecimalValue;u2;u1;u1;u4;u8)")]
+
+      [WindowsRuntimeHelperType]
+
+      [WinRTExposedType(typeof(StructTypeDetails<DecimalValue, DecimalValue>))]
+
+      [ContractVersion(typeof(DecimalContract), 65536)]
+
+      public struct DecimalValue : IEquatable<DecimalValue>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.Foundation", "struct(Microsoft.Windows.Foundation.DecimalValue;u2;u1;u1;u4;u8)")>
+
+      <WindowsRuntimeHelperType>
+
+      <WinRTExposedType(GetType(StructTypeDetails(Of DecimalValue, DecimalValue)))>
+
+      <ContractVersion(GetType(DecimalContract), 65536)>
+
+      Public Structure DecimalValue Implements IEquatable(Of DecimalValue)
+  implements:
+  - System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.Foundation
+    - type: System.String
+      value: struct(Microsoft.Windows.Foundation.DecimalValue;u2;u1;u1;u4;u8)
+  - type: WinRT.WindowsRuntimeHelperTypeAttribute
+    ctor: WinRT.WindowsRuntimeHelperTypeAttribute.#ctor
+    arguments: []
+  - type: WinRT.WinRTExposedTypeAttribute
+    ctor: WinRT.WinRTExposedTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: WinRT.StructTypeDetails{Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.Foundation.DecimalContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.Foundation.DecimalValue.Reserved
+  commentId: F:Microsoft.Windows.Foundation.DecimalValue.Reserved
+  id: Reserved
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Reserved
+  nameWithType: DecimalValue.Reserved
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Reserved
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Reserved
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 159
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public ushort Reserved
+    return:
+      type: System.UInt16
+    content.vb: Public Reserved As UShort
+- uid: Microsoft.Windows.Foundation.DecimalValue.Scale
+  commentId: F:Microsoft.Windows.Foundation.DecimalValue.Scale
+  id: Scale
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: DecimalValue.Scale
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Scale
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Scale
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 160
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public byte Scale
+    return:
+      type: System.Byte
+    content.vb: Public Scale As Byte
+- uid: Microsoft.Windows.Foundation.DecimalValue.Sign
+  commentId: F:Microsoft.Windows.Foundation.DecimalValue.Sign
+  id: Sign
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Sign
+  nameWithType: DecimalValue.Sign
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Sign
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Sign
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 161
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public byte Sign
+    return:
+      type: System.Byte
+    content.vb: Public Sign As Byte
+- uid: Microsoft.Windows.Foundation.DecimalValue.Hi32
+  commentId: F:Microsoft.Windows.Foundation.DecimalValue.Hi32
+  id: Hi32
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Hi32
+  nameWithType: DecimalValue.Hi32
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Hi32
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Hi32
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 162
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public uint Hi32
+    return:
+      type: System.UInt32
+    content.vb: Public Hi32 As UInteger
+- uid: Microsoft.Windows.Foundation.DecimalValue.Lo64
+  commentId: F:Microsoft.Windows.Foundation.DecimalValue.Lo64
+  id: Lo64
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Lo64
+  nameWithType: DecimalValue.Lo64
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Lo64
+  type: Field
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Lo64
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 163
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public ulong Lo64
+    return:
+      type: System.UInt64
+    content.vb: Public Lo64 As ULong
+- uid: Microsoft.Windows.Foundation.DecimalValue.#ctor(System.UInt16,System.Byte,System.Byte,System.UInt32,System.UInt64)
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.#ctor(System.UInt16,System.Byte,System.Byte,System.UInt32,System.UInt64)
+  id: '#ctor(System.UInt16,System.Byte,System.Byte,System.UInt32,System.UInt64)'
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: DecimalValue(ushort, byte, byte, uint, ulong)
+  nameWithType: DecimalValue.DecimalValue(ushort, byte, byte, uint, ulong)
+  fullName: Microsoft.Windows.Foundation.DecimalValue.DecimalValue(ushort, byte, byte, uint, ulong)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 165
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public DecimalValue(ushort _Reserved, byte _Scale, byte _Sign, uint _Hi32, ulong _Lo64)
+    parameters:
+    - id: _Reserved
+      type: System.UInt16
+    - id: _Scale
+      type: System.Byte
+    - id: _Sign
+      type: System.Byte
+    - id: _Hi32
+      type: System.UInt32
+    - id: _Lo64
+      type: System.UInt64
+    content.vb: Public Sub New(_Reserved As UShort, _Scale As Byte, _Sign As Byte, _Hi32 As UInteger, _Lo64 As ULong)
+  overload: Microsoft.Windows.Foundation.DecimalValue.#ctor*
+  nameWithType.vb: DecimalValue.New(UShort, Byte, Byte, UInteger, ULong)
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.New(UShort, Byte, Byte, UInteger, ULong)
+  name.vb: New(UShort, Byte, Byte, UInteger, ULong)
+- uid: Microsoft.Windows.Foundation.DecimalValue.op_Equality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.op_Equality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  id: op_Equality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: operator ==(DecimalValue, DecimalValue)
+  nameWithType: DecimalValue.operator ==(DecimalValue, DecimalValue)
+  fullName: Microsoft.Windows.Foundation.DecimalValue.operator ==(Microsoft.Windows.Foundation.DecimalValue, Microsoft.Windows.Foundation.DecimalValue)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 170
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public static bool operator ==(DecimalValue x, DecimalValue y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Foundation.DecimalValue
+    - id: y
+      type: Microsoft.Windows.Foundation.DecimalValue
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As DecimalValue, y As DecimalValue) As Boolean
+  overload: Microsoft.Windows.Foundation.DecimalValue.op_Equality*
+  nameWithType.vb: DecimalValue.=(DecimalValue, DecimalValue)
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.=(Microsoft.Windows.Foundation.DecimalValue, Microsoft.Windows.Foundation.DecimalValue)
+  name.vb: =(DecimalValue, DecimalValue)
+- uid: Microsoft.Windows.Foundation.DecimalValue.op_Inequality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.op_Inequality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  id: op_Inequality(Microsoft.Windows.Foundation.DecimalValue,Microsoft.Windows.Foundation.DecimalValue)
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: operator !=(DecimalValue, DecimalValue)
+  nameWithType: DecimalValue.operator !=(DecimalValue, DecimalValue)
+  fullName: Microsoft.Windows.Foundation.DecimalValue.operator !=(Microsoft.Windows.Foundation.DecimalValue, Microsoft.Windows.Foundation.DecimalValue)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 171
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  syntax:
+    content: public static bool operator !=(DecimalValue x, DecimalValue y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.Foundation.DecimalValue
+    - id: y
+      type: Microsoft.Windows.Foundation.DecimalValue
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As DecimalValue, y As DecimalValue) As Boolean
+  overload: Microsoft.Windows.Foundation.DecimalValue.op_Inequality*
+  nameWithType.vb: DecimalValue.<>(DecimalValue, DecimalValue)
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.<>(Microsoft.Windows.Foundation.DecimalValue, Microsoft.Windows.Foundation.DecimalValue)
+  name.vb: <>(DecimalValue, DecimalValue)
+- uid: Microsoft.Windows.Foundation.DecimalValue.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  id: Equals(Microsoft.Windows.Foundation.DecimalValue)
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(DecimalValue)
+  nameWithType: DecimalValue.Equals(DecimalValue)
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 172
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(DecimalValue other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.Foundation.DecimalValue
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As DecimalValue) As Boolean
+  overload: Microsoft.Windows.Foundation.DecimalValue.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}.Equals(Microsoft.Windows.Foundation.DecimalValue)
+- uid: Microsoft.Windows.Foundation.DecimalValue.Equals(System.Object)
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: DecimalValue.Equals(object)
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 173
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Windows.Foundation.DecimalValue.Equals*
+  nameWithType.vb: DecimalValue.Equals(Object)
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.Foundation.DecimalValue.GetHashCode
+  commentId: M:Microsoft.Windows.Foundation.DecimalValue.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.Foundation.DecimalValue
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DecimalValue.GetHashCode()
+  fullName: Microsoft.Windows.Foundation.DecimalValue.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.Foundation.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.Foundation.cs
+    startLine: 174
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.Foundation
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Windows.Foundation.DecimalValue.GetHashCode*
+references:
+- uid: Microsoft.Windows.Foundation
+  commentId: N:Microsoft.Windows.Foundation
+  href: Microsoft.html
+  name: Microsoft.Windows.Foundation
+  nameWithType: Microsoft.Windows.Foundation
+  fullName: Microsoft.Windows.Foundation
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Foundation
+    name: Foundation
+    href: Microsoft.Windows.Foundation.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.Foundation
+    name: Foundation
+    href: Microsoft.Windows.Foundation.html
+- uid: System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}
+  commentId: T:System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DecimalValue>
+  nameWithType: IEquatable<DecimalValue>
+  fullName: System.IEquatable<Microsoft.Windows.Foundation.DecimalValue>
+  nameWithType.vb: IEquatable(Of DecimalValue)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Foundation.DecimalValue)
+  name.vb: IEquatable(Of DecimalValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.Foundation.DecimalValue
+    name: DecimalValue
+    href: Microsoft.Windows.Foundation.DecimalValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.Foundation.DecimalValue
+    name: DecimalValue
+    href: Microsoft.Windows.Foundation.DecimalValue.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Microsoft.Windows.Foundation.DecimalValue.#ctor*
+  commentId: Overload:Microsoft.Windows.Foundation.DecimalValue.#ctor
+  href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue__ctor_System_UInt16_System_Byte_System_Byte_System_UInt32_System_UInt64_
+  name: DecimalValue
+  nameWithType: DecimalValue.DecimalValue
+  fullName: Microsoft.Windows.Foundation.DecimalValue.DecimalValue
+  nameWithType.vb: DecimalValue.New
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.New
+  name.vb: New
+- uid: Microsoft.Windows.Foundation.DecimalValue.op_Equality*
+  commentId: Overload:Microsoft.Windows.Foundation.DecimalValue.op_Equality
+  href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_op_Equality_Microsoft_Windows_Foundation_DecimalValue_Microsoft_Windows_Foundation_DecimalValue_
+  name: operator ==
+  nameWithType: DecimalValue.operator ==
+  fullName: Microsoft.Windows.Foundation.DecimalValue.operator ==
+  nameWithType.vb: DecimalValue.=
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Foundation.DecimalValue.op_Equality*
+    name: ==
+    href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_op_Equality_Microsoft_Windows_Foundation_DecimalValue_Microsoft_Windows_Foundation_DecimalValue_
+- uid: Microsoft.Windows.Foundation.DecimalValue
+  commentId: T:Microsoft.Windows.Foundation.DecimalValue
+  parent: Microsoft.Windows.Foundation
+  href: Microsoft.Windows.Foundation.DecimalValue.html
+  name: DecimalValue
+  nameWithType: DecimalValue
+  fullName: Microsoft.Windows.Foundation.DecimalValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.Foundation.DecimalValue.op_Inequality*
+  commentId: Overload:Microsoft.Windows.Foundation.DecimalValue.op_Inequality
+  href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_op_Inequality_Microsoft_Windows_Foundation_DecimalValue_Microsoft_Windows_Foundation_DecimalValue_
+  name: operator !=
+  nameWithType: DecimalValue.operator !=
+  fullName: Microsoft.Windows.Foundation.DecimalValue.operator !=
+  nameWithType.vb: DecimalValue.<>
+  fullName.vb: Microsoft.Windows.Foundation.DecimalValue.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.Foundation.DecimalValue.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_op_Inequality_Microsoft_Windows_Foundation_DecimalValue_Microsoft_Windows_Foundation_DecimalValue_
+- uid: Microsoft.Windows.Foundation.DecimalValue.Equals*
+  commentId: Overload:Microsoft.Windows.Foundation.DecimalValue.Equals
+  href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_Equals_Microsoft_Windows_Foundation_DecimalValue_
+  name: Equals
+  nameWithType: DecimalValue.Equals
+  fullName: Microsoft.Windows.Foundation.DecimalValue.Equals
+- uid: System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  commentId: M:System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  parent: System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(DecimalValue)
+  nameWithType: IEquatable<DecimalValue>.Equals(DecimalValue)
+  fullName: System.IEquatable<Microsoft.Windows.Foundation.DecimalValue>.Equals(Microsoft.Windows.Foundation.DecimalValue)
+  nameWithType.vb: IEquatable(Of DecimalValue).Equals(DecimalValue)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.Foundation.DecimalValue).Equals(Microsoft.Windows.Foundation.DecimalValue)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}.Equals(Microsoft.Windows.Foundation.DecimalValue)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Foundation.DecimalValue
+    name: DecimalValue
+    href: Microsoft.Windows.Foundation.DecimalValue.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.Foundation.DecimalValue}.Equals(Microsoft.Windows.Foundation.DecimalValue)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.Foundation.DecimalValue
+    name: DecimalValue
+    href: Microsoft.Windows.Foundation.DecimalValue.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.Foundation.DecimalValue.GetHashCode*
+  commentId: Overload:Microsoft.Windows.Foundation.DecimalValue.GetHashCode
+  href: Microsoft.Windows.Foundation.DecimalValue.html#Microsoft_Windows_Foundation_DecimalValue_GetHashCode
+  name: GetHashCode
+  nameWithType: DecimalValue.GetHashCode
+  fullName: Microsoft.Windows.Foundation.DecimalValue.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

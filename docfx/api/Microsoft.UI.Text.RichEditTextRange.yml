@@ -1,0 +1,4144 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Text.RichEditTextRange
+  commentId: T:Microsoft.UI.Text.RichEditTextRange
+  id: RichEditTextRange
+  parent: Microsoft.UI.Text
+  children:
+  - Microsoft.UI.Text.RichEditTextRange.CanPaste(System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  - Microsoft.UI.Text.RichEditTextRange.Character
+  - Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+  - Microsoft.UI.Text.RichEditTextRange.Collapse(System.Boolean)
+  - Microsoft.UI.Text.RichEditTextRange.Copy
+  - Microsoft.UI.Text.RichEditTextRange.Cut
+  - Microsoft.UI.Text.RichEditTextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  - Microsoft.UI.Text.RichEditTextRange.EndPosition
+  - Microsoft.UI.Text.RichEditTextRange.Equals(Microsoft.UI.Text.RichEditTextRange)
+  - Microsoft.UI.Text.RichEditTextRange.Equals(System.Object)
+  - Microsoft.UI.Text.RichEditTextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  - Microsoft.UI.Text.RichEditTextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  - Microsoft.UI.Text.RichEditTextRange.FormattedText
+  - Microsoft.UI.Text.RichEditTextRange.FromAbi(System.IntPtr)
+  - Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.GetClone
+  - Microsoft.UI.Text.RichEditTextRange.GetHashCode
+  - Microsoft.UI.Text.RichEditTextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  - Microsoft.UI.Text.RichEditTextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  - Microsoft.UI.Text.RichEditTextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  - Microsoft.UI.Text.RichEditTextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  - Microsoft.UI.Text.RichEditTextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.RichEditTextRange.Gravity
+  - Microsoft.UI.Text.RichEditTextRange.InRange(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.RichEditTextRange.InStory(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.RichEditTextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.RichEditTextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  - Microsoft.UI.Text.RichEditTextRange.Length
+  - Microsoft.UI.Text.RichEditTextRange.Link
+  - Microsoft.UI.Text.RichEditTextRange.MatchSelection
+  - Microsoft.UI.Text.RichEditTextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+  - Microsoft.UI.Text.RichEditTextRange.Paste(System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  - Microsoft.UI.Text.RichEditTextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  - Microsoft.UI.Text.RichEditTextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  - Microsoft.UI.Text.RichEditTextRange.SetRange(System.Int32,System.Int32)
+  - Microsoft.UI.Text.RichEditTextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  - Microsoft.UI.Text.RichEditTextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  - Microsoft.UI.Text.RichEditTextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  - Microsoft.UI.Text.RichEditTextRange.StartPosition
+  - Microsoft.UI.Text.RichEditTextRange.StoryLength
+  - Microsoft.UI.Text.RichEditTextRange.Text
+  - Microsoft.UI.Text.RichEditTextRange.op_Equality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  - Microsoft.UI.Text.RichEditTextRange.op_Inequality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  langs:
+  - csharp
+  - vb
+  name: RichEditTextRange
+  nameWithType: RichEditTextRange
+  fullName: Microsoft.UI.Text.RichEditTextRange
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RichEditTextRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 659
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Text")]
+
+      [WindowsRuntimeHelperType(typeof(RichEditTextRange))]
+
+      [ProjectedRuntimeClass(typeof(ITextRange))]
+
+      [ContractVersion(typeof(TextApiContract), 65536)]
+
+      public sealed class RichEditTextRange : ITextRange, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<RichEditTextRange>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Text")>
+
+      <WindowsRuntimeHelperType(GetType(RichEditTextRange))>
+
+      <ProjectedRuntimeClass(GetType(ITextRange))>
+
+      <ContractVersion(GetType(TextApiContract), 65536)>
+
+      Public NotInheritable Class RichEditTextRange Implements ITextRange, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of RichEditTextRange)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.UI.Text.ITextRange
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Text.RichEditTextRange}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Text
+  - type: WinRT.ProjectedRuntimeClassAttribute
+    ctor: WinRT.ProjectedRuntimeClassAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Text.ITextRange
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Text.TextApiContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Text.RichEditTextRange.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: RichEditTextRange.FromAbi(nint)
+  fullName: Microsoft.UI.Text.RichEditTextRange.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 675
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: public static RichEditTextRange FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Text.RichEditTextRange
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As RichEditTextRange
+  overload: Microsoft.UI.Text.RichEditTextRange.FromAbi*
+  nameWithType.vb: RichEditTextRange.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Text.RichEditTextRange.op_Equality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.op_Equality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  id: op_Equality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RichEditTextRange, RichEditTextRange)
+  nameWithType: RichEditTextRange.operator ==(RichEditTextRange, RichEditTextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.operator ==(Microsoft.UI.Text.RichEditTextRange, Microsoft.UI.Text.RichEditTextRange)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 688
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: public static bool operator ==(RichEditTextRange x, RichEditTextRange y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Text.RichEditTextRange
+    - id: y
+      type: Microsoft.UI.Text.RichEditTextRange
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As RichEditTextRange, y As RichEditTextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.op_Equality*
+  nameWithType.vb: RichEditTextRange.=(RichEditTextRange, RichEditTextRange)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.=(Microsoft.UI.Text.RichEditTextRange, Microsoft.UI.Text.RichEditTextRange)
+  name.vb: =(RichEditTextRange, RichEditTextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.op_Inequality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.op_Inequality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  id: op_Inequality(Microsoft.UI.Text.RichEditTextRange,Microsoft.UI.Text.RichEditTextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RichEditTextRange, RichEditTextRange)
+  nameWithType: RichEditTextRange.operator !=(RichEditTextRange, RichEditTextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.operator !=(Microsoft.UI.Text.RichEditTextRange, Microsoft.UI.Text.RichEditTextRange)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 689
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  syntax:
+    content: public static bool operator !=(RichEditTextRange x, RichEditTextRange y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Text.RichEditTextRange
+    - id: y
+      type: Microsoft.UI.Text.RichEditTextRange
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As RichEditTextRange, y As RichEditTextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.op_Inequality*
+  nameWithType.vb: RichEditTextRange.<>(RichEditTextRange, RichEditTextRange)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.<>(Microsoft.UI.Text.RichEditTextRange, Microsoft.UI.Text.RichEditTextRange)
+  name.vb: <>(RichEditTextRange, RichEditTextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.Equals(Microsoft.UI.Text.RichEditTextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Equals(Microsoft.UI.Text.RichEditTextRange)
+  id: Equals(Microsoft.UI.Text.RichEditTextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Equals(RichEditTextRange)
+  nameWithType: RichEditTextRange.Equals(RichEditTextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Equals(Microsoft.UI.Text.RichEditTextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 690
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(RichEditTextRange other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Text.RichEditTextRange
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As RichEditTextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Text.RichEditTextRange}.Equals(Microsoft.UI.Text.RichEditTextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.Equals(System.Object)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: RichEditTextRange.Equals(object)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 691
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Text.RichEditTextRange.Equals*
+  nameWithType.vb: RichEditTextRange.Equals(Object)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetHashCode
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RichEditTextRange.GetHashCode()
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 692
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Text.RichEditTextRange.GetHashCode*
+- uid: Microsoft.UI.Text.RichEditTextRange.CanPaste(System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.CanPaste(System.Int32)
+  id: CanPaste(System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: CanPaste(int)
+  nameWithType: RichEditTextRange.CanPaste(int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.CanPaste(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CanPaste
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 715
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public bool CanPaste(int format)
+    parameters:
+    - id: format
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanPaste(format As Integer) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.CanPaste*
+  implements:
+  - Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  nameWithType.vb: RichEditTextRange.CanPaste(Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.CanPaste(Integer)
+  name.vb: CanPaste(Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  id: ChangeCase(Microsoft.UI.Text.LetterCase)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: ChangeCase(LetterCase)
+  nameWithType: RichEditTextRange.ChangeCase(LetterCase)
+  fullName: Microsoft.UI.Text.RichEditTextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ChangeCase
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 717
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void ChangeCase(LetterCase value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Text.LetterCase
+    content.vb: Public Sub ChangeCase(value As LetterCase)
+  overload: Microsoft.UI.Text.RichEditTextRange.ChangeCase*
+  implements:
+  - Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+- uid: Microsoft.UI.Text.RichEditTextRange.Collapse(System.Boolean)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Collapse(System.Boolean)
+  id: Collapse(System.Boolean)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Collapse(bool)
+  nameWithType: RichEditTextRange.Collapse(bool)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Collapse(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Collapse
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 719
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void Collapse(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub Collapse(value As Boolean)
+  overload: Microsoft.UI.Text.RichEditTextRange.Collapse*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  nameWithType.vb: RichEditTextRange.Collapse(Boolean)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.Collapse(Boolean)
+  name.vb: Collapse(Boolean)
+- uid: Microsoft.UI.Text.RichEditTextRange.Copy
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Copy
+  id: Copy
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: RichEditTextRange.Copy()
+  fullName: Microsoft.UI.Text.RichEditTextRange.Copy()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Copy
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 721
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void Copy()
+    content.vb: Public Sub Copy()
+  overload: Microsoft.UI.Text.RichEditTextRange.Copy*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Copy
+- uid: Microsoft.UI.Text.RichEditTextRange.Cut
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Cut
+  id: Cut
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Cut()
+  nameWithType: RichEditTextRange.Cut()
+  fullName: Microsoft.UI.Text.RichEditTextRange.Cut()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Cut
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 723
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void Cut()
+    content.vb: Public Sub Cut()
+  overload: Microsoft.UI.Text.RichEditTextRange.Cut*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Cut
+- uid: Microsoft.UI.Text.RichEditTextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Delete(TextRangeUnit, int)
+  nameWithType: RichEditTextRange.Delete(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Delete(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Delete
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 725
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int Delete(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Delete(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.Delete*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  nameWithType.vb: RichEditTextRange.Delete(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.Delete(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Delete(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  id: EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: EndOf(TextRangeUnit, bool)
+  nameWithType: RichEditTextRange.EndOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.RichEditTextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EndOf
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 727
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int EndOf(TextRangeUnit unit, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: extend
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Function EndOf(unit As TextRangeUnit, extend As Boolean) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.EndOf*
+  implements:
+  - Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  nameWithType.vb: RichEditTextRange.EndOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: EndOf(TextRangeUnit, Boolean)
+- uid: Microsoft.UI.Text.RichEditTextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  id: Expand(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Expand(TextRangeUnit)
+  nameWithType: RichEditTextRange.Expand(TextRangeUnit)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Expand
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 729
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int Expand(TextRangeUnit unit)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    return:
+      type: System.Int32
+    content.vb: Public Function Expand(unit As TextRangeUnit) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.Expand*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+- uid: Microsoft.UI.Text.RichEditTextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  id: FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: FindText(string, int, FindOptions)
+  nameWithType: RichEditTextRange.FindText(string, int, FindOptions)
+  fullName: Microsoft.UI.Text.RichEditTextRange.FindText(string, int, Microsoft.UI.Text.FindOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FindText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 731
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int FindText(string value, int scanLength, FindOptions options)
+    parameters:
+    - id: value
+      type: System.String
+    - id: scanLength
+      type: System.Int32
+    - id: options
+      type: Microsoft.UI.Text.FindOptions
+    return:
+      type: System.Int32
+    content.vb: Public Function FindText(value As String, scanLength As Integer, options As FindOptions) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.FindText*
+  implements:
+  - Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  nameWithType.vb: RichEditTextRange.FindText(String, Integer, FindOptions)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.FindText(String, Integer, Microsoft.UI.Text.FindOptions)
+  name.vb: FindText(String, Integer, FindOptions)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  id: GetCharacterUtf32(System.UInt32@,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetCharacterUtf32(out uint, int)
+  nameWithType: RichEditTextRange.GetCharacterUtf32(out uint, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32(out uint, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetCharacterUtf32
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 733
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void GetCharacterUtf32(out uint value, int offset)
+    parameters:
+    - id: value
+      type: System.UInt32
+    - id: offset
+      type: System.Int32
+    content.vb: Public Sub GetCharacterUtf32(value As UInteger, offset As Integer)
+  overload: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  nameWithType.vb: RichEditTextRange.GetCharacterUtf32(UInteger, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32(UInteger, Integer)
+  name.vb: GetCharacterUtf32(UInteger, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetClone
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetClone
+  id: GetClone
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetClone()
+  nameWithType: RichEditTextRange.GetClone()
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetClone()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetClone
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 735
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public ITextRange GetClone()
+    return:
+      type: Microsoft.UI.Text.ITextRange
+    content.vb: Public Function GetClone() As ITextRange
+  overload: Microsoft.UI.Text.RichEditTextRange.GetClone*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetClone
+- uid: Microsoft.UI.Text.RichEditTextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  id: GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetIndex(TextRangeUnit)
+  nameWithType: RichEditTextRange.GetIndex(TextRangeUnit)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetIndex
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 737
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int GetIndex(TextRangeUnit unit)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    return:
+      type: System.Int32
+    content.vb: Public Function GetIndex(unit As TextRangeUnit) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.GetIndex*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  id: GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  nameWithType: RichEditTextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, out Windows.Foundation.Point)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetPoint
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 739
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void GetPoint(HorizontalCharacterAlignment horizontalAlign, VerticalCharacterAlignment verticalAlign, PointOptions options, out Point point)
+    parameters:
+    - id: horizontalAlign
+      type: Microsoft.UI.Text.HorizontalCharacterAlignment
+    - id: verticalAlign
+      type: Microsoft.UI.Text.VerticalCharacterAlignment
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: point
+      type: Windows.Foundation.Point
+    content.vb: Public Sub GetPoint(horizontalAlign As HorizontalCharacterAlignment, verticalAlign As VerticalCharacterAlignment, options As PointOptions, point As Point)
+  overload: Microsoft.UI.Text.RichEditTextRange.GetPoint*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  nameWithType.vb: RichEditTextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, Windows.Foundation.Point)
+  name.vb: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  id: GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetRect(PointOptions, out Rect, out int)
+  nameWithType: RichEditTextRange.GetRect(PointOptions, out Rect, out int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetRect(Microsoft.UI.Text.PointOptions, out Windows.Foundation.Rect, out int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetRect
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 741
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void GetRect(PointOptions options, out Rect rect, out int hit)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: rect
+      type: Windows.Foundation.Rect
+    - id: hit
+      type: System.Int32
+    content.vb: Public Sub GetRect(options As PointOptions, rect As Rect, hit As Integer)
+  overload: Microsoft.UI.Text.RichEditTextRange.GetRect*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  nameWithType.vb: RichEditTextRange.GetRect(PointOptions, Rect, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.GetRect(Microsoft.UI.Text.PointOptions, Windows.Foundation.Rect, Integer)
+  name.vb: GetRect(PointOptions, Rect, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  id: GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetText(TextGetOptions, out string)
+  nameWithType: RichEditTextRange.GetText(TextGetOptions, out string)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetText(Microsoft.UI.Text.TextGetOptions, out string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 743
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void GetText(TextGetOptions options, out string value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextGetOptions
+    - id: value
+      type: System.String
+    content.vb: Public Sub GetText(options As TextGetOptions, value As String)
+  overload: Microsoft.UI.Text.RichEditTextRange.GetText*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  nameWithType.vb: RichEditTextRange.GetText(TextGetOptions, String)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.GetText(Microsoft.UI.Text.TextGetOptions, String)
+  name.vb: GetText(TextGetOptions, String)
+- uid: Microsoft.UI.Text.RichEditTextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  id: GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  nameWithType: RichEditTextRange.GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetTextViaStream
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 745
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void GetTextViaStream(TextGetOptions options, IRandomAccessStream value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextGetOptions
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Public Sub GetTextViaStream(options As TextGetOptions, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.RichEditTextRange.GetTextViaStream*
+  implements:
+  - Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+- uid: Microsoft.UI.Text.RichEditTextRange.InRange(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.InRange(Microsoft.UI.Text.ITextRange)
+  id: InRange(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: InRange(ITextRange)
+  nameWithType: RichEditTextRange.InRange(ITextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.InRange(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 747
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public bool InRange(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Public Function InRange(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.InRange*
+  implements:
+  - Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  id: InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  nameWithType: RichEditTextRange.InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.RichEditTextRange.InsertImage(int, int, int, Microsoft.UI.Text.VerticalCharacterAlignment, string, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InsertImage
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 749
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void InsertImage(int width, int height, int ascent, VerticalCharacterAlignment verticalAlign, string alternateText, IRandomAccessStream value)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: ascent
+      type: System.Int32
+    - id: verticalAlign
+      type: Microsoft.UI.Text.VerticalCharacterAlignment
+    - id: alternateText
+      type: System.String
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Public Sub InsertImage(width As Integer, height As Integer, ascent As Integer, verticalAlign As VerticalCharacterAlignment, alternateText As String, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.RichEditTextRange.InsertImage*
+  implements:
+  - Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  nameWithType.vb: RichEditTextRange.InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.InsertImage(Integer, Integer, Integer, Microsoft.UI.Text.VerticalCharacterAlignment, String, Windows.Storage.Streams.IRandomAccessStream)
+  name.vb: InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+- uid: Microsoft.UI.Text.RichEditTextRange.InStory(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.InStory(Microsoft.UI.Text.ITextRange)
+  id: InStory(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: InStory(ITextRange)
+  nameWithType: RichEditTextRange.InStory(ITextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.InStory(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InStory
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 751
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public bool InStory(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Public Function InStory(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.InStory*
+  implements:
+  - Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  id: IsEqual(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: IsEqual(ITextRange)
+  nameWithType: RichEditTextRange.IsEqual(ITextRange)
+  fullName: Microsoft.UI.Text.RichEditTextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsEqual
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 753
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public bool IsEqual(ITextRange range)
+    parameters:
+    - id: range
+      type: Microsoft.UI.Text.ITextRange
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqual(range As ITextRange) As Boolean
+  overload: Microsoft.UI.Text.RichEditTextRange.IsEqual*
+  implements:
+  - Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+- uid: Microsoft.UI.Text.RichEditTextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Move(TextRangeUnit, int)
+  nameWithType: RichEditTextRange.Move(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Move(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Move
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 755
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int Move(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Move(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.Move*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  nameWithType.vb: RichEditTextRange.Move(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.Move(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Move(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: MoveEnd(TextRangeUnit, int)
+  nameWithType: RichEditTextRange.MoveEnd(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveEnd
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 757
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int MoveEnd(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function MoveEnd(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.MoveEnd*
+  implements:
+  - Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  nameWithType.vb: RichEditTextRange.MoveEnd(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveEnd(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  id: MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: MoveStart(TextRangeUnit, int)
+  nameWithType: RichEditTextRange.MoveStart(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MoveStart
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 759
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int MoveStart(TextRangeUnit unit, int count)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function MoveStart(unit As TextRangeUnit, count As Integer) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.MoveStart*
+  implements:
+  - Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  nameWithType.vb: RichEditTextRange.MoveStart(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveStart(TextRangeUnit, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.Paste(System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.Paste(System.Int32)
+  id: Paste(System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Paste(int)
+  nameWithType: RichEditTextRange.Paste(int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.Paste(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Paste
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 761
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void Paste(int format)
+    parameters:
+    - id: format
+      type: System.Int32
+    content.vb: Public Sub Paste(format As Integer)
+  overload: Microsoft.UI.Text.RichEditTextRange.Paste*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  nameWithType.vb: RichEditTextRange.Paste(Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.Paste(Integer)
+  name.vb: Paste(Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  id: ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: ScrollIntoView(PointOptions)
+  nameWithType: RichEditTextRange.ScrollIntoView(PointOptions)
+  fullName: Microsoft.UI.Text.RichEditTextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ScrollIntoView
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 763
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void ScrollIntoView(PointOptions value)
+    parameters:
+    - id: value
+      type: Microsoft.UI.Text.PointOptions
+    content.vb: Public Sub ScrollIntoView(value As PointOptions)
+  overload: Microsoft.UI.Text.RichEditTextRange.ScrollIntoView*
+  implements:
+  - Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+- uid: Microsoft.UI.Text.RichEditTextRange.MatchSelection
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.MatchSelection
+  id: MatchSelection
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: MatchSelection()
+  nameWithType: RichEditTextRange.MatchSelection()
+  fullName: Microsoft.UI.Text.RichEditTextRange.MatchSelection()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: MatchSelection
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 765
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void MatchSelection()
+    content.vb: Public Sub MatchSelection()
+  overload: Microsoft.UI.Text.RichEditTextRange.MatchSelection*
+  implements:
+  - Microsoft.UI.Text.ITextRange.MatchSelection
+- uid: Microsoft.UI.Text.RichEditTextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  id: SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: SetIndex(TextRangeUnit, int, bool)
+  nameWithType: RichEditTextRange.SetIndex(TextRangeUnit, int, bool)
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, int, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetIndex
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 767
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void SetIndex(TextRangeUnit unit, int index, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: index
+      type: System.Int32
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SetIndex(unit As TextRangeUnit, index As Integer, extend As Boolean)
+  overload: Microsoft.UI.Text.RichEditTextRange.SetIndex*
+  implements:
+  - Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  nameWithType.vb: RichEditTextRange.SetIndex(TextRangeUnit, Integer, Boolean)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, Integer, Boolean)
+  name.vb: SetIndex(TextRangeUnit, Integer, Boolean)
+- uid: Microsoft.UI.Text.RichEditTextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  id: SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: SetPoint(Point, PointOptions, bool)
+  nameWithType: RichEditTextRange.SetPoint(Point, PointOptions, bool)
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetPoint
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 769
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void SetPoint(Point point, PointOptions options, bool extend)
+    parameters:
+    - id: point
+      type: Windows.Foundation.Point
+    - id: options
+      type: Microsoft.UI.Text.PointOptions
+    - id: extend
+      type: System.Boolean
+    content.vb: Public Sub SetPoint(point As Point, options As PointOptions, extend As Boolean)
+  overload: Microsoft.UI.Text.RichEditTextRange.SetPoint*
+  implements:
+  - Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  nameWithType.vb: RichEditTextRange.SetPoint(Point, PointOptions, Boolean)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, Boolean)
+  name.vb: SetPoint(Point, PointOptions, Boolean)
+- uid: Microsoft.UI.Text.RichEditTextRange.SetRange(System.Int32,System.Int32)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.SetRange(System.Int32,System.Int32)
+  id: SetRange(System.Int32,System.Int32)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: SetRange(int, int)
+  nameWithType: RichEditTextRange.SetRange(int, int)
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetRange(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetRange
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 771
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void SetRange(int startPosition, int endPosition)
+    parameters:
+    - id: startPosition
+      type: System.Int32
+    - id: endPosition
+      type: System.Int32
+    content.vb: Public Sub SetRange(startPosition As Integer, endPosition As Integer)
+  overload: Microsoft.UI.Text.RichEditTextRange.SetRange*
+  implements:
+  - Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  nameWithType.vb: RichEditTextRange.SetRange(Integer, Integer)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.SetRange(Integer, Integer)
+  name.vb: SetRange(Integer, Integer)
+- uid: Microsoft.UI.Text.RichEditTextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  id: SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: SetText(TextSetOptions, string)
+  nameWithType: RichEditTextRange.SetText(TextSetOptions, string)
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetText(Microsoft.UI.Text.TextSetOptions, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 773
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void SetText(TextSetOptions options, string value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextSetOptions
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetText(options As TextSetOptions, value As String)
+  overload: Microsoft.UI.Text.RichEditTextRange.SetText*
+  implements:
+  - Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  nameWithType.vb: RichEditTextRange.SetText(TextSetOptions, String)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.SetText(Microsoft.UI.Text.TextSetOptions, String)
+  name.vb: SetText(TextSetOptions, String)
+- uid: Microsoft.UI.Text.RichEditTextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  id: SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  nameWithType: RichEditTextRange.SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTextViaStream
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 775
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public void SetTextViaStream(TextSetOptions options, IRandomAccessStream value)
+    parameters:
+    - id: options
+      type: Microsoft.UI.Text.TextSetOptions
+    - id: value
+      type: Windows.Storage.Streams.IRandomAccessStream
+    content.vb: Public Sub SetTextViaStream(options As TextSetOptions, value As IRandomAccessStream)
+  overload: Microsoft.UI.Text.RichEditTextRange.SetTextViaStream*
+  implements:
+  - Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+- uid: Microsoft.UI.Text.RichEditTextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.RichEditTextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  id: StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: StartOf(TextRangeUnit, bool)
+  nameWithType: RichEditTextRange.StartOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.RichEditTextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StartOf
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 777
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int StartOf(TextRangeUnit unit, bool extend)
+    parameters:
+    - id: unit
+      type: Microsoft.UI.Text.TextRangeUnit
+    - id: extend
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Function StartOf(unit As TextRangeUnit, extend As Boolean) As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.StartOf*
+  implements:
+  - Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  nameWithType.vb: RichEditTextRange.StartOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: StartOf(TextRangeUnit, Boolean)
+- uid: Microsoft.UI.Text.RichEditTextRange.Character
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.Character
+  id: Character
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Character
+  nameWithType: RichEditTextRange.Character
+  fullName: Microsoft.UI.Text.RichEditTextRange.Character
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Character
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 779
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public char Character { get; set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property Character As Char
+  overload: Microsoft.UI.Text.RichEditTextRange.Character*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Character
+- uid: Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+  id: CharacterFormat
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: CharacterFormat
+  nameWithType: RichEditTextRange.CharacterFormat
+  fullName: Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CharacterFormat
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 785
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public ITextCharacterFormat CharacterFormat { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextCharacterFormat
+    content.vb: Public Property CharacterFormat As ITextCharacterFormat
+  overload: Microsoft.UI.Text.RichEditTextRange.CharacterFormat*
+  implements:
+  - Microsoft.UI.Text.ITextRange.CharacterFormat
+- uid: Microsoft.UI.Text.RichEditTextRange.EndPosition
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.EndPosition
+  id: EndPosition
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: EndPosition
+  nameWithType: RichEditTextRange.EndPosition
+  fullName: Microsoft.UI.Text.RichEditTextRange.EndPosition
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EndPosition
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 791
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int EndPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property EndPosition As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.EndPosition*
+  implements:
+  - Microsoft.UI.Text.ITextRange.EndPosition
+- uid: Microsoft.UI.Text.RichEditTextRange.FormattedText
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.FormattedText
+  id: FormattedText
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: FormattedText
+  nameWithType: RichEditTextRange.FormattedText
+  fullName: Microsoft.UI.Text.RichEditTextRange.FormattedText
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FormattedText
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 797
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public ITextRange FormattedText { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextRange
+    content.vb: Public Property FormattedText As ITextRange
+  overload: Microsoft.UI.Text.RichEditTextRange.FormattedText*
+  implements:
+  - Microsoft.UI.Text.ITextRange.FormattedText
+- uid: Microsoft.UI.Text.RichEditTextRange.Gravity
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.Gravity
+  id: Gravity
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: RichEditTextRange.Gravity
+  fullName: Microsoft.UI.Text.RichEditTextRange.Gravity
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Gravity
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 803
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public RangeGravity Gravity { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.RangeGravity
+    content.vb: Public Property Gravity As RangeGravity
+  overload: Microsoft.UI.Text.RichEditTextRange.Gravity*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Gravity
+- uid: Microsoft.UI.Text.RichEditTextRange.Length
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.Length
+  id: Length
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: RichEditTextRange.Length
+  fullName: Microsoft.UI.Text.RichEditTextRange.Length
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Length
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 809
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.Length*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Length
+- uid: Microsoft.UI.Text.RichEditTextRange.Link
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.Link
+  id: Link
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: RichEditTextRange.Link
+  fullName: Microsoft.UI.Text.RichEditTextRange.Link
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Link
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 811
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public string Link { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Link As String
+  overload: Microsoft.UI.Text.RichEditTextRange.Link*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Link
+- uid: Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+  id: ParagraphFormat
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: ParagraphFormat
+  nameWithType: RichEditTextRange.ParagraphFormat
+  fullName: Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ParagraphFormat
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 817
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public ITextParagraphFormat ParagraphFormat { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Text.ITextParagraphFormat
+    content.vb: Public Property ParagraphFormat As ITextParagraphFormat
+  overload: Microsoft.UI.Text.RichEditTextRange.ParagraphFormat*
+  implements:
+  - Microsoft.UI.Text.ITextRange.ParagraphFormat
+- uid: Microsoft.UI.Text.RichEditTextRange.StartPosition
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.StartPosition
+  id: StartPosition
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: StartPosition
+  nameWithType: RichEditTextRange.StartPosition
+  fullName: Microsoft.UI.Text.RichEditTextRange.StartPosition
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StartPosition
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 823
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int StartPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StartPosition As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.StartPosition*
+  implements:
+  - Microsoft.UI.Text.ITextRange.StartPosition
+- uid: Microsoft.UI.Text.RichEditTextRange.StoryLength
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.StoryLength
+  id: StoryLength
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: StoryLength
+  nameWithType: RichEditTextRange.StoryLength
+  fullName: Microsoft.UI.Text.RichEditTextRange.StoryLength
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: StoryLength
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 829
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public int StoryLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StoryLength As Integer
+  overload: Microsoft.UI.Text.RichEditTextRange.StoryLength*
+  implements:
+  - Microsoft.UI.Text.ITextRange.StoryLength
+- uid: Microsoft.UI.Text.RichEditTextRange.Text
+  commentId: P:Microsoft.UI.Text.RichEditTextRange.Text
+  id: Text
+  parent: Microsoft.UI.Text.RichEditTextRange
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: RichEditTextRange.Text
+  fullName: Microsoft.UI.Text.RichEditTextRange.Text
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Text.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Text
+    path: ../src/Microsoft.UI.Text.cs
+    startLine: 831
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Text
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Microsoft.UI.Text.RichEditTextRange.Text*
+  implements:
+  - Microsoft.UI.Text.ITextRange.Text
+references:
+- uid: Microsoft.UI.Text
+  commentId: N:Microsoft.UI.Text
+  href: Microsoft.html
+  name: Microsoft.UI.Text
+  nameWithType: Microsoft.UI.Text
+  fullName: Microsoft.UI.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Text
+    name: Text
+    href: Microsoft.UI.Text.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Text.ITextRange
+  commentId: T:Microsoft.UI.Text.ITextRange
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextRange.html
+  name: ITextRange
+  nameWithType: ITextRange
+  fullName: Microsoft.UI.Text.ITextRange
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Text.RichEditTextRange}
+  commentId: T:System.IEquatable{Microsoft.UI.Text.RichEditTextRange}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RichEditTextRange>
+  nameWithType: IEquatable<RichEditTextRange>
+  fullName: System.IEquatable<Microsoft.UI.Text.RichEditTextRange>
+  nameWithType.vb: IEquatable(Of RichEditTextRange)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Text.RichEditTextRange)
+  name.vb: IEquatable(Of RichEditTextRange)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Text.RichEditTextRange
+    name: RichEditTextRange
+    href: Microsoft.UI.Text.RichEditTextRange.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Text.RichEditTextRange
+    name: RichEditTextRange
+    href: Microsoft.UI.Text.RichEditTextRange.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.FromAbi*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.FromAbi
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: RichEditTextRange.FromAbi
+  fullName: Microsoft.UI.Text.RichEditTextRange.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Text.RichEditTextRange
+  commentId: T:Microsoft.UI.Text.RichEditTextRange
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.RichEditTextRange.html
+  name: RichEditTextRange
+  nameWithType: RichEditTextRange
+  fullName: Microsoft.UI.Text.RichEditTextRange
+- uid: Microsoft.UI.Text.RichEditTextRange.op_Equality*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.op_Equality
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_op_Equality_Microsoft_UI_Text_RichEditTextRange_Microsoft_UI_Text_RichEditTextRange_
+  name: operator ==
+  nameWithType: RichEditTextRange.operator ==
+  fullName: Microsoft.UI.Text.RichEditTextRange.operator ==
+  nameWithType.vb: RichEditTextRange.=
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Text.RichEditTextRange.op_Equality*
+    name: ==
+    href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_op_Equality_Microsoft_UI_Text_RichEditTextRange_Microsoft_UI_Text_RichEditTextRange_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Text.RichEditTextRange.op_Inequality*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.op_Inequality
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_op_Inequality_Microsoft_UI_Text_RichEditTextRange_Microsoft_UI_Text_RichEditTextRange_
+  name: operator !=
+  nameWithType: RichEditTextRange.operator !=
+  fullName: Microsoft.UI.Text.RichEditTextRange.operator !=
+  nameWithType.vb: RichEditTextRange.<>
+  fullName.vb: Microsoft.UI.Text.RichEditTextRange.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Text.RichEditTextRange.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_op_Inequality_Microsoft_UI_Text_RichEditTextRange_Microsoft_UI_Text_RichEditTextRange_
+- uid: Microsoft.UI.Text.RichEditTextRange.Equals*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Equals
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Equals_Microsoft_UI_Text_RichEditTextRange_
+  name: Equals
+  nameWithType: RichEditTextRange.Equals
+  fullName: Microsoft.UI.Text.RichEditTextRange.Equals
+- uid: System.IEquatable{Microsoft.UI.Text.RichEditTextRange}.Equals(Microsoft.UI.Text.RichEditTextRange)
+  commentId: M:System.IEquatable{Microsoft.UI.Text.RichEditTextRange}.Equals(Microsoft.UI.Text.RichEditTextRange)
+  parent: System.IEquatable{Microsoft.UI.Text.RichEditTextRange}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(RichEditTextRange)
+  nameWithType: IEquatable<RichEditTextRange>.Equals(RichEditTextRange)
+  fullName: System.IEquatable<Microsoft.UI.Text.RichEditTextRange>.Equals(Microsoft.UI.Text.RichEditTextRange)
+  nameWithType.vb: IEquatable(Of RichEditTextRange).Equals(RichEditTextRange)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Text.RichEditTextRange).Equals(Microsoft.UI.Text.RichEditTextRange)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Text.RichEditTextRange}.Equals(Microsoft.UI.Text.RichEditTextRange)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Text.RichEditTextRange
+    name: RichEditTextRange
+    href: Microsoft.UI.Text.RichEditTextRange.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Text.RichEditTextRange}.Equals(Microsoft.UI.Text.RichEditTextRange)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Text.RichEditTextRange
+    name: RichEditTextRange
+    href: Microsoft.UI.Text.RichEditTextRange.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.GetHashCode*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetHashCode
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetHashCode
+  name: GetHashCode
+  nameWithType: RichEditTextRange.GetHashCode
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Text.RichEditTextRange.CanPaste*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.CanPaste
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_CanPaste_System_Int32_
+  name: CanPaste
+  nameWithType: RichEditTextRange.CanPaste
+  fullName: Microsoft.UI.Text.RichEditTextRange.CanPaste
+- uid: Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CanPaste_System_Int32_
+  name: CanPaste(int)
+  nameWithType: ITextRange.CanPaste(int)
+  fullName: Microsoft.UI.Text.ITextRange.CanPaste(int)
+  nameWithType.vb: ITextRange.CanPaste(Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.CanPaste(Integer)
+  name.vb: CanPaste(Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+    name: CanPaste
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CanPaste_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.CanPaste(System.Int32)
+    name: CanPaste
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CanPaste_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.ChangeCase*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.ChangeCase
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_ChangeCase_Microsoft_UI_Text_LetterCase_
+  name: ChangeCase
+  nameWithType: RichEditTextRange.ChangeCase
+  fullName: Microsoft.UI.Text.RichEditTextRange.ChangeCase
+- uid: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  commentId: M:Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ChangeCase_Microsoft_UI_Text_LetterCase_
+  name: ChangeCase(LetterCase)
+  nameWithType: ITextRange.ChangeCase(LetterCase)
+  fullName: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+    name: ChangeCase
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ChangeCase_Microsoft_UI_Text_LetterCase_
+  - name: (
+  - uid: Microsoft.UI.Text.LetterCase
+    name: LetterCase
+    href: Microsoft.UI.Text.LetterCase.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.ChangeCase(Microsoft.UI.Text.LetterCase)
+    name: ChangeCase
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ChangeCase_Microsoft_UI_Text_LetterCase_
+  - name: (
+  - uid: Microsoft.UI.Text.LetterCase
+    name: LetterCase
+    href: Microsoft.UI.Text.LetterCase.html
+  - name: )
+- uid: Microsoft.UI.Text.LetterCase
+  commentId: T:Microsoft.UI.Text.LetterCase
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.LetterCase.html
+  name: LetterCase
+  nameWithType: LetterCase
+  fullName: Microsoft.UI.Text.LetterCase
+- uid: Microsoft.UI.Text.RichEditTextRange.Collapse*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Collapse
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Collapse_System_Boolean_
+  name: Collapse
+  nameWithType: RichEditTextRange.Collapse
+  fullName: Microsoft.UI.Text.RichEditTextRange.Collapse
+- uid: Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Collapse_System_Boolean_
+  name: Collapse(bool)
+  nameWithType: ITextRange.Collapse(bool)
+  fullName: Microsoft.UI.Text.ITextRange.Collapse(bool)
+  nameWithType.vb: ITextRange.Collapse(Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Collapse(Boolean)
+  name.vb: Collapse(Boolean)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+    name: Collapse
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Collapse_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Collapse(System.Boolean)
+    name: Collapse
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Collapse_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Copy*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Copy
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Copy
+  name: Copy
+  nameWithType: RichEditTextRange.Copy
+  fullName: Microsoft.UI.Text.RichEditTextRange.Copy
+- uid: Microsoft.UI.Text.ITextRange.Copy
+  commentId: M:Microsoft.UI.Text.ITextRange.Copy
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Copy
+  name: Copy()
+  nameWithType: ITextRange.Copy()
+  fullName: Microsoft.UI.Text.ITextRange.Copy()
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Copy
+    name: Copy
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Copy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Copy
+    name: Copy
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Copy
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Cut*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Cut
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Cut
+  name: Cut
+  nameWithType: RichEditTextRange.Cut
+  fullName: Microsoft.UI.Text.RichEditTextRange.Cut
+- uid: Microsoft.UI.Text.ITextRange.Cut
+  commentId: M:Microsoft.UI.Text.ITextRange.Cut
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Cut
+  name: Cut()
+  nameWithType: ITextRange.Cut()
+  fullName: Microsoft.UI.Text.ITextRange.Cut()
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Cut
+    name: Cut
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Cut
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Cut
+    name: Cut
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Cut
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Delete*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Delete
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Delete_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Delete
+  nameWithType: RichEditTextRange.Delete
+  fullName: Microsoft.UI.Text.RichEditTextRange.Delete
+- uid: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Delete_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Delete(TextRangeUnit, int)
+  nameWithType: ITextRange.Delete(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit, int)
+  nameWithType.vb: ITextRange.Delete(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Delete(TextRangeUnit, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: Delete
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Delete_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Delete(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: Delete
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Delete_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.TextRangeUnit
+  commentId: T:Microsoft.UI.Text.TextRangeUnit
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextRangeUnit.html
+  name: TextRangeUnit
+  nameWithType: TextRangeUnit
+  fullName: Microsoft.UI.Text.TextRangeUnit
+- uid: Microsoft.UI.Text.RichEditTextRange.EndOf*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.EndOf
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_EndOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: EndOf
+  nameWithType: RichEditTextRange.EndOf
+  fullName: Microsoft.UI.Text.RichEditTextRange.EndOf
+- uid: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: EndOf(TextRangeUnit, bool)
+  nameWithType: ITextRange.EndOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  nameWithType.vb: ITextRange.EndOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: EndOf(TextRangeUnit, Boolean)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+    name: EndOf
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.EndOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+    name: EndOf
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Expand*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Expand
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Expand_Microsoft_UI_Text_TextRangeUnit_
+  name: Expand
+  nameWithType: RichEditTextRange.Expand
+  fullName: Microsoft.UI.Text.RichEditTextRange.Expand
+- uid: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Expand_Microsoft_UI_Text_TextRangeUnit_
+  name: Expand(TextRangeUnit)
+  nameWithType: ITextRange.Expand(TextRangeUnit)
+  fullName: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+    name: Expand
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Expand_Microsoft_UI_Text_TextRangeUnit_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Expand(Microsoft.UI.Text.TextRangeUnit)
+    name: Expand
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Expand_Microsoft_UI_Text_TextRangeUnit_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.FindText*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.FindText
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_FindText_System_String_System_Int32_Microsoft_UI_Text_FindOptions_
+  name: FindText
+  nameWithType: RichEditTextRange.FindText
+  fullName: Microsoft.UI.Text.RichEditTextRange.FindText
+- uid: Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  commentId: M:Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FindText_System_String_System_Int32_Microsoft_UI_Text_FindOptions_
+  name: FindText(string, int, FindOptions)
+  nameWithType: ITextRange.FindText(string, int, FindOptions)
+  fullName: Microsoft.UI.Text.ITextRange.FindText(string, int, Microsoft.UI.Text.FindOptions)
+  nameWithType.vb: ITextRange.FindText(String, Integer, FindOptions)
+  fullName.vb: Microsoft.UI.Text.ITextRange.FindText(String, Integer, Microsoft.UI.Text.FindOptions)
+  name.vb: FindText(String, Integer, FindOptions)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+    name: FindText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FindText_System_String_System_Int32_Microsoft_UI_Text_FindOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.FindOptions
+    name: FindOptions
+    href: Microsoft.UI.Text.FindOptions.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.FindText(System.String,System.Int32,Microsoft.UI.Text.FindOptions)
+    name: FindText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FindText_System_String_System_Int32_Microsoft_UI_Text_FindOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.FindOptions
+    name: FindOptions
+    href: Microsoft.UI.Text.FindOptions.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.UI.Text.FindOptions
+  commentId: T:Microsoft.UI.Text.FindOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.FindOptions.html
+  name: FindOptions
+  nameWithType: FindOptions
+  fullName: Microsoft.UI.Text.FindOptions
+- uid: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetCharacterUtf32_System_UInt32__System_Int32_
+  name: GetCharacterUtf32
+  nameWithType: RichEditTextRange.GetCharacterUtf32
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetCharacterUtf32
+- uid: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetCharacterUtf32_System_UInt32__System_Int32_
+  name: GetCharacterUtf32(out uint, int)
+  nameWithType: ITextRange.GetCharacterUtf32(out uint, int)
+  fullName: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(out uint, int)
+  nameWithType.vb: ITextRange.GetCharacterUtf32(UInteger, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(UInteger, Integer)
+  name.vb: GetCharacterUtf32(UInteger, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+    name: GetCharacterUtf32
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetCharacterUtf32_System_UInt32__System_Int32_
+  - name: (
+  - name: out
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetCharacterUtf32(System.UInt32@,System.Int32)
+    name: GetCharacterUtf32
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetCharacterUtf32_System_UInt32__System_Int32_
+  - name: (
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.UI.Text.RichEditTextRange.GetClone*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetClone
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetClone
+  name: GetClone
+  nameWithType: RichEditTextRange.GetClone
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetClone
+- uid: Microsoft.UI.Text.ITextRange.GetClone
+  commentId: M:Microsoft.UI.Text.ITextRange.GetClone
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetClone
+  name: GetClone()
+  nameWithType: ITextRange.GetClone()
+  fullName: Microsoft.UI.Text.ITextRange.GetClone()
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetClone
+    name: GetClone
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetClone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetClone
+    name: GetClone
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetClone
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.GetIndex*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetIndex
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetIndex_Microsoft_UI_Text_TextRangeUnit_
+  name: GetIndex
+  nameWithType: RichEditTextRange.GetIndex
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetIndex
+- uid: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetIndex_Microsoft_UI_Text_TextRangeUnit_
+  name: GetIndex(TextRangeUnit)
+  nameWithType: ITextRange.GetIndex(TextRangeUnit)
+  fullName: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+    name: GetIndex
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetIndex_Microsoft_UI_Text_TextRangeUnit_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetIndex(Microsoft.UI.Text.TextRangeUnit)
+    name: GetIndex
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetIndex_Microsoft_UI_Text_TextRangeUnit_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.GetPoint*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetPoint
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetPoint_Microsoft_UI_Text_HorizontalCharacterAlignment_Microsoft_UI_Text_VerticalCharacterAlignment_Microsoft_UI_Text_PointOptions_Windows_Foundation_Point__
+  name: GetPoint
+  nameWithType: RichEditTextRange.GetPoint
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetPoint
+- uid: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetPoint_Microsoft_UI_Text_HorizontalCharacterAlignment_Microsoft_UI_Text_VerticalCharacterAlignment_Microsoft_UI_Text_PointOptions_Windows_Foundation_Point__
+  name: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  nameWithType: ITextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, out Point)
+  fullName: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, out Windows.Foundation.Point)
+  nameWithType.vb: ITextRange.GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment, Microsoft.UI.Text.VerticalCharacterAlignment, Microsoft.UI.Text.PointOptions, Windows.Foundation.Point)
+  name.vb: GetPoint(HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions, Point)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+    name: GetPoint
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetPoint_Microsoft_UI_Text_HorizontalCharacterAlignment_Microsoft_UI_Text_VerticalCharacterAlignment_Microsoft_UI_Text_PointOptions_Windows_Foundation_Point__
+  - name: (
+  - uid: Microsoft.UI.Text.HorizontalCharacterAlignment
+    name: HorizontalCharacterAlignment
+    href: Microsoft.UI.Text.HorizontalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.VerticalCharacterAlignment
+    name: VerticalCharacterAlignment
+    href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetPoint(Microsoft.UI.Text.HorizontalCharacterAlignment,Microsoft.UI.Text.VerticalCharacterAlignment,Microsoft.UI.Text.PointOptions,Windows.Foundation.Point@)
+    name: GetPoint
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetPoint_Microsoft_UI_Text_HorizontalCharacterAlignment_Microsoft_UI_Text_VerticalCharacterAlignment_Microsoft_UI_Text_PointOptions_Windows_Foundation_Point__
+  - name: (
+  - uid: Microsoft.UI.Text.HorizontalCharacterAlignment
+    name: HorizontalCharacterAlignment
+    href: Microsoft.UI.Text.HorizontalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.VerticalCharacterAlignment
+    name: VerticalCharacterAlignment
+    href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: )
+- uid: Microsoft.UI.Text.HorizontalCharacterAlignment
+  commentId: T:Microsoft.UI.Text.HorizontalCharacterAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.HorizontalCharacterAlignment.html
+  name: HorizontalCharacterAlignment
+  nameWithType: HorizontalCharacterAlignment
+  fullName: Microsoft.UI.Text.HorizontalCharacterAlignment
+- uid: Microsoft.UI.Text.VerticalCharacterAlignment
+  commentId: T:Microsoft.UI.Text.VerticalCharacterAlignment
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  name: VerticalCharacterAlignment
+  nameWithType: VerticalCharacterAlignment
+  fullName: Microsoft.UI.Text.VerticalCharacterAlignment
+- uid: Microsoft.UI.Text.PointOptions
+  commentId: T:Microsoft.UI.Text.PointOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.PointOptions.html
+  name: PointOptions
+  nameWithType: PointOptions
+  fullName: Microsoft.UI.Text.PointOptions
+- uid: Windows.Foundation.Point
+  commentId: T:Windows.Foundation.Point
+  parent: Windows.Foundation
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: Windows.Foundation.Point
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Text.RichEditTextRange.GetRect*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetRect
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetRect_Microsoft_UI_Text_PointOptions_Windows_Foundation_Rect__System_Int32__
+  name: GetRect
+  nameWithType: RichEditTextRange.GetRect
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetRect
+- uid: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetRect_Microsoft_UI_Text_PointOptions_Windows_Foundation_Rect__System_Int32__
+  name: GetRect(PointOptions, out Rect, out int)
+  nameWithType: ITextRange.GetRect(PointOptions, out Rect, out int)
+  fullName: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions, out Windows.Foundation.Rect, out int)
+  nameWithType.vb: ITextRange.GetRect(PointOptions, Rect, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions, Windows.Foundation.Rect, Integer)
+  name.vb: GetRect(PointOptions, Rect, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+    name: GetRect
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetRect_Microsoft_UI_Text_PointOptions_Windows_Foundation_Rect__System_Int32__
+  - name: (
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Windows.Foundation.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetRect(Microsoft.UI.Text.PointOptions,Windows.Foundation.Rect@,System.Int32@)
+    name: GetRect
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetRect_Microsoft_UI_Text_PointOptions_Windows_Foundation_Rect__System_Int32__
+  - name: (
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Foundation.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Windows.Foundation.Rect
+  commentId: T:Windows.Foundation.Rect
+  parent: Windows.Foundation
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Windows.Foundation.Rect
+- uid: Microsoft.UI.Text.RichEditTextRange.GetText*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetText
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetText_Microsoft_UI_Text_TextGetOptions_System_String__
+  name: GetText
+  nameWithType: RichEditTextRange.GetText
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetText
+- uid: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetText_Microsoft_UI_Text_TextGetOptions_System_String__
+  name: GetText(TextGetOptions, out string)
+  nameWithType: ITextRange.GetText(TextGetOptions, out string)
+  fullName: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions, out string)
+  nameWithType.vb: ITextRange.GetText(TextGetOptions, String)
+  fullName.vb: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions, String)
+  name.vb: GetText(TextGetOptions, String)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+    name: GetText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetText_Microsoft_UI_Text_TextGetOptions_System_String__
+  - name: (
+  - uid: Microsoft.UI.Text.TextGetOptions
+    name: TextGetOptions
+    href: Microsoft.UI.Text.TextGetOptions.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)
+    name: GetText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetText_Microsoft_UI_Text_TextGetOptions_System_String__
+  - name: (
+  - uid: Microsoft.UI.Text.TextGetOptions
+    name: TextGetOptions
+    href: Microsoft.UI.Text.TextGetOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.UI.Text.TextGetOptions
+  commentId: T:Microsoft.UI.Text.TextGetOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextGetOptions.html
+  name: TextGetOptions
+  nameWithType: TextGetOptions
+  fullName: Microsoft.UI.Text.TextGetOptions
+- uid: Microsoft.UI.Text.RichEditTextRange.GetTextViaStream*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.GetTextViaStream
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_GetTextViaStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: GetTextViaStream
+  nameWithType: RichEditTextRange.GetTextViaStream
+  fullName: Microsoft.UI.Text.RichEditTextRange.GetTextViaStream
+- uid: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetTextViaStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  nameWithType: ITextRange.GetTextViaStream(TextGetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+    name: GetTextViaStream
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetTextViaStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: Microsoft.UI.Text.TextGetOptions
+    name: TextGetOptions
+    href: Microsoft.UI.Text.TextGetOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.GetTextViaStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)
+    name: GetTextViaStream
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_GetTextViaStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: Microsoft.UI.Text.TextGetOptions
+    name: TextGetOptions
+    href: Microsoft.UI.Text.TextGetOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+- uid: Windows.Storage.Streams.IRandomAccessStream
+  commentId: T:Windows.Storage.Streams.IRandomAccessStream
+  parent: Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  name: IRandomAccessStream
+  nameWithType: IRandomAccessStream
+  fullName: Windows.Storage.Streams.IRandomAccessStream
+- uid: Windows.Storage.Streams
+  commentId: N:Windows.Storage.Streams
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Storage.Streams
+  nameWithType: Windows.Storage.Streams
+  fullName: Windows.Storage.Streams
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage
+  - name: .
+  - uid: Windows.Storage.Streams
+    name: Streams
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams
+- uid: Microsoft.UI.Text.RichEditTextRange.InRange*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.InRange
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_InRange_Microsoft_UI_Text_ITextRange_
+  name: InRange
+  nameWithType: RichEditTextRange.InRange
+  fullName: Microsoft.UI.Text.RichEditTextRange.InRange
+- uid: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InRange_Microsoft_UI_Text_ITextRange_
+  name: InRange(ITextRange)
+  nameWithType: ITextRange.InRange(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+    name: InRange
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InRange_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.InRange(Microsoft.UI.Text.ITextRange)
+    name: InRange
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InRange_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.InsertImage*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.InsertImage
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_InsertImage_System_Int32_System_Int32_System_Int32_Microsoft_UI_Text_VerticalCharacterAlignment_System_String_Windows_Storage_Streams_IRandomAccessStream_
+  name: InsertImage
+  nameWithType: RichEditTextRange.InsertImage
+  fullName: Microsoft.UI.Text.RichEditTextRange.InsertImage
+- uid: Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InsertImage_System_Int32_System_Int32_System_Int32_Microsoft_UI_Text_VerticalCharacterAlignment_System_String_Windows_Storage_Streams_IRandomAccessStream_
+  name: InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  nameWithType: ITextRange.InsertImage(int, int, int, VerticalCharacterAlignment, string, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.InsertImage(int, int, int, Microsoft.UI.Text.VerticalCharacterAlignment, string, Windows.Storage.Streams.IRandomAccessStream)
+  nameWithType.vb: ITextRange.InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+  fullName.vb: Microsoft.UI.Text.ITextRange.InsertImage(Integer, Integer, Integer, Microsoft.UI.Text.VerticalCharacterAlignment, String, Windows.Storage.Streams.IRandomAccessStream)
+  name.vb: InsertImage(Integer, Integer, Integer, VerticalCharacterAlignment, String, IRandomAccessStream)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+    name: InsertImage
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InsertImage_System_Int32_System_Int32_System_Int32_Microsoft_UI_Text_VerticalCharacterAlignment_System_String_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.VerticalCharacterAlignment
+    name: VerticalCharacterAlignment
+    href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.InsertImage(System.Int32,System.Int32,System.Int32,Microsoft.UI.Text.VerticalCharacterAlignment,System.String,Windows.Storage.Streams.IRandomAccessStream)
+    name: InsertImage
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InsertImage_System_Int32_System_Int32_System_Int32_Microsoft_UI_Text_VerticalCharacterAlignment_System_String_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.VerticalCharacterAlignment
+    name: VerticalCharacterAlignment
+    href: Microsoft.UI.Text.VerticalCharacterAlignment.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.InStory*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.InStory
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_InStory_Microsoft_UI_Text_ITextRange_
+  name: InStory
+  nameWithType: RichEditTextRange.InStory
+  fullName: Microsoft.UI.Text.RichEditTextRange.InStory
+- uid: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InStory_Microsoft_UI_Text_ITextRange_
+  name: InStory(ITextRange)
+  nameWithType: ITextRange.InStory(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+    name: InStory
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InStory_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.InStory(Microsoft.UI.Text.ITextRange)
+    name: InStory
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_InStory_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.IsEqual*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.IsEqual
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_IsEqual_Microsoft_UI_Text_ITextRange_
+  name: IsEqual
+  nameWithType: RichEditTextRange.IsEqual
+  fullName: Microsoft.UI.Text.RichEditTextRange.IsEqual
+- uid: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  commentId: M:Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_IsEqual_Microsoft_UI_Text_ITextRange_
+  name: IsEqual(ITextRange)
+  nameWithType: ITextRange.IsEqual(ITextRange)
+  fullName: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+    name: IsEqual
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_IsEqual_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.IsEqual(Microsoft.UI.Text.ITextRange)
+    name: IsEqual
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_IsEqual_Microsoft_UI_Text_ITextRange_
+  - name: (
+  - uid: Microsoft.UI.Text.ITextRange
+    name: ITextRange
+    href: Microsoft.UI.Text.ITextRange.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Move*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Move
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Move_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Move
+  nameWithType: RichEditTextRange.Move
+  fullName: Microsoft.UI.Text.RichEditTextRange.Move
+- uid: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Move_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: Move(TextRangeUnit, int)
+  nameWithType: ITextRange.Move(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit, int)
+  nameWithType.vb: ITextRange.Move(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: Move(TextRangeUnit, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: Move
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Move_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Move(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: Move
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Move_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.MoveEnd*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.MoveEnd
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_MoveEnd_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveEnd
+  nameWithType: RichEditTextRange.MoveEnd
+  fullName: Microsoft.UI.Text.RichEditTextRange.MoveEnd
+- uid: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveEnd_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveEnd(TextRangeUnit, int)
+  nameWithType: ITextRange.MoveEnd(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, int)
+  nameWithType.vb: ITextRange.MoveEnd(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveEnd(TextRangeUnit, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: MoveEnd
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveEnd_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.MoveEnd(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: MoveEnd
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveEnd_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.MoveStart*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.MoveStart
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_MoveStart_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveStart
+  nameWithType: RichEditTextRange.MoveStart
+  fullName: Microsoft.UI.Text.RichEditTextRange.MoveStart
+- uid: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveStart_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  name: MoveStart(TextRangeUnit, int)
+  nameWithType: ITextRange.MoveStart(TextRangeUnit, int)
+  fullName: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, int)
+  nameWithType.vb: ITextRange.MoveStart(TextRangeUnit, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit, Integer)
+  name.vb: MoveStart(TextRangeUnit, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: MoveStart
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveStart_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.MoveStart(Microsoft.UI.Text.TextRangeUnit,System.Int32)
+    name: MoveStart
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MoveStart_Microsoft_UI_Text_TextRangeUnit_System_Int32_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Paste*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Paste
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Paste_System_Int32_
+  name: Paste
+  nameWithType: RichEditTextRange.Paste
+  fullName: Microsoft.UI.Text.RichEditTextRange.Paste
+- uid: Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Paste_System_Int32_
+  name: Paste(int)
+  nameWithType: ITextRange.Paste(int)
+  fullName: Microsoft.UI.Text.ITextRange.Paste(int)
+  nameWithType.vb: ITextRange.Paste(Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.Paste(Integer)
+  name.vb: Paste(Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+    name: Paste
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Paste_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.Paste(System.Int32)
+    name: Paste
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Paste_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.ScrollIntoView*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.ScrollIntoView
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_ScrollIntoView_Microsoft_UI_Text_PointOptions_
+  name: ScrollIntoView
+  nameWithType: RichEditTextRange.ScrollIntoView
+  fullName: Microsoft.UI.Text.RichEditTextRange.ScrollIntoView
+- uid: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  commentId: M:Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ScrollIntoView_Microsoft_UI_Text_PointOptions_
+  name: ScrollIntoView(PointOptions)
+  nameWithType: ITextRange.ScrollIntoView(PointOptions)
+  fullName: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+    name: ScrollIntoView
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ScrollIntoView_Microsoft_UI_Text_PointOptions_
+  - name: (
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.ScrollIntoView(Microsoft.UI.Text.PointOptions)
+    name: ScrollIntoView
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ScrollIntoView_Microsoft_UI_Text_PointOptions_
+  - name: (
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.MatchSelection*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.MatchSelection
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_MatchSelection
+  name: MatchSelection
+  nameWithType: RichEditTextRange.MatchSelection
+  fullName: Microsoft.UI.Text.RichEditTextRange.MatchSelection
+- uid: Microsoft.UI.Text.ITextRange.MatchSelection
+  commentId: M:Microsoft.UI.Text.ITextRange.MatchSelection
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MatchSelection
+  name: MatchSelection()
+  nameWithType: ITextRange.MatchSelection()
+  fullName: Microsoft.UI.Text.ITextRange.MatchSelection()
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.MatchSelection
+    name: MatchSelection
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MatchSelection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.MatchSelection
+    name: MatchSelection
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_MatchSelection
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.SetIndex*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.SetIndex
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_SetIndex_Microsoft_UI_Text_TextRangeUnit_System_Int32_System_Boolean_
+  name: SetIndex
+  nameWithType: RichEditTextRange.SetIndex
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetIndex
+- uid: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetIndex_Microsoft_UI_Text_TextRangeUnit_System_Int32_System_Boolean_
+  name: SetIndex(TextRangeUnit, int, bool)
+  nameWithType: ITextRange.SetIndex(TextRangeUnit, int, bool)
+  fullName: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, int, bool)
+  nameWithType.vb: ITextRange.SetIndex(TextRangeUnit, Integer, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit, Integer, Boolean)
+  name.vb: SetIndex(TextRangeUnit, Integer, Boolean)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+    name: SetIndex
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetIndex_Microsoft_UI_Text_TextRangeUnit_System_Int32_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.SetIndex(Microsoft.UI.Text.TextRangeUnit,System.Int32,System.Boolean)
+    name: SetIndex
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetIndex_Microsoft_UI_Text_TextRangeUnit_System_Int32_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.SetPoint*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.SetPoint
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_SetPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_System_Boolean_
+  name: SetPoint
+  nameWithType: RichEditTextRange.SetPoint
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetPoint
+- uid: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_System_Boolean_
+  name: SetPoint(Point, PointOptions, bool)
+  nameWithType: ITextRange.SetPoint(Point, PointOptions, bool)
+  fullName: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, bool)
+  nameWithType.vb: ITextRange.SetPoint(Point, PointOptions, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point, Microsoft.UI.Text.PointOptions, Boolean)
+  name.vb: SetPoint(Point, PointOptions, Boolean)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+    name: SetPoint
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_System_Boolean_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.SetPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions,System.Boolean)
+    name: SetPoint
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_System_Boolean_
+  - name: (
+  - uid: Windows.Foundation.Point
+    name: Point
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Text.PointOptions
+    name: PointOptions
+    href: Microsoft.UI.Text.PointOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.SetRange*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.SetRange
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_SetRange_System_Int32_System_Int32_
+  name: SetRange
+  nameWithType: RichEditTextRange.SetRange
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetRange
+- uid: Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetRange_System_Int32_System_Int32_
+  name: SetRange(int, int)
+  nameWithType: ITextRange.SetRange(int, int)
+  fullName: Microsoft.UI.Text.ITextRange.SetRange(int, int)
+  nameWithType.vb: ITextRange.SetRange(Integer, Integer)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetRange(Integer, Integer)
+  name.vb: SetRange(Integer, Integer)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+    name: SetRange
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetRange_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.SetRange(System.Int32,System.Int32)
+    name: SetRange
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetRange_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.SetText*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.SetText
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_SetText_Microsoft_UI_Text_TextSetOptions_System_String_
+  name: SetText
+  nameWithType: RichEditTextRange.SetText
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetText
+- uid: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetText_Microsoft_UI_Text_TextSetOptions_System_String_
+  name: SetText(TextSetOptions, string)
+  nameWithType: ITextRange.SetText(TextSetOptions, string)
+  fullName: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions, string)
+  nameWithType.vb: ITextRange.SetText(TextSetOptions, String)
+  fullName.vb: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions, String)
+  name.vb: SetText(TextSetOptions, String)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+    name: SetText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetText_Microsoft_UI_Text_TextSetOptions_System_String_
+  - name: (
+  - uid: Microsoft.UI.Text.TextSetOptions
+    name: TextSetOptions
+    href: Microsoft.UI.Text.TextSetOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.SetText(Microsoft.UI.Text.TextSetOptions,System.String)
+    name: SetText
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetText_Microsoft_UI_Text_TextSetOptions_System_String_
+  - name: (
+  - uid: Microsoft.UI.Text.TextSetOptions
+    name: TextSetOptions
+    href: Microsoft.UI.Text.TextSetOptions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.UI.Text.TextSetOptions
+  commentId: T:Microsoft.UI.Text.TextSetOptions
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.TextSetOptions.html
+  name: TextSetOptions
+  nameWithType: TextSetOptions
+  fullName: Microsoft.UI.Text.TextSetOptions
+- uid: Microsoft.UI.Text.RichEditTextRange.SetTextViaStream*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.SetTextViaStream
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_SetTextViaStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: SetTextViaStream
+  nameWithType: RichEditTextRange.SetTextViaStream
+  fullName: Microsoft.UI.Text.RichEditTextRange.SetTextViaStream
+- uid: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  commentId: M:Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetTextViaStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  name: SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  nameWithType: ITextRange.SetTextViaStream(TextSetOptions, IRandomAccessStream)
+  fullName: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions, Windows.Storage.Streams.IRandomAccessStream)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+    name: SetTextViaStream
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetTextViaStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: Microsoft.UI.Text.TextSetOptions
+    name: TextSetOptions
+    href: Microsoft.UI.Text.TextSetOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.SetTextViaStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)
+    name: SetTextViaStream
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_SetTextViaStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_
+  - name: (
+  - uid: Microsoft.UI.Text.TextSetOptions
+    name: TextSetOptions
+    href: Microsoft.UI.Text.TextSetOptions.html
+  - name: ','
+  - name: " "
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.StartOf*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.StartOf
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_StartOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: StartOf
+  nameWithType: RichEditTextRange.StartOf
+  fullName: Microsoft.UI.Text.RichEditTextRange.StartOf
+- uid: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  commentId: M:Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+  parent: Microsoft.UI.Text.ITextRange
+  isExternal: true
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  name: StartOf(TextRangeUnit, bool)
+  nameWithType: ITextRange.StartOf(TextRangeUnit, bool)
+  fullName: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, bool)
+  nameWithType.vb: ITextRange.StartOf(TextRangeUnit, Boolean)
+  fullName.vb: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit, Boolean)
+  name.vb: StartOf(TextRangeUnit, Boolean)
+  spec.csharp:
+  - uid: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+    name: StartOf
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Text.ITextRange.StartOf(Microsoft.UI.Text.TextRangeUnit,System.Boolean)
+    name: StartOf
+    href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartOf_Microsoft_UI_Text_TextRangeUnit_System_Boolean_
+  - name: (
+  - uid: Microsoft.UI.Text.TextRangeUnit
+    name: TextRangeUnit
+    href: Microsoft.UI.Text.TextRangeUnit.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.UI.Text.RichEditTextRange.Character*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Character
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Character
+  name: Character
+  nameWithType: RichEditTextRange.Character
+  fullName: Microsoft.UI.Text.RichEditTextRange.Character
+- uid: Microsoft.UI.Text.ITextRange.Character
+  commentId: P:Microsoft.UI.Text.ITextRange.Character
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Character
+  name: Character
+  nameWithType: ITextRange.Character
+  fullName: Microsoft.UI.Text.ITextRange.Character
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: Microsoft.UI.Text.RichEditTextRange.CharacterFormat*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_CharacterFormat
+  name: CharacterFormat
+  nameWithType: RichEditTextRange.CharacterFormat
+  fullName: Microsoft.UI.Text.RichEditTextRange.CharacterFormat
+- uid: Microsoft.UI.Text.ITextRange.CharacterFormat
+  commentId: P:Microsoft.UI.Text.ITextRange.CharacterFormat
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_CharacterFormat
+  name: CharacterFormat
+  nameWithType: ITextRange.CharacterFormat
+  fullName: Microsoft.UI.Text.ITextRange.CharacterFormat
+- uid: Microsoft.UI.Text.ITextCharacterFormat
+  commentId: T:Microsoft.UI.Text.ITextCharacterFormat
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextCharacterFormat.html
+  name: ITextCharacterFormat
+  nameWithType: ITextCharacterFormat
+  fullName: Microsoft.UI.Text.ITextCharacterFormat
+- uid: Microsoft.UI.Text.RichEditTextRange.EndPosition*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.EndPosition
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_EndPosition
+  name: EndPosition
+  nameWithType: RichEditTextRange.EndPosition
+  fullName: Microsoft.UI.Text.RichEditTextRange.EndPosition
+- uid: Microsoft.UI.Text.ITextRange.EndPosition
+  commentId: P:Microsoft.UI.Text.ITextRange.EndPosition
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_EndPosition
+  name: EndPosition
+  nameWithType: ITextRange.EndPosition
+  fullName: Microsoft.UI.Text.ITextRange.EndPosition
+- uid: Microsoft.UI.Text.RichEditTextRange.FormattedText*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.FormattedText
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_FormattedText
+  name: FormattedText
+  nameWithType: RichEditTextRange.FormattedText
+  fullName: Microsoft.UI.Text.RichEditTextRange.FormattedText
+- uid: Microsoft.UI.Text.ITextRange.FormattedText
+  commentId: P:Microsoft.UI.Text.ITextRange.FormattedText
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_FormattedText
+  name: FormattedText
+  nameWithType: ITextRange.FormattedText
+  fullName: Microsoft.UI.Text.ITextRange.FormattedText
+- uid: Microsoft.UI.Text.RichEditTextRange.Gravity*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Gravity
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Gravity
+  name: Gravity
+  nameWithType: RichEditTextRange.Gravity
+  fullName: Microsoft.UI.Text.RichEditTextRange.Gravity
+- uid: Microsoft.UI.Text.ITextRange.Gravity
+  commentId: P:Microsoft.UI.Text.ITextRange.Gravity
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Gravity
+  name: Gravity
+  nameWithType: ITextRange.Gravity
+  fullName: Microsoft.UI.Text.ITextRange.Gravity
+- uid: Microsoft.UI.Text.RangeGravity
+  commentId: T:Microsoft.UI.Text.RangeGravity
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.RangeGravity.html
+  name: RangeGravity
+  nameWithType: RangeGravity
+  fullName: Microsoft.UI.Text.RangeGravity
+- uid: Microsoft.UI.Text.RichEditTextRange.Length*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Length
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Length
+  name: Length
+  nameWithType: RichEditTextRange.Length
+  fullName: Microsoft.UI.Text.RichEditTextRange.Length
+- uid: Microsoft.UI.Text.ITextRange.Length
+  commentId: P:Microsoft.UI.Text.ITextRange.Length
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Length
+  name: Length
+  nameWithType: ITextRange.Length
+  fullName: Microsoft.UI.Text.ITextRange.Length
+- uid: Microsoft.UI.Text.RichEditTextRange.Link*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Link
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Link
+  name: Link
+  nameWithType: RichEditTextRange.Link
+  fullName: Microsoft.UI.Text.RichEditTextRange.Link
+- uid: Microsoft.UI.Text.ITextRange.Link
+  commentId: P:Microsoft.UI.Text.ITextRange.Link
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Link
+  name: Link
+  nameWithType: ITextRange.Link
+  fullName: Microsoft.UI.Text.ITextRange.Link
+- uid: Microsoft.UI.Text.RichEditTextRange.ParagraphFormat*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_ParagraphFormat
+  name: ParagraphFormat
+  nameWithType: RichEditTextRange.ParagraphFormat
+  fullName: Microsoft.UI.Text.RichEditTextRange.ParagraphFormat
+- uid: Microsoft.UI.Text.ITextRange.ParagraphFormat
+  commentId: P:Microsoft.UI.Text.ITextRange.ParagraphFormat
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_ParagraphFormat
+  name: ParagraphFormat
+  nameWithType: ITextRange.ParagraphFormat
+  fullName: Microsoft.UI.Text.ITextRange.ParagraphFormat
+- uid: Microsoft.UI.Text.ITextParagraphFormat
+  commentId: T:Microsoft.UI.Text.ITextParagraphFormat
+  parent: Microsoft.UI.Text
+  href: Microsoft.UI.Text.ITextParagraphFormat.html
+  name: ITextParagraphFormat
+  nameWithType: ITextParagraphFormat
+  fullName: Microsoft.UI.Text.ITextParagraphFormat
+- uid: Microsoft.UI.Text.RichEditTextRange.StartPosition*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.StartPosition
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_StartPosition
+  name: StartPosition
+  nameWithType: RichEditTextRange.StartPosition
+  fullName: Microsoft.UI.Text.RichEditTextRange.StartPosition
+- uid: Microsoft.UI.Text.ITextRange.StartPosition
+  commentId: P:Microsoft.UI.Text.ITextRange.StartPosition
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StartPosition
+  name: StartPosition
+  nameWithType: ITextRange.StartPosition
+  fullName: Microsoft.UI.Text.ITextRange.StartPosition
+- uid: Microsoft.UI.Text.RichEditTextRange.StoryLength*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.StoryLength
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_StoryLength
+  name: StoryLength
+  nameWithType: RichEditTextRange.StoryLength
+  fullName: Microsoft.UI.Text.RichEditTextRange.StoryLength
+- uid: Microsoft.UI.Text.ITextRange.StoryLength
+  commentId: P:Microsoft.UI.Text.ITextRange.StoryLength
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_StoryLength
+  name: StoryLength
+  nameWithType: ITextRange.StoryLength
+  fullName: Microsoft.UI.Text.ITextRange.StoryLength
+- uid: Microsoft.UI.Text.RichEditTextRange.Text*
+  commentId: Overload:Microsoft.UI.Text.RichEditTextRange.Text
+  href: Microsoft.UI.Text.RichEditTextRange.html#Microsoft_UI_Text_RichEditTextRange_Text
+  name: Text
+  nameWithType: RichEditTextRange.Text
+  fullName: Microsoft.UI.Text.RichEditTextRange.Text
+- uid: Microsoft.UI.Text.ITextRange.Text
+  commentId: P:Microsoft.UI.Text.ITextRange.Text
+  parent: Microsoft.UI.Text.ITextRange
+  href: Microsoft.UI.Text.ITextRange.html#Microsoft_UI_Text_ITextRange_Text
+  name: Text
+  nameWithType: ITextRange.Text
+  fullName: Microsoft.UI.Text.ITextRange.Text

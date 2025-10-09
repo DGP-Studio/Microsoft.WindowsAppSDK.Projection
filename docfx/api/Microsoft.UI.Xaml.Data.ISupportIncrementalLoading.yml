@@ -1,0 +1,297 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading
+  commentId: T:Microsoft.UI.Xaml.Data.ISupportIncrementalLoading
+  id: ISupportIncrementalLoading
+  parent: Microsoft.UI.Xaml.Data
+  children:
+  - Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+  - Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: ISupportIncrementalLoading
+  nameWithType: ISupportIncrementalLoading
+  fullName: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ISupportIncrementalLoading
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1214
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [Guid("D8F9B586-A64A-5FF8-868E-204E144F2CF4")]
+
+      [WindowsRuntimeHelperType(typeof(ISupportIncrementalLoading))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public interface ISupportIncrementalLoading
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <Guid("D8F9B586-A64A-5FF8-868E-204E144F2CF4")>
+
+      <WindowsRuntimeHelperType(GetType(ISupportIncrementalLoading))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public Interface ISupportIncrementalLoading
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D8F9B586-A64A-5FF8-868E-204E144F2CF4
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(System.UInt32)
+  commentId: M:Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(System.UInt32)
+  id: LoadMoreItemsAsync(System.UInt32)
+  parent: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading
+  langs:
+  - csharp
+  - vb
+  name: LoadMoreItemsAsync(uint)
+  nameWithType: ISupportIncrementalLoading.LoadMoreItemsAsync(uint)
+  fullName: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(uint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LoadMoreItemsAsync
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1218
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: IAsyncOperation<LoadMoreItemsResult> LoadMoreItemsAsync(uint count)
+    parameters:
+    - id: count
+      type: System.UInt32
+    return:
+      type: Windows.Foundation.IAsyncOperation{Microsoft.UI.Xaml.Data.LoadMoreItemsResult}
+    content.vb: Function LoadMoreItemsAsync(count As UInteger) As IAsyncOperation(Of LoadMoreItemsResult)
+  overload: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync*
+  nameWithType.vb: ISupportIncrementalLoading.LoadMoreItemsAsync(UInteger)
+  fullName.vb: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(UInteger)
+  name.vb: LoadMoreItemsAsync(UInteger)
+- uid: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+  commentId: P:Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+  id: HasMoreItems
+  parent: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading
+  langs:
+  - csharp
+  - vb
+  name: HasMoreItems
+  nameWithType: ISupportIncrementalLoading.HasMoreItems
+  fullName: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.Data.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: HasMoreItems
+    path: ../src/Microsoft.UI.Xaml.Data.cs
+    startLine: 1219
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml.Data
+  syntax:
+    content: bool HasMoreItems { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasMoreItems As Boolean
+  overload: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems*
+references:
+- uid: Microsoft.UI.Xaml.Data
+  commentId: N:Microsoft.UI.Xaml.Data
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml.Data
+  nameWithType: Microsoft.UI.Xaml.Data
+  fullName: Microsoft.UI.Xaml.Data
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  - name: .
+  - uid: Microsoft.UI.Xaml.Data
+    name: Data
+    href: Microsoft.UI.Xaml.Data.html
+- uid: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync*
+  commentId: Overload:Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync
+  href: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.html#Microsoft_UI_Xaml_Data_ISupportIncrementalLoading_LoadMoreItemsAsync_System_UInt32_
+  name: LoadMoreItemsAsync
+  nameWithType: ISupportIncrementalLoading.LoadMoreItemsAsync
+  fullName: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Windows.Foundation.IAsyncOperation{Microsoft.UI.Xaml.Data.LoadMoreItemsResult}
+  commentId: T:Windows.Foundation.IAsyncOperation{Microsoft.UI.Xaml.Data.LoadMoreItemsResult}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.IAsyncOperation`1
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<LoadMoreItemsResult>
+  nameWithType: IAsyncOperation<LoadMoreItemsResult>
+  fullName: Windows.Foundation.IAsyncOperation<Microsoft.UI.Xaml.Data.LoadMoreItemsResult>
+  nameWithType.vb: IAsyncOperation(Of LoadMoreItemsResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of Microsoft.UI.Xaml.Data.LoadMoreItemsResult)
+  name.vb: IAsyncOperation(Of LoadMoreItemsResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.Data.LoadMoreItemsResult
+    name: LoadMoreItemsResult
+    href: Microsoft.UI.Xaml.Data.LoadMoreItemsResult.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.Data.LoadMoreItemsResult
+    name: LoadMoreItemsResult
+    href: Microsoft.UI.Xaml.Data.LoadMoreItemsResult.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Windows.Foundation.IAsyncOperation`1
+  commentId: T:Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  name: IAsyncOperation<TResult>
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullName.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: IAsyncOperation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems*
+  commentId: Overload:Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+  href: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.html#Microsoft_UI_Xaml_Data_ISupportIncrementalLoading_HasMoreItems
+  name: HasMoreItems
+  nameWithType: ISupportIncrementalLoading.HasMoreItems
+  fullName: Microsoft.UI.Xaml.Data.ISupportIncrementalLoading.HasMoreItems
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

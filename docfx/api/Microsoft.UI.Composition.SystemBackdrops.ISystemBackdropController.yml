@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController
+  commentId: T:Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController
+  id: ISystemBackdropController
+  parent: Microsoft.UI.Composition.SystemBackdrops
+  children:
+  - Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Microsoft.UI.WindowId,Windows.UI.Composition.CompositionTarget)
+  - Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Windows.UI.Core.CoreWindow,Windows.UI.Composition.CompositionTarget)
+  langs:
+  - csharp
+  - vb
+  name: ISystemBackdropController
+  nameWithType: ISystemBackdropController
+  fullName: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.SystemBackdrops.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ISystemBackdropController
+    path: ../src/Microsoft.UI.Composition.SystemBackdrops.cs
+    startLine: 330
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition.SystemBackdrops
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [Guid("5632D76C-0B74-5B52-AA33-80262068AEB2")]
+
+      [WindowsRuntimeHelperType(typeof(ISystemBackdropController))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+
+      public interface ISystemBackdropController : IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <Guid("5632D76C-0B74-5B52-AA33-80262068AEB2")>
+
+      <WindowsRuntimeHelperType(GetType(ISystemBackdropController))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65536)>
+
+      Public Interface ISystemBackdropController Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5632D76C-0B74-5B52-AA33-80262068AEB2
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Microsoft.UI.WindowId,Windows.UI.Composition.CompositionTarget)
+  commentId: M:Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Microsoft.UI.WindowId,Windows.UI.Composition.CompositionTarget)
+  id: SetTarget(Microsoft.UI.WindowId,Windows.UI.Composition.CompositionTarget)
+  parent: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController
+  langs:
+  - csharp
+  - vb
+  name: SetTarget(WindowId, CompositionTarget)
+  nameWithType: ISystemBackdropController.SetTarget(WindowId, CompositionTarget)
+  fullName: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Microsoft.UI.WindowId, Windows.UI.Composition.CompositionTarget)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.SystemBackdrops.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTarget
+    path: ../src/Microsoft.UI.Composition.SystemBackdrops.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition.SystemBackdrops
+  syntax:
+    content: >-
+      [DefaultOverload]
+
+      [Overload("SetTargetWithWindowId")]
+
+      bool SetTarget(WindowId windowId, CompositionTarget desktopWindowTarget)
+    parameters:
+    - id: windowId
+      type: Microsoft.UI.WindowId
+    - id: desktopWindowTarget
+      type: Windows.UI.Composition.CompositionTarget
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DefaultOverload>
+
+      <Overload("SetTargetWithWindowId")>
+
+      Function SetTarget(windowId As WindowId, desktopWindowTarget As CompositionTarget) As Boolean
+  overload: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget*
+  attributes:
+  - type: Windows.Foundation.Metadata.DefaultOverloadAttribute
+    ctor: Windows.Foundation.Metadata.DefaultOverloadAttribute.#ctor
+    arguments: []
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SetTargetWithWindowId
+- uid: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Windows.UI.Core.CoreWindow,Windows.UI.Composition.CompositionTarget)
+  commentId: M:Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Windows.UI.Core.CoreWindow,Windows.UI.Composition.CompositionTarget)
+  id: SetTarget(Windows.UI.Core.CoreWindow,Windows.UI.Composition.CompositionTarget)
+  parent: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController
+  langs:
+  - csharp
+  - vb
+  name: SetTarget(CoreWindow, CompositionTarget)
+  nameWithType: ISystemBackdropController.SetTarget(CoreWindow, CompositionTarget)
+  fullName: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget(Windows.UI.Core.CoreWindow, Windows.UI.Composition.CompositionTarget)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Composition.SystemBackdrops.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetTarget
+    path: ../src/Microsoft.UI.Composition.SystemBackdrops.cs
+    startLine: 337
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Composition.SystemBackdrops
+  syntax:
+    content: >-
+      [Overload("SetTargetWithCoreWindow")]
+
+      bool SetTarget(CoreWindow coreWindow, CompositionTarget compositionTarget)
+    parameters:
+    - id: coreWindow
+      type: Windows.UI.Core.CoreWindow
+    - id: compositionTarget
+      type: Windows.UI.Composition.CompositionTarget
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Overload("SetTargetWithCoreWindow")>
+
+      Function SetTarget(coreWindow As CoreWindow, compositionTarget As CompositionTarget) As Boolean
+  overload: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget*
+  attributes:
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SetTargetWithCoreWindow
+references:
+- uid: Microsoft.UI.Composition.SystemBackdrops
+  commentId: N:Microsoft.UI.Composition.SystemBackdrops
+  href: Microsoft.html
+  name: Microsoft.UI.Composition.SystemBackdrops
+  nameWithType: Microsoft.UI.Composition.SystemBackdrops
+  fullName: Microsoft.UI.Composition.SystemBackdrops
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+  - name: .
+  - uid: Microsoft.UI.Composition.SystemBackdrops
+    name: SystemBackdrops
+    href: Microsoft.UI.Composition.SystemBackdrops.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Composition
+    name: Composition
+    href: Microsoft.UI.Composition.html
+  - name: .
+  - uid: Microsoft.UI.Composition.SystemBackdrops
+    name: SystemBackdrops
+    href: Microsoft.UI.Composition.SystemBackdrops.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget*
+  commentId: Overload:Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget
+  href: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.html#Microsoft_UI_Composition_SystemBackdrops_ISystemBackdropController_SetTarget_Microsoft_UI_WindowId_Windows_UI_Composition_CompositionTarget_
+  name: SetTarget
+  nameWithType: ISystemBackdropController.SetTarget
+  fullName: Microsoft.UI.Composition.SystemBackdrops.ISystemBackdropController.SetTarget
+- uid: Microsoft.UI.WindowId
+  commentId: T:Microsoft.UI.WindowId
+  parent: Microsoft.UI
+  href: Microsoft.UI.WindowId.html
+  name: WindowId
+  nameWithType: WindowId
+  fullName: Microsoft.UI.WindowId
+- uid: Windows.UI.Composition.CompositionTarget
+  commentId: T:Windows.UI.Composition.CompositionTarget
+  parent: Windows.UI.Composition
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.ui.composition.compositiontarget
+  name: CompositionTarget
+  nameWithType: CompositionTarget
+  fullName: Windows.UI.Composition.CompositionTarget
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+- uid: Windows.UI.Composition
+  commentId: N:Windows.UI.Composition
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.UI.Composition
+  nameWithType: Windows.UI.Composition
+  fullName: Windows.UI.Composition
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Composition
+    name: Composition
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.composition
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Composition
+    name: Composition
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.composition
+- uid: Windows.UI.Core.CoreWindow
+  commentId: T:Windows.UI.Core.CoreWindow
+  parent: Windows.UI.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.ui.core.corewindow
+  name: CoreWindow
+  nameWithType: CoreWindow
+  fullName: Windows.UI.Core.CoreWindow
+- uid: Windows.UI.Core
+  commentId: N:Windows.UI.Core
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.UI.Core
+  nameWithType: Windows.UI.Core
+  fullName: Windows.UI.Core
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.core
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.UI
+    name: UI
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui
+  - name: .
+  - uid: Windows.UI.Core
+    name: Core
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.ui.core

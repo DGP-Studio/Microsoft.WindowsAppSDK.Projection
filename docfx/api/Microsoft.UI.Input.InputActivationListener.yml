@@ -1,0 +1,1364 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Input.InputActivationListener
+  commentId: T:Microsoft.UI.Input.InputActivationListener
+  id: InputActivationListener
+  parent: Microsoft.UI.Input
+  children:
+  - Microsoft.UI.Input.InputActivationListener.As``1
+  - Microsoft.UI.Input.InputActivationListener.Equals(Microsoft.UI.Input.InputActivationListener)
+  - Microsoft.UI.Input.InputActivationListener.Equals(System.Object)
+  - Microsoft.UI.Input.InputActivationListener.FromAbi(System.IntPtr)
+  - Microsoft.UI.Input.InputActivationListener.GetForIsland(Microsoft.UI.Content.ContentIsland)
+  - Microsoft.UI.Input.InputActivationListener.GetForWindowId(Microsoft.UI.WindowId)
+  - Microsoft.UI.Input.InputActivationListener.GetHashCode
+  - Microsoft.UI.Input.InputActivationListener.InputActivationChanged
+  - Microsoft.UI.Input.InputActivationListener.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Input.InputActivationListener.State
+  - Microsoft.UI.Input.InputActivationListener.op_Equality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  - Microsoft.UI.Input.InputActivationListener.op_Inequality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  langs:
+  - csharp
+  - vb
+  name: InputActivationListener
+  nameWithType: InputActivationListener
+  fullName: Microsoft.UI.Input.InputActivationListener
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InputActivationListener
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1928
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(InputActivationListener))]
+
+      [ProjectedRuntimeClass(typeof(IInputActivationListener))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65537)]
+
+      public sealed class InputActivationListener : InputObject, IEquatable<InputObject>, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<InputActivationListener>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(InputActivationListener))>
+
+      <ProjectedRuntimeClass(GetType(IInputActivationListener))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65537)>
+
+      Public NotInheritable Class InputActivationListener Inherits InputObject Implements IEquatable(Of InputObject), IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of InputActivationListener)
+  inheritance:
+  - System.Object
+  - Microsoft.UI.Input.InputObject
+  implements:
+  - System.IEquatable{Microsoft.UI.Input.InputObject}
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Input.InputActivationListener}
+  inheritedMembers:
+  - Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+  - Microsoft.UI.Input.InputObject.DispatcherQueue
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65537"
+- uid: Microsoft.UI.Input.InputActivationListener.As``1
+  commentId: M:Microsoft.UI.Input.InputActivationListener.As``1
+  id: As``1
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: InputActivationListener.As<I>()
+  fullName: Microsoft.UI.Input.InputActivationListener.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1944
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.UI.Input.InputActivationListener.As*
+  nameWithType.vb: InputActivationListener.As(Of I)()
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.UI.Input.InputActivationListener.GetForWindowId(Microsoft.UI.WindowId)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.GetForWindowId(Microsoft.UI.WindowId)
+  id: GetForWindowId(Microsoft.UI.WindowId)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: GetForWindowId(WindowId)
+  nameWithType: InputActivationListener.GetForWindowId(WindowId)
+  fullName: Microsoft.UI.Input.InputActivationListener.GetForWindowId(Microsoft.UI.WindowId)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForWindowId
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1963
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static InputActivationListener GetForWindowId(WindowId windowId)
+    parameters:
+    - id: windowId
+      type: Microsoft.UI.WindowId
+    return:
+      type: Microsoft.UI.Input.InputActivationListener
+    content.vb: Public Shared Function GetForWindowId(windowId As WindowId) As InputActivationListener
+  overload: Microsoft.UI.Input.InputActivationListener.GetForWindowId*
+- uid: Microsoft.UI.Input.InputActivationListener.GetForIsland(Microsoft.UI.Content.ContentIsland)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.GetForIsland(Microsoft.UI.Content.ContentIsland)
+  id: GetForIsland(Microsoft.UI.Content.ContentIsland)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: GetForIsland(ContentIsland)
+  nameWithType: InputActivationListener.GetForIsland(ContentIsland)
+  fullName: Microsoft.UI.Input.InputActivationListener.GetForIsland(Microsoft.UI.Content.ContentIsland)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForIsland
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1982
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static InputActivationListener GetForIsland(ContentIsland island)
+    parameters:
+    - id: island
+      type: Microsoft.UI.Content.ContentIsland
+    return:
+      type: Microsoft.UI.Input.InputActivationListener
+    content.vb: Public Shared Function GetForIsland(island As ContentIsland) As InputActivationListener
+  overload: Microsoft.UI.Input.InputActivationListener.GetForIsland*
+- uid: Microsoft.UI.Input.InputActivationListener.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: InputActivationListener.FromAbi(nint)
+  fullName: Microsoft.UI.Input.InputActivationListener.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1984
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static InputActivationListener FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Input.InputActivationListener
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As InputActivationListener
+  overload: Microsoft.UI.Input.InputActivationListener.FromAbi*
+  nameWithType.vb: InputActivationListener.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Input.InputActivationListener.op_Equality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.op_Equality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  id: op_Equality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: operator ==(InputActivationListener, InputActivationListener)
+  nameWithType: InputActivationListener.operator ==(InputActivationListener, InputActivationListener)
+  fullName: Microsoft.UI.Input.InputActivationListener.operator ==(Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListener)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 1999
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator ==(InputActivationListener x, InputActivationListener y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.InputActivationListener
+    - id: y
+      type: Microsoft.UI.Input.InputActivationListener
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As InputActivationListener, y As InputActivationListener) As Boolean
+  overload: Microsoft.UI.Input.InputActivationListener.op_Equality*
+  nameWithType.vb: InputActivationListener.=(InputActivationListener, InputActivationListener)
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.=(Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListener)
+  name.vb: =(InputActivationListener, InputActivationListener)
+- uid: Microsoft.UI.Input.InputActivationListener.op_Inequality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.op_Inequality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  id: op_Inequality(Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListener)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: operator !=(InputActivationListener, InputActivationListener)
+  nameWithType: InputActivationListener.operator !=(InputActivationListener, InputActivationListener)
+  fullName: Microsoft.UI.Input.InputActivationListener.operator !=(Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListener)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2000
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public static bool operator !=(InputActivationListener x, InputActivationListener y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Input.InputActivationListener
+    - id: y
+      type: Microsoft.UI.Input.InputActivationListener
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As InputActivationListener, y As InputActivationListener) As Boolean
+  overload: Microsoft.UI.Input.InputActivationListener.op_Inequality*
+  nameWithType.vb: InputActivationListener.<>(InputActivationListener, InputActivationListener)
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.<>(Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListener)
+  name.vb: <>(InputActivationListener, InputActivationListener)
+- uid: Microsoft.UI.Input.InputActivationListener.Equals(Microsoft.UI.Input.InputActivationListener)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.Equals(Microsoft.UI.Input.InputActivationListener)
+  id: Equals(Microsoft.UI.Input.InputActivationListener)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: Equals(InputActivationListener)
+  nameWithType: InputActivationListener.Equals(InputActivationListener)
+  fullName: Microsoft.UI.Input.InputActivationListener.Equals(Microsoft.UI.Input.InputActivationListener)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2001
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(InputActivationListener other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Input.InputActivationListener
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As InputActivationListener) As Boolean
+  overload: Microsoft.UI.Input.InputActivationListener.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Input.InputActivationListener}.Equals(Microsoft.UI.Input.InputActivationListener)
+- uid: Microsoft.UI.Input.InputActivationListener.Equals(System.Object)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: InputActivationListener.Equals(object)
+  fullName: Microsoft.UI.Input.InputActivationListener.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2002
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.UI.Input.InputObject.Equals(System.Object)
+  overload: Microsoft.UI.Input.InputActivationListener.Equals*
+  nameWithType.vb: InputActivationListener.Equals(Object)
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Input.InputActivationListener.GetHashCode
+  commentId: M:Microsoft.UI.Input.InputActivationListener.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: InputActivationListener.GetHashCode()
+  fullName: Microsoft.UI.Input.InputActivationListener.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2003
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.UI.Input.InputObject.GetHashCode
+  overload: Microsoft.UI.Input.InputActivationListener.GetHashCode*
+- uid: Microsoft.UI.Input.InputActivationListener.InputActivationChanged
+  commentId: E:Microsoft.UI.Input.InputActivationListener.InputActivationChanged
+  id: InputActivationChanged
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: InputActivationChanged
+  nameWithType: InputActivationListener.InputActivationChanged
+  fullName: Microsoft.UI.Input.InputActivationListener.InputActivationChanged
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: InputActivationChanged
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2012
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public event TypedEventHandler<InputActivationListener, InputActivationListenerActivationChangedEventArgs> InputActivationChanged
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs}
+    content.vb: Public Event InputActivationChanged As TypedEventHandler(Of InputActivationListener, InputActivationListenerActivationChangedEventArgs)
+- uid: Microsoft.UI.Input.InputActivationListener.State
+  commentId: P:Microsoft.UI.Input.InputActivationListener.State
+  id: State
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: InputActivationListener.State
+  fullName: Microsoft.UI.Input.InputActivationListener.State
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: State
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2018
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  syntax:
+    content: public InputActivationState State { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Input.InputActivationState
+    content.vb: Public ReadOnly Property State As InputActivationState
+  overload: Microsoft.UI.Input.InputActivationListener.State*
+- uid: Microsoft.UI.Input.InputActivationListener.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Input.InputActivationListener.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Input.InputActivationListener
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: InputActivationListener.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Input.InputActivationListener.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Input.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Input.cs
+    startLine: 2020
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Input
+  example: []
+  syntax:
+    content: protected override bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function IsOverridableInterface(iid As Guid) As Boolean
+  overridden: Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+  overload: Microsoft.UI.Input.InputActivationListener.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Input
+  commentId: N:Microsoft.UI.Input
+  href: Microsoft.html
+  name: Microsoft.UI.Input
+  nameWithType: Microsoft.UI.Input
+  fullName: Microsoft.UI.Input
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Input
+    name: Input
+    href: Microsoft.UI.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.UI.Input.InputObject
+  commentId: T:Microsoft.UI.Input.InputObject
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.InputObject.html
+  name: InputObject
+  nameWithType: InputObject
+  fullName: Microsoft.UI.Input.InputObject
+- uid: System.IEquatable{Microsoft.UI.Input.InputObject}
+  commentId: T:System.IEquatable{Microsoft.UI.Input.InputObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InputObject>
+  nameWithType: IEquatable<InputObject>
+  fullName: System.IEquatable<Microsoft.UI.Input.InputObject>
+  nameWithType.vb: IEquatable(Of InputObject)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.InputObject)
+  name.vb: IEquatable(Of InputObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Input.InputObject
+    name: InputObject
+    href: Microsoft.UI.Input.InputObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.InputObject
+    name: InputObject
+    href: Microsoft.UI.Input.InputObject.html
+  - name: )
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Input.InputActivationListener}
+  commentId: T:System.IEquatable{Microsoft.UI.Input.InputActivationListener}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InputActivationListener>
+  nameWithType: IEquatable<InputActivationListener>
+  fullName: System.IEquatable<Microsoft.UI.Input.InputActivationListener>
+  nameWithType.vb: IEquatable(Of InputActivationListener)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.InputActivationListener)
+  name.vb: IEquatable(Of InputActivationListener)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: )
+- uid: Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+  commentId: M:Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+  parent: Microsoft.UI.Input.InputObject
+  href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_Microsoft_UI_Input_InputObject_
+  name: Equals(InputObject)
+  nameWithType: InputObject.Equals(InputObject)
+  fullName: Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+  spec.csharp:
+  - uid: Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+    name: Equals
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_Microsoft_UI_Input_InputObject_
+  - name: (
+  - uid: Microsoft.UI.Input.InputObject
+    name: InputObject
+    href: Microsoft.UI.Input.InputObject.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Input.InputObject.Equals(Microsoft.UI.Input.InputObject)
+    name: Equals
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_Microsoft_UI_Input_InputObject_
+  - name: (
+  - uid: Microsoft.UI.Input.InputObject
+    name: InputObject
+    href: Microsoft.UI.Input.InputObject.html
+  - name: )
+- uid: Microsoft.UI.Input.InputObject.DispatcherQueue
+  commentId: P:Microsoft.UI.Input.InputObject.DispatcherQueue
+  parent: Microsoft.UI.Input.InputObject
+  href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: InputObject.DispatcherQueue
+  fullName: Microsoft.UI.Input.InputObject.DispatcherQueue
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: Microsoft.UI.Input.InputActivationListener.As*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.As
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_As__1
+  name: As
+  nameWithType: InputActivationListener.As
+  fullName: Microsoft.UI.Input.InputActivationListener.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.UI.Input.InputActivationListener.GetForWindowId*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.GetForWindowId
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_GetForWindowId_Microsoft_UI_WindowId_
+  name: GetForWindowId
+  nameWithType: InputActivationListener.GetForWindowId
+  fullName: Microsoft.UI.Input.InputActivationListener.GetForWindowId
+- uid: Microsoft.UI.WindowId
+  commentId: T:Microsoft.UI.WindowId
+  parent: Microsoft.UI
+  href: Microsoft.UI.WindowId.html
+  name: WindowId
+  nameWithType: WindowId
+  fullName: Microsoft.UI.WindowId
+- uid: Microsoft.UI.Input.InputActivationListener
+  commentId: T:Microsoft.UI.Input.InputActivationListener
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.InputActivationListener.html
+  name: InputActivationListener
+  nameWithType: InputActivationListener
+  fullName: Microsoft.UI.Input.InputActivationListener
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+- uid: Microsoft.UI.Input.InputActivationListener.GetForIsland*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.GetForIsland
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_GetForIsland_Microsoft_UI_Content_ContentIsland_
+  name: GetForIsland
+  nameWithType: InputActivationListener.GetForIsland
+  fullName: Microsoft.UI.Input.InputActivationListener.GetForIsland
+- uid: Microsoft.UI.Content.ContentIsland
+  commentId: T:Microsoft.UI.Content.ContentIsland
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentIsland.html
+  name: ContentIsland
+  nameWithType: ContentIsland
+  fullName: Microsoft.UI.Content.ContentIsland
+- uid: Microsoft.UI.Content
+  commentId: N:Microsoft.UI.Content
+  href: Microsoft.html
+  name: Microsoft.UI.Content
+  nameWithType: Microsoft.UI.Content
+  fullName: Microsoft.UI.Content
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+- uid: Microsoft.UI.Input.InputActivationListener.FromAbi*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.FromAbi
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: InputActivationListener.FromAbi
+  fullName: Microsoft.UI.Input.InputActivationListener.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Input.InputActivationListener.op_Equality*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.op_Equality
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_op_Equality_Microsoft_UI_Input_InputActivationListener_Microsoft_UI_Input_InputActivationListener_
+  name: operator ==
+  nameWithType: InputActivationListener.operator ==
+  fullName: Microsoft.UI.Input.InputActivationListener.operator ==
+  nameWithType.vb: InputActivationListener.=
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListener.op_Equality*
+    name: ==
+    href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_op_Equality_Microsoft_UI_Input_InputActivationListener_Microsoft_UI_Input_InputActivationListener_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Input.InputActivationListener.op_Inequality*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.op_Inequality
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_op_Inequality_Microsoft_UI_Input_InputActivationListener_Microsoft_UI_Input_InputActivationListener_
+  name: operator !=
+  nameWithType: InputActivationListener.operator !=
+  fullName: Microsoft.UI.Input.InputActivationListener.operator !=
+  nameWithType.vb: InputActivationListener.<>
+  fullName.vb: Microsoft.UI.Input.InputActivationListener.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListener.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_op_Inequality_Microsoft_UI_Input_InputActivationListener_Microsoft_UI_Input_InputActivationListener_
+- uid: Microsoft.UI.Input.InputActivationListener.Equals*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.Equals
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_Equals_Microsoft_UI_Input_InputActivationListener_
+  name: Equals
+  nameWithType: InputActivationListener.Equals
+  fullName: Microsoft.UI.Input.InputActivationListener.Equals
+- uid: System.IEquatable{Microsoft.UI.Input.InputActivationListener}.Equals(Microsoft.UI.Input.InputActivationListener)
+  commentId: M:System.IEquatable{Microsoft.UI.Input.InputActivationListener}.Equals(Microsoft.UI.Input.InputActivationListener)
+  parent: System.IEquatable{Microsoft.UI.Input.InputActivationListener}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(InputActivationListener)
+  nameWithType: IEquatable<InputActivationListener>.Equals(InputActivationListener)
+  fullName: System.IEquatable<Microsoft.UI.Input.InputActivationListener>.Equals(Microsoft.UI.Input.InputActivationListener)
+  nameWithType.vb: IEquatable(Of InputActivationListener).Equals(InputActivationListener)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Input.InputActivationListener).Equals(Microsoft.UI.Input.InputActivationListener)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Input.InputActivationListener}.Equals(Microsoft.UI.Input.InputActivationListener)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Input.InputActivationListener}.Equals(Microsoft.UI.Input.InputActivationListener)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Input.InputObject.Equals(System.Object)
+  commentId: M:Microsoft.UI.Input.InputObject.Equals(System.Object)
+  parent: Microsoft.UI.Input.InputObject
+  isExternal: true
+  href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: InputObject.Equals(object)
+  fullName: Microsoft.UI.Input.InputObject.Equals(object)
+  nameWithType.vb: InputObject.Equals(Object)
+  fullName.vb: Microsoft.UI.Input.InputObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.UI.Input.InputObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Input.InputObject.Equals(System.Object)
+    name: Equals
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.UI.Input.InputObject.GetHashCode
+  commentId: M:Microsoft.UI.Input.InputObject.GetHashCode
+  parent: Microsoft.UI.Input.InputObject
+  href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: InputObject.GetHashCode()
+  fullName: Microsoft.UI.Input.InputObject.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.UI.Input.InputObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Input.InputObject.GetHashCode
+    name: GetHashCode
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Input.InputActivationListener.GetHashCode*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.GetHashCode
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_GetHashCode
+  name: GetHashCode
+  nameWithType: InputActivationListener.GetHashCode
+  fullName: Microsoft.UI.Input.InputActivationListener.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Input.InputActivationListener,Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<InputActivationListener, InputActivationListenerActivationChangedEventArgs>
+  nameWithType: TypedEventHandler<InputActivationListener, InputActivationListenerActivationChangedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of InputActivationListener, InputActivationListenerActivationChangedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Input.InputActivationListener, Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs)
+  name.vb: TypedEventHandler(Of InputActivationListener, InputActivationListenerActivationChangedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs
+    name: InputActivationListenerActivationChangedEventArgs
+    href: Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListener
+    name: InputActivationListener
+    href: Microsoft.UI.Input.InputActivationListener.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs
+    name: InputActivationListenerActivationChangedEventArgs
+    href: Microsoft.UI.Input.InputActivationListenerActivationChangedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Input.InputActivationListener.State*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.State
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_State
+  name: State
+  nameWithType: InputActivationListener.State
+  fullName: Microsoft.UI.Input.InputActivationListener.State
+- uid: Microsoft.UI.Input.InputActivationState
+  commentId: T:Microsoft.UI.Input.InputActivationState
+  parent: Microsoft.UI.Input
+  href: Microsoft.UI.Input.InputActivationState.html
+  name: InputActivationState
+  nameWithType: InputActivationState
+  fullName: Microsoft.UI.Input.InputActivationState
+- uid: Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Input.InputObject
+  isExternal: true
+  href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface(Guid)
+  nameWithType: InputObject.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+  spec.csharp:
+  - uid: Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.UI.Input.InputObject.IsOverridableInterface(System.Guid)
+    name: IsOverridableInterface
+    href: Microsoft.UI.Input.InputObject.html#Microsoft_UI_Input_InputObject_IsOverridableInterface_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.UI.Input.InputActivationListener.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Input.InputActivationListener.IsOverridableInterface
+  href: Microsoft.UI.Input.InputActivationListener.html#Microsoft_UI_Input_InputActivationListener_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: InputActivationListener.IsOverridableInterface
+  fullName: Microsoft.UI.Input.InputActivationListener.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

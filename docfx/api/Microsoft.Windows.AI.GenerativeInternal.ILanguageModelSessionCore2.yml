@@ -1,0 +1,1117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+  id: ILanguageModelSessionCore2
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  children:
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  langs:
+  - csharp
+  - vb
+  name: ILanguageModelSessionCore2
+  nameWithType: ILanguageModelSessionCore2
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+  type: Interface
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ILanguageModelSessionCore2
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")]
+
+      [Guid("7D5DC34F-1F2D-41C0-BC08-470D8A401950")]
+
+      [WindowsRuntimeHelperType(typeof(ILanguageModelSessionCore2))]
+
+      [ContractVersion(typeof(LanguageModelSessionContract), 524288)]
+
+      public interface ILanguageModelSessionCore2 : ILanguageModelSessionCore, IDisposable
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.AI.GenerativeInternal")>
+
+      <Guid("7D5DC34F-1F2D-41C0-BC08-470D8A401950")>
+
+      <WindowsRuntimeHelperType(GetType(ILanguageModelSessionCore2))>
+
+      <ContractVersion(GetType(LanguageModelSessionContract), 524288)>
+
+      Public Interface ILanguageModelSessionCore2 Inherits ILanguageModelSessionCore, IDisposable
+  inheritedMembers:
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,System.Single[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.Collections.Generic.IReadOnlyList{System.Int64},System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(System.Single[],System.Guid)
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion
+  - Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId
+  - System.IDisposable.Dispose
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.AI.GenerativeInternal
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7D5DC34F-1F2D-41C0-BC08-470D8A401950
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.AI.GenerativeInternal.LanguageModelSessionContract
+    - type: System.UInt32
+      value: "524288"
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  id: GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector[], Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, ILanguageModelSessionAdapter)
+  nameWithType: ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector[], Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, ILanguageModelSessionAdapter)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[], System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseWithProgressEvent
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 194
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: >-
+      [DefaultOverload]
+
+      [Overload("GenerateResponseWithProgressEvent")]
+
+      string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, EmbeddingVector[] promptEmbedding, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, ILanguageModelSessionAdapter adapter)
+    parameters:
+    - id: options
+      type: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    - id: promptEmbedding
+      type: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[]
+    - id: eventToken
+      type: System.Guid
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    - id: contentFilterOptions
+      type: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    - id: context
+      type: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    - id: adapter
+      type: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+    return:
+      type: System.String
+    content.vb: >-
+      <DefaultOverload>
+
+      <Overload("GenerateResponseWithProgressEvent")>
+
+      Function GenerateResponseWithProgressEvent(options As LanguageModelOptionsInternal, promptEmbedding As EmbeddingVector(), eventToken As Guid, priority As UInteger, frequency As UInteger, contentFilterOptions As ContentFilterOptionsInternal, context As ILanguageModelSessionContext, adapter As ILanguageModelSessionAdapter) As String
+  overload: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent*
+  attributes:
+  - type: Windows.Foundation.Metadata.DefaultOverloadAttribute
+    ctor: Windows.Foundation.Metadata.DefaultOverloadAttribute.#ctor
+    arguments: []
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GenerateResponseWithProgressEvent
+  nameWithType.vb: ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector(), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, ILanguageModelSessionAdapter)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.FoundationInternal.EmbeddingVector(), System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector(), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, ILanguageModelSessionAdapter)
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  id: GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2
+  langs:
+  - csharp
+  - vb
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, string, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, string, ILanguageModelSessionAdapter)
+  nameWithType: ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, string, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, string, ILanguageModelSessionAdapter)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, string, System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, string, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.AI.GenerativeInternal.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GenerateResponseWithProgressEvent
+    path: ../src/Microsoft.Windows.AI.GenerativeInternal.cs
+    startLine: 197
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.AI.GenerativeInternal
+  syntax:
+    content: >-
+      [Overload("GenerateResponseWithProgressEvent2")]
+
+      string GenerateResponseWithProgressEvent(LanguageModelOptionsInternal options, string prompt, Guid eventToken, uint priority, uint frequency, ContentFilterOptionsInternal contentFilterOptions, ILanguageModelSessionContext context, string skillOptions, ILanguageModelSessionAdapter adapter)
+    parameters:
+    - id: options
+      type: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    - id: prompt
+      type: System.String
+    - id: eventToken
+      type: System.Guid
+    - id: priority
+      type: System.UInt32
+    - id: frequency
+      type: System.UInt32
+    - id: contentFilterOptions
+      type: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    - id: context
+      type: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    - id: skillOptions
+      type: System.String
+    - id: adapter
+      type: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+    return:
+      type: System.String
+    content.vb: >-
+      <Overload("GenerateResponseWithProgressEvent2")>
+
+      Function GenerateResponseWithProgressEvent(options As LanguageModelOptionsInternal, prompt As String, eventToken As Guid, priority As UInteger, frequency As UInteger, contentFilterOptions As ContentFilterOptionsInternal, context As ILanguageModelSessionContext, skillOptions As String, adapter As ILanguageModelSessionAdapter) As String
+  overload: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent*
+  attributes:
+  - type: Windows.Foundation.Metadata.OverloadAttribute
+    ctor: Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GenerateResponseWithProgressEvent2
+  nameWithType.vb: ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, String, Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, String, ILanguageModelSessionAdapter)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, String, System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, String, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, String, Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, String, ILanguageModelSessionAdapter)
+references:
+- uid: Microsoft.Windows.AI.GenerativeInternal
+  commentId: N:Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.html
+  name: Microsoft.Windows.AI.GenerativeInternal
+  nameWithType: Microsoft.Windows.AI.GenerativeInternal
+  fullName: Microsoft.Windows.AI.GenerativeInternal
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.GenerativeInternal
+    name: GenerativeInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.AI
+    name: AI
+    href: Microsoft.Windows.AI.html
+  - name: .
+  - uid: Microsoft.Windows.AI.GenerativeInternal
+    name: GenerativeInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.html
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextLength
+  name: GetContextLength()
+  nameWithType: ILanguageModelSessionCore.GetContextLength()
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength()
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength
+    name: GetContextLength
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextLength
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextLength
+    name: GetContextLength
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextLength
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingSize
+  name: GetEmbeddingSize()
+  nameWithType: ILanguageModelSessionCore.GetEmbeddingSize()
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize()
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize
+    name: GetEmbeddingSize
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingSize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingSize
+    name: GetEmbeddingSize
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingSize
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetPartialResult
+  name: GetPartialResult()
+  nameWithType: ILanguageModelSessionCore.GetPartialResult()
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult()
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult
+    name: GetPartialResult
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetPartialResult
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetPartialResult
+    name: GetPartialResult
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetPartialResult
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetTokens_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  name: GetTokens(string, ContentFilterOptionsInternal)
+  nameWithType: ILanguageModelSessionCore.GetTokens(string, ContentFilterOptionsInternal)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(string, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  nameWithType.vb: ILanguageModelSessionCore.GetTokens(String, ContentFilterOptionsInternal)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(String, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  name.vb: GetTokens(String, ContentFilterOptionsInternal)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GetTokens
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetTokens_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetTokens(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GetTokens
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetTokens_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingsCore_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  name: GetEmbeddingsCore(string, ContentFilterOptionsInternal)
+  nameWithType: ILanguageModelSessionCore.GetEmbeddingsCore(string, ContentFilterOptionsInternal)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(string, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  nameWithType.vb: ILanguageModelSessionCore.GetEmbeddingsCore(String, ContentFilterOptionsInternal)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(String, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  name.vb: GetEmbeddingsCore(String, ContentFilterOptionsInternal)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GetEmbeddingsCore
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingsCore_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetEmbeddingsCore(System.String,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GetEmbeddingsCore
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetEmbeddingsCore_System_String_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,System.Single[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,System.Single[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_System_Single___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, LanguageModelInitialContextParam, float[], Guid, uint, uint, ContentFilterOptionsInternal)
+  nameWithType: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, LanguageModelInitialContextParam, float[], Guid, uint, uint, ContentFilterOptionsInternal)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam, float[], System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  nameWithType.vb: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, LanguageModelInitialContextParam, Single(), Guid, UInteger, UInteger, ContentFilterOptionsInternal)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam, Single(), System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, LanguageModelInitialContextParam, Single(), Guid, UInteger, UInteger, ContentFilterOptionsInternal)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,System.Single[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_System_Single___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam
+    name: LanguageModelInitialContextParam
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,System.Single[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_System_Single___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam
+    name: LanguageModelInitialContextParam
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.Collections.Generic.IReadOnlyList{System.Int64},System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.Collections.Generic.IReadOnlyList{System.Int64},System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_Collections_Generic_IReadOnlyList_System_Int64__System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, IReadOnlyList<long>, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  nameWithType: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, IReadOnlyList<long>, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, System.Collections.Generic.IReadOnlyList<long>, System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  nameWithType.vb: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, IReadOnlyList(Of Long), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, System.Collections.Generic.IReadOnlyList(Of Long), System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, IReadOnlyList(Of Long), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.Collections.Generic.IReadOnlyList{System.Int64},System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_Collections_Generic_IReadOnlyList_System_Int64__System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.Collections.Generic.IReadOnlyList{System.Int64},System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_Collections_Generic_IReadOnlyList_System_Int64__System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_CreateContext_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  name: CreateContext(LanguageModelInitialContextParam, ContentFilterOptionsInternal)
+  nameWithType: ILanguageModelSessionCore.CreateContext(LanguageModelInitialContextParam, ContentFilterOptionsInternal)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: CreateContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_CreateContext_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam
+    name: LanguageModelInitialContextParam
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.CreateContext(Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal)
+    name: CreateContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_CreateContext_Microsoft_Windows_AI_GenerativeInternal_LanguageModelInitialContextParam_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam
+    name: LanguageModelInitialContextParam
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelInitialContextParam.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_IsPromptLargerThanContext_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  name: IsPromptLargerThanContext(ILanguageModelSessionContext, string)
+  nameWithType: ILanguageModelSessionCore.IsPromptLargerThanContext(ILanguageModelSessionContext, string)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, string)
+  nameWithType.vb: ILanguageModelSessionCore.IsPromptLargerThanContext(ILanguageModelSessionContext, String)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, String)
+  name.vb: IsPromptLargerThanContext(ILanguageModelSessionContext, String)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: IsPromptLargerThanContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_IsPromptLargerThanContext_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.IsPromptLargerThanContext(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: IsPromptLargerThanContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_IsPromptLargerThanContext_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextPromptCutoffIndex_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  name: GetContextPromptCutoffIndex(ILanguageModelSessionContext, string)
+  nameWithType: ILanguageModelSessionCore.GetContextPromptCutoffIndex(ILanguageModelSessionContext, string)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, string)
+  nameWithType.vb: ILanguageModelSessionCore.GetContextPromptCutoffIndex(ILanguageModelSessionContext, String)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, String)
+  name.vb: GetContextPromptCutoffIndex(ILanguageModelSessionContext, String)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: GetContextPromptCutoffIndex
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextPromptCutoffIndex_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetContextPromptCutoffIndex(Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: GetContextPromptCutoffIndex
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetContextPromptCutoffIndex_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector[], Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  nameWithType: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector[], Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[], System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  nameWithType.vb: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector(), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, Microsoft.Windows.AI.FoundationInternal.EmbeddingVector(), System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, EmbeddingVector(), Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[],System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_String_System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  name: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, string, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, string)
+  nameWithType: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, string, Guid, uint, uint, ContentFilterOptionsInternal, ILanguageModelSessionContext, string)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, string, System.Guid, uint, uint, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, string)
+  nameWithType.vb: ILanguageModelSessionCore.GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, String, Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, String)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal, String, System.Guid, UInteger, UInteger, Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal, Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext, String)
+  name.vb: GenerateResponseWithProgressEvent(LanguageModelOptionsInternal, String, Guid, UInteger, UInteger, ContentFilterOptionsInternal, ILanguageModelSessionContext, String)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_String_System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GenerateResponseWithProgressEvent(Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal,System.String,System.Guid,System.UInt32,System.UInt32,Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal,Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext,System.String)
+    name: GenerateResponseWithProgressEvent
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_System_String_System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_System_String_
+  - name: (
+  - uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+    name: LanguageModelOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+    name: ContentFilterOptionsInternal
+    href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+    name: ILanguageModelSessionContext
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(System.Single[],System.Guid)
+  commentId: M:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(System.Single[],System.Guid)
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  isExternal: true
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetSessionBoundEmbedding_System_Single___System_Guid_
+  name: GetSessionBoundEmbedding(float[], Guid)
+  nameWithType: ILanguageModelSessionCore.GetSessionBoundEmbedding(float[], Guid)
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(float[], System.Guid)
+  nameWithType.vb: ILanguageModelSessionCore.GetSessionBoundEmbedding(Single(), Guid)
+  fullName.vb: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(Single(), System.Guid)
+  name.vb: GetSessionBoundEmbedding(Single(), Guid)
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(System.Single[],System.Guid)
+    name: GetSessionBoundEmbedding
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetSessionBoundEmbedding_System_Single___System_Guid_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.GetSessionBoundEmbedding(System.Single[],System.Guid)
+    name: GetSessionBoundEmbedding
+    href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_GetSessionBoundEmbedding_System_Single___System_Guid_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion
+  commentId: P:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_ModelVersion
+  name: ModelVersion
+  nameWithType: ILanguageModelSessionCore.ModelVersion
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.ModelVersion
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId
+  commentId: P:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId
+  parent: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore_VectorSpaceId
+  name: VectorSpaceId
+  nameWithType: ILanguageModelSessionCore.VectorSpaceId
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.VectorSpaceId
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore.html
+  name: ILanguageModelSessionCore
+  nameWithType: ILanguageModelSessionCore
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent*
+  commentId: Overload:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.html#Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionCore2_GenerateResponseWithProgressEvent_Microsoft_Windows_AI_GenerativeInternal_LanguageModelOptionsInternal_Microsoft_Windows_AI_FoundationInternal_EmbeddingVector___System_Guid_System_UInt32_System_UInt32_Microsoft_Windows_AI_GenerativeInternal_ContentFilterOptionsInternal_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionContext_Microsoft_Windows_AI_GenerativeInternal_ILanguageModelSessionAdapter_
+  name: GenerateResponseWithProgressEvent
+  nameWithType: ILanguageModelSessionCore2.GenerateResponseWithProgressEvent
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionCore2.GenerateResponseWithProgressEvent
+- uid: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal.html
+  name: LanguageModelOptionsInternal
+  nameWithType: LanguageModelOptionsInternal
+  fullName: Microsoft.Windows.AI.GenerativeInternal.LanguageModelOptionsInternal
+- uid: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[]
+  isExternal: true
+  href: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.html
+  name: EmbeddingVector[]
+  nameWithType: EmbeddingVector[]
+  fullName: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector[]
+  nameWithType.vb: EmbeddingVector()
+  fullName.vb: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector()
+  name.vb: EmbeddingVector()
+  spec.csharp:
+  - uid: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector
+    name: EmbeddingVector
+    href: Microsoft.Windows.AI.FoundationInternal.EmbeddingVector.html
+  - name: (
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal.html
+  name: ContentFilterOptionsInternal
+  nameWithType: ContentFilterOptionsInternal
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ContentFilterOptionsInternal
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext.html
+  name: ILanguageModelSessionContext
+  nameWithType: ILanguageModelSessionContext
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionContext
+- uid: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+  commentId: T:Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+  parent: Microsoft.Windows.AI.GenerativeInternal
+  href: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter.html
+  name: ILanguageModelSessionAdapter
+  nameWithType: ILanguageModelSessionAdapter
+  fullName: Microsoft.Windows.AI.GenerativeInternal.ILanguageModelSessionAdapter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

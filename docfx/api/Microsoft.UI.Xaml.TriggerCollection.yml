@@ -1,0 +1,2449 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Xaml.TriggerCollection
+  commentId: T:Microsoft.UI.Xaml.TriggerCollection
+  id: TriggerCollection
+  parent: Microsoft.UI.Xaml
+  children:
+  - Microsoft.UI.Xaml.TriggerCollection.Add(Microsoft.UI.Xaml.TriggerBase)
+  - Microsoft.UI.Xaml.TriggerCollection.Clear
+  - Microsoft.UI.Xaml.TriggerCollection.Contains(Microsoft.UI.Xaml.TriggerBase)
+  - Microsoft.UI.Xaml.TriggerCollection.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  - Microsoft.UI.Xaml.TriggerCollection.Count
+  - Microsoft.UI.Xaml.TriggerCollection.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  - Microsoft.UI.Xaml.TriggerCollection.Equals(System.Object)
+  - Microsoft.UI.Xaml.TriggerCollection.FromAbi(System.IntPtr)
+  - Microsoft.UI.Xaml.TriggerCollection.GetEnumerator
+  - Microsoft.UI.Xaml.TriggerCollection.GetHashCode
+  - Microsoft.UI.Xaml.TriggerCollection.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  - Microsoft.UI.Xaml.TriggerCollection.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  - Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+  - Microsoft.UI.Xaml.TriggerCollection.ListItem(System.Int32)
+  - Microsoft.UI.Xaml.TriggerCollection.Remove(Microsoft.UI.Xaml.TriggerBase)
+  - Microsoft.UI.Xaml.TriggerCollection.RemoveAt(System.Int32)
+  - Microsoft.UI.Xaml.TriggerCollection.op_Equality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  - Microsoft.UI.Xaml.TriggerCollection.op_Inequality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  langs:
+  - csharp
+  - vb
+  name: TriggerCollection
+  nameWithType: TriggerCollection
+  fullName: Microsoft.UI.Xaml.TriggerCollection
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TriggerCollection
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 8967
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI.Xaml")]
+
+      [WindowsRuntimeHelperType(typeof(TriggerCollection))]
+
+      [ProjectedRuntimeClass(typeof(IList<TriggerBase>))]
+
+      [ContractVersion(typeof(WinUIContract), 65536)]
+
+      public sealed class TriggerCollection : IList<TriggerBase>, ICollection<TriggerBase>, IEnumerable<TriggerBase>, IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<TriggerCollection>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI.Xaml")>
+
+      <WindowsRuntimeHelperType(GetType(TriggerCollection))>
+
+      <ProjectedRuntimeClass(GetType(IList(Of TriggerBase)))>
+
+      <ContractVersion(GetType(WinUIContract), 65536)>
+
+      Public NotInheritable Class TriggerCollection Implements IList(Of TriggerBase), ICollection(Of TriggerBase), IEnumerable(Of TriggerBase), IEnumerable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of TriggerCollection)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  - System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}
+  - System.Collections.IEnumerable
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI.Xaml
+  - type: WinRT.ProjectedRuntimeClassAttribute
+    ctor: WinRT.ProjectedRuntimeClassAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.UI.Xaml.WinUIContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.UI.Xaml.TriggerCollection.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: TriggerCollection.FromAbi(nint)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9001
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static TriggerCollection FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Xaml.TriggerCollection
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As TriggerCollection
+  overload: Microsoft.UI.Xaml.TriggerCollection.FromAbi*
+  nameWithType.vb: TriggerCollection.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Xaml.TriggerCollection.op_Equality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.op_Equality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  id: op_Equality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: operator ==(TriggerCollection, TriggerCollection)
+  nameWithType: TriggerCollection.operator ==(TriggerCollection, TriggerCollection)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.operator ==(Microsoft.UI.Xaml.TriggerCollection, Microsoft.UI.Xaml.TriggerCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9014
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator ==(TriggerCollection x, TriggerCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.TriggerCollection
+    - id: y
+      type: Microsoft.UI.Xaml.TriggerCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As TriggerCollection, y As TriggerCollection) As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.op_Equality*
+  nameWithType.vb: TriggerCollection.=(TriggerCollection, TriggerCollection)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.=(Microsoft.UI.Xaml.TriggerCollection, Microsoft.UI.Xaml.TriggerCollection)
+  name.vb: =(TriggerCollection, TriggerCollection)
+- uid: Microsoft.UI.Xaml.TriggerCollection.op_Inequality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.op_Inequality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  id: op_Inequality(Microsoft.UI.Xaml.TriggerCollection,Microsoft.UI.Xaml.TriggerCollection)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: operator !=(TriggerCollection, TriggerCollection)
+  nameWithType: TriggerCollection.operator !=(TriggerCollection, TriggerCollection)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.operator !=(Microsoft.UI.Xaml.TriggerCollection, Microsoft.UI.Xaml.TriggerCollection)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9015
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  syntax:
+    content: public static bool operator !=(TriggerCollection x, TriggerCollection y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Xaml.TriggerCollection
+    - id: y
+      type: Microsoft.UI.Xaml.TriggerCollection
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As TriggerCollection, y As TriggerCollection) As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.op_Inequality*
+  nameWithType.vb: TriggerCollection.<>(TriggerCollection, TriggerCollection)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.<>(Microsoft.UI.Xaml.TriggerCollection, Microsoft.UI.Xaml.TriggerCollection)
+  name.vb: <>(TriggerCollection, TriggerCollection)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  id: Equals(Microsoft.UI.Xaml.TriggerCollection)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(TriggerCollection)
+  nameWithType: TriggerCollection.Equals(TriggerCollection)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9016
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(TriggerCollection other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Xaml.TriggerCollection
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As TriggerCollection) As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}.Equals(Microsoft.UI.Xaml.TriggerCollection)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Equals(System.Object)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: TriggerCollection.Equals(object)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9017
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Xaml.TriggerCollection.Equals*
+  nameWithType.vb: TriggerCollection.Equals(Object)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Xaml.TriggerCollection.GetHashCode
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TriggerCollection.GetHashCode()
+  fullName: Microsoft.UI.Xaml.TriggerCollection.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9018
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Xaml.TriggerCollection.GetHashCode*
+- uid: Microsoft.UI.Xaml.TriggerCollection.Count
+  commentId: P:Microsoft.UI.Xaml.TriggerCollection.Count
+  id: Count
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: TriggerCollection.Count
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Count
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Count
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9041
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets the number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.UI.Xaml.TriggerCollection.Count*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Count
+- uid: Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+  commentId: P:Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: TriggerCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsReadOnly
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9042
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets a value indicating whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.IsReadOnly
+- uid: Microsoft.UI.Xaml.TriggerCollection.ListItem(System.Int32)
+  commentId: P:Microsoft.UI.Xaml.TriggerCollection.ListItem(System.Int32)
+  id: ListItem(System.Int32)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: TriggerCollection.this[int]
+  fullName: Microsoft.UI.Xaml.TriggerCollection.this[int]
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: this[]
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9043
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Gets or sets the element at the specified index.
+  example: []
+  syntax:
+    content: public TriggerBase this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The element at the specified index.
+    content.vb: Public Default Property this[](index As Integer) As TriggerBase
+  overload: Microsoft.UI.Xaml.TriggerCollection.ListItem*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The property is set and the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Item(System.Int32)
+  nameWithType.vb: TriggerCollection.this[](Integer)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Microsoft.UI.Xaml.TriggerCollection.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  id: IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(TriggerBase)
+  nameWithType: TriggerCollection.IndexOf(TriggerBase)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IndexOf
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9049
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines the index of a specific item in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int IndexOf(TriggerBase item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The object to locate in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int32
+      description: The index of <code class="paramref">item</code> if found in the list; otherwise, -1.
+    content.vb: Public Function IndexOf(item As TriggerBase) As Integer
+  overload: Microsoft.UI.Xaml.TriggerCollection.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  id: Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, TriggerBase)
+  nameWithType: TriggerCollection.Insert(int, TriggerBase)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Insert(int, Microsoft.UI.Xaml.TriggerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Insert
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9050
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Inserts an item to the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> at the specified index.
+  example: []
+  syntax:
+    content: public void Insert(int index, TriggerBase item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which <code class="paramref">item</code> should be inserted.
+    - id: item
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The object to insert into the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Insert(index As Integer, item As TriggerBase)
+  overload: Microsoft.UI.Xaml.TriggerCollection.Insert*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: TriggerCollection.Insert(Integer, TriggerBase)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.Insert(Integer, Microsoft.UI.Xaml.TriggerBase)
+  name.vb: Insert(Integer, TriggerBase)
+- uid: Microsoft.UI.Xaml.TriggerCollection.RemoveAt(System.Int32)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: TriggerCollection.RemoveAt(int)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveAt
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9051
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Removes the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> item at the specified index.
+  example: []
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to remove.
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: Microsoft.UI.Xaml.TriggerCollection.RemoveAt*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is not a valid index in the <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref>.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.RemoveAt(System.Int32)
+  nameWithType.vb: TriggerCollection.RemoveAt(Integer)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Add(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Add(Microsoft.UI.Xaml.TriggerBase)
+  id: Add(Microsoft.UI.Xaml.TriggerBase)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Add(TriggerBase)
+  nameWithType: TriggerCollection.Add(TriggerBase)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Add(Microsoft.UI.Xaml.TriggerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Add
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9052
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Adds an item to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(TriggerBase item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The object to add to the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add(item As TriggerBase)
+  overload: Microsoft.UI.Xaml.TriggerCollection.Add*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Add(Microsoft.UI.Xaml.TriggerBase)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Clear
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Clear
+  id: Clear
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: TriggerCollection.Clear()
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Clear
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9053
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Removes all items from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.UI.Xaml.TriggerCollection.Clear*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Clear
+- uid: Microsoft.UI.Xaml.TriggerCollection.Contains(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Contains(Microsoft.UI.Xaml.TriggerBase)
+  id: Contains(Microsoft.UI.Xaml.TriggerBase)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(TriggerBase)
+  nameWithType: TriggerCollection.Contains(TriggerBase)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Contains(Microsoft.UI.Xaml.TriggerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Contains
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9054
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Determines whether the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> contains a specific value.
+  example: []
+  syntax:
+    content: public bool Contains(TriggerBase item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The object to locate in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> is found in the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Contains(item As TriggerBase) As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Contains(Microsoft.UI.Xaml.TriggerBase)
+- uid: Microsoft.UI.Xaml.TriggerCollection.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  id: CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(TriggerBase[], int)
+  nameWithType: TriggerCollection.CopyTo(TriggerBase[], int)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.CopyTo(Microsoft.UI.Xaml.TriggerBase[], int)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CopyTo
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9055
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Copies the elements of the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> to an <xref href="System.Array" data-throw-if-not-resolved="false"></xref>, starting at a particular <xref href="System.Array" data-throw-if-not-resolved="false"></xref> index.
+  example: []
+  syntax:
+    content: public void CopyTo(TriggerBase[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: Microsoft.UI.Xaml.TriggerBase[]
+      description: The one-dimensional <xref href="System.Array" data-throw-if-not-resolved="false"></xref> that is the destination of the elements copied from <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>. The <xref href="System.Array" data-throw-if-not-resolved="false"></xref> must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As TriggerBase(), arrayIndex As Integer)
+  overload: Microsoft.UI.Xaml.TriggerCollection.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">array</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">arrayIndex</code> is less than 0.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the source <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is greater than the available space from <code class="paramref">arrayIndex</code> to the end of the destination <code class="paramref">array</code>.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  nameWithType.vb: TriggerCollection.CopyTo(TriggerBase(), Integer)
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.CopyTo(Microsoft.UI.Xaml.TriggerBase(), Integer)
+  name.vb: CopyTo(TriggerBase(), Integer)
+- uid: Microsoft.UI.Xaml.TriggerCollection.Remove(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.Remove(Microsoft.UI.Xaml.TriggerBase)
+  id: Remove(Microsoft.UI.Xaml.TriggerBase)
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(TriggerBase)
+  nameWithType: TriggerCollection.Remove(TriggerBase)
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Remove(Microsoft.UI.Xaml.TriggerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Remove
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9056
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Removes the first occurrence of a specific object from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(TriggerBase item)
+    parameters:
+    - id: item
+      type: Microsoft.UI.Xaml.TriggerBase
+      description: The object to remove from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">item</code> was successfully removed from the <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <code class="paramref">item</code> is not found in the original <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Remove(item As TriggerBase) As Boolean
+  overload: Microsoft.UI.Xaml.TriggerCollection.Remove*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The <xref href="System.Collections.Generic.ICollection%601" data-throw-if-not-resolved="false"></xref> is read-only.
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Remove(Microsoft.UI.Xaml.TriggerBase)
+- uid: Microsoft.UI.Xaml.TriggerCollection.GetEnumerator
+  commentId: M:Microsoft.UI.Xaml.TriggerCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.UI.Xaml.TriggerCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: TriggerCollection.GetEnumerator()
+  fullName: Microsoft.UI.Xaml.TriggerCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Xaml.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnumerator
+    path: ../src/Microsoft.UI.Xaml.cs
+    startLine: 9058
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Xaml
+  summary: Returns an enumerator that iterates through the collection.
+  example: []
+  syntax:
+    content: public IEnumerator<TriggerBase> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.TriggerBase}
+      description: An enumerator that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of TriggerBase)
+  overload: Microsoft.UI.Xaml.TriggerCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}.GetEnumerator
+references:
+- uid: Microsoft.UI.Xaml
+  commentId: N:Microsoft.UI.Xaml
+  href: Microsoft.html
+  name: Microsoft.UI.Xaml
+  nameWithType: Microsoft.UI.Xaml
+  fullName: Microsoft.UI.Xaml
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Xaml
+    name: Xaml
+    href: Microsoft.UI.Xaml.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  commentId: T:System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<TriggerBase>
+  nameWithType: IList<TriggerBase>
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.TriggerBase>
+  nameWithType.vb: IList(Of TriggerBase)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.TriggerBase)
+  name.vb: IList(Of TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<TriggerBase>
+  nameWithType: ICollection<TriggerBase>
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>
+  nameWithType.vb: ICollection(Of TriggerBase)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase)
+  name.vb: ICollection(Of TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TriggerBase>
+  nameWithType: IEnumerable<TriggerBase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.UI.Xaml.TriggerBase>
+  nameWithType.vb: IEnumerable(Of TriggerBase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.UI.Xaml.TriggerBase)
+  name.vb: IEnumerable(Of TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}
+  commentId: T:System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TriggerCollection>
+  nameWithType: IEquatable<TriggerCollection>
+  fullName: System.IEquatable<Microsoft.UI.Xaml.TriggerCollection>
+  nameWithType.vb: IEquatable(Of TriggerCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.TriggerCollection)
+  name.vb: IEquatable(Of TriggerCollection)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.TriggerCollection
+    name: TriggerCollection
+    href: Microsoft.UI.Xaml.TriggerCollection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerCollection
+    name: TriggerCollection
+    href: Microsoft.UI.Xaml.TriggerCollection.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.FromAbi*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.FromAbi
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: TriggerCollection.FromAbi
+  fullName: Microsoft.UI.Xaml.TriggerCollection.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Xaml.TriggerCollection
+  commentId: T:Microsoft.UI.Xaml.TriggerCollection
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.TriggerCollection.html
+  name: TriggerCollection
+  nameWithType: TriggerCollection
+  fullName: Microsoft.UI.Xaml.TriggerCollection
+- uid: Microsoft.UI.Xaml.TriggerCollection.op_Equality*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.op_Equality
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_op_Equality_Microsoft_UI_Xaml_TriggerCollection_Microsoft_UI_Xaml_TriggerCollection_
+  name: operator ==
+  nameWithType: TriggerCollection.operator ==
+  fullName: Microsoft.UI.Xaml.TriggerCollection.operator ==
+  nameWithType.vb: TriggerCollection.=
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerCollection.op_Equality*
+    name: ==
+    href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_op_Equality_Microsoft_UI_Xaml_TriggerCollection_Microsoft_UI_Xaml_TriggerCollection_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Xaml.TriggerCollection.op_Inequality*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.op_Inequality
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_op_Inequality_Microsoft_UI_Xaml_TriggerCollection_Microsoft_UI_Xaml_TriggerCollection_
+  name: operator !=
+  nameWithType: TriggerCollection.operator !=
+  fullName: Microsoft.UI.Xaml.TriggerCollection.operator !=
+  nameWithType.vb: TriggerCollection.<>
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerCollection.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_op_Inequality_Microsoft_UI_Xaml_TriggerCollection_Microsoft_UI_Xaml_TriggerCollection_
+- uid: Microsoft.UI.Xaml.TriggerCollection.Equals*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Equals
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Equals_Microsoft_UI_Xaml_TriggerCollection_
+  name: Equals
+  nameWithType: TriggerCollection.Equals
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Equals
+- uid: System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  commentId: M:System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  parent: System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TriggerCollection)
+  nameWithType: IEquatable<TriggerCollection>.Equals(TriggerCollection)
+  fullName: System.IEquatable<Microsoft.UI.Xaml.TriggerCollection>.Equals(Microsoft.UI.Xaml.TriggerCollection)
+  nameWithType.vb: IEquatable(Of TriggerCollection).Equals(TriggerCollection)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Xaml.TriggerCollection).Equals(Microsoft.UI.Xaml.TriggerCollection)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}.Equals(Microsoft.UI.Xaml.TriggerCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerCollection
+    name: TriggerCollection
+    href: Microsoft.UI.Xaml.TriggerCollection.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Xaml.TriggerCollection}.Equals(Microsoft.UI.Xaml.TriggerCollection)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerCollection
+    name: TriggerCollection
+    href: Microsoft.UI.Xaml.TriggerCollection.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.GetHashCode*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.GetHashCode
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_GetHashCode
+  name: GetHashCode
+  nameWithType: TriggerCollection.GetHashCode
+  fullName: Microsoft.UI.Xaml.TriggerCollection.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.UI.Xaml.TriggerCollection.Count*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Count
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Count
+  name: Count
+  nameWithType: TriggerCollection.Count
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Count
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Count
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Count
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<TriggerBase>.Count
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.Count
+  nameWithType.vb: ICollection(Of TriggerBase).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.UI.Xaml.TriggerCollection.IsReadOnly*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_IsReadOnly
+  name: IsReadOnly
+  nameWithType: TriggerCollection.IsReadOnly
+  fullName: Microsoft.UI.Xaml.TriggerCollection.IsReadOnly
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<TriggerBase>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.IsReadOnly
+  nameWithType.vb: ICollection(Of TriggerBase).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: Microsoft.UI.Xaml.TriggerCollection.ListItem*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.ListItem
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_ListItem_System_Int32_
+  name: this
+  nameWithType: TriggerCollection.this
+  fullName: Microsoft.UI.Xaml.TriggerCollection.this
+  nameWithType.vb: TriggerCollection.this[]
+  fullName.vb: Microsoft.UI.Xaml.TriggerCollection.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<TriggerBase>.this[int]
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.TriggerBase>.this[int]
+  nameWithType.vb: IList(Of TriggerBase).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.TriggerBase).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerBase
+  commentId: T:Microsoft.UI.Xaml.TriggerBase
+  parent: Microsoft.UI.Xaml
+  href: Microsoft.UI.Xaml.TriggerBase.html
+  name: TriggerBase
+  nameWithType: TriggerBase
+  fullName: Microsoft.UI.Xaml.TriggerBase
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IList<T>.this[int]
+  fullName: System.Collections.Generic.IList<T>.this[int]
+  nameWithType.vb: IList(Of T).this[](Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.IndexOf*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.IndexOf
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_IndexOf_Microsoft_UI_Xaml_TriggerBase_
+  name: IndexOf
+  nameWithType: TriggerCollection.IndexOf
+  fullName: Microsoft.UI.Xaml.TriggerCollection.IndexOf
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(TriggerBase)
+  nameWithType: IList<TriggerBase>.IndexOf(TriggerBase)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.TriggerBase>.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: IList(Of TriggerBase).IndexOf(TriggerBase)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.TriggerBase).IndexOf(Microsoft.UI.Xaml.TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.IndexOf(Microsoft.UI.Xaml.TriggerBase)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.Insert*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Insert
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Insert_System_Int32_Microsoft_UI_Xaml_TriggerBase_
+  name: Insert
+  nameWithType: TriggerCollection.Insert
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Insert
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, TriggerBase)
+  nameWithType: IList<TriggerBase>.Insert(int, TriggerBase)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.TriggerBase>.Insert(int, Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: IList(Of TriggerBase).Insert(Integer, TriggerBase)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.TriggerBase).Insert(Integer, Microsoft.UI.Xaml.TriggerBase)
+  name.vb: Insert(Integer, TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.Insert(System.Int32,Microsoft.UI.Xaml.TriggerBase)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  name: Insert(int, T)
+  nameWithType: IList<T>.Insert(int, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(int, T)
+  nameWithType.vb: IList(Of T).Insert(Integer, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.insert
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.RemoveAt*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.RemoveAt
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: TriggerCollection.RemoveAt
+  fullName: Microsoft.UI.Xaml.TriggerCollection.RemoveAt
+- uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<TriggerBase>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<Microsoft.UI.Xaml.TriggerBase>.RemoveAt(int)
+  nameWithType.vb: IList(Of TriggerBase).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.UI.Xaml.TriggerBase).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList{Microsoft.UI.Xaml.TriggerBase}.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  name: RemoveAt(int)
+  nameWithType: IList<T>.RemoveAt(int)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(int)
+  nameWithType.vb: IList(Of T).RemoveAt(Integer)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1.removeat
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.Add*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Add
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Add_Microsoft_UI_Xaml_TriggerBase_
+  name: Add
+  nameWithType: TriggerCollection.Add
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Add
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Add(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Add(Microsoft.UI.Xaml.TriggerBase)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(TriggerBase)
+  nameWithType: ICollection<TriggerBase>.Add(TriggerBase)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.Add(Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: ICollection(Of TriggerBase).Add(TriggerBase)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).Add(Microsoft.UI.Xaml.TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Add(Microsoft.UI.Xaml.TriggerBase)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Add(Microsoft.UI.Xaml.TriggerBase)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.Clear*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Clear
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Clear
+  name: Clear
+  nameWithType: TriggerCollection.Clear
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Clear
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Clear
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Clear
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<TriggerBase>.Clear()
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.Clear()
+  nameWithType.vb: ICollection(Of TriggerBase).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.Contains*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Contains
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Contains_Microsoft_UI_Xaml_TriggerBase_
+  name: Contains
+  nameWithType: TriggerCollection.Contains
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Contains
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Contains(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Contains(Microsoft.UI.Xaml.TriggerBase)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(TriggerBase)
+  nameWithType: ICollection<TriggerBase>.Contains(TriggerBase)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.Contains(Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: ICollection(Of TriggerBase).Contains(TriggerBase)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).Contains(Microsoft.UI.Xaml.TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Contains(Microsoft.UI.Xaml.TriggerBase)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Contains(Microsoft.UI.Xaml.TriggerBase)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Array
+  commentId: T:System.Array
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Microsoft.UI.Xaml.TriggerCollection.CopyTo*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.CopyTo
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_CopyTo_Microsoft_UI_Xaml_TriggerBase___System_Int32_
+  name: CopyTo
+  nameWithType: TriggerCollection.CopyTo
+  fullName: Microsoft.UI.Xaml.TriggerCollection.CopyTo
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(TriggerBase[], int)
+  nameWithType: ICollection<TriggerBase>.CopyTo(TriggerBase[], int)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.CopyTo(Microsoft.UI.Xaml.TriggerBase[], int)
+  nameWithType.vb: ICollection(Of TriggerBase).CopyTo(TriggerBase(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).CopyTo(Microsoft.UI.Xaml.TriggerBase(), Integer)
+  name.vb: CopyTo(TriggerBase(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.CopyTo(Microsoft.UI.Xaml.TriggerBase[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerBase[]
+  isExternal: true
+  href: Microsoft.UI.Xaml.TriggerBase.html
+  name: TriggerBase[]
+  nameWithType: TriggerBase[]
+  fullName: Microsoft.UI.Xaml.TriggerBase[]
+  nameWithType.vb: TriggerBase()
+  fullName.vb: Microsoft.UI.Xaml.TriggerBase()
+  name.vb: TriggerBase()
+  spec.csharp:
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.Remove*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.Remove
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_Remove_Microsoft_UI_Xaml_TriggerBase_
+  name: Remove
+  nameWithType: TriggerCollection.Remove
+  fullName: Microsoft.UI.Xaml.TriggerCollection.Remove
+- uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Remove(Microsoft.UI.Xaml.TriggerBase)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Remove(Microsoft.UI.Xaml.TriggerBase)
+  parent: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(TriggerBase)
+  nameWithType: ICollection<TriggerBase>.Remove(TriggerBase)
+  fullName: System.Collections.Generic.ICollection<Microsoft.UI.Xaml.TriggerBase>.Remove(Microsoft.UI.Xaml.TriggerBase)
+  nameWithType.vb: ICollection(Of TriggerBase).Remove(TriggerBase)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.UI.Xaml.TriggerBase).Remove(Microsoft.UI.Xaml.TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Remove(Microsoft.UI.Xaml.TriggerBase)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.UI.Xaml.TriggerBase}.Remove(Microsoft.UI.Xaml.TriggerBase)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Xaml.TriggerCollection.GetEnumerator*
+  commentId: Overload:Microsoft.UI.Xaml.TriggerCollection.GetEnumerator
+  href: Microsoft.UI.Xaml.TriggerCollection.html#Microsoft_UI_Xaml_TriggerCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: TriggerCollection.GetEnumerator
+  fullName: Microsoft.UI.Xaml.TriggerCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<TriggerBase>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.UI.Xaml.TriggerBase>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of TriggerBase).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.UI.Xaml.TriggerBase).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.UI.Xaml.TriggerBase}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.TriggerBase}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.UI.Xaml.TriggerBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<TriggerBase>
+  nameWithType: IEnumerator<TriggerBase>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.UI.Xaml.TriggerBase>
+  nameWithType.vb: IEnumerator(Of TriggerBase)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.UI.Xaml.TriggerBase)
+  name.vb: IEnumerator(Of TriggerBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Xaml.TriggerBase
+    name: TriggerBase
+    href: Microsoft.UI.Xaml.TriggerBase.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,2292 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.UI.Content.ContentSite
+  commentId: T:Microsoft.UI.Content.ContentSite
+  id: ContentSite
+  parent: Microsoft.UI.Content
+  children:
+  - Microsoft.UI.Content.ContentSite.#ctor(WinRT.DerivedComposed)
+  - Microsoft.UI.Content.ContentSite.#ctor(WinRT.IObjectReference)
+  - Microsoft.UI.Content.ContentSite.ActualSize
+  - Microsoft.UI.Content.ContentSite.ClientSize
+  - Microsoft.UI.Content.ContentSite.Closed
+  - Microsoft.UI.Content.ContentSite.CoordinateConverter
+  - Microsoft.UI.Content.ContentSite.DispatcherQueue
+  - Microsoft.UI.Content.ContentSite.Dispose
+  - Microsoft.UI.Content.ContentSite.Environment
+  - Microsoft.UI.Content.ContentSite.Equals(Microsoft.UI.Content.ContentSite)
+  - Microsoft.UI.Content.ContentSite.Equals(System.Object)
+  - Microsoft.UI.Content.ContentSite.FrameworkClosed
+  - Microsoft.UI.Content.ContentSite.FromAbi(System.IntPtr)
+  - Microsoft.UI.Content.ContentSite.GetHashCode
+  - Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral
+  - Microsoft.UI.Content.ContentSite.IsClosed
+  - Microsoft.UI.Content.ContentSite.IsConnected
+  - Microsoft.UI.Content.ContentSite.IsOverridableInterface(System.Guid)
+  - Microsoft.UI.Content.ContentSite.IsSiteEnabled
+  - Microsoft.UI.Content.ContentSite.IsSiteVisible
+  - Microsoft.UI.Content.ContentSite.LayoutDirection
+  - Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+  - Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+  - Microsoft.UI.Content.ContentSite.OverrideScale
+  - Microsoft.UI.Content.ContentSite.ParentScale
+  - Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+  - Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+  - Microsoft.UI.Content.ContentSite.RasterizationScale
+  - Microsoft.UI.Content.ContentSite.RequestedSize
+  - Microsoft.UI.Content.ContentSite.RequestedStateChanged
+  - Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+  - Microsoft.UI.Content.ContentSite.TryGetAutomationProvider(System.Object@)
+  - Microsoft.UI.Content.ContentSite.View
+  - Microsoft.UI.Content.ContentSite.op_Equality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  - Microsoft.UI.Content.ContentSite.op_Inequality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  langs:
+  - csharp
+  - vb
+  name: ContentSite
+  nameWithType: ContentSite
+  fullName: Microsoft.UI.Content.ContentSite
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ContentSite
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1701
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.UI")]
+
+      [WindowsRuntimeHelperType(typeof(ContentSite))]
+
+      [ProjectedRuntimeClass(typeof(IContentSite))]
+
+      [ContractVersion(typeof(WindowsAppSDKContract), 65540)]
+
+      public class ContentSite : IDisposable, IClosableNotifier, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<ContentSite>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.UI")>
+
+      <WindowsRuntimeHelperType(GetType(ContentSite))>
+
+      <ProjectedRuntimeClass(GetType(IContentSite))>
+
+      <ContractVersion(GetType(WindowsAppSDKContract), 65540)>
+
+      Public Class ContentSite Implements IDisposable, IClosableNotifier, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of ContentSite)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - Microsoft.UI.IClosableNotifier
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.UI.Content.ContentSite}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.UI
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Foundation.WindowsAppSDKContract
+    - type: System.UInt32
+      value: "65540"
+- uid: Microsoft.UI.Content.ContentSite.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.UI.Content.ContentSite.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: ContentSite.FromAbi(nint)
+  fullName: Microsoft.UI.Content.ContentSite.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1777
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static ContentSite FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.UI.Content.ContentSite
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As ContentSite
+  overload: Microsoft.UI.Content.ContentSite.FromAbi*
+  nameWithType.vb: ContentSite.FromAbi(IntPtr)
+  fullName.vb: Microsoft.UI.Content.ContentSite.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.UI.Content.ContentSite.#ctor(WinRT.IObjectReference)
+  commentId: M:Microsoft.UI.Content.ContentSite.#ctor(WinRT.IObjectReference)
+  id: '#ctor(WinRT.IObjectReference)'
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ContentSite(IObjectReference)
+  nameWithType: ContentSite.ContentSite(IObjectReference)
+  fullName: Microsoft.UI.Content.ContentSite.ContentSite(WinRT.IObjectReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1783
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: protected ContentSite(IObjectReference objRef)
+    parameters:
+    - id: objRef
+      type: WinRT.IObjectReference
+    content.vb: Protected Sub New(objRef As IObjectReference)
+  overload: Microsoft.UI.Content.ContentSite.#ctor*
+  nameWithType.vb: ContentSite.New(IObjectReference)
+  fullName.vb: Microsoft.UI.Content.ContentSite.New(WinRT.IObjectReference)
+  name.vb: New(IObjectReference)
+- uid: Microsoft.UI.Content.ContentSite.op_Equality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  commentId: M:Microsoft.UI.Content.ContentSite.op_Equality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  id: op_Equality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ContentSite, ContentSite)
+  nameWithType: ContentSite.operator ==(ContentSite, ContentSite)
+  fullName: Microsoft.UI.Content.ContentSite.operator ==(Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSite)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1790
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static bool operator ==(ContentSite x, ContentSite y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Content.ContentSite
+    - id: y
+      type: Microsoft.UI.Content.ContentSite
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As ContentSite, y As ContentSite) As Boolean
+  overload: Microsoft.UI.Content.ContentSite.op_Equality*
+  nameWithType.vb: ContentSite.=(ContentSite, ContentSite)
+  fullName.vb: Microsoft.UI.Content.ContentSite.=(Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSite)
+  name.vb: =(ContentSite, ContentSite)
+- uid: Microsoft.UI.Content.ContentSite.op_Inequality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  commentId: M:Microsoft.UI.Content.ContentSite.op_Inequality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  id: op_Inequality(Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSite)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ContentSite, ContentSite)
+  nameWithType: ContentSite.operator !=(ContentSite, ContentSite)
+  fullName: Microsoft.UI.Content.ContentSite.operator !=(Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSite)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1791
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public static bool operator !=(ContentSite x, ContentSite y)
+    parameters:
+    - id: x
+      type: Microsoft.UI.Content.ContentSite
+    - id: y
+      type: Microsoft.UI.Content.ContentSite
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As ContentSite, y As ContentSite) As Boolean
+  overload: Microsoft.UI.Content.ContentSite.op_Inequality*
+  nameWithType.vb: ContentSite.<>(ContentSite, ContentSite)
+  fullName.vb: Microsoft.UI.Content.ContentSite.<>(Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSite)
+  name.vb: <>(ContentSite, ContentSite)
+- uid: Microsoft.UI.Content.ContentSite.Equals(Microsoft.UI.Content.ContentSite)
+  commentId: M:Microsoft.UI.Content.ContentSite.Equals(Microsoft.UI.Content.ContentSite)
+  id: Equals(Microsoft.UI.Content.ContentSite)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: Equals(ContentSite)
+  nameWithType: ContentSite.Equals(ContentSite)
+  fullName: Microsoft.UI.Content.ContentSite.Equals(Microsoft.UI.Content.ContentSite)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1792
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(ContentSite other)
+    parameters:
+    - id: other
+      type: Microsoft.UI.Content.ContentSite
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As ContentSite) As Boolean
+  overload: Microsoft.UI.Content.ContentSite.Equals*
+  implements:
+  - System.IEquatable{Microsoft.UI.Content.ContentSite}.Equals(Microsoft.UI.Content.ContentSite)
+- uid: Microsoft.UI.Content.ContentSite.Equals(System.Object)
+  commentId: M:Microsoft.UI.Content.ContentSite.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ContentSite.Equals(object)
+  fullName: Microsoft.UI.Content.ContentSite.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1793
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.UI.Content.ContentSite.Equals*
+  nameWithType.vb: ContentSite.Equals(Object)
+  fullName.vb: Microsoft.UI.Content.ContentSite.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.UI.Content.ContentSite.GetHashCode
+  commentId: M:Microsoft.UI.Content.ContentSite.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ContentSite.GetHashCode()
+  fullName: Microsoft.UI.Content.ContentSite.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1794
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.UI.Content.ContentSite.GetHashCode*
+- uid: Microsoft.UI.Content.ContentSite.#ctor(WinRT.DerivedComposed)
+  commentId: M:Microsoft.UI.Content.ContentSite.#ctor(WinRT.DerivedComposed)
+  id: '#ctor(WinRT.DerivedComposed)'
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ContentSite(DerivedComposed)
+  nameWithType: ContentSite.ContentSite(DerivedComposed)
+  fullName: Microsoft.UI.Content.ContentSite.ContentSite(WinRT.DerivedComposed)
+  type: Constructor
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: .ctor
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1797
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: protected ContentSite(DerivedComposed _)
+    parameters:
+    - id: _
+      type: WinRT.DerivedComposed
+    content.vb: Protected Sub New(_ As DerivedComposed)
+  overload: Microsoft.UI.Content.ContentSite.#ctor*
+  nameWithType.vb: ContentSite.New(DerivedComposed)
+  fullName.vb: Microsoft.UI.Content.ContentSite.New(WinRT.DerivedComposed)
+  name.vb: New(DerivedComposed)
+- uid: Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral
+  commentId: M:Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral
+  id: GetIslandStateChangeDeferral
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: GetIslandStateChangeDeferral()
+  nameWithType: ContentSite.GetIslandStateChangeDeferral()
+  fullName: Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetIslandStateChangeDeferral
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1821
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentDeferral GetIslandStateChangeDeferral()
+    return:
+      type: Microsoft.UI.Content.ContentDeferral
+    content.vb: Public Function GetIslandStateChangeDeferral() As ContentDeferral
+  overload: Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral*
+- uid: Microsoft.UI.Content.ContentSite.RequestedStateChanged
+  commentId: E:Microsoft.UI.Content.ContentSite.RequestedStateChanged
+  id: RequestedStateChanged
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: RequestedStateChanged
+  nameWithType: ContentSite.RequestedStateChanged
+  fullName: Microsoft.UI.Content.ContentSite.RequestedStateChanged
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RequestedStateChanged
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1823
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public event TypedEventHandler<ContentSite, ContentSiteRequestedStateChangedEventArgs> RequestedStateChanged
+    return:
+      type: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs}
+    content.vb: Public Event RequestedStateChanged As TypedEventHandler(Of ContentSite, ContentSiteRequestedStateChangedEventArgs)
+- uid: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider(System.Object@)
+  commentId: M:Microsoft.UI.Content.ContentSite.TryGetAutomationProvider(System.Object@)
+  id: TryGetAutomationProvider(System.Object@)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: TryGetAutomationProvider(out object)
+  nameWithType: ContentSite.TryGetAutomationProvider(out object)
+  fullName: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider(out object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: TryGetAutomationProvider
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1829
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool TryGetAutomationProvider(out object provider)
+    parameters:
+    - id: provider
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetAutomationProvider(provider As Object) As Boolean
+  overload: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider*
+  nameWithType.vb: ContentSite.TryGetAutomationProvider(Object)
+  fullName.vb: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider(Object)
+  name.vb: TryGetAutomationProvider(Object)
+- uid: Microsoft.UI.Content.ContentSite.Dispose
+  commentId: M:Microsoft.UI.Content.ContentSite.Dispose
+  id: Dispose
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ContentSite.Dispose()
+  fullName: Microsoft.UI.Content.ContentSite.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Dispose
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1831
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.UI.Content.ContentSite.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.UI.Content.ContentSite.Closed
+  commentId: E:Microsoft.UI.Content.ContentSite.Closed
+  id: Closed
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: ContentSite.Closed
+  fullName: Microsoft.UI.Content.ContentSite.Closed
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Closed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1833
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public event ClosableNotifierHandler Closed
+    return:
+      type: Microsoft.UI.ClosableNotifierHandler
+    content.vb: Public Event Closed As ClosableNotifierHandler
+  implements:
+  - Microsoft.UI.IClosableNotifier.Closed
+- uid: Microsoft.UI.Content.ContentSite.FrameworkClosed
+  commentId: E:Microsoft.UI.Content.ContentSite.FrameworkClosed
+  id: FrameworkClosed
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: FrameworkClosed
+  nameWithType: ContentSite.FrameworkClosed
+  fullName: Microsoft.UI.Content.ContentSite.FrameworkClosed
+  type: Event
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FrameworkClosed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1839
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public event ClosableNotifierHandler FrameworkClosed
+    return:
+      type: Microsoft.UI.ClosableNotifierHandler
+    content.vb: Public Event FrameworkClosed As ClosableNotifierHandler
+  implements:
+  - Microsoft.UI.IClosableNotifier.FrameworkClosed
+- uid: Microsoft.UI.Content.ContentSite.ActualSize
+  commentId: P:Microsoft.UI.Content.ContentSite.ActualSize
+  id: ActualSize
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ActualSize
+  nameWithType: ContentSite.ActualSize
+  fullName: Microsoft.UI.Content.ContentSite.ActualSize
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ActualSize
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1845
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public Vector2 ActualSize { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+    content.vb: Public Property ActualSize As Vector2
+  overload: Microsoft.UI.Content.ContentSite.ActualSize*
+- uid: Microsoft.UI.Content.ContentSite.ClientSize
+  commentId: P:Microsoft.UI.Content.ContentSite.ClientSize
+  id: ClientSize
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ClientSize
+  nameWithType: ContentSite.ClientSize
+  fullName: Microsoft.UI.Content.ContentSite.ClientSize
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ClientSize
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1851
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public SizeInt32 ClientSize { get; set; }
+    parameters: []
+    return:
+      type: Windows.Graphics.SizeInt32
+    content.vb: Public Property ClientSize As SizeInt32
+  overload: Microsoft.UI.Content.ContentSite.ClientSize*
+- uid: Microsoft.UI.Content.ContentSite.CoordinateConverter
+  commentId: P:Microsoft.UI.Content.ContentSite.CoordinateConverter
+  id: CoordinateConverter
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: CoordinateConverter
+  nameWithType: ContentSite.CoordinateConverter
+  fullName: Microsoft.UI.Content.ContentSite.CoordinateConverter
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: CoordinateConverter
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1857
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentCoordinateConverter CoordinateConverter { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentCoordinateConverter
+    content.vb: Public ReadOnly Property CoordinateConverter As ContentCoordinateConverter
+  overload: Microsoft.UI.Content.ContentSite.CoordinateConverter*
+- uid: Microsoft.UI.Content.ContentSite.DispatcherQueue
+  commentId: P:Microsoft.UI.Content.ContentSite.DispatcherQueue
+  id: DispatcherQueue
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: DispatcherQueue
+  nameWithType: ContentSite.DispatcherQueue
+  fullName: Microsoft.UI.Content.ContentSite.DispatcherQueue
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: DispatcherQueue
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1859
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public DispatcherQueue DispatcherQueue { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Dispatching.DispatcherQueue
+    content.vb: Public ReadOnly Property DispatcherQueue As DispatcherQueue
+  overload: Microsoft.UI.Content.ContentSite.DispatcherQueue*
+- uid: Microsoft.UI.Content.ContentSite.Environment
+  commentId: P:Microsoft.UI.Content.ContentSite.Environment
+  id: Environment
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: ContentSite.Environment
+  fullName: Microsoft.UI.Content.ContentSite.Environment
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Environment
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1861
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentSiteEnvironment Environment { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentSiteEnvironment
+    content.vb: Public ReadOnly Property Environment As ContentSiteEnvironment
+  overload: Microsoft.UI.Content.ContentSite.Environment*
+- uid: Microsoft.UI.Content.ContentSite.IsClosed
+  commentId: P:Microsoft.UI.Content.ContentSite.IsClosed
+  id: IsClosed
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: IsClosed
+  nameWithType: ContentSite.IsClosed
+  fullName: Microsoft.UI.Content.ContentSite.IsClosed
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsClosed
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1863
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  example: []
+  syntax:
+    content: public bool IsClosed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsClosed As Boolean
+  overload: Microsoft.UI.Content.ContentSite.IsClosed*
+  implements:
+  - Microsoft.UI.IClosableNotifier.IsClosed
+- uid: Microsoft.UI.Content.ContentSite.IsConnected
+  commentId: P:Microsoft.UI.Content.ContentSite.IsConnected
+  id: IsConnected
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: ContentSite.IsConnected
+  fullName: Microsoft.UI.Content.ContentSite.IsConnected
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsConnected
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1865
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Microsoft.UI.Content.ContentSite.IsConnected*
+- uid: Microsoft.UI.Content.ContentSite.IsSiteEnabled
+  commentId: P:Microsoft.UI.Content.ContentSite.IsSiteEnabled
+  id: IsSiteEnabled
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: IsSiteEnabled
+  nameWithType: ContentSite.IsSiteEnabled
+  fullName: Microsoft.UI.Content.ContentSite.IsSiteEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSiteEnabled
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1867
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool IsSiteEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSiteEnabled As Boolean
+  overload: Microsoft.UI.Content.ContentSite.IsSiteEnabled*
+- uid: Microsoft.UI.Content.ContentSite.IsSiteVisible
+  commentId: P:Microsoft.UI.Content.ContentSite.IsSiteVisible
+  id: IsSiteVisible
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: IsSiteVisible
+  nameWithType: ContentSite.IsSiteVisible
+  fullName: Microsoft.UI.Content.ContentSite.IsSiteVisible
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSiteVisible
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1873
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool IsSiteVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSiteVisible As Boolean
+  overload: Microsoft.UI.Content.ContentSite.IsSiteVisible*
+- uid: Microsoft.UI.Content.ContentSite.LayoutDirection
+  commentId: P:Microsoft.UI.Content.ContentSite.LayoutDirection
+  id: LayoutDirection
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: LayoutDirection
+  nameWithType: ContentSite.LayoutDirection
+  fullName: Microsoft.UI.Content.ContentSite.LayoutDirection
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LayoutDirection
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1879
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentLayoutDirection LayoutDirection { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentLayoutDirection
+    content.vb: Public Property LayoutDirection As ContentLayoutDirection
+  overload: Microsoft.UI.Content.ContentSite.LayoutDirection*
+- uid: Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+  commentId: P:Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+  id: LocalToClientTransformMatrix
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: LocalToClientTransformMatrix
+  nameWithType: ContentSite.LocalToClientTransformMatrix
+  fullName: Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalToClientTransformMatrix
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1885
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public Matrix4x4 LocalToClientTransformMatrix { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Matrix4x4
+    content.vb: Public ReadOnly Property LocalToClientTransformMatrix As Matrix4x4
+  overload: Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix*
+- uid: Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+  commentId: P:Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+  id: LocalToParentTransformMatrix
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: LocalToParentTransformMatrix
+  nameWithType: ContentSite.LocalToParentTransformMatrix
+  fullName: Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: LocalToParentTransformMatrix
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1887
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public Matrix4x4 LocalToParentTransformMatrix { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.Matrix4x4
+    content.vb: Public Property LocalToParentTransformMatrix As Matrix4x4
+  overload: Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix*
+- uid: Microsoft.UI.Content.ContentSite.OverrideScale
+  commentId: P:Microsoft.UI.Content.ContentSite.OverrideScale
+  id: OverrideScale
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: OverrideScale
+  nameWithType: ContentSite.OverrideScale
+  fullName: Microsoft.UI.Content.ContentSite.OverrideScale
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: OverrideScale
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1893
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public float OverrideScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property OverrideScale As Single
+  overload: Microsoft.UI.Content.ContentSite.OverrideScale*
+- uid: Microsoft.UI.Content.ContentSite.ParentScale
+  commentId: P:Microsoft.UI.Content.ContentSite.ParentScale
+  id: ParentScale
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ParentScale
+  nameWithType: ContentSite.ParentScale
+  fullName: Microsoft.UI.Content.ContentSite.ParentScale
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ParentScale
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1899
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public float ParentScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ParentScale As Single
+  overload: Microsoft.UI.Content.ContentSite.ParentScale*
+- uid: Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+  commentId: P:Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+  id: ProcessesKeyboardInput
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ProcessesKeyboardInput
+  nameWithType: ContentSite.ProcessesKeyboardInput
+  fullName: Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessesKeyboardInput
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1905
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool ProcessesKeyboardInput { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ProcessesKeyboardInput As Boolean
+  overload: Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput*
+- uid: Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+  commentId: P:Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+  id: ProcessesPointerInput
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ProcessesPointerInput
+  nameWithType: ContentSite.ProcessesPointerInput
+  fullName: Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ProcessesPointerInput
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1911
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool ProcessesPointerInput { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ProcessesPointerInput As Boolean
+  overload: Microsoft.UI.Content.ContentSite.ProcessesPointerInput*
+- uid: Microsoft.UI.Content.ContentSite.RasterizationScale
+  commentId: P:Microsoft.UI.Content.ContentSite.RasterizationScale
+  id: RasterizationScale
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: RasterizationScale
+  nameWithType: ContentSite.RasterizationScale
+  fullName: Microsoft.UI.Content.ContentSite.RasterizationScale
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RasterizationScale
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1917
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public float RasterizationScale { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property RasterizationScale As Single
+  overload: Microsoft.UI.Content.ContentSite.RasterizationScale*
+- uid: Microsoft.UI.Content.ContentSite.RequestedSize
+  commentId: P:Microsoft.UI.Content.ContentSite.RequestedSize
+  id: RequestedSize
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: RequestedSize
+  nameWithType: ContentSite.RequestedSize
+  fullName: Microsoft.UI.Content.ContentSite.RequestedSize
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RequestedSize
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1919
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public Vector2 RequestedSize { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+    content.vb: Public ReadOnly Property RequestedSize As Vector2
+  overload: Microsoft.UI.Content.ContentSite.RequestedSize*
+- uid: Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+  commentId: P:Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+  id: ShouldApplyRasterizationScale
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: ShouldApplyRasterizationScale
+  nameWithType: ContentSite.ShouldApplyRasterizationScale
+  fullName: Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: ShouldApplyRasterizationScale
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1921
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public bool ShouldApplyRasterizationScale { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShouldApplyRasterizationScale As Boolean
+  overload: Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale*
+- uid: Microsoft.UI.Content.ContentSite.View
+  commentId: P:Microsoft.UI.Content.ContentSite.View
+  id: View
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: ContentSite.View
+  fullName: Microsoft.UI.Content.ContentSite.View
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: View
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1927
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: public ContentSiteView View { get; }
+    parameters: []
+    return:
+      type: Microsoft.UI.Content.ContentSiteView
+    content.vb: Public ReadOnly Property View As ContentSiteView
+  overload: Microsoft.UI.Content.ContentSite.View*
+- uid: Microsoft.UI.Content.ContentSite.IsOverridableInterface(System.Guid)
+  commentId: M:Microsoft.UI.Content.ContentSite.IsOverridableInterface(System.Guid)
+  id: IsOverridableInterface(System.Guid)
+  parent: Microsoft.UI.Content.ContentSite
+  langs:
+  - csharp
+  - vb
+  name: IsOverridableInterface(Guid)
+  nameWithType: ContentSite.IsOverridableInterface(Guid)
+  fullName: Microsoft.UI.Content.ContentSite.IsOverridableInterface(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.UI.Content.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsOverridableInterface
+    path: ../src/Microsoft.UI.Content.cs
+    startLine: 1929
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.UI.Content
+  syntax:
+    content: protected virtual bool IsOverridableInterface(Guid iid)
+    parameters:
+    - id: iid
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsOverridableInterface(iid As Guid) As Boolean
+  overload: Microsoft.UI.Content.ContentSite.IsOverridableInterface*
+references:
+- uid: Microsoft.UI.Content
+  commentId: N:Microsoft.UI.Content
+  href: Microsoft.html
+  name: Microsoft.UI.Content
+  nameWithType: Microsoft.UI.Content
+  fullName: Microsoft.UI.Content
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Content
+    name: Content
+    href: Microsoft.UI.Content.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.UI.IClosableNotifier
+  commentId: T:Microsoft.UI.IClosableNotifier
+  parent: Microsoft.UI
+  href: Microsoft.UI.IClosableNotifier.html
+  name: IClosableNotifier
+  nameWithType: IClosableNotifier
+  fullName: Microsoft.UI.IClosableNotifier
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.UI.Content.ContentSite}
+  commentId: T:System.IEquatable{Microsoft.UI.Content.ContentSite}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ContentSite>
+  nameWithType: IEquatable<ContentSite>
+  fullName: System.IEquatable<Microsoft.UI.Content.ContentSite>
+  nameWithType.vb: IEquatable(Of ContentSite)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Content.ContentSite)
+  name.vb: IEquatable(Of ContentSite)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.UI
+  commentId: N:Microsoft.UI
+  href: Microsoft.html
+  name: Microsoft.UI
+  nameWithType: Microsoft.UI
+  fullName: Microsoft.UI
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.UI.Content.ContentSite.FromAbi*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.FromAbi
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: ContentSite.FromAbi
+  fullName: Microsoft.UI.Content.ContentSite.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.UI.Content.ContentSite
+  commentId: T:Microsoft.UI.Content.ContentSite
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentSite.html
+  name: ContentSite
+  nameWithType: ContentSite
+  fullName: Microsoft.UI.Content.ContentSite
+- uid: Microsoft.UI.Content.ContentSite.#ctor*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.#ctor
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite__ctor_WinRT_IObjectReference_
+  name: ContentSite
+  nameWithType: ContentSite.ContentSite
+  fullName: Microsoft.UI.Content.ContentSite.ContentSite
+  nameWithType.vb: ContentSite.New
+  fullName.vb: Microsoft.UI.Content.ContentSite.New
+  name.vb: New
+- uid: WinRT.IObjectReference
+  commentId: T:WinRT.IObjectReference
+  parent: WinRT
+  isExternal: true
+  name: IObjectReference
+  nameWithType: IObjectReference
+  fullName: WinRT.IObjectReference
+- uid: Microsoft.UI.Content.ContentSite.op_Equality*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.op_Equality
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_op_Equality_Microsoft_UI_Content_ContentSite_Microsoft_UI_Content_ContentSite_
+  name: operator ==
+  nameWithType: ContentSite.operator ==
+  fullName: Microsoft.UI.Content.ContentSite.operator ==
+  nameWithType.vb: ContentSite.=
+  fullName.vb: Microsoft.UI.Content.ContentSite.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSite.op_Equality*
+    name: ==
+    href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_op_Equality_Microsoft_UI_Content_ContentSite_Microsoft_UI_Content_ContentSite_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.UI.Content.ContentSite.op_Inequality*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.op_Inequality
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_op_Inequality_Microsoft_UI_Content_ContentSite_Microsoft_UI_Content_ContentSite_
+  name: operator !=
+  nameWithType: ContentSite.operator !=
+  fullName: Microsoft.UI.Content.ContentSite.operator !=
+  nameWithType.vb: ContentSite.<>
+  fullName.vb: Microsoft.UI.Content.ContentSite.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSite.op_Inequality*
+    name: '!='
+    href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_op_Inequality_Microsoft_UI_Content_ContentSite_Microsoft_UI_Content_ContentSite_
+- uid: Microsoft.UI.Content.ContentSite.Equals*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.Equals
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_Equals_Microsoft_UI_Content_ContentSite_
+  name: Equals
+  nameWithType: ContentSite.Equals
+  fullName: Microsoft.UI.Content.ContentSite.Equals
+- uid: System.IEquatable{Microsoft.UI.Content.ContentSite}.Equals(Microsoft.UI.Content.ContentSite)
+  commentId: M:System.IEquatable{Microsoft.UI.Content.ContentSite}.Equals(Microsoft.UI.Content.ContentSite)
+  parent: System.IEquatable{Microsoft.UI.Content.ContentSite}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ContentSite)
+  nameWithType: IEquatable<ContentSite>.Equals(ContentSite)
+  fullName: System.IEquatable<Microsoft.UI.Content.ContentSite>.Equals(Microsoft.UI.Content.ContentSite)
+  nameWithType.vb: IEquatable(Of ContentSite).Equals(ContentSite)
+  fullName.vb: System.IEquatable(Of Microsoft.UI.Content.ContentSite).Equals(Microsoft.UI.Content.ContentSite)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.UI.Content.ContentSite}.Equals(Microsoft.UI.Content.ContentSite)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.UI.Content.ContentSite}.Equals(Microsoft.UI.Content.ContentSite)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.UI.Content.ContentSite.GetHashCode*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.GetHashCode
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_GetHashCode
+  name: GetHashCode
+  nameWithType: ContentSite.GetHashCode
+  fullName: Microsoft.UI.Content.ContentSite.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: WinRT.DerivedComposed
+  commentId: T:WinRT.DerivedComposed
+  parent: WinRT
+  isExternal: true
+  name: DerivedComposed
+  nameWithType: DerivedComposed
+  fullName: WinRT.DerivedComposed
+- uid: Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_GetIslandStateChangeDeferral
+  name: GetIslandStateChangeDeferral
+  nameWithType: ContentSite.GetIslandStateChangeDeferral
+  fullName: Microsoft.UI.Content.ContentSite.GetIslandStateChangeDeferral
+- uid: Microsoft.UI.Content.ContentDeferral
+  commentId: T:Microsoft.UI.Content.ContentDeferral
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentDeferral.html
+  name: ContentDeferral
+  nameWithType: ContentDeferral
+  fullName: Microsoft.UI.Content.ContentDeferral
+- uid: Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs}
+  commentId: T:Windows.Foundation.TypedEventHandler{Microsoft.UI.Content.ContentSite,Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs}
+  parent: Windows.Foundation
+  definition: Windows.Foundation.TypedEventHandler`2
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<ContentSite, ContentSiteRequestedStateChangedEventArgs>
+  nameWithType: TypedEventHandler<ContentSite, ContentSiteRequestedStateChangedEventArgs>
+  fullName: Windows.Foundation.TypedEventHandler<Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs>
+  nameWithType.vb: TypedEventHandler(Of ContentSite, ContentSiteRequestedStateChangedEventArgs)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of Microsoft.UI.Content.ContentSite, Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs)
+  name.vb: TypedEventHandler(Of ContentSite, ContentSiteRequestedStateChangedEventArgs)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs
+    name: ContentSiteRequestedStateChangedEventArgs
+    href: Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSite
+    name: ContentSite
+    href: Microsoft.UI.Content.ContentSite.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs
+    name: ContentSiteRequestedStateChangedEventArgs
+    href: Microsoft.UI.Content.ContentSiteRequestedStateChangedEventArgs.html
+  - name: )
+- uid: Windows.Foundation.TypedEventHandler`2
+  commentId: T:Windows.Foundation.TypedEventHandler`2
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  name: TypedEventHandler<TSender, TResult>
+  nameWithType: TypedEventHandler<TSender, TResult>
+  fullName: Windows.Foundation.TypedEventHandler<TSender, TResult>
+  nameWithType.vb: TypedEventHandler(Of TSender, TResult)
+  fullName.vb: Windows.Foundation.TypedEventHandler(Of TSender, TResult)
+  name.vb: TypedEventHandler(Of TSender, TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: <
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Windows.Foundation.TypedEventHandler`2
+    name: TypedEventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSender
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Windows.Foundation
+  commentId: N:Windows.Foundation
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Foundation
+  nameWithType: Windows.Foundation
+  fullName: Windows.Foundation
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Foundation
+    name: Foundation
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.foundation
+- uid: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.TryGetAutomationProvider
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_TryGetAutomationProvider_System_Object__
+  name: TryGetAutomationProvider
+  nameWithType: ContentSite.TryGetAutomationProvider
+  fullName: Microsoft.UI.Content.ContentSite.TryGetAutomationProvider
+- uid: Microsoft.UI.Content.ContentSite.Dispose*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.Dispose
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_Dispose
+  name: Dispose
+  nameWithType: ContentSite.Dispose
+  fullName: Microsoft.UI.Content.ContentSite.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.UI.IClosableNotifier.Closed
+  commentId: E:Microsoft.UI.IClosableNotifier.Closed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_Closed
+  name: Closed
+  nameWithType: IClosableNotifier.Closed
+  fullName: Microsoft.UI.IClosableNotifier.Closed
+- uid: Microsoft.UI.ClosableNotifierHandler
+  commentId: T:Microsoft.UI.ClosableNotifierHandler
+  parent: Microsoft.UI
+  href: Microsoft.UI.ClosableNotifierHandler.html
+  name: ClosableNotifierHandler
+  nameWithType: ClosableNotifierHandler
+  fullName: Microsoft.UI.ClosableNotifierHandler
+- uid: Microsoft.UI.IClosableNotifier.FrameworkClosed
+  commentId: E:Microsoft.UI.IClosableNotifier.FrameworkClosed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_FrameworkClosed
+  name: FrameworkClosed
+  nameWithType: IClosableNotifier.FrameworkClosed
+  fullName: Microsoft.UI.IClosableNotifier.FrameworkClosed
+- uid: Microsoft.UI.Content.ContentSite.ActualSize*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ActualSize
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ActualSize
+  name: ActualSize
+  nameWithType: ContentSite.ActualSize
+  fullName: Microsoft.UI.Content.ContentSite.ActualSize
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector2
+  name: Vector2
+  nameWithType: Vector2
+  fullName: System.Numerics.Vector2
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: Microsoft.UI.Content.ContentSite.ClientSize*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ClientSize
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ClientSize
+  name: ClientSize
+  nameWithType: ContentSite.ClientSize
+  fullName: Microsoft.UI.Content.ContentSite.ClientSize
+- uid: Windows.Graphics.SizeInt32
+  commentId: T:Windows.Graphics.SizeInt32
+  parent: Windows.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows.graphics.sizeint32
+  name: SizeInt32
+  nameWithType: SizeInt32
+  fullName: Windows.Graphics.SizeInt32
+- uid: Windows.Graphics
+  commentId: N:Windows.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/uwp/api/windows
+  name: Windows.Graphics
+  nameWithType: Windows.Graphics
+  fullName: Windows.Graphics
+  spec.csharp:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics
+  spec.vb:
+  - uid: Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows
+  - name: .
+  - uid: Windows.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/uwp/api/windows.graphics
+- uid: Microsoft.UI.Content.ContentSite.CoordinateConverter*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.CoordinateConverter
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_CoordinateConverter
+  name: CoordinateConverter
+  nameWithType: ContentSite.CoordinateConverter
+  fullName: Microsoft.UI.Content.ContentSite.CoordinateConverter
+- uid: Microsoft.UI.Content.ContentCoordinateConverter
+  commentId: T:Microsoft.UI.Content.ContentCoordinateConverter
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentCoordinateConverter.html
+  name: ContentCoordinateConverter
+  nameWithType: ContentCoordinateConverter
+  fullName: Microsoft.UI.Content.ContentCoordinateConverter
+- uid: Microsoft.UI.Content.ContentSite.DispatcherQueue*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.DispatcherQueue
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_DispatcherQueue
+  name: DispatcherQueue
+  nameWithType: ContentSite.DispatcherQueue
+  fullName: Microsoft.UI.Content.ContentSite.DispatcherQueue
+- uid: Microsoft.UI.Dispatching.DispatcherQueue
+  commentId: T:Microsoft.UI.Dispatching.DispatcherQueue
+  parent: Microsoft.UI.Dispatching
+  href: Microsoft.UI.Dispatching.DispatcherQueue.html
+  name: DispatcherQueue
+  nameWithType: DispatcherQueue
+  fullName: Microsoft.UI.Dispatching.DispatcherQueue
+- uid: Microsoft.UI.Dispatching
+  commentId: N:Microsoft.UI.Dispatching
+  href: Microsoft.html
+  name: Microsoft.UI.Dispatching
+  nameWithType: Microsoft.UI.Dispatching
+  fullName: Microsoft.UI.Dispatching
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.UI
+    name: UI
+    href: Microsoft.UI.html
+  - name: .
+  - uid: Microsoft.UI.Dispatching
+    name: Dispatching
+    href: Microsoft.UI.Dispatching.html
+- uid: Microsoft.UI.Content.ContentSite.Environment*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.Environment
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_Environment
+  name: Environment
+  nameWithType: ContentSite.Environment
+  fullName: Microsoft.UI.Content.ContentSite.Environment
+- uid: Microsoft.UI.Content.ContentSiteEnvironment
+  commentId: T:Microsoft.UI.Content.ContentSiteEnvironment
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentSiteEnvironment.html
+  name: ContentSiteEnvironment
+  nameWithType: ContentSiteEnvironment
+  fullName: Microsoft.UI.Content.ContentSiteEnvironment
+- uid: Microsoft.UI.Content.ContentSite.IsClosed*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.IsClosed
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_IsClosed
+  name: IsClosed
+  nameWithType: ContentSite.IsClosed
+  fullName: Microsoft.UI.Content.ContentSite.IsClosed
+- uid: Microsoft.UI.IClosableNotifier.IsClosed
+  commentId: P:Microsoft.UI.IClosableNotifier.IsClosed
+  parent: Microsoft.UI.IClosableNotifier
+  href: Microsoft.UI.IClosableNotifier.html#Microsoft_UI_IClosableNotifier_IsClosed
+  name: IsClosed
+  nameWithType: IClosableNotifier.IsClosed
+  fullName: Microsoft.UI.IClosableNotifier.IsClosed
+- uid: Microsoft.UI.Content.ContentSite.IsConnected*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.IsConnected
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_IsConnected
+  name: IsConnected
+  nameWithType: ContentSite.IsConnected
+  fullName: Microsoft.UI.Content.ContentSite.IsConnected
+- uid: Microsoft.UI.Content.ContentSite.IsSiteEnabled*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.IsSiteEnabled
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_IsSiteEnabled
+  name: IsSiteEnabled
+  nameWithType: ContentSite.IsSiteEnabled
+  fullName: Microsoft.UI.Content.ContentSite.IsSiteEnabled
+- uid: Microsoft.UI.Content.ContentSite.IsSiteVisible*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.IsSiteVisible
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_IsSiteVisible
+  name: IsSiteVisible
+  nameWithType: ContentSite.IsSiteVisible
+  fullName: Microsoft.UI.Content.ContentSite.IsSiteVisible
+- uid: Microsoft.UI.Content.ContentSite.LayoutDirection*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.LayoutDirection
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_LayoutDirection
+  name: LayoutDirection
+  nameWithType: ContentSite.LayoutDirection
+  fullName: Microsoft.UI.Content.ContentSite.LayoutDirection
+- uid: Microsoft.UI.Content.ContentLayoutDirection
+  commentId: T:Microsoft.UI.Content.ContentLayoutDirection
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentLayoutDirection.html
+  name: ContentLayoutDirection
+  nameWithType: ContentLayoutDirection
+  fullName: Microsoft.UI.Content.ContentLayoutDirection
+- uid: Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_LocalToClientTransformMatrix
+  name: LocalToClientTransformMatrix
+  nameWithType: ContentSite.LocalToClientTransformMatrix
+  fullName: Microsoft.UI.Content.ContentSite.LocalToClientTransformMatrix
+- uid: System.Numerics.Matrix4x4
+  commentId: T:System.Numerics.Matrix4x4
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4
+  name: Matrix4x4
+  nameWithType: Matrix4x4
+  fullName: System.Numerics.Matrix4x4
+- uid: Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_LocalToParentTransformMatrix
+  name: LocalToParentTransformMatrix
+  nameWithType: ContentSite.LocalToParentTransformMatrix
+  fullName: Microsoft.UI.Content.ContentSite.LocalToParentTransformMatrix
+- uid: Microsoft.UI.Content.ContentSite.OverrideScale*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.OverrideScale
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_OverrideScale
+  name: OverrideScale
+  nameWithType: ContentSite.OverrideScale
+  fullName: Microsoft.UI.Content.ContentSite.OverrideScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Microsoft.UI.Content.ContentSite.ParentScale*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ParentScale
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ParentScale
+  name: ParentScale
+  nameWithType: ContentSite.ParentScale
+  fullName: Microsoft.UI.Content.ContentSite.ParentScale
+- uid: Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ProcessesKeyboardInput
+  name: ProcessesKeyboardInput
+  nameWithType: ContentSite.ProcessesKeyboardInput
+  fullName: Microsoft.UI.Content.ContentSite.ProcessesKeyboardInput
+- uid: Microsoft.UI.Content.ContentSite.ProcessesPointerInput*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ProcessesPointerInput
+  name: ProcessesPointerInput
+  nameWithType: ContentSite.ProcessesPointerInput
+  fullName: Microsoft.UI.Content.ContentSite.ProcessesPointerInput
+- uid: Microsoft.UI.Content.ContentSite.RasterizationScale*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.RasterizationScale
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_RasterizationScale
+  name: RasterizationScale
+  nameWithType: ContentSite.RasterizationScale
+  fullName: Microsoft.UI.Content.ContentSite.RasterizationScale
+- uid: Microsoft.UI.Content.ContentSite.RequestedSize*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.RequestedSize
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_RequestedSize
+  name: RequestedSize
+  nameWithType: ContentSite.RequestedSize
+  fullName: Microsoft.UI.Content.ContentSite.RequestedSize
+- uid: Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_ShouldApplyRasterizationScale
+  name: ShouldApplyRasterizationScale
+  nameWithType: ContentSite.ShouldApplyRasterizationScale
+  fullName: Microsoft.UI.Content.ContentSite.ShouldApplyRasterizationScale
+- uid: Microsoft.UI.Content.ContentSite.View*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.View
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_View
+  name: View
+  nameWithType: ContentSite.View
+  fullName: Microsoft.UI.Content.ContentSite.View
+- uid: Microsoft.UI.Content.ContentSiteView
+  commentId: T:Microsoft.UI.Content.ContentSiteView
+  parent: Microsoft.UI.Content
+  href: Microsoft.UI.Content.ContentSiteView.html
+  name: ContentSiteView
+  nameWithType: ContentSiteView
+  fullName: Microsoft.UI.Content.ContentSiteView
+- uid: Microsoft.UI.Content.ContentSite.IsOverridableInterface*
+  commentId: Overload:Microsoft.UI.Content.ContentSite.IsOverridableInterface
+  href: Microsoft.UI.Content.ContentSite.html#Microsoft_UI_Content_ContentSite_IsOverridableInterface_System_Guid_
+  name: IsOverridableInterface
+  nameWithType: ContentSite.IsOverridableInterface
+  fullName: Microsoft.UI.Content.ContentSite.IsOverridableInterface
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

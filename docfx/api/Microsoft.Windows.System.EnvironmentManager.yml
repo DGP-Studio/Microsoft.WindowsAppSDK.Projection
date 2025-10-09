@@ -1,0 +1,1481 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Windows.System.EnvironmentManager
+  commentId: T:Microsoft.Windows.System.EnvironmentManager
+  id: EnvironmentManager
+  parent: Microsoft.Windows.System
+  children:
+  - Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension(System.String)
+  - Microsoft.Windows.System.EnvironmentManager.AppendToPath(System.String)
+  - Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
+  - Microsoft.Windows.System.EnvironmentManager.As``1
+  - Microsoft.Windows.System.EnvironmentManager.Equals(Microsoft.Windows.System.EnvironmentManager)
+  - Microsoft.Windows.System.EnvironmentManager.Equals(System.Object)
+  - Microsoft.Windows.System.EnvironmentManager.FromAbi(System.IntPtr)
+  - Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable(System.String)
+  - Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables
+  - Microsoft.Windows.System.EnvironmentManager.GetForMachine
+  - Microsoft.Windows.System.EnvironmentManager.GetForProcess
+  - Microsoft.Windows.System.EnvironmentManager.GetForUser
+  - Microsoft.Windows.System.EnvironmentManager.GetHashCode
+  - Microsoft.Windows.System.EnvironmentManager.IsSupported
+  - Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension(System.String)
+  - Microsoft.Windows.System.EnvironmentManager.RemoveFromPath(System.String)
+  - Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable(System.String,System.String)
+  - Microsoft.Windows.System.EnvironmentManager.op_Equality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  - Microsoft.Windows.System.EnvironmentManager.op_Inequality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentManager
+  nameWithType: EnvironmentManager
+  fullName: Microsoft.Windows.System.EnvironmentManager
+  type: Class
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: EnvironmentManager
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: >-
+      [WindowsRuntimeType("Microsoft.Windows.System")]
+
+      [WindowsRuntimeHelperType(typeof(EnvironmentManager))]
+
+      [ProjectedRuntimeClass(typeof(IEnvironmentManager))]
+
+      [ContractVersion(typeof(EnvironmentManagerContract), 65536)]
+
+      public sealed class EnvironmentManager : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable<EnvironmentManager>
+    content.vb: >-
+      <WindowsRuntimeType("Microsoft.Windows.System")>
+
+      <WindowsRuntimeHelperType(GetType(EnvironmentManager))>
+
+      <ProjectedRuntimeClass(GetType(IEnvironmentManager))>
+
+      <ContractVersion(GetType(EnvironmentManagerContract), 65536)>
+
+      Public NotInheritable Class EnvironmentManager Implements IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable(Of EnvironmentManager)
+  inheritance:
+  - System.Object
+  implements:
+  - WinRT.IWinRTObject
+  - System.Runtime.InteropServices.IDynamicInterfaceCastable
+  - System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  - System.IEquatable{Microsoft.Windows.System.EnvironmentManager}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: WinRT.WindowsRuntimeTypeAttribute
+    ctor: WinRT.WindowsRuntimeTypeAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Microsoft.Windows.System
+  - type: Windows.Foundation.Metadata.ContractVersionAttribute
+    ctor: Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Windows.System.EnvironmentManagerContract
+    - type: System.UInt32
+      value: "65536"
+- uid: Microsoft.Windows.System.EnvironmentManager.As``1
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.As``1
+  id: As``1
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: As<I>()
+  nameWithType: EnvironmentManager.As<I>()
+  fullName: Microsoft.Windows.System.EnvironmentManager.As<I>()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: As
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static I As<I>()
+    typeParameters:
+    - id: I
+    return:
+      type: '{I}'
+    content.vb: Public Shared Function [As](Of I)() As I
+  overload: Microsoft.Windows.System.EnvironmentManager.As*
+  nameWithType.vb: EnvironmentManager.As(Of I)()
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.As(Of I)()
+  name.vb: As(Of I)()
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForProcess
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetForProcess
+  id: GetForProcess
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetForProcess()
+  nameWithType: EnvironmentManager.GetForProcess()
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForProcess()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForProcess
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static EnvironmentManager GetForProcess()
+    return:
+      type: Microsoft.Windows.System.EnvironmentManager
+    content.vb: Public Shared Function GetForProcess() As EnvironmentManager
+  overload: Microsoft.Windows.System.EnvironmentManager.GetForProcess*
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForUser
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetForUser
+  id: GetForUser
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetForUser()
+  nameWithType: EnvironmentManager.GetForUser()
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForUser()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForUser
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static EnvironmentManager GetForUser()
+    return:
+      type: Microsoft.Windows.System.EnvironmentManager
+    content.vb: Public Shared Function GetForUser() As EnvironmentManager
+  overload: Microsoft.Windows.System.EnvironmentManager.GetForUser*
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForMachine
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetForMachine
+  id: GetForMachine
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetForMachine()
+  nameWithType: EnvironmentManager.GetForMachine()
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForMachine()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetForMachine
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static EnvironmentManager GetForMachine()
+    return:
+      type: Microsoft.Windows.System.EnvironmentManager
+    content.vb: Public Shared Function GetForMachine() As EnvironmentManager
+  overload: Microsoft.Windows.System.EnvironmentManager.GetForMachine*
+- uid: Microsoft.Windows.System.EnvironmentManager.IsSupported
+  commentId: P:Microsoft.Windows.System.EnvironmentManager.IsSupported
+  id: IsSupported
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: IsSupported
+  nameWithType: EnvironmentManager.IsSupported
+  fullName: Microsoft.Windows.System.EnvironmentManager.IsSupported
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: IsSupported
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static bool IsSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsSupported As Boolean
+  overload: Microsoft.Windows.System.EnvironmentManager.IsSupported*
+- uid: Microsoft.Windows.System.EnvironmentManager.FromAbi(System.IntPtr)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.FromAbi(System.IntPtr)
+  id: FromAbi(System.IntPtr)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: FromAbi(nint)
+  nameWithType: EnvironmentManager.FromAbi(nint)
+  fullName: Microsoft.Windows.System.EnvironmentManager.FromAbi(nint)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: FromAbi
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 80
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static EnvironmentManager FromAbi(nint thisPtr)
+    parameters:
+    - id: thisPtr
+      type: System.IntPtr
+    return:
+      type: Microsoft.Windows.System.EnvironmentManager
+    content.vb: Public Shared Function FromAbi(thisPtr As IntPtr) As EnvironmentManager
+  overload: Microsoft.Windows.System.EnvironmentManager.FromAbi*
+  nameWithType.vb: EnvironmentManager.FromAbi(IntPtr)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.FromAbi(System.IntPtr)
+  name.vb: FromAbi(IntPtr)
+- uid: Microsoft.Windows.System.EnvironmentManager.op_Equality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.op_Equality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  id: op_Equality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: operator ==(EnvironmentManager, EnvironmentManager)
+  nameWithType: EnvironmentManager.operator ==(EnvironmentManager, EnvironmentManager)
+  fullName: Microsoft.Windows.System.EnvironmentManager.operator ==(Microsoft.Windows.System.EnvironmentManager, Microsoft.Windows.System.EnvironmentManager)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Equality
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static bool operator ==(EnvironmentManager x, EnvironmentManager y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.System.EnvironmentManager
+    - id: y
+      type: Microsoft.Windows.System.EnvironmentManager
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(x As EnvironmentManager, y As EnvironmentManager) As Boolean
+  overload: Microsoft.Windows.System.EnvironmentManager.op_Equality*
+  nameWithType.vb: EnvironmentManager.=(EnvironmentManager, EnvironmentManager)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.=(Microsoft.Windows.System.EnvironmentManager, Microsoft.Windows.System.EnvironmentManager)
+  name.vb: =(EnvironmentManager, EnvironmentManager)
+- uid: Microsoft.Windows.System.EnvironmentManager.op_Inequality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.op_Inequality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  id: op_Inequality(Microsoft.Windows.System.EnvironmentManager,Microsoft.Windows.System.EnvironmentManager)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: operator !=(EnvironmentManager, EnvironmentManager)
+  nameWithType: EnvironmentManager.operator !=(EnvironmentManager, EnvironmentManager)
+  fullName: Microsoft.Windows.System.EnvironmentManager.operator !=(Microsoft.Windows.System.EnvironmentManager, Microsoft.Windows.System.EnvironmentManager)
+  type: Operator
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: op_Inequality
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 94
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public static bool operator !=(EnvironmentManager x, EnvironmentManager y)
+    parameters:
+    - id: x
+      type: Microsoft.Windows.System.EnvironmentManager
+    - id: y
+      type: Microsoft.Windows.System.EnvironmentManager
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(x As EnvironmentManager, y As EnvironmentManager) As Boolean
+  overload: Microsoft.Windows.System.EnvironmentManager.op_Inequality*
+  nameWithType.vb: EnvironmentManager.<>(EnvironmentManager, EnvironmentManager)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.<>(Microsoft.Windows.System.EnvironmentManager, Microsoft.Windows.System.EnvironmentManager)
+  name.vb: <>(EnvironmentManager, EnvironmentManager)
+- uid: Microsoft.Windows.System.EnvironmentManager.Equals(Microsoft.Windows.System.EnvironmentManager)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.Equals(Microsoft.Windows.System.EnvironmentManager)
+  id: Equals(Microsoft.Windows.System.EnvironmentManager)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: Equals(EnvironmentManager)
+  nameWithType: EnvironmentManager.Equals(EnvironmentManager)
+  fullName: Microsoft.Windows.System.EnvironmentManager.Equals(Microsoft.Windows.System.EnvironmentManager)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 95
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(EnvironmentManager other)
+    parameters:
+    - id: other
+      type: Microsoft.Windows.System.EnvironmentManager
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As EnvironmentManager) As Boolean
+  overload: Microsoft.Windows.System.EnvironmentManager.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Windows.System.EnvironmentManager}.Equals(Microsoft.Windows.System.EnvironmentManager)
+- uid: Microsoft.Windows.System.EnvironmentManager.Equals(System.Object)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: EnvironmentManager.Equals(object)
+  fullName: Microsoft.Windows.System.EnvironmentManager.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: Equals
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 96
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Windows.System.EnvironmentManager.Equals*
+  nameWithType.vb: EnvironmentManager.Equals(Object)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Windows.System.EnvironmentManager.GetHashCode
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: EnvironmentManager.GetHashCode()
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetHashCode
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Windows.System.EnvironmentManager.GetHashCode*
+- uid: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables
+  id: GetEnvironmentVariables
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetEnvironmentVariables()
+  nameWithType: EnvironmentManager.GetEnvironmentVariables()
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables()
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnvironmentVariables
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 120
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public IReadOnlyDictionary<string, string> GetEnvironmentVariables()
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public Function GetEnvironmentVariables() As IReadOnlyDictionary(Of String, String)
+  overload: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables*
+- uid: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable(System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable(System.String)
+  id: GetEnvironmentVariable(System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: GetEnvironmentVariable(string)
+  nameWithType: EnvironmentManager.GetEnvironmentVariable(string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: GetEnvironmentVariable
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 122
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public string GetEnvironmentVariable(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetEnvironmentVariable(name As String) As String
+  overload: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable*
+  nameWithType.vb: EnvironmentManager.GetEnvironmentVariable(String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable(String)
+  name.vb: GetEnvironmentVariable(String)
+- uid: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable(System.String,System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable(System.String,System.String)
+  id: SetEnvironmentVariable(System.String,System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: SetEnvironmentVariable(string, string)
+  nameWithType: EnvironmentManager.SetEnvironmentVariable(string, string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: SetEnvironmentVariable
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public void SetEnvironmentVariable(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetEnvironmentVariable(name As String, value As String)
+  overload: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable*
+  nameWithType.vb: EnvironmentManager.SetEnvironmentVariable(String, String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable(String, String)
+  name.vb: SetEnvironmentVariable(String, String)
+- uid: Microsoft.Windows.System.EnvironmentManager.AppendToPath(System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.AppendToPath(System.String)
+  id: AppendToPath(System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: AppendToPath(string)
+  nameWithType: EnvironmentManager.AppendToPath(string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.AppendToPath(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AppendToPath
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 126
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public void AppendToPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub AppendToPath(path As String)
+  overload: Microsoft.Windows.System.EnvironmentManager.AppendToPath*
+  nameWithType.vb: EnvironmentManager.AppendToPath(String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.AppendToPath(String)
+  name.vb: AppendToPath(String)
+- uid: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath(System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.RemoveFromPath(System.String)
+  id: RemoveFromPath(System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveFromPath(string)
+  nameWithType: EnvironmentManager.RemoveFromPath(string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveFromPath
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 128
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public void RemoveFromPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub RemoveFromPath(path As String)
+  overload: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath*
+  nameWithType.vb: EnvironmentManager.RemoveFromPath(String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath(String)
+  name.vb: RemoveFromPath(String)
+- uid: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension(System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension(System.String)
+  id: AddExecutableFileExtension(System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: AddExecutableFileExtension(string)
+  nameWithType: EnvironmentManager.AddExecutableFileExtension(string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AddExecutableFileExtension
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 130
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public void AddExecutableFileExtension(string pathExt)
+    parameters:
+    - id: pathExt
+      type: System.String
+    content.vb: Public Sub AddExecutableFileExtension(pathExt As String)
+  overload: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension*
+  nameWithType.vb: EnvironmentManager.AddExecutableFileExtension(String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension(String)
+  name.vb: AddExecutableFileExtension(String)
+- uid: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension(System.String)
+  commentId: M:Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension(System.String)
+  id: RemoveExecutableFileExtension(System.String)
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveExecutableFileExtension(string)
+  nameWithType: EnvironmentManager.RemoveExecutableFileExtension(string)
+  fullName: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension(string)
+  type: Method
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: RemoveExecutableFileExtension
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public void RemoveExecutableFileExtension(string pathExt)
+    parameters:
+    - id: pathExt
+      type: System.String
+    content.vb: Public Sub RemoveExecutableFileExtension(pathExt As String)
+  overload: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension*
+  nameWithType.vb: EnvironmentManager.RemoveExecutableFileExtension(String)
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension(String)
+  name.vb: RemoveExecutableFileExtension(String)
+- uid: Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
+  commentId: P:Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
+  id: AreChangesTracked
+  parent: Microsoft.Windows.System.EnvironmentManager
+  langs:
+  - csharp
+  - vb
+  name: AreChangesTracked
+  nameWithType: EnvironmentManager.AreChangesTracked
+  fullName: Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
+  type: Property
+  source:
+    remote:
+      path: src/Microsoft.Windows.System.cs
+      branch: main
+      repo: https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection.git
+    id: AreChangesTracked
+    path: ../src/Microsoft.Windows.System.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.WindowsAppSDK.Projection
+  namespace: Microsoft.Windows.System
+  syntax:
+    content: public bool AreChangesTracked { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AreChangesTracked As Boolean
+  overload: Microsoft.Windows.System.EnvironmentManager.AreChangesTracked*
+references:
+- uid: Microsoft.Windows.System
+  commentId: N:Microsoft.Windows.System
+  href: Microsoft.html
+  name: Microsoft.Windows.System
+  nameWithType: Microsoft.Windows.System
+  fullName: Microsoft.Windows.System
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.System
+    name: System
+    href: Microsoft.Windows.System.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Windows
+    name: Windows
+    href: Microsoft.Windows.html
+  - name: .
+  - uid: Microsoft.Windows.System
+    name: System
+    href: Microsoft.Windows.System.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: WinRT.IWinRTObject
+  commentId: T:WinRT.IWinRTObject
+  parent: WinRT
+  isExternal: true
+  name: IWinRTObject
+  nameWithType: IWinRTObject
+  fullName: WinRT.IWinRTObject
+- uid: System.Runtime.InteropServices.IDynamicInterfaceCastable
+  commentId: T:System.Runtime.InteropServices.IDynamicInterfaceCastable
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable
+  name: IDynamicInterfaceCastable
+  nameWithType: IDynamicInterfaceCastable
+  fullName: System.Runtime.InteropServices.IDynamicInterfaceCastable
+- uid: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  commentId: T:System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+  parent: System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider
+  name: IUnmanagedVirtualMethodTableProvider
+  nameWithType: IUnmanagedVirtualMethodTableProvider
+  fullName: System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider
+- uid: System.IEquatable{Microsoft.Windows.System.EnvironmentManager}
+  commentId: T:System.IEquatable{Microsoft.Windows.System.EnvironmentManager}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EnvironmentManager>
+  nameWithType: IEquatable<EnvironmentManager>
+  fullName: System.IEquatable<Microsoft.Windows.System.EnvironmentManager>
+  nameWithType.vb: IEquatable(Of EnvironmentManager)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.System.EnvironmentManager)
+  name.vb: IEquatable(Of EnvironmentManager)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Windows.System.EnvironmentManager
+    name: EnvironmentManager
+    href: Microsoft.Windows.System.EnvironmentManager.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Windows.System.EnvironmentManager
+    name: EnvironmentManager
+    href: Microsoft.Windows.System.EnvironmentManager.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WinRT
+  commentId: N:WinRT
+  isExternal: true
+  name: WinRT
+  nameWithType: WinRT
+  fullName: WinRT
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Runtime.InteropServices.Marshalling
+  commentId: N:System.Runtime.InteropServices.Marshalling
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices.Marshalling
+  nameWithType: System.Runtime.InteropServices.Marshalling
+  fullName: System.Runtime.InteropServices.Marshalling
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  - name: .
+  - uid: System.Runtime.InteropServices.Marshalling
+    name: Marshalling
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Windows.System.EnvironmentManager.As*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.As
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_As__1
+  name: As
+  nameWithType: EnvironmentManager.As
+  fullName: Microsoft.Windows.System.EnvironmentManager.As
+- uid: '{I}'
+  commentId: '!:I'
+  definition: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: I
+  name: I
+  nameWithType: I
+  fullName: I
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForProcess*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetForProcess
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetForProcess
+  name: GetForProcess
+  nameWithType: EnvironmentManager.GetForProcess
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForProcess
+- uid: Microsoft.Windows.System.EnvironmentManager
+  commentId: T:Microsoft.Windows.System.EnvironmentManager
+  parent: Microsoft.Windows.System
+  href: Microsoft.Windows.System.EnvironmentManager.html
+  name: EnvironmentManager
+  nameWithType: EnvironmentManager
+  fullName: Microsoft.Windows.System.EnvironmentManager
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForUser*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetForUser
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetForUser
+  name: GetForUser
+  nameWithType: EnvironmentManager.GetForUser
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForUser
+- uid: Microsoft.Windows.System.EnvironmentManager.GetForMachine*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetForMachine
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetForMachine
+  name: GetForMachine
+  nameWithType: EnvironmentManager.GetForMachine
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetForMachine
+- uid: Microsoft.Windows.System.EnvironmentManager.IsSupported*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.IsSupported
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_IsSupported
+  name: IsSupported
+  nameWithType: EnvironmentManager.IsSupported
+  fullName: Microsoft.Windows.System.EnvironmentManager.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Windows.System.EnvironmentManager.FromAbi*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.FromAbi
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_FromAbi_System_IntPtr_
+  name: FromAbi
+  nameWithType: EnvironmentManager.FromAbi
+  fullName: Microsoft.Windows.System.EnvironmentManager.FromAbi
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.Windows.System.EnvironmentManager.op_Equality*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.op_Equality
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_op_Equality_Microsoft_Windows_System_EnvironmentManager_Microsoft_Windows_System_EnvironmentManager_
+  name: operator ==
+  nameWithType: EnvironmentManager.operator ==
+  fullName: Microsoft.Windows.System.EnvironmentManager.operator ==
+  nameWithType.vb: EnvironmentManager.=
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.System.EnvironmentManager.op_Equality*
+    name: ==
+    href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_op_Equality_Microsoft_Windows_System_EnvironmentManager_Microsoft_Windows_System_EnvironmentManager_
+- uid: Microsoft.Windows.System.EnvironmentManager.op_Inequality*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.op_Inequality
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_op_Inequality_Microsoft_Windows_System_EnvironmentManager_Microsoft_Windows_System_EnvironmentManager_
+  name: operator !=
+  nameWithType: EnvironmentManager.operator !=
+  fullName: Microsoft.Windows.System.EnvironmentManager.operator !=
+  nameWithType.vb: EnvironmentManager.<>
+  fullName.vb: Microsoft.Windows.System.EnvironmentManager.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Windows.System.EnvironmentManager.op_Inequality*
+    name: '!='
+    href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_op_Inequality_Microsoft_Windows_System_EnvironmentManager_Microsoft_Windows_System_EnvironmentManager_
+- uid: Microsoft.Windows.System.EnvironmentManager.Equals*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.Equals
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_Equals_Microsoft_Windows_System_EnvironmentManager_
+  name: Equals
+  nameWithType: EnvironmentManager.Equals
+  fullName: Microsoft.Windows.System.EnvironmentManager.Equals
+- uid: System.IEquatable{Microsoft.Windows.System.EnvironmentManager}.Equals(Microsoft.Windows.System.EnvironmentManager)
+  commentId: M:System.IEquatable{Microsoft.Windows.System.EnvironmentManager}.Equals(Microsoft.Windows.System.EnvironmentManager)
+  parent: System.IEquatable{Microsoft.Windows.System.EnvironmentManager}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(EnvironmentManager)
+  nameWithType: IEquatable<EnvironmentManager>.Equals(EnvironmentManager)
+  fullName: System.IEquatable<Microsoft.Windows.System.EnvironmentManager>.Equals(Microsoft.Windows.System.EnvironmentManager)
+  nameWithType.vb: IEquatable(Of EnvironmentManager).Equals(EnvironmentManager)
+  fullName.vb: System.IEquatable(Of Microsoft.Windows.System.EnvironmentManager).Equals(Microsoft.Windows.System.EnvironmentManager)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Windows.System.EnvironmentManager}.Equals(Microsoft.Windows.System.EnvironmentManager)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.System.EnvironmentManager
+    name: EnvironmentManager
+    href: Microsoft.Windows.System.EnvironmentManager.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Windows.System.EnvironmentManager}.Equals(Microsoft.Windows.System.EnvironmentManager)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Windows.System.EnvironmentManager
+    name: EnvironmentManager
+    href: Microsoft.Windows.System.EnvironmentManager.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Windows.System.EnvironmentManager.GetHashCode*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetHashCode
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetHashCode
+  name: GetHashCode
+  nameWithType: EnvironmentManager.GetHashCode
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetEnvironmentVariables
+  name: GetEnvironmentVariables
+  nameWithType: EnvironmentManager.GetEnvironmentVariables
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariables
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_GetEnvironmentVariable_System_String_
+  name: GetEnvironmentVariable
+  nameWithType: EnvironmentManager.GetEnvironmentVariable
+  fullName: Microsoft.Windows.System.EnvironmentManager.GetEnvironmentVariable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_SetEnvironmentVariable_System_String_System_String_
+  name: SetEnvironmentVariable
+  nameWithType: EnvironmentManager.SetEnvironmentVariable
+  fullName: Microsoft.Windows.System.EnvironmentManager.SetEnvironmentVariable
+- uid: Microsoft.Windows.System.EnvironmentManager.AppendToPath*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.AppendToPath
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_AppendToPath_System_String_
+  name: AppendToPath
+  nameWithType: EnvironmentManager.AppendToPath
+  fullName: Microsoft.Windows.System.EnvironmentManager.AppendToPath
+- uid: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.RemoveFromPath
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_RemoveFromPath_System_String_
+  name: RemoveFromPath
+  nameWithType: EnvironmentManager.RemoveFromPath
+  fullName: Microsoft.Windows.System.EnvironmentManager.RemoveFromPath
+- uid: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_AddExecutableFileExtension_System_String_
+  name: AddExecutableFileExtension
+  nameWithType: EnvironmentManager.AddExecutableFileExtension
+  fullName: Microsoft.Windows.System.EnvironmentManager.AddExecutableFileExtension
+- uid: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_RemoveExecutableFileExtension_System_String_
+  name: RemoveExecutableFileExtension
+  nameWithType: EnvironmentManager.RemoveExecutableFileExtension
+  fullName: Microsoft.Windows.System.EnvironmentManager.RemoveExecutableFileExtension
+- uid: Microsoft.Windows.System.EnvironmentManager.AreChangesTracked*
+  commentId: Overload:Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
+  href: Microsoft.Windows.System.EnvironmentManager.html#Microsoft_Windows_System_EnvironmentManager_AreChangesTracked
+  name: AreChangesTracked
+  nameWithType: EnvironmentManager.AreChangesTracked
+  fullName: Microsoft.Windows.System.EnvironmentManager.AreChangesTracked
