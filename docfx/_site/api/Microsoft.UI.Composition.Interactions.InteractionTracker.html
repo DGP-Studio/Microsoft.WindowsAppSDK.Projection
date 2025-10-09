@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InteractionTracker | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InteractionTracker | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Composition_Interactions_InteractionTracker.md&amp;value=---%0Auid%3A%20Microsoft.UI.Composition.Interactions.InteractionTracker%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker">
+
+
+
+  <h1 id="Microsoft_UI_Composition_Interactions_InteractionTracker" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker" class="text-break">
+Class InteractionTracker  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Composition.html">Composition</a>.<a class="xref" href="Microsoft.UI.Composition.Interactions.html">Interactions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI&quot;)]
+[WindowsRuntimeHelperType(typeof(InteractionTracker))]
+[ProjectedRuntimeClass(typeof(IInteractionTracker))]
+[ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+public sealed class InteractionTracker : CompositionObject, IDisposable, IAnimationObject, IEquatable&lt;CompositionObject&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;InteractionTracker&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a></div>
+      <div><span class="xref">InteractionTracker</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IAnimationObject.html">IAnimationObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimationWithIAnimationObject(IAnimationObject, string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroupWithIAnimationObject(IAnimationObject, ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_">CompositionObject.Equals(CompositionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimation(string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_">CompositionObject.StopAnimation(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StopAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_">CompositionObject.TryGetAnimationController(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_">CompositionObject.StartAnimation(string, CompositionAnimation, AnimationController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose">CompositionObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_">CompositionObject.PopulatePropertyInfo(string, AnimationPropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Comment">CompositionObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Compositor">CompositionObject.Compositor</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_DispatcherQueue">CompositionObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_ImplicitAnimations">CompositionObject.ImplicitAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Properties">CompositionObject.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_InteractionSources_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.InteractionSources*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_InteractionSources" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.InteractionSources">
+  InteractionSources
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompositionInteractionSourceCollection InteractionSources { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionInteractionSourceCollection.html">CompositionInteractionSourceCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsInertiaFromImpulse_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsInertiaFromImpulse*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsInertiaFromImpulse" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsInertiaFromImpulse">
+  IsInertiaFromImpulse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInertiaFromImpulse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsPositionRoundingSuggested_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsPositionRoundingSuggested*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsPositionRoundingSuggested" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsPositionRoundingSuggested">
+  IsPositionRoundingSuggested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionRoundingSuggested { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_MaxPosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MaxPosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_MaxPosition" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MaxPosition">
+  MaxPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L802"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MaxPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_MaxScale_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MaxScale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_MaxScale" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MaxScale">
+  MaxScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L808"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_MinPosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MinPosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_MinPosition" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MinPosition">
+  MinPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L814"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MinPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_MinScale_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MinScale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_MinScale" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.MinScale">
+  MinScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L820"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_NaturalRestingPosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.NaturalRestingPosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_NaturalRestingPosition" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.NaturalRestingPosition">
+  NaturalRestingPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L826"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 NaturalRestingPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_NaturalRestingScale_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.NaturalRestingScale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_NaturalRestingScale" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.NaturalRestingScale">
+  NaturalRestingScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L828"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NaturalRestingScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Owner_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Owner*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Owner" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Owner">
+  Owner
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInteractionTrackerOwner Owner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner.html">IInteractionTrackerOwner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Position_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Position*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Position" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Position">
+  Position
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L832"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Position { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_PositionInertiaDecayRate_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.PositionInertiaDecayRate*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_PositionInertiaDecayRate" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.PositionInertiaDecayRate">
+  PositionInertiaDecayRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L834"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3? PositionInertiaDecayRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_PositionVelocityInPixelsPerSecond_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.PositionVelocityInPixelsPerSecond*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_PositionVelocityInPixelsPerSecond" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.PositionVelocityInPixelsPerSecond">
+  PositionVelocityInPixelsPerSecond
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PositionVelocityInPixelsPerSecond { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Scale_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Scale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Scale" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Scale">
+  Scale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L842"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ScaleInertiaDecayRate_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ScaleInertiaDecayRate*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ScaleInertiaDecayRate" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ScaleInertiaDecayRate">
+  ScaleInertiaDecayRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? ScaleInertiaDecayRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ScaleVelocityInPercentPerSecond_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ScaleVelocityInPercentPerSecond*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ScaleVelocityInPercentPerSecond" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ScaleVelocityInPercentPerSecond">
+  ScaleVelocityInPercentPerSecond
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L850"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleVelocityInPercentPerSecond { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_AdjustPositionXIfGreaterThanThreshold_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.AdjustPositionXIfGreaterThanThreshold*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_AdjustPositionXIfGreaterThanThreshold_System_Single_System_Single_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.AdjustPositionXIfGreaterThanThreshold(System.Single,System.Single)">
+  AdjustPositionXIfGreaterThanThreshold(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustPositionXIfGreaterThanThreshold(float adjustment, float positionThreshold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>adjustment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>positionThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_AdjustPositionYIfGreaterThanThreshold_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.AdjustPositionYIfGreaterThanThreshold*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_AdjustPositionYIfGreaterThanThreshold_System_Single_System_Single_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.AdjustPositionYIfGreaterThanThreshold(System.Single,System.Single)">
+  AdjustPositionYIfGreaterThanThreshold(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustPositionYIfGreaterThanThreshold(float adjustment, float positionThreshold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>adjustment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>positionThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_As_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.As*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_As__1" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureCenterPointXInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureCenterPointXInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureCenterPointXInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureCenterPointXInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureCenterPointXInertiaModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureCenterPointXInertiaModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureCenterPointYInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureCenterPointYInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureCenterPointYInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureCenterPointYInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureCenterPointYInertiaModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureCenterPointYInertiaModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigurePositionXInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigurePositionXInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigurePositionXInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigurePositionXInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier})">
+  ConfigurePositionXInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigurePositionXInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt; modifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modifiers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier.html">InteractionTrackerInertiaModifier</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigurePositionYInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigurePositionYInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigurePositionYInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigurePositionYInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier})">
+  ConfigurePositionYInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigurePositionYInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt; modifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modifiers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier.html">InteractionTrackerInertiaModifier</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureScaleInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureScaleInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureScaleInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_InteractionTrackerInertiaModifier__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureScaleInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier})">
+  ConfigureScaleInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureScaleInertiaModifiers(IEnumerable&lt;InteractionTrackerInertiaModifier&gt; modifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modifiers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerInertiaModifier.html">InteractionTrackerInertiaModifier</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureVector2PositionInertiaModifiers_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureVector2PositionInertiaModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_ConfigureVector2PositionInertiaModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_InteractionTrackerVector2InertiaModifier__" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.ConfigureVector2PositionInertiaModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier})">
+  ConfigureVector2PositionInertiaModifiers(IEnumerable&lt;InteractionTrackerVector2InertiaModifier&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureVector2PositionInertiaModifiers(IEnumerable&lt;InteractionTrackerVector2InertiaModifier&gt; modifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modifiers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier.html">InteractionTrackerVector2InertiaModifier</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Create_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Create*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Create_Microsoft_UI_Composition_Compositor_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Create(Microsoft.UI.Composition.Compositor)">
+  Create(Compositor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteractionTracker Create(Compositor compositor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compositor</code> <a class="xref" href="Microsoft.UI.Composition.Compositor.html">Compositor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_CreateWithOwner_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.CreateWithOwner*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_CreateWithOwner_Microsoft_UI_Composition_Compositor_Microsoft_UI_Composition_Interactions_IInteractionTrackerOwner_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.CreateWithOwner(Microsoft.UI.Composition.Compositor,Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner)">
+  CreateWithOwner(Compositor, IInteractionTrackerOwner)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteractionTracker CreateWithOwner(Compositor compositor, IInteractionTrackerOwner owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compositor</code> <a class="xref" href="Microsoft.UI.Composition.Compositor.html">Compositor</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.IInteractionTrackerOwner.html">IInteractionTrackerOwner</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Equals_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Equals_Microsoft_UI_Composition_Interactions_InteractionTracker_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Equals(Microsoft.UI.Composition.Interactions.InteractionTracker)">
+  Equals(InteractionTracker)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(InteractionTracker other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_Equals_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_Equals_System_Object_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_FromAbi_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L732"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteractionTracker FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_GetBindingMode_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.GetBindingMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_GetBindingMode_Microsoft_UI_Composition_Interactions_InteractionTracker_Microsoft_UI_Composition_Interactions_InteractionTracker_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.GetBindingMode(Microsoft.UI.Composition.Interactions.InteractionTracker,Microsoft.UI.Composition.Interactions.InteractionTracker)">
+  GetBindingMode(InteractionTracker, InteractionTracker)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteractionBindingAxisModes GetBindingMode(InteractionTracker boundTracker1, InteractionTracker boundTracker2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundTracker1</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+    <dt><code>boundTracker2</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionBindingAxisModes.html">InteractionBindingAxisModes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_GetHashCode_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_GetHashCode" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsOverridableInterface_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L852"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_SetBindingMode_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.SetBindingMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_SetBindingMode_Microsoft_UI_Composition_Interactions_InteractionTracker_Microsoft_UI_Composition_Interactions_InteractionTracker_Microsoft_UI_Composition_Interactions_InteractionBindingAxisModes_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.SetBindingMode(Microsoft.UI.Composition.Interactions.InteractionTracker,Microsoft.UI.Composition.Interactions.InteractionTracker,Microsoft.UI.Composition.Interactions.InteractionBindingAxisModes)">
+  SetBindingMode(InteractionTracker, InteractionTracker, InteractionBindingAxisModes)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBindingMode(InteractionTracker boundTracker1, InteractionTracker boundTracker2, InteractionBindingAxisModes axisMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundTracker1</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+    <dt><code>boundTracker2</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+    <dt><code>axisMode</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionBindingAxisModes.html">InteractionBindingAxisModes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition(System.Numerics.Vector3)">
+  TryUpdatePosition(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L770"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePosition(Vector3 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_System_Numerics_Vector3_Microsoft_UI_Composition_Interactions_InteractionTrackerClampingOption_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition(System.Numerics.Vector3,Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption)">
+  TryUpdatePosition(Vector3, InteractionTrackerClampingOption)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L790"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePosition(Vector3 value, InteractionTrackerClampingOption option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption.html">InteractionTrackerClampingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePosition_System_Numerics_Vector3_Microsoft_UI_Composition_Interactions_InteractionTrackerClampingOption_Microsoft_UI_Composition_Interactions_InteractionTrackerPositionUpdateOption_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePosition(System.Numerics.Vector3,Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption,Microsoft.UI.Composition.Interactions.InteractionTrackerPositionUpdateOption)">
+  TryUpdatePosition(Vector3, InteractionTrackerClampingOption, InteractionTrackerPositionUpdateOption)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L794"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePosition(Vector3 value, InteractionTrackerClampingOption option, InteractionTrackerPositionUpdateOption posUpdateOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption.html">InteractionTrackerClampingOption</a></dt>
+    <dd></dd>
+    <dt><code>posUpdateOption</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerPositionUpdateOption.html">InteractionTrackerPositionUpdateOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionBy_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionBy*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionBy_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionBy(System.Numerics.Vector3)">
+  TryUpdatePositionBy(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePositionBy(Vector3 amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionBy_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionBy*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionBy_System_Numerics_Vector3_Microsoft_UI_Composition_Interactions_InteractionTrackerClampingOption_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionBy(System.Numerics.Vector3,Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption)">
+  TryUpdatePositionBy(Vector3, InteractionTrackerClampingOption)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L792"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePositionBy(Vector3 amount, InteractionTrackerClampingOption option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTrackerClampingOption.html">InteractionTrackerClampingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionWithAdditionalVelocity_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionWithAdditionalVelocity*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionWithAdditionalVelocity_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionWithAdditionalVelocity(System.Numerics.Vector3)">
+  TryUpdatePositionWithAdditionalVelocity(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePositionWithAdditionalVelocity(Vector3 velocityInPixelsPerSecond)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityInPixelsPerSecond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionWithAnimation_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionWithAnimation*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdatePositionWithAnimation_Microsoft_UI_Composition_CompositionAnimation_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdatePositionWithAnimation(Microsoft.UI.Composition.CompositionAnimation)">
+  TryUpdatePositionWithAnimation(CompositionAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdatePositionWithAnimation(CompositionAnimation animation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScale_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScale_System_Single_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScale(System.Single,System.Numerics.Vector3)">
+  TryUpdateScale(float, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdateScale(float value, Vector3 centerPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>centerPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScaleWithAdditionalVelocity_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScaleWithAdditionalVelocity*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScaleWithAdditionalVelocity_System_Single_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScaleWithAdditionalVelocity(System.Single,System.Numerics.Vector3)">
+  TryUpdateScaleWithAdditionalVelocity(float, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdateScaleWithAdditionalVelocity(float velocityInPercentPerSecond, Vector3 centerPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityInPercentPerSecond</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>centerPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScaleWithAnimation_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScaleWithAnimation*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_TryUpdateScaleWithAnimation_Microsoft_UI_Composition_CompositionAnimation_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.TryUpdateScaleWithAnimation(Microsoft.UI.Composition.CompositionAnimation,System.Numerics.Vector3)">
+  TryUpdateScaleWithAnimation(CompositionAnimation, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryUpdateScaleWithAnimation(CompositionAnimation animation, Vector3 centerPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+    <dt><code>centerPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_op_Equality_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_op_Equality_Microsoft_UI_Composition_Interactions_InteractionTracker_Microsoft_UI_Composition_Interactions_InteractionTracker_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.op_Equality(Microsoft.UI.Composition.Interactions.InteractionTracker,Microsoft.UI.Composition.Interactions.InteractionTracker)">
+  operator ==(InteractionTracker, InteractionTracker)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(InteractionTracker x, InteractionTracker y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_InteractionTracker_op_Inequality_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_InteractionTracker_op_Inequality_Microsoft_UI_Composition_Interactions_InteractionTracker_Microsoft_UI_Composition_Interactions_InteractionTracker_" data-uid="Microsoft.UI.Composition.Interactions.InteractionTracker.op_Inequality(Microsoft.UI.Composition.Interactions.InteractionTracker,Microsoft.UI.Composition.Interactions.InteractionTracker)">
+  operator !=(InteractionTracker, InteractionTracker)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L748"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(InteractionTracker x, InteractionTracker y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionTracker.html">InteractionTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L640" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

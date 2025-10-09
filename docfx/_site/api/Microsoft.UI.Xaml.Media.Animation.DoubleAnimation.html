@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DoubleAnimation | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DoubleAnimation | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Media_Animation_DoubleAnimation.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Media.Animation.DoubleAnimation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation" class="text-break">
+Class DoubleAnimation  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2531"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Media.html">Media</a>.<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.html">Animation</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(DoubleAnimation))]
+[ProjectedRuntimeClass(typeof(IDoubleAnimation))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class DoubleAnimation : Timeline, IEquatable&lt;DependencyObject&gt;, IEquatable&lt;Timeline&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;DoubleAnimation&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></div>
+      <div><span class="xref">DoubleAnimation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AllowDependentAnimations">Timeline.AllowDependentAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AutoReverseProperty">Timeline.AutoReverseProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_BeginTimeProperty">Timeline.BeginTimeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_DurationProperty">Timeline.DurationProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_FillBehaviorProperty">Timeline.FillBehaviorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_RepeatBehaviorProperty">Timeline.RepeatBehaviorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_SpeedRatioProperty">Timeline.SpeedRatioProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Equals_Microsoft_UI_Xaml_Media_Animation_Timeline_">Timeline.Equals(Timeline)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Completed">Timeline.Completed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AutoReverse">Timeline.AutoReverse</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_BeginTime">Timeline.BeginTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Duration">Timeline.Duration</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_FillBehavior">Timeline.FillBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_RepeatBehavior">Timeline.RepeatBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_SpeedRatio">Timeline.SpeedRatio</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation__ctor_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation__ctor" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.#ctor">
+  DoubleAnimation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_By_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.By*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_By" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.By">
+  By
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? By { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_ByProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.ByProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_ByProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.ByProperty">
+  ByProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ByProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EasingFunction_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EasingFunction*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EasingFunction" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EasingFunction">
+  EasingFunction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EasingFunctionBase EasingFunction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.EasingFunctionBase.html">EasingFunctionBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EasingFunctionProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EasingFunctionProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EasingFunctionProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EasingFunctionProperty">
+  EasingFunctionProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2593"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty EasingFunctionProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EnableDependentAnimation_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EnableDependentAnimation*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EnableDependentAnimation" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EnableDependentAnimation">
+  EnableDependentAnimation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableDependentAnimation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EnableDependentAnimationProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EnableDependentAnimationProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_EnableDependentAnimationProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.EnableDependentAnimationProperty">
+  EnableDependentAnimationProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty EnableDependentAnimationProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_From_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.From*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_From" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.From">
+  From
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? From { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_FromProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.FromProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_FromProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.FromProperty">
+  FromProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty FromProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_To_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.To*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_To" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.To">
+  To
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? To { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_ToProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.ToProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_ToProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.ToProperty">
+  ToProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ToProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_As_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_As__1" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Equals_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Equals_Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.Equals(Microsoft.UI.Xaml.Media.Animation.DoubleAnimation)">
+  Equals(DoubleAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DoubleAnimation other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Equals_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_FromAbi_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleAnimation FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_GetHashCode_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_GetHashCode" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_op_Equality_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_op_Equality_Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.op_Equality(Microsoft.UI.Xaml.Media.Animation.DoubleAnimation,Microsoft.UI.Xaml.Media.Animation.DoubleAnimation)">
+  operator ==(DoubleAnimation, DoubleAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DoubleAnimation x, DoubleAnimation y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_op_Inequality_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_op_Inequality_Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_Microsoft_UI_Xaml_Media_Animation_DoubleAnimation_" data-uid="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.op_Inequality(Microsoft.UI.Xaml.Media.Animation.DoubleAnimation,Microsoft.UI.Xaml.Media.Animation.DoubleAnimation)">
+  operator !=(DoubleAnimation, DoubleAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DoubleAnimation x, DoubleAnimation y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.DoubleAnimation.html">DoubleAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L2531" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

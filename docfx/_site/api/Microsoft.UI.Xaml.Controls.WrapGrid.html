@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WrapGrid | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WrapGrid | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Controls_WrapGrid.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Controls.WrapGrid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Controls.WrapGrid">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Controls_WrapGrid" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid" class="text-break">
+Class WrapGrid  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58963"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Controls.html">Controls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(WrapGrid))]
+[ProjectedRuntimeClass(typeof(IWrapGrid))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class WrapGrid : OrientedVirtualizingPanel, IEquatable&lt;DependencyObject&gt;, IAnimationObject, IVisualElement, IVisualElement2, IEquatable&lt;UIElement&gt;, IEquatable&lt;FrameworkElement&gt;, IEquatable&lt;Panel&gt;, IEquatable&lt;VirtualizingPanel&gt;, IScrollSnapPointsInfo, IInsertionPanel, IEquatable&lt;OrientedVirtualizingPanel&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;WrapGrid&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.UIElement.html">UIElement</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html">Panel</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingPanel.html">VirtualizingPanel</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html">OrientedVirtualizingPanel</a></div>
+      <div><span class="xref">WrapGrid</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IAnimationObject.html">IAnimationObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IVisualElement.html">IVisualElement</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IVisualElement2.html">IVisualElement2</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.UIElement.html">UIElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html">Panel</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingPanel.html">VirtualizingPanel</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.IScrollSnapPointsInfo.html">IScrollSnapPointsInfo</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.IInsertionPanel.html">IInsertionPanel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html">OrientedVirtualizingPanel</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_Equals_Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_">OrientedVirtualizingPanel.Equals(OrientedVirtualizingPanel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_LineUp">OrientedVirtualizingPanel.LineUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_LineDown">OrientedVirtualizingPanel.LineDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_LineLeft">OrientedVirtualizingPanel.LineLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_LineRight">OrientedVirtualizingPanel.LineRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_PageUp">OrientedVirtualizingPanel.PageUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_PageDown">OrientedVirtualizingPanel.PageDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_PageLeft">OrientedVirtualizingPanel.PageLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_PageRight">OrientedVirtualizingPanel.PageRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_MouseWheelUp">OrientedVirtualizingPanel.MouseWheelUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_MouseWheelDown">OrientedVirtualizingPanel.MouseWheelDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_MouseWheelLeft">OrientedVirtualizingPanel.MouseWheelLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_MouseWheelRight">OrientedVirtualizingPanel.MouseWheelRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_SetHorizontalOffset_System_Double_">OrientedVirtualizingPanel.SetHorizontalOffset(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_SetVerticalOffset_System_Double_">OrientedVirtualizingPanel.SetVerticalOffset(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_MakeVisible_Microsoft_UI_Xaml_UIElement_Windows_Foundation_Rect_">OrientedVirtualizingPanel.MakeVisible(UIElement, Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_GetIrregularSnapPoints_Microsoft_UI_Xaml_Controls_Orientation_Microsoft_UI_Xaml_Controls_Primitives_SnapPointsAlignment_">OrientedVirtualizingPanel.GetIrregularSnapPoints(Orientation, SnapPointsAlignment)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_GetRegularSnapPoints_Microsoft_UI_Xaml_Controls_Orientation_Microsoft_UI_Xaml_Controls_Primitives_SnapPointsAlignment_System_Single__">OrientedVirtualizingPanel.GetRegularSnapPoints(Orientation, SnapPointsAlignment, out float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_HorizontalSnapPointsChanged">OrientedVirtualizingPanel.HorizontalSnapPointsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_VerticalSnapPointsChanged">OrientedVirtualizingPanel.VerticalSnapPointsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_GetInsertionIndexes_Windows_Foundation_Point_System_Int32__System_Int32__">OrientedVirtualizingPanel.GetInsertionIndexes(Point, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_AreHorizontalSnapPointsRegular">OrientedVirtualizingPanel.AreHorizontalSnapPointsRegular</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_AreVerticalSnapPointsRegular">OrientedVirtualizingPanel.AreVerticalSnapPointsRegular</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_CanHorizontallyScroll">OrientedVirtualizingPanel.CanHorizontallyScroll</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_CanVerticallyScroll">OrientedVirtualizingPanel.CanVerticallyScroll</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_ExtentHeight">OrientedVirtualizingPanel.ExtentHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_ExtentWidth">OrientedVirtualizingPanel.ExtentWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_HorizontalOffset">OrientedVirtualizingPanel.HorizontalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_ScrollOwner">OrientedVirtualizingPanel.ScrollOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_VerticalOffset">OrientedVirtualizingPanel.VerticalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_ViewportHeight">OrientedVirtualizingPanel.ViewportHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel.html#Microsoft_UI_Xaml_Controls_Primitives_OrientedVirtualizingPanel_ViewportWidth">OrientedVirtualizingPanel.ViewportWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingPanel.html#Microsoft_UI_Xaml_Controls_VirtualizingPanel_Equals_Microsoft_UI_Xaml_Controls_VirtualizingPanel_">VirtualizingPanel.Equals(VirtualizingPanel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingPanel.html#Microsoft_UI_Xaml_Controls_VirtualizingPanel_ItemContainerGenerator">VirtualizingPanel.ItemContainerGenerator</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_BackgroundProperty">Panel.BackgroundProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_ChildrenTransitionsProperty">Panel.ChildrenTransitionsProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_IsItemsHostProperty">Panel.IsItemsHostProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_Equals_Microsoft_UI_Xaml_Controls_Panel_">Panel.Equals(Panel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_Background">Panel.Background</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_BackgroundTransition">Panel.BackgroundTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_Children">Panel.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_ChildrenTransitions">Panel.ChildrenTransitions</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Panel.html#Microsoft_UI_Xaml_Controls_Panel_IsItemsHost">Panel.IsItemsHost</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_DeferTree_Microsoft_UI_Xaml_DependencyObject_">FrameworkElement.DeferTree(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualHeightProperty">FrameworkElement.ActualHeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualThemeProperty">FrameworkElement.ActualThemeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualWidthProperty">FrameworkElement.ActualWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_AllowFocusOnInteractionProperty">FrameworkElement.AllowFocusOnInteractionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_AllowFocusWhenDisabledProperty">FrameworkElement.AllowFocusWhenDisabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_DataContextProperty">FrameworkElement.DataContextProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FlowDirectionProperty">FrameworkElement.FlowDirectionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualMarginProperty">FrameworkElement.FocusVisualMarginProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualPrimaryBrushProperty">FrameworkElement.FocusVisualPrimaryBrushProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualPrimaryThicknessProperty">FrameworkElement.FocusVisualPrimaryThicknessProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualSecondaryBrushProperty">FrameworkElement.FocusVisualSecondaryBrushProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualSecondaryThicknessProperty">FrameworkElement.FocusVisualSecondaryThicknessProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_HeightProperty">FrameworkElement.HeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_HorizontalAlignmentProperty">FrameworkElement.HorizontalAlignmentProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_LanguageProperty">FrameworkElement.LanguageProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MarginProperty">FrameworkElement.MarginProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MaxHeightProperty">FrameworkElement.MaxHeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MaxWidthProperty">FrameworkElement.MaxWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MinHeightProperty">FrameworkElement.MinHeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MinWidthProperty">FrameworkElement.MinWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_NameProperty">FrameworkElement.NameProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_RequestedThemeProperty">FrameworkElement.RequestedThemeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_StyleProperty">FrameworkElement.StyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_TagProperty">FrameworkElement.TagProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_VerticalAlignmentProperty">FrameworkElement.VerticalAlignmentProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_WidthProperty">FrameworkElement.WidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Equals_Microsoft_UI_Xaml_FrameworkElement_">FrameworkElement.Equals(FrameworkElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FindName_System_String_">FrameworkElement.FindName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_SetBinding_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_Data_BindingBase_">FrameworkElement.SetBinding(DependencyProperty, BindingBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_GetBindingExpression_Microsoft_UI_Xaml_DependencyProperty_">FrameworkElement.GetBindingExpression(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualThemeChanged">FrameworkElement.ActualThemeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_DataContextChanged">FrameworkElement.DataContextChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_EffectiveViewportChanged">FrameworkElement.EffectiveViewportChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_LayoutUpdated">FrameworkElement.LayoutUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Loaded">FrameworkElement.Loaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Loading">FrameworkElement.Loading</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_SizeChanged">FrameworkElement.SizeChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Unloaded">FrameworkElement.Unloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualHeight">FrameworkElement.ActualHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualTheme">FrameworkElement.ActualTheme</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_ActualWidth">FrameworkElement.ActualWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_AllowFocusOnInteraction">FrameworkElement.AllowFocusOnInteraction</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_AllowFocusWhenDisabled">FrameworkElement.AllowFocusWhenDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_BaseUri">FrameworkElement.BaseUri</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_DataContext">FrameworkElement.DataContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FlowDirection">FrameworkElement.FlowDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualMargin">FrameworkElement.FocusVisualMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualPrimaryBrush">FrameworkElement.FocusVisualPrimaryBrush</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualPrimaryThickness">FrameworkElement.FocusVisualPrimaryThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualSecondaryBrush">FrameworkElement.FocusVisualSecondaryBrush</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_FocusVisualSecondaryThickness">FrameworkElement.FocusVisualSecondaryThickness</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Height">FrameworkElement.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_HorizontalAlignment">FrameworkElement.HorizontalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_IsLoaded">FrameworkElement.IsLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Language">FrameworkElement.Language</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Margin">FrameworkElement.Margin</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MaxHeight">FrameworkElement.MaxHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MaxWidth">FrameworkElement.MaxWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MinHeight">FrameworkElement.MinHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_MinWidth">FrameworkElement.MinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Name">FrameworkElement.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Parent">FrameworkElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_RequestedTheme">FrameworkElement.RequestedTheme</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Resources">FrameworkElement.Resources</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Style">FrameworkElement.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Tag">FrameworkElement.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Triggers">FrameworkElement.Triggers</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_VerticalAlignment">FrameworkElement.VerticalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html#Microsoft_UI_Xaml_FrameworkElement_Width">FrameworkElement.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TryStartDirectManipulation_Microsoft_UI_Xaml_Input_Pointer_">UIElement.TryStartDirectManipulation(Pointer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RegisterAsScrollPort_Microsoft_UI_Xaml_UIElement_">UIElement.RegisterAsScrollPort(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyProperty">UIElement.AccessKeyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyScopeOwnerProperty">UIElement.AccessKeyScopeOwnerProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AllowDropProperty">UIElement.AllowDropProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_BringIntoViewRequestedEvent">UIElement.BringIntoViewRequestedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CacheModeProperty">UIElement.CacheModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CanBeScrollAnchorProperty">UIElement.CanBeScrollAnchorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CanDragProperty">UIElement.CanDragProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CharacterReceivedEvent">UIElement.CharacterReceivedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ClipProperty">UIElement.ClipProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CompositeModeProperty">UIElement.CompositeModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ContextFlyoutProperty">UIElement.ContextFlyoutProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ContextRequestedEvent">UIElement.ContextRequestedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DoubleTappedEvent">UIElement.DoubleTappedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragEnterEvent">UIElement.DragEnterEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragLeaveEvent">UIElement.DragLeaveEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragOverEvent">UIElement.DragOverEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DropEvent">UIElement.DropEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ExitDisplayModeOnAccessKeyInvokedProperty">UIElement.ExitDisplayModeOnAccessKeyInvokedProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_FocusStateProperty">UIElement.FocusStateProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_GettingFocusEvent">UIElement.GettingFocusEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_HighContrastAdjustmentProperty">UIElement.HighContrastAdjustmentProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_HoldingEvent">UIElement.HoldingEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsAccessKeyScopeProperty">UIElement.IsAccessKeyScopeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsDoubleTapEnabledProperty">UIElement.IsDoubleTapEnabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsHitTestVisibleProperty">UIElement.IsHitTestVisibleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsHoldingEnabledProperty">UIElement.IsHoldingEnabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsRightTapEnabledProperty">UIElement.IsRightTapEnabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsTabStopProperty">UIElement.IsTabStopProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsTapEnabledProperty">UIElement.IsTapEnabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyDownEvent">UIElement.KeyDownEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipHorizontalOffsetProperty">UIElement.KeyTipHorizontalOffsetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipPlacementModeProperty">UIElement.KeyTipPlacementModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipTargetProperty">UIElement.KeyTipTargetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipVerticalOffsetProperty">UIElement.KeyTipVerticalOffsetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyUpEvent">UIElement.KeyUpEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyboardAcceleratorPlacementModeProperty">UIElement.KeyboardAcceleratorPlacementModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyboardAcceleratorPlacementTargetProperty">UIElement.KeyboardAcceleratorPlacementTargetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_LightsProperty">UIElement.LightsProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_LosingFocusEvent">UIElement.LosingFocusEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationCompletedEvent">UIElement.ManipulationCompletedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationDeltaEvent">UIElement.ManipulationDeltaEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationInertiaStartingEvent">UIElement.ManipulationInertiaStartingEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationModeProperty">UIElement.ManipulationModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationStartedEvent">UIElement.ManipulationStartedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationStartingEvent">UIElement.ManipulationStartingEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_NoFocusCandidateFoundEvent">UIElement.NoFocusCandidateFoundEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_OpacityProperty">UIElement.OpacityProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCanceledEvent">UIElement.PointerCanceledEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCaptureLostEvent">UIElement.PointerCaptureLostEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCapturesProperty">UIElement.PointerCapturesProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerEnteredEvent">UIElement.PointerEnteredEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerExitedEvent">UIElement.PointerExitedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerMovedEvent">UIElement.PointerMovedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerPressedEvent">UIElement.PointerPressedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerReleasedEvent">UIElement.PointerReleasedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerWheelChangedEvent">UIElement.PointerWheelChangedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PreviewKeyDownEvent">UIElement.PreviewKeyDownEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PreviewKeyUpEvent">UIElement.PreviewKeyUpEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ProjectionProperty">UIElement.ProjectionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RenderTransformOriginProperty">UIElement.RenderTransformOriginProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RenderTransformProperty">UIElement.RenderTransformProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RightTappedEvent">UIElement.RightTappedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ShadowProperty">UIElement.ShadowProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TabFocusNavigationProperty">UIElement.TabFocusNavigationProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TabIndexProperty">UIElement.TabIndexProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TappedEvent">UIElement.TappedEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Transform3DProperty">UIElement.Transform3DProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TransitionsProperty">UIElement.TransitionsProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_UseLayoutRoundingProperty">UIElement.UseLayoutRoundingProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_UseSystemFocusVisualsProperty">UIElement.UseSystemFocusVisualsProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_VisibilityProperty">UIElement.VisibilityProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusDownNavigationStrategyProperty">UIElement.XYFocusDownNavigationStrategyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusDownProperty">UIElement.XYFocusDownProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusKeyboardNavigationProperty">UIElement.XYFocusKeyboardNavigationProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusLeftNavigationStrategyProperty">UIElement.XYFocusLeftNavigationStrategyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusLeftProperty">UIElement.XYFocusLeftProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusRightNavigationStrategyProperty">UIElement.XYFocusRightNavigationStrategyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusRightProperty">UIElement.XYFocusRightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusUpNavigationStrategyProperty">UIElement.XYFocusUpNavigationStrategyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusUpProperty">UIElement.XYFocusUpProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Equals_Microsoft_UI_Xaml_UIElement_">UIElement.Equals(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Measure_Windows_Foundation_Size_">UIElement.Measure(Size)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Arrange_Windows_Foundation_Rect_">UIElement.Arrange(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CapturePointer_Microsoft_UI_Xaml_Input_Pointer_">UIElement.CapturePointer(Pointer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ReleasePointerCapture_Microsoft_UI_Xaml_Input_Pointer_">UIElement.ReleasePointerCapture(Pointer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ReleasePointerCaptures">UIElement.ReleasePointerCaptures()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AddHandler_Microsoft_UI_Xaml_RoutedEvent_System_Object_System_Boolean_">UIElement.AddHandler(RoutedEvent, object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RemoveHandler_Microsoft_UI_Xaml_RoutedEvent_System_Object_">UIElement.RemoveHandler(RoutedEvent, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TransformToVisual_Microsoft_UI_Xaml_UIElement_">UIElement.TransformToVisual(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_InvalidateMeasure">UIElement.InvalidateMeasure()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_InvalidateArrange">UIElement.InvalidateArrange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_UpdateLayout">UIElement.UpdateLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CancelDirectManipulations">UIElement.CancelDirectManipulations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_StartDragAsync_Microsoft_UI_Input_PointerPoint_">UIElement.StartDragAsync(PointerPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_StartBringIntoView">UIElement.StartBringIntoView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_StartBringIntoView_Microsoft_UI_Xaml_BringIntoViewOptions_">UIElement.StartBringIntoView(BringIntoViewOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TryInvokeKeyboardAccelerator_Microsoft_UI_Xaml_Input_ProcessKeyboardAcceleratorEventArgs_">UIElement.TryInvokeKeyboardAccelerator(ProcessKeyboardAcceleratorEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Focus_Microsoft_UI_Xaml_FocusState_">UIElement.Focus(FocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_StartAnimation_Microsoft_UI_Composition_ICompositionAnimationBase_">UIElement.StartAnimation(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_StopAnimation_Microsoft_UI_Composition_ICompositionAnimationBase_">UIElement.StopAnimation(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyDisplayDismissed">UIElement.AccessKeyDisplayDismissed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyDisplayRequested">UIElement.AccessKeyDisplayRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyInvoked">UIElement.AccessKeyInvoked</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_BringIntoViewRequested">UIElement.BringIntoViewRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CharacterReceived">UIElement.CharacterReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ContextCanceled">UIElement.ContextCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ContextRequested">UIElement.ContextRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DoubleTapped">UIElement.DoubleTapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragEnter">UIElement.DragEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragLeave">UIElement.DragLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragOver">UIElement.DragOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DragStarting">UIElement.DragStarting</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Drop">UIElement.Drop</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DropCompleted">UIElement.DropCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_GettingFocus">UIElement.GettingFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_GotFocus">UIElement.GotFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Holding">UIElement.Holding</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyDown">UIElement.KeyDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyUp">UIElement.KeyUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_LosingFocus">UIElement.LosingFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_LostFocus">UIElement.LostFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationCompleted">UIElement.ManipulationCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationDelta">UIElement.ManipulationDelta</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationInertiaStarting">UIElement.ManipulationInertiaStarting</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationStarted">UIElement.ManipulationStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationStarting">UIElement.ManipulationStarting</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_NoFocusCandidateFound">UIElement.NoFocusCandidateFound</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCanceled">UIElement.PointerCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCaptureLost">UIElement.PointerCaptureLost</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerEntered">UIElement.PointerEntered</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerExited">UIElement.PointerExited</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerMoved">UIElement.PointerMoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerPressed">UIElement.PointerPressed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerReleased">UIElement.PointerReleased</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerWheelChanged">UIElement.PointerWheelChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PreviewKeyDown">UIElement.PreviewKeyDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PreviewKeyUp">UIElement.PreviewKeyUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ProcessKeyboardAccelerators">UIElement.ProcessKeyboardAccelerators</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RightTapped">UIElement.RightTapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Tapped">UIElement.Tapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_">UIElement.PopulatePropertyInfo(string, AnimationPropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_GetVisualInternal">UIElement.GetVisualInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKey">UIElement.AccessKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AccessKeyScopeOwner">UIElement.AccessKeyScopeOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ActualOffset">UIElement.ActualOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ActualSize">UIElement.ActualSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_AllowDrop">UIElement.AllowDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CacheMode">UIElement.CacheMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CanBeScrollAnchor">UIElement.CanBeScrollAnchor</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CanDrag">UIElement.CanDrag</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CenterPoint">UIElement.CenterPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Clip">UIElement.Clip</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_CompositeMode">UIElement.CompositeMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ContextFlyout">UIElement.ContextFlyout</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_DesiredSize">UIElement.DesiredSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ExitDisplayModeOnAccessKeyInvoked">UIElement.ExitDisplayModeOnAccessKeyInvoked</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_FocusState">UIElement.FocusState</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_HighContrastAdjustment">UIElement.HighContrastAdjustment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsAccessKeyScope">UIElement.IsAccessKeyScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsDoubleTapEnabled">UIElement.IsDoubleTapEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsHitTestVisible">UIElement.IsHitTestVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsHoldingEnabled">UIElement.IsHoldingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsRightTapEnabled">UIElement.IsRightTapEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsTabStop">UIElement.IsTabStop</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_IsTapEnabled">UIElement.IsTapEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipHorizontalOffset">UIElement.KeyTipHorizontalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipPlacementMode">UIElement.KeyTipPlacementMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipTarget">UIElement.KeyTipTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyTipVerticalOffset">UIElement.KeyTipVerticalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyboardAcceleratorPlacementMode">UIElement.KeyboardAcceleratorPlacementMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyboardAcceleratorPlacementTarget">UIElement.KeyboardAcceleratorPlacementTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_KeyboardAccelerators">UIElement.KeyboardAccelerators</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Lights">UIElement.Lights</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ManipulationMode">UIElement.ManipulationMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Opacity">UIElement.Opacity</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_OpacityTransition">UIElement.OpacityTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_PointerCaptures">UIElement.PointerCaptures</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Projection">UIElement.Projection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RasterizationScale">UIElement.RasterizationScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RenderSize">UIElement.RenderSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RenderTransform">UIElement.RenderTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RenderTransformOrigin">UIElement.RenderTransformOrigin</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Rotation">UIElement.Rotation</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RotationAxis">UIElement.RotationAxis</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_RotationTransition">UIElement.RotationTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Scale">UIElement.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_ScaleTransition">UIElement.ScaleTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Shadow">UIElement.Shadow</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TabFocusNavigation">UIElement.TabFocusNavigation</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TabIndex">UIElement.TabIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Transform3D">UIElement.Transform3D</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TransformMatrix">UIElement.TransformMatrix</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Transitions">UIElement.Transitions</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Translation">UIElement.Translation</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_TranslationTransition">UIElement.TranslationTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_UseLayoutRounding">UIElement.UseLayoutRounding</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_UseSystemFocusVisuals">UIElement.UseSystemFocusVisuals</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_Visibility">UIElement.Visibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusDown">UIElement.XYFocusDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusDownNavigationStrategy">UIElement.XYFocusDownNavigationStrategy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusKeyboardNavigation">UIElement.XYFocusKeyboardNavigation</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusLeft">UIElement.XYFocusLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusLeftNavigationStrategy">UIElement.XYFocusLeftNavigationStrategy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusRight">UIElement.XYFocusRight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusRightNavigationStrategy">UIElement.XYFocusRightNavigationStrategy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusUp">UIElement.XYFocusUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XYFocusUpNavigationStrategy">UIElement.XYFocusUpNavigationStrategy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.UIElement.html#Microsoft_UI_Xaml_UIElement_XamlRoot">UIElement.XamlRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid__ctor_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid__ctor" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.#ctor">
+  WrapGrid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58996"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WrapGrid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_HorizontalChildrenAlignment_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.HorizontalChildrenAlignment*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_HorizontalChildrenAlignment" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.HorizontalChildrenAlignment">
+  HorizontalChildrenAlignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59063"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalAlignment HorizontalChildrenAlignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.HorizontalAlignment.html">HorizontalAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_HorizontalChildrenAlignmentProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.HorizontalChildrenAlignmentProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_HorizontalChildrenAlignmentProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.HorizontalChildrenAlignmentProperty">
+  HorizontalChildrenAlignmentProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59023"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty HorizontalChildrenAlignmentProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemHeight_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemHeight*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemHeight" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemHeight">
+  ItemHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59069"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ItemHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemHeightProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemHeightProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemHeightProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemHeightProperty">
+  ItemHeightProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59025"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ItemHeightProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemWidth_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemWidth*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemWidth" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemWidth">
+  ItemWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59075"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ItemWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemWidthProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemWidthProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_ItemWidthProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.ItemWidthProperty">
+  ItemWidthProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59027"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ItemWidthProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_MaximumRowsOrColumns_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.MaximumRowsOrColumns*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_MaximumRowsOrColumns" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.MaximumRowsOrColumns">
+  MaximumRowsOrColumns
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59081"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaximumRowsOrColumns { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_MaximumRowsOrColumnsProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.MaximumRowsOrColumnsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_MaximumRowsOrColumnsProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.MaximumRowsOrColumnsProperty">
+  MaximumRowsOrColumnsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59029"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty MaximumRowsOrColumnsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_Orientation_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Orientation*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_Orientation" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Orientation">
+  Orientation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59087"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Orientation Orientation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Orientation.html">Orientation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_OrientationProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.OrientationProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_OrientationProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.OrientationProperty">
+  OrientationProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty OrientationProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_VerticalChildrenAlignment_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.VerticalChildrenAlignment*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_VerticalChildrenAlignment" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.VerticalChildrenAlignment">
+  VerticalChildrenAlignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59093"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VerticalAlignment VerticalChildrenAlignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.VerticalAlignment.html">VerticalAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_VerticalChildrenAlignmentProperty_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.VerticalChildrenAlignmentProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_VerticalChildrenAlignmentProperty" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.VerticalChildrenAlignmentProperty">
+  VerticalChildrenAlignmentProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59033"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty VerticalChildrenAlignmentProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_As_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_As__1" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59004"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_Equals_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_Equals_Microsoft_UI_Xaml_Controls_WrapGrid_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Equals(Microsoft.UI.Xaml.Controls.WrapGrid)">
+  Equals(WrapGrid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59052"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(WrapGrid other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_Equals_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59053"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_FromAbi_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59035"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WrapGrid FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_GetHashCode_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_GetHashCode" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59054"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59099"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_op_Equality_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_op_Equality_Microsoft_UI_Xaml_Controls_WrapGrid_Microsoft_UI_Xaml_Controls_WrapGrid_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.op_Equality(Microsoft.UI.Xaml.Controls.WrapGrid,Microsoft.UI.Xaml.Controls.WrapGrid)">
+  operator ==(WrapGrid, WrapGrid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59050"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(WrapGrid x, WrapGrid y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_WrapGrid_op_Inequality_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_WrapGrid_op_Inequality_Microsoft_UI_Xaml_Controls_WrapGrid_Microsoft_UI_Xaml_Controls_WrapGrid_" data-uid="Microsoft.UI.Xaml.Controls.WrapGrid.op_Inequality(Microsoft.UI.Xaml.Controls.WrapGrid,Microsoft.UI.Xaml.Controls.WrapGrid)">
+  operator !=(WrapGrid, WrapGrid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L59051"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(WrapGrid x, WrapGrid y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.WrapGrid.html">WrapGrid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58963" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

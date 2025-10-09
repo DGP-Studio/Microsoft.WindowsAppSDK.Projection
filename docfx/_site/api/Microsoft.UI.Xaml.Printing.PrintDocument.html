@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PrintDocument | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PrintDocument | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Printing_PrintDocument.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Printing.PrintDocument%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Printing.PrintDocument">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Printing_PrintDocument" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument" class="text-break">
+Class PrintDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Printing.html">Printing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(PrintDocument))]
+[ProjectedRuntimeClass(typeof(IPrintDocument))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public class PrintDocument : DependencyObject, IEquatable&lt;DependencyObject&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;PrintDocument&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><span class="xref">PrintDocument</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor">
+  PrintDocument()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrintDocument()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor(WinRT.DerivedComposed)">
+  PrintDocument(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PrintDocument(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.#ctor(WinRT.IObjectReference)">
+  PrintDocument(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PrintDocument(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_DocumentSource_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.DocumentSource*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_DocumentSource" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.DocumentSource">
+  DocumentSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPrintDocumentSource DocumentSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.graphics.printing.iprintdocumentsource">IPrintDocumentSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_DocumentSourceProperty_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.DocumentSourceProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_DocumentSourceProperty" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.DocumentSourceProperty">
+  DocumentSourceProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty DocumentSourceProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_AddPage_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.AddPage*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_AddPage_Microsoft_UI_Xaml_UIElement_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.AddPage(Microsoft.UI.Xaml.UIElement)">
+  AddPage(UIElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPage(UIElement pageVisual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageVisual</code> <a class="xref" href="Microsoft.UI.Xaml.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_AddPagesComplete_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.AddPagesComplete*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_AddPagesComplete" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.AddPagesComplete">
+  AddPagesComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPagesComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_As_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_As__1" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_Equals_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_Equals_Microsoft_UI_Xaml_Printing_PrintDocument_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.Equals(Microsoft.UI.Xaml.Printing.PrintDocument)">
+  Equals(PrintDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PrintDocument other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_Equals_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_FromAbi_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PrintDocument FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_GetHashCode_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_GetHashCode" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_InvalidatePreview_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.InvalidatePreview*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_InvalidatePreview" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.InvalidatePreview">
+  InvalidatePreview()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidatePreview()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_SetPreviewPage_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.SetPreviewPage*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_SetPreviewPage_System_Int32_Microsoft_UI_Xaml_UIElement_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.SetPreviewPage(System.Int32,Microsoft.UI.Xaml.UIElement)">
+  SetPreviewPage(int, UIElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreviewPage(int pageNumber, UIElement pageVisual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pageVisual</code> <a class="xref" href="Microsoft.UI.Xaml.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_SetPreviewPageCount_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.SetPreviewPageCount*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_SetPreviewPageCount_System_Int32_Microsoft_UI_Xaml_Printing_PreviewPageCountType_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.SetPreviewPageCount(System.Int32,Microsoft.UI.Xaml.Printing.PreviewPageCountType)">
+  SetPreviewPageCount(int, PreviewPageCountType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreviewPageCount(int count, PreviewPageCountType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PreviewPageCountType.html">PreviewPageCountType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_AddPages" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.AddPages">
+  AddPages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AddPagesEventHandler AddPages</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Printing.AddPagesEventHandler.html">AddPagesEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_GetPreviewPage" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.GetPreviewPage">
+  GetPreviewPage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event GetPreviewPageEventHandler GetPreviewPage</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Printing.GetPreviewPageEventHandler.html">GetPreviewPageEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_Paginate" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.Paginate">
+  Paginate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PaginateEventHandler Paginate</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Printing.PaginateEventHandler.html">PaginateEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_op_Equality_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_op_Equality_Microsoft_UI_Xaml_Printing_PrintDocument_Microsoft_UI_Xaml_Printing_PrintDocument_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.op_Equality(Microsoft.UI.Xaml.Printing.PrintDocument,Microsoft.UI.Xaml.Printing.PrintDocument)">
+  operator ==(PrintDocument, PrintDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PrintDocument x, PrintDocument y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Printing_PrintDocument_op_Inequality_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Printing_PrintDocument_op_Inequality_Microsoft_UI_Xaml_Printing_PrintDocument_Microsoft_UI_Xaml_Printing_PrintDocument_" data-uid="Microsoft.UI.Xaml.Printing.PrintDocument.op_Inequality(Microsoft.UI.Xaml.Printing.PrintDocument,Microsoft.UI.Xaml.Printing.PrintDocument)">
+  operator !=(PrintDocument, PrintDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PrintDocument x, PrintDocument y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Printing.PrintDocument.html">PrintDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Printing.cs/#L392" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

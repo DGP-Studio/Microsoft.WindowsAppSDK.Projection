@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Storyboard | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Storyboard | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Media_Animation_Storyboard.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Media.Animation.Storyboard%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Media_Animation_Storyboard" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard" class="text-break">
+Class Storyboard  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10245"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Media.html">Media</a>.<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.html">Animation</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(Storyboard))]
+[ProjectedRuntimeClass(typeof(IStoryboard))]
+[ContentProperty(Name = &quot;Children&quot;)]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class Storyboard : Timeline, IEquatable&lt;DependencyObject&gt;, IEquatable&lt;Timeline&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;Storyboard&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></div>
+      <div><span class="xref">Storyboard</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AllowDependentAnimations">Timeline.AllowDependentAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AutoReverseProperty">Timeline.AutoReverseProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_BeginTimeProperty">Timeline.BeginTimeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_DurationProperty">Timeline.DurationProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_FillBehaviorProperty">Timeline.FillBehaviorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_RepeatBehaviorProperty">Timeline.RepeatBehaviorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_SpeedRatioProperty">Timeline.SpeedRatioProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Equals_Microsoft_UI_Xaml_Media_Animation_Timeline_">Timeline.Equals(Timeline)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Completed">Timeline.Completed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_AutoReverse">Timeline.AutoReverse</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_BeginTime">Timeline.BeginTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_Duration">Timeline.Duration</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_FillBehavior">Timeline.FillBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_RepeatBehavior">Timeline.RepeatBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html#Microsoft_UI_Xaml_Media_Animation_Timeline_SpeedRatio">Timeline.SpeedRatio</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard__ctor_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard__ctor" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.#ctor">
+  Storyboard()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Storyboard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Children_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Children*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Children" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Children">
+  Children
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineCollection Children { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.TimelineCollection.html">TimelineCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_TargetNameProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.TargetNameProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_TargetNameProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.TargetNameProperty">
+  TargetNameProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty TargetNameProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_TargetPropertyProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.TargetPropertyProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_TargetPropertyProperty" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.TargetPropertyProperty">
+  TargetPropertyProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty TargetPropertyProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_As_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_As__1" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Begin_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Begin*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Begin" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Begin">
+  Begin()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Begin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Equals_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Equals_Microsoft_UI_Xaml_Media_Animation_Storyboard_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Equals(Microsoft.UI.Xaml.Media.Animation.Storyboard)">
+  Equals(Storyboard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Storyboard other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Equals_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_FromAbi_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Storyboard FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetCurrentState_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetCurrentState*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetCurrentState" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetCurrentState">
+  GetCurrentState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClockState GetCurrentState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.Animation.ClockState.html">ClockState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetCurrentTime_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetCurrentTime*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetCurrentTime" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetCurrentTime">
+  GetCurrentTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan GetCurrentTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetHashCode_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetHashCode" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetTargetName_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetTargetName*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetTargetName_Microsoft_UI_Xaml_Media_Animation_Timeline_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetTargetName(Microsoft.UI.Xaml.Media.Animation.Timeline)">
+  GetTargetName(Timeline)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTargetName(Timeline element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetTargetProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetTargetProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_GetTargetProperty_Microsoft_UI_Xaml_Media_Animation_Timeline_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.GetTargetProperty(Microsoft.UI.Xaml.Media.Animation.Timeline)">
+  GetTargetProperty(Timeline)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTargetProperty(Timeline element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Pause_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Pause*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Pause" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Pause">
+  Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Resume_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Resume*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Resume" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Resume">
+  Resume()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Seek_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Seek*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Seek_System_TimeSpan_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Seek(System.TimeSpan)">
+  Seek(TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Seek(TimeSpan offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SeekAlignedToLastTick_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SeekAlignedToLastTick*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SeekAlignedToLastTick_System_TimeSpan_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SeekAlignedToLastTick(System.TimeSpan)">
+  SeekAlignedToLastTick(TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeekAlignedToLastTick(TimeSpan offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTarget_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTarget*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTarget_Microsoft_UI_Xaml_Media_Animation_Timeline_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTarget(Microsoft.UI.Xaml.Media.Animation.Timeline,Microsoft.UI.Xaml.DependencyObject)">
+  SetTarget(Timeline, DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTarget(Timeline timeline, DependencyObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeline</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTargetName_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTargetName*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTargetName_Microsoft_UI_Xaml_Media_Animation_Timeline_System_String_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTargetName(Microsoft.UI.Xaml.Media.Animation.Timeline,System.String)">
+  SetTargetName(Timeline, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTargetName(Timeline element, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTargetProperty_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SetTargetProperty_Microsoft_UI_Xaml_Media_Animation_Timeline_System_String_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(Microsoft.UI.Xaml.Media.Animation.Timeline,System.String)">
+  SetTargetProperty(Timeline, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTargetProperty(Timeline element, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Timeline.html">Timeline</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SkipToFill_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SkipToFill*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_SkipToFill" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.SkipToFill">
+  SkipToFill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SkipToFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Stop_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Stop*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_Stop" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_op_Equality_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_op_Equality_Microsoft_UI_Xaml_Media_Animation_Storyboard_Microsoft_UI_Xaml_Media_Animation_Storyboard_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.op_Equality(Microsoft.UI.Xaml.Media.Animation.Storyboard,Microsoft.UI.Xaml.Media.Animation.Storyboard)">
+  operator ==(Storyboard, Storyboard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Storyboard x, Storyboard y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Media_Animation_Storyboard_op_Inequality_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Media_Animation_Storyboard_op_Inequality_Microsoft_UI_Xaml_Media_Animation_Storyboard_Microsoft_UI_Xaml_Media_Animation_Storyboard_" data-uid="Microsoft.UI.Xaml.Media.Animation.Storyboard.op_Inequality(Microsoft.UI.Xaml.Media.Animation.Storyboard,Microsoft.UI.Xaml.Media.Animation.Storyboard)">
+  operator !=(Storyboard, Storyboard)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Storyboard x, Storyboard y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Media.Animation.Storyboard.html">Storyboard</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Media.Animation.cs/#L10245" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

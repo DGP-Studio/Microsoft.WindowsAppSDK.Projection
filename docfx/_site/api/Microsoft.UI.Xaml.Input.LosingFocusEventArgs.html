@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LosingFocusEventArgs | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LosingFocusEventArgs | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Input_LosingFocusEventArgs.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Input.LosingFocusEventArgs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs" class="text-break">
+Class LosingFocusEventArgs  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2952"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Input.html">Input</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(LosingFocusEventArgs))]
+[ProjectedRuntimeClass(typeof(ILosingFocusEventArgs))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class LosingFocusEventArgs : RoutedEventArgs, IEquatable&lt;RoutedEventArgs&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;LosingFocusEventArgs&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.RoutedEventArgs.html">RoutedEventArgs</a></div>
+      <div><span class="xref">LosingFocusEventArgs</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.RoutedEventArgs.html">RoutedEventArgs</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.RoutedEventArgs.html#Microsoft_UI_Xaml_RoutedEventArgs_Equals_Microsoft_UI_Xaml_RoutedEventArgs_">RoutedEventArgs.Equals(RoutedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.RoutedEventArgs.html#Microsoft_UI_Xaml_RoutedEventArgs_OriginalSource">RoutedEventArgs.OriginalSource</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Cancel_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Cancel*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Cancel" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Cancel">
+  Cancel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3000"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Cancel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_CorrelationId_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.CorrelationId*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_CorrelationId" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.CorrelationId">
+  CorrelationId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3006"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid CorrelationId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Direction_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Direction*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Direction" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Direction">
+  Direction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3008"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusNavigationDirection Direction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.FocusNavigationDirection.html">FocusNavigationDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_FocusState_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.FocusState*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_FocusState" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.FocusState">
+  FocusState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusState FocusState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FocusState.html">FocusState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Handled_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Handled*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Handled" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Handled">
+  Handled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3012"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Handled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_InputDevice_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.InputDevice*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_InputDevice" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.InputDevice">
+  InputDevice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusInputDeviceKind InputDevice { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.FocusInputDeviceKind.html">FocusInputDeviceKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_NewFocusedElement_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.NewFocusedElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_NewFocusedElement" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.NewFocusedElement">
+  NewFocusedElement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3020"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject NewFocusedElement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_OldFocusedElement_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.OldFocusedElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_OldFocusedElement" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.OldFocusedElement">
+  OldFocusedElement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject OldFocusedElement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Equals_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Equals_Microsoft_UI_Xaml_Input_LosingFocusEventArgs_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Equals(Microsoft.UI.Xaml.Input.LosingFocusEventArgs)">
+  Equals(LosingFocusEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2985"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(LosingFocusEventArgs other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Equals_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2986"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_FromAbi_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2968"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LosingFocusEventArgs FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_GetHashCode_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_GetHashCode" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L3028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_TryCancel_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.TryCancel*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_TryCancel" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.TryCancel">
+  TryCancel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2996"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCancel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_TrySetNewFocusedElement_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.TrySetNewFocusedElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_TrySetNewFocusedElement_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.TrySetNewFocusedElement(Microsoft.UI.Xaml.DependencyObject)">
+  TrySetNewFocusedElement(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetNewFocusedElement(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_op_Equality_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_op_Equality_Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Microsoft_UI_Xaml_Input_LosingFocusEventArgs_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.op_Equality(Microsoft.UI.Xaml.Input.LosingFocusEventArgs,Microsoft.UI.Xaml.Input.LosingFocusEventArgs)">
+  operator ==(LosingFocusEventArgs, LosingFocusEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(LosingFocusEventArgs x, LosingFocusEventArgs y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_op_Inequality_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Input_LosingFocusEventArgs_op_Inequality_Microsoft_UI_Xaml_Input_LosingFocusEventArgs_Microsoft_UI_Xaml_Input_LosingFocusEventArgs_" data-uid="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.op_Inequality(Microsoft.UI.Xaml.Input.LosingFocusEventArgs,Microsoft.UI.Xaml.Input.LosingFocusEventArgs)">
+  operator !=(LosingFocusEventArgs, LosingFocusEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2984"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(LosingFocusEventArgs x, LosingFocusEventArgs y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Input.LosingFocusEventArgs.html">LosingFocusEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Input.cs/#L2952" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

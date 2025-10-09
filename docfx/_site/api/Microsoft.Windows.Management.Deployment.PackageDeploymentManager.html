@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PackageDeploymentManager | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PackageDeploymentManager | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_Windows_Management_Deployment_PackageDeploymentManager.md&amp;value=---%0Auid%3A%20Microsoft.Windows.Management.Deployment.PackageDeploymentManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager">
+
+
+
+  <h1 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager" class="text-break">
+Class PackageDeploymentManager  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.Windows.html">Windows</a>.<a class="xref" href="Microsoft.Windows.Management.html">Management</a>.<a class="xref" href="Microsoft.Windows.Management.Deployment.html">Deployment</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.Windows.Management.Deployment&quot;)]
+[WindowsRuntimeHelperType(typeof(PackageDeploymentManager))]
+[ProjectedRuntimeClass(typeof(IPackageDeploymentManager))]
+[ContractVersion(typeof(PackageDeploymentContract), 65536)]
+public sealed class PackageDeploymentManager : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;PackageDeploymentManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PackageDeploymentManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageAsync_System_String_Microsoft_Windows_Management_Deployment_AddPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageAsync(System.String,Microsoft.Windows.Management.Deployment.AddPackageOptions)">
+  AddPackageAsync(string, AddPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; AddPackageAsync(string package, AddPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.AddPackageOptions.html">AddPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_AddPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.AddPackageOptions)">
+  AddPackageByUriAsync(Uri, AddPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; AddPackageByUriAsync(Uri packageUri, AddPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.AddPackageOptions.html">AddPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_AddPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_AddPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.AddPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.AddPackageOptions)">
+  AddPackageSetAsync(PackageSet, AddPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; AddPackageSetAsync(PackageSet packageSet, AddPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.AddPackageOptions.html">AddPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_As_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.As*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_As__1" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageAsync_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageAsync(System.String)">
+  DeprovisionPackageAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; DeprovisionPackageAsync(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageByUriAsync_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageByUriAsync(System.Uri)">
+  DeprovisionPackageByUriAsync(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; DeprovisionPackageByUriAsync(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_DeprovisionPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.DeprovisionPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet)">
+  DeprovisionPackageSetAsync(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; DeprovisionPackageSetAsync(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageReadyAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageReadyAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageReadyAsync_System_String_Microsoft_Windows_Management_Deployment_EnsureReadyOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageReadyAsync(System.String,Microsoft.Windows.Management.Deployment.EnsureReadyOptions)">
+  EnsurePackageReadyAsync(string, EnsureReadyOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; EnsurePackageReadyAsync(string package, EnsureReadyOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.EnsureReadyOptions.html">EnsureReadyOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageReadyByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageReadyByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageReadyByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_EnsureReadyOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageReadyByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.EnsureReadyOptions)">
+  EnsurePackageReadyByUriAsync(Uri, EnsureReadyOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; EnsurePackageReadyByUriAsync(Uri packageUri, EnsureReadyOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.EnsureReadyOptions.html">EnsureReadyOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageSetReadyAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageSetReadyAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_EnsurePackageSetReadyAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_EnsureReadyOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.EnsurePackageSetReadyAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.EnsureReadyOptions)">
+  EnsurePackageSetReadyAsync(PackageSet, EnsureReadyOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; EnsurePackageSetReadyAsync(PackageSet packageSet, EnsureReadyOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.EnsureReadyOptions.html">EnsureReadyOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Equals_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Equals_Microsoft_Windows_Management_Deployment_PackageDeploymentManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.Equals(Microsoft.Windows.Management.Deployment.PackageDeploymentManager)">
+  Equals(PackageDeploymentManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L675"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PackageDeploymentManager other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Equals_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Equals_System_Object_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_FromAbi_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.FromAbi*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_FromAbi_System_IntPtr_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageDeploymentManager FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_GetDefault_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.GetDefault*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_GetDefault" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.GetDefault">
+  GetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageDeploymentManager GetDefault()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_GetHashCode_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.GetHashCode*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_GetHashCode" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageDeploymentFeatureSupported_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageDeploymentFeatureSupported*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageDeploymentFeatureSupported_Microsoft_Windows_Management_Deployment_PackageDeploymentFeature_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageDeploymentFeatureSupported(Microsoft.Windows.Management.Deployment.PackageDeploymentFeature)">
+  IsPackageDeploymentFeatureSupported(PackageDeploymentFeature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPackageDeploymentFeatureSupported(PackageDeploymentFeature feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feature</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentFeature.html">PackageDeploymentFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageProvisioned_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageProvisioned*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageProvisioned_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageProvisioned(System.String)">
+  IsPackageProvisioned(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageProvisioned(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageProvisionedByUri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageProvisionedByUri*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageProvisionedByUri_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageProvisionedByUri(System.Uri)">
+  IsPackageProvisionedByUri(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageProvisionedByUri(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReady_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReady*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReady_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReady(System.String)">
+  IsPackageReady(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageReady(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyByUri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyByUri*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyByUri_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyByUri(System.Uri)">
+  IsPackageReadyByUri(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L702"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageReadyByUri(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyOrNewerAvailable_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyOrNewerAvailable*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyOrNewerAvailable_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyOrNewerAvailable(System.String)">
+  IsPackageReadyOrNewerAvailable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageReadyOrNewerAvailableStatus IsPackageReadyOrNewerAvailable(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageReadyOrNewerAvailableStatus.html">PackageReadyOrNewerAvailableStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyOrNewerAvailableByUri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyOrNewerAvailableByUri*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageReadyOrNewerAvailableByUri_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageReadyOrNewerAvailableByUri(System.Uri)">
+  IsPackageReadyOrNewerAvailableByUri(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L770"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageReadyOrNewerAvailableStatus IsPackageReadyOrNewerAvailableByUri(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageReadyOrNewerAvailableStatus.html">PackageReadyOrNewerAvailableStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageRegistrationPending_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageRegistrationPending*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageRegistrationPending_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageRegistrationPending(System.String)">
+  IsPackageRegistrationPending(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageRegistrationPending(string packageFamilyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageFamilyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageRegistrationPendingForUser_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageRegistrationPendingForUser*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageRegistrationPendingForUser_System_String_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageRegistrationPendingForUser(System.String,System.String)">
+  IsPackageRegistrationPendingForUser(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageRegistrationPendingForUser(string userSecurityId, string packageFamilyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userSecurityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>packageFamilyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetProvisioned_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetProvisioned*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetProvisioned_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetProvisioned(Microsoft.Windows.Management.Deployment.PackageSet)">
+  IsPackageSetProvisioned(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageSetProvisioned(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetReady_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetReady*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetReady_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetReady(Microsoft.Windows.Management.Deployment.PackageSet)">
+  IsPackageSetReady(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPackageSetReady(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetReadyOrNewerAvailable_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetReadyOrNewerAvailable*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_IsPackageSetReadyOrNewerAvailable_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.IsPackageSetReadyOrNewerAvailable(Microsoft.Windows.Management.Deployment.PackageSet)">
+  IsPackageSetReadyOrNewerAvailable(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageReadyOrNewerAvailableStatus IsPackageSetReadyOrNewerAvailable(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageReadyOrNewerAvailableStatus.html">PackageReadyOrNewerAvailableStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageAsync_System_String_Microsoft_Windows_Management_Deployment_ProvisionPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageAsync(System.String,Microsoft.Windows.Management.Deployment.ProvisionPackageOptions)">
+  ProvisionPackageAsync(string, ProvisionPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L752"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ProvisionPackageAsync(string package, ProvisionPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.ProvisionPackageOptions.html">ProvisionPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_ProvisionPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.ProvisionPackageOptions)">
+  ProvisionPackageByUriAsync(Uri, ProvisionPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L754"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ProvisionPackageByUriAsync(Uri packageUri, ProvisionPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.ProvisionPackageOptions.html">ProvisionPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ProvisionPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_ProvisionPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ProvisionPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.ProvisionPackageOptions)">
+  ProvisionPackageSetAsync(PackageSet, ProvisionPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ProvisionPackageSetAsync(PackageSet packageSet, ProvisionPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.ProvisionPackageOptions.html">ProvisionPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageAsync_System_String_Microsoft_Windows_Management_Deployment_RegisterPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageAsync(System.String,Microsoft.Windows.Management.Deployment.RegisterPackageOptions)">
+  RegisterPackageAsync(string, RegisterPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RegisterPackageAsync(string package, RegisterPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RegisterPackageOptions.html">RegisterPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_RegisterPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.RegisterPackageOptions)">
+  RegisterPackageByUriAsync(Uri, RegisterPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RegisterPackageByUriAsync(Uri packageUri, RegisterPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RegisterPackageOptions.html">RegisterPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RegisterPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_RegisterPackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RegisterPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.RegisterPackageOptions)">
+  RegisterPackageSetAsync(PackageSet, RegisterPackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RegisterPackageSetAsync(PackageSet packageSet, RegisterPackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RegisterPackageOptions.html">RegisterPackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageAsync_System_String_Microsoft_Windows_Management_Deployment_RemovePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageAsync(System.String,Microsoft.Windows.Management.Deployment.RemovePackageOptions)">
+  RemovePackageAsync(string, RemovePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RemovePackageAsync(string package, RemovePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RemovePackageOptions.html">RemovePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByFamilyNameAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByFamilyNameAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByFamilyNameAsync_System_String_Microsoft_Windows_Management_Deployment_RemovePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByFamilyNameAsync(System.String,Microsoft.Windows.Management.Deployment.RemovePackageOptions)">
+  RemovePackageByFamilyNameAsync(string, RemovePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L734"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RemovePackageByFamilyNameAsync(string packageFamilyName, RemovePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageFamilyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RemovePackageOptions.html">RemovePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByFullNameAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByFullNameAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByFullNameAsync_System_String_Microsoft_Windows_Management_Deployment_RemovePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByFullNameAsync(System.String,Microsoft.Windows.Management.Deployment.RemovePackageOptions)">
+  RemovePackageByFullNameAsync(string, RemovePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L732"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RemovePackageByFullNameAsync(string packageFullName, RemovePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageFullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RemovePackageOptions.html">RemovePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_RemovePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.RemovePackageOptions)">
+  RemovePackageByUriAsync(Uri, RemovePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RemovePackageByUriAsync(Uri packageUri, RemovePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RemovePackageOptions.html">RemovePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RemovePackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_RemovePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RemovePackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.RemovePackageOptions)">
+  RemovePackageSetAsync(PackageSet, RemovePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L738"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RemovePackageSetAsync(PackageSet packageSet, RemovePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.RemovePackageOptions.html">RemovePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageAsync_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageAsync(System.String)">
+  RepairPackageAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RepairPackageAsync(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageByUriAsync_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageByUriAsync(System.Uri)">
+  RepairPackageByUriAsync(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L748"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RepairPackageByUriAsync(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_RepairPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.RepairPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet)">
+  RepairPackageSetAsync(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; RepairPackageSetAsync(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageAsync_System_String_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageAsync(System.String)">
+  ResetPackageAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ResetPackageAsync(string package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageByUriAsync_System_Uri_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageByUriAsync(System.Uri)">
+  ResetPackageByUriAsync(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L742"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ResetPackageByUriAsync(Uri packageUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_ResetPackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.ResetPackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet)">
+  ResetPackageSetAsync(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; ResetPackageSetAsync(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageAsync_System_String_Microsoft_Windows_Management_Deployment_StagePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageAsync(System.String,Microsoft.Windows.Management.Deployment.StagePackageOptions)">
+  StagePackageAsync(string, StagePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; StagePackageAsync(string package, StagePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.StagePackageOptions.html">StagePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageByUriAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageByUriAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageByUriAsync_System_Uri_Microsoft_Windows_Management_Deployment_StagePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageByUriAsync(System.Uri,Microsoft.Windows.Management.Deployment.StagePackageOptions)">
+  StagePackageByUriAsync(Uri, StagePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; StagePackageByUriAsync(Uri packageUri, StagePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.StagePackageOptions.html">StagePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageSetAsync_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageSetAsync*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_StagePackageSetAsync_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_Management_Deployment_StagePackageOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.StagePackageSetAsync(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.Management.Deployment.StagePackageOptions)">
+  StagePackageSetAsync(PackageSet, StagePackageOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperationWithProgress&lt;PackageDeploymentResult, PackageDeploymentProgress&gt; StagePackageSetAsync(PackageSet packageSet, StagePackageOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.StagePackageOptions.html">StagePackageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperationwithprogress-2">IAsyncOperationWithProgress</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentResult.html">PackageDeploymentResult</a>, <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentProgress.html">PackageDeploymentProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_op_Equality_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.op_Equality*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_op_Equality_Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Microsoft_Windows_Management_Deployment_PackageDeploymentManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.op_Equality(Microsoft.Windows.Management.Deployment.PackageDeploymentManager,Microsoft.Windows.Management.Deployment.PackageDeploymentManager)">
+  operator ==(PackageDeploymentManager, PackageDeploymentManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PackageDeploymentManager x, PackageDeploymentManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_op_Inequality_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.op_Inequality*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageDeploymentManager_op_Inequality_Microsoft_Windows_Management_Deployment_PackageDeploymentManager_Microsoft_Windows_Management_Deployment_PackageDeploymentManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.op_Inequality(Microsoft.Windows.Management.Deployment.PackageDeploymentManager,Microsoft.Windows.Management.Deployment.PackageDeploymentManager)">
+  operator !=(PackageDeploymentManager, PackageDeploymentManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PackageDeploymentManager x, PackageDeploymentManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageDeploymentManager.html">PackageDeploymentManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L596" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

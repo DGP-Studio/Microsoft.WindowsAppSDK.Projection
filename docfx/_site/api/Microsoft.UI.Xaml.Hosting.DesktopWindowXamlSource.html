@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DesktopWindowXamlSource | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DesktopWindowXamlSource | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource" class="text-break">
+Class DesktopWindowXamlSource  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Hosting.html">Hosting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(DesktopWindowXamlSource))]
+[ProjectedRuntimeClass(typeof(IDesktopWindowXamlSource))]
+[ContractVersion(typeof(WinUIContract), 327680)]
+public class DesktopWindowXamlSource : IDisposable, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;DesktopWindowXamlSource&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DesktopWindowXamlSource</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor">
+  DesktopWindowXamlSource()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DesktopWindowXamlSource()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor(WinRT.DerivedComposed)">
+  DesktopWindowXamlSource(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DesktopWindowXamlSource(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor(WinRT.IObjectReference)">
+  DesktopWindowXamlSource(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DesktopWindowXamlSource(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Content_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Content*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Content" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Content">
+  Content
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Content { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_HasFocus_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.HasFocus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_HasFocus" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.HasFocus">
+  HasFocus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFocus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_ShouldConstrainPopupsToWorkArea_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.ShouldConstrainPopupsToWorkArea*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_ShouldConstrainPopupsToWorkArea" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.ShouldConstrainPopupsToWorkArea">
+  ShouldConstrainPopupsToWorkArea
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldConstrainPopupsToWorkArea { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_SiteBridge_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.SiteBridge*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_SiteBridge" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.SiteBridge">
+  SiteBridge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DesktopChildSiteBridge SiteBridge { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.DesktopChildSiteBridge.html">DesktopChildSiteBridge</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_SystemBackdrop_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.SystemBackdrop*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_SystemBackdrop" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.SystemBackdrop">
+  SystemBackdrop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemBackdrop SystemBackdrop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.SystemBackdrop.html">SystemBackdrop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Dispose_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Dispose*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Dispose" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Equals_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Equals_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Equals(Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource)">
+  Equals(DesktopWindowXamlSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DesktopWindowXamlSource other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Equals_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_FromAbi_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DesktopWindowXamlSource FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_GetHashCode_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_GetHashCode" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Initialize_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Initialize*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Initialize_Microsoft_UI_WindowId_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.Initialize(Microsoft.UI.WindowId)">
+  Initialize(WindowId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(WindowId parentWindowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentWindowId</code> <a class="xref" href="Microsoft.UI.WindowId.html">WindowId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_NavigateFocus_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.NavigateFocus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_NavigateFocus_Microsoft_UI_Xaml_Hosting_XamlSourceFocusNavigationRequest_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.NavigateFocus(Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest)">
+  NavigateFocus(XamlSourceFocusNavigationRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XamlSourceFocusNavigationResult NavigateFocus(XamlSourceFocusNavigationRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.html">XamlSourceFocusNavigationRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Hosting.XamlSourceFocusNavigationResult.html">XamlSourceFocusNavigationResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_GotFocus" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.GotFocus">
+  GotFocus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;DesktopWindowXamlSource, DesktopWindowXamlSourceGotFocusEventArgs&gt; GotFocus</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a>, <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs.html">DesktopWindowXamlSourceGotFocusEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_TakeFocusRequested" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.TakeFocusRequested">
+  TakeFocusRequested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;DesktopWindowXamlSource, DesktopWindowXamlSourceTakeFocusRequestedEventArgs&gt; TakeFocusRequested</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a>, <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs.html">DesktopWindowXamlSourceTakeFocusRequestedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_op_Equality_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_op_Equality_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.op_Equality(Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource,Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource)">
+  operator ==(DesktopWindowXamlSource, DesktopWindowXamlSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DesktopWindowXamlSource x, DesktopWindowXamlSource y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_op_Inequality_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_op_Inequality_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_Microsoft_UI_Xaml_Hosting_DesktopWindowXamlSource_" data-uid="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.op_Inequality(Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource,Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource)">
+  operator !=(DesktopWindowXamlSource, DesktopWindowXamlSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DesktopWindowXamlSource x, DesktopWindowXamlSource y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Hosting.DesktopWindowXamlSource.html">DesktopWindowXamlSource</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Hosting.cs/#L30" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

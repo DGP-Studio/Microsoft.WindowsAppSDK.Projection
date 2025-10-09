@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RichEditTextDocument | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RichEditTextDocument | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Text_RichEditTextDocument.md&amp;value=---%0Auid%3A%20Microsoft.UI.Text.RichEditTextDocument%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Text.RichEditTextDocument">
+
+
+
+  <h1 id="Microsoft_UI_Text_RichEditTextDocument" data-uid="Microsoft.UI.Text.RichEditTextDocument" class="text-break">
+Class RichEditTextDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Text&quot;)]
+[WindowsRuntimeHelperType(typeof(RichEditTextDocument))]
+[ProjectedRuntimeClass(typeof(ITextDocument))]
+[ContractVersion(typeof(TextApiContract), 65536)]
+public sealed class RichEditTextDocument : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;RichEditTextDocument&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RichEditTextDocument</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_AlignmentIncludesTrailingWhitespace_" data-uid="Microsoft.UI.Text.RichEditTextDocument.AlignmentIncludesTrailingWhitespace*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_AlignmentIncludesTrailingWhitespace" data-uid="Microsoft.UI.Text.RichEditTextDocument.AlignmentIncludesTrailingWhitespace">
+  AlignmentIncludesTrailingWhitespace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlignmentIncludesTrailingWhitespace { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_CaretType_" data-uid="Microsoft.UI.Text.RichEditTextDocument.CaretType*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_CaretType" data-uid="Microsoft.UI.Text.RichEditTextDocument.CaretType">
+  CaretType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaretType CaretType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.CaretType.html">CaretType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_DefaultTabStop_" data-uid="Microsoft.UI.Text.RichEditTextDocument.DefaultTabStop*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_DefaultTabStop" data-uid="Microsoft.UI.Text.RichEditTextDocument.DefaultTabStop">
+  DefaultTabStop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultTabStop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_IgnoreTrailingCharacterSpacing_" data-uid="Microsoft.UI.Text.RichEditTextDocument.IgnoreTrailingCharacterSpacing*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_IgnoreTrailingCharacterSpacing" data-uid="Microsoft.UI.Text.RichEditTextDocument.IgnoreTrailingCharacterSpacing">
+  IgnoreTrailingCharacterSpacing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreTrailingCharacterSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_Selection_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Selection*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_Selection" data-uid="Microsoft.UI.Text.RichEditTextDocument.Selection">
+  Selection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextSelection Selection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.ITextSelection.html">ITextSelection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_UndoLimit_" data-uid="Microsoft.UI.Text.RichEditTextDocument.UndoLimit*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_UndoLimit" data-uid="Microsoft.UI.Text.RichEditTextDocument.UndoLimit">
+  UndoLimit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint UndoLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_ApplyDisplayUpdates_" data-uid="Microsoft.UI.Text.RichEditTextDocument.ApplyDisplayUpdates*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_ApplyDisplayUpdates" data-uid="Microsoft.UI.Text.RichEditTextDocument.ApplyDisplayUpdates">
+  ApplyDisplayUpdates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ApplyDisplayUpdates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_BatchDisplayUpdates_" data-uid="Microsoft.UI.Text.RichEditTextDocument.BatchDisplayUpdates*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_BatchDisplayUpdates" data-uid="Microsoft.UI.Text.RichEditTextDocument.BatchDisplayUpdates">
+  BatchDisplayUpdates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BatchDisplayUpdates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_BeginUndoGroup_" data-uid="Microsoft.UI.Text.RichEditTextDocument.BeginUndoGroup*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_BeginUndoGroup" data-uid="Microsoft.UI.Text.RichEditTextDocument.BeginUndoGroup">
+  BeginUndoGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginUndoGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_CanCopy_" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanCopy*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_CanCopy" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanCopy">
+  CanCopy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_CanPaste_" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanPaste*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_CanPaste" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanPaste">
+  CanPaste()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPaste()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_CanRedo_" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanRedo*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_CanRedo" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanRedo">
+  CanRedo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRedo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_CanUndo_" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanUndo*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_CanUndo" data-uid="Microsoft.UI.Text.RichEditTextDocument.CanUndo">
+  CanUndo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUndo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_ClearUndoRedoHistory_" data-uid="Microsoft.UI.Text.RichEditTextDocument.ClearUndoRedoHistory*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_ClearUndoRedoHistory" data-uid="Microsoft.UI.Text.RichEditTextDocument.ClearUndoRedoHistory">
+  ClearUndoRedoHistory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearUndoRedoHistory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_EndUndoGroup_" data-uid="Microsoft.UI.Text.RichEditTextDocument.EndUndoGroup*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_EndUndoGroup" data-uid="Microsoft.UI.Text.RichEditTextDocument.EndUndoGroup">
+  EndUndoGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndUndoGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_Equals_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_Equals_Microsoft_UI_Text_RichEditTextDocument_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Equals(Microsoft.UI.Text.RichEditTextDocument)">
+  Equals(RichEditTextDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(RichEditTextDocument other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_Equals_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_Equals_System_Object_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_FromAbi_" data-uid="Microsoft.UI.Text.RichEditTextDocument.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Text.RichEditTextDocument.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RichEditTextDocument FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetDefaultCharacterFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetDefaultCharacterFormat*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetDefaultCharacterFormat" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetDefaultCharacterFormat">
+  GetDefaultCharacterFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextCharacterFormat GetDefaultCharacterFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.ITextCharacterFormat.html">ITextCharacterFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetDefaultParagraphFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetDefaultParagraphFormat*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetDefaultParagraphFormat" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetDefaultParagraphFormat">
+  GetDefaultParagraphFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextParagraphFormat GetDefaultParagraphFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.ITextParagraphFormat.html">ITextParagraphFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetHashCode_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetHashCode" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetMathML_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetMathML*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetMathML_System_String__" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetMathML(System.String@)">
+  GetMathML(out string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L606"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMathML(out string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetMathMode_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetMathMode*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetMathMode" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetMathMode">
+  GetMathMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RichEditMathMode GetMathMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.RichEditMathMode.html">RichEditMathMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetRange_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetRange*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetRange_System_Int32_System_Int32_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetRange(System.Int32,System.Int32)">
+  GetRange(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextRange GetRange(int startPosition, int endPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.ITextRange.html">ITextRange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetRangeFromPoint_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetRangeFromPoint*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetRangeFromPoint_Windows_Foundation_Point_Microsoft_UI_Text_PointOptions_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetRangeFromPoint(Windows.Foundation.Point,Microsoft.UI.Text.PointOptions)">
+  GetRangeFromPoint(Point, PointOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextRange GetRangeFromPoint(Point point, PointOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="Microsoft.UI.Text.PointOptions.html">PointOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Text.ITextRange.html">ITextRange</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_GetText_" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetText*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_GetText_Microsoft_UI_Text_TextGetOptions_System_String__" data-uid="Microsoft.UI.Text.RichEditTextDocument.GetText(Microsoft.UI.Text.TextGetOptions,System.String@)">
+  GetText(TextGetOptions, out string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetText(TextGetOptions options, out string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.UI.Text.TextGetOptions.html">TextGetOptions</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_LoadFromStream_" data-uid="Microsoft.UI.Text.RichEditTextDocument.LoadFromStream*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_LoadFromStream_Microsoft_UI_Text_TextSetOptions_Windows_Storage_Streams_IRandomAccessStream_" data-uid="Microsoft.UI.Text.RichEditTextDocument.LoadFromStream(Microsoft.UI.Text.TextSetOptions,Windows.Storage.Streams.IRandomAccessStream)">
+  LoadFromStream(TextSetOptions, IRandomAccessStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadFromStream(TextSetOptions options, IRandomAccessStream value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.UI.Text.TextSetOptions.html">TextSetOptions</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream">IRandomAccessStream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_Redo_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Redo*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_Redo" data-uid="Microsoft.UI.Text.RichEditTextDocument.Redo">
+  Redo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Redo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SaveToStream_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SaveToStream*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SaveToStream_Microsoft_UI_Text_TextGetOptions_Windows_Storage_Streams_IRandomAccessStream_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SaveToStream(Microsoft.UI.Text.TextGetOptions,Windows.Storage.Streams.IRandomAccessStream)">
+  SaveToStream(TextGetOptions, IRandomAccessStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToStream(TextGetOptions options, IRandomAccessStream value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.UI.Text.TextGetOptions.html">TextGetOptions</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.storage.streams.irandomaccessstream">IRandomAccessStream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SetDefaultCharacterFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetDefaultCharacterFormat*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SetDefaultCharacterFormat_Microsoft_UI_Text_ITextCharacterFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetDefaultCharacterFormat(Microsoft.UI.Text.ITextCharacterFormat)">
+  SetDefaultCharacterFormat(ITextCharacterFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultCharacterFormat(ITextCharacterFormat value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Text.ITextCharacterFormat.html">ITextCharacterFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SetDefaultParagraphFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetDefaultParagraphFormat*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SetDefaultParagraphFormat_Microsoft_UI_Text_ITextParagraphFormat_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetDefaultParagraphFormat(Microsoft.UI.Text.ITextParagraphFormat)">
+  SetDefaultParagraphFormat(ITextParagraphFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultParagraphFormat(ITextParagraphFormat value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Text.ITextParagraphFormat.html">ITextParagraphFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SetMathML_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetMathML*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SetMathML_System_String_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetMathML(System.String)">
+  SetMathML(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMathML(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SetMathMode_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetMathMode*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SetMathMode_Microsoft_UI_Text_RichEditMathMode_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetMathMode(Microsoft.UI.Text.RichEditMathMode)">
+  SetMathMode(RichEditMathMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMathMode(RichEditMathMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Microsoft.UI.Text.RichEditMathMode.html">RichEditMathMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_SetText_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetText*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_SetText_Microsoft_UI_Text_TextSetOptions_System_String_" data-uid="Microsoft.UI.Text.RichEditTextDocument.SetText(Microsoft.UI.Text.TextSetOptions,System.String)">
+  SetText(TextSetOptions, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetText(TextSetOptions options, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.UI.Text.TextSetOptions.html">TextSetOptions</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_Undo_" data-uid="Microsoft.UI.Text.RichEditTextDocument.Undo*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_Undo" data-uid="Microsoft.UI.Text.RichEditTextDocument.Undo">
+  Undo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Undo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_op_Equality_" data-uid="Microsoft.UI.Text.RichEditTextDocument.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_op_Equality_Microsoft_UI_Text_RichEditTextDocument_Microsoft_UI_Text_RichEditTextDocument_" data-uid="Microsoft.UI.Text.RichEditTextDocument.op_Equality(Microsoft.UI.Text.RichEditTextDocument,Microsoft.UI.Text.RichEditTextDocument)">
+  operator ==(RichEditTextDocument, RichEditTextDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(RichEditTextDocument x, RichEditTextDocument y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Text_RichEditTextDocument_op_Inequality_" data-uid="Microsoft.UI.Text.RichEditTextDocument.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Text_RichEditTextDocument_op_Inequality_Microsoft_UI_Text_RichEditTextDocument_Microsoft_UI_Text_RichEditTextDocument_" data-uid="Microsoft.UI.Text.RichEditTextDocument.op_Inequality(Microsoft.UI.Text.RichEditTextDocument,Microsoft.UI.Text.RichEditTextDocument)">
+  operator !=(RichEditTextDocument, RichEditTextDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(RichEditTextDocument x, RichEditTextDocument y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Text.RichEditTextDocument.html">RichEditTextDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Text.cs/#L496" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

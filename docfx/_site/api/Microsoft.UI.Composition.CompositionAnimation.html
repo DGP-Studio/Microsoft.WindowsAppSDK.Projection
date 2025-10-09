@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CompositionAnimation | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CompositionAnimation | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Composition_CompositionAnimation.md&amp;value=---%0Auid%3A%20Microsoft.UI.Composition.CompositionAnimation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Composition.CompositionAnimation">
+
+
+
+  <h1 id="Microsoft_UI_Composition_CompositionAnimation" data-uid="Microsoft.UI.Composition.CompositionAnimation" class="text-break">
+Class CompositionAnimation  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L896"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Composition.html">Composition</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI&quot;)]
+[WindowsRuntimeHelperType(typeof(CompositionAnimation))]
+[ProjectedRuntimeClass(typeof(ICompositionAnimation))]
+[ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+public class CompositionAnimation : CompositionObject, IDisposable, IAnimationObject, IEquatable&lt;CompositionObject&gt;, ICompositionAnimationBase, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;CompositionAnimation&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a></div>
+      <div><span class="xref">CompositionAnimation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IAnimationObject.html">IAnimationObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.UI.Composition.ICompositionAnimationBase.html">ICompositionAnimationBase</a></div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.UI.Composition.ExpressionAnimation.html">ExpressionAnimation</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.KeyFrameAnimation.html">KeyFrameAnimation</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.NaturalMotionAnimation.html">NaturalMotionAnimation</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_As__1">CompositionObject.As&lt;I&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimationWithIAnimationObject(IAnimationObject, string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroupWithIAnimationObject(IAnimationObject, ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_">CompositionObject.Equals(CompositionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimation(string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_">CompositionObject.StopAnimation(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StopAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_">CompositionObject.TryGetAnimationController(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_">CompositionObject.StartAnimation(string, CompositionAnimation, AnimationController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose">CompositionObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_">CompositionObject.PopulatePropertyInfo(string, AnimationPropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Comment">CompositionObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Compositor">CompositionObject.Compositor</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_DispatcherQueue">CompositionObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_ImplicitAnimations">CompositionObject.ImplicitAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Properties">CompositionObject.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation__ctor_" data-uid="Microsoft.UI.Composition.CompositionAnimation.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Composition.CompositionAnimation.#ctor(WinRT.DerivedComposed)">
+  CompositionAnimation(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L994"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CompositionAnimation(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation__ctor_" data-uid="Microsoft.UI.Composition.CompositionAnimation.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Composition.CompositionAnimation.#ctor(WinRT.IObjectReference)">
+  CompositionAnimation(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CompositionAnimation(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_InitialValueExpressions_" data-uid="Microsoft.UI.Composition.CompositionAnimation.InitialValueExpressions*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_InitialValueExpressions" data-uid="Microsoft.UI.Composition.CompositionAnimation.InitialValueExpressions">
+  InitialValueExpressions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InitialValueExpressionCollection InitialValueExpressions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.InitialValueExpressionCollection.html">InitialValueExpressionCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_Target_" data-uid="Microsoft.UI.Composition.CompositionAnimation.Target*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_Target" data-uid="Microsoft.UI.Composition.CompositionAnimation.Target">
+  Target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Target { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_ClearAllParameters_" data-uid="Microsoft.UI.Composition.CompositionAnimation.ClearAllParameters*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_ClearAllParameters" data-uid="Microsoft.UI.Composition.CompositionAnimation.ClearAllParameters">
+  ClearAllParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1004"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_ClearParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.ClearParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_ClearParameter_System_String_" data-uid="Microsoft.UI.Composition.CompositionAnimation.ClearParameter(System.String)">
+  ClearParameter(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1006"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearParameter(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_Equals_" data-uid="Microsoft.UI.Composition.CompositionAnimation.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_Equals_Microsoft_UI_Composition_CompositionAnimation_" data-uid="Microsoft.UI.Composition.CompositionAnimation.Equals(Microsoft.UI.Composition.CompositionAnimation)">
+  Equals(CompositionAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CompositionAnimation other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_Equals_" data-uid="Microsoft.UI.Composition.CompositionAnimation.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_Equals_System_Object_" data-uid="Microsoft.UI.Composition.CompositionAnimation.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L990"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_FromAbi_" data-uid="Microsoft.UI.Composition.CompositionAnimation.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Composition.CompositionAnimation.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompositionAnimation FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_GetHashCode_" data-uid="Microsoft.UI.Composition.CompositionAnimation.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_GetHashCode" data-uid="Microsoft.UI.Composition.CompositionAnimation.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L991"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_IsOverridableInterface_" data-uid="Microsoft.UI.Composition.CompositionAnimation.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Composition.CompositionAnimation.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetBooleanParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetBooleanParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetBooleanParameter_System_String_System_Boolean_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetBooleanParameter(System.String,System.Boolean)">
+  SetBooleanParameter(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBooleanParameter(string key, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetColorParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetColorParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetColorParameter_System_String_Windows_UI_Color_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetColorParameter(System.String,Windows.UI.Color)">
+  SetColorParameter(string, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1008"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColorParameter(string key, Color value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.ui.color">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetExpressionReferenceParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetExpressionReferenceParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetExpressionReferenceParameter_System_String_Microsoft_UI_Composition_IAnimationObject_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetExpressionReferenceParameter(System.String,Microsoft.UI.Composition.IAnimationObject)">
+  SetExpressionReferenceParameter(string, IAnimationObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExpressionReferenceParameter(string parameterName, IAnimationObject source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="Microsoft.UI.Composition.IAnimationObject.html">IAnimationObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetMatrix3x2Parameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetMatrix3x2Parameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetMatrix3x2Parameter_System_String_System_Numerics_Matrix3x2_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetMatrix3x2Parameter(System.String,System.Numerics.Matrix3x2)">
+  SetMatrix3x2Parameter(string, Matrix3x2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix3x2Parameter(string key, Matrix3x2 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix3x2">Matrix3x2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetMatrix4x4Parameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetMatrix4x4Parameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetMatrix4x4Parameter_System_String_System_Numerics_Matrix4x4_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetMatrix4x4Parameter(System.String,System.Numerics.Matrix4x4)">
+  SetMatrix4x4Parameter(string, Matrix4x4)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1012"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix4x4Parameter(string key, Matrix4x4 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetQuaternionParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetQuaternionParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetQuaternionParameter_System_String_System_Numerics_Quaternion_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetQuaternionParameter(System.String,System.Numerics.Quaternion)">
+  SetQuaternionParameter(string, Quaternion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1014"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetQuaternionParameter(string key, Quaternion value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.quaternion">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetReferenceParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetReferenceParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetReferenceParameter_System_String_Microsoft_UI_Composition_CompositionObject_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetReferenceParameter(System.String,Microsoft.UI.Composition.CompositionObject)">
+  SetReferenceParameter(string, CompositionObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1016"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReferenceParameter(string key, CompositionObject compositionObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>compositionObject</code> <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetScalarParameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetScalarParameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetScalarParameter_System_String_System_Single_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetScalarParameter(System.String,System.Single)">
+  SetScalarParameter(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScalarParameter(string key, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetVector2Parameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector2Parameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetVector2Parameter_System_String_System_Numerics_Vector2_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector2Parameter(System.String,System.Numerics.Vector2)">
+  SetVector2Parameter(string, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1020"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector2Parameter(string key, Vector2 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetVector3Parameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector3Parameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetVector3Parameter_System_String_System_Numerics_Vector3_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector3Parameter(System.String,System.Numerics.Vector3)">
+  SetVector3Parameter(string, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector3Parameter(string key, Vector3 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_SetVector4Parameter_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector4Parameter*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_SetVector4Parameter_System_String_System_Numerics_Vector4_" data-uid="Microsoft.UI.Composition.CompositionAnimation.SetVector4Parameter(System.String,System.Numerics.Vector4)">
+  SetVector4Parameter(string, Vector4)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L1024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector4Parameter(string key, Vector4 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector4">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_op_Equality_" data-uid="Microsoft.UI.Composition.CompositionAnimation.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_op_Equality_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_CompositionAnimation_" data-uid="Microsoft.UI.Composition.CompositionAnimation.op_Equality(Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.CompositionAnimation)">
+  operator ==(CompositionAnimation, CompositionAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CompositionAnimation x, CompositionAnimation y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_CompositionAnimation_op_Inequality_" data-uid="Microsoft.UI.Composition.CompositionAnimation.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_CompositionAnimation_op_Inequality_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_CompositionAnimation_" data-uid="Microsoft.UI.Composition.CompositionAnimation.op_Inequality(Microsoft.UI.Composition.CompositionAnimation,Microsoft.UI.Composition.CompositionAnimation)">
+  operator !=(CompositionAnimation, CompositionAnimation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L988"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CompositionAnimation x, CompositionAnimation y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.CompositionAnimation.html">CompositionAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.cs/#L896" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

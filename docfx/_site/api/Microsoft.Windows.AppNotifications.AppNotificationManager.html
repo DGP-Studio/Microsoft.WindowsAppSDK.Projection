@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppNotificationManager | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppNotificationManager | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_Windows_AppNotifications_AppNotificationManager.md&amp;value=---%0Auid%3A%20Microsoft.Windows.AppNotifications.AppNotificationManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager">
+
+
+
+  <h1 id="Microsoft_Windows_AppNotifications_AppNotificationManager" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager" class="text-break">
+Class AppNotificationManager  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.Windows.html">Windows</a>.<a class="xref" href="Microsoft.Windows.AppNotifications.html">AppNotifications</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.Windows.AppNotifications&quot;)]
+[WindowsRuntimeHelperType(typeof(AppNotificationManager))]
+[ProjectedRuntimeClass(typeof(IAppNotificationManager))]
+[ContractVersion(typeof(AppNotificationsContract), 65536)]
+public sealed class AppNotificationManager : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;AppNotificationManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AppNotificationManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Default_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Default*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Default" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Default">
+  Default
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppNotificationManager Default { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Setting_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Setting*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Setting" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Setting">
+  Setting
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppNotificationSetting Setting { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationSetting.html">AppNotificationSetting</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_As_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.As*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_As__1" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Equals_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Equals_Microsoft_Windows_AppNotifications_AppNotificationManager_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(Microsoft.Windows.AppNotifications.AppNotificationManager)">
+  Equals(AppNotificationManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(AppNotificationManager other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Equals_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Equals_System_Object_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_FromAbi_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_FromAbi_System_IntPtr_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppNotificationManager FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_GetAllAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_GetAllAsync" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.GetAllAsync">
+  GetAllAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperation&lt;IList&lt;AppNotification&gt;&gt; GetAllAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1">IAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Windows.AppNotifications.AppNotification.html">AppNotification</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_GetHashCode_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_GetHashCode" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_IsSupported_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_IsSupported" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.IsSupported">
+  IsSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Register_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Register*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Register" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Register">
+  Register()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Register_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Register*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Register_System_String_System_Uri_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Register(System.String,System.Uri)">
+  Register(string, Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register(string displayName, Uri iconUri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>iconUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveAllAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveAllAsync" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveAllAsync">
+  RemoveAllAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncAction RemoveAllAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction">IAsyncAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByGroupAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByGroupAsync_System_String_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByGroupAsync(System.String)">
+  RemoveByGroupAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncAction RemoveByGroupAsync(string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction">IAsyncAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByIdAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByIdAsync_System_UInt32_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByIdAsync(System.UInt32)">
+  RemoveByIdAsync(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncAction RemoveByIdAsync(uint notificationId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction">IAsyncAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAndGroupAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAndGroupAsync_System_String_System_String_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAndGroupAsync(System.String,System.String)">
+  RemoveByTagAndGroupAsync(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncAction RemoveByTagAndGroupAsync(string tag, string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction">IAsyncAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_RemoveByTagAsync_System_String_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.RemoveByTagAsync(System.String)">
+  RemoveByTagAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncAction RemoveByTagAsync(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncaction">IAsyncAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Show_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Show*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Show_Microsoft_Windows_AppNotifications_AppNotification_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Show(Microsoft.Windows.AppNotifications.AppNotification)">
+  Show(AppNotification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(AppNotification notification)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notification</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotification.html">AppNotification</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_Unregister_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_Unregister" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.Unregister">
+  Unregister()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_UnregisterAll_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_UnregisterAll" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UnregisterAll">
+  UnregisterAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_UpdateAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_UpdateAsync_Microsoft_Windows_AppNotifications_AppNotificationProgressData_System_String_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String)">
+  UpdateAsync(AppNotificationProgressData, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperation&lt;AppNotificationProgressResult&gt; UpdateAsync(AppNotificationProgressData data, string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationProgressData.html">AppNotificationProgressData</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1">IAsyncOperation</a>&lt;<a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationProgressResult.html">AppNotificationProgressResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_UpdateAsync_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_UpdateAsync_Microsoft_Windows_AppNotifications_AppNotificationProgressData_System_String_System_String_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.UpdateAsync(Microsoft.Windows.AppNotifications.AppNotificationProgressData,System.String,System.String)">
+  UpdateAsync(AppNotificationProgressData, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncOperation&lt;AppNotificationProgressResult&gt; UpdateAsync(AppNotificationProgressData data, string tag, string group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationProgressData.html">AppNotificationProgressData</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>group</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1">IAsyncOperation</a>&lt;<a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationProgressResult.html">AppNotificationProgressResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_NotificationInvoked" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.NotificationInvoked">
+  NotificationInvoked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;AppNotificationManager, AppNotificationActivatedEventArgs&gt; NotificationInvoked</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a>, <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationActivatedEventArgs.html">AppNotificationActivatedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_op_Equality_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_op_Equality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.op_Equality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)">
+  operator ==(AppNotificationManager, AppNotificationManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(AppNotificationManager x, AppNotificationManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_AppNotifications_AppNotificationManager_op_Inequality_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality*"></a>
+
+  <h3 id="Microsoft_Windows_AppNotifications_AppNotificationManager_op_Inequality_Microsoft_Windows_AppNotifications_AppNotificationManager_Microsoft_Windows_AppNotifications_AppNotificationManager_" data-uid="Microsoft.Windows.AppNotifications.AppNotificationManager.op_Inequality(Microsoft.Windows.AppNotifications.AppNotificationManager,Microsoft.Windows.AppNotifications.AppNotificationManager)">
+  operator !=(AppNotificationManager, AppNotificationManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(AppNotificationManager x, AppNotificationManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.AppNotifications.AppNotificationManager.html">AppNotificationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.AppNotifications.cs/#L289" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CoreWebView2CompositionController | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CoreWebView2CompositionController | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_Web_WebView2_Core_CoreWebView2CompositionController.md&amp;value=---%0Auid%3A%20Microsoft.Web.WebView2.Core.CoreWebView2CompositionController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController">
+
+
+
+  <h1 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController" class="text-break">
+Class CoreWebView2CompositionController  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1477"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.Web.html">Web</a>.<a class="xref" href="Microsoft.Web.WebView2.html">WebView2</a>.<a class="xref" href="Microsoft.Web.WebView2.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.Web.WebView2.Core&quot;)]
+[WindowsRuntimeHelperType(typeof(CoreWebView2CompositionController))]
+[ProjectedRuntimeClass(typeof(ICoreWebView2CompositionController))]
+public sealed class CoreWebView2CompositionController : CoreWebView2Controller, IEquatable&lt;CoreWebView2Controller&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;CoreWebView2CompositionController&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html">CoreWebView2Controller</a></div>
+      <div><span class="xref">CoreWebView2CompositionController</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html">CoreWebView2Controller</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_Equals_Microsoft_Web_WebView2_Core_CoreWebView2Controller_">CoreWebView2Controller.Equals(CoreWebView2Controller)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_RasterizationScaleChanged">CoreWebView2Controller.RasterizationScaleChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_SetBoundsAndZoomFactor_Windows_Foundation_Rect_System_Double_">CoreWebView2Controller.SetBoundsAndZoomFactor(Rect, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_MoveFocus_Microsoft_Web_WebView2_Core_CoreWebView2MoveFocusReason_">CoreWebView2Controller.MoveFocus(CoreWebView2MoveFocusReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_NotifyParentWindowPositionChanged">CoreWebView2Controller.NotifyParentWindowPositionChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_Close">CoreWebView2Controller.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_AcceleratorKeyPressed">CoreWebView2Controller.AcceleratorKeyPressed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_GotFocus">CoreWebView2Controller.GotFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_LostFocus">CoreWebView2Controller.LostFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_MoveFocusRequested">CoreWebView2Controller.MoveFocusRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_ZoomFactorChanged">CoreWebView2Controller.ZoomFactorChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_AllowExternalDrop">CoreWebView2Controller.AllowExternalDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_Bounds">CoreWebView2Controller.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_BoundsMode">CoreWebView2Controller.BoundsMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_CoreWebView2">CoreWebView2Controller.CoreWebView2</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_DefaultBackgroundColor">CoreWebView2Controller.DefaultBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_IsBrowserHitTransparent">CoreWebView2Controller.IsBrowserHitTransparent</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_IsVisible">CoreWebView2Controller.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_ParentWindow">CoreWebView2Controller.ParentWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_RasterizationScale">CoreWebView2Controller.RasterizationScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_ShouldDetectMonitorScaleChanges">CoreWebView2Controller.ShouldDetectMonitorScaleChanges</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2Controller.html#Microsoft_Web_WebView2_Core_CoreWebView2Controller_ZoomFactor">CoreWebView2Controller.ZoomFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Cursor_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Cursor*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Cursor" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Cursor">
+  Cursor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoreCursor Cursor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.ui.core.corecursor">CoreCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_RootVisualTarget_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.RootVisualTarget*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_RootVisualTarget" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.RootVisualTarget">
+  RootVisualTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object RootVisualTarget { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_As_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.As*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_As__1" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragEnter_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragEnter*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragEnter_Windows_ApplicationModel_DataTransfer_DragDrop_Core_CoreDragInfo_Windows_ApplicationModel_DataTransfer_DragDrop_Core_CoreDragUIOverride_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragEnter(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragInfo,Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragUIOverride)">
+  DragEnter(CoreDragInfo, CoreDragUIOverride)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataPackageOperation DragEnter(CoreDragInfo dragInfo, CoreDragUIOverride dragUIOverride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dragInfo</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.coredraginfo">CoreDragInfo</a></dt>
+    <dd></dd>
+    <dt><code>dragUIOverride</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.coredraguioverride">CoreDragUIOverride</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.datapackageoperation">DataPackageOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragLeave_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragLeave*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragLeave" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragLeave">
+  DragLeave()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DragLeave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragOver_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragOver*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_DragOver_Windows_ApplicationModel_DataTransfer_DragDrop_Core_CoreDragInfo_Windows_ApplicationModel_DataTransfer_DragDrop_Core_CoreDragUIOverride_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragOver(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragInfo,Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragUIOverride)">
+  DragOver(CoreDragInfo, CoreDragUIOverride)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataPackageOperation DragOver(CoreDragInfo dragInfo, CoreDragUIOverride dragUIOverride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dragInfo</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.coredraginfo">CoreDragInfo</a></dt>
+    <dd></dd>
+    <dt><code>dragUIOverride</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.coredraguioverride">CoreDragUIOverride</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.datapackageoperation">DataPackageOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Drop_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Drop*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Drop_Windows_ApplicationModel_DataTransfer_DragDrop_Core_CoreDragInfo_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Drop(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragInfo)">
+  Drop(CoreDragInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataPackageOperation Drop(CoreDragInfo dragInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dragInfo</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.coredraginfo">CoreDragInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.applicationmodel.datatransfer.datapackageoperation">DataPackageOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Equals_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Equals*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Equals_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Equals(Microsoft.Web.WebView2.Core.CoreWebView2CompositionController)">
+  Equals(CoreWebView2CompositionController)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CoreWebView2CompositionController other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Equals_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Equals*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Equals_System_Object_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_FromAbi_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.FromAbi*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_FromAbi_System_IntPtr_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreWebView2CompositionController FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_GetHashCode_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.GetHashCode*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_GetHashCode" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_GetNonClientRegionAtPoint_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.GetNonClientRegionAtPoint*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_GetNonClientRegionAtPoint_Windows_Foundation_Point_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.GetNonClientRegionAtPoint(Windows.Foundation.Point)">
+  GetNonClientRegionAtPoint(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoreWebView2NonClientRegionKind GetNonClientRegionAtPoint(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionKind.html">CoreWebView2NonClientRegionKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_IsOverridableInterface_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_IsOverridableInterface_System_Guid_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_QueryNonClientRegion_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.QueryNonClientRegion*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_QueryNonClientRegion_Microsoft_Web_WebView2_Core_CoreWebView2NonClientRegionKind_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.QueryNonClientRegion(Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionKind)">
+  QueryNonClientRegion(CoreWebView2NonClientRegionKind)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;Rect&gt; QueryNonClientRegion(CoreWebView2NonClientRegionKind Kind)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Kind</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionKind.html">CoreWebView2NonClientRegionKind</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<span class="xref">Rect</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_SendMouseInput_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendMouseInput*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_SendMouseInput_Microsoft_Web_WebView2_Core_CoreWebView2MouseEventKind_Microsoft_Web_WebView2_Core_CoreWebView2MouseEventVirtualKeys_System_UInt32_Windows_Foundation_Point_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendMouseInput(Microsoft.Web.WebView2.Core.CoreWebView2MouseEventKind,Microsoft.Web.WebView2.Core.CoreWebView2MouseEventVirtualKeys,System.UInt32,Windows.Foundation.Point)">
+  SendMouseInput(CoreWebView2MouseEventKind, CoreWebView2MouseEventVirtualKeys, uint, Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMouseInput(CoreWebView2MouseEventKind eventKind, CoreWebView2MouseEventVirtualKeys virtualKeys, uint mouseData, Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventKind</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2MouseEventKind.html">CoreWebView2MouseEventKind</a></dt>
+    <dd></dd>
+    <dt><code>virtualKeys</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2MouseEventVirtualKeys.html">CoreWebView2MouseEventVirtualKeys</a></dt>
+    <dd></dd>
+    <dt><code>mouseData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_SendPointerInput_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendPointerInput*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_SendPointerInput_Microsoft_Web_WebView2_Core_CoreWebView2PointerEventKind_Microsoft_Web_WebView2_Core_CoreWebView2PointerInfo_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendPointerInput(Microsoft.Web.WebView2.Core.CoreWebView2PointerEventKind,Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo)">
+  SendPointerInput(CoreWebView2PointerEventKind, CoreWebView2PointerInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendPointerInput(CoreWebView2PointerEventKind eventKind, CoreWebView2PointerInfo pointerInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventKind</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2PointerEventKind.html">CoreWebView2PointerEventKind</a></dt>
+    <dd></dd>
+    <dt><code>pointerInfo</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2PointerInfo.html">CoreWebView2PointerInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_CursorChanged" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.CursorChanged">
+  CursorChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;CoreWebView2CompositionController, object&gt; CursorChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_NonClientRegionChanged" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.NonClientRegionChanged">
+  NonClientRegionChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;CoreWebView2CompositionController, CoreWebView2NonClientRegionChangedEventArgs&gt; NonClientRegionChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a>, <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2NonClientRegionChangedEventArgs.html">CoreWebView2NonClientRegionChangedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_op_Equality_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.op_Equality*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_op_Equality_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.op_Equality(Microsoft.Web.WebView2.Core.CoreWebView2CompositionController,Microsoft.Web.WebView2.Core.CoreWebView2CompositionController)">
+  operator ==(CoreWebView2CompositionController, CoreWebView2CompositionController)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CoreWebView2CompositionController x, CoreWebView2CompositionController y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_op_Inequality_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.op_Inequality*"></a>
+
+  <h3 id="Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_op_Inequality_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_Microsoft_Web_WebView2_Core_CoreWebView2CompositionController_" data-uid="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.op_Inequality(Microsoft.Web.WebView2.Core.CoreWebView2CompositionController,Microsoft.Web.WebView2.Core.CoreWebView2CompositionController)">
+  operator !=(CoreWebView2CompositionController, CoreWebView2CompositionController)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CoreWebView2CompositionController x, CoreWebView2CompositionController y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.html">CoreWebView2CompositionController</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Web.WebView2.Core.cs/#L1477" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

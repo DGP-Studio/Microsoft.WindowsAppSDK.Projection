@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FlyoutBase | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FlyoutBase | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase" class="text-break">
+Class FlyoutBase  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2782"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Controls.html">Controls</a>.<a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.html">Primitives</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(FlyoutBase))]
+[ProjectedRuntimeClass(typeof(IFlyoutBase))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public class FlyoutBase : DependencyObject, IEquatable&lt;DependencyObject&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;FlyoutBase&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><span class="xref">FlyoutBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.CommandBarFlyout.html">CommandBarFlyout</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Flyout.html">Flyout</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.MenuFlyout.html">MenuFlyout</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase.html">PickerFlyoutBase</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor">
+  FlyoutBase()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2863"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FlyoutBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor(WinRT.DerivedComposed)">
+  FlyoutBase(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2971"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FlyoutBase(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.#ctor(WinRT.IObjectReference)">
+  FlyoutBase(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2955"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FlyoutBase(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusOnInteraction_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusOnInteraction*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusOnInteraction" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusOnInteraction">
+  AllowFocusOnInteraction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3019"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowFocusOnInteraction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusOnInteractionProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusOnInteractionProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusOnInteractionProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusOnInteractionProperty">
+  AllowFocusOnInteractionProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2921"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty AllowFocusOnInteractionProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusWhenDisabled_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusWhenDisabled*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusWhenDisabled" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusWhenDisabled">
+  AllowFocusWhenDisabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3025"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowFocusWhenDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusWhenDisabledProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusWhenDisabledProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AllowFocusWhenDisabledProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusWhenDisabledProperty">
+  AllowFocusWhenDisabledProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2923"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty AllowFocusWhenDisabledProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AreOpenCloseAnimationsEnabled_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabled*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AreOpenCloseAnimationsEnabled" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabled">
+  AreOpenCloseAnimationsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreOpenCloseAnimationsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AreOpenCloseAnimationsEnabledProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabledProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AreOpenCloseAnimationsEnabledProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabledProperty">
+  AreOpenCloseAnimationsEnabledProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2925"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty AreOpenCloseAnimationsEnabledProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AttachedFlyoutProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_AttachedFlyoutProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty">
+  AttachedFlyoutProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty AttachedFlyoutProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ElementSoundMode_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundMode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ElementSoundMode" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundMode">
+  ElementSoundMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3037"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementSoundMode ElementSoundMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.ElementSoundMode.html">ElementSoundMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ElementSoundModeProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundModeProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ElementSoundModeProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundModeProperty">
+  ElementSoundModeProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2929"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ElementSoundModeProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_InputDevicePrefersPrimaryCommands_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.InputDevicePrefersPrimaryCommands*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_InputDevicePrefersPrimaryCommands" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.InputDevicePrefersPrimaryCommands">
+  InputDevicePrefersPrimaryCommands
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3043"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InputDevicePrefersPrimaryCommands { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_InputDevicePrefersPrimaryCommandsProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.InputDevicePrefersPrimaryCommandsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_InputDevicePrefersPrimaryCommandsProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.InputDevicePrefersPrimaryCommandsProperty">
+  InputDevicePrefersPrimaryCommandsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2931"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty InputDevicePrefersPrimaryCommandsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsConstrainedToRootBounds_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsConstrainedToRootBounds*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsConstrainedToRootBounds" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsConstrainedToRootBounds">
+  IsConstrainedToRootBounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3045"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConstrainedToRootBounds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOpen_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOpen*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOpen" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOpen">
+  IsOpen
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOpenProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOpenProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOpenProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOpenProperty">
+  IsOpenProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty IsOpenProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_LightDismissOverlayMode_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.LightDismissOverlayMode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_LightDismissOverlayMode" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.LightDismissOverlayMode">
+  LightDismissOverlayMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3049"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightDismissOverlayMode LightDismissOverlayMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.LightDismissOverlayMode.html">LightDismissOverlayMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_LightDismissOverlayModeProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.LightDismissOverlayModeProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_LightDismissOverlayModeProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.LightDismissOverlayModeProperty">
+  LightDismissOverlayModeProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty LightDismissOverlayModeProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OverlayInputPassThroughElement_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OverlayInputPassThroughElement" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElement">
+  OverlayInputPassThroughElement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3055"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject OverlayInputPassThroughElement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OverlayInputPassThroughElementProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OverlayInputPassThroughElementProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty">
+  OverlayInputPassThroughElementProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2937"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty OverlayInputPassThroughElementProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Placement_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Placement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Placement" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Placement">
+  Placement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlyoutPlacementMode Placement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutPlacementMode.html">FlyoutPlacementMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_PlacementProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.PlacementProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_PlacementProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.PlacementProperty">
+  PlacementProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2939"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty PlacementProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShouldConstrainToRootBounds_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBounds*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShouldConstrainToRootBounds" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBounds">
+  ShouldConstrainToRootBounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3067"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldConstrainToRootBounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShouldConstrainToRootBoundsProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBoundsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShouldConstrainToRootBoundsProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShouldConstrainToRootBoundsProperty">
+  ShouldConstrainToRootBoundsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ShouldConstrainToRootBoundsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowMode_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowMode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowMode" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowMode">
+  ShowMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3073"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlyoutShowMode ShowMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowMode.html">FlyoutShowMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowModeProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowModeProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowModeProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowModeProperty">
+  ShowModeProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ShowModeProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SystemBackdrop_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SystemBackdrop*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SystemBackdrop" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SystemBackdrop">
+  SystemBackdrop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3079"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemBackdrop SystemBackdrop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Media.SystemBackdrop.html">SystemBackdrop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SystemBackdropProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SystemBackdropProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SystemBackdropProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SystemBackdropProperty">
+  SystemBackdropProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty SystemBackdropProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Target_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Target*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Target" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Target">
+  Target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3085"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameworkElement Target { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_TargetProperty_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.TargetProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_TargetProperty" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.TargetProperty">
+  TargetProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2947"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty TargetProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_XamlRoot_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.XamlRoot*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_XamlRoot" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.XamlRoot">
+  XamlRoot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3087"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XamlRoot XamlRoot { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.XamlRoot.html">XamlRoot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_As_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_As__1" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2879"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_CreatePresenter_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.CreatePresenter*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_CreatePresenter" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.CreatePresenter">
+  CreatePresenter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3013"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Control CreatePresenter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Control.html">Control</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Equals_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Equals_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Equals(Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)">
+  Equals(FlyoutBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2966"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(FlyoutBase other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Equals_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2967"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_FromAbi_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FlyoutBase FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_GetAttachedFlyout_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.GetAttachedFlyout*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_GetAttachedFlyout_Microsoft_UI_Xaml_FrameworkElement_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.GetAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement)">
+  GetAttachedFlyout(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2898"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FlyoutBase GetAttachedFlyout(FrameworkElement element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_GetHashCode_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_GetHashCode" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2968"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Hide_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Hide*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Hide" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Hide">
+  Hide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2985"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3093"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OnProcessKeyboardAccelerators_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OnProcessKeyboardAccelerators*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_OnProcessKeyboardAccelerators_Microsoft_UI_Xaml_Input_ProcessKeyboardAcceleratorEventArgs_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.OnProcessKeyboardAccelerators(Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs)">
+  OnProcessKeyboardAccelerators(ProcessKeyboardAcceleratorEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3016"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnProcessKeyboardAccelerators(ProcessKeyboardAcceleratorEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs.html">ProcessKeyboardAcceleratorEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SetAttachedFlyout_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SetAttachedFlyout*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_SetAttachedFlyout_Microsoft_UI_Xaml_FrameworkElement_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.SetAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement,Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)">
+  SetAttachedFlyout(FrameworkElement, FlyoutBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2900"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAttachedFlyout(FrameworkElement element, FlyoutBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAt_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAt*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAt_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_Controls_Primitives_FlyoutShowOptions_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAt(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions)">
+  ShowAt(DependencyObject, FlyoutShowOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowAt(DependencyObject placementTarget, FlyoutShowOptions showOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placementTarget</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>showOptions</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutShowOptions.html">FlyoutShowOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAt_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAt*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAt_Microsoft_UI_Xaml_FrameworkElement_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAt(Microsoft.UI.Xaml.FrameworkElement)">
+  ShowAt(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2981"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowAt(FrameworkElement placementTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placementTarget</code> <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAttachedFlyout_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAttachedFlyout*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_ShowAttachedFlyout_Microsoft_UI_Xaml_FrameworkElement_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.ShowAttachedFlyout(Microsoft.UI.Xaml.FrameworkElement)">
+  ShowAttachedFlyout(FrameworkElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2902"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowAttachedFlyout(FrameworkElement flyoutOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flyoutOwner</code> <a class="xref" href="Microsoft.UI.Xaml.FrameworkElement.html">FrameworkElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_TryInvokeKeyboardAccelerator_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.TryInvokeKeyboardAccelerator*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_TryInvokeKeyboardAccelerator_Microsoft_UI_Xaml_Input_ProcessKeyboardAcceleratorEventArgs_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.TryInvokeKeyboardAccelerator(Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs)">
+  TryInvokeKeyboardAccelerator(ProcessKeyboardAcceleratorEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryInvokeKeyboardAccelerator(ProcessKeyboardAcceleratorEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="Microsoft.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs.html">ProcessKeyboardAcceleratorEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Closed" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Closed">
+  Closed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;object&gt; Closed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Closing" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Closing">
+  Closing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2995"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;FlyoutBase, FlyoutBaseClosingEventArgs&gt; Closing</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a>, <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBaseClosingEventArgs.html">FlyoutBaseClosingEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Opened" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Opened">
+  Opened
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3001"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;object&gt; Opened</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Opening" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.Opening">
+  Opening
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L3007"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;object&gt; Opening</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_op_Equality_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_op_Equality_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.op_Equality(Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase,Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)">
+  operator ==(FlyoutBase, FlyoutBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2964"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(FlyoutBase x, FlyoutBase y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_op_Inequality_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_op_Inequality_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_Microsoft_UI_Xaml_Controls_Primitives_FlyoutBase_" data-uid="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.op_Inequality(Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase,Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)">
+  operator !=(FlyoutBase, FlyoutBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(FlyoutBase x, FlyoutBase y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase.html">FlyoutBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.Primitives.cs/#L2782" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

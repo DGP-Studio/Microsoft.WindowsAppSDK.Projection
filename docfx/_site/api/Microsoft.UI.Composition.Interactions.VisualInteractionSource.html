@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VisualInteractionSource | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VisualInteractionSource | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Composition_Interactions_VisualInteractionSource.md&amp;value=---%0Auid%3A%20Microsoft.UI.Composition.Interactions.VisualInteractionSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource">
+
+
+
+  <h1 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource" class="text-break">
+Class VisualInteractionSource  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L1972"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Composition.html">Composition</a>.<a class="xref" href="Microsoft.UI.Composition.Interactions.html">Interactions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI&quot;)]
+[WindowsRuntimeHelperType(typeof(VisualInteractionSource))]
+[ProjectedRuntimeClass(typeof(IVisualInteractionSource))]
+[ContractVersion(typeof(WindowsAppSDKContract), 65536)]
+public class VisualInteractionSource : CompositionObject, IDisposable, IAnimationObject, IEquatable&lt;CompositionObject&gt;, ICompositionInteractionSource, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;VisualInteractionSource&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a></div>
+      <div><span class="xref">VisualInteractionSource</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="Microsoft.UI.Composition.IAnimationObject.html">IAnimationObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.CompositionObject.html">CompositionObject</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.UI.Composition.Interactions.ICompositionInteractionSource.html">ICompositionInteractionSource</a></div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimationWithIAnimationObject(IAnimationObject, string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroupWithIAnimationObject_Microsoft_UI_Composition_IAnimationObject_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroupWithIAnimationObject(IAnimationObject, ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Equals_Microsoft_UI_Composition_CompositionObject_">CompositionObject.Equals(CompositionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_">CompositionObject.StartAnimation(string, CompositionAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimation_System_String_">CompositionObject.StopAnimation(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StartAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StopAnimationGroup_Microsoft_UI_Composition_ICompositionAnimationBase_">CompositionObject.StopAnimationGroup(ICompositionAnimationBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_TryGetAnimationController_System_String_">CompositionObject.TryGetAnimationController(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_StartAnimation_System_String_Microsoft_UI_Composition_CompositionAnimation_Microsoft_UI_Composition_AnimationController_">CompositionObject.StartAnimation(string, CompositionAnimation, AnimationController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Dispose">CompositionObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_PopulatePropertyInfo_System_String_Microsoft_UI_Composition_AnimationPropertyInfo_">CompositionObject.PopulatePropertyInfo(string, AnimationPropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Comment">CompositionObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Compositor">CompositionObject.Compositor</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_DispatcherQueue">CompositionObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_ImplicitAnimations">CompositionObject.ImplicitAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Composition.CompositionObject.html#Microsoft_UI_Composition_CompositionObject_Properties">CompositionObject.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource__ctor_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.#ctor(WinRT.DerivedComposed)">
+  VisualInteractionSource(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualInteractionSource(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource__ctor_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.#ctor(WinRT.IObjectReference)">
+  VisualInteractionSource(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2086"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualInteractionSource(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_DeltaPosition_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.DeltaPosition*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_DeltaPosition" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.DeltaPosition">
+  DeltaPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 DeltaPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_DeltaScale_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.DeltaScale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_DeltaScale" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.DeltaScale">
+  DeltaScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeltaScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsPositionXRailsEnabled_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsPositionXRailsEnabled*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsPositionXRailsEnabled" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsPositionXRailsEnabled">
+  IsPositionXRailsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionXRailsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsPositionYRailsEnabled_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsPositionYRailsEnabled*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsPositionYRailsEnabled" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsPositionYRailsEnabled">
+  IsPositionYRailsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionYRailsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ManipulationRedirectionMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ManipulationRedirectionMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ManipulationRedirectionMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ManipulationRedirectionMode">
+  ManipulationRedirectionMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisualInteractionSourceRedirectionMode ManipulationRedirectionMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSourceRedirectionMode.html">VisualInteractionSourceRedirectionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PointerWheelConfig_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PointerWheelConfig*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PointerWheelConfig" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PointerWheelConfig">
+  PointerWheelConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionSourceConfiguration PointerWheelConfig { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionSourceConfiguration.html">InteractionSourceConfiguration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Position_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Position*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Position" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Position">
+  Position
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Position { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionVelocity_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionVelocity*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionVelocity" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionVelocity">
+  PositionVelocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PositionVelocity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionXChainingMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionXChainingMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionXChainingMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionXChainingMode">
+  PositionXChainingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionChainingMode PositionXChainingMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionChainingMode.html">InteractionChainingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionXSourceMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionXSourceMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionXSourceMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionXSourceMode">
+  PositionXSourceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionSourceMode PositionXSourceMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionSourceMode.html">InteractionSourceMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionYChainingMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionYChainingMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionYChainingMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionYChainingMode">
+  PositionYChainingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionChainingMode PositionYChainingMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionChainingMode.html">InteractionChainingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionYSourceMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionYSourceMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_PositionYSourceMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.PositionYSourceMode">
+  PositionYSourceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionSourceMode PositionYSourceMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionSourceMode.html">InteractionSourceMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Scale_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Scale*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Scale" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Scale">
+  Scale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleChainingMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleChainingMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleChainingMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleChainingMode">
+  ScaleChainingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionChainingMode ScaleChainingMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionChainingMode.html">InteractionChainingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleSourceMode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleSourceMode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleSourceMode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleSourceMode">
+  ScaleSourceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionSourceMode ScaleSourceMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.InteractionSourceMode.html">InteractionSourceMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleVelocity_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleVelocity*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ScaleVelocity" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ScaleVelocity">
+  ScaleVelocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleVelocity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Source_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Source*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Source" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Source">
+  Source
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visual Source { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Visual.html">Visual</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_As_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.As*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_As__1" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2040"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureCenterPointXModifiers_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureCenterPointXModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureCenterPointXModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureCenterPointXModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureCenterPointXModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureCenterPointXModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureCenterPointYModifiers_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureCenterPointYModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureCenterPointYModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureCenterPointYModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureCenterPointYModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureCenterPointYModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaPositionXModifiers_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaPositionXModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaPositionXModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaPositionXModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureDeltaPositionXModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureDeltaPositionXModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaPositionYModifiers_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaPositionYModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaPositionYModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaPositionYModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureDeltaPositionYModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureDeltaPositionYModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaScaleModifiers_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaScaleModifiers*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_ConfigureDeltaScaleModifiers_System_Collections_Generic_IEnumerable_Microsoft_UI_Composition_Interactions_CompositionConditionalValue__" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.ConfigureDeltaScaleModifiers(System.Collections.Generic.IEnumerable{Microsoft.UI.Composition.Interactions.CompositionConditionalValue})">
+  ConfigureDeltaScaleModifiers(IEnumerable&lt;CompositionConditionalValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureDeltaScaleModifiers(IEnumerable&lt;CompositionConditionalValue&gt; conditionalValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditionalValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Composition.Interactions.CompositionConditionalValue.html">CompositionConditionalValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Create_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Create*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Create_Microsoft_UI_Composition_Visual_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Create(Microsoft.UI.Composition.Visual)">
+  Create(Visual)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2059"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VisualInteractionSource Create(Visual source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Microsoft.UI.Composition.Visual.html">Visual</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_CreateFromIVisualElement_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.CreateFromIVisualElement*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_CreateFromIVisualElement_Microsoft_UI_Composition_IVisualElement_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.CreateFromIVisualElement(Microsoft.UI.Composition.IVisualElement)">
+  CreateFromIVisualElement(IVisualElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2078"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VisualInteractionSource CreateFromIVisualElement(IVisualElement source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Microsoft.UI.Composition.IVisualElement.html">IVisualElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Equals_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Equals_Microsoft_UI_Composition_Interactions_VisualInteractionSource_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Equals(Microsoft.UI.Composition.Interactions.VisualInteractionSource)">
+  Equals(VisualInteractionSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2097"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(VisualInteractionSource other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Equals_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_Equals_System_Object_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2098"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_FromAbi_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VisualInteractionSource FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_GetHashCode_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_GetHashCode" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2099"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsOverridableInterface_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_TryRedirectForManipulation_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.TryRedirectForManipulation*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_TryRedirectForManipulation_Microsoft_UI_Input_PointerPoint_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.TryRedirectForManipulation(Microsoft.UI.Input.PointerPoint)">
+  TryRedirectForManipulation(PointerPoint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryRedirectForManipulation(PointerPoint pointerPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointerPoint</code> <a class="xref" href="Microsoft.UI.Input.PointerPoint.html">PointerPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_op_Equality_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_op_Equality_Microsoft_UI_Composition_Interactions_VisualInteractionSource_Microsoft_UI_Composition_Interactions_VisualInteractionSource_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.op_Equality(Microsoft.UI.Composition.Interactions.VisualInteractionSource,Microsoft.UI.Composition.Interactions.VisualInteractionSource)">
+  operator ==(VisualInteractionSource, VisualInteractionSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2095"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(VisualInteractionSource x, VisualInteractionSource y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_op_Inequality_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Composition_Interactions_VisualInteractionSource_op_Inequality_Microsoft_UI_Composition_Interactions_VisualInteractionSource_Microsoft_UI_Composition_Interactions_VisualInteractionSource_" data-uid="Microsoft.UI.Composition.Interactions.VisualInteractionSource.op_Inequality(Microsoft.UI.Composition.Interactions.VisualInteractionSource,Microsoft.UI.Composition.Interactions.VisualInteractionSource)">
+  operator !=(VisualInteractionSource, VisualInteractionSource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L2096"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(VisualInteractionSource x, VisualInteractionSource y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Composition.Interactions.VisualInteractionSource.html">VisualInteractionSource</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Composition.Interactions.cs/#L1972" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

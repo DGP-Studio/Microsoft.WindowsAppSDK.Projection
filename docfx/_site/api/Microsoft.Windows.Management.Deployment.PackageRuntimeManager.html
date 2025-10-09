@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PackageRuntimeManager | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PackageRuntimeManager | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_Windows_Management_Deployment_PackageRuntimeManager.md&amp;value=---%0Auid%3A%20Microsoft.Windows.Management.Deployment.PackageRuntimeManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager">
+
+
+
+  <h1 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager" class="text-break">
+Class PackageRuntimeManager  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.Windows.html">Windows</a>.<a class="xref" href="Microsoft.Windows.Management.html">Management</a>.<a class="xref" href="Microsoft.Windows.Management.Deployment.html">Deployment</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.Windows.Management.Deployment&quot;)]
+[WindowsRuntimeHelperType(typeof(PackageRuntimeManager))]
+[ProjectedRuntimeClass(typeof(IPackageRuntimeManager))]
+[ContractVersion(typeof(PackageDeploymentContract), 65536)]
+public sealed class PackageRuntimeManager : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;PackageRuntimeManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PackageRuntimeManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_AddPackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.AddPackageSet*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_AddPackageSet_Microsoft_Windows_Management_Deployment_PackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.AddPackageSet(Microsoft.Windows.Management.Deployment.PackageSet)">
+  AddPackageSet(PackageSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageSetRuntimeDisposition AddPackageSet(PackageSet packageSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSetRuntimeDisposition.html">PackageSetRuntimeDisposition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_AddPackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.AddPackageSet*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_AddPackageSet_Microsoft_Windows_Management_Deployment_PackageSet_Microsoft_Windows_ApplicationModel_DynamicDependency_CreatePackageDependencyOptions_Microsoft_Windows_ApplicationModel_DynamicDependency_AddPackageDependencyOptions_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.AddPackageSet(Microsoft.Windows.Management.Deployment.PackageSet,Microsoft.Windows.ApplicationModel.DynamicDependency.CreatePackageDependencyOptions,Microsoft.Windows.ApplicationModel.DynamicDependency.AddPackageDependencyOptions)">
+  AddPackageSet(PackageSet, CreatePackageDependencyOptions, AddPackageDependencyOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L1000"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageSetRuntimeDisposition AddPackageSet(PackageSet packageSet, CreatePackageDependencyOptions createOptions, AddPackageDependencyOptions addOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSet</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSet.html">PackageSet</a></dt>
+    <dd></dd>
+    <dt><code>createOptions</code> <a class="xref" href="Microsoft.Windows.ApplicationModel.DynamicDependency.CreatePackageDependencyOptions.html">CreatePackageDependencyOptions</a></dt>
+    <dd></dd>
+    <dt><code>addOptions</code> <a class="xref" href="Microsoft.Windows.ApplicationModel.DynamicDependency.AddPackageDependencyOptions.html">AddPackageDependencyOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSetRuntimeDisposition.html">PackageSetRuntimeDisposition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_As_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.As*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_As__1" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L937"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Equals_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Equals_Microsoft_Windows_Management_Deployment_PackageRuntimeManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.Equals(Microsoft.Windows.Management.Deployment.PackageRuntimeManager)">
+  Equals(PackageRuntimeManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L973"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PackageRuntimeManager other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Equals_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.Equals*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Equals_System_Object_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L974"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_FromAbi_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.FromAbi*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_FromAbi_System_IntPtr_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageRuntimeManager FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_GetDefault_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.GetDefault*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_GetDefault" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.GetDefault">
+  GetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L956"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageRuntimeManager GetDefault()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_GetHashCode_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.GetHashCode*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_GetHashCode" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L975"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_RemovePackageSet_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.RemovePackageSet*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_RemovePackageSet_Microsoft_Windows_Management_Deployment_PackageSetRuntimeDisposition_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.RemovePackageSet(Microsoft.Windows.Management.Deployment.PackageSetRuntimeDisposition)">
+  RemovePackageSet(PackageSetRuntimeDisposition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L1002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePackageSet(PackageSetRuntimeDisposition packageSetRuntimeDisposition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageSetRuntimeDisposition</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageSetRuntimeDisposition.html">PackageSetRuntimeDisposition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_op_Equality_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.op_Equality*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_op_Equality_Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Microsoft_Windows_Management_Deployment_PackageRuntimeManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.op_Equality(Microsoft.Windows.Management.Deployment.PackageRuntimeManager,Microsoft.Windows.Management.Deployment.PackageRuntimeManager)">
+  operator ==(PackageRuntimeManager, PackageRuntimeManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L971"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(PackageRuntimeManager x, PackageRuntimeManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_op_Inequality_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.op_Inequality*"></a>
+
+  <h3 id="Microsoft_Windows_Management_Deployment_PackageRuntimeManager_op_Inequality_Microsoft_Windows_Management_Deployment_PackageRuntimeManager_Microsoft_Windows_Management_Deployment_PackageRuntimeManager_" data-uid="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.op_Inequality(Microsoft.Windows.Management.Deployment.PackageRuntimeManager,Microsoft.Windows.Management.Deployment.PackageRuntimeManager)">
+  operator !=(PackageRuntimeManager, PackageRuntimeManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(PackageRuntimeManager x, PackageRuntimeManager y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.Windows.Management.Deployment.PackageRuntimeManager.html">PackageRuntimeManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.Windows.Management.Deployment.cs/#L921" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

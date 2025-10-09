@@ -1,0 +1,4751 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Typography | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Typography | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Documents_Typography.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Documents.Typography%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Documents.Typography">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Documents_Typography" data-uid="Microsoft.UI.Xaml.Documents.Typography" class="text-break">
+Class Typography  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2903"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Documents.html">Documents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(Typography))]
+[ProjectedRuntimeClass(typeof(ITypography))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class Typography : IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;Typography&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Typography</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_AnnotationAlternatesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.AnnotationAlternatesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_AnnotationAlternatesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.AnnotationAlternatesProperty">
+  AnnotationAlternatesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty AnnotationAlternatesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_CapitalSpacingProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.CapitalSpacingProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_CapitalSpacingProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.CapitalSpacingProperty">
+  CapitalSpacingProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty CapitalSpacingProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_CapitalsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.CapitalsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_CapitalsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.CapitalsProperty">
+  CapitalsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty CapitalsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_CaseSensitiveFormsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.CaseSensitiveFormsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_CaseSensitiveFormsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.CaseSensitiveFormsProperty">
+  CaseSensitiveFormsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty CaseSensitiveFormsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_ContextualAlternatesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualAlternatesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_ContextualAlternatesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualAlternatesProperty">
+  ContextualAlternatesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ContextualAlternatesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_ContextualLigaturesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualLigaturesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_ContextualLigaturesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualLigaturesProperty">
+  ContextualLigaturesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ContextualLigaturesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_ContextualSwashesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualSwashesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_ContextualSwashesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.ContextualSwashesProperty">
+  ContextualSwashesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ContextualSwashesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_DiscretionaryLigaturesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.DiscretionaryLigaturesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_DiscretionaryLigaturesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.DiscretionaryLigaturesProperty">
+  DiscretionaryLigaturesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty DiscretionaryLigaturesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_EastAsianExpertFormsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianExpertFormsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_EastAsianExpertFormsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianExpertFormsProperty">
+  EastAsianExpertFormsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty EastAsianExpertFormsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_EastAsianLanguageProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianLanguageProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_EastAsianLanguageProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianLanguageProperty">
+  EastAsianLanguageProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty EastAsianLanguageProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_EastAsianWidthsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianWidthsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_EastAsianWidthsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.EastAsianWidthsProperty">
+  EastAsianWidthsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty EastAsianWidthsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_FractionProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.FractionProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_FractionProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.FractionProperty">
+  FractionProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty FractionProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_HistoricalFormsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.HistoricalFormsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_HistoricalFormsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.HistoricalFormsProperty">
+  HistoricalFormsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty HistoricalFormsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_HistoricalLigaturesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.HistoricalLigaturesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_HistoricalLigaturesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.HistoricalLigaturesProperty">
+  HistoricalLigaturesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty HistoricalLigaturesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_KerningProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.KerningProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_KerningProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.KerningProperty">
+  KerningProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty KerningProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_MathematicalGreekProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.MathematicalGreekProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_MathematicalGreekProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.MathematicalGreekProperty">
+  MathematicalGreekProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty MathematicalGreekProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_NumeralAlignmentProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.NumeralAlignmentProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_NumeralAlignmentProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.NumeralAlignmentProperty">
+  NumeralAlignmentProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty NumeralAlignmentProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_NumeralStyleProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.NumeralStyleProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_NumeralStyleProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.NumeralStyleProperty">
+  NumeralStyleProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty NumeralStyleProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SlashedZeroProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SlashedZeroProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SlashedZeroProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.SlashedZeroProperty">
+  SlashedZeroProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty SlashedZeroProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StandardLigaturesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StandardLigaturesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StandardLigaturesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.StandardLigaturesProperty">
+  StandardLigaturesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StandardLigaturesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StandardSwashesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StandardSwashesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StandardSwashesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.StandardSwashesProperty">
+  StandardSwashesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StandardSwashesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticAlternatesProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticAlternatesProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticAlternatesProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticAlternatesProperty">
+  StylisticAlternatesProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticAlternatesProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet10Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet10Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet10Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet10Property">
+  StylisticSet10Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet10Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet11Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet11Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet11Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet11Property">
+  StylisticSet11Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet11Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet12Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet12Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet12Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet12Property">
+  StylisticSet12Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet12Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet13Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet13Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet13Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet13Property">
+  StylisticSet13Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet13Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet14Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet14Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet14Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet14Property">
+  StylisticSet14Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet14Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet15Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet15Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet15Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet15Property">
+  StylisticSet15Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet15Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet16Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet16Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet16Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet16Property">
+  StylisticSet16Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet16Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet17Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet17Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet17Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet17Property">
+  StylisticSet17Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet17Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet18Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet18Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet18Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet18Property">
+  StylisticSet18Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet18Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet19Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet19Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet19Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet19Property">
+  StylisticSet19Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet19Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet1Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet1Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet1Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet1Property">
+  StylisticSet1Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet1Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet20Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet20Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet20Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet20Property">
+  StylisticSet20Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet20Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet2Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet2Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet2Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet2Property">
+  StylisticSet2Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet2Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet3Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet3Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet3Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet3Property">
+  StylisticSet3Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet3Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet4Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet4Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet4Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet4Property">
+  StylisticSet4Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet4Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet5Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet5Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet5Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet5Property">
+  StylisticSet5Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet5Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet6Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet6Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet6Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet6Property">
+  StylisticSet6Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet6Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet7Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet7Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet7Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet7Property">
+  StylisticSet7Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet7Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet8Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet8Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet8Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet8Property">
+  StylisticSet8Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet8Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet9Property_" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet9Property*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_StylisticSet9Property" data-uid="Microsoft.UI.Xaml.Documents.Typography.StylisticSet9Property">
+  StylisticSet9Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty StylisticSet9Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_VariantsProperty_" data-uid="Microsoft.UI.Xaml.Documents.Typography.VariantsProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_VariantsProperty" data-uid="Microsoft.UI.Xaml.Documents.Typography.VariantsProperty">
+  VariantsProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty VariantsProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_As_" data-uid="Microsoft.UI.Xaml.Documents.Typography.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_As__1" data-uid="Microsoft.UI.Xaml.Documents.Typography.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_Equals_" data-uid="Microsoft.UI.Xaml.Documents.Typography.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_Equals_Microsoft_UI_Xaml_Documents_Typography_" data-uid="Microsoft.UI.Xaml.Documents.Typography.Equals(Microsoft.UI.Xaml.Documents.Typography)">
+  Equals(Typography)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Typography other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_Equals_" data-uid="Microsoft.UI.Xaml.Documents.Typography.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Documents.Typography.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_FromAbi_" data-uid="Microsoft.UI.Xaml.Documents.Typography.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Documents.Typography.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Typography FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetAnnotationAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetAnnotationAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetAnnotationAlternates_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetAnnotationAlternates(Microsoft.UI.Xaml.DependencyObject)">
+  GetAnnotationAlternates(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetAnnotationAlternates(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetCapitalSpacing_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCapitalSpacing*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetCapitalSpacing_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCapitalSpacing(Microsoft.UI.Xaml.DependencyObject)">
+  GetCapitalSpacing(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3070"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetCapitalSpacing(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetCapitals_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCapitals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetCapitals_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCapitals(Microsoft.UI.Xaml.DependencyObject)">
+  GetCapitals(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3066"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontCapitals GetCapitals(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontCapitals.html">FontCapitals</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetCaseSensitiveForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCaseSensitiveForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetCaseSensitiveForms_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetCaseSensitiveForms(Microsoft.UI.Xaml.DependencyObject)">
+  GetCaseSensitiveForms(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3078"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetCaseSensitiveForms(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetContextualAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetContextualAlternates_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualAlternates(Microsoft.UI.Xaml.DependencyObject)">
+  GetContextualAlternates(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetContextualAlternates(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetContextualLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetContextualLigatures_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualLigatures(Microsoft.UI.Xaml.DependencyObject)">
+  GetContextualLigatures(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetContextualLigatures(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetContextualSwashes_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualSwashes*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetContextualSwashes_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetContextualSwashes(Microsoft.UI.Xaml.DependencyObject)">
+  GetContextualSwashes(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2974"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetContextualSwashes(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetDiscretionaryLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetDiscretionaryLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetDiscretionaryLigatures_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetDiscretionaryLigatures(Microsoft.UI.Xaml.DependencyObject)">
+  GetDiscretionaryLigatures(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2962"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetDiscretionaryLigatures(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianExpertForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianExpertForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianExpertForms_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianExpertForms(Microsoft.UI.Xaml.DependencyObject)">
+  GetEastAsianExpertForms(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2942"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetEastAsianExpertForms(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianLanguage_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianLanguage*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianLanguage_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianLanguage(Microsoft.UI.Xaml.DependencyObject)">
+  GetEastAsianLanguage(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontEastAsianLanguage GetEastAsianLanguage(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontEastAsianLanguage.html">FontEastAsianLanguage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianWidths_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianWidths*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetEastAsianWidths_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetEastAsianWidths(Microsoft.UI.Xaml.DependencyObject)">
+  GetEastAsianWidths(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2950"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontEastAsianWidths GetEastAsianWidths(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontEastAsianWidths.html">FontEastAsianWidths</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetFraction_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetFraction*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetFraction_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetFraction(Microsoft.UI.Xaml.DependencyObject)">
+  GetFraction(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3086"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontFraction GetFraction(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontFraction.html">FontFraction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetHashCode_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetHashCode" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetHistoricalForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHistoricalForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetHistoricalForms_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHistoricalForms(Microsoft.UI.Xaml.DependencyObject)">
+  GetHistoricalForms(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3082"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetHistoricalForms(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetHistoricalLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHistoricalLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetHistoricalLigatures_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetHistoricalLigatures(Microsoft.UI.Xaml.DependencyObject)">
+  GetHistoricalLigatures(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2966"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetHistoricalLigatures(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetKerning_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetKerning*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetKerning_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetKerning(Microsoft.UI.Xaml.DependencyObject)">
+  GetKerning(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3074"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetKerning(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetMathematicalGreek_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetMathematicalGreek*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetMathematicalGreek_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetMathematicalGreek(Microsoft.UI.Xaml.DependencyObject)">
+  GetMathematicalGreek(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetMathematicalGreek(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetNumeralAlignment_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetNumeralAlignment*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetNumeralAlignment_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetNumeralAlignment(Microsoft.UI.Xaml.DependencyObject)">
+  GetNumeralAlignment(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3094"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontNumeralAlignment GetNumeralAlignment(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontNumeralAlignment.html">FontNumeralAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetNumeralStyle_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetNumeralStyle*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetNumeralStyle_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetNumeralStyle(Microsoft.UI.Xaml.DependencyObject)">
+  GetNumeralStyle(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3090"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontNumeralStyle GetNumeralStyle(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontNumeralStyle.html">FontNumeralStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetSlashedZero_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetSlashedZero*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetSlashedZero_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetSlashedZero(Microsoft.UI.Xaml.DependencyObject)">
+  GetSlashedZero(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3098"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetSlashedZero(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStandardLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStandardLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStandardLigatures_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStandardLigatures(Microsoft.UI.Xaml.DependencyObject)">
+  GetStandardLigatures(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStandardLigatures(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStandardSwashes_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStandardSwashes*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStandardSwashes_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStandardSwashes(Microsoft.UI.Xaml.DependencyObject)">
+  GetStandardSwashes(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2970"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetStandardSwashes(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticAlternates_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticAlternates(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticAlternates(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetStylisticAlternates(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet1_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet1*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet1_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet1(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet1(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2986"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet1(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet10_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet10*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet10_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet10(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet10(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3022"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet10(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet11_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet11*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet11_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet11(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet11(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet11(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet12_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet12*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet12_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet12(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet12(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet12(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet13_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet13*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet13_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet13(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet13(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet13(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet14_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet14*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet14_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet14(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet14(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet14(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet15_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet15*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet15_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet15(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet15(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3042"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet15(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet16_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet16*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet16_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet16(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet16(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3046"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet16(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet17_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet17*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet17_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet17(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet17(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3050"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet17(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet18_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet18*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet18_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet18(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet18(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3054"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet18(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet19_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet19*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet19_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet19(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet19(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3058"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet19(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet2_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet2*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet2_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet2(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet2(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2990"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet2(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet20_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet20*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet20_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet20(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet20(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3062"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet20(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet3_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet3*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet3_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet3(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet3(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2994"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet3(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet4_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet4*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet4_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet4(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet4(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet4(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet5_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet5*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet5_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet5(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet5(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet5(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet6_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet6*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet6_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet6(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet6(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3006"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet6(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet7_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet7*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet7_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet7(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet7(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet7(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet8_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet8*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet8_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet8(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet8(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3014"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet8(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet9_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet9*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetStylisticSet9_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetStylisticSet9(Microsoft.UI.Xaml.DependencyObject)">
+  GetStylisticSet9(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetStylisticSet9(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_GetVariants_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetVariants*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_GetVariants_Microsoft_UI_Xaml_DependencyObject_" data-uid="Microsoft.UI.Xaml.Documents.Typography.GetVariants(Microsoft.UI.Xaml.DependencyObject)">
+  GetVariants(DependencyObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontVariants GetVariants(DependencyObject element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FontVariants.html">FontVariants</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetAnnotationAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetAnnotationAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetAnnotationAlternates_Microsoft_UI_Xaml_DependencyObject_System_Int32_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetAnnotationAlternates(Microsoft.UI.Xaml.DependencyObject,System.Int32)">
+  SetAnnotationAlternates(DependencyObject, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAnnotationAlternates(DependencyObject element, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetCapitalSpacing_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCapitalSpacing*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetCapitalSpacing_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCapitalSpacing(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetCapitalSpacing(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3072"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCapitalSpacing(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetCapitals_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCapitals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetCapitals_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontCapitals_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCapitals(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontCapitals)">
+  SetCapitals(DependencyObject, FontCapitals)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3068"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCapitals(DependencyObject element, FontCapitals value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontCapitals.html">FontCapitals</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetCaseSensitiveForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCaseSensitiveForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetCaseSensitiveForms_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetCaseSensitiveForms(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetCaseSensitiveForms(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCaseSensitiveForms(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetContextualAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetContextualAlternates_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualAlternates(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetContextualAlternates(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2980"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetContextualAlternates(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetContextualLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetContextualLigatures_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualLigatures(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetContextualLigatures(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2960"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetContextualLigatures(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetContextualSwashes_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualSwashes*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetContextualSwashes_Microsoft_UI_Xaml_DependencyObject_System_Int32_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetContextualSwashes(Microsoft.UI.Xaml.DependencyObject,System.Int32)">
+  SetContextualSwashes(DependencyObject, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2976"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetContextualSwashes(DependencyObject element, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetDiscretionaryLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetDiscretionaryLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetDiscretionaryLigatures_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetDiscretionaryLigatures(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetDiscretionaryLigatures(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2964"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDiscretionaryLigatures(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianExpertForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianExpertForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianExpertForms_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianExpertForms(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetEastAsianExpertForms(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2944"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEastAsianExpertForms(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianLanguage_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianLanguage*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianLanguage_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontEastAsianLanguage_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianLanguage(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontEastAsianLanguage)">
+  SetEastAsianLanguage(DependencyObject, FontEastAsianLanguage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2948"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEastAsianLanguage(DependencyObject element, FontEastAsianLanguage value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontEastAsianLanguage.html">FontEastAsianLanguage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianWidths_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianWidths*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetEastAsianWidths_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontEastAsianWidths_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetEastAsianWidths(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontEastAsianWidths)">
+  SetEastAsianWidths(DependencyObject, FontEastAsianWidths)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEastAsianWidths(DependencyObject element, FontEastAsianWidths value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontEastAsianWidths.html">FontEastAsianWidths</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetFraction_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetFraction*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetFraction_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontFraction_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetFraction(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontFraction)">
+  SetFraction(DependencyObject, FontFraction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3088"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFraction(DependencyObject element, FontFraction value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontFraction.html">FontFraction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetHistoricalForms_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetHistoricalForms*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetHistoricalForms_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetHistoricalForms(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetHistoricalForms(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3084"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHistoricalForms(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetHistoricalLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetHistoricalLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetHistoricalLigatures_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetHistoricalLigatures(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetHistoricalLigatures(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2968"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHistoricalLigatures(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetKerning_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetKerning*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetKerning_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetKerning(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetKerning(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3076"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetKerning(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetMathematicalGreek_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetMathematicalGreek*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetMathematicalGreek_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetMathematicalGreek(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetMathematicalGreek(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetMathematicalGreek(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetNumeralAlignment_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetNumeralAlignment*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetNumeralAlignment_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontNumeralAlignment_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetNumeralAlignment(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontNumeralAlignment)">
+  SetNumeralAlignment(DependencyObject, FontNumeralAlignment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3096"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetNumeralAlignment(DependencyObject element, FontNumeralAlignment value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontNumeralAlignment.html">FontNumeralAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetNumeralStyle_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetNumeralStyle*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetNumeralStyle_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontNumeralStyle_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetNumeralStyle(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontNumeralStyle)">
+  SetNumeralStyle(DependencyObject, FontNumeralStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3092"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetNumeralStyle(DependencyObject element, FontNumeralStyle value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontNumeralStyle.html">FontNumeralStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetSlashedZero_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetSlashedZero*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetSlashedZero_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetSlashedZero(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetSlashedZero(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSlashedZero(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStandardLigatures_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStandardLigatures*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStandardLigatures_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStandardLigatures(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStandardLigatures(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2956"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStandardLigatures(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStandardSwashes_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStandardSwashes*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStandardSwashes_Microsoft_UI_Xaml_DependencyObject_System_Int32_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStandardSwashes(Microsoft.UI.Xaml.DependencyObject,System.Int32)">
+  SetStandardSwashes(DependencyObject, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStandardSwashes(DependencyObject element, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticAlternates_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticAlternates*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticAlternates_Microsoft_UI_Xaml_DependencyObject_System_Int32_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticAlternates(Microsoft.UI.Xaml.DependencyObject,System.Int32)">
+  SetStylisticAlternates(DependencyObject, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2984"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticAlternates(DependencyObject element, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet1_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet1*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet1_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet1(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet1(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2988"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet1(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet10_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet10*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet10_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet10(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet10(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet10(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet11_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet11*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet11_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet11(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet11(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet11(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet12_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet12*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet12_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet12(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet12(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet12(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet13_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet13*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet13_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet13(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet13(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3036"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet13(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet14_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet14*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet14_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet14(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet14(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3040"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet14(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet15_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet15*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet15_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet15(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet15(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3044"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet15(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet16_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet16*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet16_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet16(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet16(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3048"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet16(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet17_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet17*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet17_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet17(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet17(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3052"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet17(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet18_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet18*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet18_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet18(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet18(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3056"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet18(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet19_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet19*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet19_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet19(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet19(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3060"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet19(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet2_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet2*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet2_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet2(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet2(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2992"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet2(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet20_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet20*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet20_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet20(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet20(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3064"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet20(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet3_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet3*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet3_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet3(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet3(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2996"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet3(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet4_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet4*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet4_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet4(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet4(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3000"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet4(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet5_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet5*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet5_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet5(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet5(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3004"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet5(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet6_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet6*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet6_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet6(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet6(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3008"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet6(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet7_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet7*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet7_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet7(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet7(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3012"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet7(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet8_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet8*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet8_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet8(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet8(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3016"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet8(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet9_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet9*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetStylisticSet9_Microsoft_UI_Xaml_DependencyObject_System_Boolean_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetStylisticSet9(Microsoft.UI.Xaml.DependencyObject,System.Boolean)">
+  SetStylisticSet9(DependencyObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3020"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetStylisticSet9(DependencyObject element, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_SetVariants_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetVariants*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_SetVariants_Microsoft_UI_Xaml_DependencyObject_Microsoft_UI_Xaml_FontVariants_" data-uid="Microsoft.UI.Xaml.Documents.Typography.SetVariants(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.FontVariants)">
+  SetVariants(DependencyObject, FontVariants)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetVariants(DependencyObject element, FontVariants value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FontVariants.html">FontVariants</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_op_Equality_" data-uid="Microsoft.UI.Xaml.Documents.Typography.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_op_Equality_Microsoft_UI_Xaml_Documents_Typography_Microsoft_UI_Xaml_Documents_Typography_" data-uid="Microsoft.UI.Xaml.Documents.Typography.op_Equality(Microsoft.UI.Xaml.Documents.Typography,Microsoft.UI.Xaml.Documents.Typography)">
+  operator ==(Typography, Typography)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Typography x, Typography y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Typography_op_Inequality_" data-uid="Microsoft.UI.Xaml.Documents.Typography.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Typography_op_Inequality_Microsoft_UI_Xaml_Documents_Typography_Microsoft_UI_Xaml_Documents_Typography_" data-uid="Microsoft.UI.Xaml.Documents.Typography.op_Inequality(Microsoft.UI.Xaml.Documents.Typography,Microsoft.UI.Xaml.Documents.Typography)">
+  operator !=(Typography, Typography)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L3210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Typography x, Typography y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Typography.html">Typography</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L2903" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

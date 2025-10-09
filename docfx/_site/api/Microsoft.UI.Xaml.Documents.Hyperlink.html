@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Hyperlink | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Hyperlink | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Documents_Hyperlink.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Documents.Hyperlink%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Documents.Hyperlink">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Documents_Hyperlink" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink" class="text-break">
+Class Hyperlink  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L606"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Documents.html">Documents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(Hyperlink))]
+[ProjectedRuntimeClass(typeof(IHyperlink))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public sealed class Hyperlink : Span, IEquatable&lt;DependencyObject&gt;, IEquatable&lt;TextElement&gt;, IEquatable&lt;Inline&gt;, IEquatable&lt;Span&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;Hyperlink&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html">TextElement</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Documents.Inline.html">Inline</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Documents.Span.html">Span</a></div>
+      <div><span class="xref">Hyperlink</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html">TextElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.Inline.html">Inline</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.Span.html">Span</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.Span.html#Microsoft_UI_Xaml_Documents_Span_Equals_Microsoft_UI_Xaml_Documents_Span_">Span.Equals(Span)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.Span.html#Microsoft_UI_Xaml_Documents_Span_Inlines">Span.Inlines</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.Inline.html#Microsoft_UI_Xaml_Documents_Inline_Equals_Microsoft_UI_Xaml_Documents_Inline_">Inline.Equals(Inline)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyProperty">TextElement.AccessKeyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyScopeOwnerProperty">TextElement.AccessKeyScopeOwnerProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AllowFocusOnInteractionProperty">TextElement.AllowFocusOnInteractionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_CharacterSpacingProperty">TextElement.CharacterSpacingProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ExitDisplayModeOnAccessKeyInvokedProperty">TextElement.ExitDisplayModeOnAccessKeyInvokedProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontFamilyProperty">TextElement.FontFamilyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontSizeProperty">TextElement.FontSizeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontStretchProperty">TextElement.FontStretchProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontStyleProperty">TextElement.FontStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontWeightProperty">TextElement.FontWeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ForegroundProperty">TextElement.ForegroundProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_IsAccessKeyScopeProperty">TextElement.IsAccessKeyScopeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_IsTextScaleFactorEnabledProperty">TextElement.IsTextScaleFactorEnabledProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipHorizontalOffsetProperty">TextElement.KeyTipHorizontalOffsetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipPlacementModeProperty">TextElement.KeyTipPlacementModeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipVerticalOffsetProperty">TextElement.KeyTipVerticalOffsetProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_LanguageProperty">TextElement.LanguageProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_TextDecorationsProperty">TextElement.TextDecorationsProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_Equals_Microsoft_UI_Xaml_Documents_TextElement_">TextElement.Equals(TextElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FindName_System_String_">TextElement.FindName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyDisplayDismissed">TextElement.AccessKeyDisplayDismissed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyDisplayRequested">TextElement.AccessKeyDisplayRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyInvoked">TextElement.AccessKeyInvoked</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKey">TextElement.AccessKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AccessKeyScopeOwner">TextElement.AccessKeyScopeOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_AllowFocusOnInteraction">TextElement.AllowFocusOnInteraction</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_CharacterSpacing">TextElement.CharacterSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ContentEnd">TextElement.ContentEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ContentStart">TextElement.ContentStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ElementEnd">TextElement.ElementEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ElementStart">TextElement.ElementStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_ExitDisplayModeOnAccessKeyInvoked">TextElement.ExitDisplayModeOnAccessKeyInvoked</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontFamily">TextElement.FontFamily</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontSize">TextElement.FontSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontStretch">TextElement.FontStretch</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontStyle">TextElement.FontStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_FontWeight">TextElement.FontWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_Foreground">TextElement.Foreground</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_IsAccessKeyScope">TextElement.IsAccessKeyScope</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_IsTextScaleFactorEnabled">TextElement.IsTextScaleFactorEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipHorizontalOffset">TextElement.KeyTipHorizontalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipPlacementMode">TextElement.KeyTipPlacementMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_KeyTipVerticalOffset">TextElement.KeyTipVerticalOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_Language">TextElement.Language</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_Name">TextElement.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_TextDecorations">TextElement.TextDecorations</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Documents.TextElement.html#Microsoft_UI_Xaml_Documents_TextElement_XamlRoot">TextElement.XamlRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink__ctor_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink__ctor" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.#ctor">
+  Hyperlink()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hyperlink()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_ElementSoundMode_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.ElementSoundMode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_ElementSoundMode" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.ElementSoundMode">
+  ElementSoundMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L742"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementSoundMode ElementSoundMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.ElementSoundMode.html">ElementSoundMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_ElementSoundModeProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.ElementSoundModeProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_ElementSoundModeProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.ElementSoundModeProperty">
+  ElementSoundModeProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty ElementSoundModeProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_FocusState_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FocusState*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_FocusState" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FocusState">
+  FocusState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L748"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusState FocusState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.FocusState.html">FocusState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_FocusStateProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FocusStateProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_FocusStateProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FocusStateProperty">
+  FocusStateProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty FocusStateProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_IsTabStop_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsTabStop*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_IsTabStop" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsTabStop">
+  IsTabStop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTabStop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_IsTabStopProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsTabStopProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_IsTabStopProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsTabStopProperty">
+  IsTabStopProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty IsTabStopProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_NavigateUri_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.NavigateUri*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_NavigateUri" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.NavigateUri">
+  NavigateUri
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri NavigateUri { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_NavigateUriProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.NavigateUriProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_NavigateUriProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.NavigateUriProperty">
+  NavigateUriProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty NavigateUriProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_TabIndex_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.TabIndex*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_TabIndex" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.TabIndex">
+  TabIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TabIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_TabIndexProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.TabIndexProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_TabIndexProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.TabIndexProperty">
+  TabIndexProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty TabIndexProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_UnderlineStyle_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.UnderlineStyle*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_UnderlineStyle" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.UnderlineStyle">
+  UnderlineStyle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnderlineStyle UnderlineStyle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Documents.UnderlineStyle.html">UnderlineStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_UnderlineStyleProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.UnderlineStyleProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_UnderlineStyleProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.UnderlineStyleProperty">
+  UnderlineStyleProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty UnderlineStyleProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDown_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDown*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDown" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDown">
+  XYFocusDown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject XYFocusDown { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownNavigationStrategy_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownNavigationStrategy*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownNavigationStrategy" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownNavigationStrategy">
+  XYFocusDownNavigationStrategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XYFocusNavigationStrategy XYFocusDownNavigationStrategy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy.html">XYFocusNavigationStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownNavigationStrategyProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownNavigationStrategyProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownNavigationStrategyProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownNavigationStrategyProperty">
+  XYFocusDownNavigationStrategyProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusDownNavigationStrategyProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusDownProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusDownProperty">
+  XYFocusDownProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusDownProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeft_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeft*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeft" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeft">
+  XYFocusLeft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject XYFocusLeft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftNavigationStrategy_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftNavigationStrategy*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftNavigationStrategy" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftNavigationStrategy">
+  XYFocusLeftNavigationStrategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L792"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XYFocusNavigationStrategy XYFocusLeftNavigationStrategy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy.html">XYFocusNavigationStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftNavigationStrategyProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftNavigationStrategyProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftNavigationStrategyProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftNavigationStrategyProperty">
+  XYFocusLeftNavigationStrategyProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusLeftNavigationStrategyProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusLeftProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusLeftProperty">
+  XYFocusLeftProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusLeftProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRight_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRight*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRight" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRight">
+  XYFocusRight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject XYFocusRight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightNavigationStrategy_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightNavigationStrategy*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightNavigationStrategy" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightNavigationStrategy">
+  XYFocusRightNavigationStrategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L804"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XYFocusNavigationStrategy XYFocusRightNavigationStrategy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy.html">XYFocusNavigationStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightNavigationStrategyProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightNavigationStrategyProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightNavigationStrategyProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightNavigationStrategyProperty">
+  XYFocusRightNavigationStrategyProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusRightNavigationStrategyProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusRightProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusRightProperty">
+  XYFocusRightProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusRightProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUp_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUp*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUp" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUp">
+  XYFocusUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L810"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DependencyObject XYFocusUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpNavigationStrategy_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpNavigationStrategy*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpNavigationStrategy" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpNavigationStrategy">
+  XYFocusUpNavigationStrategy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L816"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XYFocusNavigationStrategy XYFocusUpNavigationStrategy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Input.XYFocusNavigationStrategy.html">XYFocusNavigationStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpNavigationStrategyProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpNavigationStrategyProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpNavigationStrategyProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpNavigationStrategyProperty">
+  XYFocusUpNavigationStrategyProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusUpNavigationStrategyProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpProperty_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpProperty*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_XYFocusUpProperty" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.XYFocusUpProperty">
+  XYFocusUpProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L692"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DependencyProperty XYFocusUpProperty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.DependencyProperty.html">DependencyProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_As_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_As__1" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_Equals_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_Equals_Microsoft_UI_Xaml_Documents_Hyperlink_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Equals(Microsoft.UI.Xaml.Documents.Hyperlink)">
+  Equals(Hyperlink)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Hyperlink other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_Equals_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_Focus_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Focus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_Focus_Microsoft_UI_Xaml_FocusState_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Focus(Microsoft.UI.Xaml.FocusState)">
+  Focus(FocusState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Focus(FocusState value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Microsoft.UI.Xaml.FocusState.html">FocusState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_FromAbi_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hyperlink FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_GetHashCode_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_GetHashCode" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L822"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_Click" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.Click">
+  Click
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;Hyperlink, HyperlinkClickEventArgs&gt; Click</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a>, <a class="xref" href="Microsoft.UI.Xaml.Documents.HyperlinkClickEventArgs.html">HyperlinkClickEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_GotFocus" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.GotFocus">
+  GotFocus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RoutedEventHandler GotFocus</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.RoutedEventHandler.html">RoutedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_LostFocus" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.LostFocus">
+  LostFocus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RoutedEventHandler LostFocus</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.RoutedEventHandler.html">RoutedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_op_Equality_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_op_Equality_Microsoft_UI_Xaml_Documents_Hyperlink_Microsoft_UI_Xaml_Documents_Hyperlink_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.op_Equality(Microsoft.UI.Xaml.Documents.Hyperlink,Microsoft.UI.Xaml.Documents.Hyperlink)">
+  operator ==(Hyperlink, Hyperlink)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Hyperlink x, Hyperlink y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Documents_Hyperlink_op_Inequality_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Documents_Hyperlink_op_Inequality_Microsoft_UI_Xaml_Documents_Hyperlink_Microsoft_UI_Xaml_Documents_Hyperlink_" data-uid="Microsoft.UI.Xaml.Documents.Hyperlink.op_Inequality(Microsoft.UI.Xaml.Documents.Hyperlink,Microsoft.UI.Xaml.Documents.Hyperlink)">
+  operator !=(Hyperlink, Hyperlink)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Hyperlink x, Hyperlink y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Documents.Hyperlink.html">Hyperlink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Documents.cs/#L606" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

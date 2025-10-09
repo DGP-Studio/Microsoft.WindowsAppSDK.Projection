@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VirtualizingLayout | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VirtualizingLayout | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Controls_VirtualizingLayout.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Controls.VirtualizingLayout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout" class="text-break">
+Class VirtualizingLayout  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58086"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Controls.html">Controls</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(VirtualizingLayout))]
+[ProjectedRuntimeClass(typeof(IVirtualizingLayout))]
+[ContractVersion(typeof(XamlContract), 65536)]
+public class VirtualizingLayout : Layout, IEquatable&lt;DependencyObject&gt;, IEquatable&lt;Layout&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;VirtualizingLayout&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html">Layout</a></div>
+      <div><span class="xref">VirtualizingLayout</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html">Layout</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.LinedFlowLayout.html">LinedFlowLayout</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.StackLayout.html">StackLayout</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Controls.UniformGridLayout.html">UniformGridLayout</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_Equals_Microsoft_UI_Xaml_Controls_Layout_">Layout.Equals(Layout)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_InitializeForContext_Microsoft_UI_Xaml_Controls_LayoutContext_">Layout.InitializeForContext(LayoutContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_UninitializeForContext_Microsoft_UI_Xaml_Controls_LayoutContext_">Layout.UninitializeForContext(LayoutContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_Measure_Microsoft_UI_Xaml_Controls_LayoutContext_Windows_Foundation_Size_">Layout.Measure(LayoutContext, Size)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_Arrange_Microsoft_UI_Xaml_Controls_LayoutContext_Windows_Foundation_Size_">Layout.Arrange(LayoutContext, Size)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_ArrangeInvalidated">Layout.ArrangeInvalidated</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_MeasureInvalidated">Layout.MeasureInvalidated</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_InvalidateMeasure">Layout.InvalidateMeasure()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_InvalidateArrange">Layout.InvalidateArrange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_SetIndexBasedLayoutOrientation_Microsoft_UI_Xaml_Controls_IndexBasedLayoutOrientation_">Layout.SetIndexBasedLayoutOrientation(IndexBasedLayoutOrientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_CreateDefaultItemTransitionProvider">Layout.CreateDefaultItemTransitionProvider()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Controls.Layout.html#Microsoft_UI_Xaml_Controls_Layout_IndexBasedLayoutOrientation">Layout.IndexBasedLayoutOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor">
+  VirtualizingLayout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualizingLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor(WinRT.DerivedComposed)">
+  VirtualizingLayout(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VirtualizingLayout(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.#ctor(WinRT.IObjectReference)">
+  VirtualizingLayout(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VirtualizingLayout(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_ArrangeOverride_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.ArrangeOverride*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_ArrangeOverride_Microsoft_UI_Xaml_Controls_VirtualizingLayoutContext_Windows_Foundation_Size_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.ArrangeOverride(Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext,Windows.Foundation.Size)">
+  ArrangeOverride(VirtualizingLayoutContext, Size)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Size ArrangeOverride(VirtualizingLayoutContext context, Size finalSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext.html">VirtualizingLayoutContext</a></dt>
+    <dd></dd>
+    <dt><code>finalSize</code> <span class="xref">Size</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Size</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_Equals_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_Equals_Microsoft_UI_Xaml_Controls_VirtualizingLayout_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.Equals(Microsoft.UI.Xaml.Controls.VirtualizingLayout)">
+  Equals(VirtualizingLayout)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(VirtualizingLayout other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_Equals_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_FromAbi_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VirtualizingLayout FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_GetHashCode_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_GetHashCode" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_InitializeForContextCore_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.InitializeForContextCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_InitializeForContextCore_Microsoft_UI_Xaml_Controls_VirtualizingLayoutContext_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.InitializeForContextCore(Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext)">
+  InitializeForContextCore(VirtualizingLayoutContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeForContextCore(VirtualizingLayoutContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext.html">VirtualizingLayoutContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_MeasureOverride_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.MeasureOverride*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_MeasureOverride_Microsoft_UI_Xaml_Controls_VirtualizingLayoutContext_Windows_Foundation_Size_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.MeasureOverride(Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext,Windows.Foundation.Size)">
+  MeasureOverride(VirtualizingLayoutContext, Size)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Size MeasureOverride(VirtualizingLayoutContext context, Size availableSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext.html">VirtualizingLayoutContext</a></dt>
+    <dd></dd>
+    <dt><code>availableSize</code> <span class="xref">Size</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Size</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_OnItemsChangedCore_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.OnItemsChangedCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_OnItemsChangedCore_Microsoft_UI_Xaml_Controls_VirtualizingLayoutContext_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.OnItemsChangedCore(Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext,System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+  OnItemsChangedCore(VirtualizingLayoutContext, object, NotifyCollectionChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnItemsChangedCore(VirtualizingLayoutContext context, object source, NotifyCollectionChangedEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext.html">VirtualizingLayoutContext</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs">NotifyCollectionChangedEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_UninitializeForContextCore_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.UninitializeForContextCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_UninitializeForContextCore_Microsoft_UI_Xaml_Controls_VirtualizingLayoutContext_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.UninitializeForContextCore(Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext)">
+  UninitializeForContextCore(VirtualizingLayoutContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UninitializeForContextCore(VirtualizingLayoutContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayoutContext.html">VirtualizingLayoutContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_op_Equality_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_op_Equality_Microsoft_UI_Xaml_Controls_VirtualizingLayout_Microsoft_UI_Xaml_Controls_VirtualizingLayout_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.op_Equality(Microsoft.UI.Xaml.Controls.VirtualizingLayout,Microsoft.UI.Xaml.Controls.VirtualizingLayout)">
+  operator ==(VirtualizingLayout, VirtualizingLayout)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(VirtualizingLayout x, VirtualizingLayout y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_op_Inequality_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Controls_VirtualizingLayout_op_Inequality_Microsoft_UI_Xaml_Controls_VirtualizingLayout_Microsoft_UI_Xaml_Controls_VirtualizingLayout_" data-uid="Microsoft.UI.Xaml.Controls.VirtualizingLayout.op_Inequality(Microsoft.UI.Xaml.Controls.VirtualizingLayout,Microsoft.UI.Xaml.Controls.VirtualizingLayout)">
+  operator !=(VirtualizingLayout, VirtualizingLayout)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(VirtualizingLayout x, VirtualizingLayout y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.VirtualizingLayout.html">VirtualizingLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Controls.cs/#L58086" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

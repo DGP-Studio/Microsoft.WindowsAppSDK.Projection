@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DesktopPopupSiteBridge | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DesktopPopupSiteBridge | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Content_DesktopPopupSiteBridge.md&amp;value=---%0Auid%3A%20Microsoft.UI.Content.DesktopPopupSiteBridge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge">
+
+
+
+  <h1 id="Microsoft_UI_Content_DesktopPopupSiteBridge" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge" class="text-break">
+Class DesktopPopupSiteBridge  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3079"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Content.html">Content</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI&quot;)]
+[WindowsRuntimeHelperType(typeof(DesktopPopupSiteBridge))]
+[ProjectedRuntimeClass(typeof(IDesktopPopupSiteBridge))]
+[ContractVersion(typeof(WindowsAppSDKContract), 65543)]
+public sealed class DesktopPopupSiteBridge : IClosableNotifier, IContentSiteAutomation, IContentSiteBridge, IDisposable, IContentSiteLink, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;DesktopPopupSiteBridge&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DesktopPopupSiteBridge</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.UI.IClosableNotifier.html">IClosableNotifier</a></div>
+      <div><a class="xref" href="Microsoft.UI.Content.IContentSiteAutomation.html">IContentSiteAutomation</a></div>
+      <div><a class="xref" href="Microsoft.UI.Content.IContentSiteBridge.html">IContentSiteBridge</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="Microsoft.UI.Content.IContentSiteLink.html">IContentSiteLink</a></div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_AnchoringBehavior_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AnchoringBehavior*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_AnchoringBehavior" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AnchoringBehavior">
+  AnchoringBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PopupAnchoringOptions AnchoringBehavior { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.PopupAnchoringOptions.html">PopupAnchoringOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_AnchoringPixelAlignment_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AnchoringPixelAlignment*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_AnchoringPixelAlignment" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AnchoringPixelAlignment">
+  AnchoringPixelAlignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentCoordinateRoundingMode AnchoringPixelAlignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.ContentCoordinateRoundingMode.html">ContentCoordinateRoundingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_AutomationOption_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AutomationOption*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_AutomationOption" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AutomationOption">
+  AutomationOption
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentAutomationOptions AutomationOption { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.ContentAutomationOptions.html">ContentAutomationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_AutomationProvider_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AutomationProvider*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_AutomationProvider" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.AutomationProvider">
+  AutomationProvider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object AutomationProvider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_DispatcherQueue_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.DispatcherQueue*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_DispatcherQueue" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.DispatcherQueue">
+  DispatcherQueue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DispatcherQueue DispatcherQueue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Dispatching.DispatcherQueue.html">DispatcherQueue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsClosed_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsClosed*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsClosed" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsClosed">
+  IsClosed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsEnabled_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsEnabled*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsEnabled" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsEnabled">
+  IsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsVisible_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsVisible*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_IsVisible" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.IsVisible">
+  IsVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_LayoutDirectionOverride_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.LayoutDirectionOverride*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_LayoutDirectionOverride" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.LayoutDirectionOverride">
+  LayoutDirectionOverride
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentLayoutDirection? LayoutDirectionOverride { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.ContentLayoutDirection.html">ContentLayoutDirection</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_OverrideScale_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.OverrideScale*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_OverrideScale" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.OverrideScale">
+  OverrideScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OverrideScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Parent_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Parent*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Parent" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Parent">
+  Parent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentIsland Parent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.ContentIsland.html">ContentIsland</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_SiteView_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.SiteView*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_SiteView" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.SiteView">
+  SiteView
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentSiteView SiteView { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.ContentSiteView.html">ContentSiteView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_WindowId_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.WindowId*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_WindowId" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.WindowId">
+  WindowId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WindowId WindowId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.WindowId.html">WindowId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_As_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.As*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_As__1" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Connect_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Connect*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Connect_Microsoft_UI_Content_ContentIsland_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Connect(Microsoft.UI.Content.ContentIsland)">
+  Connect(ContentIsland)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Connect(ContentIsland content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="Microsoft.UI.Content.ContentIsland.html">ContentIsland</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Create_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Create*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Create_Microsoft_UI_Content_ContentIsland_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Create(Microsoft.UI.Content.ContentIsland)">
+  Create(ContentIsland)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DesktopPopupSiteBridge Create(ContentIsland parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="Microsoft.UI.Content.ContentIsland.html">ContentIsland</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Disable_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Disable*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Disable" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Disable">
+  Disable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Dispose_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Dispose*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Dispose" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Enable_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Enable*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Enable" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Enable">
+  Enable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Equals_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Equals_Microsoft_UI_Content_DesktopPopupSiteBridge_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Equals(Microsoft.UI.Content.DesktopPopupSiteBridge)">
+  Equals(DesktopPopupSiteBridge)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DesktopPopupSiteBridge other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Equals_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Equals_System_Object_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_FromAbi_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DesktopPopupSiteBridge FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_GetHashCode_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_GetHashCode" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Hide_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Hide*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Hide" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Hide">
+  Hide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveAndResize_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveAndResize*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveAndResize_Windows_Graphics_RectInt32_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveAndResize(Windows.Graphics.RectInt32)">
+  MoveAndResize(RectInt32)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveAndResize(RectInt32 rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://learn.microsoft.com/uwp/api/windows.graphics.rectint32">RectInt32</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderAtBottom_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderAtBottom*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderAtBottom" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderAtBottom">
+  MoveInZOrderAtBottom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveInZOrderAtBottom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderAtTop_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderAtTop*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderAtTop" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderAtTop">
+  MoveInZOrderAtTop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveInZOrderAtTop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderBelow_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderBelow*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_MoveInZOrderBelow_Microsoft_UI_WindowId_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.MoveInZOrderBelow(Microsoft.UI.WindowId)">
+  MoveInZOrderBelow(WindowId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveInZOrderBelow(WindowId windowId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>windowId</code> <a class="xref" href="Microsoft.UI.WindowId.html">WindowId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_Show_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Show*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Show" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Show">
+  Show()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_Closed" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.Closed">
+  Closed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ClosableNotifierHandler Closed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.ClosableNotifierHandler.html">ClosableNotifierHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_FragmentRootAutomationProviderRequested" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.FragmentRootAutomationProviderRequested">
+  FragmentRootAutomationProviderRequested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs&gt; FragmentRootAutomationProviderRequested</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Content.IContentSiteAutomation.html">IContentSiteAutomation</a>, <a class="xref" href="Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html">ContentSiteAutomationProviderRequestedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_FrameworkClosed" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.FrameworkClosed">
+  FrameworkClosed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ClosableNotifierHandler FrameworkClosed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.ClosableNotifierHandler.html">ClosableNotifierHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_NextSiblingAutomationProviderRequested" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.NextSiblingAutomationProviderRequested">
+  NextSiblingAutomationProviderRequested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs&gt; NextSiblingAutomationProviderRequested</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Content.IContentSiteAutomation.html">IContentSiteAutomation</a>, <a class="xref" href="Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html">ContentSiteAutomationProviderRequestedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_ParentAutomationProviderRequested" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.ParentAutomationProviderRequested">
+  ParentAutomationProviderRequested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs&gt; ParentAutomationProviderRequested</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Content.IContentSiteAutomation.html">IContentSiteAutomation</a>, <a class="xref" href="Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html">ContentSiteAutomationProviderRequestedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_PreviousSiblingAutomationProviderRequested" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.PreviousSiblingAutomationProviderRequested">
+  PreviousSiblingAutomationProviderRequested
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event TypedEventHandler&lt;IContentSiteAutomation, ContentSiteAutomationProviderRequestedEventArgs&gt; PreviousSiblingAutomationProviderRequested</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/uwp/api/windows.foundation.typedeventhandler-2">TypedEventHandler</a>&lt;<a class="xref" href="Microsoft.UI.Content.IContentSiteAutomation.html">IContentSiteAutomation</a>, <a class="xref" href="Microsoft.UI.Content.ContentSiteAutomationProviderRequestedEventArgs.html">ContentSiteAutomationProviderRequestedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_op_Equality_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_op_Equality_Microsoft_UI_Content_DesktopPopupSiteBridge_Microsoft_UI_Content_DesktopPopupSiteBridge_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.op_Equality(Microsoft.UI.Content.DesktopPopupSiteBridge,Microsoft.UI.Content.DesktopPopupSiteBridge)">
+  operator ==(DesktopPopupSiteBridge, DesktopPopupSiteBridge)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DesktopPopupSiteBridge x, DesktopPopupSiteBridge y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Content_DesktopPopupSiteBridge_op_Inequality_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Content_DesktopPopupSiteBridge_op_Inequality_Microsoft_UI_Content_DesktopPopupSiteBridge_Microsoft_UI_Content_DesktopPopupSiteBridge_" data-uid="Microsoft.UI.Content.DesktopPopupSiteBridge.op_Inequality(Microsoft.UI.Content.DesktopPopupSiteBridge,Microsoft.UI.Content.DesktopPopupSiteBridge)">
+  operator !=(DesktopPopupSiteBridge, DesktopPopupSiteBridge)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DesktopPopupSiteBridge x, DesktopPopupSiteBridge y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Content.DesktopPopupSiteBridge.html">DesktopPopupSiteBridge</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Content.cs/#L3079" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

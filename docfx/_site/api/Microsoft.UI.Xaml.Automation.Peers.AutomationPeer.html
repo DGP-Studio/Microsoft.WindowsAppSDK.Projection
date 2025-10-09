@@ -1,0 +1,3890 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AutomationPeer | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AutomationPeer | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Automation_Peers_AutomationPeer.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Automation.Peers.AutomationPeer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer" class="text-break">
+Class AutomationPeer  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L912"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Automation.html">Automation</a>.<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.html">Peers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(AutomationPeer))]
+[ProjectedRuntimeClass(typeof(IAutomationPeer))]
+[ContractVersion(typeof(WinUIContract), 65536)]
+public class AutomationPeer : DependencyObject, IEquatable&lt;DependencyObject&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;AutomationPeer&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><span class="xref">AutomationPeer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html">FrameworkElementAutomationPeer</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemAutomationPeer.html">ItemAutomationPeer</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.LoopingSelectorItemDataAutomationPeer.html">LoopingSelectorItemDataAutomationPeer</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor">
+  AutomationPeer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L993"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AutomationPeer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor(WinRT.DerivedComposed)">
+  AutomationPeer(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1054"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AutomationPeer(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.#ctor(WinRT.IObjectReference)">
+  AutomationPeer(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AutomationPeer(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_EventsSource_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.EventsSource*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_EventsSource" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.EventsSource">
+  EventsSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationPeer EventsSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_As_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.As*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_As__1" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.As``1">
+  As&lt;I&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1009"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static I As&lt;I&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">I</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>I</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Equals_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Equals_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Equals(Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  Equals(AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1049"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(AutomationPeer other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Equals_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1050"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_FromAbi_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AutomationPeer FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GenerateRawElementProviderRuntimeId_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GenerateRawElementProviderRuntimeId*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GenerateRawElementProviderRuntimeId" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GenerateRawElementProviderRuntimeId">
+  GenerateRawElementProviderRuntimeId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawElementProviderRuntimeId GenerateRawElementProviderRuntimeId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.RawElementProviderRuntimeId.html">RawElementProviderRuntimeId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKey_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAcceleratorKey*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKey" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAcceleratorKey">
+  GetAcceleratorKey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1070"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAcceleratorKey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKeyCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAcceleratorKeyCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKeyCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAcceleratorKeyCore">
+  GetAcceleratorKeyCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAcceleratorKeyCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKey_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAccessKey*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKey" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAccessKey">
+  GetAccessKey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1072"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAccessKey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKeyCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAccessKeyCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKeyCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAccessKeyCore">
+  GetAccessKeyCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAccessKeyCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotations_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAnnotations*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotations" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAnnotations">
+  GetAnnotations()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;AutomationPeerAnnotation&gt; GetAnnotations()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.html">AutomationPeerAnnotation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotationsCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAnnotationsCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotationsCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAnnotationsCore">
+  GetAnnotationsCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IList&lt;AutomationPeerAnnotation&gt; GetAnnotationsCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeerAnnotation.html">AutomationPeerAnnotation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlType_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationControlType*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlType" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationControlType">
+  GetAutomationControlType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1074"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationControlType GetAutomationControlType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationControlType.html">AutomationControlType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlTypeCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlTypeCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationControlTypeCore">
+  GetAutomationControlTypeCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationControlType GetAutomationControlTypeCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationControlType.html">AutomationControlType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationId_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationId*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationId" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationId">
+  GetAutomationId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1076"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAutomationId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationIdCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationIdCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationIdCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetAutomationIdCore">
+  GetAutomationIdCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAutomationIdCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangle_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetBoundingRectangle*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangle" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetBoundingRectangle">
+  GetBoundingRectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1078"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect GetBoundingRectangle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangleCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetBoundingRectangleCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangleCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetBoundingRectangleCore">
+  GetBoundingRectangleCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Rect GetBoundingRectangleCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildren_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetChildren*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildren" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetChildren">
+  GetChildren()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;AutomationPeer&gt; GetChildren()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildrenCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetChildrenCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildrenCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetChildrenCore">
+  GetChildrenCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IList&lt;AutomationPeer&gt; GetChildrenCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassName_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassName*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassName" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassName">
+  GetClassName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1084"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetClassName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassNameCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassNameCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassNameCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClassNameCore">
+  GetClassNameCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetClassNameCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePoint_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClickablePoint*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePoint" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClickablePoint">
+  GetClickablePoint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1086"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point GetClickablePoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePointCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClickablePointCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePointCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetClickablePointCore">
+  GetClickablePointCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Point GetClickablePointCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeers_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetControlledPeers*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeers" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetControlledPeers">
+  GetControlledPeers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;AutomationPeer&gt; GetControlledPeers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeersCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetControlledPeersCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeersCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetControlledPeersCore">
+  GetControlledPeersCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IReadOnlyList&lt;AutomationPeer&gt; GetControlledPeersCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCulture_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetCulture*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCulture" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetCulture">
+  GetCulture()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCulture()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCultureCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetCultureCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCultureCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetCultureCore">
+  GetCultureCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetCultureCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetDescribedByCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetDescribedByCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetDescribedByCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetDescribedByCore">
+  GetDescribedByCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;AutomationPeer&gt; GetDescribedByCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPoint_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetElementFromPoint*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPoint_Windows_Foundation_Point_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetElementFromPoint(Windows.Foundation.Point)">
+  GetElementFromPoint(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetElementFromPoint(Point pointInWindowCoordinates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointInWindowCoordinates</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPointCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetElementFromPointCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPointCore_Windows_Foundation_Point_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetElementFromPointCore(Windows.Foundation.Point)">
+  GetElementFromPointCore(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetElementFromPointCore(Point pointInWindowCoordinates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointInWindowCoordinates</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsFromCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFlowsFromCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsFromCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFlowsFromCore">
+  GetFlowsFromCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;AutomationPeer&gt; GetFlowsFromCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsToCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFlowsToCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsToCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFlowsToCore">
+  GetFlowsToCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;AutomationPeer&gt; GetFlowsToCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElement_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFocusedElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElement" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFocusedElement">
+  GetFocusedElement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetFocusedElement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElementCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFocusedElementCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElementCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFocusedElementCore">
+  GetFocusedElementCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetFocusedElementCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescription_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFullDescription*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescription" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFullDescription">
+  GetFullDescription()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFullDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescriptionCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFullDescriptionCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescriptionCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetFullDescriptionCore">
+  GetFullDescriptionCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFullDescriptionCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHashCode_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHashCode" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1051"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevel_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHeadingLevel*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevel" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHeadingLevel">
+  GetHeadingLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationHeadingLevel GetHeadingLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationHeadingLevel.html">AutomationHeadingLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevelCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHeadingLevelCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevelCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHeadingLevelCore">
+  GetHeadingLevelCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationHeadingLevel GetHeadingLevelCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationHeadingLevel.html">AutomationHeadingLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpText_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHelpText*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpText" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHelpText">
+  GetHelpText()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1088"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetHelpText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpTextCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHelpTextCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpTextCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetHelpTextCore">
+  GetHelpTextCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetHelpTextCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatus_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemStatus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatus" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemStatus">
+  GetItemStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1090"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetItemStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatusCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemStatusCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatusCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemStatusCore">
+  GetItemStatusCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetItemStatusCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemType_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemType*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemType" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemType">
+  GetItemType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1092"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetItemType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemTypeCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemTypeCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemTypeCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetItemTypeCore">
+  GetItemTypeCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetItemTypeCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledBy_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLabeledBy*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledBy" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLabeledBy">
+  GetLabeledBy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1094"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationPeer GetLabeledBy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledByCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLabeledByCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledByCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLabeledByCore">
+  GetLabeledByCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationPeer GetLabeledByCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkType_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLandmarkType*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkType" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLandmarkType">
+  GetLandmarkType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationLandmarkType GetLandmarkType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationLandmarkType.html">AutomationLandmarkType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkTypeCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLandmarkTypeCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkTypeCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLandmarkTypeCore">
+  GetLandmarkTypeCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationLandmarkType GetLandmarkTypeCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationLandmarkType.html">AutomationLandmarkType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevel_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLevel*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevel" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLevel">
+  GetLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevelCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLevelCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevelCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLevelCore">
+  GetLevelCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetLevelCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSetting_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLiveSetting*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSetting" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLiveSetting">
+  GetLiveSetting()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationLiveSetting GetLiveSetting()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationLiveSetting.html">AutomationLiveSetting</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSettingCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLiveSettingCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSettingCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLiveSettingCore">
+  GetLiveSettingCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationLiveSetting GetLiveSettingCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationLiveSetting.html">AutomationLiveSetting</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlType_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedControlType*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlType" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedControlType">
+  GetLocalizedControlType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1096"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocalizedControlType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlTypeCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedControlTypeCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlTypeCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedControlTypeCore">
+  GetLocalizedControlTypeCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetLocalizedControlTypeCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkType_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedLandmarkType*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkType" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedLandmarkType">
+  GetLocalizedLandmarkType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocalizedLandmarkType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkTypeCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedLandmarkTypeCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkTypeCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetLocalizedLandmarkTypeCore">
+  GetLocalizedLandmarkTypeCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetLocalizedLandmarkTypeCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetName_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetName*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetName" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetName">
+  GetName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1098"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetNameCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetNameCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetNameCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetNameCore">
+  GetNameCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetNameCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientation_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetOrientation*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientation" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetOrientation">
+  GetOrientation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationOrientation GetOrientation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationOrientation.html">AutomationOrientation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientationCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetOrientationCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientationCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetOrientationCore">
+  GetOrientationCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationOrientation GetOrientationCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationOrientation.html">AutomationOrientation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetParent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetParent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetParent" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetParent">
+  GetParent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationPeer GetParent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPattern_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPattern*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPattern_Microsoft_UI_Xaml_Automation_Peers_PatternInterface_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPattern(Microsoft.UI.Xaml.Automation.Peers.PatternInterface)">
+  GetPattern(PatternInterface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1064"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetPattern(PatternInterface patternInterface)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>patternInterface</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.PatternInterface.html">PatternInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPatternCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPatternCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPatternCore_Microsoft_UI_Xaml_Automation_Peers_PatternInterface_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPatternCore(Microsoft.UI.Xaml.Automation.Peers.PatternInterface)">
+  GetPatternCore(PatternInterface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetPatternCore(PatternInterface patternInterface)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>patternInterface</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.PatternInterface.html">PatternInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPoint_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPeerFromPoint*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPoint_Windows_Foundation_Point_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPeerFromPoint(Windows.Foundation.Point)">
+  GetPeerFromPoint(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomationPeer GetPeerFromPoint(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPointCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPeerFromPointCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPointCore_Windows_Foundation_Point_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPeerFromPointCore(Windows.Foundation.Point)">
+  GetPeerFromPointCore(Point)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationPeer GetPeerFromPointCore(Point point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Point</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSet_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPositionInSet*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSet" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPositionInSet">
+  GetPositionInSet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPositionInSet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSetCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPositionInSetCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSetCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetPositionInSetCore">
+  GetPositionInSetCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetPositionInSetCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSet_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetSizeOfSet*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSet" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetSizeOfSet">
+  GetSizeOfSet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSizeOfSet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSetCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetSizeOfSetCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSetCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.GetSizeOfSetCore">
+  GetSizeOfSetCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetSizeOfSetCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocus_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.HasKeyboardFocus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocus" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.HasKeyboardFocus">
+  HasKeyboardFocus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasKeyboardFocus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocusCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.HasKeyboardFocusCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocusCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.HasKeyboardFocusCore">
+  HasKeyboardFocusCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool HasKeyboardFocusCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_InvalidatePeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.InvalidatePeer*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_InvalidatePeer" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.InvalidatePeer">
+  InvalidatePeer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidatePeer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElement_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsContentElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElement" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsContentElement">
+  IsContentElement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsContentElement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElementCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsContentElementCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElementCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsContentElementCore">
+  IsContentElementCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsContentElementCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElement_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsControlElement*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElement" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsControlElement">
+  IsControlElement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsControlElement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElementCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsControlElementCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElementCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsControlElementCore">
+  IsControlElementCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsControlElementCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForForm_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDataValidForForm*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForForm" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDataValidForForm">
+  IsDataValidForForm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDataValidForForm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForFormCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDataValidForFormCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForFormCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDataValidForFormCore">
+  IsDataValidForFormCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsDataValidForFormCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialog_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDialog*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialog" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDialog">
+  IsDialog()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDialog()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialogCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDialogCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialogCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsDialogCore">
+  IsDialogCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsDialogCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabled_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsEnabled*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabled" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsEnabled">
+  IsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabledCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsEnabledCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabledCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsEnabledCore">
+  IsEnabledCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsEnabledCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusable_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsKeyboardFocusable*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusable" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsKeyboardFocusable">
+  IsKeyboardFocusable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKeyboardFocusable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusableCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsKeyboardFocusableCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusableCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsKeyboardFocusableCore">
+  IsKeyboardFocusableCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsKeyboardFocusableCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreen_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOffscreen*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreen" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOffscreen">
+  IsOffscreen()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOffscreen()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreenCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOffscreenCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreenCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOffscreenCore">
+  IsOffscreenCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsOffscreenCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPassword_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPassword*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPassword" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPassword">
+  IsPassword()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPassword()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPasswordCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPasswordCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPasswordCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPasswordCore">
+  IsPasswordCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsPasswordCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheral_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPeripheral*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheral" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPeripheral">
+  IsPeripheral()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPeripheral()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheralCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPeripheralCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheralCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsPeripheralCore">
+  IsPeripheralCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsPeripheralCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForForm_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsRequiredForForm*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForForm" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsRequiredForForm">
+  IsRequiredForForm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRequiredForForm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForFormCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsRequiredForFormCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForFormCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.IsRequiredForFormCore">
+  IsRequiredForFormCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsRequiredForFormCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ListenerExists_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ListenerExists*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ListenerExists_Microsoft_UI_Xaml_Automation_Peers_AutomationEvents_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ListenerExists(Microsoft.UI.Xaml.Automation.Peers.AutomationEvents)">
+  ListenerExists(AutomationEvents)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ListenerExists(AutomationEvents eventId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationEvents.html">AutomationEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Navigate_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Navigate*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Navigate_Microsoft_UI_Xaml_Automation_Peers_AutomationNavigationDirection_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.Navigate(Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection)">
+  Navigate(AutomationNavigationDirection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1082"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Navigate(AutomationNavigationDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection.html">AutomationNavigationDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_NavigateCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.NavigateCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_NavigateCore_Microsoft_UI_Xaml_Automation_Peers_AutomationNavigationDirection_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.NavigateCore(Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection)">
+  NavigateCore(AutomationNavigationDirection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object NavigateCore(AutomationNavigationDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationNavigationDirection.html">AutomationNavigationDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_PeerFromProvider_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.PeerFromProvider*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_PeerFromProvider_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.PeerFromProvider(Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple)">
+  PeerFromProvider(IRawElementProviderSimple)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AutomationPeer PeerFromProvider(IRawElementProviderSimple provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>provider</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html">IRawElementProviderSimple</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ProviderFromPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ProviderFromPeer*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ProviderFromPeer_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ProviderFromPeer(Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  ProviderFromPeer(AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IRawElementProviderSimple ProviderFromPeer(AutomationPeer peer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Provider.IRawElementProviderSimple.html">IRawElementProviderSimple</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseAutomationEvent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseAutomationEvent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseAutomationEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationEvents_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseAutomationEvent(Microsoft.UI.Xaml.Automation.Peers.AutomationEvents)">
+  RaiseAutomationEvent(AutomationEvents)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1066"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseAutomationEvent(AutomationEvents eventId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventId</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationEvents.html">AutomationEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseNotificationEvent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseNotificationEvent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseNotificationEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationNotificationKind_Microsoft_UI_Xaml_Automation_Peers_AutomationNotificationProcessing_System_String_System_String_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseNotificationEvent(Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationKind,Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationProcessing,System.String,System.String)">
+  RaiseNotificationEvent(AutomationNotificationKind, AutomationNotificationProcessing, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseNotificationEvent(AutomationNotificationKind notificationKind, AutomationNotificationProcessing notificationProcessing, string displayString, string activityId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationKind</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationKind.html">AutomationNotificationKind</a></dt>
+    <dd></dd>
+    <dt><code>notificationProcessing</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationNotificationProcessing.html">AutomationNotificationProcessing</a></dt>
+    <dd></dd>
+    <dt><code>displayString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaisePropertyChangedEvent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaisePropertyChangedEvent_Microsoft_UI_Xaml_Automation_AutomationProperty_System_Object_System_Object_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent(Microsoft.UI.Xaml.Automation.AutomationProperty,System.Object,System.Object)">
+  RaisePropertyChangedEvent(AutomationProperty, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1068"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaisePropertyChangedEvent(AutomationProperty automationProperty, object oldValue, object newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>automationProperty</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.AutomationProperty.html">AutomationProperty</a></dt>
+    <dd></dd>
+    <dt><code>oldValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseStructureChangedEvent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseStructureChangedEvent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseStructureChangedEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationStructureChangeType_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseStructureChangedEvent(Microsoft.UI.Xaml.Automation.Peers.AutomationStructureChangeType,Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  RaiseStructureChangedEvent(AutomationStructureChangeType, AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseStructureChangedEvent(AutomationStructureChangeType structureChangeType, AutomationPeer child)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureChangeType</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationStructureChangeType.html">AutomationStructureChangeType</a></dt>
+    <dd></dd>
+    <dt><code>child</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseTextEditTextChangedEvent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseTextEditTextChangedEvent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseTextEditTextChangedEvent_Microsoft_UI_Xaml_Automation_AutomationTextEditChangeType_System_Collections_Generic_IReadOnlyList_System_String__" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.RaiseTextEditTextChangedEvent(Microsoft.UI.Xaml.Automation.AutomationTextEditChangeType,System.Collections.Generic.IReadOnlyList{System.String})">
+  RaiseTextEditTextChangedEvent(AutomationTextEditChangeType, IReadOnlyList&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseTextEditTextChangedEvent(AutomationTextEditChangeType automationTextEditChangeType, IReadOnlyList&lt;string&gt; changedData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>automationTextEditChangeType</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.AutomationTextEditChangeType.html">AutomationTextEditChangeType</a></dt>
+    <dd></dd>
+    <dt><code>changedData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocus_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetFocus*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocus" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetFocus">
+  SetFocus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocusCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetFocusCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocusCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetFocusCore">
+  SetFocusCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetFocusCore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetParent_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetParent*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetParent_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.SetParent(Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  SetParent(AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParent(AutomationPeer peer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenu_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ShowContextMenu*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenu" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ShowContextMenu">
+  ShowContextMenu()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowContextMenu()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenuCore_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ShowContextMenuCore*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenuCore" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.ShowContextMenuCore">
+  ShowContextMenuCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ShowContextMenuCore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_op_Equality_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_op_Equality_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.op_Equality(Microsoft.UI.Xaml.Automation.Peers.AutomationPeer,Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  operator ==(AutomationPeer, AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(AutomationPeer x, AutomationPeer y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_op_Inequality_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_op_Inequality_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.op_Inequality(Microsoft.UI.Xaml.Automation.Peers.AutomationPeer,Microsoft.UI.Xaml.Automation.Peers.AutomationPeer)">
+  operator !=(AutomationPeer, AutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L1048"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(AutomationPeer x, AutomationPeer y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L912" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

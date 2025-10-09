@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SelectorBarItemAutomationPeer | Windows App SDK Full Projection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SelectorBarItemAutomationPeer | Windows App SDK Full Projection ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/new/main/apiSpec/new?filename=Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer.md&amp;value=---%0Auid%3A%20Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Windows App SDK Full Projection">
+            Windows App SDK Full Projection
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer">
+
+
+
+  <h1 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer" class="text-break">
+Class SelectorBarItemAutomationPeer  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13357"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.UI.html">UI</a>.<a class="xref" href="Microsoft.UI.Xaml.html">Xaml</a>.<a class="xref" href="Microsoft.UI.Xaml.Automation.html">Automation</a>.<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.html">Peers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.WindowsAppSDK.Projection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WindowsRuntimeType(&quot;Microsoft.UI.Xaml&quot;)]
+[WindowsRuntimeHelperType(typeof(SelectorBarItemAutomationPeer))]
+[ProjectedRuntimeClass(typeof(ISelectorBarItemAutomationPeer))]
+[ContractVersion(typeof(XamlContract), 393216)]
+public class SelectorBarItemAutomationPeer : ItemContainerAutomationPeer, IEquatable&lt;DependencyObject&gt;, IEquatable&lt;AutomationPeer&gt;, IEquatable&lt;FrameworkElementAutomationPeer&gt;, ISelectionItemProvider, IInvokeProvider, IEquatable&lt;ItemContainerAutomationPeer&gt;, IWinRTObject, IDynamicInterfaceCastable, IUnmanagedVirtualMethodTableProvider, IEquatable&lt;SelectorBarItemAutomationPeer&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html">FrameworkElementAutomationPeer</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html">ItemContainerAutomationPeer</a></div>
+      <div><span class="xref">SelectorBarItemAutomationPeer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html">DependencyObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html">AutomationPeer</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html">FrameworkElementAutomationPeer</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Provider.ISelectionItemProvider.html">ISelectionItemProvider</a></div>
+      <div><a class="xref" href="Microsoft.UI.Xaml.Automation.Provider.IInvokeProvider.html">IInvokeProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html">ItemContainerAutomationPeer</a>&gt;</div>
+      <div><span class="xref">IWinRTObject</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.idynamicinterfacecastable">IDynamicInterfaceCastable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.marshalling.iunmanagedvirtualmethodtableprovider">IUnmanagedVirtualMethodTableProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_Equals_Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_">ItemContainerAutomationPeer.Equals(ItemContainerAutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_AddToSelection">ItemContainerAutomationPeer.AddToSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_RemoveFromSelection">ItemContainerAutomationPeer.RemoveFromSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_Select">ItemContainerAutomationPeer.Select()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_Invoke">ItemContainerAutomationPeer.Invoke()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_IsSelected">ItemContainerAutomationPeer.IsSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.ItemContainerAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_ItemContainerAutomationPeer_SelectionContainer">ItemContainerAutomationPeer.SelectionContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_As__1">FrameworkElementAutomationPeer.As&lt;I&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_FromElement_Microsoft_UI_Xaml_UIElement_">FrameworkElementAutomationPeer.FromElement(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_CreatePeerForElement_Microsoft_UI_Xaml_UIElement_">FrameworkElementAutomationPeer.CreatePeerForElement(UIElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_Equals_Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_">FrameworkElementAutomationPeer.Equals(FrameworkElementAutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_FrameworkElementAutomationPeer_Owner">FrameworkElementAutomationPeer.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ListenerExists_Microsoft_UI_Xaml_Automation_Peers_AutomationEvents_">AutomationPeer.ListenerExists(AutomationEvents)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GenerateRawElementProviderRuntimeId">AutomationPeer.GenerateRawElementProviderRuntimeId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Equals_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_">AutomationPeer.Equals(AutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPattern_Microsoft_UI_Xaml_Automation_Peers_PatternInterface_">AutomationPeer.GetPattern(PatternInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseAutomationEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationEvents_">AutomationPeer.RaiseAutomationEvent(AutomationEvents)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaisePropertyChangedEvent_Microsoft_UI_Xaml_Automation_AutomationProperty_System_Object_System_Object_">AutomationPeer.RaisePropertyChangedEvent(AutomationProperty, object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKey">AutomationPeer.GetAcceleratorKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKey">AutomationPeer.GetAccessKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlType">AutomationPeer.GetAutomationControlType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationId">AutomationPeer.GetAutomationId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangle">AutomationPeer.GetBoundingRectangle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildren">AutomationPeer.GetChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_Navigate_Microsoft_UI_Xaml_Automation_Peers_AutomationNavigationDirection_">AutomationPeer.Navigate(AutomationNavigationDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassName">AutomationPeer.GetClassName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePoint">AutomationPeer.GetClickablePoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpText">AutomationPeer.GetHelpText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatus">AutomationPeer.GetItemStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemType">AutomationPeer.GetItemType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledBy">AutomationPeer.GetLabeledBy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlType">AutomationPeer.GetLocalizedControlType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetName">AutomationPeer.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientation">AutomationPeer.GetOrientation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocus">AutomationPeer.HasKeyboardFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElement">AutomationPeer.IsContentElement()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElement">AutomationPeer.IsControlElement()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabled">AutomationPeer.IsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusable">AutomationPeer.IsKeyboardFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreen">AutomationPeer.IsOffscreen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPassword">AutomationPeer.IsPassword()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForForm">AutomationPeer.IsRequiredForForm()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocus">AutomationPeer.SetFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetParent">AutomationPeer.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_InvalidatePeer">AutomationPeer.InvalidatePeer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPoint_Windows_Foundation_Point_">AutomationPeer.GetPeerFromPoint(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPoint_Windows_Foundation_Point_">AutomationPeer.GetElementFromPoint(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElement">AutomationPeer.GetFocusedElement()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSetting">AutomationPeer.GetLiveSetting()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenu">AutomationPeer.ShowContextMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeers">AutomationPeer.GetControlledPeers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotations">AutomationPeer.GetAnnotations()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetParent_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_">AutomationPeer.SetParent(AutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseTextEditTextChangedEvent_Microsoft_UI_Xaml_Automation_AutomationTextEditChangeType_System_Collections_Generic_IReadOnlyList_System_String__">AutomationPeer.RaiseTextEditTextChangedEvent(AutomationTextEditChangeType, IReadOnlyList&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSet">AutomationPeer.GetPositionInSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSet">AutomationPeer.GetSizeOfSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevel">AutomationPeer.GetLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseStructureChangedEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationStructureChangeType_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_">AutomationPeer.RaiseStructureChangedEvent(AutomationStructureChangeType, AutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkType">AutomationPeer.GetLandmarkType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkType">AutomationPeer.GetLocalizedLandmarkType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheral">AutomationPeer.IsPeripheral()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForForm">AutomationPeer.IsDataValidForForm()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescription">AutomationPeer.GetFullDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCulture">AutomationPeer.GetCulture()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_RaiseNotificationEvent_Microsoft_UI_Xaml_Automation_Peers_AutomationNotificationKind_Microsoft_UI_Xaml_Automation_Peers_AutomationNotificationProcessing_System_String_System_String_">AutomationPeer.RaiseNotificationEvent(AutomationNotificationKind, AutomationNotificationProcessing, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevel">AutomationPeer.GetHeadingLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialog">AutomationPeer.IsDialog()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_PeerFromProvider_Microsoft_UI_Xaml_Automation_Provider_IRawElementProviderSimple_">AutomationPeer.PeerFromProvider(IRawElementProviderSimple)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ProviderFromPeer_Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_">AutomationPeer.ProviderFromPeer(AutomationPeer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPatternCore_Microsoft_UI_Xaml_Automation_Peers_PatternInterface_">AutomationPeer.GetPatternCore(PatternInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAcceleratorKeyCore">AutomationPeer.GetAcceleratorKeyCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAccessKeyCore">AutomationPeer.GetAccessKeyCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationControlTypeCore">AutomationPeer.GetAutomationControlTypeCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAutomationIdCore">AutomationPeer.GetAutomationIdCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetBoundingRectangleCore">AutomationPeer.GetBoundingRectangleCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetChildrenCore">AutomationPeer.GetChildrenCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_NavigateCore_Microsoft_UI_Xaml_Automation_Peers_AutomationNavigationDirection_">AutomationPeer.NavigateCore(AutomationNavigationDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClassNameCore">AutomationPeer.GetClassNameCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetClickablePointCore">AutomationPeer.GetClickablePointCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHelpTextCore">AutomationPeer.GetHelpTextCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemStatusCore">AutomationPeer.GetItemStatusCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetItemTypeCore">AutomationPeer.GetItemTypeCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLabeledByCore">AutomationPeer.GetLabeledByCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedControlTypeCore">AutomationPeer.GetLocalizedControlTypeCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetNameCore">AutomationPeer.GetNameCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetOrientationCore">AutomationPeer.GetOrientationCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_HasKeyboardFocusCore">AutomationPeer.HasKeyboardFocusCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsContentElementCore">AutomationPeer.IsContentElementCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsControlElementCore">AutomationPeer.IsControlElementCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsEnabledCore">AutomationPeer.IsEnabledCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsKeyboardFocusableCore">AutomationPeer.IsKeyboardFocusableCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsOffscreenCore">AutomationPeer.IsOffscreenCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPasswordCore">AutomationPeer.IsPasswordCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsRequiredForFormCore">AutomationPeer.IsRequiredForFormCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_SetFocusCore">AutomationPeer.SetFocusCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPeerFromPointCore_Windows_Foundation_Point_">AutomationPeer.GetPeerFromPointCore(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetElementFromPointCore_Windows_Foundation_Point_">AutomationPeer.GetElementFromPointCore(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFocusedElementCore">AutomationPeer.GetFocusedElementCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLiveSettingCore">AutomationPeer.GetLiveSettingCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_ShowContextMenuCore">AutomationPeer.ShowContextMenuCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetControlledPeersCore">AutomationPeer.GetControlledPeersCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetAnnotationsCore">AutomationPeer.GetAnnotationsCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetPositionInSetCore">AutomationPeer.GetPositionInSetCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetSizeOfSetCore">AutomationPeer.GetSizeOfSetCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLevelCore">AutomationPeer.GetLevelCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLandmarkTypeCore">AutomationPeer.GetLandmarkTypeCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetLocalizedLandmarkTypeCore">AutomationPeer.GetLocalizedLandmarkTypeCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsPeripheralCore">AutomationPeer.IsPeripheralCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDataValidForFormCore">AutomationPeer.IsDataValidForFormCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFullDescriptionCore">AutomationPeer.GetFullDescriptionCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetDescribedByCore">AutomationPeer.GetDescribedByCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsToCore">AutomationPeer.GetFlowsToCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetFlowsFromCore">AutomationPeer.GetFlowsFromCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetCultureCore">AutomationPeer.GetCultureCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_GetHeadingLevelCore">AutomationPeer.GetHeadingLevelCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_IsDialogCore">AutomationPeer.IsDialogCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.AutomationPeer.html#Microsoft_UI_Xaml_Automation_Peers_AutomationPeer_EventsSource">AutomationPeer.EventsSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Equals_Microsoft_UI_Xaml_DependencyObject_">DependencyObject.Equals(DependencyObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_SetValue_Microsoft_UI_Xaml_DependencyProperty_System_Object_">DependencyObject.SetValue(DependencyProperty, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ClearValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ClearValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_ReadLocalValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.ReadLocalValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_GetAnimationBaseValue_Microsoft_UI_Xaml_DependencyProperty_">DependencyObject.GetAnimationBaseValue(DependencyProperty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_RegisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_Microsoft_UI_Xaml_DependencyPropertyChangedCallback_">DependencyObject.RegisterPropertyChangedCallback(DependencyProperty, DependencyPropertyChangedCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_UnregisterPropertyChangedCallback_Microsoft_UI_Xaml_DependencyProperty_System_Int64_">DependencyObject.UnregisterPropertyChangedCallback(DependencyProperty, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_Dispatcher">DependencyObject.Dispatcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.UI.Xaml.DependencyObject.html#Microsoft_UI_Xaml_DependencyObject_DispatcherQueue">DependencyObject.DispatcherQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_Microsoft_UI_Xaml_Controls_SelectorBarItem_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor(Microsoft.UI.Xaml.Controls.SelectorBarItem)">
+  SelectorBarItemAutomationPeer(SelectorBarItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectorBarItemAutomationPeer(SelectorBarItem owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Microsoft.UI.Xaml.Controls.SelectorBarItem.html">SelectorBarItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_WinRT_DerivedComposed_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor(WinRT.DerivedComposed)">
+  SelectorBarItemAutomationPeer(DerivedComposed)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SelectorBarItemAutomationPeer(DerivedComposed _)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <span class="xref">DerivedComposed</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer__ctor_WinRT_IObjectReference_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.#ctor(WinRT.IObjectReference)">
+  SelectorBarItemAutomationPeer(IObjectReference)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SelectorBarItemAutomationPeer(IObjectReference objRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objRef</code> <span class="xref">IObjectReference</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Equals_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Equals_Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.Equals(Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer)">
+  Equals(SelectorBarItemAutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(SelectorBarItemAutomationPeer other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Equals_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.Equals*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Equals_System_Object_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_FromAbi_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.FromAbi*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_FromAbi_System_IntPtr_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.FromAbi(System.IntPtr)">
+  FromAbi(nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectorBarItemAutomationPeer FromAbi(nint thisPtr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thisPtr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_GetHashCode_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.GetHashCode*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_GetHashCode" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_IsOverridableInterface_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.IsOverridableInterface*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_IsOverridableInterface_System_Guid_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.IsOverridableInterface(System.Guid)">
+  IsOverridableInterface(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsOverridableInterface(Guid iid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_op_Equality_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.op_Equality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_op_Equality_Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.op_Equality(Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer,Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer)">
+  operator ==(SelectorBarItemAutomationPeer, SelectorBarItemAutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(SelectorBarItemAutomationPeer x, SelectorBarItemAutomationPeer y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_op_Inequality_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.op_Inequality*"></a>
+
+  <h3 id="Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_op_Inequality_Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_Microsoft_UI_Xaml_Automation_Peers_SelectorBarItemAutomationPeer_" data-uid="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.op_Inequality(Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer,Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer)">
+  operator !=(SelectorBarItemAutomationPeer, SelectorBarItemAutomationPeer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(SelectorBarItemAutomationPeer x, SelectorBarItemAutomationPeer y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Microsoft.UI.Xaml.Automation.Peers.SelectorBarItemAutomationPeer.html">SelectorBarItemAutomationPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/DGP-Studio/Microsoft.WindowsAppSDK.Projection/blob/main/src/Microsoft.UI.Xaml.Automation.Peers.cs/#L13357" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
