@@ -11,4 +11,4 @@ RUN docfx build docfx/docfx.json
 
 EXPOSE 8080
 
-CMD ["docfx", "docfx/docfx.json", "--serve", "--port", "8080", "--hostname", "0.0.0.0"]
+CMD ["docfx", "serve", "docfx/_site", "--port", "8080", "--hostname", "0.0.0.0"]
